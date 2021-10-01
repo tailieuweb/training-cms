@@ -5564,9 +5564,12 @@ a.to-the-top > * {
 	}
 
 	/* Site Footer --------------------------- */
-
+#footer{
+	font-size: initial;
+}
 section {
     padding: 60px 0;
+	font-size: initial;
 }
 
 section .section-title {
@@ -5574,6 +5577,8 @@ section .section-title {
     color: #007b5e;
     margin-bottom: 50px;
     text-transform: uppercase;
+
+
 }
 #footer {
     background: #007b5e !important;
@@ -5590,7 +5595,7 @@ section .section-title {
 }
 #footer ul.social li a i {
     margin-right: 5px;
-	font-size:25px;
+	font-size:30px;
 	-webkit-transition: .5s all ease;
 	-moz-transition: .5s all ease;
 	transition: .5s all ease;
