@@ -6,8 +6,6 @@
  * Contains the opening of the #site-footer div and all content after.
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- * @link https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js
- * @link https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
  * @package WordPress
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
