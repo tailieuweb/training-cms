@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The template for displaying the footer
  *
@@ -13,16 +12,15 @@
  */
 
 ?>
-			<footer id="site-footer" role="contentinfo" class="header-footer-group">
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-			<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
 <!-- Footer -->
-	<section id="footer">
+<section id="footer">
 		<div class="container">
+		
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
 					<ul class="list-unstyled list-inline social text-center">
@@ -45,9 +43,6 @@
 		</div>
 	</section>
 	<!-- ./Footer -->
-
-			</footer><!-- #site-footer -->
-
 		<?php wp_footer(); ?>
 
 	</body>
