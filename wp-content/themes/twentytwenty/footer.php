@@ -13,14 +13,17 @@
  */
 
 ?>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+			<footer id="site-footer" role="contentinfo" class="header-footer-group">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<footer id="site-footer" role="contentinfo" class="header-footer-group">
+<!------ Include the above in your HEAD tag ---------->
+
+<!-- Footer -->
 	<section id="footer">
 		<div class="container">
-		<div class="row">
+			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
 					<ul class="list-unstyled list-inline social text-center">
 						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-facebook"></i></a></li>
@@ -38,13 +41,14 @@
 					<p class="h6">© All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Sunlimetech</a></p>
 				</div>
 				<hr>
-			</div>
+			</div>	
 		</div>
 	</section>
-</footer><!-- #site-footer -->
+	<!-- ./Footer -->
 
-<?php wp_footer(); ?>
+			</footer><!-- #site-footer -->
 
-</body>
+		<?php wp_footer(); ?>
 
+	</body>
 </html>
