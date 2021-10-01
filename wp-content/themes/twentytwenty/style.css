@@ -51,15 +51,8 @@ with others.
 
 /*	0. CSS Reset
 /* -------------------------------------------------------------------------- */
-<<<<<<< HEAD
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-=======
 
-<<<<<<< HEAD
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-=======
->>>>>>> origin/2-wordpress-581-202109/10-J/master
->>>>>>> origin/2-wordpress-581-202109/10-J/master
 html,
 body {
   border: none;
@@ -6605,11 +6598,6 @@ a.to-the-top > * {
 }
 
 /* Footer */
-<<<<<<< HEAD
-section {
-  padding: 60px 0;
-}
-=======
 
 section {
     padding: 60px 0;
@@ -6684,10 +6672,6 @@ section .section-title {
     margin-bottom: 10px;
 }
 }
-
-
->>>>>>> origin/2-wordpress-581-202109/10-J/master
-
 section .section-title {
   text-align: center;
   color: #007b5e;
