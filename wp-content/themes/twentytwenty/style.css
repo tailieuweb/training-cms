@@ -984,7 +984,7 @@ th {
 
 /* Sections ---------------------------------- */
 
-/* section {
+section {
 	padding: 5rem 0;
 	width: 100%;
 }
@@ -1014,7 +1014,7 @@ th {
 
 .section-inner.no-margin {
 	margin: 0;
-} */
+}
 
 
 /* Toggles ----------------------------------- */
@@ -4877,13 +4877,13 @@ a.to-the-top > * {
 
 	/* SECTIONS */
 
-	/* section {
+	section {
 		padding: 8rem 0;
 	}
 
 	.section-inner {
 		width: calc(100% - 8rem);
-	} */
+	}
 
 
 	/* Site Header --------------------------- */
