@@ -11,23 +11,24 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
+$recent_posts = get_posts($args);
 $title = get_the_title( $post );
-$recent_posts = get_posts( $args );
-?>
 
+
+?>
 <footer id="site-footer" role="contentinfo" class="header-footer-group">
 	<section id="footer">
 		<div class="container">
-			<?php $recent_posts = get_posts( $args ); ?>
+			<?php $recent_posts = get_posts($args); ?>
 			<div class="row text-center text-xs-center text-sm-left text-md-left">
 				<div class="col-xs-12 col-sm-4 col-md-4">
 					<h5>Quick links</h5>
 					<ul class="list-unstyled quick-links">
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i><?php echo $title?></a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i><?php echo $title?></a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+						<?php
+						foreach ($recent_posts as $post) {
+							$title = get_the_title($post); ?>
+							<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i><?php echo $title ?></a></li>
+						<?php } ?>
 					</ul>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4">
@@ -51,8 +52,7 @@ $recent_posts = get_posts( $args );
 					</ul>
 				</div>
 			</div>
-			?>
-			
+
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
 					<ul class="list-unstyled list-inline social text-center">
