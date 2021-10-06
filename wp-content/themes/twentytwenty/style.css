@@ -6686,7 +6686,7 @@ section .section-title {
 #footer {
     background: #007b5e !important;
 }
-#footer h5{
+#footer h5, #footer .wp-block-group__inner-container h2{
 	padding-left: 10px;
     border-left: 3px solid #eeeeee;
     padding-bottom: 6px;
@@ -6735,6 +6735,32 @@ section .section-title {
 	margin-right: 5px;
 }
 #footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+#footer ul{
+	margin: 0;
+}
+#footer ul li a{
+	color:#ffffff;
+}
+#footer ul li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+  margin-top: 2px;
+}
+#footer ul li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+}
+#footer ul li a{
+  font-size: 15px;
+  font-weight: 500;
+	margin-right: 5px;
+}
+#footer ul li:hover a{
     font-weight: 700;
 }
 

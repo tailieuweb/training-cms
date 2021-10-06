@@ -5,7 +5,7 @@
 <!------ Include the above in your HEAD tag ---------->
 
 <!-- Footer -->
-<section id="footer">
+<section id="footer" style="padding-top: 0;">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
