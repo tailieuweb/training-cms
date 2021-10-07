@@ -6062,13 +6062,13 @@ section .section-title {
     text-transform: uppercase;
 }
 
-#footer {
+#site-footer {
     background: #007b5e !important;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #site-footer .h6 {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #site-footer h5 {
@@ -6093,7 +6093,7 @@ section .section-title {
 
 #site-footer ul.social li a i {
     margin-right: 5px;
-    font-size: 35px;
+    font-size: 25px;
     -webkit-transition: .5s all ease;
     -moz-transition: .5s all ease;
     transition: .5s all ease;
@@ -6118,6 +6118,10 @@ section .section-title {
     -webkit-transition: .5s all ease;
     -moz-transition: .5s all ease;
     transition: .5s all ease;
+}
+
+#site-footer .row {
+    margin-right: 0;
 }
 
 #site-footer ul.quick-links li:hover {
