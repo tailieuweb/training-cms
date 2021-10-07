@@ -10,11 +10,7 @@ RewriteBase /
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-<<<<<<< HEAD
-RewriteRule ./index.php [L]
-=======
 RewriteRule . /index.php [L]
->>>>>>> 1-wordpress-581-202109/2-groups/1-D/master
 </IfModule>
 
 # END WordPress
