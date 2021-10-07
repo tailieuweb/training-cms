@@ -567,6 +567,7 @@ blockquote cite {
 
 blockquote p:last-child {
 	margin: 0;
+	margin: 25px;
 }
 
 
@@ -6552,4 +6553,89 @@ section .section-title {
     padding-bottom: 0px;
     margin-bottom: 10px;
 }
+}
+.footer-widgets .widget {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+}
+.footer-widgets-wrapper h2 {
+	padding-left: 5px;
+	border-left: 3px solid #eeeeee;
+	padding-bottom: 6px;
+	margin-bottom: 20px;
+	font-size: 2.5rem;
+	color: #ffffff;
+}
+.footer-widgets-wrapper .footer-widgets {
+	color: #fff;
+	display: flex;
+	justify-content: space-around;
+}
+
+.wp-block-latest-posts__list li a {
+	color: #fff;
+	font-size: 1.5rem;
+}
+.wp-block-latest-posts__list li:hover a {
+    margin-left: 5px;
+	text-decoration: none;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+.wp-block-categories-list li:hover a {
+    margin-left: 5px;
+	text-decoration: none;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+.wp-block-categories-list li:hover a {
+    margin-left: 5px;
+	text-decoration: none;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+.wp-block-archives-list li:hover a {
+    margin-left: 5px;
+	text-decoration: none;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+.wp-block-latest-comments__comment-author:hover{
+	margin-left: 5px;
+}
+.wp-block-latest-comments__comment-link:hover{
+	margin-left: 5px;
+}
+.wp-block-categories-list li a {
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.wp-block-archives-list li a {
+	color: #fff;
+	font-size: 1.5rem;
+}
+.wp-block-latest-comments__comment-meta{
+	font-size: 1.5rem;
+}
+.widget li a {
+	color: #fff;
+	position: relative;
+}
+.wp-block-latest-comments__comment-author{
+	color: #fff;
+}
+.widget li a:before {
+	position: absolute;
+    content: "\f101";
+    font: normal normal normal 14px/1 FontAwesome;
+    top: 3px;
+    left: -18px;
+    width: 5px;
+    height: 5px;
 }
