@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -13,45 +14,80 @@
 
 ?>
 
-	</div><!-- #content -->
+</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<?php get_template_part( 'template-parts/footer/footer', 'widgets' ); ?>
-		<div class="site-info">
-			<?php $blog_info = get_bloginfo( 'name' ); ?>
-			<?php if ( ! empty( $blog_info ) ) : ?>
-				<a class="site-name" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>,
-			<?php endif; ?>
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentynineteen' ) ); ?>" class="imprint">
-				<?php
-				/* translators: %s: WordPress. */
-				printf( __( 'Proudly powered by %s.', 'twentynineteen' ), 'WordPress' );
-				?>
-			</a>
-			<?php
-			if ( function_exists( 'the_privacy_policy_link' ) ) {
-				the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
-			}
-			?>
-			<?php if ( has_nav_menu( 'footer' ) ) : ?>
-				<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'twentynineteen' ); ?>">
-					<?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'footer',
-							'menu_class'     => 'footer-menu',
-							'depth'          => 1,
-						)
-					);
-					?>
-				</nav><!-- .footer-navigation -->
-			<?php endif; ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+<!--Important link from source https://bootsnipp.com/snippets/rlXdE-->
+
+<!-- Update css footer by leliem523  07/10  -->
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!-- Footer -->
+  <section id="footer">
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Quick links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Quick links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Quick links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+            <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div>
+        </hr>
+      </div>  
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          <p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
+          <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Sunlimetech</a></p>
+        </div>
+        </hr>
+      </div>  
+    </div>
+  </section>
+  <!-- ./Footer -->
+
 
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>
