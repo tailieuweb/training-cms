@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # training-cms
 <<<<<<< HEAD
 (markdown)
@@ -19,3 +20,6 @@
 * Apache: 2.4
 * Wamp/Xampp/Amps/Vertrigo
 >>>>>>> origin/1-wordpress-581-202109/1-master
+=======
+# training-cms
+>>>>>>> origin/1-wordpress-581-202109/2-groups/1-B/3-25-Nhu
