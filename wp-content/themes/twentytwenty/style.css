@@ -6473,6 +6473,33 @@ a.to-the-top > * {
 		top: 0;
 	}
 }
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+	padding: 60px 0;
+}
+
+section .section-title {
+	text-align: center;
+	color: #007b5e;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+}
+#footer {
+	background: #007b5e !important;
+}
+#footer h5{
+	padding-left: 10px;
+	border-left: 3px solid #eeeeee;
+	padding-bottom: 6px;
+	margin-bottom: 20px;
+	color:#ffffff;
+}
+#footer a {
+	color: #ffffff;
+	text-decoration: none !important;
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects;
 	/* Footer */
 	@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 	section {
@@ -6582,17 +6609,5 @@ section .section-title {
 	}
 }
 .row p{
-	font-size: medium;
-}
-
-    padding-left: 0;
-    border-left: transparent;
-    padding-bottom: 0px;
-    margin-bottom: 10px;
-}
-}
-
-.row p{
-.container{
 	font-size: medium;
 }
