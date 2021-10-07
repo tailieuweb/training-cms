@@ -55,90 +55,6 @@ with others.
 /*	0. CSS Reset
 /* -------------------------------------------------------------------------- */
 
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-section {
-    padding: 60px 0;
-}
-
-section .section-title {
-    text-align: center;
-    color: #007b5e;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-}
-
-#site-footer {
-    background: #007b5e !important;
-    font-size: 20px;
-}
-
-#site-footer .h6 {
-    font-size: 20px;
-}
-
-#site-footer h5 {
-    padding-left: 10px;
-    border-left: 3px solid #eeeeee;
-    padding-bottom: 6px;
-    margin-bottom: 20px;
-    color: #ffffff;
-    font-size: 20px;
-}
-
-#site-footer a {
-    color: #ffffff;
-    text-decoration: none !important;
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
-}
-
-#site-footer ul.social li {
-    padding: 3px 0;
-}
-
-#site-footer ul.social li a i {
-    margin-right: 5px;
-    font-size: 35px;
-    -webkit-transition: .5s all ease;
-    -moz-transition: .5s all ease;
-    transition: .5s all ease;
-}
-
-#site-footer ul.social li:hover a i {
-    font-size: 30px;
-    margin-top: -10px;
-}
-
-#site-footer ul.social li a,
-#site-footer ul.quick-links li a {
-    color: #ffffff;
-}
-
-#site-footer ul.social li a:hover {
-    color: #eeeeee;
-}
-
-#site-footer ul.quick-links li {
-    padding: 3px 0;
-    -webkit-transition: .5s all ease;
-    -moz-transition: .5s all ease;
-    transition: .5s all ease;
-}
-
-#site-footer ul.quick-links li:hover {
-    padding: 3px 0;
-    margin-left: 5px;
-    font-weight: 700;
-}
-
-#site-footer ul.quick-links li a i {
-    margin-right: 5px;
-}
-
-#site-footer ul.quick-links li:hover a i {
-    font-weight: 700;
-}
-
 html,
 body {
     border: none;
@@ -6132,4 +6048,88 @@ a.to-the-top>* {
     .wp-block-pullquote.is-style-solid-color.alignright::before {
         top: 0;
     }
+}
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#site-footer {
+    background: #007b5e !important;
+    font-size: 20px;
+}
+
+#site-footer .h6 {
+    font-size: 20px;
+}
+
+#site-footer h5 {
+    padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#site-footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+#site-footer ul.social li {
+    padding: 3px 0;
+}
+
+#site-footer ul.social li a i {
+    margin-right: 5px;
+    font-size: 35px;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+#site-footer ul.social li:hover a i {
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+#site-footer ul.social li a,
+#site-footer ul.quick-links li a {
+    color: #ffffff;
+}
+
+#site-footer ul.social li a:hover {
+    color: #eeeeee;
+}
+
+#site-footer ul.quick-links li {
+    padding: 3px 0;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+#site-footer ul.quick-links li:hover {
+    padding: 3px 0;
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+#site-footer ul.quick-links li a i {
+    margin-right: 5px;
+}
+
+#site-footer ul.quick-links li:hover a i {
+    font-weight: 700;
 }
