@@ -125,7 +125,7 @@ html {
 }
 
 body {
-	background: #f5efe0;
+	background: f5efe0;
 	box-sizing: border-box;
 	color: #000;
 	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
@@ -4492,6 +4492,7 @@ a.to-the-top > * {
 }
 
 
+
 /* -------------------------------------------------------------------------- */
 
 /*	17. Media Queries
@@ -6363,3 +6364,4 @@ a.to-the-top > * {
 		top: 0;
 	}
 }
+
