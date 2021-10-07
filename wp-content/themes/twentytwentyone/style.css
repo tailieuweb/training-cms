@@ -282,7 +282,8 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 	--footer--font-family: var(--global--font-primary);
 	--footer--font-size: var(--global--font-size-sm);
 
-	/* Block: Pull quote */
+
+/* Block: Pull quote */
 	--pullquote--font-family: var(--global--font-primary);
 	--pullquote--font-size: var(--heading--font-size-h3);
 	--pullquote--font-style: normal;
