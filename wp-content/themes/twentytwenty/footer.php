@@ -33,7 +33,7 @@
 								<?php _e( 'Powered by WordPress', 'twentytwenty' ); ?>
 							</a>
 						</p><!-- .powered-by-wordpress -->
-
+			
 					</div><!-- .footer-credits -->
 
 					<a class="to-the-top" href="#site-header">
