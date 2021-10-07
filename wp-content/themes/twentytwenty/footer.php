@@ -13,75 +13,66 @@
  */
 
 ?>
-<footer class="bg-primary text-white text-center text-lg-start">
-	<!-- Grid container -->
-	<div class="container p-4">
-		<!--Grid row-->
-		<div class="row">
-			<!--Grid column-->
-			<div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-				<h5 class="text-uppercase">Footer Content</h5>
 
-				<p>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-					molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-					voluptatem veniam, est atque cumque eum delectus sint!
-				</p>
+<!------ Include the above in your HEAD tag ---------->
+
+<!-- Footer -->
+	<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+					</ul>
+				</div>
 			</div>
-			<!--Grid column-->
-
-			<!--Grid column-->
-			<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-				<h5 class="text-uppercase">Links</h5>
-
-				<ul class="list-unstyled mb-0">
-					<li>
-						<a href="#!" class="text-white">Link 1</a>
-					</li>
-					<li>
-						<a href="#!" class="text-white">Link 2</a>
-					</li>
-					<li>
-						<a href="#!" class="text-white">Link 3</a>
-					</li>
-					<li>
-						<a href="#!" class="text-white">Link 4</a>
-					</li>
-				</ul>
-			</div>
-			<!--Grid column-->
-
-			<!--Grid column-->
-			<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-				<h5 class="text-uppercase mb-0">Links</h5>
-
-				<ul class="list-unstyled">
-					<li>
-						<a href="#!" class="text-white">Link 1</a>
-					</li>
-					<li>
-						<a href="#!" class="text-white">Link 2</a>
-					</li>
-					<li>
-						<a href="#!" class="text-white">Link 3</a>
-					</li>
-					<li>
-						<a href="#!" class="text-white">Link 4</a>
-					</li>
-				</ul>
-			</div>
-			<!--Grid column-->
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				<hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
+					<p class="h6">© All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Sunlimetech</a></p>
+				</div>
+				<hr>
+			</div>	
 		</div>
-		<!--Grid row-->
-	</div>
-	<!-- Grid container -->
-
-	<!-- Copyright -->
-	<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-		© 2020 Copyright:
-		<a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-	</div>
-	<!-- Copyright -->
+	</section>
+	<!-- ./Footer -->
 
 	<?php wp_footer(); ?>
 
