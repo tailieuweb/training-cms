@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # training-cms
 <<<<<<< HEAD
 (markdown)
@@ -23,3 +24,6 @@
 =======
 # training-cms
 >>>>>>> origin/1-wordpress-581-202109/2-groups/1-B/3-25-Nhu
+=======
+# training-cms
+>>>>>>> origin/1-wordpress-581-202109/2-groups/1-B/2-28-Phuong

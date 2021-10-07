@@ -6578,6 +6578,30 @@ section .section-title {
 	font-size: 1.8rem;
 	font-family: 'Adamina';font-size:16px;
 }
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #007b5e !important;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+	font-size: 1.8rem;
+	font-family: 'Adamina';font-size:16px;
+}
 #footer a {
     color: #ffffff;
     text-decoration: none !important;
