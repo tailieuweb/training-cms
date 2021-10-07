@@ -86,7 +86,7 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ) 
 
 			<?php if ( $has_sidebar_1 || $has_sidebar_2 ) { ?>
 
-				<aside class="footer-widgets-outer-wrapper" role="complementary">
+				<!--<aside class="footer-widgets-outer-wrapper" role="complementary">
 
 					<div class="footer-widgets-wrapper">
 
@@ -108,10 +108,10 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ) 
 
 					</div><!-- .footer-widgets-wrapper -->
 
-				</aside><!-- .footer-widgets-outer-wrapper -->
+				</aside><!-- .footer-widgets-outer-wrapper --> 
 
 			<?php } ?>
-
+						
 		</div><!-- .footer-inner -->
 
 	</div><!-- .footer-nav-widgets-wrapper -->

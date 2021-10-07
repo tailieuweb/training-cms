@@ -16,6 +16,33 @@
 			<div class="container">
 			<div class="row text-center text-xs-center text-sm-left text-md-left">
 			</div>
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-3 col-md-3">
+					<h5>Recent Posts</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Du Lịch Vũng Tàu</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Hello world!</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-3 col-md-3">
+					<h5>Recent Comments</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>A WordPress Commenter on Hello world!</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-3 col-md-3">
+					<h5>Archives</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>September 2021</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-3 col-md-3">
+					<h5>Categories</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Uncategorized</a></li>
+					</ul>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
 					<ul class="list-unstyled list-inline social text-center">
