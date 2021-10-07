@@ -1,4 +1,5 @@
 <!-- Footer -->
+
 <section id="footer">
     <div class="container">
 
@@ -23,4 +24,5 @@
         </div>
     </div>
 </section>
+
 <!-- ./Footer -->
