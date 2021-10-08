@@ -6567,3 +6567,45 @@ p{
 ul, ol {
 	margin:0;
 }
+.wp-block-group__inner-container h2{
+	padding-left: 10px;
+    border-left: 3px solid white;
+	color:white;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+}
+.wp-block-group__inner-container ul li::before {
+	font-family:"FontAwesome";
+	content:"\f101";
+	color:white;
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+.wp-block-group__inner-container ul li:hover{
+	color: white;
+	margin-left:-10px;
+	font-weight:700;
+}
+.wp-block-group__inner-container ul li a:hover{
+	color:white;
+	text-decoration:none;
+}
+.wp-block-group__inner-container ul li a{
+	color:white;
+}
+.footer-nav-widgets-wrapper.header-footer-group {
+    background-color: #007b5e;
+}
+.wp-block-search__label{
+	color:white;
+}
+.wp-block-search__label:hover{
+	color:white;
+	font-weight:800;
+	margin-left:10px;
+}
+.wp-block-search__button:hover{
+	text-decoration:none;
+	color:red;
+}
