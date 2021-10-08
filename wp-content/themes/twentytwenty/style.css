@@ -194,7 +194,7 @@ h2.border-rg {
 }
 /* Very busy */
 h2.border-rg {
-    border-left: 5px solid black;
+    border-left: 5px solid white;
     padding-left: 5px;
 }
 ul.wp-block-archives-list.wp-block-archives li a {
@@ -6624,7 +6624,7 @@ section .section-title {
 	text-align: center;
 	list-style: none;
 }
-
+/* ss */
 @media (max-width:767px){
 	#site-footer h5 {
     padding-left: 0;
