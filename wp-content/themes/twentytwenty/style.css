@@ -137,6 +137,12 @@ body {
 
 
 /* Footer */
+.footer-nav-widgets-wrapper.header-footer-group {
+    background: #007b5e !important;
+}
+h2.border-rg {
+    color: white;
+}
 @media (min-width: 700px){
 	.footer-widgets .widget {
     border-top: none;
@@ -154,9 +160,9 @@ body {
 	transition: .5s all ease;
 }
 
-.wp-block-group__inner-container li:hover a{
+/* .wp-block-group__inner-container li:hover a{
     color: #e51000;
-}
+} */
 
 
 .wp-block-group__inner-container li a:nth-child(1):before {
@@ -184,12 +190,30 @@ body {
     font-size: 10px;
 }
 .wp-block-group__inner-container h2 {
-    font-size: 30px;
+    font-size: 25px;
 }
 h2.border-rg {
-    border-left: 3px solid black;
+    border-left: 5px solid white;
     padding-left: 5px;
 }
+ul.wp-block-archives-list.wp-block-archives li a {
+    color: white;
+}
+ul.wp-block-categories-list.wp-block-categories li a {
+    color: white;
+}
+
+ul.wp-block-latest-posts__list.aligncenter.demi.wp-block-latest-posts li a {
+    color: white;
+}
+footer.wp-block-latest-comments__comment-meta {
+    color: white;
+}
+footer.wp-block-latest-comments__comment-meta a{
+    color: white;
+}
+
+
 
 @supports ( font-variation-settings: normal ) {
 
