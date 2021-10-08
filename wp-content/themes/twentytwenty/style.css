@@ -6075,18 +6075,25 @@ a.to-the-top>* {
     list-style: none !important;
 }
 
-.wp-block-archives a,
-.wp-block-categories a,
-.wp-block-latest-posts a,
-.wp-block-latest-comments a {
+.widget li a {
     color: #eeeeee !important;
     font-size: 15px;
     text-decoration: none !important;
     font-weight: 100;
 }
 
+.widget li a::before {
+    position: relative;
+    top: 2px;
+    left: 0;
+    content: "\00BB";
+    font-size: 24px;
+    margin-right: 4px;
+}
+
 .widget li {
     margin-left: 20px;
+    transition: all .5s ease !important;
 }
 
 .widget li:hover {
@@ -6113,7 +6120,7 @@ section .section-title {
     text-transform: uppercase;
 }
 
-#footer {
+#site-footer {
     background: #007b5e !important;
 }
 
