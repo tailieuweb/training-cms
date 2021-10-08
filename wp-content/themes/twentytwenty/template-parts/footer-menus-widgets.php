@@ -86,7 +86,7 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ) 
 
 			<?php if ( $has_sidebar_1 || $has_sidebar_2 ) { ?>
 
-				<!--<aside class="footer-widgets-outer-wrapper" role="complementary">
+				<aside class="footer-widgets-outer-wrapper" role="complementary">
 
 					<div class="footer-widgets-wrapper">
 
@@ -98,13 +98,7 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ) 
 
 						<?php } ?>
 
-						<?php if ( $has_sidebar_2 ) { ?>
-
-							<div class="footer-widgets column-two grid-item">
-								<?php dynamic_sidebar( 'sidebar-2' ); ?>
-							</div>
-
-						<?php } ?>
+						
 
 					</div><!-- .footer-widgets-wrapper -->
 
