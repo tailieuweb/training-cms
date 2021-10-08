@@ -24,7 +24,23 @@
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style>
+.widget li a {
+	/* color: red; */
+	position: relative;
+	font-size: 17px;
+}
 
+.widget li a:before {
+	position: absolute;
+    content: "\f101";
+    font: normal normal normal 14px/1 FontAwesome;
+    top: 3px;
+    left: -18px;
+    width: 5px;
+    height: 5px;
+}
+	</style>
 
 	<?php wp_head(); ?>
 

@@ -137,10 +137,7 @@ body {
 
 
 /* Footer */
-.widget li a {
-    position: relative;
-    font-size: 10px;
-}
+
 .footer-nav-widgets-wrapper.header-footer-group {
     background: #007b5e !important;
 }

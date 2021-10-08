@@ -86,10 +86,11 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
 
 			<?php } ?>
 
-			<?php if ($has_sidebar_1 || $has_sidebar_2) { ?>
+			<div class="container">
+				<?php if ($has_sidebar_1 || $has_sidebar_2) { ?>
 
-				<aside class="footer-widgets-outer-wrapper" role="complementary">
-					<div class="container">
+					<aside class="footer-widgets-outer-wrapper" role="complementary">
+
 						<div class="footer-widgets-wrapper">
 
 							<?php if ($has_sidebar_1) { ?>
@@ -109,12 +110,11 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
 							<?php } ?>
 
 						</div><!-- .footer-widgets-wrapper -->
-					</div>
 
+					</aside><!-- .footer-widgets-outer-wrapper -->
 
-				</aside><!-- .footer-widgets-outer-wrapper -->
-
-			<?php } ?>
+				<?php } ?>
+			</div>
 
 		</div><!-- .footer-inner -->
 
