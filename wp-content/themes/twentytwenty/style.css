@@ -187,7 +187,7 @@ h2.border-rg {
     padding-right: 20px;
 }
 .wp-block-group__inner-container {
-    font-size: 10px;
+    font-size: 10px !important;
 }
 .wp-block-group__inner-container h2 {
     font-size: 25px;
