@@ -137,10 +137,7 @@ body {
 
 
 /* Footer */
-.widget li a {
-    position: relative;
-    font-size: 11px !important;
-}
+
 .footer-nav-widgets-wrapper.header-footer-group {
     background: #007b5e !important;
 }
@@ -4200,7 +4197,7 @@ div.comment:first-of-type {
 }
 
 .widget li {
-	margin: 2rem 0 0 0;
+	margin: 2rem 0 0 0 !important;
 }
 
 .widget li:first-child,
