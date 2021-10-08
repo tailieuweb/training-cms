@@ -6925,3 +6925,8 @@ section .section-title {
     margin-bottom: 10px;
 }
 }
+.widget li a::before {
+  position: relative;
+  content: "\00BB  ";
+  font-size: 24px;
+}
