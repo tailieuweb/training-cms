@@ -3163,6 +3163,41 @@ figure.wp-block-gallery.alignfull {
   padding-right: 2rem;
 }
 
+/* Update */
+.wp-block-group__inner-container h2 {
+  color: #fff;
+}
+.wp-block-latest-posts__list li {
+  height: 10px;
+}
+.wp-block-latest-posts__list li a {
+  color: #fff;
+  font-size: 12px;
+}
+.wp-block-archives-list li a {
+  color: #fff;
+  font-size: 12px;
+}
+.wp-block-categories-list li {
+  height: 10px;
+}
+.wp-block-categories-list li a {
+  color: #fff;
+  font-size: 12px;
+}
+.wp-block-latest-comments__comment-author {
+  color: #fff !important;
+}
+.wp-block-latest-comments__comment-link {
+  color: #fff !important;
+}
+.wp-block-latest-comments__comment-date {
+  color: #9999 !important;
+}
+.wp-block-latest-comments__comment-excerpt p {
+  color: rgb(209, 209, 209);
+  font-size: 12px !important;
+}
 /* Block: Image ------------------------------ */
 
 /* Block: Media And Text --------------------- */
@@ -4368,7 +4403,7 @@ div.comment:first-of-type {
 
 .footer-nav-widgets-wrapper,
 #site-footer {
-  background-color: #fff;
+  background-color: #007b5e !important;
   border-color: #dedfdf;
   border-style: solid;
   border-width: 0;
