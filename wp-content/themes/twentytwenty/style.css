@@ -4197,7 +4197,7 @@ div.comment:first-of-type {
 }
 
 .widget li {
-	margin: 2rem 0 0 0 !important;
+	margin: 2rem 0 0 0;
 }
 
 .widget li:first-child,
