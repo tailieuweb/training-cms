@@ -6939,3 +6939,9 @@ color: #fff;
 #footer i{
   color: #fff;
 }
+.widget li a::before {
+  position: relative;
+  content: "\00BB";
+  font-size: 24px;
+  margin-right: 2px;
+}
