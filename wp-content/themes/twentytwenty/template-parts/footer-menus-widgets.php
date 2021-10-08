@@ -14,9 +14,10 @@ $has_social_menu = has_nav_menu('social');
 
 $has_sidebar_1 = is_active_sidebar('sidebar-1');
 $has_sidebar_2 = is_active_sidebar('sidebar-2');
+$has_sidebar_2 = is_active_sidebar('sidebar-3');
 
 // Only output the container if there are elements to display.
-if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
+if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3) {
 ?>
 
 <div class="footer-nav-widgets-wrapper header-footer-group day ne">
@@ -32,12 +33,11 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
 
 			if ($has_footer_menu || $has_social_menu) {
 			?>
-        <div class="footer-top<?php echo $footer_top_classes; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output 
+				<div class="footer-top<?php echo $footer_top_classes; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output 
 										?>">
-            <?php if ($has_footer_menu) { ?>
+					<?php if ($has_footer_menu) { ?>
 
-            <nav aria-label="<?php esc_attr_e('Footer', 'twentytwenty'); ?>" role="navigation"
-                class="footer-menu-wrapper">
+						<nav aria-label="<?php esc_attr_e('Footer', 'twentytwenty'); ?>" role="navigation" class="footer-menu-wrapper">
 
                 <ul class="footer-menu reset-list-style">
                     <?php
@@ -53,11 +53,10 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
                 </ul>
 
             </nav><!-- .site-nav -->
+					<?php } ?>
+					<?php if ($has_social_menu) { ?>
 
-            <?php } ?>
-            <?php if ($has_social_menu) { ?>
-
-            <nav aria-label="<?php esc_attr_e('Social links', 'twentytwenty'); ?>" class="footer-social-wrapper">
+						<nav aria-label="<?php esc_attr_e('Social links', 'twentytwenty'); ?>" class="footer-social-wrapper">
 
                 <ul class="social-menu footer-social reset-list-style social-icons fill-children-current-color">
 
@@ -85,9 +84,8 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
             <?php } ?>
         </div><!-- .footer-top -->
 
-        <?php } ?>
-
-        <?php if ($has_sidebar_1 || $has_sidebar_2) { ?>
+			<?php } ?>
+			<?php if ( $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3) { ?>
 
         <aside class="footer-widgets-outer-wrapper" role="complementary">
 
@@ -109,13 +107,20 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
 
                 <?php } ?>
 
-            </div><!-- .footer-widgets-wrapper -->
+						<?php if ( $has_sidebar_3 ) { ?>
+
+							<div class="footer-widgets column-three grid-item">
+								<?php dynamic_sidebar( 'sidebar-3' ); ?>
+							</div>
+
+						<?php } ?>
+
+					</div><!-- .footer-widgets-wrapper -->
 
         </aside><!-- .footer-widgets-outer-wrapper -->
 
-        <?php } ?>
-
-    </div><!-- .footer-inner -->
+			<?php } ?>
+		</div><!-- .footer-inner -->
 
 </div><!-- .footer-nav-widgets-wrapper -->
 
