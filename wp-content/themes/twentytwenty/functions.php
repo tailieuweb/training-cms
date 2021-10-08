@@ -404,6 +404,17 @@ function twentytwenty_sidebar_registration() {
 			)
 		)
 	);
+    // Footer #3.
+	register_sidebar(
+        array_merge(
+            $shared_args,
+            array(
+                'name'        => __( 'Footer #3', 'twentytwenty' ),
+                'id'          => 'sidebar-3',
+                'description' => __( 'Widgets in this area will be displayed in the second column in the footer.', 'twentytwenty' ),
+            )
+        )
+    );
 
 }
 
@@ -786,3 +797,6 @@ function twentytwenty_get_elements_array() {
 	 */
 	return apply_filters( 'twentytwenty_get_elements_array', $elements );
 }
+
+add_filter('gutenberg_use_widgets_block_editor', '__return_false');
+add_filter('use_widgets_block_editor', '__return_false');
