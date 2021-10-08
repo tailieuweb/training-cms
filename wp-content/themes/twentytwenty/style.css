@@ -3166,7 +3166,7 @@ figure.wp-block-table.is-style-stripes {
 }
 
 [class*="__inner-container"]>*:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
-	max-width: 34rem;
+	max-width: 35rem;
 	width: 100%;
 }
 
@@ -5381,7 +5381,8 @@ section .section-title {
 	margin-right: 5px;
 }
 .footer-widgets ul li a::before, .wp-block-latest-comments__comment-author::before{
-	content: ">>";
+	content: "\f101";
+	font: normal normal normal 14px/1 FontAwesome;
 	margin-right: 8px;
 }
 .footer-widgets ul li a:hover, .wp-block-latest-comments__comment-meta a:hover{
