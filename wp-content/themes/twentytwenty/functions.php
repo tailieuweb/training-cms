@@ -405,6 +405,18 @@ function twentytwenty_sidebar_registration() {
 		)
 	);
 
+		// Footer #3.
+		register_sidebar(
+			array_merge(
+				$shared_args,
+				array(
+					'name'        => __( 'Footer #3', 'twentytwenty' ),
+					'id'          => 'sidebar-3',
+					'description' => __( 'Widgets in this area will be displayed in the three column in the footer.', 'twentytwenty' ),
+				)
+			)
+		);
+
 }
 
 add_action( 'widgets_init', 'twentytwenty_sidebar_registration' );
