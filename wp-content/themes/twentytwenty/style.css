@@ -6686,7 +6686,7 @@ section .section-title {
 #footer {
     background: #007b5e !important;
 }
-#footer h5, #footer .wp-block-group__inner-container h2{
+#footer h5, #footer h2{
 	padding-left: 10px;
     border-left: 3px solid #eeeeee;
     padding-bottom: 6px;
@@ -6736,6 +6736,9 @@ section .section-title {
 }
 #footer ul.quick-links li:hover a i {
     font-weight: 700;
+}
+#footer .widget.widget_block, #footer .wp-block-group {
+  margin: 0;
 }
 
 #footer ul{

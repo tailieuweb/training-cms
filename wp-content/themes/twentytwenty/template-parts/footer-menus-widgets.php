@@ -29,12 +29,12 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4">
 					<ul class="list-unstyled quick-links">
-						<?php dynamic_sidebar('sidebar-1'); ?>
+						<?php dynamic_sidebar('sidebar-2'); ?>
 					</ul>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4">
 					<ul class="list-unstyled quick-links">
-						<?php dynamic_sidebar('sidebar-1'); ?>
+						<?php dynamic_sidebar('sidebar-3'); ?>
 					</ul>
 				</div>
 			</div>
