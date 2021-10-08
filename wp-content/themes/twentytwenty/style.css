@@ -2886,6 +2886,7 @@ h2.entry-title {
 
 *[class*="_inner-container"] > *:last-child {
 	margin-bottom: 0;
+
 }
 
 .wp-block-archives:not(.alignwide):not(.alignfull),
@@ -4093,9 +4094,9 @@ div.comment:first-of-type {
 
 /* Widget Base ------------------------------- */
 
-.widget {
+/* .widget {
 	margin-top: 3rem;
-}
+} */
 
 .widget:first-child {
 	margin-top: 0;
@@ -4107,6 +4108,7 @@ div.comment:first-of-type {
 
 .widget-content > div > *:last-child {
 	margin-bottom: 0;
+	margin: 25px;
 }
 
 .widget .widget-title {
@@ -5615,7 +5617,7 @@ a.to-the-top > * {
 
 	.footer-widgets .widget {
 		border-top: none;
-		margin-top: 5rem;
+		/* margin-top: 5rem; */
 		padding-top: 0;
 	}
 
@@ -6551,4 +6553,74 @@ section .section-title {
     padding-bottom: 0px;
     margin-bottom: 10px;
 }
+}
+.footer-widgets-wrapper .footer-widgets {
+	color: #fff;
+	display: flex;
+	justify-content: space-around;
+}
+
+.wp-block-latest-posts__list li a {
+	color: #fff;
+	font-size: 1.5rem;
+}
+.wp-block-latest-posts__list li:hover a {
+    margin-left: 5px;
+	text-decoration: none;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+.wp-block-categories-list li:hover a {
+    margin-left: 5px;
+	text-decoration: none;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+.wp-block-categories-list li:hover a {
+    margin-left: 5px;
+	text-decoration: none;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+.wp-block-archives-list li:hover a {
+    margin-left: 5px;
+	text-decoration: none;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+
+.wp-block-categories-list li a {
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.wp-block-archives-list li a {
+	color: #fff;
+	font-size: 1.5rem;
+}
+.wp-block-latest-comments__comment-meta{
+	font-size: 1.5rem;
+}
+.widget li a {
+	color: #fff;
+	position: relative;
+}
+.wp-block-latest-comments__comment-author{
+	color: #fff;
+}
+.widget li a:before {
+	position: absolute;
+    content: "\f101";
+    font: normal normal normal 14px/1 FontAwesome;
+    top: 3px;
+    left: -18px;
+    width: 5px;
+    height: 5px;
+}
+.wp-block-group__inner-container h2{
+
 }
