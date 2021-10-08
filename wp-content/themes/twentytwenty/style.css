@@ -6054,6 +6054,51 @@ a.to-the-top>* {
 
 /* css bài tập */
 
+.footer-widgets-wrapper {
+    background: #007b5e !important;
+}
+
+.widget-content>div>*:last-child h2 {
+    padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.wp-block-archives,
+.wp-block-categories,
+.wp-block-latest-posts,
+.wp-block-latest-comments {
+    margin-left: 10px !important;
+    padding-left: 0 !important;
+    list-style: none !important;
+}
+
+.wp-block-archives a,
+.wp-block-categories a,
+.wp-block-latest-posts a,
+.wp-block-latest-comments a {
+    color: #eeeeee !important;
+    font-size: 15px;
+    text-decoration: none !important;
+    font-weight: 100;
+}
+
+.widget li {
+    margin-left: 20px;
+}
+
+.widget li:hover {
+    margin-left: 0;
+    font-weight: 900;
+}
+
+.widget li:hover a {
+    font-weight: 900;
+    color: #ffffff;
+}
+
 
 /* Footer */
 
