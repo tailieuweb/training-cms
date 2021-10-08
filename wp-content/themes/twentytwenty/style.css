@@ -52,10 +52,11 @@ with others.
 
 /*	0. CSS Reset
 /* -------------------------------------------------------------------------- */
-
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 html,
 body {
+	
 	border: none;
 	margin: 0;
 	padding: 0;
@@ -133,6 +134,86 @@ body {
 	letter-spacing: -0.015em;
 	text-align: left;
 }
+
+
+/* Footer */
+.footer-nav-widgets-wrapper.header-footer-group {
+    background: #007b5e !important;
+}
+h2.border-rg {
+    color: white;
+}
+@media (min-width: 700px){
+	.footer-widgets .widget {
+    border-top: none;
+    margin-top: 0rem;
+    padding-top: 0;
+	}
+}
+
+.wp-block-group__inner-container li a {
+    text-decoration: none !important;
+}
+
+.wp-block-group__inner-container li:hover {
+    margin-left: 5px;
+	transition: .5s all ease;
+}
+
+/* .wp-block-group__inner-container li:hover a{
+    color: #e51000;
+} */
+
+
+.wp-block-group__inner-container li a:nth-child(1):before {
+    content: "\f101";
+    font: normal normal normal 14px/1 FontAwesome;
+    top: 3px;
+    left: -18px;
+    width: 5px;
+    padding-right: 10px;
+    height: 5px;
+}
+
+.footer-widgets.column-one.grid-item {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.footer-widgets.column-two.grid-item {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.widget.widget_block {
+    padding-right: 20px;
+}
+.wp-block-group__inner-container {
+    font-size: 10px;
+}
+.wp-block-group__inner-container h2 {
+    font-size: 25px;
+}
+h2.border-rg {
+    border-left: 5px solid white;
+    padding-left: 5px;
+}
+ul.wp-block-archives-list.wp-block-archives li a {
+    color: white;
+}
+ul.wp-block-categories-list.wp-block-categories li a {
+    color: white;
+}
+
+ul.wp-block-latest-posts__list.aligncenter.demi.wp-block-latest-posts li a {
+    color: white;
+}
+footer.wp-block-latest-comments__comment-meta {
+    color: white;
+}
+footer.wp-block-latest-comments__comment-meta a{
+    color: white;
+}
+
+
 
 @supports ( font-variation-settings: normal ) {
 
@@ -991,7 +1072,8 @@ section {
 .section-inner {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 120rem;
+	/* Trang sua */
+	/* max-width: 120rem; */
 	width: calc(100% - 4rem);
 }
 
@@ -3000,7 +3082,6 @@ h2.entry-title {
 	margin-top: 0.15em;
 }
 
-
 /* Block: Shared Media Styles ---------------- */
 
 .wp-block-embed figcaption,
@@ -4368,82 +4449,165 @@ div.comment:first-of-type {
 /* Widget: Text ------------------------------ */
 
 
-/* Footer */
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-section {
-    padding: 60px 0;
+/* -------------------------------------------------------------------------- */
+
+/*	16. Site Footer
+/* -------------------------------------------------------------------------- */
+
+
+.footer-nav-widgets-wrapper,
+#site-footer {
+	/* background-color: #007b5e; */
+	border-color: #dedfdf;
+	border-style: solid;
+	border-width: 0;
 }
 
-section .section-title {
-    text-align: center;
-    color: #007b5e;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-}
-#footer {
-    background: #007b5e !important;
-}
-#footer h5{
-	padding-left: 10px;
-    border-left: 3px solid #eeeeee;
-    padding-bottom: 6px;
-    margin-bottom: 20px;
-    color:#ffffff;
-}
-#footer a {
-    color: #ffffff;
-    text-decoration: none !important;
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
-}
-#footer ul.social li{
-	padding: 3px 0;
-}
-#footer ul.social li a i {
-    margin-right: 5px;
-	font-size:25px;
-	-webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
-}
-#footer ul.social li:hover a i {
-	font-size:30px;
-	margin-top:-10px;
-}
-#footer ul.social li a,
-#footer ul.quick-links li a{
-	color:#ffffff;
-}
-#footer ul.social li a:hover{
-	color:#eeeeee;
-}
-#footer ul.quick-links li{
-	padding: 3px 0;
-	-webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
-}
-#footer ul.quick-links li:hover{
-	padding: 3px 0;
-	margin-left:5px;
-	font-weight:700;
-}
-#footer ul.quick-links li a i{
-	margin-right: 5px;
-}
-#footer ul.quick-links li:hover a i {
-    font-weight: 700;
+.footer-top-visible .footer-nav-widgets-wrapper,
+.footer-top-hidden #site-footer {
+	margin-top: 5rem;
 }
 
-@media (max-width:767px){
-	#footer h5 {
-    padding-left: 0;
-    border-left: transparent;
-    padding-bottom: 0px;
-    margin-bottom: 10px;
-}
+.reduced-spacing.footer-top-visible .footer-nav-widgets-wrapper,
+.reduced-spacing.footer-top-hidden #site-footer {
+	border-top-width: 0.1rem;
 }
 
+.footer-top,
+.footer-widgets-outer-wrapper,
+#site-footer {
+	padding: 3rem 0;
+}
+
+
+/* Footer Top -------------------------------- */
+
+.footer-top {
+	display: flex;
+	border-bottom: 0.1rem solid #dedfdf;
+	justify-content: space-between;
+}
+
+/* FOOTER MENU */
+
+.footer-menu {
+	font-size: 1.8rem;
+	font-weight: 700;
+	letter-spacing: -0.0277em;
+}
+
+.footer-menu li {
+	line-height: 1.25;
+	margin: 0.25em 0 0 0;
+}
+
+.footer-menu a {
+	text-decoration: none;
+	word-break: normal;
+	word-wrap: normal;
+}
+
+.footer-menu a:hover,
+.footer-menu a:focus {
+	text-decoration: underline;
+}
+
+/* FOOTER SOCIAL */
+
+.footer-social-wrapper {
+	margin: 0;
+	width: 100%;
+}
+
+.has-footer-menu .footer-social-wrapper {
+	flex-shrink: 0;
+	margin-left: 1rem;
+	width: 50%;
+}
+
+ul.footer-social {
+	margin: -0.5rem 0 0 -0.5rem;
+}
+
+.has-footer-menu .footer-social {
+	justify-content: flex-end;
+}
+
+ul.footer-social li {
+	margin: 0.5rem 0 0 0.5rem;
+}
+
+.footer-social a {
+	background-color: #cd2653;
+	height: 3.6rem;
+	width: 3.6rem;
+}
+
+.footer-social a::before {
+	font-size: 1.6rem;
+}
+
+/* Footer Widgets ---------------------------- */
+
+.footer-widgets-outer-wrapper {
+	border-bottom: 0.1rem solid #dedfdf;
+}
+
+.footer-widgets + .footer-widgets {
+	margin-top: 3rem;
+}
+
+/* Footer Bottom ----------------------------- */
+
+#site-footer {
+	font-size: 1.6rem;
+}
+
+#site-footer .section-inner {
+	align-items: baseline;
+	display: flex;
+	justify-content: space-between;
+}
+
+#site-footer a {
+	text-decoration: none;
+}
+
+#site-footer a:focus,
+#site-footer a:hover {
+	text-decoration: underline;
+}
+
+.footer-copyright a,
+.powered-by-wordpress a {
+	color: inherit;
+}
+
+.powered-by-wordpress,
+.to-the-top {
+	color: #6d6d6d;
+}
+
+a.to-the-top > * {
+	pointer-events: none;
+}
+
+.footer-copyright {
+	font-weight: 600;
+	margin: 0;
+}
+
+.powered-by-wordpress {
+	display: none;
+	margin: 0 0 0 2.4rem;
+}
+
+.to-the-top-long {
+	display: none;
+}
+
+
+/* -------------------------------------------------------------------------- */
 
 /*	17. Media Queries
 /* -------------------------------------------------------------------------- */
@@ -5511,7 +5675,7 @@ section .section-title {
 	/* FOOTER WIDGETS */
 
 	.footer-widgets-outer-wrapper {
-		padding: 8rem 0;
+		/* padding: 8rem 0; */
 	}
 
 	.footer-widgets-wrapper {
@@ -5532,7 +5696,6 @@ section .section-title {
 
 	.footer-widgets .widget {
 		border-top: none;
-		margin-top: 5rem;
 		padding-top: 0;
 	}
 
@@ -6393,4 +6556,79 @@ section .section-title {
 	.wp-block-pullquote.is-style-solid-color.alignright::before {
 		top: 0;
 	}
+}
+
+/* footer update */
+/* Footer */
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#site-footer {
+    background: #007b5e !important;
+}
+#site-footer .text{
+	text-align: center;
+	color: #fff;
+}
+#site-footer .text a{
+	color: #fff;
+}
+#site-footer ul.social li{
+	padding: 3px 0;
+}
+#site-footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#site-footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#site-footer ul.social li a,
+#site-footer ul.quick-links li a{
+	color:#ffffff;
+}
+#site-footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#site-footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#site-footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#site-footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#site-footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+#site-footer .list-unstyled{
+	text-align: center;
+	list-style: none;
+}
+
+@media (max-width:767px){
+	#site-footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
 }
