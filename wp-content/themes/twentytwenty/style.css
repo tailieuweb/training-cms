@@ -6624,7 +6624,7 @@ section .section-title {
 	text-align: center;
 	list-style: none;
 }
-/* ss */
+
 @media (max-width:767px){
 	#site-footer h5 {
     padding-left: 0;
