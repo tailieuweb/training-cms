@@ -6609,3 +6609,20 @@ ul, ol {
 	text-decoration:none;
 	color:red;
 }
+.footer-widgets-outer-wrapper {
+	padding: 0;
+}
+footer#site-footer {
+	padding-top: 0;
+}
+.widget li {
+	font-size: 16px;
+}
+.wp-block-group__inner-container ul li a {
+	font-size: 16px;
+}
+.header-footer-group pre, .header-footer-group fieldset, .header-footer-group input, .header-footer-group textarea, .header-footer-group table, .header-footer-group table *, .footer-nav-widgets-wrapper, #site-footer, .menu-modal nav *, .footer-widgets-outer-wrapper, .footer-top {
+    border-bottom: none;
+}
+
+
