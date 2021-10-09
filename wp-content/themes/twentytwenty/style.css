@@ -6517,6 +6517,7 @@ section .section-title {
     -webkit-text-decoration-skip: objects;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 .footer-nav-widget a::before{
 	font-family: "FontAwesome";
@@ -6534,6 +6535,8 @@ section .section-title {
 
 =======
 >>>>>>> 1-wordpress-581-202109/2-groups/1-D/4-11-Huy
+=======
+>>>>>>> 1-wordpress-581-202109/2-groups/1-D/3-15-Khang
 #footer ul.social li{
 	padding: 3px 0;
 }
@@ -6582,11 +6585,71 @@ section .section-title {
 }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+.footer-nav-widgets-wrapper{
+	background: #007b5e!important;
+	color: #fff!important;
+}
+
+.footer-nav-widgets-wrapper h2{
+	font-size: 25px;
+	position: relative;
+}
+
+.footer-nav-widgets-wrapper h2::before{
+	content: '';
+    position: absolute;
+    width: 3px;
+    left: -18px;
+    background: #fff;
+    height: 40px;
+}
+
+
+.footer-nav-widgets-wrapper a{
+	text-decoration: none;
+	color: #fff !important;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+>>>>>>> 1-wordpress-581-202109/2-groups/1-D/3-15-Khang
 .footer-nav-widgets-wrapper a::before{
 	font-family: "FontAwesome";
    content: "\f101";
    display: inline-block;
    padding-right: 10px;
 }
+<<<<<<< HEAD
 >>>>>>> 1-wordpress-581-202109/2-groups/1-D/4-11-Huy
+=======
+
+.footer-nav-widgets-wrapper a:hover{
+	margin-left: 6px;
+	text-decoration: none;
+}
+
+.column-two{
+	display: flex;
+	margin-top: 0px;
+}
+.column-three h2{
+	margin-top: 0px;
+}
+
+.column-three ul{
+	margin-top: -10px!important;
+}
+
+
+.footer-widgets .widget{
+	margin-top: 0;
+}
+
+
+.footer-widgets .widget .wp-block-group{
+	margin-top: 0!important;
+}
+>>>>>>> 1-wordpress-581-202109/2-groups/1-D/3-15-Khang
