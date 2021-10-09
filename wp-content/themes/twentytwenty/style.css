@@ -4376,7 +4376,7 @@ div.comment:first-of-type {
 
 .footer-nav-widgets-wrapper,
 #site-footer {
-	background-color: #fff;
+	background-color: #007b5e;
 	border-color: #dedfdf;
 	border-style: solid;
 	border-width: 0;
@@ -6555,4 +6555,21 @@ section .section-title {
 		padding-bottom: 0px;
 		margin-bottom: 10px;
 	}
+}
+
+.footer-inner.section-inner .widget.widget_block .widget-content ul li a{
+	color: #fff;
+}
+
+.footer-inner.section-inner .widget.widget_block .widget-content ul li a::before{
+	content: '»';
+	font-size: 28px;
+	font-weight: 300;
+	margin-right: 10px;
+}
+
+.footer-inner.section-inner .widget.widget_block .widget-content h2{
+	padding-left: 10px;
+	border-left: 3px solid #fff;
+	color: #fff;
 }
