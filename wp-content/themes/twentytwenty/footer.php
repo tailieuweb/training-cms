@@ -10,41 +10,43 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
-
+$has_sidebar_1 = is_active_sidebar( 'sidebar-1' );
+$has_sidebar_2 = is_active_sidebar( 'sidebar-2' );
+$has_sidebar_3 = is_active_sidebar( 'sidebar-3' );
 ?>
 			<section id="footer">
 		<div class="container">
-			<div class="row text-center text-xs-center text-sm-left text-md-left">
+			<div class="row text-sm-left text-md-left">
+			<?php	if ( $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3) {
+?>
 				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>Quick links</h5>
-					<ul class="list-unstyled quick-links">
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Home</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>About</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Videos</a></li>
-					</ul>
+				<?php if ( $has_sidebar_1 ) { ?>
+
+				<div class="column-one grid-item">
+				<?php dynamic_sidebar( 'sidebar-1' ); ?>
+				</div>
+
+				<?php } ?>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>Quick links</h5>
-					<ul class="list-unstyled quick-links">
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Home</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>About</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Videos</a></li>
-					</ul>
+				<?php if ( $has_sidebar_2 ) { ?>
+
+				<div class="column-one grid-item">
+				<?php dynamic_sidebar( 'sidebar-2' ); ?>
+				</div>
+
+				<?php } ?>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>Quick links</h5>
-					<ul class="list-unstyled quick-links">
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Home</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>About</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-						<li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
-					</ul>
+				<?php if ( $has_sidebar_3 ) { ?>
+
+				<div class="column-one grid-item">
+				<?php dynamic_sidebar( 'sidebar-3' ); ?>
 				</div>
+
+				<?php } ?>
+				</div>
+				<?php }?>
 			</div>
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
