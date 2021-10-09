@@ -5375,6 +5375,14 @@ section .section-title {
 #footer>div.container>div>div>div>div>div>div>ul>li:hover a i {
 	font-weight: 700;
 }
-.fix-space{
-	padding-bottom: 5px;
+
+.widget-content a::before {
+	font: normal normal normal 14px/1 FontAwesome;
+	content: "\f101";
+	padding-right: 5px;
+	margin-bottom: 20px;
+	display: inline-block;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
 }
