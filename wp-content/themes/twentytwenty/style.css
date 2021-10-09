@@ -4373,10 +4373,10 @@ div.comment:first-of-type {
 /*	16. Site Footer
 /* -------------------------------------------------------------------------- */
 
-
+/* ==============Slieder footer============================ */
 .footer-nav-widgets-wrapper,
 #site-footer {
-	background-color: #fff;
+	background-color: #007b5e;
 	border-color: #dedfdf;
 	border-style: solid;
 	border-width: 0;
@@ -5622,6 +5622,14 @@ a.to-the-top > * {
 	.footer-widgets .widget:first-child {
 		margin-top: 0;
 	}
+	/* footer-widget- link a!!! */
+	.footer-widgets a{
+		color: #ffffff !important;
+   		 text-decoration: none !important;
+    	background-color: transparent;
+    	-webkit-text-decoration-skip: objects;
+	}
+	
 
 	/* FOOTER BOTTOM */
 
@@ -6558,7 +6566,3 @@ section .section-title {
     margin-bottom: 10px;
 }
 }
-.h6{
-	font-size: 16px;
-}
-
