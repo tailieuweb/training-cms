@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 # training-cms
-<<<<<<< HEAD
 (markdown)
 * Repository: https://github.com/tailieuweb/training-cms
 
@@ -13,17 +11,20 @@
 
 * Wamp/Xampp/Apps/LAMP/Vertrigo: intergrated: (PHP + MySQL + Webserver) : All in one
 =======
+=======
+# training-cms
 * Repository: https://github.com/tailieuweb/training-cms
 
 ## System requirements
 * PHP: 7x/8x => (suggest: 8x)
 * MySQL: 5.6/5.7, MariaDB: 10.x
 * Apache: 2.4
+<<<<<<< HEAD
 * Wamp/Xampp/Amps/Vertrigo
->>>>>>> origin/1-wordpress-581-202109/1-master
 =======
 # training-cms
->>>>>>> origin/1-wordpress-581-202109/2-groups/1-B/3-25-Nhu
 =======
 # training-cms
->>>>>>> origin/1-wordpress-581-202109/2-groups/1-B/2-28-Phuong
+=======
+* Wamp/Xampp/Amps/Vertrigo
+
