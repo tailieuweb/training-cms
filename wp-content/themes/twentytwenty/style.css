@@ -469,7 +469,7 @@ a:focus {
 
 ul,
 ol {
-	margin: 0 0 3rem 0rem;
+	margin: 0 0 3rem 3rem;
 }
 
 ul {
@@ -498,7 +498,7 @@ ol ol ol {
 
 li {
 	line-height: 1.5;
-	margin: 0.5rem 0 0 0rem;
+	margin: 0.5rem 0 0 2rem;
 }
 
 li > ul,
@@ -6477,8 +6477,6 @@ a.to-the-top > * {
 		top: 0;
 	}
 }
-/* Footer */
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
     padding: 60px 0;
 }
@@ -6491,6 +6489,7 @@ section .section-title {
 }
 #footer {
     background: #007b5e !important;
+	font-size: 100px;
 }
 #footer h5{
 	padding-left: 10px;
@@ -6498,8 +6497,6 @@ section .section-title {
     padding-bottom: 6px;
     margin-bottom: 20px;
     color:#ffffff;
-	font-size: 1.8rem;
-	font-family: 'Adamina';font-size:16px;
 }
 #footer a {
     color: #ffffff;
@@ -6545,16 +6542,13 @@ section .section-title {
 #footer ul.quick-links li:hover a i {
     font-weight: 700;
 }
-body {
-    font-family: 'Adamina';font-size: 16px;
-}
+
 @media (max-width:767px){
 	#footer h5 {
     padding-left: 0;
     border-left: transparent;
     padding-bottom: 0px;
     margin-bottom: 10px;
-	font-family: 'Adamina';font-size:16px;
 }
 }
 
