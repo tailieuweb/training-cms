@@ -4469,7 +4469,7 @@ ul.footer-social li {
 /* Footer Widgets ---------------------------- */
 
 .footer-widgets-outer-wrapper {
-	border-bottom: 0.1rem solid #dedfdf;
+	/* border-bottom: 0.1rem solid #dedfdf; */
 }
 
 .footer-widgets + .footer-widgets {
@@ -5595,6 +5595,7 @@ a.to-the-top > * {
 
 	.footer-widgets-outer-wrapper {
 		padding: 8rem 0;
+		padding-bottom: 0;
 	}
 
 	.footer-widgets-wrapper {
@@ -6484,6 +6485,7 @@ a.to-the-top > * {
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
 	padding: 60px 0;
+	padding-top: 0;
 }
 
 section .section-title {
@@ -6556,3 +6558,20 @@ section .section-title {
 	}
 }
 
+.footer-nav-widgets-wrapper.header-footer-group {
+    background: #007b5e !important;
+}
+
+.footer-nav-widgets-wrapper.header-footer-group h2 {
+	color: #fff;
+    font-size: 28px;
+}
+.footer-nav-widgets-wrapper.header-footer-group a{
+	color: #fff;
+	font-size: 20px;
+    font-weight: 500;
+}
+.footer-nav-widgets-wrapper.header-footer-group a:hover {
+	text-decoration: none;
+	color: #cd2653;
+}
