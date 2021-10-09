@@ -3594,6 +3594,7 @@ figure.wp-block-table.is-style-stripes {
 [class*="__inner-container"] > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
 	max-width: 58rem;
 	width: 100%;
+	color: white;
 }
 
 .alignnone,
@@ -4739,10 +4740,10 @@ a.to-the-top > * {
 	}
 }
 
+
+
 @media ( min-width: 700px ) {
-
 	/* Element Base ------------------------- */
-
 	ul,
 	ol {
 		margin-bottom: 4rem;
@@ -4822,7 +4823,13 @@ a.to-the-top > * {
 	h2,
 	.heading-size-2 {
 		font-size: 4.8rem;
+		margin-top: revert;
+		color: white;
 	}
+	/* h2,
+	.heading-size-2 {
+		margin-top: revert;
+	} */
 
 	h3,
 	.heading-size-3 {
@@ -5254,6 +5261,7 @@ a.to-the-top > * {
 	.wp-block-cover-image h2,
 	.wp-block-cover h2 {
 		font-size: 4.8rem;
+		
 	}
 
 	/* BLOCK: GALLERY */
@@ -6508,6 +6516,7 @@ section .section-title {
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
 }
+<<<<<<< HEAD
 
 .footer-nav-widget a::before{
 	font-family: "FontAwesome";
@@ -6523,6 +6532,8 @@ section .section-title {
 }
 
 
+=======
+>>>>>>> 1-wordpress-581-202109/2-groups/1-D/4-11-Huy
 #footer ul.social li{
 	padding: 3px 0;
 }
@@ -6570,3 +6581,12 @@ section .section-title {
     margin-bottom: 10px;
 }
 }
+<<<<<<< HEAD
+=======
+.footer-nav-widgets-wrapper a::before{
+	font-family: "FontAwesome";
+   content: "\f101";
+   display: inline-block;
+   padding-right: 10px;
+}
+>>>>>>> 1-wordpress-581-202109/2-groups/1-D/4-11-Huy
