@@ -6516,8 +6516,6 @@ section .section-title {
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 .footer-nav-widget a::before{
 	font-family: "FontAwesome";
@@ -6532,11 +6530,6 @@ section .section-title {
 	transition: 1s all;
 }
 
-
-=======
->>>>>>> 1-wordpress-581-202109/2-groups/1-D/4-11-Huy
-=======
->>>>>>> 1-wordpress-581-202109/2-groups/1-D/3-15-Khang
 #footer ul.social li{
 	padding: 3px 0;
 }
@@ -6652,4 +6645,3 @@ section .section-title {
 .footer-widgets .widget .wp-block-group{
 	margin-top: 0!important;
 }
->>>>>>> 1-wordpress-581-202109/2-groups/1-D/3-15-Khang

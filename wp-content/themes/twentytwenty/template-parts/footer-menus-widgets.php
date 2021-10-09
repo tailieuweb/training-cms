@@ -14,10 +14,14 @@ $has_social_menu = has_nav_menu( 'social' );
 $has_sidebar_1 = is_active_sidebar( 'sidebar-1' );
 $has_sidebar_2 = is_active_sidebar( 'sidebar-2' );
 <<<<<<< HEAD
+<<<<<<< HEAD
 $has_sidebar_2 = is_active_sidebar( 'sidebar-3' );
 =======
 $has_sidebar_3 = is_active_sidebar( 'sidebar-3' );
 >>>>>>> 1-wordpress-581-202109/2-groups/1-D/3-15-Khang
+=======
+$has_sidebar_3 = is_active_sidebar( 'sidebar-3' );
+>>>>>>> 1-wordpress-581-202109/2-groups/1-D/2-40-Truong
 
 // Only output the container if there are elements to display.
 if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3 ) {
@@ -90,10 +94,14 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ||
 			<?php } ?>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<!-- ?php if ( $has_sidebar_1 || $has_sidebar_2 ) { ?>
 =======
 			<?php if ( $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3 ) { ?>
 >>>>>>> 1-wordpress-581-202109/2-groups/1-D/3-15-Khang
+=======
+			<?php if ( $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3) { ?>
+>>>>>>> 1-wordpress-581-202109/2-groups/1-D/2-40-Truong
 
 				<aside class="footer-widgets-outer-wrapper" role="complementary">
 
@@ -122,6 +130,15 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ||
 								</div>
 
 						<?php } ?>
+
+						<?php if ( $has_sidebar_3 ) { ?>
+
+							<div class="footer-widgets column-three grid-item">
+								<?php dynamic_sidebar( 'sidebar-3' ); ?>
+							</div>
+
+						<?php } ?>
+
 
 					</div><!-- .footer-widgets-wrapper -->
 
