@@ -18,10 +18,13 @@ $has_sidebar_3 = is_active_sidebar( 'sidebar-3' ); // Added by a dev.
 // Only output the container if there are elements to display.
 if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3 ) {
 	?>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<section id="footer">
 
-	<div class="footer-nav-widgets-wrapper header-footer-group">
-
-		<div class="footer-inner section-inner">
+		<div class="container">
 
 			<?php
 
@@ -87,13 +90,11 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ||
 
 			<?php if ( $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3 ) { ?>
 
-				<aside class="footer-widgets-outer-wrapper" role="complementary">
-
-					<div class="footer-widgets-wrapper">
+				<div class="row text-center text-xs-center text-sm-left text-md-left">
 
 						<?php if ( $has_sidebar_1 ) { ?>
 
-							<div class="footer-widgets column-one grid-item">
+							<div class="col-xs-12 col-sm-4 col-md-4">
 								<?php dynamic_sidebar( 'sidebar-1' ); ?>
 							</div>
 
@@ -101,7 +102,7 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ||
 
 						<?php if ( $has_sidebar_2 ) { ?>
 
-							<div class="footer-widgets column-two grid-item">
+							<div class="col-xs-12 col-sm-4 col-md-4">
 								<?php dynamic_sidebar( 'sidebar-2' ); ?>
 							</div>
 
@@ -109,20 +110,36 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ||
 
 						<?php if ( $has_sidebar_3 ) { ?>
 
-							<div class="footer-widgets column-three grid-item">
+							<div class="col-xs-12 col-sm-4 col-md-4">
 								<?php dynamic_sidebar( 'sidebar-3' ); ?>
 							</div>
 
 						<?php } ?>
 
-					</div><!-- .footer-widgets-wrapper -->
+				</div><!-- .footer-widgets-outer-wrapper -->
 
-				</aside><!-- .footer-widgets-outer-wrapper -->
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+						<ul class="list-unstyled list-inline social text-center">
+							<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
+										class="fa fa-facebook"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
+										class="fa fa-twitter"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
+										class="fa fa-instagram"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
+										class="fa fa-google-plus"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><i
+										class="fa fa-envelope"></i></a></li>
+						</ul>
+					</div>
+					<hr>
+				</div>
 
 			<?php } ?>
 
 		</div><!-- .footer-inner -->
 
-	</div><!-- .footer-nav-widgets-wrapper -->
+	</section><!-- .footer-nav-widgets-wrapper -->
 
 <?php } ?>
