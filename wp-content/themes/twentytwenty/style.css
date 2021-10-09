@@ -3160,6 +3160,7 @@ figure.wp-block-gallery.alignfull {
 }
 
 .wp-block-group__inner-container {
+	color: #ffffff;
 	margin: 0 auto;
 }
 
@@ -6543,6 +6544,7 @@ section .section-title {
 #footer ul.quick-links li:hover a i {
 	font-weight: 700;
 }
+
 @media (max-width:767px){
 	#footer h5 {
 		padding-left: 0;
@@ -6551,3 +6553,5 @@ section .section-title {
 		margin-bottom: 10px;
 	}
 }
+
+
