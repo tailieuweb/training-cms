@@ -6514,8 +6514,13 @@ section .section-title {
    content: "\f101";
    display: inline-block;
    padding-right: 10px;
+   
 }
 
+.footer-nav-widget li a:hover{
+	margin-left: 15px;
+	transition: 1s all;
+}
 
 
 #footer ul.social li{
