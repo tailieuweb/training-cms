@@ -5336,6 +5336,7 @@ section .section-title {
 #footer ul.quick-links li:hover a i {
 	font-weight: 700;
 }
+
 #footer ul, ol {
 	margin: 0 0 3rem -2rem;
 }
@@ -5347,4 +5348,33 @@ section .section-title {
 		padding-bottom: 0px;
 		margin-bottom: 10px;
 	}
+}
+
+#footer>div.container>div>div>div>div>div>div>h2 {
+	padding-left: 10px;
+	border-left: 3px solid #eeeeee;
+	padding-bottom: 6px;
+	margin-bottom: 20px;
+	color: #ffffff;
+}
+
+#footer>div.container>div>div>div>div>div>div>ul>li {
+	padding: 3px 0;
+	margin-left: 20px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+
+#footer>div.container>div>div>div>div>div>div>ul>li:hover {
+	padding: 3px 0;
+	margin-left: 3px;
+	font-weight: 700;
+}
+
+#footer>div.container>div>div>div>div>div>div>ul>li:hover a i {
+	font-weight: 700;
+}
+.fix-space{
+	padding-bottom: 5px;
 }
