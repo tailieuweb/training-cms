@@ -6363,3 +6363,8 @@ a.to-the-top > * {
 		top: 0;
 	}
 }
+
+
+.footer-top-visible .footer-nav-widgets-wrapper, .footer-top-hidden #site-footer{
+	background: #007b5e;
+}
