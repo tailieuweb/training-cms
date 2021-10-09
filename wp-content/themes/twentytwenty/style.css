@@ -4827,7 +4827,7 @@ a.to-the-top > * {
 
 	h3,
 	.heading-size-3 {
-		font-size: 4rem;
+		/*font-size: 4rem;*/
 	}
 
 	h4,
@@ -6492,7 +6492,7 @@ section .section-title {
 #footer {
 	background: #007b5e !important;
 }
-#footer h5{
+#footer h2{
 	padding-left: 10px;
 	border-left: 3px solid #eeeeee;
 	padding-bottom: 6px;
