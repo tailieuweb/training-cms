@@ -3844,7 +3844,7 @@ div.comment:first-of-type {
 /* -------------------------------------------------------------------------- */
 
 .footer-nav-widgets-wrapper, #site-footer {
-	background-color: #fff;
+	background-color: #007b5e !important;
 	border-color: #dedfdf;
 	border-style: solid;
 	border-width: 0;
@@ -3937,6 +3937,7 @@ ul.footer-social li {
 .footer-widgets+.footer-widgets {
 	margin-top: 3rem;
 }
+
 
 /* Footer Bottom ----------------------------- */
 
@@ -4688,6 +4689,7 @@ a.to-the-top>* {
 		justify-content: space-between;
 		margin-left: -4rem;
 		width: calc(100% + 4rem);
+		color: #fff !important;
 	}
 	.footer-widgets {
 		margin-left: 4rem;
@@ -5342,4 +5344,14 @@ section .section-title {
 		padding-bottom: 0px;
 		margin-bottom: 10px;
 	}
+}
+
+
+.footer-widgets a {
+	color: #fff !important;
+}
+
+.footer-widgets a::before {
+	content: "\f101";
+	font-size: 20px;
 }
