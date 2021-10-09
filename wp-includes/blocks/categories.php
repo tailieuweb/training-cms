@@ -42,12 +42,12 @@ function render_block_core_categories( $attributes ) {
 			);
 		}
 	} else {
-		$wrapper_markup = '<ul %1$s>%2$s</ul>';
+		$wrapper_markup = '<ul %1$s>%2$s </ul>';
 		$items_markup   = wp_list_categories( $args );
 		$type           = 'list';
 	}
 
-	$wrapper_attributes = get_block_wrapper_attributes( array( 'class' => "wp-block-categories-{$type}" ) );
+	$wrapper_attributes = get_block_wrapper_attributes( array( 'class' => "list-unstyled quick-links wp-block-categories-{$type}" ) );
 
 	return sprintf(
 		$wrapper_markup,
@@ -66,20 +66,21 @@ function render_block_core_categories( $attributes ) {
 function build_dropdown_script_block_core_categories( $dropdown_id ) {
 	ob_start();
 	?>
-	<script type='text/javascript'>
-	/* <![CDATA[ */
-	( function() {
-		var dropdown = document.getElementById( '<?php echo esc_js( $dropdown_id ); ?>' );
-		function onCatChange() {
-			if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
-				location.href = "<?php echo home_url(); ?>/?cat=" + dropdown.options[ dropdown.selectedIndex ].value;
-			}
-		}
-		dropdown.onchange = onCatChange;
-	})();
-	/* ]]> */
-	</script>
-	<?php
+<script type='text/javascript'>
+/* <![CDATA[ */
+(function() {
+    var dropdown = document.getElementById('<?php echo esc_js( $dropdown_id ); ?>');
+
+    function onCatChange() {
+        if (dropdown.options[dropdown.selectedIndex].value > 0) {
+            location.href = "<?php echo home_url(); ?>/?cat=" + dropdown.options[dropdown.selectedIndex].value;
+        }
+    }
+    dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+<?php
 	return ob_get_clean();
 }
 
