@@ -6137,3 +6137,35 @@ section .section-title {
 #site-footer ul.quick-links li:hover a i {
     font-weight: 700;
 }
+
+.footer-nav-widgets-wrapper.header-footer-group {
+    background-color: #007b5e;
+    color: #FFF;
+}
+
+.footer-nav-widgets-wrapper.header-footer-group .wp-block-group__inner-container a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-nav-widgets-wrapper.header-footer-group .wp-block-group__inner-container h2 {
+    font-size: 30px;
+}
+
+.footer-nav-widgets-wrapper.header-footer-group ul.wp-block-latest-posts__list.wp-block-latest-posts a {
+    color: #FFF;
+    font-size: 15px;
+}
+
+footer.wp-block-latest-comments__comment-meta a {
+    color: #FFF;
+}
+
+ul.wp-block-categories-list.wp-block-categories li a {
+    color: #FFF;
+}
+
+time.wp-block-latest-comments__comment-date {
+    color: #fff;
+}
