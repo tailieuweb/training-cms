@@ -40,6 +40,13 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<?php wp_footer(); ?>
+<script>
+    jQuery( document ).ready(function() {
+        jQuery('.wp-block-group__inner-container>ul').addClass('list-unstyled quick-links');
+        jQuery('.wp-block-group__inner-container>ul>li').prepend($('<i class="fa fa-angle-double-right mr-2">'));
+        jQuery('.wp-block-group__inner-container>h3').css({"border-left": "3px solid #eeeeee", "padding-left": "10px"});
+    });
+</script>
 
 	</body>
 </html>
