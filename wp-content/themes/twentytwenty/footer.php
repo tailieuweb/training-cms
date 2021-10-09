@@ -1,22 +1,8 @@
-<?php
-/**
- * The template for displaying the footer
- *
- * Contains the opening of the #site-footer div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
- */
-
-?>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="https://kit.fontawesome.com/473ccb2a41.js" crossorigin="anonymous"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- Footer -->
+<link href='https://fonts.googleapis.com/css?family=Adamina' rel='stylesheet'>
+<script src="https://kit.fontawesome.com/473ccb2a41.js" crossorigin="anonymous"></script>
 <style>
     body {
         font-family: 'Adamina';
@@ -38,7 +24,7 @@
                 </ul>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4">
-                <h5>Recent Comments</h5>
+                <h5 >Quick links</h5>
                 <ul class="list-unstyled quick-links">
                     <li class="wp-block-latest-comments__comment">
                         <a class="wp-block-latest-comments__comment-author"
@@ -50,7 +36,8 @@
                 </ul>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4">
-                <h5>Archives</h5>
+                <h5 >Quick links</h5>
+
                 <ul class="list-unstyled quick-links">
                     <li><a href="http://wordpress.local/2021/09/">September 2021</a></li>
                 </ul>
@@ -86,9 +73,8 @@
         </div>
     </div>
 </section>
+
 <!-- ./Footer -->
-
 <?php wp_footer(); ?>
-
 
 </html>
