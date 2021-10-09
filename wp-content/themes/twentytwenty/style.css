@@ -5349,9 +5349,28 @@ section .section-title {
 
 .footer-widgets a {
 	color: #fff !important;
+	font-weight: 400;
 }
 
 .footer-widgets a::before {
+	font: normal normal normal 14px/1 FontAwesome;
 	content: "\f101";
-	font-size: 20px;
+	padding-right: 5px;
+	margin-bottom: 20px;
+	display: inline-block;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+}
+footer-widgets li {
+	display: flex;
+	align-items: center;
+}
+
+.wp-block-group__inner-container h2 {
+	padding-left: 10px;
+	border-left: 3px solid #eeeeee;
+	padding-bottom: 6px;
+	margin-bottom: 20px;
+	color: #ffffff;
 }
