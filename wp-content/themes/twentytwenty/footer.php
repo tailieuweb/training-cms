@@ -24,7 +24,7 @@
                 </ul>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4">
-                <h5 >Quick links</h5>
+                <h5 >Recent Comments</h5>
                 <ul class="list-unstyled quick-links">
                     <li class="wp-block-latest-comments__comment">
                         <a class="wp-block-latest-comments__comment-author"
@@ -36,7 +36,7 @@
                 </ul>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4">
-                <h5 >Quick links</h5>
+                <h5 >Archives</h5>
 
                 <ul class="list-unstyled quick-links">
                     <li><a href="http://wordpress.local/2021/09/">September 2021</a></li>
