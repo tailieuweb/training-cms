@@ -6546,12 +6546,84 @@ section .section-title {
 
 	@media (max-width:767px){
 		#footer h5 {
-		padding-left: 0;
-		border-left: transparent;
-		padding-bottom: 0px;
-		margin-bottom: 10px;
+			padding-left: 0;
+			border-left: transparent;
+			padding-bottom: 0px;
+			margin-bottom: 10px;
+		}
 	}
+
+/* CSS Footer Menu Widgets */
+.footer-nav-widgets-wrapper{
+	background: #007b5e!important;
+	color: #fff!important;
 }
 
+.footer-nav-widgets-wrapper h2{
+	font-size: 25px;
+	position: relative;
+}
+
+.footer-nav-widgets-wrapper h2::before{
+	content: '';
+    position: absolute;
+    width: 3px;
+    left: -18px;
+    background: #fff;
+    height: 40px;
+}
+
+
+.footer-nav-widgets-wrapper a{
+	text-decoration: none;
+	color: #fff !important;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.footer-nav-widgets-wrapper a::before{
+	font-family: "FontAwesome";
+   content: "\f101";
+   display: inline-block;
+   padding-right: 10px;
+}
+
+.footer-nav-widgets-wrapper a:hover{
+	margin-left: 6px;
+	text-decoration: none;
+}
+
+.column-two{
+	display: flex;
+    justify-content: space-between;
+}
+
+.footer-widgets .widget{
+	margin-top: 0;
+}
+
+
+.footer-widgets .widget .wp-block-group{
+	margin-top: 0!important;
+}
+
+.column-three td{
+	color: #fff;
+}
+
+.column-three #wp-calendar{
+	background: #6d6d6d;
+}
+
+.column-three #wp-calendar a{
+	color: #fff!important;
+	font-weight: 500;
+	font-size: 17px;
+}
+
+.column-three #wp-calendar a:hover{
+	margin-left: 0;
+	color: red!important;
+}
 
 
