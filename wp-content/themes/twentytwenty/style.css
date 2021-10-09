@@ -6612,7 +6612,9 @@ section .section-title {
 }
 
 .column-three #wp-calendar{
-	background: #6d6d6d;
+	box-shadow: 0px 0px 14px 7px rgba(0, 0, 0, 0.4);
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .column-three #wp-calendar a{
@@ -6624,6 +6626,10 @@ section .section-title {
 .column-three #wp-calendar a:hover{
 	margin-left: 0;
 	color: red!important;
+}
+
+.column-three h2{
+	margin-top: 0;
 }
 
 
