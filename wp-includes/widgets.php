@@ -863,7 +863,7 @@ function dynamic_sidebar( $index = 1 ) {
 	 *                            Default false.
 	 * @param int|string $index   Index, name, or ID of the dynamic sidebar.
 	 */
-	return apply_filters( 'dynamic_sidebar_has_widgets', $did_one, $index );
+	return apply_filters( 'dynamic_sidebar_has_widgets', $did_one, $index );	
 }
 
 /**

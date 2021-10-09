@@ -6508,6 +6508,16 @@ section .section-title {
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
 }
+
+.footer-nav-widget a::before{
+	font-family: "FontAwesome";
+   content: "\f101";
+   display: inline-block;
+   padding-right: 10px;
+}
+
+
+
 #footer ul.social li{
 	padding: 3px 0;
 }
