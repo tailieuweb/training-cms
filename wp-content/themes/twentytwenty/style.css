@@ -460,7 +460,8 @@ hr.styled-separator::after {
 }
 
 a {
-    color: #cd2653;
+    /* color: #cd2653; */
+    color: #fff !important;
     text-decoration: underline;
 }
 
@@ -4427,7 +4428,8 @@ div.comment:first-of-type {
 
 .footer-nav-widgets-wrapper,
 #site-footer {
-    background-color: #fff;
+    background-color: #007b5e;
+    color: #fff !important;
     border-color: #dedfdf;
     border-style: solid;
     border-width: 0;
@@ -4798,7 +4800,7 @@ a.to-the-top>* {
     }
     h2,
     .heading-size-2 {
-        font-size: 4.8rem;
+        font-size: 4.8rem !important;
     }
     h3,
     .heading-size-3 {
@@ -6138,4 +6140,19 @@ section .section-title {
         padding-bottom: 0px;
         margin-bottom: 10px;
     }
+}
+
+.column-one h2,
+.column-two h2,
+.column-third h2 {
+    border-left: 5px solid #fff;
+    padding-left: 5px;
+}
+
+.column-third ul {
+    list-style: none;
+}
+
+.column-third a {
+    font-weight: 700;
 }
