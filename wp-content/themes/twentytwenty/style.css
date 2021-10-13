@@ -6577,10 +6577,6 @@ section .section-title {
     margin-bottom: 10px;
 }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
 .footer-nav-widgets-wrapper{
 	background: #007b5e!important;
 	color: #fff!important;
@@ -6608,16 +6604,12 @@ section .section-title {
 	font-weight: 400;
 }
 
->>>>>>> 1-wordpress-581-202109/2-groups/1-D/3-15-Khang
 .footer-nav-widgets-wrapper a::before{
 	font-family: "FontAwesome";
    content: "\f101";
    display: inline-block;
    padding-right: 10px;
 }
-<<<<<<< HEAD
->>>>>>> 1-wordpress-581-202109/2-groups/1-D/4-11-Huy
-=======
 
 .footer-nav-widgets-wrapper a:hover{
 	margin-left: 6px;
