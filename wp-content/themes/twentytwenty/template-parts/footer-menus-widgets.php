@@ -19,7 +19,7 @@ $has_sidebar_3 = is_active_sidebar( 'sidebar-3' );
 if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3 ) {
 	?>
 
-	<div class="footer-nav-widgets-wrapper header-footer-group">
+	<div class="footer-nav-widgets-wrapper header-footer-group" id="footer">
 
 		<div class="footer-inner section-inner">
 
@@ -85,7 +85,7 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ||
 
 			<?php } ?>
 
-			<?php if ( $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3 ) { ?>
+			<?php if ( $has_sidebar_1 || $has_sidebar_2  || $has_sidebar_3 ) { ?>
 
 				<aside class="footer-widgets-outer-wrapper" role="complementary">
 
@@ -106,14 +106,13 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ||
 							</div>
 
 						<?php } ?>
-						<?php if ( $has_sidebar_3 ) { ?>
+                        <?php if ( $has_sidebar_3 ) { ?>
 
-							<div class="footer-widgets column-two grid-item">
-								<?php dynamic_sidebar( 'sidebar-3' ); ?>
-							</div>
+                            <div class="footer-widgets column-two grid-item">
+                                <?php dynamic_sidebar( 'sidebar-3' ); ?>
+                            </div>
 
-						<?php } ?>
-						
+                        <?php } ?>
 
 					</div><!-- .footer-widgets-wrapper -->
 
