@@ -61,7 +61,7 @@ function render_block_core_latest_posts( $attributes ) {
 	foreach ( $recent_posts as $post ) {
 		$post_link = esc_url( get_permalink( $post ) );
 
-		$list_items_markup .= '<li>';
+		$list_items_markup .= '<li> <i class="fa fa-angle-double-right"></i> ';
 
 		if ( $attributes['displayFeaturedImage'] && has_post_thumbnail( $post ) ) {
 			$image_style = '';
