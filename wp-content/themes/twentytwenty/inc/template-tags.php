@@ -290,9 +290,9 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 		$post_meta = apply_filters(
 			'twentytwenty_post_meta_location_single_top',
 			array(
-				'author',
+				// 'author',
 				'post-date',
-				'comments',
+				// 'comments',
 				'sticky',
 			)
 		);

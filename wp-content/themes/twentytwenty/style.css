@@ -618,10 +618,7 @@ video {
 	display: block;
 }
 
-svg,
-img,
-embed,
-object {
+svg,img,embed,object {
 	display: block;
 	height: auto;
 	max-width: 100%;
@@ -2441,6 +2438,7 @@ h2.entry-title {
 .entry-title a {
 	color: inherit;
 	text-decoration: none;
+	
 }
 
 .entry-title a:focus,
@@ -5069,7 +5067,7 @@ a.to-the-top > * {
 	}
 
 	h2.entry-title {
-		font-size: 6.4rem;
+		font-size: 18px;
 	}
 
 	/* SEARCH RESULTS */
@@ -6477,6 +6475,37 @@ a.to-the-top > * {
 		top: 0;
 	}
 }
+
+/*adjust css*/
+
+
+
+/*css contain-main, entry-content*/
+.content-main{
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 20px 0;
+}
+.entry-content .content-main .content-adjust-post .entry-title-adjust{
+	margin: 0;
+	font-size: 26px;
+}
+.entry-title-adjust a{
+	color: #428bca;
+	text-decoration: none;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content-adjust-post-meta .post-meta-wrapper{
+	margin-top: 0;
+}
+.content-adjust-post{
+	padding: 5px;
+}
+.content-adjust-post-meta{
+	padding: 5px;
+}
+/*end css entry-content*/
+
 
 
 
