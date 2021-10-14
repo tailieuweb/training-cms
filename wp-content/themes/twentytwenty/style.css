@@ -3172,7 +3172,22 @@ figure.wp-block-gallery.alignfull {
 	padding-left: 2rem;
 	padding-right: 2rem;
 }
-
+/* block : H1 */
+.wp-block-group__inner-container h1 {
+    padding-left: 10px !important;
+    border-left: 3px solid #000 !important;
+	font-size: 35px;
+    padding-bottom: 6px !important;
+    margin-bottom: 20px !important;
+    color: #000 !important;
+}
+/* block li a++++++++ */
+.footer-inner.section-inner .widget.widget_block .widget-content ul li a::before{
+	content: '»';
+	font-size: 28px;
+	font-weight: 300;
+	margin-right: 10px;
+}
 /* Block: Image ------------------------------ */
 
 /* Block: Media And Text --------------------- */
