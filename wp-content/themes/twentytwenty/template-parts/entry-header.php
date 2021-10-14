@@ -29,23 +29,31 @@ if ( is_singular() ) {
 		 */
 		$show_categories = apply_filters( 'twentytwenty_show_categories_in_entry_header', true );
 
-		if ( true === $show_categories && has_category() ) {
-			?>
-
-			<div class="entry-categories">
-				<span class="screen-reader-text"><?php _e( 'Categories', 'twentytwenty' ); ?></span>
-				<div class="entry-categories-inner">
-					<?php the_category( ' ' ); ?>
-				</div><!-- .entry-categories-inner -->
-			</div><!-- .entry-categories -->
-
-			<?php
-		}
+//		if ( true === $show_categories && has_category() ) {
+//			?>
+<!---->
+<!--			<div class="entry-categories">-->
+<!--				<span class="screen-reader-text">--><?php //_e( 'Categories', 'twentytwenty' ); ?><!--</span>-->
+<!--				<div class="entry-categories-inner">-->
+<!--					--><?php //the_category( ' ' ); ?>
+<!--				</div>-->
+<!--			</div>-->
+<!---->
+<!--			--><?php
+//		}
 
 		if ( is_singular() ) {
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		} else {
-			the_title( '<h2 class="entry-title heading-size-1"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
+//			the_title( '<h2 class="entry-title heading-size-1"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
+
+            $value = get_post();
+            $posta = $value->post_content;
+            $temp_start = strpos($posta,'<figure');
+            $temp_end = strpos($posta,'</figure>');
+            $temp2 = substr($posta, $temp_start, $temp_end);
+            echo $temp2;
+
 		}
 
 		$intro_text_width = '';

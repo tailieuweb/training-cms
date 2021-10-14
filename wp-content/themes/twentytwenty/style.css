@@ -152,6 +152,7 @@ body {
 
 #site-content {
 	overflow: hidden;
+	padding: 4rem;
 }
 
 
@@ -618,7 +619,7 @@ video {
 	display: block;
 }
 
-svg,
+
 img,
 embed,
 object {
@@ -1008,7 +1009,13 @@ section {
 }
 
 .section-inner.medium {
-	max-width: 100rem;
+	max-width: 100%;
+	border-right: 2px solid black;
+}
+.danh-sach .section-inner.medium {
+	max-width: 100%;
+	display: flex;
+	border-right: 2px solid black;
 }
 
 .section-inner.no-margin {
@@ -2437,6 +2444,10 @@ h1.entry-title,
 h2.entry-title {
 	margin: 0;
 }
+.danh-sach h1.entry-title,
+.danh-sach h2.entry-title {
+	width: 60%;
+}
 
 .entry-title a {
 	color: inherit;
@@ -2464,12 +2475,13 @@ h2.entry-title {
 	justify-content: center;
 }
 
-.post-meta-wrapper {
+
+ .post-meta-wrapper {
 	margin-top: 2rem;
 	margin-right: auto;
 	margin-left: auto;
 	max-width: 58rem;
-	width: 100%;
+	width: 40%;
 }
 
 .post-meta {
@@ -2500,16 +2512,21 @@ h2.entry-title {
 }
 
 .post-meta .meta-wrapper {
+	font-size: 32px;
 	align-items: center;
-	display: flex;
 	flex-wrap: nowrap;
 }
 
 .post-meta .meta-icon {
 	flex-shrink: 0;
-	margin-right: 1rem;
+	margin: 1rem;
 }
+.danh-sach .post-meta .meta-icon {
 
+	flex-shrink: 0;
+	margin: 0 auto;
+	display: block;
+}
 .sticky .post-sticky {
 	color: inherit;
 }
@@ -2530,8 +2547,9 @@ h2.entry-title {
 }
 
 .post-meta .post-date .meta-icon svg {
-	width: 1.7rem;
-	height: 1.8rem;
+	width: 2.7rem;
+	height: 2.8rem;
+	color: #000;
 }
 
 .post-meta .post-edit .meta-icon svg {
@@ -2593,7 +2611,7 @@ h2.entry-title {
 }
 
 .post-inner {
-	padding-top: 5rem;
+	/*padding-top: 5rem;*/
 }
 
 .reduced-spacing.missing-post-thumbnail .post-inner {
@@ -2628,10 +2646,12 @@ h2.entry-title {
 /* POST META BOTTOM */
 
 .post-meta-wrapper.post-meta-single-bottom {
-	margin-top: 3rem;
+	margin-top: 0rem;
 }
 
-
+.danh-sach .post-meta-wrapper.post-meta-single-bottom {
+	margin-top: 3rem;
+}
 /* Author Bio -------------------------------- */
 
 .author-bio {
@@ -2798,6 +2818,10 @@ h2.entry-title {
 
 .has-text-align-center {
 	text-align: center;
+}
+article.danh-sach .has-text-align-center{
+	text-align: center;
+	width: 60%;
 }
 
 .has-text-align-right {
@@ -4636,6 +4660,10 @@ a.to-the-top > * {
 	.template-cover .post-inner .author-bio {
 		width: calc( 100% - 4rem );
 	}
+	.template-cover .danh-sach .post-inner .post-meta-wrapper,
+	.template-cover .danh-sach .post-inner .author-bio{
+		width: 40%;
+	}
 
 	/* Post Footer --------------------------- */
 
@@ -5067,6 +5095,14 @@ a.to-the-top > * {
 	body:not(.singular) main > article:first-of-type {
 		padding: 8rem 0 0;
 	}
+	body:not(.singular) main > article.danh-sach {
+		width: 100%;
+		display: flex;
+		padding: 8rem 0 8rem;
+		border: 1px solid #000;
+		border-radius: 5px;
+		box-shadow: 0 2px 10px gray;
+	}
 
 	h2.entry-title {
 		font-size: 6.4rem;
@@ -5127,9 +5163,16 @@ a.to-the-top > * {
 	}
 
 	.post-inner {
-		padding-top: 8rem;
+		/*padding-top: 8rem;*/
+	}
+	.danh-sach .post-inner {
+		/*padding-top: 8rem;*/
+		width: 40%;
 	}
 
+	.danh-sach .section-inner.medium p{
+		display: none !important;
+	}
 	/* POST FOOTER */
 
 	.post-meta-wrapper.post-meta-single-bottom {
@@ -6130,6 +6173,10 @@ a.to-the-top > * {
 	h1,
 	.heading-size-1 {
 		font-size: 8.4rem;
+	}
+	h1,
+	.heading-size-1-2 {
+		font-size: 4.4rem !important;
 	}
 
 	/* Helper Classes ------------------------ */
