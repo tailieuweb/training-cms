@@ -1369,7 +1369,6 @@ body:not(.enable-search-modal) .header-titles-wrapper {
 }
 
 .site-title a {
-  color: inherit;
   display: block;
   text-decoration: none;
 }
@@ -2359,7 +2358,11 @@ body.template-full-width
 /* -------------------------------------------------------------------------- */
 
 /* Archive Header ---------------------------- */
-
+article.danhsach {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .archive-header {
   background-color: #fff;
   padding: 4rem 0;
@@ -2382,9 +2385,9 @@ body.template-full-width
 
 /* Posts ------------------------------------- */
 
-body:not(.singular) main > article:first-of-type {
+/* body:not(.singular) main > article:first-of-type {
   padding: 4rem 0 0;
-}
+} */
 
 /* Search Results ---------------------------- */
 
@@ -2433,6 +2436,7 @@ body:not(.singular) main > article:first-of-type {
 
 h1.entry-title,
 h2.entry-title {
+  color: black;
   margin: 0;
 }
 
@@ -2466,8 +2470,7 @@ h2.entry-title {
   margin-top: 2rem;
   margin-right: auto;
   margin-left: auto;
-  max-width: 58rem;
-  width: 100%;
+  min-width: 66px;
 }
 
 .post-meta {
@@ -5083,9 +5086,9 @@ a.to-the-top > * {
     font-size: 3.2rem;
   }
 
-  body:not(.singular) main > article:first-of-type {
+  /* body:not(.singular) main > article:first-of-type {
     padding: 8rem 0 0;
-  }
+  } */
 
   h2.entry-title {
     font-size: 6.4rem;
@@ -6729,4 +6732,57 @@ ul.list-unstyled.quick-links li {
 .wp-block-latest-posts__list.wp-block-latest-posts li a:not(:hover) {
   transition: all 0.3s !important;
   transform: scale(1, 1) !important;
+}
+
+/* Custom All Posts */
+.featured-media {
+  display: none;
+}
+
+/* Xep lai thu tu */
+header.entry-header.has-text-align-center {
+  order: 2;
+}
+.post-inner.thin {
+  order: 1;
+  padding: 0px;
+}
+.section-inner {
+  order: 3;
+}
+
+h2.entry-title {
+  font-size: 18px;
+}
+.khongcan {
+  display: none;
+}
+article {
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.post-meta-wrapper.post-meta-single.post-meta-single-top {
+  order: 2;
+}
+.danhsach .entry-content p {
+  display: none;
+}
+.danhsach .entry-header-inner.section-inner.medium {
+  border-left: 1px solid black;
+  margin-top: 20px;
+}
+.entry-header-inner.section-inner.medium p {
+  margin-top: 8px;
+  color: black !important;
+}
+.danhsach .meta-text {
+  text-align: center;
+}
+.danhsach .day {
+  color: #333333;
+  font-size: 36.06px;
+}
+.danhsach .month {
+  font-size: 11.34px;
 }

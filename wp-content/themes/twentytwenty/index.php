@@ -18,7 +18,7 @@
 get_header();
 ?>
 
-<main id="site-content" role="main">
+<main id="site-content" role="main" class="col-md-12">
 
 	<?php
 
@@ -57,23 +57,23 @@ get_header();
 
 	if ($archive_title || $archive_subtitle) {
 	?>
+		<div class="col-md-4">
+			<header class="archive-header has-text-align-center header-footer-group">
 
-		<header class="archive-header has-text-align-center header-footer-group">
+				<div class="archive-header-inner section-inner medium">
 
-			<div class="archive-header-inner section-inner medium">
+					<?php if ($archive_title) { ?>
+						<h1 class="archive-title"><?php echo wp_kses_post($archive_title); ?></h1>
+					<?php } ?>
 
-				<?php if ($archive_title) { ?>
-					<h1 class="archive-title"><?php echo wp_kses_post($archive_title); ?></h1>
-				<?php } ?>
+					<?php if ($archive_subtitle) { ?>
+						<div class="archive-subtitle section-inner thin max-percentage intro-text"><?php echo wp_kses_post(wpautop($archive_subtitle)); ?></div>
+					<?php } ?>
 
-				<?php if ($archive_subtitle) { ?>
-					<div class="archive-subtitle section-inner thin max-percentage intro-text"><?php echo wp_kses_post(wpautop($archive_subtitle)); ?></div>
-				<?php } ?>
+				</div><!-- .archive-header-inner -->
 
-			</div><!-- .archive-header-inner -->
-
-		</header><!-- .archive-header -->
-
+			</header><!-- .archive-header -->
+		</div>
 	<?php
 	}
 
@@ -82,10 +82,10 @@ get_header();
 		$i = 0;
 
 		while (have_posts()) {
-			$i++;
-			if ($i > 1) {
-				echo '<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
-			}
+			// $i++;
+			// if ($i > 1) {
+			// 	echo '<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
+			// }
 			the_post();
 
 			get_template_part('template-parts/content', get_post_type());
@@ -108,6 +108,8 @@ get_header();
 	<?php
 	}
 	?>
+
+
 
 	<?php get_template_part('template-parts/pagination'); ?>
 
