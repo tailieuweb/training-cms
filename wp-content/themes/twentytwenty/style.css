@@ -6485,6 +6485,10 @@ a.to-the-top > * {
 		top: 0;
 	}
 }
+
+
+
+/* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
     padding: 60px 0;
@@ -6512,9 +6516,20 @@ section .section-title {
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
 }
-#footer a:hover{
-	margin-right: 10px;
+
+.footer-nav-widget a::before{
+	font-family: "FontAwesome";
+   content: "\f101";
+   display: inline-block;
+   padding-right: 10px;
+   
 }
+
+.footer-nav-widget li a:hover{
+	margin-left: 15px;
+	transition: 1s all;
+}
+
 #footer ul.social li{
 	padding: 3px 0;
 }
@@ -6562,9 +6577,63 @@ section .section-title {
     margin-bottom: 10px;
 }
 }
+.footer-nav-widgets-wrapper{
+	background: #007b5e!important;
+	color: #fff!important;
+}
+
+.footer-nav-widgets-wrapper h2{
+	font-size: 25px;
+	position: relative;
+}
+
+.footer-nav-widgets-wrapper h2::before{
+	content: '';
+    position: absolute;
+    width: 3px;
+    left: -18px;
+    background: #fff;
+    height: 40px;
+}
+
+
+.footer-nav-widgets-wrapper a{
+	text-decoration: none;
+	color: #fff !important;
+	font-size: 15px;
+	font-weight: 400;
+}
+
 .footer-nav-widgets-wrapper a::before{
 	font-family: "FontAwesome";
    content: "\f101";
    display: inline-block;
    padding-right: 10px;
+}
+
+.footer-nav-widgets-wrapper a:hover{
+	margin-left: 6px;
+	text-decoration: none;
+}
+
+.column-two{
+	display: flex;
+	margin-top: 0px;
+}
+.column-three h2{
+	margin-top: 0px;
+}
+
+.column-three ul{
+	margin-top: -10px!important;
+}
+
+
+.footer-widgets .widget{
+	margin-top: 0;
+}
+
+
+.footer-widgets .widget .wp-block-group{
+	margin-top: 0!important;
 }
