@@ -18,7 +18,6 @@
 	<?php
 
 	get_template_part( 'template-parts/entry-header' );
-
 	if ( ! is_search() ) {
 		get_template_part( 'template-parts/featured-image' );
 	}
@@ -34,6 +33,8 @@
 				the_excerpt();
 			} else {
 				the_content( __( 'Continue reading', 'twentytwenty' ) );
+
+
 			}
 			?>
 

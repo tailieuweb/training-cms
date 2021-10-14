@@ -26,10 +26,52 @@
 
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!--	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!------ Include the above in your HEAD tag ---------->
 
+    <style>
+
+        .list_new_view {
+            font-size: 0.9em;
+            padding: 15px;
+        }
+        .list_new_view .topnewstime > span.topnewsdate {
+            font-family: 'Prata', serif;
+            font-size: 3.1em;
+            line-height: 1em;
+            margin-left: 15px;
+        }
+        .list_new_view .topnewstime > span.topnewsmonth {
+            text-transform: uppercase;
+            font-size: 0.9em;
+            margin-left: 15px;
+        }
+        .list_new_view a {
+            color: #428bca;
+            text-decoration: none;
+        }
+        .list_new_view .shortdesc {
+            border-left: 1px solid #666;
+        }
+        .list_new_view .shortdesc h4 {
+            padding-top: 0;
+            margin-top: 0;
+        }
+        .list_new_view .row .top_news_block_desc {
+            background: #fff;
+            -webkit-box-shadow: 0px 0px 5px 0px rgb(0 0 calc(0 / 20%));
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 0px 5px 0px rgb(0 0 calc(0 / 20%));
+            padding: 15px;
+        }
+        .list_new_view {
+            margin-bottom: 15px;
+        }
+        #site-content {
+            margin-left: 20px;
+        }
+    </style>
 	<?php wp_head(); ?>
 
 </head>
