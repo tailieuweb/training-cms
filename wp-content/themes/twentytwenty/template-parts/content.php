@@ -10,10 +10,14 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
+$class = '';
+if(!is_single()){
+	$class = 'danhsach';
+}
 
 ?>
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+<article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
 
 	<?php
 
@@ -33,7 +37,14 @@
 			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
 				the_excerpt();
 			} else {
-				the_content( __( 'Continue reading', 'twentytwenty' ) );
+				if(is_single()){
+					the_content( __( 'Continue reading', 'twentytwenty' ) );
+				}else{
+					$post = get_post();
+					$content = $post->post_content;
+					echo substr($content, 0, 70);
+				}
+				
 			}
 			?>
 

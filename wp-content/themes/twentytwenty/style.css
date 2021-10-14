@@ -5074,7 +5074,7 @@ a.to-the-top > * {
 	body:not(.singular) main > article:first-of-type {
 		padding: 8rem 0 0;
 	}
-
+	
 	h2.entry-title {
 		font-size: 6.4rem;
 	}
@@ -6636,4 +6636,9 @@ section .section-title {
 
 .footer-widgets .widget .wp-block-group{
 	margin-top: 0!important;
+}
+.danhsach{
+	background: white;
+	margin: 20px 221px;
+		border: 1px solid white;
 }
