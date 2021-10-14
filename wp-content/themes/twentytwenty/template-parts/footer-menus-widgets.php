@@ -21,81 +21,81 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
 ?>
 
 	<div class="footer-nav-widgets-wrapper header-footer-group">
-	<div class="footer-nav-widgets-wrapper header-footer-group footer-more-information">
+		<div class="footer1">
+			<div class="footer-inner section-inner">
 
-		<div class="footer-inner section-inner">
+				<?php
 
-			<?php
+				$footer_top_classes = '';
 
-			$footer_top_classes = '';
+				$footer_top_classes .= $has_footer_menu ? ' has-footer-menu' : '';
+				$footer_top_classes .= $has_social_menu ? ' has-social-menu' : '';
 
-			$footer_top_classes .= $has_footer_menu ? ' has-footer-menu' : '';
-			$footer_top_classes .= $has_social_menu ? ' has-social-menu' : '';
+				if ($has_footer_menu || $has_social_menu) {
+				?>
+					<div class="footer-top<?php echo $footer_top_classes; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output 
+											?>">
+						<?php if ($has_footer_menu) { ?>
 
-			if ($has_footer_menu || $has_social_menu) {
-			?>
-				<div class="footer-top<?php echo $footer_top_classes; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output 
-										?>">
-					<?php if ($has_footer_menu) { ?>
+							<nav aria-label="<?php esc_attr_e('Footer', 'twentytwenty'); ?>" role="navigation" class="footer-menu-wrapper">
 
-						<nav aria-label="<?php esc_attr_e('Footer', 'twentytwenty'); ?>" role="navigation" class="footer-menu-wrapper">
+								<ul class="footer-menu reset-list-style">
+									<?php
+									wp_nav_menu(
+										array(
+											'container'      => '',
+											'depth'          => 1,
+											'items_wrap'     => '%3$s',
+											'theme_location' => 'footer',
+										)
+									);
+									?>
+								</ul>
 
-							<ul class="footer-menu reset-list-style">
-								<?php
-								wp_nav_menu(
-									array(
-										'container'      => '',
-										'depth'          => 1,
-										'items_wrap'     => '%3$s',
-										'theme_location' => 'footer',
-									)
-								);
-								?>
-							</ul>
+							</nav><!-- .site-nav -->
 
-						</nav><!-- .site-nav -->
+						<?php } ?>
+						<?php if ($has_social_menu) { ?>
 
-					<?php } ?>
-					<?php if ($has_social_menu) { ?>
+							<nav aria-label="<?php esc_attr_e('Social links', 'twentytwenty'); ?>" class="footer-social-wrapper">
 
-						<nav aria-label="<?php esc_attr_e('Social links', 'twentytwenty'); ?>" class="footer-social-wrapper">
+								<ul class="social-menu footer-social reset-list-style social-icons fill-children-current-color">
 
-							<ul class="social-menu footer-social reset-list-style social-icons fill-children-current-color">
+									<?php
+									wp_nav_menu(
+										array(
+											'theme_location'  => 'social',
+											'container'       => '',
+											'container_class' => '',
+											'items_wrap'      => '%3$s',
+											'menu_id'         => '',
+											'menu_class'      => '',
+											'depth'           => 1,
+											'link_before'     => '<span class="screen-reader-text">',
+											'link_after'      => '</span>',
+											'fallback_cb'     => '',
+										)
+									);
+									?>
 
-								<?php
-								wp_nav_menu(
-									array(
-										'theme_location'  => 'social',
-										'container'       => '',
-										'container_class' => '',
-										'items_wrap'      => '%3$s',
-										'menu_id'         => '',
-										'menu_class'      => '',
-										'depth'           => 1,
-										'link_before'     => '<span class="screen-reader-text">',
-										'link_after'      => '</span>',
-										'fallback_cb'     => '',
-									)
-								);
-								?>
+								</ul><!-- .footer-social -->
 
-							</ul><!-- .footer-social -->
+							</nav><!-- .footer-social-wrapper -->
 
-						</nav><!-- .footer-social-wrapper -->
+						<?php } ?>
+					</div><!-- .footer-top -->
 
-					<?php } ?>
-				</div><!-- .footer-top -->
+				<?php } ?>
 
-			<?php } ?>
+				<?php if ($has_sidebar_1 || $has_sidebar_2) { ?>
 
-			<?php if ($has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3) { ?>
-				<section id="footer">
-					<div class="container">
-						<div class="row text-center text-xs-center text-sm-left text-md-left">
+					<aside class="footer-widgets-outer-wrapper" role="complementary">
+
+						<div class="footer-widgets-wrapper">
+
 							<?php if ($has_sidebar_1) { ?>
 
 								<div class="footer-widgets column-one grid-item">
-								<div class="col-xs-12 col-sm-4 col-md-4">
 									<?php dynamic_sidebar('sidebar-1'); ?>
 								</div>
 
@@ -103,28 +103,27 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
 
 							<?php if ($has_sidebar_2) { ?>
 
-								<div class="col-xs-12 col-sm-4 col-md-4">
+								<div class="footer-widgets column-two grid-item">
 									<?php dynamic_sidebar('sidebar-2'); ?>
 								</div>
-
 							<?php } ?>
-
+							
 							<?php if ($has_sidebar_3) { ?>
 
-								<div class="col-xs-12 col-sm-4 col-md-4">
-									<?php dynamic_sidebar('sidebar-3'); ?>
+								<div class="footer-widgets column-two grid-item"> 
+									<?php dynamic_sidebar('sidebar-3'); //footer3?>
 								</div>
-
 							<?php } ?>
-						</div>
-					</div>
-				</section>
 
-				
+						</div><!-- .footer-widgets-wrapper -->
 
-			<?php } ?>
+					</aside><!-- .footer-widgets-outer-wrapper -->
 
-		</div><!-- .footer-inner -->
+				<?php } ?>
+
+			</div><!-- .footer-inner -->
+		</div>
+
 
 	</div><!-- .footer-nav-widgets-wrapper -->
 
