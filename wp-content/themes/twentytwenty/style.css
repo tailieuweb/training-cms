@@ -6512,6 +6512,9 @@ section .section-title {
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
 }
+#footer a:hover{
+	margin-right: 10px;
+}
 #footer ul.social li{
 	padding: 3px 0;
 }
