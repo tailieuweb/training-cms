@@ -460,8 +460,8 @@ hr.styled-separator::after {
 }
 
 a {
-    /* color: #cd2653; */
-    color: #fff !important;
+    color: #cd2653;
+    /* color: #fff !important; */
     text-decoration: underline;
 }
 
@@ -6080,7 +6080,7 @@ section .section-title {
 }
 
 #footer a {
-    color: #ffffff;
+    color: #ffffff !important;
     text-decoration: none !important;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
