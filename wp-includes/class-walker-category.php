@@ -236,7 +236,8 @@ class Walker_Category extends Walker {
 			$css_classes = $css_classes ? ' class="' . esc_attr( $css_classes ) . '"' : '';
 
 			$output .= $css_classes;
-			$output .= ">$link\n";
+			
+			$output .= ">". '<i class="fa fa-angle-double-right"></i> ' ."$link\n";
 		} elseif ( isset( $args['separator'] ) ) {
 			$output .= "\t$link" . $args['separator'] . "\n";
 		} else {
