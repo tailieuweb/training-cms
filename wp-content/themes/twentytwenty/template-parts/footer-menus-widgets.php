@@ -20,6 +20,7 @@ $has_sidebar_3 = is_active_sidebar('sidebar-3');
 if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
 ?>
 
+	<div class="footer-nav-widgets-wrapper header-footer-group">
 	<div class="footer-nav-widgets-wrapper header-footer-group footer-more-information">
 
 		<div class="footer-inner section-inner">
@@ -93,6 +94,7 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
 						<div class="row text-center text-xs-center text-sm-left text-md-left">
 							<?php if ($has_sidebar_1) { ?>
 
+								<div class="footer-widgets column-one grid-item">
 								<div class="col-xs-12 col-sm-4 col-md-4">
 									<?php dynamic_sidebar('sidebar-1'); ?>
 								</div>
