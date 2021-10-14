@@ -251,7 +251,6 @@ path {
 
 /* ----------------------------------------------
 Inter variable font. Usage:
-
 @supports (font-variation-settings: normal) {
 	html { font-family: 'Inter var', sans-serif; }
 }
@@ -4376,7 +4375,7 @@ div.comment:first-of-type {
 
 .footer-nav-widgets-wrapper,
 #site-footer {
-	background-color: #fff;
+	background-color: #007b5e;
 	border-color: #dedfdf;
 	border-style: solid;
 	border-width: 0;
@@ -5936,9 +5935,9 @@ a.to-the-top > * {
 		margin-left: 0;
 	}
 
-    .wp-block-image .aligncenter figcaption {
-        text-align: center;
-    }
+	.wp-block-image .aligncenter figcaption {
+		text-align: center;
+	}
 
 	/* BLOCK: SEPARATOR */
 
@@ -6479,11 +6478,7 @@ a.to-the-top > * {
 }
 
 /* Footer */
-/* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-section {
-	padding: 60px 0;
-}
 
 section .section-title {
 	text-align: center;
@@ -6494,12 +6489,17 @@ section .section-title {
 #footer {
 	background: #007b5e !important;
 }
-#footer h5{
+#footer h3{
 	padding-left: 10px;
 	border-left: 3px solid #eeeeee;
 	padding-bottom: 6px;
 	margin-bottom: 20px;
 	color:#ffffff;
+	font-weight: bold;
+}
+#footer .text-footer{
+	color: rgb(226, 226, 226);
+	font-weight: 400;
 }
 #footer a {
 	color: #ffffff;
@@ -6509,6 +6509,7 @@ section .section-title {
 }
 #footer ul.social li{
 	padding: 3px 0;
+	list-style: none;
 }
 #footer ul.social li a i {
 	margin-right: 5px;
@@ -6547,10 +6548,27 @@ section .section-title {
 }
 
 @media (max-width:767px){
-	#footer h5 {
+	#footer h3 {
 		padding-left: 0;
 		border-left: transparent;
 		padding-bottom: 0px;
 		margin-bottom: 10px;
 	}
+}
+
+.footer-inner.section-inner .widget.widget_block .widget-content ul li a{
+	color: #fff;
+}
+
+.footer-inner.section-inner .widget.widget_block .widget-content ul li a::before{
+	content: '»';
+	font-size: 28px;
+	font-weight: 300;
+	margin-right: 10px;
+}
+
+.footer-inner.section-inner .widget.widget_block .widget-content h2{
+	padding-left: 10px;
+	border-left: 3px solid #fff;
+	color: #fff;
 }
