@@ -5600,6 +5600,7 @@ a.to-the-top > * {
 	.footer-widgets-wrapper {
 		display: flex;
 		justify-content: space-between;
+		align-items: flex-start;
 		margin-left: -4rem;
 		width: calc(100% + 4rem);
 	}
