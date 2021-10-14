@@ -5819,7 +5819,7 @@ Inter variable font. Usage:
                 
                 .footer-widgets a,
                 time {
-                    color: white !important;
+                    color: rgb(194, 191, 191) !important;
                 }
                 
                 .footer-widgets h2 {
