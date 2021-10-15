@@ -6473,63 +6473,6 @@ a.to-the-top > * {
 		top: 0;
 	}
 }
-/* Footer */
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-section {
-	padding: 60px 0;
-}
-
-section .section-title {
-	text-align: center;
-	color: #007b5e;
-	margin-bottom: 50px;
-	text-transform: uppercase;
-}
-#footer {
-	background: #007b5e !important;
-}
-#footer h5{
-	padding-left: 10px;
-	border-left: 3px solid #eeeeee;
-	padding-bottom: 6px;
-	margin-bottom: 20px;
-	color:#ffffff;
-}
-#footer a {
-	color: #ffffff;
-	text-decoration: none !important;
-	background-color: transparent;
-	-webkit-text-decoration-skip: objects;
-	/* Footer */
-	@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-	section {
-		padding: 60px 0;
-	}
-
-	section .section-title {
-		text-align: center;
-		color: #007b5e;
-		margin-bottom: 50px;
-		text-transform: uppercase;
-	}
-
-	#footer {
-		background: #007b5e !important;
-	}
-
-	#footer h5 {
-		padding-left: 10px;
-		border-left: 3px solid #eeeeee;
-		padding-bottom: 6px;
-		margin-bottom: 20px;
-		color: #ffffff;
-	}
-#footer a {
-	color: #ffffff;
-	text-decoration: none !important;
-	background-color: transparent;
-	-webkit-text-decoration-skip: objects;
-
 
 /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
@@ -6563,7 +6506,6 @@ section .section-title {
 	padding: 3px 0;
 }
 #footer ul.social li a i {
-	margin-right: 5px;
     margin-right: 5px;
 	font-size:25px;
 	-webkit-transition: .5s all ease;
@@ -6596,12 +6538,12 @@ section .section-title {
 	margin-right: 5px;
 }
 #footer ul.quick-links li:hover a i {
-	font-weight: 700;
     font-weight: 700;
 }
 
 @media (max-width:767px){
 	#footer h5 {
+
 		padding-left: 0;
 		border-left: transparent;
 		padding-bottom: 0px;
@@ -6611,3 +6553,11 @@ section .section-title {
 .row p{
 	font-size: medium;
 }
+=======
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+
