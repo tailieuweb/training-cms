@@ -4622,7 +4622,6 @@ a.to-the-top > * {
   /* Post Footer --------------------------- */
 
   /* POST NAV LINKS */
-
   .post-nav-links {
     margin: 3em 0 0 0;
   }
@@ -4662,7 +4661,6 @@ a.to-the-top > * {
   /* Post Footer --------------------------- */
 
   /* POST NAV LINKS */
-
   .post-nav-links {
     margin: 3em 0 0 0;
   }
@@ -6488,6 +6486,7 @@ a.to-the-top > * {
     margin-right: -31rem;
   }
 
+
   .entry-content > .alignwide {
     max-width: 120rem;
     width: 120rem;
@@ -6794,7 +6793,6 @@ section .section-title {
   margin-top: 5rem;
   background-color: #007b5e;
 }
-<<<<<<< HEAD
 .widget-content > div > *:last-child {
   margin-bottom: 0;
   margin-left: 50px;
@@ -6813,7 +6811,6 @@ section .section-title {
     padding-bottom: 0px;
     margin-bottom: 10px;
   }
-=======
 [class*="__inner-container"] > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
     max-width: 58rem;
     width: 100%;
@@ -6840,11 +6837,13 @@ section .section-title {
 .trang-chu .entry-header .entry-header-inner h2 a {
 	color: #6ca8e8;
 	text-decoration: none;
+
 	font-size: 50px;
 }
 .trang-chu .entry-content{
 	text-align: left;
-	margin-right: 400px;
+	margin-right: 100px;
+	font-size: 30px;
 }
 .trang-chu .entry-header .entry-header-inner .entry-categories a{
 	display: none;
@@ -6860,8 +6859,9 @@ section .section-title {
 }
 .col-md-3{
 	font-size: 50px;
+	margin-top: 100px;
 }
 .container .row .col-md-3 a{
+	
 	color:black;
->>>>>>> 2-wordpress-581-202109/10-J/1-21-Le
 }
