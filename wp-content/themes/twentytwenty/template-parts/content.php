@@ -23,9 +23,16 @@
 					<span class="topnewsmonth">Tháng 10</span><br>
 				</div>
 				<div class="col-md-9 col-xs-9 shortdesc">
-				 <?php the_title( '<h4><a href="' . esc_url( get_permalink() ) . '">', '</a></h4>' );
-				?>
-					<p>Hãy đăng ký tham gia buổi livestream workshop Bộ Môn Công Nghệ Phần Mềm vào lúc 9:30 ngày 16/10/2021 tại fanpage Khoa Công Nghệ Thông Tin.<a href="http://fit.tdc.edu.vn/tin-tuc/dang-ky-tham-gia-livetream-workshop-bo-mon-cong-nghe-phan-mem">[...]</a></p>
+					<?php the_title('<h4><a href="' . esc_url(get_permalink()) . '">', '</a></h4>');
+					?>
+					<p><?php
+						if (is_single()) {
+							the_content(__('Continue reading', 'twentytwenty'));
+						} else {
+							$post = get_post();
+							echo substr($post->post_content, 0, 100);
+						}
+						?></p>
 				</div>
 			</div>
 		</div>
