@@ -62,6 +62,7 @@
 
 <!-- </footer> -->
 <!-- #site-footer -->
+
 <footer id="site-footer" role="contentinfo" class="header-footer-group">
 		<div class="container">
 			<div class="row">
@@ -78,7 +79,7 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text">
 					<p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
-					<p class="h6">© All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Sunlimetech</a></p>
+					<p class="h6" style="font-size: 1.5rem;">© All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Sunlimetech</a></p>
 				</div>
 			</div>
 		</div>
