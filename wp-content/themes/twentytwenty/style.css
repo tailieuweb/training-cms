@@ -6306,6 +6306,7 @@ a.to-the-top > * {
 	.footer-widgets-wrapper {
 		margin-left: -6rem;
 		width: calc(100% + 6rem);
+		
 	}
 
 	.footer-widgets {
@@ -6554,3 +6555,24 @@ section .section-title {
 }
 }
 
+.footer-inner.section-inner .widget.widget_block .widget-content ul li a::before{
+	content: '»';
+	font-size: 28px;
+	font-weight: 300;
+	margin-right: 10px;
+}
+
+.footer-inner.section-inner .widget.widget_block .widget-content h2{
+	padding-left: 10px;
+	border-left: 3px solid #fff;
+	color: #fff;
+	font-size: 30px;
+}
+
+.footer-inner.section-inner .widget.widget_block .widget-content ul li a{
+	color: #fff;
+}
+
+#footer h2 {
+	font-size: 30px;
+}
