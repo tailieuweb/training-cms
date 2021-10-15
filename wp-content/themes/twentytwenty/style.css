@@ -6560,7 +6560,7 @@ section .section-title {
     padding-top: 0;
 }
 .footer-widgets-wrapper h2 {
-	padding-left: 5px;
+	padding-left: 10px;
 	border-left: 3px solid #eeeeee;
 	padding-bottom: 6px;
 	margin-bottom: 20px;
@@ -6638,4 +6638,7 @@ section .section-title {
     left: -18px;
     width: 5px;
     height: 5px;
+}
+.footer-widgets-outer-wrapper, .footer-top {
+    border-color: #007b5e !important;
 }
