@@ -194,7 +194,13 @@ h2.border-rg {
     font-size: 10px !important;
 }
 .wp-block-group__inner-container h2 {
-    font-size: 25px;
+    color: white;
+	border-left: 4px solid;
+    padding-left: 10px;
+	font-size: 2.4rem;
+}
+.wp-block-latest-posts__list a{
+	color: white !important;
 }
 /* Very busy */
 h2.border-rg {
