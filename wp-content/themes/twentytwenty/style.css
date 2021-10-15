@@ -6961,9 +6961,10 @@ a {
 }
 
 .top_news_block_desc .topnewstime {
-    margin-top: 12px;
+    margin-top: 5px;
     text-align: center;
     padding-left: 0;
+    padding-right: 0;
 }
 
 .top_news_block_thumb img {

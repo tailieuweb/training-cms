@@ -21,7 +21,7 @@ $has_sidebar_3 = is_active_sidebar( 'sidebar-3' );
 if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3) {
 	?>
 
-<section id="footer" style="padding-bottom: 0;">
+<section id="footer" style="padding-bottom: 0; margin-top: 5em">
 		<div class="container">
 			<div class="row text-center text-xs-center text-sm-left text-md-left">
 				<div class="col-xs-12 col-sm-4 col-md-4">
