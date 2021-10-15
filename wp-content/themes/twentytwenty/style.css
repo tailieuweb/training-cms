@@ -6637,3 +6637,11 @@ section .section-title {
     margin-bottom: 10px;
 }
 }
+.wp-block-group__inner-container h2{
+	color: white;
+	border-left: 4px solid;
+    padding-left: 10px;
+}
+.wp-block-latest-posts__list a{
+	color: white !important;
+}
