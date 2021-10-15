@@ -4622,6 +4622,7 @@ a.to-the-top > * {
   /* Post Footer --------------------------- */
 
   /* POST NAV LINKS */
+
   .post-nav-links {
     margin: 3em 0 0 0;
   }
@@ -4661,6 +4662,7 @@ a.to-the-top > * {
   /* Post Footer --------------------------- */
 
   /* POST NAV LINKS */
+
   .post-nav-links {
     margin: 3em 0 0 0;
   }
@@ -6486,7 +6488,6 @@ a.to-the-top > * {
     margin-right: -31rem;
   }
 
-
   .entry-content > .alignwide {
     max-width: 120rem;
     width: 120rem;
@@ -6793,24 +6794,6 @@ section .section-title {
   margin-top: 5rem;
   background-color: #007b5e;
 }
-.widget-content > div > *:last-child {
-  margin-bottom: 0;
-  margin-left: 50px;
-}
-[class*="__inner-container"]
-  > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
-  max-width: 58rem;
-  width: 100%;
-  color: white;
-}
-
-@media (max-width: 767px) {
-  #footer h5 {
-    padding-left: 0;
-    border-left: transparent;
-    padding-bottom: 0px;
-    margin-bottom: 10px;
-  }
 [class*="__inner-container"] > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
     max-width: 58rem;
     width: 100%;
@@ -6862,5 +6845,6 @@ section .section-title {
 	margin-top: 100px;
 }
 .container .row .col-md-3 a{
+	
 	color:black;
 }
