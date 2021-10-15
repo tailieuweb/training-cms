@@ -141,6 +141,9 @@ body {
     position: relative;
     font-size: 10px;
 }
+ul.wp-block-latest-posts__list.wp-block-latest-posts li a {
+    color: white !important;
+}
 .footer-nav-widgets-wrapper.header-footer-group {
     background: #007b5e !important;
 }
@@ -208,12 +211,6 @@ ul.wp-block-categories-list.wp-block-categories li a {
     color: white;
 }
 
-ul.wp-block-latest-posts__list.aligncenter.demi.wp-block-latest-posts li a {
-    color: white;
-}
-footer.wp-block-latest-comments__comment-meta {
-    color: white;
-}
 footer.wp-block-latest-comments__comment-meta a{
     color: white;
 }
@@ -6569,7 +6566,14 @@ a.to-the-top > * {
 section {
     padding: 60px 0;
 }
-
+.wp-block-group__inner-container h2{
+	color: white;
+	border-left: 4px solid;
+    padding-left: 10px;
+}
+footer.wp-block-latest-comments__comment-meta {
+    color: white;
+}
 section .section-title {
     text-align: center;
     color: #007b5e;
