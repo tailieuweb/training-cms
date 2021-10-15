@@ -3198,6 +3198,29 @@ figure.wp-block-gallery.alignfull {
   color: rgb(209, 209, 209);
   font-size: 12px !important;
 }
+.list_post {
+  /* display: flex; */
+}
+.list_post .entry-header .entry-header-inner h2 a {
+  color: rgb(31, 93, 226);
+}
+.list_post
+  .entry-header
+  .entry-header-inner
+  .post-meta-wrapper
+  .post-meta
+  .post-author {
+  display: none;
+}
+.list_post
+  .entry-header
+  .entry-header-inner
+  .post-meta-wrapper
+  .post-meta
+  .post-comment-link {
+  display: none;
+}
+
 /* Block: Image ------------------------------ */
 
 /* Block: Media And Text --------------------- */
