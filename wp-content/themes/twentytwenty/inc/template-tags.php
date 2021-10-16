@@ -334,8 +334,8 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 		setup_postdata( $the_post );
 
 		ob_start();
-
-		?>
+		if(is_single()){
+				?>
 
 		<div class="post-meta-wrapper<?php echo esc_attr( $post_meta_wrapper_classes ); ?>">
 
@@ -343,155 +343,157 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 
 				<?php
 
-				/**
-				 * Fires before post meta HTML display.
-				 *
-				 * Allow output of additional post meta info to be added by child themes and plugins.
-				 *
-				 * @since Twenty Twenty 1.0
-				 * @since Twenty Twenty 1.1 Added the `$post_meta` and `$location` parameters.
-				 *
-				 * @param int    $post_id   Post ID.
-				 * @param array  $post_meta An array of post meta information.
-				 * @param string $location  The location where the meta is shown.
-				 *                          Accepts 'single-top' or 'single-bottom'.
-				 */
-				do_action( 'twentytwenty_start_of_post_meta_list', $post_id, $post_meta, $location );
+						/**
+						 * Fires before post meta HTML display.
+						 *
+						 * Allow output of additional post meta info to be added by child themes and plugins.
+						 *
+						 * @since Twenty Twenty 1.0
+						 * @since Twenty Twenty 1.1 Added the `$post_meta` and `$location` parameters.
+						 *
+						 * @param int    $post_id   Post ID.
+						 * @param array  $post_meta An array of post meta information.
+						 * @param string $location  The location where the meta is shown.
+						 *                          Accepts 'single-top' or 'single-bottom'.
+						 */
+						do_action( 'twentytwenty_start_of_post_meta_list', $post_id, $post_meta, $location );
 
-				// Author.
-				if ( post_type_supports( get_post_type( $post_id ), 'author' ) && in_array( 'author', $post_meta, true ) ) {
+						// Author.
+						if ( post_type_supports( get_post_type( $post_id ), 'author' ) && in_array( 'author', $post_meta, true ) ) {
 
-					$has_meta = true;
-					?>
-					<li class="post-author meta-wrapper">
-						<span class="meta-icon">
-							<span class="screen-reader-text"><?php _e( 'Post author', 'twentytwenty' ); ?></span>
-							<?php twentytwenty_the_theme_svg( 'user' ); ?>
-						</span>
-						<span class="meta-text">
-							<?php
-							printf(
-								/* translators: %s: Author name. */
-								__( 'By %s', 'twentytwenty' ),
-								'<a href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author_meta( 'display_name' ) ) . '</a>'
-							);
+							$has_meta = true;
 							?>
-						</span>
-					</li>
-					<?php
+				<li class="post-author meta-wrapper">
+					<span class="meta-icon">
+						<span class="screen-reader-text"><?php _e( 'Post author', 'twentytwenty' ); ?></span>
+						<?php twentytwenty_the_theme_svg( 'user' ); ?>
+					</span>
+					<span class="meta-text">
+						<?php
+									printf(
+										/* translators: %s: Author name. */
+										__( 'By %s', 'twentytwenty' ),
+										'<a href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author_meta( 'display_name' ) ) . '</a>'
+									);
+									?>
+					</span>
+				</li>
+				<?php
 
-				}
+						}
 
-				// Post date.
-				if ( in_array( 'post-date', $post_meta, true ) ) {
+						// Post date.
+						if ( in_array( 'post-date', $post_meta, true ) ) {
 
-					$has_meta = true;
-					?>
-					<li class="post-date meta-wrapper">
-						<span class="meta-icon">
-							<span class="screen-reader-text"><?php _e( 'Post date', 'twentytwenty' ); ?></span>
-							<?php twentytwenty_the_theme_svg( 'calendar' ); ?>
-						</span>
-						<span class="meta-text">
-							<a href="<?php the_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
-						</span>
-					</li>
-					<?php
+							$has_meta = true;
+							?>
+				<li class="post-date meta-wrapper">
+					<span class="meta-icon">
+						<span class="screen-reader-text"><?php _e( 'Post date', 'twentytwenty' ); ?></span>
+						<?php twentytwenty_the_theme_svg( 'calendar' ); ?>
+					</span>
+					<span class="meta-text">
+						<a href="<?php the_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
+					</span>
+				</li>
+				<?php
 
-				}
+						}
 
-				// Categories.
-				if ( in_array( 'categories', $post_meta, true ) && has_category() ) {
+						// Categories.
+						if ( in_array( 'categories', $post_meta, true ) && has_category() ) {
 
-					$has_meta = true;
-					?>
-					<li class="post-categories meta-wrapper">
-						<span class="meta-icon">
-							<span class="screen-reader-text"><?php _e( 'Categories', 'twentytwenty' ); ?></span>
-							<?php twentytwenty_the_theme_svg( 'folder' ); ?>
-						</span>
-						<span class="meta-text">
-							<?php _ex( 'In', 'A string that is output before one or more categories', 'twentytwenty' ); ?> <?php the_category( ', ' ); ?>
-						</span>
-					</li>
-					<?php
+							$has_meta = true;
+							?>
+				<li class="post-categories meta-wrapper">
+					<span class="meta-icon">
+						<span class="screen-reader-text"><?php _e( 'Categories', 'twentytwenty' ); ?></span>
+						<?php twentytwenty_the_theme_svg( 'folder' ); ?>
+					</span>
+					<span class="meta-text">
+						<?php _ex( 'In', 'A string that is output before one or more categories', 'twentytwenty' ); ?>
+						<?php the_category( ', ' ); ?>
+					</span>
+				</li>
+				<?php
 
-				}
+						}
 
-				// Tags.
-				if ( in_array( 'tags', $post_meta, true ) && has_tag() ) {
+						// Tags.
+						if ( in_array( 'tags', $post_meta, true ) && has_tag() ) {
 
-					$has_meta = true;
-					?>
-					<li class="post-tags meta-wrapper">
-						<span class="meta-icon">
-							<span class="screen-reader-text"><?php _e( 'Tags', 'twentytwenty' ); ?></span>
-							<?php twentytwenty_the_theme_svg( 'tag' ); ?>
-						</span>
-						<span class="meta-text">
-							<?php the_tags( '', ', ', '' ); ?>
-						</span>
-					</li>
-					<?php
+							$has_meta = true;
+							?>
+				<li class="post-tags meta-wrapper">
+					<span class="meta-icon">
+						<span class="screen-reader-text"><?php _e( 'Tags', 'twentytwenty' ); ?></span>
+						<?php twentytwenty_the_theme_svg( 'tag' ); ?>
+					</span>
+					<span class="meta-text">
+						<?php the_tags( '', ', ', '' ); ?>
+					</span>
+				</li>
+				<?php
 
-				}
+						}
 
-				// Comments link.
-				if ( in_array( 'comments', $post_meta, true ) && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+						// Comments link.
+						if ( in_array( 'comments', $post_meta, true ) && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 
-					$has_meta = true;
-					?>
-					<li class="post-comment-link meta-wrapper">
-						<span class="meta-icon">
-							<?php twentytwenty_the_theme_svg( 'comment' ); ?>
-						</span>
-						<span class="meta-text">
-							<?php comments_popup_link(); ?>
-						</span>
-					</li>
-					<?php
+							$has_meta = true;
+							?>
+				<li class="post-comment-link meta-wrapper">
+					<span class="meta-icon">
+						<?php twentytwenty_the_theme_svg( 'comment' ); ?>
+					</span>
+					<span class="meta-text">
+						<?php comments_popup_link(); ?>
+					</span>
+				</li>
+				<?php
 
-				}
+						}
 
-				// Sticky.
-				if ( in_array( 'sticky', $post_meta, true ) && is_sticky() ) {
+						// Sticky.
+						if ( in_array( 'sticky', $post_meta, true ) && is_sticky() ) {
 
-					$has_meta = true;
-					?>
-					<li class="post-sticky meta-wrapper">
-						<span class="meta-icon">
-							<?php twentytwenty_the_theme_svg( 'bookmark' ); ?>
-						</span>
-						<span class="meta-text">
-							<?php _e( 'Sticky post', 'twentytwenty' ); ?>
-						</span>
-					</li>
-					<?php
+							$has_meta = true;
+							?>
+				<li class="post-sticky meta-wrapper">
+					<span class="meta-icon">
+						<?php twentytwenty_the_theme_svg( 'bookmark' ); ?>
+					</span>
+					<span class="meta-text">
+						<?php _e( 'Sticky post', 'twentytwenty' ); ?>
+					</span>
+				</li>
+				<?php
 
-				}
+						}
 
-				/**
-				 * Fires after post meta HTML display.
-				 *
-				 * Allow output of additional post meta info to be added by child themes and plugins.
-				 *
-				 * @since Twenty Twenty 1.0
-				 * @since Twenty Twenty 1.1 Added the `$post_meta` and `$location` parameters.
-				 *
-				 * @param int    $post_id   Post ID.
-				 * @param array  $post_meta An array of post meta information.
-				 * @param string $location  The location where the meta is shown.
-				 *                          Accepts 'single-top' or 'single-bottom'.
-				 */
-				do_action( 'twentytwenty_end_of_post_meta_list', $post_id, $post_meta, $location );
+						/**
+						 * Fires after post meta HTML display.
+						 *
+						 * Allow output of additional post meta info to be added by child themes and plugins.
+						 *
+						 * @since Twenty Twenty 1.0
+						 * @since Twenty Twenty 1.1 Added the `$post_meta` and `$location` parameters.
+						 *
+						 * @param int    $post_id   Post ID.
+						 * @param array  $post_meta An array of post meta information.
+						 * @param string $location  The location where the meta is shown.
+						 *                          Accepts 'single-top' or 'single-bottom'.
+						 */
+						do_action( 'twentytwenty_end_of_post_meta_list', $post_id, $post_meta, $location );
 
-				?>
+						?>
 
 			</ul><!-- .post-meta -->
 
 		</div><!-- .post-meta-wrapper -->
 
 		<?php
+		}
 
 		wp_reset_postdata();
 
@@ -639,8 +641,10 @@ add_filter( 'walker_nav_menu_start_el', 'twentytwenty_nav_menu_social_icons', 10
 function twentytwenty_no_js_class() {
 
 	?>
-	<script>document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );</script>
-	<?php
+<script>
+document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+</script>
+<?php
 
 }
 

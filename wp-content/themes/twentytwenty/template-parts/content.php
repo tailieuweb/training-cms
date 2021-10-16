@@ -11,38 +11,68 @@
  * @since Twenty Twenty 1.0
  */
 
+ $class = '';
+ if (!is_single()){
+	 $class = 'danh-sach';
+ }
+
 ?>
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+<article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
 
-	<?php
+    <?php 
+	 $post = get_post();
 
-	get_template_part( 'template-parts/entry-header' );
+	 $month = date("m",strtotime($post->post_date));
+	 $day = date("d",strtotime($post->post_date));
 
-	if ( ! is_search() ) {
-		get_template_part( 'template-parts/featured-image' );
-	}
-
+	if(!is_single()){
 	?>
+    <div class="col-img">
 
-	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
+    </div>
 
-		<div class="entry-content">
+    <div class="col-day">
+        <div class="day"><?php echo $day ?></div>
+        <div class="month">Tháng <?php echo $month ?></div>
+    </div>
 
-			<?php
+    <?php } ?>
+
+
+    <div class="col-content">
+        <?php
+
+		get_template_part( 'template-parts/entry-header' );
+
+		if ( ! is_search() ) {
+			get_template_part( 'template-parts/featured-image' );
+		}
+		?>
+        <div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
+
+            <div class="entry-content">
+
+                <?php
 			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
 				the_excerpt();
 			} else {
-				the_content( __( 'Continue reading', 'twentytwenty' ) );
+				if (is_single()){
+					the_content( __( 'Continue reading', 'twentytwenty' ) );
+				} else{
+					$post = get_post();
+					echo substr($post->post_content, 0, 200);
+				echo $subpost .  "<a href='" .esc_url(get_permalink()) . "' >[..]</a>";
+               				}
 			}
 			?>
 
-		</div><!-- .entry-content -->
+            </div><!-- .entry-content -->
 
-	</div><!-- .post-inner -->
+        </div><!-- .post-inner -->
 
-	<div class="section-inner">
-		<?php
+        <div class="section-inner">
+            <?php
 		wp_link_pages(
 			array(
 				'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__( 'Page', 'twentytwenty' ) . '"><span class="label">' . __( 'Pages:', 'twentytwenty' ) . '</span>',
@@ -64,9 +94,11 @@
 		}
 		?>
 
-	</div><!-- .section-inner -->
+        </div>
 
-	<?php
+        <!-- .section-inner -->
+
+        <?php
 
 	if ( is_single() ) {
 
@@ -78,17 +110,20 @@
 	 * Output comments wrapper if it's a post, or if comments are open,
 	 * or if there's a comment number – and check for password.
 	 */
-	if ( ( is_single() || is_page() ) && ( comments_open() || get_comments_number() ) && ! post_password_required() ) {
+	
+
+
+
+if ( ( is_single() || is_page() ) && ( comments_open() || get_comments_number() ) && ! post_password_required() ) {
 		?>
+        <div class="comments-wrapper section-inner">
 
-		<div class="comments-wrapper section-inner">
+            <?php comments_template(); ?>
 
-			<?php comments_template(); ?>
+        </div><!-- .comments-wrapper -->
 
-		</div><!-- .comments-wrapper -->
-
-		<?php
+        <?php
 	}
 	?>
-
+    </div>
 </article><!-- .post -->
