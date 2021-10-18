@@ -10,21 +10,49 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
+if(!is_single()){
+    $class="posts-trangchu";
+}
 
 ?>
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+<article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
+<?php  if(!is_single()){
+    echo "<div class='container'>";
+    echo "<div class='items-post'>";
+    echo "<div class='row'>";
+    echo "<div class='col-12 col-md-4'>";
 
+    }
+    ?>
 	<?php
+    if($is_apache){
 
 	get_template_part( 'template-parts/entry-header' );
 
 	if ( ! is_search() ) {
 		get_template_part( 'template-parts/featured-image' );
 	}
-
+    }
+    else{
+       if(!is_single()){
+           echo "<div class='time-post'>";
+           $post = get_post();
+           $date = $post->post_date;
+           $day = date("j", strtotime($date));
+           $month = date("F", strtotime($date));
+           echo "<span class='day'>".$day."</span><br>";
+           echo "<span class='month'> ".$month."</span></div>";
+       }else{
+           get_template_part( 'template-parts/entry-header' );
+       }
+    }
 	?>
-
+    <?php  if(!is_single()){
+        echo "</div>";
+    echo "<div class='col-12 col-md-8'>";
+    }
+    ?>
 	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
 
 		<div class="entry-content">
@@ -33,14 +61,36 @@
 			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
 				the_excerpt();
 			} else {
-				the_content( __( 'Continue reading', 'twentytwenty' ) );
+			    if(is_single()){
+                    the_content( __( 'Continue reading', 'twentytwenty' ) );
+                }else{
+			        $post = get_post();
+			        $title = $post->post_title;
+			        $content = $post->post_content;
+			        $str = preg_replace('/<figure.*?>.*?<\/figure>/','',$content);
+                 $str =  substr($str,0,300);
+
+
+                    $str .= "<a class='more' href=". $post->post_name ." >[....]</a>";
+
+                    echo $str;
+
+
+
+
+
+                }
+
+
+
+
 			}
 			?>
 
 		</div><!-- .entry-content -->
 
 	</div><!-- .post-inner -->
-
+    </div>
 	<div class="section-inner">
 		<?php
 		wp_link_pages(
@@ -90,5 +140,9 @@
 		<?php
 	}
 	?>
-
+<?php  if(!is_single()){
+    echo "</div>
+    </div>
+    </div>";
+}?>
 </article><!-- .post -->

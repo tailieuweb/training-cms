@@ -5130,6 +5130,12 @@ a.to-the-top > * {
 	.post-inner {
 		padding-top: 8rem;
 	}
+	.items-post{
+		background: #fff;
+		box-shadow:0px 0px 5px 0px rgba(0,0,0,0.2) ;
+		padding: 20px;
+		margin-bottom: 20px;
+	}
 
 	/* POST FOOTER */
 
@@ -5363,6 +5369,14 @@ a.to-the-top > * {
 	.entry-content p,
 	.entry-content li {
 		line-height: 1.476;
+
+	}
+	.more{
+		text-decoration: none;
+		color: #007bff;
+	}
+	.more:hover{
+		color: #cd2653;
 	}
 
 	.entry-content h1,
@@ -6551,6 +6565,21 @@ section .section-title {
 		padding-bottom: 0px;
 		margin-bottom: 10px;
 	}
+}
+.day{
+	color: #333;
+	font-family: 'Prata', serif;
+	font-size: 3.1em;
+	line-height: 1em;
+}
+.month{
+	color: #333;
+	text-transform: uppercase;
+	font-size: 0.9em;
+}
+.time-post{
+	margin-top: 20px;
+	text-align: center;
 }
 
 
