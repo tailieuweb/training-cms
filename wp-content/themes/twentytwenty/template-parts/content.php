@@ -12,6 +12,7 @@
  */
 if(!is_single()){
     $class="posts-trangchu";
+    $pentry="p-entry";
 }
 
 ?>
@@ -50,12 +51,13 @@ if(!is_single()){
 	?>
     <?php  if(!is_single()){
         echo "</div>";
-    echo "<div class='col-12 col-md-8'>";
+    echo "<div class='col-12 col-md-8 item-inner'>";
     }
     ?>
-	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
+	<div class="post-inner content-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
 
-		<div class="entry-content">
+		<div class="entry-content <?php echo $pentry; ?>">
+
 
 			<?php
 			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
@@ -66,14 +68,18 @@ if(!is_single()){
                 }else{
 			        $post = get_post();
 			        $title = $post->post_title;
+                    $detail = $post->post_name;
 			        $content = $post->post_content;
 			        $str = preg_replace('/<figure.*?>.*?<\/figure>/','',$content);
-                 $str =  substr($str,0,300);
+                    $a = strpos($str,'</p>');
+                   $str =  substr($str,0,$a);
 
 
                     $str .= "<a class='more' href=". $post->post_name ." >[....]</a>";
-
+                    echo  "<H4 class='title-entry'><a href='$detail'>$title</a></H4>";
                     echo $str;
+
+
 
 
 
