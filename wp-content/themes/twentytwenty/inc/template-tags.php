@@ -31,6 +31,7 @@
  * @param bool  $echo Echo or return the HTML.
  * @return string Compiled HTML based on our arguments.
  */
+
 function twentytwenty_site_logo( $args = array(), $echo = true ) {
 	$logo       = get_custom_logo();
 	$site_title = get_bloginfo( 'name' );
