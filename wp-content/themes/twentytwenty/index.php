@@ -86,17 +86,18 @@ get_header();
 			// if ( $i > 1 ) {
 			// 	echo '<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
 			// }
+			the_post();
 			$post = get_post();
 			//Lấy thông tin từ $post
 			$post_title = $post->post_title;
-			$post_date = get_the_date('d', the_post());
-			$post_month = get_the_date('F', the_post());
+			$post_date = get_the_date('d', $post->ID);
+			$post_month = get_the_date('F', $post->ID);
 			$post_content = substr(
 				$post->post_content,
 				strpos($post->post_content, "<!-- wp:paragraph -->"),
 				strpos($post->post_content, "<!-- /wp:paragraph -->")
 			);
-			$post_image = get_the_post_thumbnail(the_post(), 'thumbnail');
+			$post_image = get_the_post_thumbnail($post->ID, 'thumbnail');
 			$post_guid = $post->guid;
 			//var_dump($post);
 			//get_template_part( 'template-parts/content', get_post_type() );
@@ -129,7 +130,6 @@ get_header();
 				</div>
 			</div>
 		<?php
-			the_post();
 		}
 	} elseif (is_search()) {
 		?>
