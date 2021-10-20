@@ -4821,6 +4821,7 @@ a.to-the-top > * {
 
 	h2,
 	.heading-size-2 {
+		margin-top: revert;
 		font-size: 4.8rem;
 	}
 
@@ -6552,4 +6553,18 @@ section .section-title {
     padding-bottom: 0px;
     margin-bottom: 10px;
 }
+}
+
+
+#footer a:hover{
+	color: #000;
+}
+#footer h2:hover{
+	color: #fff;
+}
+.footer-nav-widgets-wrapper a::before{
+	font-family: "FontAwesome";
+   content: "\f101";
+   display: inline-block;
+   padding-right: 10px;
 }
