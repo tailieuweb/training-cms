@@ -6555,7 +6555,7 @@ section .section-title {
 }
 }
 
-
+/* Footer nang cao */
 #footer a:hover{
 	color: #000;
 }
@@ -6568,3 +6568,12 @@ section .section-title {
    display: inline-block;
    padding-right: 10px;
 }
+
+/* tuy chinh bai viet */
+/* .danh-sach{
+	border: #000 1px solid;
+	margin: 0 100px;
+}
+article .danh-sach{
+	display: flex;
+}*/

@@ -11,10 +11,14 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
+$class ='';
+if (!is_single()){
+	$class ='danh-sach';
+}
 
 ?>
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+<article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
 
 	<?php
 
