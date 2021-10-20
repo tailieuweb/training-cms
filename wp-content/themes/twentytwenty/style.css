@@ -4185,7 +4185,6 @@ div.comment:first-of-type {
 .widget_meta li,
 .widget_nav_menu li {
   color: #6d6d6d;
-  margin: 0.3rem 0;
 }
 
 .widget_archive li li,
@@ -4793,7 +4792,7 @@ a.to-the-top > * {
   .heading-size-2,
   h3,
   .heading-size-3 {
-    margin: 6rem auto 3rem;
+    margin: 4rem auto 4rem;
   }
 
   h4,
