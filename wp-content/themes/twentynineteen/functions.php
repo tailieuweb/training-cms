@@ -61,6 +61,7 @@ if ( ! function_exists( 'twentynineteen_setup' ) ) :
 				'social' => __( 'Social Links Menu', 'twentynineteen' ),
 			)
 		);
+
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
