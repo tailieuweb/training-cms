@@ -6169,3 +6169,33 @@ ul.wp-block-categories-list.wp-block-categories li a {
 time.wp-block-latest-comments__comment-date {
     color: #fff;
 }
+
+.post-flex{
+    display: flex;
+    border: 1px solid;
+    margin: 2% 20%;
+    padding: 3% 0!important;
+    background: antiquewhite;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.col-md-8 .entry-content{
+    text-align: justify;
+}
+.col-md-8 .entry-content h2{
+    font-size: 20px;
+}
+
+.col-md-8 .post-inner{
+    padding-top: 0rem;
+    border-left: 1px solid;
+}
+
+.col-md-4 .entry-content h2{
+    font-size: 1em;
+    text-align: left;
+}
+
+.col-md-4 .post-meta-single-top .post-meta {
+    justify-content: left;
+}
+

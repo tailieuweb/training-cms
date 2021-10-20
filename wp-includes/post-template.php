@@ -456,7 +456,7 @@ function has_excerpt( $post = 0 ) {
  */
 function post_class( $class = '', $post_id = null ) {
 	// Separates classes with a single space, collates classes for post DIV.
-	echo 'class="' . esc_attr( implode( ' ', get_post_class( $class, $post_id ) ) ) . '"';
+	echo 'class="post-flex ' . esc_attr( implode( ' ', get_post_class( $class, $post_id ) ) ) . '"';
 }
 
 /**
