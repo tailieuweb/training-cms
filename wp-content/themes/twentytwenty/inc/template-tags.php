@@ -213,7 +213,7 @@ function twentytwenty_edit_post_link( $link, $post_id, $text ) {
 
 	$edit_url = get_edit_post_link( $post_id );
 
-	if ( ! $edit_url ) {
+	if ( ! $edit_url) {
 		return;
 	}
 
@@ -230,7 +230,9 @@ function twentytwenty_edit_post_link( $link, $post_id, $text ) {
 		get_the_title( $post_id )
 	);
 
-	return '<div class="post-meta-wrapper post-meta-edit-link-wrapper"><ul class="post-meta"><li class="post-edit meta-wrapper"><span class="meta-icon">' . twentytwenty_get_theme_svg( 'edit' ) . '</span><span class="meta-text"><a href="' . esc_url( $edit_url ) . '">' . $text . '</a></span></li></ul><!-- .post-meta --></div><!-- .post-meta-wrapper -->';
+	if(is_single()){
+		return '<div class="post-meta-wrapper post-meta-edit-link-wrapper"><ul class="post-meta"><li class="post-edit meta-wrapper"><span class="meta-icon">' . twentytwenty_get_theme_svg( 'edit' ) . '</span><span class="meta-text"><a href="' . esc_url( $edit_url ) . '">' . $text . '</a></span></li></ul><!-- .post-meta --></div><!-- .post-meta-wrapper -->';
+	}
 
 }
 
@@ -359,7 +361,7 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 				do_action( 'twentytwenty_start_of_post_meta_list', $post_id, $post_meta, $location );
 
 				// Author.
-				if ( post_type_supports( get_post_type( $post_id ), 'author' ) && in_array( 'author', $post_meta, true ) ) {
+				if ( post_type_supports( get_post_type( $post_id ), 'author' ) && in_array( 'author', $post_meta, true ) && is_single()) {
 
 					$has_meta = true;
 					?>
@@ -383,7 +385,7 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 				}
 
 				// Post date.
-				if ( in_array( 'post-date', $post_meta, true ) ) {
+				if ( in_array( 'post-date', $post_meta, true ) && is_single()) {
 
 					$has_meta = true;
 					?>
@@ -401,7 +403,7 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 				}
 
 				// Categories.
-				if ( in_array( 'categories', $post_meta, true ) && has_category() ) {
+				if ( in_array( 'categories', $post_meta, true ) && has_category() && is_single()) {
 
 					$has_meta = true;
 					?>
@@ -419,7 +421,7 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 				}
 
 				// Tags.
-				if ( in_array( 'tags', $post_meta, true ) && has_tag() ) {
+				if ( in_array( 'tags', $post_meta, true ) && has_tag()) {
 
 					$has_meta = true;
 					?>
@@ -437,7 +439,7 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 				}
 
 				// Comments link.
-				if ( in_array( 'comments', $post_meta, true ) && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+				if ( in_array( 'comments', $post_meta, true ) && ! post_password_required() && ( comments_open() || get_comments_number() ) && is_single() ) {
 
 					$has_meta = true;
 					?>
