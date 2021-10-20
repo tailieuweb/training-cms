@@ -6619,6 +6619,7 @@ section .section-title {
 .column-two{
 	display: flex;
 	margin-top: 0px;
+	flex-direction: column;
 }
 .column-three h2{
 	margin-top: 0px;
@@ -6641,4 +6642,22 @@ section .section-title {
 	background: white;
 	margin: 20px 221px;
 		border: 1px solid white;
+}
+.danhsach .entry-title a{
+	font-size: 4rem;
+	position: absolute;
+	margin: 0 354px;
+	left: 15%;
+}
+.danhsach .post-meta-single-top .post-meta{
+	margin: 0 170px;
+	position: relative;
+	left: -68%;
+	margin-top: -20px;
+	border-right: 1px solid black;
+}
+.danhsach .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+	position: absolute;
+	left: 39%;
+	margin-top: -49px;
 }
