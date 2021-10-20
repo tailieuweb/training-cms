@@ -4873,3 +4873,18 @@ function wp_heartbeat_settings( $settings ) {
 
 	return $settings;
 }
+function findFigureTag($str='')
+{
+	$checkTag = '';
+	$figureTagContent = '<figur';
+	for ($i = 0; $i < strlen($str); $i++) {
+		$checkTag .= $str[$i];
+		if(strpos($checkTag,'<figure')){
+			$figureTagContent.= $str[$i];
+			if(strpos($figureTagContent,'</figure>')){
+				return $figureTagContent;
+			}
+		}
+	}
+	return NULL;
+}

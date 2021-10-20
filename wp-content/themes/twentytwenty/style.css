@@ -6015,6 +6015,37 @@ section .section-title {
     color: #eeeeee;
     text-decoration: none;
 }
-#footer{
+#footer {
     padding-bottom: 0;
+}
+/* List Post in home page */
+.post-home-page {
+    background-color: white;
+    width: 180%;
+    margin-left: -40% !important;
+    padding: 20px 0;
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);;
+}
+.shortdesc {
+    border-left: 2px solid #666;
+    padding-right: 30px;
+}
+.top_news_block_desc h4 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: bold;
+}
+.topnewstime > .topnewsdate {
+    font-family: "Prata", serif;
+    font-size: 3.1em;
+    line-height: 1em;
+    margin-left: 15px;
+}
+.danh-sach {
+    padding-bottom: 10px !important;
+    margin: 0;
+    background-color: rgb(238, 238, 238);
 }
