@@ -1,8 +1,12 @@
 <style>
 	.thaydoi{
-		width: auto;
+		text-align: left;
+		max-width: none !important;
 		margin: 0;
-		margin-left:9%;
+		margin-left: 5%;
+	}
+	.post-inner {
+		padding-top: 5px;
 	}
 </style>
 <?php
