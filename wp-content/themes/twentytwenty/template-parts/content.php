@@ -11,9 +11,16 @@
  * @since Twenty Twenty 1.0
  */
 
+//  tra ve chi tiet (true)
+// var_dump(is_single());die();
+$class ='';
+// nếu chi tiết khác danh sách -> danh sách
+if(!is_single()){
+	$class = 'danh-sach';
+}
 ?>
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+<article <?php post_class($class); ?> id="post-<?php the_ID(); ?>" >
 
 	<?php
 
@@ -33,7 +40,21 @@
 			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
 				the_excerpt();
 			} else {
-				the_content( __( 'Continue reading', 'twentytwenty' ) );
+				//the_content( __( 'Continue reading', 'twentytwenty' ) );
+				if(is_single()){
+					// chi tiets van doc binh thuong
+					the_content( __( 'Continue reading', 'twentytwenty' ) );
+				}
+				else {
+					// gioi han o trang chi tiet
+					$post = get_post();
+					$content =$post-> post_content;
+					$str = preg_replace('/<figure.*?>.*?<\/figure>/','',$content);
+					$substr = substr($str,0,200);
+					echo $substr;
+					// echo substr($post->post_content,  0, 200).'...';
+					// var_dump(get_post());die();
+				}
 			}
 			?>
 

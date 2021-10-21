@@ -3181,7 +3181,7 @@ figure.wp-block-gallery.alignfull {
     margin-bottom: 20px !important;
     color: #000 !important;
 }
-/* block li a++++++++ */
+/* footer-block li a++++++++ */
 .footer-inner.section-inner .widget.widget_block .widget-content ul li a::before{
 	content: '»';
 	font-size: 28px;
