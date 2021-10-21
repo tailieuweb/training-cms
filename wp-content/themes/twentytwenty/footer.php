@@ -72,6 +72,23 @@
             </div>
             <hr>
         </div>
+        <div class="row text-center text-xs-center text-sm-left text-md-left">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <ul class="list-unstyled quick-links">
+                    <li><?php dynamic_sidebar( 'sidebar-1' ); ?></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <ul class="list-unstyled quick-links">
+                    <li><?php dynamic_sidebar( 'sidebar-2' ); ?></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <ul class="list-unstyled quick-links">
+                    <li><?php dynamic_sidebar( 'sidebar-3' ); ?></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </section>
 <!-- ./Footer -->
