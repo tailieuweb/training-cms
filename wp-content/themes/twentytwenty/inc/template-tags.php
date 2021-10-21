@@ -361,7 +361,7 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 				do_action( 'twentytwenty_start_of_post_meta_list', $post_id, $post_meta, $location );
 
 				// Author.
-				if ( post_type_supports( get_post_type( $post_id ), 'author' ) && in_array( 'author', $post_meta, true ) && is_single()) {
+				if ( post_type_supports( get_post_type( $post_id ), 'author' ) && in_array( 'author', $post_meta, true )) {
 
 					$has_meta = true;
 					?>
@@ -385,7 +385,7 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 				}
 
 				// Post date.
-				if ( in_array( 'post-date', $post_meta, true ) && is_single()) {
+				if ( in_array( 'post-date', $post_meta, true )) {
 
 					$has_meta = true;
 					?>
@@ -439,7 +439,7 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 				}
 
 				// Comments link.
-				if ( in_array( 'comments', $post_meta, true ) && ! post_password_required() && ( comments_open() || get_comments_number() ) && is_single() ) {
+				if ( in_array( 'comments', $post_meta, true ) && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 
 					$has_meta = true;
 					?>

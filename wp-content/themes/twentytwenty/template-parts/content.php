@@ -21,7 +21,11 @@ if (!is_single()) {
 
 	<?php
 
-	// get_template_part('template-parts/entry-header');
+	if(is_single()){
+
+		get_template_part('template-parts/entry-header');
+	}
+	
 
 	if (!is_search()) {
 		get_template_part('template-parts/featured-image');
@@ -34,7 +38,7 @@ if (!is_single()) {
 		<div class="entry-content">
 
 			<?php
-			if (is_search() || !is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
+			if (!is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
 				the_excerpt();
 				
 			} else {
