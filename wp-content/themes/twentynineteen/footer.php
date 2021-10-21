@@ -47,7 +47,7 @@
 				</nav><!-- .footer-navigation -->
 			<?php endif; ?>
 		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+	</footer>#colophon
 
 </div><!-- #page -->
 

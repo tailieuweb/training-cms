@@ -31,14 +31,23 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
 				<p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
+<<<<<<< HEAD
 				<p class="h6">© All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Sunlimetech</a></p>
+=======
+				<p class="h6" style="font-size: 20px;">© All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank" style="font-size: 20px;">Sunlimetech</a></p>
+>>>>>>> origin/1-wordpress-581-202109/2-groups/1-J/3-48-Thang
 			</div>
 			<hr>
 		</div>	
 	</div>
 </section>
+<<<<<<< HEAD
 	<!-- ./Footer -->
 		<?php wp_footer(); ?>
 
+=======
+<!-- ./Footer -->
+<?php wp_footer(); ?>
+>>>>>>> origin/1-wordpress-581-202109/2-groups/1-J/3-48-Thang
 	</body>
 </html>
