@@ -20,7 +20,6 @@ get_header();
 <main id="site-content" role="main">
 
 	<?php
-
 	$archive_title    = '';
 	$archive_subtitle = '';
 
@@ -86,13 +85,11 @@ get_header();
 				echo '<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
 			}
 			the_post();
-
 			get_template_part( 'template-parts/content', get_post_type() );
 
 		}
 	} elseif ( is_search() ) {
 		?>
-
 		<div class="no-search-results-form section-inner thin">
 
 			<?php

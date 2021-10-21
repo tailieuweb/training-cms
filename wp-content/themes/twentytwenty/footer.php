@@ -3,12 +3,6 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-<?php
-$has_sidebar_1 = is_active_sidebar( 'sidebar-1' );
-$has_sidebar_2 = is_active_sidebar( 'sidebar-2' );
-$has_sidebar_3 = is_active_sidebar( 'sidebar-3' );
-$has_sidebar_4 = is_active_sidebar( 'sidebar-4' );
-?>
 <!-- Footer -->
 	<section id="footer">
 		<div class="container">
