@@ -6555,21 +6555,6 @@ section .section-title {
     font-weight: 700;
 >>>>>>> origin/1-wordpress-581-202109/2-groups/1-J/3-48-Thang
 }
-#footer .icons {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color : #fff;
-	font-size: 25px;
-	margin-bottom: 20px;
-}
-#footer .icons i {
-	margin-right: 20px;
-}
-#footer .icons i:last-child {
-	margin-right: 0;
-}
-<<<<<<< HEAD
 
 =======
 >>>>>>> origin/1-wordpress-581-202109/2-groups/1-J/3-48-Thang
