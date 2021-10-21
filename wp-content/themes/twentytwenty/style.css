@@ -2439,7 +2439,6 @@ h2.entry-title {
 }
 
 .entry-title a {
-	color: inherit;
 	text-decoration: none;
 }
 
@@ -5069,9 +5068,9 @@ a.to-the-top > * {
 	}
 
 	h2.entry-title {
-		font-size: 6.4rem;
+		font-size: 4rem;
 	}
-
+	
 	/* SEARCH RESULTS */
 
 	.no-search-results-form {
@@ -6617,3 +6616,53 @@ section .section-title {
 .footer-widgets .widget .wp-block-group{
 	margin-top: 0!important;
 }
+
+.entry-title-adjust a:focus,
+.entry-title-adjust a:hover {
+	text-decoration: underline;
+	color: #21759b;
+}
+
+h2.entry-title-adjust a{
+	font-size: 3rem;
+	color: #428bca;
+	text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+
+	
+}
+
+.danh-sach{
+	background: white;
+	margin: 20px 200px;
+	border: 1px solid white;
+}
+.danh-sach .entry-title-adjust a{
+	font-size: 4rem;
+	position: absolute;
+	margin: 0 210px;
+	left: 15%;
+}
+.danh-sach .post-meta-single-top .post-meta{
+	margin: 0 177px;
+	position: relative;
+	left: -68%;
+	margin-top: -20px;
+	border-right: 1px solid black;
+}
+.danh-sach .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+	position: absolute;
+	left: 34%;
+	margin-top: -80px;
+}
+
+
+
+
+
+
+
+
+
