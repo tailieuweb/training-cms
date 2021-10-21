@@ -359,7 +359,7 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 				do_action( 'twentytwenty_start_of_post_meta_list', $post_id, $post_meta, $location );
 
 				// Author.
-				if ( post_type_supports( get_post_type( $post_id ), 'author' ) && in_array( 'author', $post_meta, true ) ) {
+		/*		if ( post_type_supports( get_post_type( $post_id ), 'author' ) && in_array( 'author', $post_meta, true ) ) {
 
 					$has_meta = true;
 					?>
@@ -372,7 +372,7 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 							<?php
 							printf(
 								/* translators: %s: Author name. */
-								__( 'By %s', 'twentytwenty' ),
+		/*						__( 'By %s', 'twentytwenty' ),
 								'<a href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author_meta( 'display_name' ) ) . '</a>'
 							);
 							?>
@@ -380,7 +380,7 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 					</li>
 					<?php
 
-				}
+				}					*/
 
 				// Post date.
 				if ( in_array( 'post-date', $post_meta, true ) ) {
@@ -388,10 +388,7 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 					$has_meta = true;
 					?>
 					<li class="post-date meta-wrapper">
-						<span class="meta-icon">
-							<span class="screen-reader-text"><?php _e( 'Post date', 'twentytwenty' ); ?></span>
-							<?php twentytwenty_the_theme_svg( 'calendar' ); ?>
-						</span>
+						
 						<span class="meta-text">
 							<a href="<?php the_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
 						</span>
@@ -437,7 +434,7 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 				}
 
 				// Comments link.
-				if ( in_array( 'comments', $post_meta, true ) && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+				/*if ( in_array( 'comments', $post_meta, true ) && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 
 					$has_meta = true;
 					?>
@@ -451,7 +448,7 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 					</li>
 					<?php
 
-				}
+				}*/
 
 				// Sticky.
 				if ( in_array( 'sticky', $post_meta, true ) && is_sticky() ) {

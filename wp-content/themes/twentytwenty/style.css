@@ -2465,11 +2465,11 @@ h2.entry-title {
 }
 
 .post-meta-wrapper {
-	margin-top: 2rem;
+	/* margin-top: 2rem;
 	margin-right: auto;
 	margin-left: auto;
 	max-width: 58rem;
-	width: 100%;
+	width: 100%; */
 }
 
 .post-meta {
@@ -6574,4 +6574,33 @@ section .section-title {
 .footer-nav-widgets-wrapper.header-footer-group a:hover {
 	text-decoration: none;
 	color: #cd2653;
+}
+
+/* .post-author, .post-comment-link{
+	visibility: hidden;
+} */
+.danh-sach{
+	background-color: yellow;
+}
+#site-content{
+	position: relative;
+	width: 70%;
+	top: 0;
+	left: 17%;
+}
+.post-meta-wrapper:nth-child(n) {
+	position: absolute;
+	left: 15%;
+}
+.meta-text a:nth-child(n) {
+    font-size: 30px;
+    text-align: center;
+}
+h2.entry-title{
+	font-size: 25px;
+    width: 50%;
+    float: right;
+}
+.entry-content{ 
+    margin-left: 50%;
 }
