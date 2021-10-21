@@ -25,10 +25,10 @@
                     <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
                     <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
                     <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
-                    <li class="list-inline-item"><a href="javascript:void();" target="_blank"><iclass="fa fa-envelope"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
                 </ul>
             </div>
-            </hr>
+            <hr>
         </div>
 
         <div class="row">
@@ -36,10 +36,10 @@
                 <p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is a
                     Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis,
                     MN]</p>
-                <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com"
+                <p class="h6">&copy; All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com"
                                                           target="_blank">Sunlimetech</a></p>
             </div>
-            </hr>
+            <hr>
         </div>
     </div>
 </section>

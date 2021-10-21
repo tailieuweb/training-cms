@@ -48,14 +48,30 @@
 		echo '<div class="col-md-8 section-right">';
 	}
 	?>
-	<!-- .post-inner -->
 	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
 
 		<div class="entry-content">
 
 			<?php
 			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
-				the_excerpt();
+				// the_excerpt();
+				$a_post = get_post();
+
+				// Post content:
+				$content = $a_post->post_content;
+				$strContent = preg_replace('/\<figure class=\"wp-block-image\"\>(.*?)\<\/figure\>/', '', $content);
+				$temp = str_replace('<p>', '', $strContent);
+				$strContent = str_replace('</p>', '', $temp);
+				$temp = mb_substr($strContent, 0, 250);
+
+				// Title:
+				$title = $a_post->post_title;
+
+				// Output:
+				$readMoreBtn = '<a class="" href="' . get_permalink() . '">' . '[...]' . '</a>';
+				echo '<a class="title-link" href="' . get_permalink() . '">' . $title . '</a>';
+				echo '<p>' . mb_substr($strContent, 0, 300) . ' ' . $readMoreBtn . '</p>';
+
 			} else {
 				if (is_single() == true) {
 					the_content( __( 'Continue reading', 'twentytwenty' ) );
@@ -66,17 +82,19 @@
 
 					// Post content:
 					$content = $a_post->post_content;
-					$strContent = preg_replace('/<figure.*?>.*?<\/figure>/', '', $content);
+					$strContent = preg_replace('/\<figure class=\"wp-block-image\"\>(.*?)\<\/figure\>/', '', $content);
 					$temp = str_replace('<p>', '', $strContent);
 					$strContent = str_replace('</p>', '', $temp);
+					$temp = mb_substr($strContent, 0, 250);
 
 					// Title:
 					$title = $a_post->post_title;
 
 					// Output:
 					$readMoreBtn = '<a class="" href="' . get_permalink() . '">' . '[...]' . '</a>';
-					echo '<a class="title-link" href="' . get_permalink() . '">' . mb_substr($title, 0, 250) . '</a>';
-					echo '<p>' . mb_substr($strContent, 0, 250) . ' ' . $readMoreBtn . '</p>';
+					echo '<a class="title-link" href="' . get_permalink() . '">' . $title . '</a>';
+					echo '<p>' . mb_substr($strContent, 0, 300) . ' ' . $readMoreBtn . '</p>';
+					// echo '<p>' . mb_substr($strContent, 0, 250) . ' ' . $readMoreBtn . '</p>'; // This will show a bug in home page when you logged in!
 
 					// Test:
 					// var_dump($a_post->guid);
@@ -85,9 +103,9 @@
 			}
 			?>
 
-		</div><!-- .entry-content -->
+		</div>
 
-	</div><!-- .post-inner -->
+	</div>
 	<?php
 	if (is_single() == false) {
 		echo '</div>';
@@ -118,7 +136,7 @@
 		}
 		?>
 
-	</div><!-- .section-inner -->
+	</div><!-- /.section-inner -->
 
 	<?php
 
@@ -147,7 +165,7 @@
 
 	<?php
 		if (is_single() == false) {
-			echo '<div>';
+			echo '</div>';
 		}
 	?>
 
