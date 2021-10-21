@@ -1,3 +1,10 @@
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="/wp-content/themes/twentytwenty/style.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
 <?php
 /**
  * Displays the menus and widgets at the end of the main element.
@@ -13,9 +20,11 @@ $has_social_menu = has_nav_menu( 'social' );
 
 $has_sidebar_1 = is_active_sidebar( 'sidebar-1' );
 $has_sidebar_2 = is_active_sidebar( 'sidebar-2' );
+$has_sidebar_3 = is_active_sidebar( 'sidebar-3' );
+
 
 // Only output the container if there are elements to display.
-if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ) {
+if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3 ) {
 	?>
 
 	<div class="footer-nav-widgets-wrapper header-footer-group">
@@ -84,7 +93,7 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ) 
 
 			<?php } ?>
 
-			<?php if ( $has_sidebar_1 || $has_sidebar_2 ) { ?>
+			<?php if ( $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3 ) { ?>
 
 				<aside class="footer-widgets-outer-wrapper" role="complementary">
 
@@ -105,6 +114,13 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ) 
 							</div>
 
 						<?php } ?>
+                        <?php if ( $has_sidebar_3 ) { ?>
+
+                            <div class="footer-widgets column-two grid-item">
+                                <?php dynamic_sidebar( 'sidebar-3' ); ?>
+                            </div>
+
+                        <?php } ?>
 
 					</div><!-- .footer-widgets-wrapper -->
 
