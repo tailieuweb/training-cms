@@ -6576,3 +6576,56 @@ section .section-title {
 #footer h2 {
 	font-size: 30px;
 }
+
+
+.danh-sach{
+	display: grid;
+  	grid-template-columns: repeat(auto-fit, minmax(max(200px,40vw), 1fr));
+  	grid-gap: 0px 0px;
+}
+
+#day-format{
+	font-size: 5rem;
+	font-weight: 900;
+	color: #000000;
+}
+
+.entry-title.title-format{
+	font-size: 5rem;
+	text-align: left;
+	background-color: none;
+}
+
+.entry-title.title-format.heading-size-1>a{
+	color:blue;
+}
+
+.entry-header.has-text-align-center, .content-format
+{
+  border-left: 2px solid #111111;
+  margin-left: -3px;
+  top: 0;
+}
+.content-format{
+	padding-top: 0px;
+	box-sizing: inherit;
+    width: 	460.6px;
+	height: 86.3px;
+	word-break: break-word;
+    word-wrap: break-word;
+}
+
+.content-format>.entry-content>p{
+	margin-left: 40px;
+}
+article.danh-sach{
+	margin: 20px;
+	background-color: white;
+	padding-top: 40px !important;
+    padding-bottom: 80px !important;
+}
+
+.delete-background
+{
+	background-color: none;
+}

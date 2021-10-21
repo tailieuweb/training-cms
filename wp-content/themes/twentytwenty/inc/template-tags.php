@@ -361,7 +361,7 @@ function twentytwenty_get_post_meta($post_id = null, $location = 'single-top')
 				do_action('twentytwenty_start_of_post_meta_list', $post_id, $post_meta, $location);
 
 				// Author.
-				if (post_type_supports(get_post_type($post_id), 'author') && in_array('author', $post_meta, true)) {
+				if (is_single() && post_type_supports(get_post_type($post_id), 'author') && in_array('author', $post_meta, true)) {
 
 					$has_meta = true;
 				?>
@@ -388,14 +388,20 @@ function twentytwenty_get_post_meta($post_id = null, $location = 'single-top')
 				if (in_array('post-date', $post_meta, true)) {
 
 					$has_meta = true;
+
 				?>
 					<li class="post-date meta-wrapper">
 						<span class="meta-icon">
 							<span class="screen-reader-text"><?php _e('Post date', 'twentytwenty'); ?></span>
-							<?php twentytwenty_the_theme_svg('calendar'); ?>
 						</span>
+
 						<span class="meta-text">
-							<a href="<?php the_permalink(); ?>"><?php the_time(get_option('date_format')); ?></a>
+							<?php if (!is_single()) : ?>
+								<a id="day-format" href="<?php the_permalink(); ?>"><?php the_time("d"); ?></a>
+								<p>Tháng <?php the_time("m"); ?></p>
+							<?php else : ?>
+								<a href="<?php the_permalink(); ?>"><?php the_time(get_option('date_format')); ?>
+							<?php endif ?>
 						</span>
 					</li>
 				<?php
@@ -439,7 +445,7 @@ function twentytwenty_get_post_meta($post_id = null, $location = 'single-top')
 				}
 
 				// Comments link.
-				if (in_array('comments', $post_meta, true) && !post_password_required() && (comments_open() || get_comments_number())) {
+				if (is_single() && in_array('comments', $post_meta, true) && !post_password_required() && (comments_open() || get_comments_number())) {
 
 					$has_meta = true;
 				?>
@@ -456,7 +462,7 @@ function twentytwenty_get_post_meta($post_id = null, $location = 'single-top')
 				}
 
 				// Sticky.
-				if (in_array('sticky', $post_meta, true) && is_sticky()) {
+				if (is_single() && in_array('sticky', $post_meta, true) && is_sticky()) {
 
 					$has_meta = true;
 				?>
