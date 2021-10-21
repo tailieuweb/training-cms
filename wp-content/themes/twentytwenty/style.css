@@ -6600,11 +6600,9 @@ section .section-title {
 	color:blue;
 }
 
-.entry-header.has-text-align-center, .content-format
+.content-format, .delete-background
 {
   border-left: 2px solid #111111;
-  margin-left: -3px;
-  top: 0;
 }
 .content-format{
 	padding-top: 0px;

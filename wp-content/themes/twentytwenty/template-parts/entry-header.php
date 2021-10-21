@@ -9,9 +9,9 @@
  */
 
 $entry_header_classes = '';
-$class = "";
-if (is_single()) {
-	$class = "delete-background";
+$class[] = "";
+if (!is_single()) {
+	$class['delete-background'] = "delete-background";
 }
 if (is_singular()) {
 	$entry_header_classes .= 'header-footer-group';
