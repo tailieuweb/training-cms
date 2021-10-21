@@ -794,6 +794,8 @@ textarea {
 	max-width: 100%;
 	padding: 1.5rem 1.8rem;
 	width: 100%;
+	padding-left: 40px;
+	padding-right: 96px;
 }
 
 select {
@@ -4095,7 +4097,7 @@ div.comment:first-of-type {
 /* Widget Base ------------------------------- */
 
 .widget {
-	margin-top: 3rem;
+	margin-top: -3rem;
 }
 
 .widget:first-child {
@@ -4825,6 +4827,8 @@ a.to-the-top > * {
 		font-size: 4.8rem;
 		margin-top: revert;
 		color: white;
+		border-left: 5px solid white;
+		padding-left: 20px;
 	}
 	/* h2,
 	.heading-size-2 {
@@ -6515,6 +6519,7 @@ section .section-title {
     text-decoration: none !important;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
+	font-size: 1.5rem;
 }
 
 .footer-nav-widget a::before{
@@ -6660,4 +6665,27 @@ section .section-title {
 	position: absolute;
 	left: 39%;
 	margin-top: -49px;
+}
+.form-control-borderless {
+	border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+	border: none;
+	outline: none;
+	box-shadow: none;
+}
+.btn-group-lg>.btn, .btn-lg{
+	margin-left: -87px
+}
+.fa-search:before{
+	position: relative;
+	z-index: 1;
+	left: 153%;
+}
+.align-items-center{
+	position: relative;
+	left: -32%;
+	width: 600px;
+	padding: 50px 0;
 }
