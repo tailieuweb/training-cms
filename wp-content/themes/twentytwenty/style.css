@@ -3842,7 +3842,7 @@ div.comment:first-of-type {
 }
 
 .comment-reply-link {
-  background-color: #cd2653;
+  background-color: white;
   color: #fff;
   display: block;
   padding: 0.7rem;
