@@ -717,7 +717,7 @@ function twentytwenty_get_color_for_area( $area = 'content', $context = 'text' )
 				'borders'   => '#dcd7ca',
 			),
 			'header-footer' => array(
-				'text'      => '#ffffff',
+				'text'      => '#000000',
 				'accent'    => '#cd2653',
 				'secondary' => '#6d6d6d',
 				'borders'   => '#dcd7ca',
