@@ -152,6 +152,7 @@ body {
 
 #site-content {
 	overflow: hidden;
+	background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_pattern.png) repeat;
 }
 
 
@@ -5067,7 +5068,7 @@ a.to-the-top > * {
 	}
 
 	h2.entry-title {
-		font-size: 18px;
+		font-size: 3rem;
 	}
 
 	/* SEARCH RESULTS */
@@ -6476,10 +6477,7 @@ a.to-the-top > * {
 	}
 }
 
-/*adjust css*/
-
-
-
+/*Vĩnh - adjust css*/
 /*css contain-main, entry-content*/
 .content-main{
 	background-color: #fff;
@@ -6506,9 +6504,84 @@ a.to-the-top > * {
 }
 /*end css entry-content*/
 
+/*css header*/
 
-
-
+.badge-default {
+	background-color: #777;
+  }
+  .badge-primary {
+	background-color: #337ab7;
+  }
+  .badge-success {
+	background-color: #5cb85c;
+  }
+  .badge-info {
+	background-color: #5bc0de;
+  }
+  .badge-warning {
+	background-color: #f0ad4e;
+  }
+  .badge-danger {
+	background-color: #d9534f;
+  }
+  
+  .navbar-icon-top .navbar-nav>li>a>.fa, .navbar-icon-top .navbar-nav>li>a>.glyphicon {
+	  position: relative;
+	  width: 36px;
+	  font-size: 24px;
+  }
+  .navbar-icon-top .navbar-nav>li>a>.fa>.badge, .navbar-icon-top .navbar-nav>li>a>.glyphicon>.badge {
+	  position: absolute;
+	  right: 0;
+	  font-family: sans-serif;
+  }
+  .navbar-icon-top .navbar-nav>li>a>.fa {
+	  top: 3px;
+	  line-height: 12px;
+  }
+  .navbar-icon-top .navbar-nav>li>a>.fa>.badge {
+	  top: -10px;
+  }
+  .navbar-icon-top .navbar-nav>li>a>.glyphicon {
+	  top: 6px;
+	  line-height: 6px;
+  }
+  .navbar-icon-top .navbar-nav>li>a>.glyphicon>.badge {
+	  top: -16px;
+  }
+  
+  @media (min-width: 768px) {
+	  .navbar-icon-top .navbar-brand {
+		  padding: 25px 15px;
+	  }
+	  .navbar-icon-top .navbar-text {
+		  margin-top: 25px;
+		  margin-bottom: 25px;
+	  }
+	  .navbar-icon-top .navbar-btn, .navbar-icon-top .navbar-form {
+		  margin-top: 18px;
+		  margin-bottom: 18px;
+	  }
+	  .navbar-icon-top .navbar-nav>li>a {
+		  text-align: center;
+		  display: table-cell;
+		  height: 70px;
+		  vertical-align: middle;
+		  padding-top: 0;
+		  padding-bottom: 0;
+	  }
+	  .navbar-icon-top .navbar-nav>li>a>.fa, .navbar-icon-top .navbar-nav>li>a>.glyphicon {
+		  display: block;
+		  width: 48px;
+		  margin: 2px auto 4px auto;
+		  top: 0;
+		  line-height: 24px;
+	  }
+	  .navbar-icon-top .navbar-nav>li>a>.fa>.badge, .navbar-icon-top .navbar-nav>li>a>.glyphicon>.badge {
+		  top: -7px;
+	  }
+  }
+/*end css header*/
 /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
@@ -6590,6 +6663,9 @@ section .section-title {
 #footer ul.quick-links li:hover a i {
     font-weight: 700;
 }
+
+
+
 
 @media (max-width:767px){
 	#footer h5 {
