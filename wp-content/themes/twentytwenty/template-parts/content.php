@@ -25,25 +25,14 @@ if(!is_single())
 {
 ?>
 <div class="container">
-<<<<<<< HEAD
     <div class="row">
         <div class="col-md-3">
-            <span class="meta-text">
-                <a href="http://wordpress.local/2021/09/30/usyk-khong-muon-knock-out-joshua/">September 30, 2021</a>
+            <span class="meta-text-copy">
+                <a href="http://wordpress.local/2021/09/30/">September 30, 2021</a>
             </span>
         </div>
         <div class="col-md-9">
             <article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
-=======
-	<div class="row">
-		<div class="col-md-3">
-		<span class="meta-text-copy">
-			<a href="http://wordpress.local/2021/09/30/">September 30, 2021</a>
-		</span>
-		</div>
-		<div class="col-md-9">
-		<article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
->>>>>>> 2-wordpress-581-202109/10-J/1-21-Le
 
                 <?php
 
@@ -147,19 +136,12 @@ else{
 		}
 
 		?>
-<<<<<<< HEAD
-
+    <div class="container">
+        <hr style="background-color: black; width: 600px;">
+    </div>
     <div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
 
         <div class="entry-content">
-=======
-		<div class="container">
-			<hr style="background-color: black; width: 600px;">
-		</div>
-		<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
-		
-			<div class="entry-content">
->>>>>>> 2-wordpress-581-202109/10-J/1-21-Le
 
             <?php
 				if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
@@ -201,13 +183,8 @@ else{
 
 			}
 			?>
-<<<<<<< HEAD
 
     </div><!-- .section-inner -->
-=======
-			
-		</div><!-- .section-inner -->
->>>>>>> 2-wordpress-581-202109/10-J/1-21-Le
 
     <?php
 
