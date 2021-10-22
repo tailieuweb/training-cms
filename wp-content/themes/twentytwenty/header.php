@@ -68,12 +68,15 @@
 							// Site description.
 							twentytwenty_site_description();
 						?>
-                    <div class="header-title__search">
-                        <input type="text" class="header-title__search__text" placeholder="Search"></input>
-                        <button class="header-title__search__button">
-                            <p>Submit</p>
-                        </button>
-                    </div>
+                    <form role="search" aria-label="Search for:" method="get" class="search-form-header"
+                        action="http://wordpress.local/">
+                        <label for="search-form-1">
+                            <span class="screen-reader-text">Search for:</span>
+                            <input type="search" id="search-form-1" class="search-field" placeholder="Search …" value=""
+                                name="s">
+                        </label>
+                        <input type="submit" class="search-submit" value="Submit">
+                    </form>
 
                 </div><!-- .header-titles -->
 
