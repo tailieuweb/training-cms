@@ -25,16 +25,16 @@ if(!is_single())
 {
 ?>
 <div class="container">
-	<div class="row">
-		<div class="col-md-3">
-		<span class="meta-text-copy">
-			<a href="http://wordpress.local/2021/09/30/">September 30, 2021</a>
-		</span>
-		</div>
-		<div class="col-md-9">
-		<article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
+    <div class="row">
+        <div class="col-md-3">
+            <span class="meta-text-copy">
+                <a href="http://wordpress.local/2021/09/30/">September 30, 2021</a>
+            </span>
+        </div>
+        <div class="col-md-9">
+            <article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
 
-		<?php
+                <?php
 
 		get_template_part( 'template-parts/entry-header' );
 
@@ -44,11 +44,12 @@ if(!is_single())
 
 		?>
 
-		<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
+                <div
+                    class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
 
-			<div class="entry-content">
+                    <div class="entry-content">
 
-				<?php
+                        <?php
 				if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
 					the_excerpt();
 				} else {
@@ -62,12 +63,12 @@ if(!is_single())
 				}
 				?>
 
-			</div><!-- .entry-content -->
+                    </div><!-- .entry-content -->
 
-		</div><!-- .post-inner -->
+                </div><!-- .post-inner -->
 
-		<div class="section-inner">
-			<?php
+                <div class="section-inner">
+                    <?php
 			wp_link_pages(
 				array(
 					'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__( 'Page', 'twentytwenty' ) . '"><span class="label">' . __( 'Pages:', 'twentytwenty' ) . '</span>',
@@ -89,9 +90,9 @@ if(!is_single())
 			}
 			?>
 
-		</div><!-- .section-inner -->
+                </div><!-- .section-inner -->
 
-		<?php
+                <?php
 
 		if ( is_single() ) {
 
@@ -106,19 +107,19 @@ if(!is_single())
 		if ( ( is_single() || is_page() ) && ( comments_open() || get_comments_number() ) && ! post_password_required() ) {
 			?>
 
-			<div class="comments-wrapper section-inner">
+                <div class="comments-wrapper section-inner">
 
-				<?php comments_template(); ?>
+                    <?php comments_template(); ?>
 
-			</div><!-- .comments-wrapper -->
+                </div><!-- .comments-wrapper -->
 
-			<?php
+                <?php
 		}
 		?>
 
-		</article><!-- .post -->
-		</div>
-	</div>
+            </article><!-- .post -->
+        </div>
+    </div>
 </div>
 <?php }
 else{
@@ -126,7 +127,7 @@ else{
 
 <article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
 
-		<?php
+    <?php
 
 		get_template_part( 'template-parts/entry-header' );
 
@@ -135,14 +136,14 @@ else{
 		}
 
 		?>
-		<div class="container">
-			<hr style="background-color: black; width: 600px;">
-		</div>
-		<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
-		
-			<div class="entry-content">
+    <div class="container">
+        <hr style="background-color: black; width: 600px;">
+    </div>
+    <div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
 
-				<?php
+        <div class="entry-content">
+
+            <?php
 				if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
 					the_excerpt();
 				} else {
@@ -156,12 +157,12 @@ else{
 				}
 				?>
 
-			</div><!-- .entry-content -->
+        </div><!-- .entry-content -->
 
-		</div><!-- .post-inner -->
+    </div><!-- .post-inner -->
 
-		<div class="section-inner">
-			<?php
+    <div class="section-inner">
+        <?php
 			wp_link_pages(
 				array(
 					'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__( 'Page', 'twentytwenty' ) . '"><span class="label">' . __( 'Pages:', 'twentytwenty' ) . '</span>',
@@ -182,10 +183,10 @@ else{
 
 			}
 			?>
-			
-		</div><!-- .section-inner -->
 
-		<?php
+    </div><!-- .section-inner -->
+
+    <?php
 
 		if ( is_single() ) {
 
@@ -200,15 +201,15 @@ else{
 		if ( ( is_single() || is_page() ) && ( comments_open() || get_comments_number() ) && ! post_password_required() ) {
 			?>
 
-			<div class="comments-wrapper section-inner">
+    <div class="comments-wrapper section-inner">
 
-				<?php comments_template(); ?>
+        <?php comments_template(); ?>
 
-			</div><!-- .comments-wrapper -->
+    </div><!-- .comments-wrapper -->
 
-			<?php
+    <?php
 		}
 		?>
 
-		</article><!-- .post -->
-		<?php }?>
+</article><!-- .post -->
+<?php }?>
