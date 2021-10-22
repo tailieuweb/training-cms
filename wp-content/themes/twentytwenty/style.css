@@ -134,8 +134,86 @@ body {
 	letter-spacing: -0.015em;
 	text-align: left;
 }
+/* Menu */
+input#exampleInputPassword1 {
+    border-radius: 5px;
+    height: 36px;
+}
+.form-group {
+    margin-left: 15px;
+}
+button.btn.btn-outline-secondary {
+    position: absolute;
+	top: 41px;
+    color: black;
+    width: 90px;
+	font-size: 15px;
+    border-radius: 5px;
+    height: 36px;
+    left: 500px;
+}
+button#dropdownMenuButton {
+    background: white;
+    color: black;
+	border: 0;
+}
+ul li a {
+    color: #888A9B !important;
+    text-decoration: none !important;
+}
+svg.svg-inline--fa.fa-user-circle.fa-w-16 {
+    font-size: 25px;
+}
+.icon-account {
+	text-align: center;
+    margin-left: 50px;
+	margin-top: 20px;
+}
+/* categories */
+li.cate-name {
+	line-height: 80px !important;
+	color: #7FB1DB;
+    line-height: 5rem;
+    width: 200px;
+    list-style: none;
+    border-bottom: 0.25px solid gray;
+}
+ul li.cate-name a {
+    text-decoration: none;
+    color: #90BBE0;
+}
+li.cate-name:last-child{
+	border-bottom: 0px solid gray;
+}
+.crossedbg {
+	width: 360px;
+    background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
+    height: 15px;
+}
+.cate {
 
-
+	padding-left: 20px;
+	padding-bottom: 1px;
+	margin-left: 60px;
+    width: 400px;
+    background: #F3F3F3;
+    height: auto;
+}
+.ul-cate {
+    width: 360px;
+    background: white;
+}
+li.cate-name::before {
+	margin-right: 15px;
+	color: #F5CE31;
+    content: "\f111";
+    font: normal normal normal 14px/1 FontAwesome;
+    top: 3px;
+    left: -18px;
+    width: 5px;
+    padding-right: 10px;
+    height: 5px;
+}
 /* Footer */
 .widget li a {
     position: relative;

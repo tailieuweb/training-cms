@@ -24,7 +24,7 @@
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+	<script src="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/js/all.min.js"></script>
 	<?php wp_head(); ?>
 
 </head>
@@ -70,6 +70,10 @@
 					// Site description.
 					twentytwenty_site_description();
 					?>
+					<div class="form-group">
+						<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Search">
+						<button type="button" class="btn btn-outline-secondary">Submit</button>
+					</div>
 
 				</div><!-- .header-titles -->
 
@@ -168,6 +172,19 @@
 						?>
 
 					</div><!-- .header-toggles -->
+					<div class="icon-account">
+						<i class="far fa-user-circle"></i>
+						<div class="dropdown">
+							<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Account
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</div>
+					</div>
 				<?php
 				}
 				?>
