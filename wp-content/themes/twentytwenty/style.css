@@ -6800,6 +6800,7 @@ section .section-title {
     color: white;
 }
 
+/*css content */
 .trang-chu>.has-text-align-center {
     text-align: left;
 	font-size: 10%;
@@ -6847,4 +6848,44 @@ section .section-title {
 .container .row .col-md-3 a{
 	
 	color:black;
+}
+
+/*css header*/
+.site-title a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+  color: #6d6d6d;
+}
+.site-description{
+  background-color: #f0f0f1;
+  border: 5px #f0f0f1 solid;
+  border-top: 10px #f0f0f1 solid;
+  border-bottom: 10px #f0f0f1 solid;
+}
+li{
+  color: #000;
+}
+
+/*css trang detail*/
+.entry-header .entry-header-inner .entry-categories a{
+	display: none;
+}
+.meta-text a{
+	display: none;
+}
+.meta-text{
+	display: none;
+}
+.meta-icon {
+	display: none;
+}
+h1.entry-title, h2.entry-title {
+  margin: 0;
+  font-size: 30px;
+}
+.entry-content > *:first-child {
+  margin-top: 0;
+  font-style: italic;
+  text-align: left;
 }
