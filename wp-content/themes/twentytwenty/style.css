@@ -173,7 +173,78 @@ path {
 	transition: all 0.15s linear;
 }
 
+/* Date format--------------------------------- */
+.headlinesdate {
+	background: #f5ce31;
+    border-radius: 50%;
+    padding: 0px 30px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
+}
+.headlinesdate {
+	position: absolute;
+    left: 85%;
+    top: 90px;
+}
 
+.headlinesdate {
+    float: left;
+    font-family: 'Prata', serif;
+}
+.headlinesday {
+    border-bottom: 1px solid #000;
+}
+.headlinesdate .headlinesday {
+    line-height: 1.7em;
+}
+.headlinesdm {
+	position: relative;
+    left: -5px;
+    top: 12px;
+}
+.headlinesyear {
+	position: relative;
+    left: 15px;
+    top: -25px;
+}
+.add-heading {
+	text-align: initial;
+	width: 80%;
+	padding-top: 40px;
+}
+.add-heading {
+	position: relative;
+    left: -6%;
+	top: 50px;
+}
+.overviewline {
+	border-bottom: 1px solid #cecece;
+    margin: 25px 0 30px;
+    position: relative;
+} 
+.overviewline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50px;
+    border-width: 12px 12px 0;
+    border-style: solid;
+    border-color: #cecece transparent;
+    display: block;
+    width: 0;
+} 
+.overviewline::after {
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 51px;
+    border-width: 11px 11px 0;
+    border-style: solid;
+    border-color: #f5f5f5 transparent;
+    display: block;
+    width: 0;
+} 
 /* Screen Reader Text ------------------------ */
 
 .screen-reader-text {
@@ -211,7 +282,7 @@ path {
 	width: auto;
 	z-index: 100000;
 }
-
+/* Sheet 6 detail post ------------------------------------- */
 
 /* Skip Link --------------------------------- */
 
@@ -2404,8 +2475,8 @@ body:not(.singular) main > article:first-of-type {
 /* Post Header ------------------------------- */
 
 .singular .entry-header {
-	background-color: #fff;
-	padding: 4rem 0;
+	/* background-color: #fff;
+	padding: 4rem 0; */
 }
 
 .entry-categories {
@@ -2438,6 +2509,7 @@ body:not(.singular) main > article:first-of-type {
 h1.entry-title,
 h2.entry-title {
 	margin: 0;
+	
 }
 
 .entry-title a {
@@ -4824,11 +4896,13 @@ a.to-the-top > * {
 	h2,
 	.heading-size-2 {
 		font-size: 2.8rem;
+	
+	}
+	.wp-block-group__inner-container h2 {
 		border-left: thick solid white;
 		color: antiquewhite;
 		padding-left: 5px;
 	}
-
 	h3,
 	.heading-size-3 {
 		font-size: 4rem;
@@ -4889,10 +4963,10 @@ a.to-the-top > * {
 	}
 	.widget .wp-block-latest-posts__list li a:hover{
 		text-decoration: none;
+
 	}
 	.widget li:hover a i{
-		font-size:30px;
-		
+		font-size:20px;
 		margin-top:-10px;
 	}
 
@@ -4900,7 +4974,7 @@ a.to-the-top > * {
 		font-weight: 700;
 	}
 	.widget li:hover {
-		padding: 3px 0;
+		
 		margin-left:5px;
 	
 		font-weight:700;
@@ -5124,7 +5198,7 @@ a.to-the-top > * {
 	/* POST HEADER */
 
 	.singular .entry-header {
-		padding: 8rem 0;
+		/* padding: 8rem 0; */
 	}
 
 	.entry-categories {
@@ -5168,7 +5242,7 @@ a.to-the-top > * {
 	}
 
 	.post-inner {
-		padding-top: 8rem;
+		/* padding-top: 8rem; */
 	}
 
 	/* POST FOOTER */
@@ -6174,7 +6248,7 @@ a.to-the-top > * {
 
 	h1,
 	.heading-size-1 {
-		font-size: 8.4rem;
+		font-size: 4rem;
 	}
 
 	/* Helper Classes ------------------------ */
