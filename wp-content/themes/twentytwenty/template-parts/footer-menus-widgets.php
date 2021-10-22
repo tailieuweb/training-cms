@@ -12,9 +12,15 @@
 $has_footer_menu = has_nav_menu('footer');
 $has_social_menu = has_nav_menu('social');
 
+<<<<<<< HEAD
 $has_sidebar_1 = is_active_sidebar( 'sidebar-1' );
 $has_sidebar_2 = is_active_sidebar( 'sidebar-2' );
 $has_sidebar_3 = is_active_sidebar( 'sidebar-3' );
+=======
+$has_sidebar_1 = is_active_sidebar('sidebar-1');
+$has_sidebar_2 = is_active_sidebar('sidebar-2');
+$has_sidebar_3 = is_active_sidebar('sidebar-3');
+>>>>>>> 2-wordpress-581-202109/10-J/1-21-Le
 
 // Only output the container if there are elements to display.
 if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3 ) {
