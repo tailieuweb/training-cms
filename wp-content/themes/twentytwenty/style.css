@@ -6794,22 +6794,57 @@ section .section-title {
   margin-top: 5rem;
   background-color: #007b5e;
 }
-.widget-content > div > *:last-child {
-  margin-bottom: 0;
-  margin-left: 50px;
-}
-[class*="__inner-container"]
-  > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
-  max-width: 58rem;
-  width: 100%;
-  color: white;
+[class*="__inner-container"] > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+    max-width: 58rem;
+    width: 100%;
+    color: white;
 }
 
-@media (max-width: 767px) {
-  #footer h5 {
-    padding-left: 0;
-    border-left: transparent;
-    padding-bottom: 0px;
-    margin-bottom: 10px;
-  }
+.trang-chu>.has-text-align-center {
+    text-align: left;
+	font-size: 10%;
+}
+
+.trang-chu{
+    display: block;
+    border-left: 5px solid #2f3031;
+	margin: 20px;
+	text-align: left;
+}
+.entry-categories-inner {
+    flex-wrap: wrap;
+    margin: -0.5rem 0 0 -1rem;
+	text-align: left;
+}
+
+.trang-chu .entry-header .entry-header-inner h2 a {
+	color: #6ca8e8;
+	text-decoration: none;
+
+	font-size: 50px;
+}
+.trang-chu .entry-content{
+	text-align: left;
+	margin-right: 100px;
+	font-size: 30px;
+}
+.trang-chu .entry-header .entry-header-inner .entry-categories a{
+	display: none;
+}
+.trang-chu .meta-text a{
+	display: none;
+}
+.trang-chu .meta-text{
+	display: none;
+}
+.trang-chu .meta-icon {
+	display: none;
+}
+.col-md-3{
+	font-size: 50px;
+	margin-top: 100px;
+}
+.container .row .col-md-3 a{
+	
+	color:black;
 }
