@@ -6890,6 +6890,7 @@ section .section-title {
 .trang-chu .meta-icon {
   display: none;
 }
+
 .col-md-3 {
   font-size: 50px;
   margin-top: 100px;
@@ -6935,6 +6936,5 @@ h2.entry-title {
 }
 .entry-content > *:first-child {
   margin-top: 0;
-  font-style: italic;
   text-align: left;
 }
