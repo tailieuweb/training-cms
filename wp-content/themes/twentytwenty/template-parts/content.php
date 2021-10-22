@@ -27,8 +27,8 @@ if(!is_single())
 <div class="container">
 	<div class="row">
 		<div class="col-md-3">
-		<span class="meta-text">
-			<a href="http://wordpress.local/2021/09/30/usyk-khong-muon-knock-out-joshua/">September 30, 2021</a>
+		<span class="meta-text-copy">
+			<a href="http://wordpress.local/2021/09/30/">September 30, 2021</a>
 		</span>
 		</div>
 		<div class="col-md-9">
@@ -135,9 +135,11 @@ else{
 		}
 
 		?>
-
+		<div class="container">
+			<hr style="background-color: black; width: 600px;">
+		</div>
 		<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
-
+		
 			<div class="entry-content">
 
 				<?php
@@ -180,7 +182,7 @@ else{
 
 			}
 			?>
-
+			
 		</div><!-- .section-inner -->
 
 		<?php
