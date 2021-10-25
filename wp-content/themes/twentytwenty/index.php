@@ -16,9 +16,21 @@
  */
 
 get_header();
+$class = '';
+$col = '';
+if (!is_single()) {
+	$class = 'danhsach';
+	$col = 'col-md-8';
+} 
+if (!is_search()) {
+	// print_r('true');
+}else{
+	$class = 'search';
+	$col = 'col-md-12';
+	// print_r('false');
+}
 ?>
-
-<main id="site-content" role="main" class="col-md-12">
+<main id="site-content" role="main" class="<?php echo $col.' '.$class ?>">
 
 	<?php
 
@@ -57,23 +69,21 @@ get_header();
 
 	if ($archive_title || $archive_subtitle) {
 	?>
-		<div class="col-md-4">
-			<header class="archive-header has-text-align-center header-footer-group">
+		<header class="archive-header has-text-align-center header-footer-group">
 
-				<div class="archive-header-inner section-inner medium">
+			<div class="archive-header-inner section-inner medium">
 
-					<?php if ($archive_title) { ?>
-						<h1 class="archive-title"><?php echo wp_kses_post($archive_title); ?></h1>
-					<?php } ?>
+				<?php if ($archive_title) { ?>
+					<h1 class="archive-title"><?php echo wp_kses_post($archive_title); ?></h1>
+				<?php } ?>
 
-					<?php if ($archive_subtitle) { ?>
-						<div class="archive-subtitle section-inner thin max-percentage intro-text"><?php echo wp_kses_post(wpautop($archive_subtitle)); ?></div>
-					<?php } ?>
+				<?php if ($archive_subtitle) { ?>
+					<div class="archive-subtitle section-inner thin max-percentage intro-text"><?php echo wp_kses_post(wpautop($archive_subtitle)); ?></div>
+				<?php } ?>
 
-				</div><!-- .archive-header-inner -->
+			</div><!-- .archive-header-inner -->
 
-			</header><!-- .archive-header -->
-		</div>
+		</header><!-- .archive-header -->
 	<?php
 	}
 
@@ -98,7 +108,7 @@ get_header();
 			<?php
 			get_search_form(
 				array(
-					'aria_label' => __('search again', 'twentytwenty'),
+					'aria_label' => __('search again 1', 'twentytwenty'),
 				)
 			);
 			?>

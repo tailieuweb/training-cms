@@ -38,7 +38,8 @@ twentytwenty_the_post_meta(get_the_ID(), 'single-top');
 			<div class="entry-categories">
 				<span class="screen-reader-text"><?php _e('Categories', 'twentytwenty'); ?></span>
 				<div class="entry-categories-inner">
-					<?php the_category(' '); ?>
+					<!-- xuat ra the loai post -->
+					<?php /* the_category(' '); */  ?>
 				</div><!-- .entry-categories-inner -->
 			</div><!-- .entry-categories -->
 

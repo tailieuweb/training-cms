@@ -16,6 +16,12 @@ $class = '';
 if (!is_single()) {
 	$class = 'danhsach';
 }
+if (!is_search()) {
+	// print_r('true');
+} else {
+	$class = 'search';
+	// print_r('false');
+}
 
 ?>
 
@@ -38,6 +44,9 @@ if (!is_single()) {
 			<?php
 			if (is_search() || !is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
 				the_excerpt();
+				$post = get_post();
+				$content = $post->post_content;
+				echo $content;
 			} else {
 				if (is_single()) {
 					echo the_content(__('Continue reading', 'twentytwenty'));
@@ -45,7 +54,7 @@ if (!is_single()) {
 					// echo substr(the_content(__('Continue reading', 'twentytwenty')), 0, 50);
 					$post = get_post();
 					$content = $post->post_content;
-					echo $content;
+					echo $content;	
 				}
 			}
 			?>
