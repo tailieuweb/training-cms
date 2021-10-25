@@ -44,50 +44,67 @@
 
 		<div class="header-inner section-inner">
 
-			<div class="header-titles-wrapper">
+			<div class="left-section">
 
-				<?php
-
-				// Check whether the header search is activated in the customizer.
-				$enable_header_search = get_theme_mod('enable_header_search', true);
-
-				if (true === $enable_header_search) {
-
-				?>
-
-					<button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
-						<span class="toggle-inner">
-							<span class="toggle-icon">
-								<?php twentytwenty_the_theme_svg('search'); ?>
-							</span>
-							<span class="toggle-text"><?php _ex('Search', 'toggle text', 'twentytwenty'); ?></span>
-						</span>
-					</button><!-- .search-toggle -->
-
-				<?php } ?>
-
-				<div class="header-titles">
+				<div class="header-titles-wrapper">
 
 					<?php
-					// Site title or logo.
-					twentytwenty_site_logo();
 
-					// Site description.
-					twentytwenty_site_description();
+					// Check whether the header search is activated in the customizer.
+					$enable_header_search = get_theme_mod('enable_header_search', true);
+
+					if (true === $enable_header_search) {
+
 					?>
 
-				</div><!-- .header-titles -->
+						<button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
+							<span class="toggle-inner">
+								<span class="toggle-icon">
+									<?php twentytwenty_the_theme_svg('search'); ?>
+								</span>
+								<span class="toggle-text"><?php _ex('Search', 'toggle text', 'twentytwenty'); ?></span>
+							</span>
+						</button><!-- .search-toggle -->
 
-				<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
-					<span class="toggle-inner">
-						<span class="toggle-icon">
-							<?php twentytwenty_the_theme_svg('ellipsis'); ?>
+					<?php } ?>
+
+					<div class="header-titles">
+
+						<?php
+						// Site title or logo.
+						twentytwenty_site_logo();
+
+						// Site description.
+						twentytwenty_site_description();
+						?>
+
+					</div><!-- .header-titles -->
+
+					<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
+						<span class="toggle-inner">
+							<span class="toggle-icon">
+								<?php twentytwenty_the_theme_svg('ellipsis'); ?>
+							</span>
+							<span class="toggle-text"><?php _e('Menu', 'twentytwenty'); ?></span>
 						</span>
-						<span class="toggle-text"><?php _e('Menu', 'twentytwenty'); ?></span>
-					</span>
-				</button><!-- .nav-toggle -->
+					</button><!-- .nav-toggle -->
 
-			</div><!-- .header-titles-wrapper -->
+				</div><!-- .header-titles-wrapper -->
+
+				<div class="btn-wrapper">
+					<a href="" class="home-btn">Home</a>
+				</div><!-- .btn-wrapper -->
+
+				<div class="search-box-wrapper">
+					<div class="search-box">
+						<form action="" method="GET" class="search-form">
+							<input type="text" class="search-field" name="s" placeholder="Search">
+							<input type="submit" class="search-btn" value="Submit">
+						</form>
+					</div>
+				</div><!-- .search-box-wrapper -->
+
+			</div><!-- .left-section -->
 
 			<div class="header-navigation-wrapper">
 
