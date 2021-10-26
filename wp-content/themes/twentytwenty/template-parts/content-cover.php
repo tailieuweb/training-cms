@@ -44,84 +44,84 @@
 	$color_overlay_classes .= ' opacity-' . $color_overlay_opacity;
 	?>
 
-	<div class="cover-header <?php echo $cover_header_classes; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output ?>"<?php echo $cover_header_style; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- We need to double check this, but for now, we want to pass PHPCS ;) ?>>
-		<div class="cover-header-inner-wrapper screen-height">
-			<div class="cover-header-inner">
-				<div class="cover-color-overlay color-accent<?php echo esc_attr( $color_overlay_classes ); ?>"<?php echo $color_overlay_style; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- We need to double check this, but for now, we want to pass PHPCS ;) ?>></div>
+        <div class="cover-header <?php echo $cover_header_classes; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output ?>"<?php echo $cover_header_style; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- We need to double check this, but for now, we want to pass PHPCS ;) ?>>
+            <div class="cover-header-inner-wrapper screen-height">
+                <div class="cover-header-inner">
+                    <div class="cover-color-overlay color-accent<?php echo esc_attr( $color_overlay_classes ); ?>"<?php echo $color_overlay_style; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- We need to double check this, but for now, we want to pass PHPCS ;) ?>></div>
 
-					<header class="entry-header has-text-align-center">
-						<div class="entry-header-inner section-inner medium">
+                        <header class="entry-header has-text-align-center">
+                            <div class="entry-header-inner section-inner medium">
 
-							<?php
+                                <?php
 
-							/**
-							 * Allow child themes and plugins to filter the display of the categories in the article header.
-							 *
-							 * @since Twenty Twenty 1.0
-							 *
-							 * @param bool Whether to show the categories in article header. Default true.
-							 */
-							$show_categories = apply_filters( 'twentytwenty_show_categories_in_entry_header', true );
+                                /**
+                                 * Allow child themes and plugins to filter the display of the categories in the article header.
+                                 *
+                                 * @since Twenty Twenty 1.0
+                                 *
+                                 * @param bool Whether to show the categories in article header. Default true.
+                                 */
+                                $show_categories = apply_filters( 'twentytwenty_show_categories_in_entry_header', true );
 
-							if ( true === $show_categories && has_category() ) {
-								?>
+                                if ( true === $show_categories && has_category() ) {
+                                    ?>
 
-								<div class="entry-categories">
-									<span class="screen-reader-text"><?php _e( 'Categories', 'twentytwenty' ); ?></span>
-									<div class="entry-categories-inner">
-										<?php the_category( ' ' ); ?>
-									</div><!-- .entry-categories-inner -->
-								</div><!-- .entry-categories -->
+                                    <div class="entry-categories">
+                                        <span class="screen-reader-text"><?php _e( 'Categories', 'twentytwenty' ); ?></span>
+                                        <div class="entry-categories-inner">
+                                            <?php the_category( ' ' ); ?>
+                                        </div><!-- .entry-categories-inner -->
+                                    </div><!-- .entry-categories -->
 
-								<?php
-							}
+                                    <?php
+                                }
 
-							the_title( '<h1 class="entry-title">', '</h1>' );
+                                the_title( '<h1 class="entry-title">', '</h1>' );
 
-							if ( is_page() ) {
-								?>
+                                if ( is_page() ) {
+                                    ?>
 
-								<div class="to-the-content-wrapper">
+                                    <div class="to-the-content-wrapper">
 
-									<a href="#post-inner" class="to-the-content fill-children-current-color">
-										<?php twentytwenty_the_theme_svg( 'arrow-down' ); ?>
-										<div class="screen-reader-text"><?php _e( 'Scroll Down', 'twentytwenty' ); ?></div>
-									</a><!-- .to-the-content -->
+                                        <a href="#post-inner" class="to-the-content fill-children-current-color">
+                                            <?php twentytwenty_the_theme_svg( 'arrow-down' ); ?>
+                                            <div class="screen-reader-text"><?php _e( 'Scroll Down', 'twentytwenty' ); ?></div>
+                                        </a><!-- .to-the-content -->
 
-								</div><!-- .to-the-content-wrapper -->
+                                    </div><!-- .to-the-content-wrapper -->
 
-								<?php
-							} else {
+                                    <?php
+                                } else {
 
-								$intro_text_width = '';
+                                    $intro_text_width = '';
 
-								if ( is_singular() ) {
-									$intro_text_width = ' small';
-								} else {
-									$intro_text_width = ' thin';
-								}
+                                    if ( is_singular() ) {
+                                        $intro_text_width = ' small';
+                                    } else {
+                                        $intro_text_width = ' thin';
+                                    }
 
-								if ( has_excerpt() ) {
-									?>
+                                    if ( has_excerpt() ) {
+                                        ?>
 
-									<div class="intro-text section-inner max-percentage<?php echo esc_attr( $intro_text_width ); ?>">
-										<?php the_excerpt(); ?>
-									</div>
+                                        <div class="intro-text section-inner max-percentage<?php echo esc_attr( $intro_text_width ); ?>">
+                                            <?php the_excerpt(); ?>
+                                        </div>
 
-									<?php
-								}
+                                        <?php
+                                    }
 
-								twentytwenty_the_post_meta( get_the_ID(), 'single-top' );
+                                    twentytwenty_the_post_meta( get_the_ID(), 'single-top' );
 
-							}
-							?>
+                                }
+                                ?>
 
-						</div><!-- .entry-header-inner -->
-					</header><!-- .entry-header -->
+                            </div><!-- .entry-header-inner -->
+                        </header><!-- .entry-header -->
 
-			</div><!-- .cover-header-inner -->
-		</div><!-- .cover-header-inner-wrapper -->
-	</div><!-- .cover-header -->
+                </div><!-- .cover-header-inner -->
+            </div><!-- .cover-header-inner-wrapper -->
+        </div><!-- .cover-header -->
 
 	<div class="post-inner" id="post-inner">
 

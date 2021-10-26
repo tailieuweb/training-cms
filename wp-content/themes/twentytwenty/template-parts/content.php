@@ -10,10 +10,14 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
+$home = '';
+if(!is_single()){
+    $home = 'danh-sach';
+}
 
 ?>
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+<article <?php post_class($home); ?> id="post-<?php the_ID(); ?>">
 
 	<?php
 
@@ -31,8 +35,14 @@
 
 			<?php
 			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
+                if ( is_singular() ) {
+                    the_title( '<h1 class="entry-title">', '</h1>' );
+                } else {
+                    the_title( '<h2 class="entry-title heading-size-1-2"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
+                }
 				the_excerpt();
 			} else {
+
 				the_content( __( 'Continue reading', 'twentytwenty' ) );
 			}
 			?>
@@ -41,8 +51,8 @@
 
 	</div><!-- .post-inner -->
 
-	<div class="section-inner">
-		<?php
+<!--	<div class="section-inner">-->
+<!--		--><?php
 		wp_link_pages(
 			array(
 				'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__( 'Page', 'twentytwenty' ) . '"><span class="label">' . __( 'Pages:', 'twentytwenty' ) . '</span>',

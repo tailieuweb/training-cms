@@ -363,21 +363,21 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 
 					$has_meta = true;
 					?>
-					<li class="post-author meta-wrapper">
-						<span class="meta-icon">
-							<span class="screen-reader-text"><?php _e( 'Post author', 'twentytwenty' ); ?></span>
-							<?php twentytwenty_the_theme_svg( 'user' ); ?>
-						</span>
-						<span class="meta-text">
-							<?php
-							printf(
-								/* translators: %s: Author name. */
-								__( 'By %s', 'twentytwenty' ),
-								'<a href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author_meta( 'display_name' ) ) . '</a>'
-							);
-							?>
-						</span>
-					</li>
+<!--					<li class="post-author meta-wrapper">-->
+<!--						<span class="meta-icon">-->
+<!--							<span class="screen-reader-text">--><?php //_e( 'Post author', 'twentytwenty' ); ?><!--</span>-->
+<!--							--><?php //twentytwenty_the_theme_svg( 'user' ); ?>
+<!--						</span>-->
+<!--						<span class="meta-text">-->
+<!--							--><?php
+//							printf(
+//								/* translators: %s: Author name. */
+//								__( 'By %s', 'twentytwenty' ),
+//								'<a href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author_meta( 'display_name' ) ) . '</a>'
+//							);
+//							?>
+<!--						</span>-->
+<!--					</li>-->
 					<?php
 
 				}
@@ -437,21 +437,21 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 				}
 
 				// Comments link.
-				if ( in_array( 'comments', $post_meta, true ) && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-
-					$has_meta = true;
-					?>
-					<li class="post-comment-link meta-wrapper">
-						<span class="meta-icon">
-							<?php twentytwenty_the_theme_svg( 'comment' ); ?>
-						</span>
-						<span class="meta-text">
-							<?php comments_popup_link(); ?>
-						</span>
-					</li>
-					<?php
-
-				}
+//				if ( in_array( 'comments', $post_meta, true ) && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+//
+//					$has_meta = true;
+//					?>
+<!--					<li class="post-comment-link meta-wrapper">-->
+<!--						<span class="meta-icon">-->
+<!--							--><?php //twentytwenty_the_theme_svg( 'comment' ); ?>
+<!--						</span>-->
+<!--						<span class="meta-text">-->
+<!--							--><?php //comments_popup_link(); ?>
+<!--						</span>-->
+<!--					</li>-->
+<!--					--><?php
+//
+//				}
 
 				// Sticky.
 				if ( in_array( 'sticky', $post_meta, true ) && is_sticky() ) {
