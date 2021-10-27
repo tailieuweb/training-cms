@@ -93,27 +93,7 @@ if (is_singular()) {
 			<div class="entry-header-inner section-inner medium">
 
 				<?php
-				/**
-				 * Allow child themes and plugins to filter the display of the categories in the entry header.
-				 *
-				 * @since Twenty Twenty 1.0
-				 *
-				 * @param bool Whether to show the categories in header. Default true.
-				 */
-				$show_categories = apply_filters('twentytwenty_show_categories_in_entry_header', true);
-				//categories
-				if (true === $show_categories && has_category()) {
-				?>
-
-					<div class="entry-categories">
-						<span class="screen-reader-text"><?php _e('Categories', 'twentytwenty'); ?></span>
-						<div class="entry-categories-inner">
-							<?php the_category(' '); ?>
-						</div><!-- .entry-categories-inner -->
-					</div><!-- .entry-categories -->
-
-				<?php
-				}
+				
 
 				if (is_singular()) {
 					the_title('<h1 class="entry-title">', '</h1>');

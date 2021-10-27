@@ -6083,3 +6083,7 @@ a.to-the-top>* {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
 }
+
+header {
+    margin-bottom: 20px;
+}
