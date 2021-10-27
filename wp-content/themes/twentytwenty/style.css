@@ -1389,7 +1389,7 @@ body:not(.enable-search-modal) .header-titles-wrapper {
 }
 
 .site-title a {
-	color: inherit;
+	color: #777;
 	display: block;
 	text-decoration: none;
 }
@@ -1475,6 +1475,7 @@ body:not(.enable-search-modal) .site-logo img {
 
 .header-toggles {
 	display: none;
+
 }
 
 .header-inner .toggle {
@@ -1539,7 +1540,7 @@ body:not(.enable-search-modal) .site-logo img {
 .search-toggle svg {
 	height: 2.5rem;
 	max-width: 2.3rem;
-	width: 2.3rem;
+	width: 2rem;
 }
 
 /* Navigation Toggle ------------------------- */
@@ -1555,7 +1556,7 @@ body:not(.enable-search-modal) .site-logo img {
 .nav-toggle .toggle-icon,
 .nav-toggle svg {
 	height: 0.8rem;
-	width: 2.6rem;
+	width: 2rem;
 }
 
 .nav-toggle .toggle-inner {
@@ -4892,7 +4893,7 @@ a.to-the-top > * {
 
 	.site-title {
 		font-size: 2.4rem;
-		font-weight: 700;
+		font-weight: normal;
 	}
 
 	.site-description {
@@ -5684,7 +5685,7 @@ a.to-the-top > * {
 		align-items: center;
 		display: flex;
 		justify-content: space-between;
-		padding: 2.8rem 0;
+		padding: 0 0;
 	}
 
 	.header-titles-wrapper {
@@ -5742,13 +5743,14 @@ a.to-the-top > * {
 	}
 
 	.header-inner .toggle {
-		height: 4.4rem;
+		height: 2.4rem;
 		padding: 0 3rem;
 		position: relative;
 		bottom: auto;
 		left: auto;
 		right: auto;
-		top: auto;
+		/* top: auto; */
+		top: 16px;
 		width: auto;
 	}
 
@@ -5764,7 +5766,7 @@ a.to-the-top > * {
 		position: absolute;
 		left: 0;
 		top: calc(50% - 1.35rem);
-		width: 0.1rem;
+		/* width: 0.1rem; */
 	}
 
 	.header-inner .toggle-wrapper:first-child::before {
@@ -6148,7 +6150,7 @@ a.to-the-top > * {
 	/* HEADER TOGGLES */
 
 	.primary-menu-wrapper + .header-toggles {
-		margin-left: 4rem;
+		margin-left: 1rem;
 	}
 
 	.header-toggles {
@@ -6505,82 +6507,60 @@ a.to-the-top > * {
 /*end css entry-content*/
 
 /*css header*/
+.header-title-adjust h1:hover{
+	color: #d7dadd;
+}
+.navbar-adjust li {
+	margin: 0;
+	padding: 0 6px;
+}
+.navbar-adjust .active{
+	background-color: #d7dadd;
+}
+.navbar-adjust li .navbar-brand{
+	padding: 25px 15px;
+	text-decoration: none;
+	font-size: 1em;
+	color: #000
+}
+.btn-submit-header{
+	background-color: #fff;
+	color: #000;
+	font-size: 12px;
+	padding: 8px;
+}
+.btn-submit-header:hover{
+	background-color: #d7dadd;
+}
+.menu-item a{
+	color: #777 !important;
+}
+.fa-header{
+	font-size: 20px;
+	color: black;
 
-.badge-default {
-	background-color: #777;
-  }
-  .badge-primary {
-	background-color: #337ab7;
-  }
-  .badge-success {
-	background-color: #5cb85c;
-  }
-  .badge-info {
-	background-color: #5bc0de;
-  }
-  .badge-warning {
-	background-color: #f0ad4e;
-  }
-  .badge-danger {
-	background-color: #d9534f;
-  }
-  
-  .navbar-icon-top .navbar-nav>li>a>.fa, .navbar-icon-top .navbar-nav>li>a>.glyphicon {
-	  position: relative;
-	  width: 36px;
-	  font-size: 24px;
-  }
-  .navbar-icon-top .navbar-nav>li>a>.fa>.badge, .navbar-icon-top .navbar-nav>li>a>.glyphicon>.badge {
-	  position: absolute;
-	  right: 0;
-	  font-family: sans-serif;
-  }
-  .navbar-icon-top .navbar-nav>li>a>.fa {
-	  top: 3px;
-	  line-height: 12px;
-  }
-  .navbar-icon-top .navbar-nav>li>a>.fa>.badge {
-	  top: -10px;
-  }
-  .navbar-icon-top .navbar-nav>li>a>.glyphicon {
-	  top: 6px;
-	  line-height: 6px;
-  }
-  .navbar-icon-top .navbar-nav>li>a>.glyphicon>.badge {
-	  top: -16px;
-  }
-  
-  @media (min-width: 768px) {
-	  .navbar-icon-top .navbar-brand {
-		  padding: 25px 15px;
-	  }
-	  .navbar-icon-top .navbar-text {
-		  margin-top: 25px;
-		  margin-bottom: 25px;
-	  }
-	  .navbar-icon-top .navbar-btn, .navbar-icon-top .navbar-form {
-		  margin-top: 18px;
-		  margin-bottom: 18px;
-	  }
-	  .navbar-icon-top .navbar-nav>li>a {
-		  text-align: center;
-		  display: table-cell;
-		  height: 70px;
-		  vertical-align: middle;
-		  padding-top: 0;
-		  padding-bottom: 0;
-	  }
-	  .navbar-icon-top .navbar-nav>li>a>.fa, .navbar-icon-top .navbar-nav>li>a>.glyphicon {
-		  display: block;
-		  width: 48px;
-		  margin: 2px auto 4px auto;
-		  top: 0;
-		  line-height: 24px;
-	  }
-	  .navbar-icon-top .navbar-nav>li>a>.fa>.badge, .navbar-icon-top .navbar-nav>li>a>.glyphicon>.badge {
-		  top: -7px;
-	  }
-  }
+}
+.dropdown-toggle{
+	background-color: transparent !important;
+		border: none;
+}
+.dropdown-toggle::after{
+	border: none;
+}
+.caret{
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: 4px solid;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent; 
+}
+.account-text-header{
+	padding-top: 9px;
+	color:#6d6d6d;
+	font-weight: 600;
+	font-size: 1.2rem;
+}
 /*end css header*/
 /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
