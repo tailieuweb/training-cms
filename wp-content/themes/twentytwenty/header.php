@@ -83,6 +83,17 @@
 					</span>
 				</button><!-- .nav-toggle -->
 
+				<!-- Search -->
+				<form role="search" <?php echo $twentytwenty_aria_label; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. 
+									?> method="get" class="search-form" action="<?php echo esc_url(home_url('/')); ?>">
+					<label for="<?php echo esc_attr($twentytwenty_unique_id); ?>">
+						<span class="screen-reader-text"><?php _e('Search for:', 'twentytwenty'); // phpcs:ignore: WordPress.Security.EscapeOutput.UnsafePrintingFunction -- core trusts translations 
+															?></span>
+						<input type="search" id="<?php echo esc_attr($twentytwenty_unique_id); ?>" class="search-field" placeholder="<?php echo esc_attr_x('Search &hellip;', 'placeholder', 'twentytwenty'); ?>" value="<?php echo get_search_query(); ?>" name="s" />
+					</label>
+					<input type="submit" class="search-submit" value="<?php echo esc_attr_x('Submit', 'submit button', 'twentytwenty'); ?>" />
+				</form>
+				<!-- Search -->
 			</div><!-- .header-titles-wrapper -->
 
 			<div class="header-navigation-wrapper">
@@ -169,6 +180,19 @@
 						?>
 
 					</div><!-- .header-toggles -->
+					<div class="icon-account">
+						<i class="fa fa-user-circle-o"></i>
+						<div class="dropdown">
+							<button formaction="http://wordpress.local/wp-admin/" class="btn btn-secondary dropdown-toggle" type="submit" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Account
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="http://wordpress.local/wp-admin/">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</div>
+					</div>
 				<?php
 				}
 				?>

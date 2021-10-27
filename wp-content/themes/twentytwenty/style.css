@@ -1195,6 +1195,7 @@ button.toggle {
 	margin-top: 14px;
 	position: absolute;
 	margin-right: 20px;
+	background-color: #28a745;
 }
 .icon-search{
 	position: absolute;
@@ -5503,4 +5504,38 @@ section .section-title {
 }
 .post-prev-next .post-meta-wrapper {
 	margin-top: 0;
+}
+/* header trang */
+.header-footer-group {
+	background-color: #e7e7e7 !important;
+}
+.header-titles-wrapper .search-form .search-submit{
+	flex-shrink: 0;
+    border-radius: 8%;
+    font-size: 12px;
+    height: 35px;
+	position: inherit;
+	margin-top: 7px;
+	background-color: #fff;
+	color: black;
+}
+.header-titles-wrapper .search-form{
+	justify-content: flex-end;
+}
+.header-titles-wrapper .search-form .search-field{
+	height: 55%;
+	margin-top: 7px;
+    margin-left: 35px;
+	border-radius: 5px;
+}
+.icon-account {
+	text-align: center;
+    margin-left: 50px;
+	margin-top: 20px;
+}
+.header-navigation-wrapper #menu-item-20 a{
+	color: #777;
+}
+.header-navigation-wrapper #menu-item-21 a{
+	color: #777;
 }
