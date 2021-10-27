@@ -33,9 +33,7 @@ wp_body_open();
 ?>
 
 <header id="site-header" class="header-footer-group" role="banner">
-
     <div class="header-inner section-inner">
-
         <div class="header-titles-wrapper">
 
             <?php
@@ -63,7 +61,6 @@ wp_body_open();
                 <?php
                 // Site title or logo.
                 twentytwenty_site_logo();
-
                 // Site description.
                 twentytwenty_site_description();
                 ?>
@@ -161,7 +158,14 @@ wp_body_open();
                             </button><!-- .search-toggle -->
 
                         </div>
-
+                        <div class="toggle-wrapper search-toggle-wrapper">
+                            <button class="toggle search-toggle desktop-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
+                                    <span class="toggle-inner">
+                                        <?php twentytwenty_the_theme_svg( 'user' ); ?>
+                                        <span class="toggle-text"><?php _ex( 'user', 'toggle text', 'twentytwenty' ); ?></span>
+                                    </span>
+                            </button><!-- .account -->
+                            </div>
                         <?php
                     }
                     ?>
