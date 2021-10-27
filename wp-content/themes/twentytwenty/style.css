@@ -6030,13 +6030,16 @@ section .section-title {
     border-left: 2px solid #666;
     padding-right: 30px;
 }
-.top_news_block_desc h4 {
-    font-size: 18px;
+.top_news_block_desc .post-title {
+    font-size: 25px;
     margin-top: 10px;
     margin-bottom: 10px;
     text-transform: uppercase;
     font-family: "Open Sans Condensed", sans-serif;
     font-weight: bold;
+}
+.topnewstime{
+    text-align: center;
 }
 .topnewstime > .topnewsdate {
     font-family: "Prata", serif;
@@ -6048,4 +6051,7 @@ section .section-title {
     padding-bottom: 10px !important;
     margin: 0;
     background-color: rgb(238, 238, 238);
+}
+.danh-sach .post-inner {
+    padding-top: 0;
 }

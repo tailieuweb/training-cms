@@ -22,7 +22,7 @@ if (!is_single()) {
 
 	<?php
 	if (is_single()) {
-	get_template_part( 'template-parts/entry-header' );
+		get_template_part('template-parts/entry-header');
 	}
 
 	if (!is_search()) {
@@ -49,36 +49,22 @@ if (!is_single()) {
 						$timestamp = strtotime($post->post_date);
 						$day = date("d", $timestamp);
 						$month = date("m", $timestamp);
-						$year = date("Y", $timestamp);
 					}
-					$content = preg_replace('/<figure.*?>.*?<\/figure>/', '', $post->post_content);
-					$image = findFigureTag($post->post_content);
-					$image = $image ? $image : '<figure>
-					<img src="https://artbaselmanawynwood.com/wp-content/uploads/2021/09/noimage.png">
-				</figure>';
+					/** $content = preg_replace('/<figure.*?>.*?<\/figure>/', '', $post->post_content); */
+					$content = findHTMLTag($post->post_content, 'p');
+					$content = $content ? $content : 'This post hasn\'t description !!';
 			?>
 					<div class="list_new_view">
-						<div class="row post-home-page">
-							<div class="col-md-5">
-								<div class="top_news_block_thumb img-fluid">
-									<?= $image ?>
-								</div>
+						<div class="row post-home-page top_news_block_desc">
+							<div class="col-md-3 col-xs-3 topnewstime">
+								<span class="topnewsdate"><?= strlen($day) > 1 ? $day : '0' . $day ?></span><br>
+								<span class="topnewsmonth">Tháng <?= strlen($month) > 1 ? $month : '0' . $month ?></span><br>
 							</div>
-							<div class="col-md-7 top_news_block_desc">
-								<div class="row">
-									<div class="col-md-3 col-xs-3 topnewstime">
-										<span class="topnewsdate"><?= strlen($day) > 1 ? $day : '0' . $day ?></span><br>
-										<span class="topnewsmonth">Tháng <?= strlen($month) > 1 ? $month : '0' . $month ?>,</span><br>
-										<span class="topnewsyear"><?= $year ?></span><br>
-									</div>
-									<div class="col-md-9 col-xs-9 shortdesc">
-										<h4>
-											<a href="<?= $post->guid ?>"><?= $post->post_title ?></a>
-										</h4>
-										<p><?= substr($content, 0, 180); ?><a href="<?= $post->guid ?>">[...]</a>
-										</p>
-									</div>
-								</div>
+							<div class="col-md-9 col-xs-9 shortdesc">
+								<p class="post-title">
+									<a href="<?= $post->guid ?>"><?= $post->post_title ?></a>
+								</p>
+								<?= substr($content, 0, 150); ?><a href="<?= $post->guid ?>"> [...]</a>
 							</div>
 						</div>
 					</div>
