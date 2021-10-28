@@ -321,6 +321,26 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 
 		$post_meta_wrapper_classes = ' post-meta-single post-meta-single-bottom';
 
+	}elseif ('single-date' === $location) {
+		/**
+		 * Filters post meta info visibility.
+		 *
+		 * Use this filter to hide post meta information like Author, Post date, Comments, Is sticky status.
+		 *
+		 * @since Twenty Twenty 1.0
+		 *
+		 * @param array $args {
+		 *     @type string $post-date
+		 * }
+		 */
+		$post_meta = apply_filters(
+			'twentytwenty_post_meta_location_single_date',
+			array(
+				'post-date',
+			)
+		);
+
+		$post_meta_wrapper_classes = ' post-meta-single post-meta-single-date';
 	}
 
 	// If the post meta setting has the value 'empty', it's explicitly empty and the default post meta shouldn't be output.
@@ -388,13 +408,20 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 					$has_meta = true;
 					?>
 					<li class="post-date meta-wrapper">
-						<span class="meta-icon">
-							<span class="screen-reader-text"><?php _e( 'Post date', 'twentytwenty' ); ?></span>
-							<?php twentytwenty_the_theme_svg( 'calendar' ); ?>
-						</span>
-						<span class="meta-text">
-							<a href="<?php the_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
-						</span>
+						<?php if ($location === 'single-date') { ?>
+							<span class="meta-text">
+								<a href="<?php the_permalink(); ?>"><?php the_time( 'd' ); ?></a>
+								<a href="<?php the_permalink(); ?>"><?php the_time( 'F' ); ?></a>
+							</span>
+						<?php }else{ ?>
+							<span class="meta-icon">
+								<span class="screen-reader-text"><?php _e( 'Post date', 'twentytwenty' ); ?></span>
+								<?php twentytwenty_the_theme_svg( 'calendar' ); ?>
+							</span>
+							<span class="meta-text">
+								<a href="<?php the_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
+							</span>
+						<?php } ?>
 					</li>
 					<?php
 
