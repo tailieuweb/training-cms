@@ -33,6 +33,7 @@
 	<body <?php body_class(); ?>>
 
 		<?php
+        //b1: code module b1
 		wp_body_open();
 		?>
 

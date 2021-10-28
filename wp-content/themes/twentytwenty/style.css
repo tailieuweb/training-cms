@@ -6637,3 +6637,35 @@ section .section-title {
 .footer-widgets .widget .wp-block-group{
 	margin-top: 0!important;
 }
+.align-items-center{
+	position: relative;
+	left: -32%;
+	width: 600px;
+	padding: 50px 0;
+}
+.btn-group-lg>.btn, .btn-lg{
+	margin-left: -87px;
+}
+.fa-search:before{
+	position: relative;
+	z-index: 1;
+	left: 153%;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+textarea{
+	padding-left: 40px;
+	padding-right: 96px;
+}
