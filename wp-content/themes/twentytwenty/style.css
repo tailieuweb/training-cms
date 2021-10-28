@@ -6482,7 +6482,7 @@ a.to-the-top > * {
 
 /*Thay đổi css theo ycau*/
 /* Footer */
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
     padding: 60px 0;
 }
@@ -6615,7 +6615,7 @@ section .section-title {
 
 .footer-widgets .widget .wp-block-group{
 	margin-top: 0!important;
-}
+} */
 
 /* .entry-title-adjust a:focus,
 .entry-title-adjust a:hover {
