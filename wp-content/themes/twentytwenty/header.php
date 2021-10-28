@@ -21,9 +21,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
 
 	<?php wp_head(); ?>
 
@@ -69,8 +71,14 @@
 
 					// Site description.
 					twentytwenty_site_description();
+
 					?>
 
+					<form role="search" <?php echo $twentytwentyone_aria_label; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. 
+										?> method="get" class="search-form" action="<?php echo esc_url(home_url('/')); ?>">
+						<input type="search" placeholder="Search" id="<?php echo esc_attr($twentytwentyone_unique_id); ?>" class="search-field" value="<?php echo get_search_query(); ?>" name="s" />
+						<input type="submit" class="search-submit" value="<?php echo esc_attr_x('Submit', 'submit button', 'twentytwentyone'); ?>" />
+					</form>
 				</div><!-- .header-titles -->
 
 				<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
@@ -153,7 +161,6 @@
 						?>
 
 							<div class="toggle-wrapper search-toggle-wrapper">
-
 								<button class="toggle search-toggle desktop-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
 									<span class="toggle-inner">
 										<?php twentytwenty_the_theme_svg('search'); ?>
@@ -166,7 +173,19 @@
 						<?php
 						}
 						?>
-
+						<div class="toggle-wrapper search-toggle-wrapper">
+							<div class="dropdown toggle nav-toggle desktop-nav-toggle">
+								<i class="fa fa-user-circle-o toggle-inner" aria-hidden="true"></i>
+								<button class="btn account dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+									Account
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+									<li><a class="dropdown-item" href="#">Admin</a></li>
+									<li><a class="dropdown-item" href="#">Another action</a></li>
+									<li><a class="dropdown-item" href="#">Something else here</a></li>
+								</ul>
+							</div>
+						</div>
 					</div><!-- .header-toggles -->
 				<?php
 				}
