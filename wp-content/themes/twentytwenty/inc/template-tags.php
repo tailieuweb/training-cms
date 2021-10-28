@@ -105,8 +105,8 @@ function twentytwenty_site_description( $echo = true ) {
 	if ( ! $description ) {
 		return;
 	}
-
-	$wrapper = '<div class="site-description">%s</div><!-- .site-description -->';
+	
+	$wrapper = '<div class="site-description header-titles-format">%s</div><!-- .site-description -->';
 
 	$html = sprintf( $wrapper, esc_html( $description ) );
 
