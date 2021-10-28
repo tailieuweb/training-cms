@@ -13,8 +13,6 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
-//Add form search
-$has_sidebar_4 = is_active_sidebar( 'sidebar-4' );
 get_header();
 ?>
 
@@ -73,23 +71,7 @@ get_header();
 			</div><!-- .archive-header-inner -->
 
 		</header><!-- .archive-header -->
-		<!-- Add form search -->
-		<?php  if ( $has_sidebar_4) { ?>
-			<aside class="footer-widgets-outer-wrapper search-main ml-5" role="complementary">
 
-				<div class="footer-widgets-wrapper">
-					<?php
-					if ( $has_sidebar_4 ) { ?>
-
-						<div class="footer-widgets  grid-item">
-							<?php dynamic_sidebar( 'sidebar-4' ); ?>
-						</div>
-					<?php } ?>
-				</div>
-
-			</aside>
-		<?php } ?>
-		<!-- End form search -->
 		<?php
 	}
 
