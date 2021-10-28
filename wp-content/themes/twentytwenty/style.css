@@ -6617,7 +6617,7 @@ section .section-title {
 	margin-top: 0!important;
 }
 
-.entry-title-adjust a:focus,
+/* .entry-title-adjust a:focus,
 .entry-title-adjust a:hover {
 	text-decoration: underline;
 	color: #21759b;
@@ -6656,36 +6656,8 @@ h2.entry-title-adjust a{
 	position: absolute;
 	left: 34%;
 	margin-top: -80px;
-}
+} */
 
-
-.pagination-single .pagination-single-inner{
-	background: #fff;
-	position: relative;
-	left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-.pagination-single-inner {
-	overflow: hidden;
-    padding: 20px 30px;
-	display: inline-block;
-	color: #000;
-
-}
-.pagination-single a {
-    align-items: baseline;
-    display: flex;
-    font-weight: 600;
-    letter-spacing: -0.0275em;
-    text-decoration: none;
-    flex: 1;
-    color: #000;
-}
-.pagination-single-inner a.next-post{
-	margin: 0px;
-
-}
 
 
 
