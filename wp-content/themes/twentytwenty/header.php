@@ -24,12 +24,15 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
-		rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
-		crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<!--link header, Link comment -->
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 	<?php wp_head(); ?>
 
@@ -41,7 +44,8 @@
 	wp_body_open();
 	?>
 
-	<header id="site-header" class="header-footer-group" role="banner">
+	<header id="site-header" class="header-footer-group " role="banner">
+
 
 		<div class="header-inner section-inner">
 
@@ -75,8 +79,11 @@
 
 					// Site description.
 					twentytwenty_site_description();
-					?>
 
+					?>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
 				</div><!-- .header-titles -->
 
 				<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
@@ -87,6 +94,12 @@
 						<span class="toggle-text"><?php _e('Menu', 'twentytwenty'); ?></span>
 					</span>
 				</button><!-- .nav-toggle -->
+				<!-- <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form> -->
 
 			</div><!-- .header-titles-wrapper -->
 

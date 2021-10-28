@@ -11,13 +11,12 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
-$class ='';
-if (!is_single()){
-	$class ='danh-sach';
+$class = '';
+if (!is_single()) {
+	$class = 'danhsach';
 }
 
 ?>
-
 <article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
 
 	<?php
@@ -29,7 +28,6 @@ if (!is_single()){
 	}
 
 	?>
-
 	<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
 
 		<div class="entry-content">
@@ -43,7 +41,7 @@ if (!is_single()){
 				} else {
 					$post = get_post();
 					$content = $post->post_content;
-					echo substr($content, 0, 100);
+					echo substr($content, 0, 80);
 				}
 			}
 			?>
@@ -93,7 +91,10 @@ if (!is_single()){
 
 		<div class="comments-wrapper section-inner">
 
-			<?php comments_template(); ?>
+			 <?php comments_template(); ?>
+
+			
+		</div>
 
 		</div><!-- .comments-wrapper -->
 
