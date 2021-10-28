@@ -6632,4 +6632,192 @@ section .section-title {
 	margin-top: 0;
 }
 
+/* CSS trang chủ */
+
+.danh-sach {
+	margin: 5rem 10em;
+    background: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+	padding: 15px 0 !important;
+	position: relative;
+}
+
+.danh-sach .entry-title a{
+	color: #428bca!important;
+	font-size: 45px;
+    font-weight: 500;
+}
+
+.danh-sach .entry-categories{
+	display: none;
+}
+
+.danh-sach figure{
+	display: none;
+}
+
+.danh-sach .entry-content p {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: none;
+}
+
+.danh-sach .entry-content p:first-child{
+	display: block;
+}
+
+.danh-sach .post-inner{
+	padding-top: 2rem!important;
+}
+
+.danh-sach .entry-header-inner{
+	display: flex;
+	text-align: right;
+	align-items: center;
+}
+
+.danh-sach .entry-title{
+	width: 170%;
+	position: relative;
+}
+
+.danh-sach .post-inner{
+	display: inline-block;
+	position: relative;
+	padding-left: 15rem;
+}
+
+.danh-sach .post-date{
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.danh-sach::before{
+	content: '';
+	position: absolute;
+	right: 35%;
+	width: 1px;
+	height: 82%;
+	background: rgb(75, 75, 75);
+}
+
+.danh-sach .post-meta .meta-icon{
+	margin-bottom: 10px;
+}
+
+.danh-sach .post-meta .post-date .meta-icon svg{
+	height: 4.8rem;
+	width: 4.8rem;
+}
+
+.danh-sach .post-comment-link,
+.danh-sach .post-author{
+	display: none;
+}
+
+/* Search result */
+.search-danh-sach {
+	margin: 5rem 10em;
+    background: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+	padding: 15px 0 !important;
+	position: relative;
+	height: 28rem;
+	overflow: hidden;
+}
+/* css các thuộc tính phù hợp với title */
+.search-danh-sach .entry-title a{
+	color: #428bca!important;
+	font-size: 25px;
+    font-weight: 600;
+	padding-right: 15px;
+	text-transform: uppercase;
+}
+/* di chuyển title qua bên phải */
+.search-danh-sach .entry-title {
+	position: absolute;
+	right: 0;
+	text-align: left;
+	width: 35%;
+	line-height: 20px;
+}
+/* Ẩn category trên cùng */
+.search-danh-sach .entry-categories{
+	display: none;
+}
+/* 
+	Di chuyển thẻ figure (image) sang bên trái
+	Set chiêu rộng cho thẻ img
+*/
+.search-danh-sach figure{
+	position: absolute;
+    left: 0;
+    top: -40px;
+    width: 47rem!important;
+}
+/* Ẩn caption của figure */
+.search-danh-sach figure figcaption{
+	display: none;
+}
+/* Ẩn tất cả text */
+.search-danh-sach .entry-content p {
+	display: none;
+}
+
+/* Chỉ hiển thị 1 thẻ p đầu tiên */
+.search-danh-sach .entry-content p:nth-child(1) {
+	display: block;
+	padding-right: 10px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 35%!important;
+}
+/* Thêm biểu tượng rút gọn text bằng after */
+.search-danh-sach .entry-content p:nth-child(1)::after {
+	content: '[...]';
+	position: absolute;
+	bottom: 0;
+}
+
+
+.search-danh-sach .entry-content blockquote {
+	display: none;
+}
+.search-danh-sach .post-inner{
+	padding-top: 2rem!important;
+}
+.search-danh-sach::before{
+	content: '';
+	position: absolute;
+	right: 38%;
+	width: 1px;
+	height: 82%;
+	background: rgb(75, 75, 75);
+}
+.search-danh-sach .post-meta{
+	display: none;
+}
+
+.search-danh-sach .time-post{
+	text-align: center;
+}
+
+.search-danh-sach .time-post .day{
+	font-size: 60px;
+    letter-spacing: -4px;
+    font-weight: 300;
+}
+
+.search-danh-sach .time-post .month{
+	font-weight: 200;
+}
+
+.search-danh-sach .time-post .month::before{
+	content: 'THÁNG ';
+}
+
+
+
 

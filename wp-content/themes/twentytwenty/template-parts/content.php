@@ -11,12 +11,24 @@
  * @since Twenty Twenty 1.0
  */
 
+	$newClass = '';
+	if(!is_single()){
+		$newClass = 'danh-sach';
+	}
+	if(is_search()){
+		$newClass = 'search-danh-sach';
+		
+	}
+
+	
+	
 ?>
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+
+
+<article <?php post_class($newClass); ?> id="post-<?php the_ID(); ?>">
 
 	<?php
-
 	get_template_part( 'template-parts/entry-header' );
 
 	if ( ! is_search() ) {
@@ -25,12 +37,24 @@
 
 	?>
 
-	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
 
+
+	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
+	<?php
+		if(is_search()){
+			echo '<div class="time-post">';
+			$post_date = get_the_date('d', $post->ID);
+			$post_month = get_the_date('m', $post->ID);
+			echo '<span class="day">'.$post_date.'</span> <br>';
+			echo '<span class="month">'.$post_month.'</span>';
+			echo '</div>';
+		}
+		
+	?>
 		<div class="entry-content">
 
 			<?php
-			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
+			if ( ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
 				the_excerpt();
 			} else {
 				the_content( __( 'Continue reading', 'twentytwenty' ) );
@@ -56,7 +80,6 @@
 
 		// Single bottom post meta.
 		twentytwenty_the_post_meta( get_the_ID(), 'single-bottom' );
-
 		if ( post_type_supports( get_post_type( get_the_ID() ), 'author' ) && is_single() ) {
 
 			get_template_part( 'template-parts/entry-author-bio' );

@@ -824,3 +824,4 @@ function twentytwentyFindParents( target, query ) {
 
 	return parents;
 }
+
