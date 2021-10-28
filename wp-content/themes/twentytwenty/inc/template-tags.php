@@ -321,21 +321,21 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 
 		$post_meta_wrapper_classes = ' post-meta-single post-meta-single-bottom';
 
-	}elseif ('single-date' === $location) {
-		/**
-		 * Filters post meta info visibility.
+	}elseif('single-date' === $location){
+/**
+		 * Filters post tags visibility.
 		 *
-		 * Use this filter to hide post meta information like Author, Post date, Comments, Is sticky status.
+		 * Use this filter to hide post date.
 		 *
 		 * @since Twenty Twenty 1.0
 		 *
 		 * @param array $args {
-		 *     @type string $post-date
+		 *     @type string $tags
 		 * }
 		 */
 		$post_meta = apply_filters(
 			'twentytwenty_post_meta_location_single_date',
-			array(
+			array(				
 				'post-date',
 			)
 		);
@@ -408,25 +408,24 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 					$has_meta = true;
 					?>
 					<li class="post-date meta-wrapper">
-						<?php if ($location === 'single-date') { ?>
-							<span class="meta-text">
-								<a href="<?php the_permalink(); ?>"><?php the_time( 'd' ); ?></a>
-								<a href="<?php the_permalink(); ?>"><?php the_time( 'F' ); ?></a>
-							</span>
-						<?php }else{ ?>
+						<?php if($location === 'single-top'){ ?>
 							<span class="meta-icon">
-								<span class="screen-reader-text"><?php _e( 'Post date', 'twentytwenty' ); ?></span>
+							<span class="screen-reader-text"><?php _e( 'Post date', 'twentytwenty' ); ?></span>
 								<?php twentytwenty_the_theme_svg( 'calendar' ); ?>
 							</span>
 							<span class="meta-text">
 								<a href="<?php the_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
 							</span>
-						<?php } ?>
+						<?php }else{ ?>
+							<span class="meta-text">
+								<a href="<?php the_permalink(); ?>"><?php the_time( 'd' ); ?></a>
+								<a href="<?php the_permalink(); ?>"><?php the_time( 'F' ); ?></a>
+							</span>
+						<?php }?>
 					</li>
 					<?php
 
 				}
-
 				// Categories.
 				if ( in_array( 'categories', $post_meta, true ) && has_category() ) {
 
