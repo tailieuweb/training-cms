@@ -1013,6 +1013,9 @@ section {
 	max-width: 100%;
 	border-right: 2px solid black;
 }
+/*
+Css for the post for result search
+*/
 .danh-sach .section-inner.medium {
 	max-width: 100%;
 	display: flex;
@@ -2465,6 +2468,9 @@ h1.entry-title,
 h2.entry-title {
 	margin: 0;
 }
+/*
+Css for the post for result search
+*/
 .danh-sach h1.entry-title,
 .danh-sach h2.entry-title {
 	width: 60%;
@@ -2665,7 +2671,9 @@ h2.entry-title {
 }
 
 /* POST META BOTTOM */
-
+/*
+Css for the post for result search
+*/
 .post-meta-wrapper.post-meta-single-bottom {
 	margin-top: 0rem;
 }
@@ -2840,6 +2848,9 @@ h2.entry-title {
 .has-text-align-center {
 	text-align: center;
 }
+/*
+Css for the post for result search
+*/
 article.danh-sach .has-text-align-center{
 	text-align: center;
 	width: 60%;
@@ -4684,6 +4695,9 @@ a.to-the-top > * {
 	.template-cover .post-inner .author-bio {
 		width: calc( 100% - 4rem );
 	}
+	/*
+	Css for the post for result search
+	*/
 	.template-cover .danh-sach .post-inner .post-meta-wrapper,
 	.template-cover .danh-sach .post-inner .author-bio{
 		width: 40%;
@@ -5119,6 +5133,9 @@ a.to-the-top > * {
 	body:not(.singular) main > article:first-of-type {
 		padding: 8rem 0 0;
 	}
+	/*
+	Css for the post for result search
+	*/
 	body:not(.singular) main > article.danh-sach {
 		width: 100%;
 		display: flex;
@@ -5189,6 +5206,9 @@ a.to-the-top > * {
 	.post-inner {
 		/*padding-top: 8rem;*/
 	}
+	/*
+	Css for the post for result search
+	*/
 	.danh-sach .post-inner {
 		/*padding-top: 8rem;*/
 		width: 40%;

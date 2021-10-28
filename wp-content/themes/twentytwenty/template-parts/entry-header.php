@@ -46,7 +46,7 @@ if ( is_singular() ) {
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		} else {
 //			the_title( '<h2 class="entry-title heading-size-1"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
-
+			//Get url image of post
             $value = get_post();
             $posta = $value->post_content;
             $temp_start = strpos($posta,'<figure');
