@@ -6234,6 +6234,9 @@ a.to-the-top > * {
 /*	color: #fff;*/
 /*}*/
 
+/*
+Create form search
+*/
 #site-content .post-meta-wrapper.post-meta-edit-link-wrapper{
 	display: none;
 }
@@ -6271,6 +6274,9 @@ form.wp-block-search__button-outside .wp-block-search__button {
 	color: #000;
 	font-size: 32px;
  }
+/*
+End form search
+*/
 @media ( min-width: 1220px ) {
 
 	/* Element Base -------------------------- */
