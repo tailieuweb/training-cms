@@ -6482,7 +6482,7 @@ a.to-the-top > * {
 
 /*Thay đổi css theo ycau*/
 /* Footer */
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
     padding: 60px 0;
 }
@@ -6656,7 +6656,7 @@ h2.entry-title-adjust a{
 	position: absolute;
 	left: 34%;
 	margin-top: -80px;
-}
+} */
 
 /*Module: 7*/
 .pagination-single .pagination-single-inner{
