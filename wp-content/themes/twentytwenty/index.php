@@ -18,7 +18,7 @@
 get_header();
 ?>
 
-<main id="site-content 123213" role="main">
+<main id="site-content" role="main">
 
 	<?php
 
