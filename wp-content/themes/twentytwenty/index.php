@@ -17,8 +17,6 @@
 
 get_header();
 ?>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <main id="site-content" role="main" class="222">
 
 	<?php
@@ -92,23 +90,6 @@ get_header();
 		}
 	} elseif (is_search()) {
 	?>
-		<!-- <div class="row justify-content-center">
-			<div class="col-12 col-md-10 col-lg-8">
-				<form class="card card-sm">
-					<div class="card-body row no-gutters align-items-center">
-						<div class="col-auto">
-							<i class="fas fa-search h4 text-body"></i>
-						</div>
-						<div class="col">
-							<input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search topics or keywords">
-						</div>
-						<div class="col-auto">
-							<button class="btn btn-lg btn-success" type="submit">Search</button>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div> -->
 		<div class="no-search-results-form section-inner thin">
 
 			<?php
@@ -129,9 +110,5 @@ get_header();
 	<?php get_template_part('template-parts/pagination'); ?>
 
 </main><!-- #site-content -->
-
-
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <?php
 get_footer();
