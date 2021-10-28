@@ -86,9 +86,8 @@ get_header();
                     echo '<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
                 }
                 the_post();
-
+                
                 get_template_part( 'template-parts/content', get_post_type() );
-
             }
         } elseif ( is_search() ) {
             ?>
