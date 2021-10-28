@@ -992,11 +992,6 @@ section {
     width: 100%;
 }
 
-article.list_post .section-inner {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
 .entry-header .section-inner {
     display: inline;
 }

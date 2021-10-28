@@ -10,12 +10,13 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
-$class="";
- if(!is_single()){
-     $class = "list_post";
- }
+
+$class='';
+if(!is_single()){
+$class= 'list_post';
+}
 ?>
- 
+
 <article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
 
 	<?php
@@ -28,31 +29,6 @@ $class="";
 
 	?>
 
-	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
-
-		<div class="entry-content">
-
-			<?php
-			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
-				the_excerpt();
-			} else {
-				if (is_single()) {
-					the_content( __( 'Continue reading', 'twentytwenty' ) );
-				}
-				else{
-					$post  = get_post();
-                    $content = $post->post_content;
-                    $str = preg_replace('/<figure.*?>.*?<\/figure>/', ' ', $content);
-					echo substr($str, 0, 100);
-				}
-				
-			}
-			?>
-
-		</div><!-- .entry-content -->
-
-	</div><!-- .post-inner -->
-
 	<div class="section-inner">
 		<?php
 		wp_link_pages(
@@ -64,7 +40,7 @@ $class="";
 			)
 		);
 
-		edit_post_link();
+		// edit_post_link();
 
 		// Single bottom post meta.
 		twentytwenty_the_post_meta( get_the_ID(), 'single-bottom' );
