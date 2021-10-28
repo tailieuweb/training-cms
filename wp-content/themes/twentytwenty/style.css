@@ -4589,6 +4589,9 @@ a.to-the-top > * {
 
 	/* Entry Content ------------------------- */
 
+
+	
+
 	/* ALIGNMENT CLASSES */
 
 	.alignleft,
@@ -6604,3 +6607,31 @@ section .section-title {
 	font-size: 24px;
 	margin-right: 4px;
 }
+.container.content-body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 5px solid rgba(192,192,192,0.7);
+}
+
+
+.content-body .content-col-day {
+	margin-right: 20px;
+	width: 100%;
+}
+
+.content-body .col-content {
+	width: 100%;
+	border-left: 1px solid #ccc;
+}
+
+.content-col-day .day{
+	font-size: 70px;
+	color:#21759b;
+}
+
+.content-col-day .month{
+	font-size: 20px;
+}
+
+
