@@ -5540,7 +5540,6 @@ a.to-the-top > * {
 		justify-content: space-between;
 		margin-right: -4rem;
 		width: calc(100% + 4rem);
-		background: #007b5e !important;
 	}
 
 	.footer-widgets {

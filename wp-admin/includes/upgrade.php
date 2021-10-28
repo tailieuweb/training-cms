@@ -426,10 +426,6 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.'
 					0 => 'block-5',
 					1 => 'block-6',
 				),
-				'sidebar-3'           => array(
-					0 => 'block-7',
-					1 => 'block-8',
-				),
 				'array_version'       => 3,
 			)
 		);
