@@ -85,6 +85,7 @@ article.list_post span.meta-text {
 
 article.list_post span.meta-text a:last-child {
     font-size: 25px;
+    font-weight: normal;
 }
 
 article.list_post.post {
