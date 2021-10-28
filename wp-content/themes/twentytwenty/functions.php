@@ -758,7 +758,7 @@ function twentytwenty_get_elements_array() {
 				'background-color' => array( ':root .has-background-background-color' ),
 			),
 			'text'       => array(
-				'color'            => array( 'body', '.entry-title a', ':root .has-primary-color' ),
+				'color'            => array( 'body','.entry-title a', ':root .has-primary-color' ),
 				'background-color' => array( ':root .has-primary-background-color' ),
 			),
 			'secondary'  => array(
