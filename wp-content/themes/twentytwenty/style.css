@@ -3599,8 +3599,10 @@ figure.wp-block-table.is-style-stripes {
 }
 
 [class*="__inner-container"] > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
-	max-width: 58rem;
+	max-width: 48rem;
 	width: 100%;
+	font-size: 2.5rem;
+	color: white;
 }
 
 .alignnone,
@@ -6513,6 +6515,8 @@ section .section-title {
 	text-decoration: none !important;
 	background-color: transparent;
 	-webkit-text-decoration-skip: objects;
+	font-size: 1.7rem;
+	font-weight: normal;
 }
 
 .footer-nav-widget a::before{
