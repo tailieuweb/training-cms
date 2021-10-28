@@ -3,6 +3,7 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="./wp-content/themes/twentytwenty/style.css" rel="stylesheet">
+    <link href="./wp-content/themes/twentytwenty/module3.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
@@ -26,18 +27,18 @@
         <div class="row text-center text-xs-center text-sm-left text-md-left">
             <div class="col-xs-12 col-sm-4 col-md-4">
                 <ul class="list-unstyled quick-links">
-                <li><?php dynamic_sidebar('sidebar-1'); ?></a></li>
+                <?php dynamic_sidebar('sidebar-1'); ?>
                 </ul>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4">
                 
                 <ul class="list-unstyled quick-links">
-                    <li><?php dynamic_sidebar('sidebar-2'); ?></a></li>
+                 <?php dynamic_sidebar('sidebar-2'); ?>
                 </ul>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4">
                 <ul class="list-unstyled quick-links">
-                    <li><?php dynamic_sidebar('sidebar-3'); ?></a></li>
+                  <?php dynamic_sidebar('sidebar-3'); ?></a>
                 </ul>
             </div>
         </div>
