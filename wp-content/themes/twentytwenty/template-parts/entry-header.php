@@ -39,7 +39,7 @@ $type_post='';
 		 */
 		$show_categories = apply_filters( 'twentytwenty_show_categories_in_entry_header', true );
 
-		if ( true === $show_categories && has_category() ) {
+		if ( true === $show_categories && has_category() && $type_post === 'single-top' ) {
 			?>
 
 			<div class="entry-categories">
