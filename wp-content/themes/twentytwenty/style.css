@@ -1242,6 +1242,7 @@ button.toggle {
   display: flex;
   flex-wrap: nowrap;
   margin: 0 0 -0.8rem -0.8rem;
+  padding-right: 30rem;
 }
 
 .search-form .search-field,
@@ -6689,7 +6690,7 @@ ul.list-unstyled.quick-links li {
   }
 }
 
-/* Custom Footer */
+
 .wp-block-group__inner-container h2 {
   padding-left: 10px;
   border-left: 3px solid #eeeeee;
@@ -6734,12 +6735,12 @@ ul.list-unstyled.quick-links li {
   transform: scale(1, 1) !important;
 }
 
-/* Custom All Posts */
+
 .featured-media {
   display: none;
 }
 
-/* Xep lai thu tu */
+
 header.entry-header.has-text-align-center {
   order: 2;
 }
