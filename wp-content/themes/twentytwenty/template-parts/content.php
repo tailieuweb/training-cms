@@ -10,6 +10,7 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
+<<<<<<< HEAD
 $home = '';
 if(!is_single()){
     $home = 'danh-sach';
@@ -18,6 +19,15 @@ if(!is_single()){
 ?>
 
 <article <?php post_class($home); ?> id="post-<?php the_ID(); ?>">
+=======
+$class= '';
+if (!is_single()){
+    $class = 'danh-sach';
+}
+?>
+
+<article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
+>>>>>>> 1-wordpress-581-202109/2-groups/1-C/2-38-Tinh
 
 	<?php
 

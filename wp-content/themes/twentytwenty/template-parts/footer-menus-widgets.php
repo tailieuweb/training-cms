@@ -19,7 +19,7 @@ $has_sidebar_3 = is_active_sidebar( 'sidebar-3' );
 if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3) {
 	?>
 
-	<div class="footer-nav-widgets-wrapper header-footer-group">
+	<div class="footer-nav-widgets-wrapper header-footer-group" style="background: #007b5e">
 
 		<div class="footer-inner section-inner">
 
@@ -108,12 +108,19 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ||
 						<?php } ?>
 
                         <?php if ( $has_sidebar_3 ) { ?>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1-wordpress-581-202109/2-groups/1-C/2-38-Tinh
                             <div class="footer-widgets column-two grid-item">
                                 <?php dynamic_sidebar( 'sidebar-3' ); ?>
                             </div>
 
                         <?php } ?>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1-wordpress-581-202109/2-groups/1-C/2-38-Tinh
 					</div><!-- .footer-widgets-wrapper -->
 
 				</aside><!-- .footer-widgets-outer-wrapper -->
