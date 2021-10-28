@@ -12,13 +12,18 @@
  * @since Twenty Twenty 1.0
  */
 
+$class = '';
+if (!is_single()) {
+	$class = 'danh-sach';
+}
 ?>
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+<article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
 
 	<?php
-
-	get_template_part('template-parts/entry-header');
+	if (is_single()) {
+		get_template_part('template-parts/entry-header');
+	}
 
 	if (!is_search()) {
 		get_template_part('template-parts/featured-image');
@@ -26,35 +31,53 @@
 
 	?>
 
-	<div class="col-md-8">
-		<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
+	<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
 
-			<div class="entry-content">
+		<div class="entry-content">
 
-				<?php
-				if (is_search() || !is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
-					the_excerpt();
+			<?php
+			if (is_search() || !is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
+				the_excerpt();
+			} else {
+
+				if (is_single()) {
+					the_content(__('Continue reading', 'twentytwenty'));
 				} else {
-					the_title( '<h2 class="entry-title heading-size-1"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' ); 
-
-					// the_content( __( 'Continue reading', 'twentytwenty' ) );
-					if (is_single()) {
-						the_content(__('Continue reading', 'twentytwenty'));
-					} else {
-						// var_dump();die();
-						$post = get_post();
-						$content = $post->post_content;
-						$str = preg_replace('/<figure.*?>.*?<\/figure>/', '', $content);
-						echo substr($str, 0, 500);
+					$post = get_post();
+					$day = $month = $year = 0;
+					if (strtotime($post->post_date)) {
+						$timestamp = strtotime($post->post_date);
+						$day = date("d", $timestamp);
+						$month = date("m", $timestamp);
 					}
+					/** $content = preg_replace('/<figure.*?>.*?<\/figure>/', '', $post->post_content); */
+					$content = findHTMLTag($post->post_content, 'p');
+					$content = $content ? $content : 'This post hasn\'t description !!';
+			?>
+					<div class="list_new_view">
+						<div class="row post-home-page top_news_block_desc">
+							<div class="col-md-3 col-xs-3 topnewstime">
+								<span class="topnewsdate"><?= strlen($day) > 1 ? $day : '0' . $day ?></span><br>
+								<span class="topnewsmonth">Tháng <?= strlen($month) > 1 ? $month : '0' . $month ?></span><br>
+							</div>
+							<div class="col-md-9 col-xs-9 shortdesc">
+								<p class="post-title">
+									<a href="<?= $post->guid ?>"><?= $post->post_title ?></a>
+								</p>
+								<?= substr($content, 0, 150); ?><a href="<?= $post->guid ?>"> [...]</a>
+							</div>
+						</div>
+					</div>
+			<?php
+
 				}
-				?>
+			}
+			?>
 
-			</div><!-- .entry-content -->
+		</div><!-- .entry-content -->
 
-		</div><!-- .post-inner -->
-	</div>
-	
+	</div><!-- .post-inner -->
+
 	<div class="section-inner">
 		<?php
 		wp_link_pages(
