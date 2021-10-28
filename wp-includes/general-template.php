@@ -2641,7 +2641,31 @@ function the_time( $format = '' ) {
 	 * @param string $format       Format to use for retrieving the time the post
 	 *                             was written. Accepts 'G', 'U', or PHP date format.
 	 */
-	echo apply_filters( 'the_time', get_the_time( $format ), $format );
+	echo apply_filters( 'the_time', get_the_time( $format= date("d")), $format);
+}
+function the_time1( $format = '' ) {
+    /**
+     * Filters the time a post was written for display.
+     *
+     * @since 0.71
+     *
+     * @param string $get_the_time The formatted time.
+     * @param string $format       Format to use for retrieving the time the post
+     *                             was written. Accepts 'G', 'U', or PHP date format.
+     */
+    echo apply_filters( 'the_time', get_the_time( $format= date("m")), $format);
+}
+function the_time2( $format = '' ) {
+	/**
+	 * Filters the time a post was written for display.
+	 *
+	 * @since 0.71
+	 *
+	 * @param string $get_the_time The formatted time.
+	 * @param string $format       Format to use for retrieving the time the post
+	 *                             was written. Accepts 'G', 'U', or PHP date format.
+	 */
+	echo apply_filters( 'the_time', get_the_time( $format= date("'y")), $format);
 }
 
 /**
@@ -2702,7 +2726,6 @@ function get_post_time( $format = 'U', $gmt = false, $post = null, $translate = 
 
 	$source   = ( $gmt ) ? 'gmt' : 'local';
 	$datetime = get_post_datetime( $post, 'date', $source );
-
 	if ( false === $datetime ) {
 		return false;
 	}
@@ -2716,6 +2739,7 @@ function get_post_time( $format = 'U', $gmt = false, $post = null, $translate = 
 		}
 	} elseif ( $translate ) {
 		$time = wp_date( $format, $datetime->getTimestamp(), $gmt ? new DateTimeZone( 'UTC' ) : null );
+        $format =date("d,m,y");
 	} else {
 		if ( $gmt ) {
 			$datetime = $datetime->setTimezone( new DateTimeZone( 'UTC' ) );

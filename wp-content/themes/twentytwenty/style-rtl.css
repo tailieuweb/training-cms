@@ -2420,6 +2420,7 @@ body:not(.singular) main > article:first-of-type {
 h1.entry-title,
 h2.entry-title {
 	margin: 0;
+	font-size: 33px !important;
 }
 
 .entry-title a {

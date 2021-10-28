@@ -5462,7 +5462,6 @@ function _deprecated_file( $file, $version, $replacement = '', $message = '' ) {
  * @param string $message  Optional. A message regarding the change. Default empty.
  */
 function _deprecated_argument( $function, $version, $message = '' ) {
-
 	/**
 	 * Fires when a deprecated argument is called.
 	 *
