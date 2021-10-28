@@ -16,7 +16,9 @@ if(!is_single()){
 }
 
 ?>
+<?php if(is_single()){
 
+} ?>
 <article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
 <?php  if(!is_single()){
     echo "<div class='container'>";
@@ -24,7 +26,13 @@ if(!is_single()){
     echo "<div class='row'>";
     echo "<div class='col-12 col-md-4'>";
 
-    }
+    }elseif(is_single()){
+    echo "<div class='container-fluid'>";
+    echo "<div class='row'>";
+    echo "<div class='col-12 col-md-2'>";
+    echo "</div>";
+    echo "<div class='col-12 col-md-8'>";
+}
     ?>
 	<?php
     if($is_apache){
@@ -50,7 +58,7 @@ if(!is_single()){
     }
 	?>
     <?php  if(!is_single()){
-        echo "</div>";
+     echo "</div>";
     echo "<div class='col-12 col-md-8 item-inner'>";
     }
     ?>
@@ -78,14 +86,7 @@ if(!is_single()){
                     $str .= "<a class='more' href=". $post->post_name ." >[....]</a>";
                     echo  "<H4 class='title-entry'><a href='$detail'>$title</a></H4>";
                     echo $str;
-
-
-
-
-
-
-
-                }
+                    }
 
 
 
@@ -96,7 +97,6 @@ if(!is_single()){
 		</div><!-- .entry-content -->
 
 	</div><!-- .post-inner -->
-    </div>
 	<div class="section-inner">
 		<?php
 		wp_link_pages(
@@ -125,6 +125,10 @@ if(!is_single()){
 	<?php
 
 	if ( is_single() ) {
+        echo "</div>";
+        echo "<div class='col-12 col-md-2'>";
+        echo "</div>11";
+
 
 		get_template_part( 'template-parts/navigation' );
 
@@ -150,5 +154,5 @@ if(!is_single()){
     echo "</div>
     </div>
     </div>";
-}?>
+    }?>
 </article><!-- .post -->
