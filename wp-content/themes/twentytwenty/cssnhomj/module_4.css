@@ -1,0 +1,18 @@
+.no-search-results-form {
+  padding-top: 30px !important;
+}
+.no-search-results-form .wrapper {
+  background: #fff;
+  padding: 17px;
+  border-radius: 3px;
+}
+.no-search-results-form .wrapper .search-field {
+  border: none;
+  outline: none;
+}
+.no-search-results-form .search-form .search-submit {
+  background: #29a846;
+  color: #fff;
+  border: none;
+  text-transform: none;
+}
