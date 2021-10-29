@@ -24,6 +24,8 @@
         media="screen" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_4.css" type="text/css"
         media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_6.css" type="text/css"
+        media="screen" />
     <?php wp_head(); ?>
 
 </head>
