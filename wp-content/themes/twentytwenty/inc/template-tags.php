@@ -351,10 +351,19 @@ function twentytwenty_get_post_meta($post_id = null, $location = 'single-top') {
         ob_start();
 
         ?>
+        <?php if (is_single()) {
+            $class_time = " time-title";
+        }
+        ?>
+        <div class="post-meta-wrapper<?php echo esc_attr($post_meta_wrapper_classes);
+        echo $class_time ?>">
 
-        <div class="post-meta-wrapper<?php echo esc_attr($post_meta_wrapper_classes); ?>">
+    <?php if (is_single()){
+        $class_circle = " circle";
+    }
+    ?>
 
-            <ul class="post-meta<?php echo esc_attr($post_meta_classes); ?>">
+            <ul class="post-meta<?php echo  esc_attr($post_meta_classes), $class_circle ?>">
 
                 <?php
 
@@ -418,10 +427,13 @@ function twentytwenty_get_post_meta($post_id = null, $location = 'single-top') {
                     <?php if ( ! is_single()) : ?>
                         <a href="<?php the_permalink(); ?>" <?php post_class($class); ?>><?php the_time(get_option('date_format')); ?></a>
                     <?php else : ?>
-                        <span><?php the_time(get_option('date_format'));
-                        ?></span>
-
-
+                        <div class="edit-date">
+                        <span class="span-day"><?php the_time('d'); ?></span>
+                        <span><?php the_time('m'); ?></span>
+                    </div>
+                        <div class="edit-year">
+                         <span>'<?php the_time('y'); ?></span>
+                    </div>
                     <?php endif; ?>
                             </span>
                     </li>

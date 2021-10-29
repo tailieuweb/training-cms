@@ -5071,7 +5071,7 @@ a.to-the-top > * {
     }
 
     .post-meta li {
-        margin: 1.4rem 0 0 3rem;
+        margin: 1.4rem 0 0 1rem;
         max-width: calc(100% - 3rem);
     }
 
@@ -5080,7 +5080,7 @@ a.to-the-top > * {
     }
 
     .post-inner {
-        padding-top: 8rem;
+        padding-top: 5rem;
     }
 
     /* POST FOOTER */
