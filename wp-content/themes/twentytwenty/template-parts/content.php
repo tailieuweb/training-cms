@@ -19,7 +19,7 @@
 ?>
 
 <article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
-
+<div class="container">
     <?php 
 	 $post = get_post();
 
@@ -97,7 +97,7 @@
         </div>
 
         <!-- .section-inner -->
-
+		</div>
         <?php
 
 	if ( is_single() ) {
