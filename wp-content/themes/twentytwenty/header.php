@@ -68,12 +68,13 @@
 							// Site description.
 							twentytwenty_site_description();
 						?>
-                    <div class="header-title__search">
-                        <input type="text" class="header-title__search__text" placeholder="Search"></input>
-                        <button class="header-title__search__button">
-                            <p>Submit</p>
-                        </button>
-                    </div>
+                    <form role="search" aria-label="Search for:" method="get" class="search-form" action="http://wordpress.local/">
+                        <label for="search-form-1">
+                            <span class="screen-reader-text">Search for:</span>
+                            <input type="search" id="search-form-1" class="search-field" placeholder="Search …" value="" name="s">
+                        </label>
+                        <input type="submit" class="search-submit" value="Submit">
+                    </form>
 
                 </div><!-- .header-titles -->
 
@@ -176,16 +177,13 @@
                         </button><!-- .search-toggle -->
 
                     </div>
-                    <div class="toggle-wrapper admin-toggle-wrapper">
-
+                    <div class="toggle-wrapper admin-toggle-wrapper"> 
                         <a class="toggle admin-toggle desktop-admin-toggle" href="http://wordpress.local/wp-admin">
                             <span class="toggle-inner">
                                 <?php twentytwenty_the_theme_svg( 'admin' ); ?>
-                                <span
-                                    class="toggle-text"><?php _ex( 'Account', 'toggle text', 'twentytwenty' ); ?></span>
+                            <span class="toggle-text"><?php _ex( 'Account', 'toggle text', 'twentytwenty' ); ?></span>                                 
                             </span>
                         </a><!-- .search-toggle -->
-
                     </div>
 
                     <?php
