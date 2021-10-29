@@ -1549,6 +1549,7 @@ function comments_template( $file = '/comments.php', $separate_comments = false 
 	 * @param string $theme_template The path to the theme template file.
 	 */
 	$include = apply_filters( 'comments_template', $theme_template );
+	
 
 	if ( file_exists( $include ) ) {
 		require $include;
@@ -2350,72 +2351,72 @@ function comment_form( $args = array(), $post_id = null ) {
 		$args['format'] = current_theme_supports( 'html5', 'comment-form' ) ? 'html5' : 'xhtml';
 	}
 
-	$req      = get_option( 'require_name_email' );
-	$html_req = ( $req ? " required='required'" : '' );
+	// $req      = get_option( 'require_name_email' );
+	// $html_req = ( $req ? " required='required'" : '' );
 	$html5    = 'html5' === $args['format'];
 
 	$fields = array(
-		'author' => sprintf(
-			'<p class="comment-form-author">%s %s</p>',
-			sprintf(
-				'<label for="author">%s%s</label>',
-				__( 'Name' ),
-				( $req ? ' <span class="required">*</span>' : '' )
-			),
-			sprintf(
-				'<input id="author" name="author" type="text" value="%s" size="30" maxlength="245"%s />',
-				esc_attr( $commenter['comment_author'] ),
-				$html_req
-			)
-		),
-		'email'  => sprintf(
-			'<p class="comment-form-email">%s %s</p>',
-			sprintf(
-				'<label for="email">%s%s</label>',
-				__( 'Email' ),
-				( $req ? ' <span class="required">*</span>' : '' )
-			),
-			sprintf(
-				'<input id="email" name="email" %s value="%s" size="30" maxlength="100" aria-describedby="email-notes"%s />',
-				( $html5 ? 'type="email"' : 'type="text"' ),
-				esc_attr( $commenter['comment_author_email'] ),
-				$html_req
-			)
-		),
-		'url'    => sprintf(
-			'<p class="comment-form-url">%s %s</p>',
-			sprintf(
-				'<label for="url">%s</label>',
-				__( 'Website' )
-			),
-			sprintf(
-				'<input id="url" name="url" %s value="%s" size="30" maxlength="200" />',
-				( $html5 ? 'type="url"' : 'type="text"' ),
-				esc_attr( $commenter['comment_author_url'] )
-			)
-		),
+		// 'author' => sprintf(
+		// 	'<p class="comment-form-author">%s %s</p>',
+		// 	sprintf(
+		// 		'<label for="author">%s%s</label>',
+		// 		__( 'Name' ),
+		// 		( $req ? ' <span class="required">*</span>' : '' )
+		// 	),
+		// 	sprintf(
+		// 		'<input id="author" name="author" type="text" value="%s" size="30" maxlength="245"%s />',
+		// 		esc_attr( $commenter['comment_author'] ),
+		// 		$html_req
+		// 	)
+		// ),
+		// 'email'  => sprintf(
+		// 	'<p class="comment-form-email">%s %s</p>',
+		// 	sprintf(
+		// 		'<label for="email">%s%s</label>',
+		// 		__( 'Email' ),
+		// 		( $req ? ' <span class="required">*</span>' : '' )
+		// 	),
+		// 	sprintf(
+		// 		'<input id="email" name="email" %s value="%s" size="30" maxlength="100" aria-describedby="email-notes"%s />',
+		// 		( $html5 ? 'type="email"' : 'type="text"' ),
+		// 		esc_attr( $commenter['comment_author_email'] ),
+		// 		$html_req
+		// 	)
+		// ),
+		// 'url'    => sprintf(
+		// 	'<p class="comment-form-url">%s %s</p>',
+		// 	sprintf(
+		// 		'<label for="url">%s</label>',
+		// 		__( 'Website' )
+		// 	),
+		// 	sprintf(
+		// 		'<input id="url" name="url" %s value="%s" size="30" maxlength="200" />',
+		// 		( $html5 ? 'type="url"' : 'type="text"' ),
+		// 		esc_attr( $commenter['comment_author_url'] )
+		// 	)
+		// ),
 	);
 
-	if ( has_action( 'set_comment_cookies', 'wp_set_comment_cookies' ) && get_option( 'show_comments_cookies_opt_in' ) ) {
-		$consent = empty( $commenter['comment_author_email'] ) ? '' : ' checked="checked"';
+	// if ( has_action( 'set_comment_cookies', 'wp_set_comment_cookies' ) && get_option( 'show_comments_cookies_opt_in' ) ) {
+	// 	$consent = empty( $commenter['comment_author_email'] ) ? '' : ' checked="checked"';
 
-		$fields['cookies'] = sprintf(
-			'<p class="comment-form-cookies-consent">%s %s</p>',
-			sprintf(
-				'<input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"%s />',
-				$consent
-			),
-			sprintf(
-				'<label for="wp-comment-cookies-consent">%s</label>',
-				__( 'Save my name, email, and website in this browser for the next time I comment.' )
-			)
-		);
+	// 	$fields['cookies'] = sprintf(
+	// 		'<p class="comment-form-cookies-consent">%s %s</p>',
+	// 		sprintf(
+	// 			'<input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"%s />',
+	// 			$consent
+	// 		),
+	// 		sprintf(
+	// 			'<label for="wp-comment-cookies-consent">%s</label>',
+	// 			__( 'Save my name, email, and website in this browser for the next time I comment.' )
+	// 		)
+	// 	);
 
-		// Ensure that the passed fields include cookies consent.
-		if ( isset( $args['fields'] ) && ! isset( $args['fields']['cookies'] ) ) {
-			$args['fields']['cookies'] = $fields['cookies'];
-		}
-	}
+	// 	// Ensure that the passed fields include cookies consent.
+	// 	if ( isset( $args['fields'] ) && ! isset( $args['fields']['cookies'] ) ) {
+	// 		$args['fields']['cookies'] = $fields['cookies'];
+	// 	}
+	// }
 
 	$required_text = sprintf(
 		/* translators: %s: Asterisk symbol (*). */
@@ -2437,10 +2438,12 @@ function comment_form( $args = array(), $post_id = null ) {
 		'comment_field'        => sprintf(
 			'<p class="comment-form-comment">%s %s</p>',
 			sprintf(
+				
 				'<label for="comment">%s</label>',
-				_x( 'Comment', 'noun' )
+				_x( 'Make a Post', 'noun' ),
+				'<label id="comment-post">%s</label>',
 			),
-			'<textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea>'
+			'<textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" placeholder="What doing you thinking..." required="required"></textarea>',
 		),
 		'must_log_in'          => sprintf(
 			'<p class="must-log-in">%s</p>',
@@ -2464,14 +2467,14 @@ function comment_form( $args = array(), $post_id = null ) {
 				wp_logout_url( apply_filters( 'the_permalink', get_permalink( $post_id ), $post_id ) )
 			)
 		),
-		'comment_notes_before' => sprintf(
-			'<p class="comment-notes">%s%s</p>',
-			sprintf(
-				'<span id="email-notes">%s</span>',
-				__( 'Your email address will not be published.' )
-			),
-			( $req ? $required_text : '' )
-		),
+		// 'comment_notes_before' => sprintf(
+		// 	'<p class="comment-notes">%s%s</p>',
+		// 	sprintf(
+		// 		'<span id="email-notes">%s</span>',
+		// 		__( 'Your email address will not be published.' )
+		// 	),
+		// 	( $req ? $required_text : '' )
+		// ),
 		'comment_notes_after'  => '',
 		'action'               => site_url( '/wp-comments-post.php' ),
 		'id_form'              => 'commentform',
@@ -2480,7 +2483,7 @@ function comment_form( $args = array(), $post_id = null ) {
 		'class_form'           => 'comment-form',
 		'class_submit'         => 'submit',
 		'name_submit'          => 'submit',
-		'title_reply'          => __( 'Leave a Reply' ),
+		// 'title_reply'          => __( 'Leave a Reply' ),
 		/* translators: %s: Author of the comment being replied to. */
 		'title_reply_to'       => __( 'Leave a Reply to %s' ),
 		'title_reply_before'   => '<h3 id="reply-title" class="comment-reply-title">',
@@ -2488,7 +2491,7 @@ function comment_form( $args = array(), $post_id = null ) {
 		'cancel_reply_before'  => ' <small>',
 		'cancel_reply_after'   => '</small>',
 		'cancel_reply_link'    => __( 'Cancel reply' ),
-		'label_submit'         => __( 'Post Comment' ),
+		'label_submit'         => __( 'Share' ),
 		'submit_button'        => '<input name="%1$s" type="submit" id="%2$s" class="%3$s" value="%4$s" />',
 		'submit_field'         => '<p class="form-submit">%1$s %2$s</p>',
 		'format'               => 'xhtml',
@@ -2726,3 +2729,5 @@ function comment_form( $args = array(), $post_id = null ) {
 	 */
 	do_action( 'comment_form_after' );
 }
+
+
