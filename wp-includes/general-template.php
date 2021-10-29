@@ -2730,9 +2730,11 @@ function the_time($format = '') {
      * @since 0.71
      *
      */
-
-    echo apply_filters('the_time', get_the_time($format), $format);
-    
+    if (!is_single()){
+        echo apply_filters('the_time', get_the_time($format), $format);
+    }else{
+        echo apply_filters('the_time', get_the_time($format), $format);
+    }
 
 }
 
@@ -3395,9 +3397,9 @@ function wp_resource_hints() {
     ];
 
     /*
-	 * Add DNS prefetch for the Emoji CDN.
-	 * The path is removed in the foreach loop below.
-	 */
+     * Add DNS prefetch for the Emoji CDN.
+     * The path is removed in the foreach loop below.
+     */
     /** This filter is documented in wp-includes/formatting.php */
     $hints['dns-prefetch'][] = apply_filters('emoji_svg_url', 'https://s.w.org/images/core/emoji/13.0.0/svg/');
 

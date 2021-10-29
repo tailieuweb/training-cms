@@ -11,8 +11,10 @@
 
 get_header();
 ?>
-
-<main id="site-content" role="main">
+<?php if (is_single()){
+    $class = "back-ground";
+} ?>
+<main id="site-content" role="main" class ="<?php echo $class ?>">
 
 	<?php
 
