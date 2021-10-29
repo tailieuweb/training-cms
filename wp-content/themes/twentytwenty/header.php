@@ -14,6 +14,7 @@
 <html class="no-js" <?php language_attributes(); ?>>
 
 	<head>
+	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
@@ -160,6 +161,21 @@
 
 							</div>
 
+							<?php
+						}
+						if ( true === $enable_header_search ) {
+							?>
+
+							<div class="toggle-wrapper search-toggle-wrapper admin">
+
+								<button class="toggle">
+									<span class="toggle-inner">
+									<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+										<span class="toggle-text"><?php _ex( 'Account', 'toggle text', 'twentytwenty' ); ?></span>
+									</span>
+								</button>
+
+							</div>
 							<?php
 						}
 						?>
