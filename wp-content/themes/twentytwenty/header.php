@@ -20,8 +20,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="profile" href="https://gmpg.org/xfn/11">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_2.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_6.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_2.css" type="text/css"
+        media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_4.css" type="text/css"
+        media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_6.css" type="text/css"
+        media="screen" />
     <?php wp_head(); ?>
 
 </head>
@@ -69,10 +73,12 @@
 							// Site description.
 							twentytwenty_site_description();
 						?>
-                    <form role="search" aria-label="Search for:" method="get" class="search-form" action="http://wordpress.local/">
+                    <form role="search" aria-label="Search for:" method="get" class="search-form-header"
+                        action="http://wordpress.local/">
                         <label for="search-form-1">
                             <span class="screen-reader-text">Search for:</span>
-                            <input type="search" id="search-form-1" class="search-field" placeholder="Search …" value="" name="s">
+                            <input type="search" id="search-form-1" class="search-field" placeholder="Search …" value=""
+                                name="s">
                         </label>
                         <input type="submit" class="search-submit" value="Submit">
                     </form>
@@ -178,11 +184,12 @@
                         </button><!-- .search-toggle -->
 
                     </div>
-                    <div class="toggle-wrapper admin-toggle-wrapper"> 
+                    <div class="toggle-wrapper admin-toggle-wrapper">
                         <a class="toggle admin-toggle desktop-admin-toggle" href="http://wordpress.local/wp-admin">
                             <span class="toggle-inner">
                                 <?php twentytwenty_the_theme_svg( 'admin' ); ?>
-                            <span class="toggle-text"><?php _ex( 'Account', 'toggle text', 'twentytwenty' ); ?></span>                                 
+                                <span
+                                    class="toggle-text"><?php _ex( 'Account', 'toggle text', 'twentytwenty' ); ?></span>
                             </span>
                         </a><!-- .search-toggle -->
                     </div>

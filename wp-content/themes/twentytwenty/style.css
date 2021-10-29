@@ -122,7 +122,7 @@ html {
 }
 
 body {
-  background: #f5efe0;
+  background: #f5efe0 !important;
   box-sizing: border-box;
   color: #000;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica,
@@ -3228,26 +3228,23 @@ figure.wp-block-gallery.alignfull {
 .header-navigation-wrapper .primary-menu-wrapper .primary-menu .menu-item a {
   color: #6d6d6d;
 }
-.header-titles .header-title__search {
-  display: flex;
-  margin-left: 50px;
+.header-titles .search-form-header {
+  margin-left: 10px;
 }
-.header-titles .header-title__search .header-title__search__text {
-  width: 200px;
-  height: 37px;
-  border: 1px solid rgb(216, 216, 216);
+.search-form-header .search-field {
+  width: 100%;
+  height: 30px;
   border-radius: 3px;
 }
-.header-titles .header-title__search .header-title__search__button {
-  width: 70px;
-  height: 37px;
+.search-form-header .search-submit {
+  font-size: 9px;
   background: #fff;
   color: #6d6d6d;
-  border: 1px solid rgb(216, 216, 216);
+  border: 1px solid #dadada;
   border-radius: 3px;
   margin-left: 3px;
+  margin: 0;
 }
-
 /* Block: Image ------------------------------ */
 
 /* Block: Media And Text --------------------- */
@@ -6927,7 +6924,7 @@ li {
 .search-form .search-submit {
   flex-shrink: 0;
   text-align: center;
-  border-radius:5px;
+  border-radius: 5px;
   background: white;
   color: rgb(124, 124, 124);
   width: 100px;
@@ -6961,4 +6958,3 @@ h2.entry-title {
   margin-top: 0;
   text-align: left;
 }
-
