@@ -84,8 +84,6 @@
                         <span class="toggle-text"><?php _ex('Search', 'toggle text', 'twentytwenty'); ?></span>
                     </span>
                 </button><!-- .search-toggle -->
-                <!-- Admin -> -->
-
                 <?php } ?>
                 <div class="header-titles">
 
@@ -109,6 +107,7 @@
                         <span class="toggle-text"><?php _e('Menu', 'twentytwenty'); ?></span>
                     </span>
                 </button><!-- .nav-toggle -->
+                <div class="search-header">
                 <form role="search" aria-label="Search for:" method="get" class="search-form"
                     action="http://wordpress.local/">
                     <label for="search-form-1">
@@ -118,6 +117,7 @@
                     </label>
                     <input type="submit" class="search-submit" value="Search">
                 </form>
+                </div>
             </div><!-- .header-titles-wrapper -->
 
 
