@@ -1,0 +1,22 @@
+/*css trang detail*/
+.entry-header .entry-header-inner .entry-categories a {
+    display: none;
+  }
+  .meta-text a {
+    display: none;
+  }
+  .meta-text {
+    display: none;
+  }
+  .meta-icon {
+    display: none;
+  }
+  h1.entry-title,
+  h2.entry-title {
+    margin: 0;
+    font-size: 30px;
+  }
+  .entry-content > *:first-child {
+    margin-top: 0;
+    text-align: left;
+  }
