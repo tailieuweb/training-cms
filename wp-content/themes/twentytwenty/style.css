@@ -1273,7 +1273,7 @@ button.toggle {
 }
 
 .search-form .search-field {
-	margin-right: 45vh;
+	margin-right: 42vh;
 	width: 40vh;
 	border-radius: 5px;
 	padding: 0.7% 1.7%;
@@ -1281,9 +1281,9 @@ button.toggle {
 
 .search-form .search-submit {
 	flex-shrink: 0;
-	margin: 0 -62%;
+	margin: 0 -60%;
 	background: white;
-	border: 1px rgb(173, 172, 172) solid;
+	border: 1px rgb(173, 172, 172) solid;	
 	color: #a2a4a4;
 	border-radius: 5px;
 	padding: 0.7% 1.7%;
@@ -5717,11 +5717,9 @@ a.to-the-top > * {
 	.header-titles .site-description {
 		margin: 1rem 0 0 2.4rem;
 	}
-
 	.wp-custom-logo .header-titles {
 		align-items: center;
 	}
-
 	/* HEADER NAVIGATION */
 
 	.header-navigation-wrapper {
