@@ -14,6 +14,7 @@
 
 
 ?>
+<!--content-->
 <?php
 	$class="";
 	if(!is_single()){
@@ -24,11 +25,17 @@
 if(!is_single())
 {
 ?>
+<div class="ct">
 <div class="container">
     <div class="row">
         <div class="col-md-3">
             <span class="meta-text-copy">
-                <a href="http://wordpress.local/2021/09/30/">September 30, 2021</a>
+                <div class="ngay">
+					30
+				</div>
+				<div class="thang">
+					THÁNG 9
+				</div>
             </span>
         </div>
         <div class="col-md-9">
@@ -121,6 +128,8 @@ if(!is_single())
         </div>
     </div>
 </div>
+</div>
+<hr class="hr">
 <?php }
 else{
 ?>
