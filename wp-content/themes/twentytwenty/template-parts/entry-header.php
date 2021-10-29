@@ -31,26 +31,35 @@ if ( is_singular() ) {
 
 		if ( true === $show_categories && has_category() ) {
 			?>
-
 			<div class="entry-categories">
 				<span class="screen-reader-text"><?php _e( 'Categories', 'twentytwenty' ); ?></span>
 				<div class="entry-categories-inner">
 					<?php the_category( ' ' ); ?>
 				</div><!-- .entry-categories-inner -->
 			</div><!-- .entry-categories -->
-
+		
 			<?php
 		}
 
 		if ( is_singular() ) {
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			?>
+			<div class="row">
+				<div class="col-md-8">
+				<?php the_title( '<h1 class="entry-title">','</h1>');?>
+				</div>
+				<div class="col-md-4">
+					<?php echo "<div class='detailpage'>"."<span class='detaildate'>". get_the_date('d', $post->ID)."</span>","<br>" ."<span class='detailmonth '>".get_the_date('m', $post->ID)."</span>"."<span class='detailyear'>'".get_the_date('y', $post->ID)."</span>","</div>"; ?>
+				</div>
+			</div>
+			<!-- the_title( '<h1 class="entry-title">','</h1>');
+			<?php
 		} else {
 			the_title( '<h2 class="entry-title heading-size-1"><a style="color: #428bca;" href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
 		}
 
 		$intro_text_width = '';
 
-		if ( is_singular() ) {
+		if ( is_singular() ) {	
 			$intro_text_width = ' small';
 		} else {
 			$intro_text_width = ' thin';

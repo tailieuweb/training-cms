@@ -2437,6 +2437,11 @@ body:not(.singular) main > article:first-of-type {
 h1.entry-title,
 h2.entry-title {
 	margin: 0;
+	font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2.1em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
 
 .entry-title a {
@@ -5366,6 +5371,8 @@ a.to-the-top > * {
 
 	.entry-content {
 		font-size: 2.1rem;
+		
+		
 	}
 
 	.entry-content p,
@@ -6138,7 +6145,7 @@ a.to-the-top > * {
 
 	h1,
 	.heading-size-1 {
-		text-transform: uppercase;
+	
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: bold;
 	
@@ -6583,9 +6590,9 @@ section .section-title {
 	}
 }
  .date{
-	margin-top: 12px;
+	margin-top: -50px;
 	text-align: center;
-	/* margin-left: 256px; */
+	
 
 }
 .topnewsdate{
@@ -6597,16 +6604,48 @@ section .section-title {
 /* .thedate{
 	border-right: 1px solid #666;
 } */
-.topnew .topnewsmonth{
+.topnewsmonth{
 	text-transform: uppercase;
     font-size: 0.9em;
    
 
 }
-.v {
+.contentdate {
 	border-right: 1px solid #666;
+	height: 150px;
+	margin-top: 30px;
 }
-.entry-title .heading-size-1 a{
-	color: red !important ;
+.wp-block-image{
+	display: none;
+}
+.detailpage{
+	margin-top: -18px;
+    background: #f5ce31;
+    border-radius: 50%;
+    padding: 10px;
+	width: 100px;
+	margin-left: 100px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
+}
+.detailmonth{
+	border-top: 1px solid #666;
+}
+.detailyear{
+	margin-top: -39px;
+    float: left;
+    margin-left: 50px;
+
+}
+.entry-content p {
+	margin: 0 0 10px;
+	margin-left: 8%;
+	text-align: justify;
+    line-height: 1.7em;
+	
+	
+	
+	
 }
 
