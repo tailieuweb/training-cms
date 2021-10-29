@@ -29,10 +29,10 @@ define( 'DB_USER', 'root' );
 define( 'DB_PASSWORD', '' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'localhost:3309' );
 
 /** Database charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8' );
+define( 'DB_CHARSET', 'utf8mb4' );
 
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
@@ -48,14 +48,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
+define( 'AUTH_KEY',         'S&Mx5RtAh&k4n:9v)/Z|rzr9Q5#>1Ow1Msf*kvl]XO,{Ytm(0BH/jjcTS-WS_5VG' );
+define( 'SECURE_AUTH_KEY',  'KJ(}n&{0*C-{G}Jz*WZLa+?A+{~5gbjgfn2s`%3]l2<G)]QpkUbZz]wWvQA#h*r7' );
+define( 'LOGGED_IN_KEY',    't,QX!]9tx%z[FIjo)2vm|?v)i92!AE&/1;rOymlePC!V7l2_w!k~t~6Ej18G=*f3' );
+define( 'NONCE_KEY',        ';ZXYx8tRl{ZA$P,Td}jOH,[D]k6RUs?xnwp  cRuSD_;QT_YU8+(FvqOl uv!o{F' );
+define( 'AUTH_SALT',        '!%QJT=Lc[m);=Foy!T(,8f?,<+vd|fLqM.RLgK@JpN4H([ek8yelB+G,9y7GFc@y' );
+define( 'SECURE_AUTH_SALT', '*+hJ;7/+_PS-%=IW=s]qg/2zZ`05e1a,s9=QTJ}R5Hjm$Mw4E6(/?Lf.<oCXRlJs' );
+define( 'LOGGED_IN_SALT',   '3I[X&58o]K4j@6M!*t;j616{8P2:f&kiEYG^DSof{<*6y<=P~2j~h<zh@,<StvnS' );
+define( 'NONCE_SALT',       'VJyqk1tM<Tyb&RHF%xMM) Jm^l1qo0;9_]y[es8Q,5FCiY37MJ5:JfI.R:]8~CPr' );
 
 /**#@-*/
 

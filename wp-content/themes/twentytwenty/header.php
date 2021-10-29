@@ -19,7 +19,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
 		<link rel="profile" href="https://gmpg.org/xfn/11">
-
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+              integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+              crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<?php wp_head(); ?>
 
 	</head>
@@ -56,17 +61,18 @@
 
 					<?php } ?>
 
-					<div class="header-titles">
+<!--					<div class="header-titles">-->
 
 						<?php
 							// Site title or logo.
-							twentytwenty_site_logo();
+//							twentytwenty_site_logo();
 
 							// Site description.
-							twentytwenty_site_description();
+//							twentytwenty_site_description();
 						?>
 
-					</div><!-- .header-titles -->
+<!--					</div>-->
+                    <!-- .header-titles -->
 
 					<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal"  data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
 						<span class="toggle-inner">
@@ -86,7 +92,16 @@
 						?>
 
 							<nav class="primary-menu-wrapper" aria-label="<?php echo esc_attr_x( 'Horizontal', 'menu', 'twentytwenty' ); ?>" role="navigation">
-
+                                <nav class="navbar navbar-icon-top navbar-default">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="#">Brand</a>
+                                    </div>
 								<ul class="primary-menu reset-list-style">
 
 								<?php
@@ -110,12 +125,11 @@
 											'walker'   => new TwentyTwenty_Walker_Page(),
 										)
 									);
-
 								}
 								?>
 
 								</ul>
-
+                                </nav>
 							</nav><!-- .primary-menu-wrapper -->
 
 						<?php
