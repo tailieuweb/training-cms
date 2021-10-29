@@ -14,6 +14,7 @@
 
 
 ?>
+<!--content-->
 <?php
 	$class="";
 	if(!is_single()){
