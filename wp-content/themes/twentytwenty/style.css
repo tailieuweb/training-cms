@@ -6940,3 +6940,24 @@ h2.entry-title {
   margin-top: 0;
   text-align: left;
 }
+.search-form {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 0 -0.8rem -0.8rem;
+  height: 50px;
+}
+.search-form .search-submit {
+  flex-shrink: 0;
+  text-align: center;
+  border-radius:5px;
+  background: white;
+  color: rgb(124, 124, 124);
+  width: 100px;
+  border: 1px solid rgb(173, 171, 171);
+  font-size: 12px;
+}
+.search-form .search-field {
+  width: 100%;
+  border-radius: 5px;
+}
