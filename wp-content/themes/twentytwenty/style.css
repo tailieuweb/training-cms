@@ -122,7 +122,7 @@ html {
 }
 
 body {
-  background: #f5efe0;
+  background: #f5efe0 !important;
   box-sizing: border-box;
   color: #000;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica,
@@ -3245,7 +3245,6 @@ figure.wp-block-gallery.alignfull {
   margin-left: 3px;
   margin: 0;
 }
-
 /* Block: Image ------------------------------ */
 
 /* Block: Media And Text --------------------- */
@@ -6925,7 +6924,7 @@ li {
 .search-form .search-submit {
   flex-shrink: 0;
   text-align: center;
-  border-radius:5px;
+  border-radius: 5px;
   background: white;
   color: rgb(124, 124, 124);
   width: 100px;
@@ -6959,4 +6958,3 @@ h2.entry-title {
   margin-top: 0;
   text-align: left;
 }
-
