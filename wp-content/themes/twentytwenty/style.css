@@ -112,6 +112,11 @@ blockquote::after {
 /*	1. Document Setup
 /* -------------------------------------------------------------------------- */
 
+/* import fontawsome */
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
 
 html {
 	font-size: 62.5%; /* 1rem = 10px */
@@ -150,8 +155,13 @@ body {
 	word-wrap: break-word;
 }
 
+/* custom site content */
 #site-content {
 	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 
@@ -1352,7 +1362,7 @@ ul.social-icons li {
 
 
 #site-header {
-	background: #fff;
+	background: rgb(214, 214, 214);
 	position: relative;
 }
 
@@ -6585,22 +6595,80 @@ section .section-title {
     font-weight: 100;
 }
 
-.widget li {
-    /* margin-left: 20px; */
+.widget li{
+	padding: 3px 0;
+	transition: all .5s ease !important;
 }
-
-.widget li:hover {
-    margin-left: 0;
-    font-weight: 900;
+.widget li:hover{
+	margin-left:5px;
+	font-weight:700;
 }
-
+.widget li a {
+	margin-right: 5px;
+}
 .widget li:hover a {
-    font-weight: 900;
-    color: #ffffff;
+    font-weight: 700;
 }
 
-.widget li a::before {
+.widget li a::before{
+	position: relative;
+	top: 2px;
+	left: 0;
 	content: "\00BB";
 	font-size: 24px;
 	margin-right: 4px;
 }
+
+.custom_post{
+	margin-top: 20px;
+	display: flex;
+	margin-bottom: 50px;
+	box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
+	width: 485px;
+}
+
+.custom_post .entry-header-inner h2{
+	color: #428bca !important;
+	font-size: 18px !important;
+}
+
+.custom_post .entry-header-inner h2 a{
+	color: #428bca !important;
+	font-size: 18px !important;
+}
+
+.custom_post .content_right_custom{
+	border-left: 1px solid #666;
+}
+
+.custom_post .content_right_custom .post-inner{
+	padding: 20px !important;
+}
+
+
+
+.custom_post .content_left_custom{
+	width: 150px;
+	margin: 0 30px;
+}
+
+.custom_post .content_left_custom .day{
+	font-size: 50px;
+}
+
+.custom_post .content_left_custom .month{
+	font-size: 15px;
+}
+
+/* custom account user */
+
+.accout-toggle-wrapper .toggle-inner a{
+	color: unset;
+}
+
+.accout-toggle-wrapper .toggle-inner i{
+	font-size: 24px;
+}
+
+
+
