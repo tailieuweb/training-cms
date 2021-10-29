@@ -2524,8 +2524,8 @@ function comment_form( $args = array(), $post_id = null ) {
 	 */
 	do_action( 'comment_form_before' );
 	?>
-	<div id="respond" class="<?php echo esc_attr( $args['class_container'] ); ?>">
-		<?php
+<div id="respond" class="<?php echo esc_attr( $args['class_container'] ); ?>">
+    <?php
 		echo $args['title_reply_before'];
 
 		comment_form_title( $args['title_reply'], $args['title_reply_to'] );
@@ -2716,8 +2716,8 @@ function comment_form( $args = array(), $post_id = null ) {
 
 		endif;
 		?>
-	</div><!-- #respond -->
-	<?php
+</div><!-- #respond -->
+<?php
 
 	/**
 	 * Fires after the comment form.
