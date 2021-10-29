@@ -27,6 +27,7 @@ if ( empty( $twentytwenty_aria_label ) && ! empty( $args['label'] ) ) {
     <?php echo $twentytwenty_aria_label; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. ?>
     method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
     <label for="<?php echo esc_attr( $twentytwenty_unique_id ); ?>">
+        <?php twentytwenty_the_theme_svg( 'search' ); ?>
         <span
             class="screen-reader-text"><?php _e( 'Search for:', 'twentytwenty' ); // phpcs:ignore: WordPress.Security.EscapeOutput.UnsafePrintingFunction -- core trusts translations ?></span>
         <input type="search" id="<?php echo esc_attr( $twentytwenty_unique_id ); ?>" class="search-field"
