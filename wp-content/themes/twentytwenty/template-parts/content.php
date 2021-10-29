@@ -29,20 +29,6 @@ if (!is_single()) {
 
 	$month = date("m", strtotime($post->post_date));
 	$day = date("d", strtotime($post->post_date));
-	// get the post object
-	$post = get_post(get_the_ID());
-	// we need just the content
-	$content = $post->post_content;
-	// we need a expression to match things
-	$regex = '/src="([^"]*)"/';
-	// we want all matches
-	preg_match_all($regex, $content, $matches);
-	// reversing the matches array
-	$matches = array_reverse($matches);
-	echo '<pre>';
-	// we've reversed the array, so index 0 returns the result
-	print_r($matches[0]);
-	echo '</pre>';
 
 	if (!is_single()) {
 	?>

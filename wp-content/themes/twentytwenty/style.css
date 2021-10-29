@@ -112,6 +112,11 @@ blockquote::after {
 /*	1. Document Setup
 /* -------------------------------------------------------------------------- */
 
+/* import fontawsome */
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
 
 html {
 	font-size: 62.5%; /* 1rem = 10px */
@@ -150,8 +155,13 @@ body {
 	word-wrap: break-word;
 }
 
+/* custom site content */
 #site-content {
 	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 
@@ -1352,7 +1362,7 @@ ul.social-icons li {
 
 
 #site-header {
-	background: #fff;
+	background: rgb(214, 214, 214);
 	position: relative;
 }
 
@@ -6479,7 +6489,6 @@ a.to-the-top > * {
 }
 
 /* Footer */
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
     /* padding: 60px 0; */
 }
@@ -6610,6 +6619,7 @@ section .section-title {
 }
 
 .custom_post{
+	margin-top: 20px;
 	display: flex;
 	margin-bottom: 50px;
 	box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
@@ -6647,6 +6657,16 @@ section .section-title {
 
 .custom_post .content_left_custom .month{
 	font-size: 15px;
+}
+
+/* custom account user */
+
+.accout-toggle-wrapper .toggle-inner a{
+	color: unset;
+}
+
+.accout-toggle-wrapper .toggle-inner i{
+	font-size: 24px;
 }
 
 
