@@ -16,13 +16,15 @@ if (!is_single()) {
 	$class = "posts-trangchu";
 	$pentry = "p-entry";
 }
+
+// code kiem tra dang dung trang search
 if (!is_search()) {
 	// print_r('true');
 } else {
 	$class = 'search';
 	// print_r('false');
 }
-
+// code kiem tra dang dung trang search
 ?>
 
 <article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
@@ -39,12 +41,15 @@ if (!is_search()) {
 		$post = get_post();
 		$content = $post->post_content;
 		echo $content;
-	} elseif (is_search()) {
+	}
+	// them cot hinh anh cho trang search
+	elseif (is_search()) {
 		$post = get_post();
 		$content = $post->post_content;
 		echo $content;
 		// var_dump('hello');
 	}
+	// them cot hinh anh cho trang search
 	if (isset($is_apache)) {
 
 		get_template_part('template-parts/entry-header');
@@ -63,7 +68,13 @@ if (!is_search()) {
 				$month = date("m", strtotime($date));
 			}
 			echo "<span class='day'>" . $day . "</span><br>";
-			echo "<span class='month'> Tháng " . $month . "</span></div>";
+			// Kiem tra ney o trang search thi them tu Thang vao
+			if (is_search()) {
+				echo "<span class='month'> Tháng " . $month . "</span></div>";
+			} else {
+				echo "<span class='month'>" . $month . "</span></div>";
+			}
+			// Kiem tra ney o trang search thi them tu Thang vao
 		} else {
 			get_template_part('template-parts/entry-header');
 		}
@@ -85,7 +96,9 @@ if (!is_search()) {
 				$content = $post->post_content;
 				echo $content;
 				// var_dump('hello');
-			} elseif (is_search()) {
+			}
+			// Neu dung tai trang search se xuat ra cot thu 3 khac
+			elseif (is_search()) {
 				$post = get_post();
 				// var_dump($post);
 				$title = $post->post_title;
@@ -97,8 +110,9 @@ if (!is_search()) {
         $str .= "<a class='more' href=" . $post->post_name . ">[....]</a>";
         echo "<H4 class='title-entry'><a href='$detail'>$title</a></H4>";
         echo $str;
-        // var_dump('hello');
-        } else {
+        }
+        // Neu dung tai trang search se xuat ra cot thu 3 khac
+        else {
         if (is_single()) {
         the_content(__('Continue reading', 'twentytwenty'));
         } else {
