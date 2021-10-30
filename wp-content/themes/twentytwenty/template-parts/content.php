@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The default template for displaying content
  *
@@ -10,98 +11,120 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
-if(!is_single()){
-    $class="posts-trangchu";
-    $pentry="p-entry";
+$class = '';
+if (!is_single()) {
+	$class = "posts-trangchu";
+	$pentry = "p-entry";
+}
+if (!is_search()) {
+	// print_r('true');
+} else {
+	$class = 'search';
+	// print_r('false');
 }
 
 ?>
 
 <article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
-<?php  if(!is_single()){
-    echo "<div class='container'>";
-    echo "<div class='items-post'>";
-    echo "<div class='row'>";
-    echo "<div class='col-12 col-md-4'>";
-
-    }
-    ?>
-	<?php
-    if($is_apache){
-
-	get_template_part( 'template-parts/entry-header' );
-
-	if ( ! is_search() ) {
-		get_template_part( 'template-parts/featured-image' );
+  <?php if (!is_single() && !is_search()) {
+		echo "<div class='container'>";
+		echo "<div class='items-post'>";
+		echo "<div class='row'>";
+		echo "<div class='col-12 col-md-4'>";
 	}
-    }
-    else{
-       if(!is_single()){
-           echo "<div class='time-post'>";
-           $post = get_post();
-           $date = $post->post_date;
-           $day = date("j", strtotime($date));
-           $month = date("F", strtotime($date));
-           echo "<span class='day'>".$day."</span><br>";
-           echo "<span class='month'> ".$month."</span></div>";
-       }else{
-           get_template_part( 'template-parts/entry-header' );
-       }
-    }
 	?>
-    <?php  if(!is_single()){
-        echo "</div>";
-    echo "<div class='col-12 col-md-8 item-inner'>";
-    }
-    ?>
-	<div class="post-inner content-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
+  <?php
+	if (!is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
+		the_excerpt();
+		$post = get_post();
+		$content = $post->post_content;
+		echo $content;
+	} elseif (is_search()) {
+		$post = get_post();
+		$content = $post->post_content;
+		echo $content;
+		// var_dump('hello');
+	}
+	if (isset($is_apache)) {
 
-		<div class="entry-content <?php echo $pentry; ?>">
+		get_template_part('template-parts/entry-header');
 
-
-			<?php
-			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
-				the_excerpt();
-			} else {
-			    if(is_single()){
-                    the_content( __( 'Continue reading', 'twentytwenty' ) );
-                }else{
-			        $post = get_post();
-			        $title = $post->post_title;
-                    $detail = $post->post_name;
-			        $content = $post->post_content;
-			        $str = preg_replace('/<figure.*?>.*?<\/figure>/','',$content);
-                    $a = strpos($str,'</p>');
-                   $str =  substr($str,0,$a);
-
-
-                    $str .= "<a class='more' href=". $post->post_name ." >[....]</a>";
-                    echo  "<H4 class='title-entry'><a href='$detail'>$title</a></H4>";
-                    echo $str;
-
-
-
-
-
-
-
-                }
-
-
-
-
+		if (!is_search()) {
+			get_template_part('template-parts/featured-image');
+		}
+	} else {
+		if (!is_single()) {
+			echo "<div class='time-post'>";
+			$post = get_post();
+			$date = $post->post_date;
+			$day = date("j", strtotime($date));
+			$month = date("F", strtotime($date));
+			if (is_search()) {
+				$month = date("m", strtotime($date));
 			}
-			?>
+			echo "<span class='day'>" . $day . "</span><br>";
+			echo "<span class='month'> Tháng " . $month . "</span></div>";
+		} else {
+			get_template_part('template-parts/entry-header');
+		}
+	}
+	?>
+  <?php if (!is_single()) {
+		echo "</div>";
+		echo "<div class='col-12 col-md-8 item-inner'>";
+	}
+	?>
+  <div
+    class="post-inner content-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
 
-		</div><!-- .entry-content -->
+    <div class="entry-content <?php echo $pentry; ?>">
+      <?php
+			if (!is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
+				the_excerpt();
+				$post = get_post();
+				$content = $post->post_content;
+				echo $content;
+				// var_dump('hello');
+			} elseif (is_search()) {
+				$post = get_post();
+				// var_dump($post);
+				$title = $post->post_title;
+				$detail = $post->post_name;
+				$content = $post->post_content;
+				$str = str_replace('/<figure.*?>.*?<\ /figure>/', '', $content);
+        $a = strpos($str, '</p>');
+        $str = substr($str, 0, $a);
+        $str .= "<a class='more' href=" . $post->post_name . ">[....]</a>";
+        echo "<H4 class='title-entry'><a href='$detail'>$title</a></H4>";
+        echo $str;
+        // var_dump('hello');
+        } else {
+        if (is_single()) {
+        the_content(__('Continue reading', 'twentytwenty'));
+        } else {
+        $post = get_post();
+        $title = $post->post_title;
+        $detail = $post->post_name;
+        $content = $post->post_content;
+        $str = str_replace('/<figure.*?>.*?<\ /figure>/', '', $content);
+            $a = strpos($str, '</p>');
+            $str = substr($str, 0, $a);
+            $str .= "<a class='more' href=" . $post->post_name . ">[....]</a>";
+            echo "<H4 class='title-entry'><a href='$detail'>$title</a></H4>";
+            echo $str;
+            }
+            }
+            ?>
 
-	</div><!-- .post-inner -->
-    </div>
-	<div class="section-inner">
-		<?php
+    </div><!-- .entry-content -->
+
+  </div><!-- .post-inner -->
+  </div>
+  <div class="section-inner">
+    <?php
 		wp_link_pages(
 			array(
-				'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__( 'Page', 'twentytwenty' ) . '"><span class="label">' . __( 'Pages:', 'twentytwenty' ) . '</span>',
+				'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__('Page', 'twentytwenty') . '"><span class="label">' . __('Pages:', 'twentytwenty') . '</span>',
 				'after'       => '</nav>',
 				'link_before' => '<span class="page-number">',
 				'link_after'  => '</span>',
@@ -111,44 +134,42 @@ if(!is_single()){
 		edit_post_link();
 
 		// Single bottom post meta.
-		twentytwenty_the_post_meta( get_the_ID(), 'single-bottom' );
+		twentytwenty_the_post_meta(get_the_ID(), 'single-bottom');
 
-		if ( post_type_supports( get_post_type( get_the_ID() ), 'author' ) && is_single() ) {
+		if (post_type_supports(get_post_type(get_the_ID()), 'author') && is_single()) {
 
-			get_template_part( 'template-parts/entry-author-bio' );
-
+			get_template_part('template-parts/entry-author-bio');
 		}
 		?>
 
-	</div><!-- .section-inner -->
+  </div><!-- .section-inner -->
 
-	<?php
+  <?php
 
-	if ( is_single() ) {
+	if (is_single()) {
 
-		get_template_part( 'template-parts/navigation' );
-
+		get_template_part('template-parts/navigation');
 	}
 
 	/*
 	 * Output comments wrapper if it's a post, or if comments are open,
 	 * or if there's a comment number – and check for password.
 	 */
-	if ( ( is_single() || is_page() ) && ( comments_open() || get_comments_number() ) && ! post_password_required() ) {
-		?>
+	if ((is_single() || is_page()) && (comments_open() || get_comments_number()) && !post_password_required()) {
+	?>
 
-		<div class="comments-wrapper section-inner">
+  <div class="comments-wrapper section-inner">
 
-			<?php comments_template(); ?>
+    <?php comments_template(); ?>
 
-		</div><!-- .comments-wrapper -->
+  </div><!-- .comments-wrapper -->
 
-		<?php
+  <?php
 	}
 	?>
-<?php  if(!is_single()){
-    echo "</div>
+  <?php if (!is_single()) {
+		echo "</div>
     </div>
     </div>";
-}?>
+	} ?>
 </article><!-- .post -->
