@@ -6553,4 +6553,34 @@ section .section-title {
 	}
 }
 
+/* Module7 */
+.pagination-single-inner {
+	overflow: hidden;
+    padding-left: 40%;
+	display: inline-block;
+}
+.title{
+	color: #000;
+	font-size: 20px;
+	margin-right: 100px;
+}
+.pagination-single{
+	background-color: #cd2653;
 
+}
+#text{
+	margin-left: 40px;
+}
+.headlines ul {
+    list-style-type: none;
+	color:#000;
+}
+.headlines .headlinesdate {
+    font-size: 0.8em;
+    width: 15%;
+    min-width: 55px;
+    vertical-align: middle;
+}
+.row{
+	margin-right: 400px;
+}
