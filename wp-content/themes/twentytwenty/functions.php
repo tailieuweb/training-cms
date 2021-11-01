@@ -368,10 +368,12 @@ add_action( 'wp_body_open', 'twentytwenty_skip_link', 5 );
  * Register widget areas.
  *
  * @since Twenty Twenty 1.0
- *
+     *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function twentytwenty_sidebar_registration() {
+
+
 
 	// Arguments used in all register_sidebar() calls.
 	$shared_args = array(
@@ -393,7 +395,10 @@ function twentytwenty_sidebar_registration() {
 		)
 	);
 
-	// Footer #2.
+
+
+
+    // Footer #2.
 	register_sidebar(
 		array_merge(
 			$shared_args,
@@ -405,7 +410,34 @@ function twentytwenty_sidebar_registration() {
 		)
 	);
 
+    // Footer #3.
+    register_sidebar(
+        array_merge(
+            $shared_args,
+            array(
+                'name'        => __( 'Footer #3', 'twentytwenty' ),
+                'id'          => 'sidebar-3',
+                'description' => __( 'Widgets in this area will be displayed in the first column in the footer.', 'twentytwenty' ),
+            )
+        )
+    );
+
+
+
+    // Footer #4
+    register_sidebar(
+        array_merge(
+            $shared_args,
+            array(
+                'name'        => __( 'Footer #4', 'twentytwenty' ),
+                'id'          => 'sidebar-4',
+                'description' => __( 'Widgets in this area will be displayed in the first column in the footer.', 'twentytwenty' ),
+            )
+        )
+    );
+
 }
+
 
 add_action( 'widgets_init', 'twentytwenty_sidebar_registration' );
 

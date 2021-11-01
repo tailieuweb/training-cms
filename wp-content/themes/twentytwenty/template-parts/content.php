@@ -17,6 +17,7 @@
 
 	<?php
 
+
 	get_template_part( 'template-parts/entry-header' );
 
 	if ( ! is_search() ) {
@@ -25,7 +26,7 @@
 
 	?>
 
-	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
+	<div class="post-inner <?php echo  is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
 
 		<div class="entry-content">
 
@@ -33,7 +34,13 @@
 			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
 				the_excerpt();
 			} else {
-				the_content( __( 'Continue reading', 'twentytwenty' ) );
+			    if (is_single()){
+                    the_content( __( 'Continue reading', 'twentytwenty' ) );
+                }
+			    else{
+			        $post = get_post();
+			        echo substr($post->post_content,0,100);
+                }
 			}
 			?>
 
@@ -71,7 +78,6 @@
 	if ( is_single() ) {
 
 		get_template_part( 'template-parts/navigation' );
-
 	}
 
 	/*

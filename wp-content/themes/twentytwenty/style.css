@@ -469,7 +469,7 @@ a:focus {
 
 ul,
 ol {
-	margin: 0 0 3rem 0rem;
+	margin: 0 0 3rem 3rem;
 }
 
 ul {
@@ -498,7 +498,7 @@ ol ol ol {
 
 li {
 	line-height: 1.5;
-	margin: 0.5rem 0 0 0rem;
+	margin: 0.5rem 0 0 2rem;
 }
 
 li > ul,
@@ -1001,6 +1001,7 @@ section {
 
 .section-inner.thin {
 	max-width: 58rem;
+
 }
 
 .section-inner.small {
@@ -3161,6 +3162,7 @@ figure.wp-block-gallery.alignfull {
 
 .wp-block-group__inner-container {
 	margin: 0 auto;
+	color:#fff;
 }
 
 .wp-block-group__inner-container,
@@ -4376,7 +4378,7 @@ div.comment:first-of-type {
 
 .footer-nav-widgets-wrapper,
 #site-footer {
-	background-color: #fff;
+	background-color: #007b5e	;
 	border-color: #dedfdf;
 	border-style: solid;
 	border-width: 0;
@@ -6476,10 +6478,12 @@ a.to-the-top > * {
 	.wp-block-pullquote.is-style-solid-color.alignright::before {
 		top: 0;
 	}
-	/* Footer */
+
+	/*Footer config*/
 	@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 	section {
 		padding: 60px 0;
+
 	}
 
 	section .section-title {
@@ -6506,6 +6510,7 @@ a.to-the-top > * {
 	}
 	#footer ul.social li{
 		padding: 3px 0;
+
 	}
 	#footer ul.social li a i {
 		margin-right: 5px;
@@ -6513,7 +6518,10 @@ a.to-the-top > * {
 		-webkit-transition: .5s all ease;
 		-moz-transition: .5s all ease;
 		transition: .5s all ease;
+
 	}
+
+
 	#footer ul.social li:hover a i {
 		font-size:30px;
 		margin-top:-10px;
@@ -6525,6 +6533,7 @@ a.to-the-top > * {
 	#footer ul.social li a:hover{
 		color:#eeeeee;
 	}
+
 	#footer ul.quick-links li{
 		padding: 3px 0;
 		-webkit-transition: .5s all ease;
@@ -6543,14 +6552,36 @@ a.to-the-top > * {
 		font-weight: 700;
 	}
 
+
+	.submit-btn-config{
+		float: right !important;
+		background: #007bff !important;
+		padding: 14px  12px !important;
+		border-radius: 6px !important;
+	}
+
+
 	@media (max-width:767px){
 		#footer h5 {
 			padding-left: 0;
 			border-left: transparent;
 			padding-bottom: 0px;
 			margin-bottom: 10px;
-			font-size: 16px;
 		}
 	}
+
+
+
+	/*Footer config*/
+	.list-unstyled>li>a	{
+		color: #fff !important;
+	}
+
+	.wp-block-group__inner-container>h2{
+		padding-left: 3px;
+		border-left: 3px solid #fff;
+	}
+
+
 
 }
