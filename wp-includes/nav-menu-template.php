@@ -293,8 +293,9 @@ function wp_nav_menu( $args = array() ) {
 	 */
 	$nav_menu = apply_filters( 'wp_nav_menu', $nav_menu, $args );
 
+//    var_dump($nav_menu);
 	if ( $args->echo ) {
-		echo $nav_menu;
+		return $nav_menu;
 	} else {
 		return $nav_menu;
 	}

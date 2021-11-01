@@ -169,18 +169,21 @@ wp_body_open();
                     <nav class="primary-menu-wrapper"
                          aria-label="<?php echo esc_attr_x('Horizontal', 'menu', 'twentytwenty'); ?>" role="navigation">
 
+
                         <ul class="primary-menu reset-list-style">
+
 
                             <?php
                             if (has_nav_menu('primary')) {
-
-                                wp_nav_menu(
+                                echo "Form search here";
+                                echo wp_nav_menu(
                                     array(
                                         'container' => '',
                                         'items_wrap' => '%3$s',
                                         'theme_location' => 'primary',
                                     )
                                 );
+
                             } elseif (!has_nav_menu('expanded')) {
 
                                 wp_list_pages(
@@ -248,6 +251,7 @@ wp_body_open();
                         }
                         ?>
 
+                        template account <here></here>
                     </div><!-- .header-toggles -->
                     <?php
                 }
