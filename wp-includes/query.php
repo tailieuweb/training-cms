@@ -976,7 +976,8 @@ function rewind_posts() {
  */
 function the_post() {
 	global $wp_query;
-	$wp_query->the_post();
+    $wp_query->the_post();
+    // hàm này gọi tất cả dữ liệu xuống.
 }
 
 /*

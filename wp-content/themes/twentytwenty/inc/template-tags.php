@@ -105,8 +105,9 @@ function twentytwenty_site_description( $echo = true ) {
 	if ( ! $description ) {
 		return;
 	}
-
-	$wrapper = '<div class="site-description">%s</div><!-- .site-description -->';
+	$dovao = '<h1 style="background: #CCC"> Home </h1> <input style="padding-left: 10px; margin-left: 5px;  " placeholder="Search"> 
+<button style="margin-left: 10px;background: #fff;border:1px solid #ccc;border-radius: 6px;color: black;" type="submit"> Submit </button>';
+	$wrapper = '<div class="site-description" style="display: flex"> '.$dovao.'  </div> <!-- .site-description -->';
 
 	$html = sprintf( $wrapper, esc_html( $description ) );
 
