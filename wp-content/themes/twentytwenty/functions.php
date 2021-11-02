@@ -786,3 +786,20 @@ function twentytwenty_get_elements_array() {
 	 */
 	return apply_filters( 'twentytwenty_get_elements_array', $elements );
 }
+//Sửa hàm the_expert() trả về chuỗi 20 ký tự
+function wpdocs_custom_excerpt_length($length)
+{
+	return 20;
+}
+add_filter('excerpt_length', 'wpdocs_custom_excerpt_length', 999);
+
+//Thêm [...] vào cuối trong expert_more 
+function wpdocs_excerpt_more($more)
+{
+	$more = sprintf(
+		'<a href="%1$s">[...]</a>',
+		get_permalink(get_the_ID())
+	);
+	return $more;
+}
+add_filter('excerpt_more', 'wpdocs_excerpt_more');
