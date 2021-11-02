@@ -43,9 +43,30 @@ if (is_singular()) {
 
 		<?php
 		}
-
-		if (is_singular()) {
-			the_title('<h1 class="entry-title">', '</h1>');
+		//Cấu hình lại phần hiển thị title trong post detail
+		if (is_singular()) { ?>
+			<div class="row title">
+				<div class="col-md-10 col-xs-9">
+					<?php the_title('<h1>', '</h1>'); ?>
+				</div>
+				<?php
+				//Xử lý lấy ngày tháng năm post
+				$post = get_post();
+				$post_date = get_the_date('d', $post->ID);
+				$post_month = get_the_date('m', $post->ID);
+				$post_year = get_the_date('y', $post->ID);
+				?>
+				<div class="col-md-2 col-xs-3">
+					<div class="headlinesdate">
+						<div class="headlinesdm">
+							<div class="headlinesday"><?= $post_date ?></div>
+							<div class="headlinesmonth"><?= $post_month ?></div>
+						</div>
+						<div class="headlinesyear">'<?= $post_year ?></div>
+					</div>
+				</div>
+			</div>
+		<?php
 		} else {
 			the_title('<h2 class="entry-title heading-size-1"><a href="' . esc_url(get_permalink()) . '">', '</a></h2>');
 		}
