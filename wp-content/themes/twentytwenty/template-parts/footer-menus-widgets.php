@@ -94,32 +94,33 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
 				<!-- <aside class="footer-widgets-outer-wrapper" role="complementary"> -->
 
 				<!-- <div class="footer-widgets-wrapper"> -->
+				<div class="row text-center text-xs-center text-sm-left text-md-left">
+					<?php if ($has_sidebar_1) { ?>
 
-				<?php if ($has_sidebar_1) { ?>
+						<!-- <div class="footer-widgets column-one grid-item"> -->
+						<div class="col-xs-12 col-sm-4 col-md-4">
+							<?php dynamic_sidebar('sidebar-1'); ?>
+						</div>
 
-					<!-- <div class="footer-widgets column-one grid-item"> -->
-					<div class="col-xs-12 col-sm-4 col-md-4">
-						<?php dynamic_sidebar('sidebar-1'); ?>
-					</div>
+					<?php } ?>
 
-				<?php } ?>
+					<?php if ($has_sidebar_2) { ?>
 
-				<?php if ($has_sidebar_2) { ?>
+						<!-- <div class="footer-widgets column-two grid-item"> -->
+						<div class="col-xs-12 col-sm-4 col-md-4">
+							<?php dynamic_sidebar('sidebar-2'); ?>
+						</div>
 
-					<!-- <div class="footer-widgets column-two grid-item"> -->
-					<div class="col-xs-12 col-sm-4 col-md-4">
-						<?php dynamic_sidebar('sidebar-2'); ?>
-					</div>
+					<?php } ?>
+					<?php if ($has_sidebar_3) { ?>
 
-				<?php } ?>
-				<?php if ($has_sidebar_3) { ?>
+						<!-- <div class="footer-widgets column-three grid-item"> -->
+						<div class="col-xs-12 col-sm-4 col-md-4">
+							<?php dynamic_sidebar('sidebar-3'); ?>
+						</div>
 
-					<!-- <div class="footer-widgets column-three grid-item"> -->
-					<div class="col-xs-12 col-sm-4 col-md-4">
-						<?php dynamic_sidebar('sidebar-3'); ?>
-					</div>
-
-				<?php } ?>
+					<?php } ?>
+				</div>
 		</div><!-- .footer-widgets-wrapper -->
 
 		</aside><!-- .footer-widgets-outer-wrapper -->
