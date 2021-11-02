@@ -5505,3 +5505,20 @@ section .section-title {
 .widget li {
 	margin: 0;
 }
+
+/* Custom css search & search result */
+
+@media (min-width: 700px) {
+	.no-search-results-form {
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+	}
+}
+
+.form-control-borderless, .form-control-borderless, .form-control-borderless {
+	border: none;
+}
+
+input[type="search"] {
+	border-style: none;
+}
