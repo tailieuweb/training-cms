@@ -10,15 +10,33 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
-
+if (is_single()) {
+	$newClass = 'post-detail';
+}
 ?>
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+<article <?php post_class($newClass); ?> id="post-<?php the_ID(); ?>">
 
 	<?php
 
 	get_template_part( 'template-parts/entry-header' );
-
+		// Chèn thời gian
+		if (is_single()) {
+			echo '<div class="time-post">';
+			$post_date = get_the_date('d', $post->ID);
+			$post_month = get_the_date('m', $post->ID);
+			$post_year = get_the_date('y',$post->ID);
+			echo '<div class="box-date">';
+			echo '<div class="head-dm">';
+			echo '<div class="day">' . $post_date . '</div>';
+			echo '<hr>';
+			echo '<div class="month">' . $post_month . '</div>';
+			echo '</div>';
+			echo '<div class="year">' . $post_year . '</div>';
+			echo '</div>';
+			echo '</div>';
+		}
+	
 	if ( ! is_search() ) {
 		get_template_part( 'template-parts/featured-image' );
 	}
