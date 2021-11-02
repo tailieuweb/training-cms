@@ -5525,7 +5525,7 @@ a.to-the-top>* {
     }
     .header-inner .toggle-wrapper::before {
         background: #dedfdf;
-        content: "";
+        /* content: ""; */
         display: block;
         height: 2.7rem;
         position: absolute;
@@ -5537,7 +5537,7 @@ a.to-the-top>* {
         content: none;
     }
     .header-inner .primary-menu-wrapper+.header-toggles .toggle-wrapper:first-child::before {
-        content: "";
+        /* content: ""; */
     }
     .nav-toggle-wrapper:not(.has-expanded-menu) {
         display: none;
