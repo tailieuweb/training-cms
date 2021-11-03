@@ -23,27 +23,36 @@ if (is_single()) {
 ?>
 
 <header class="entry-header has-text-align-center<?php echo esc_attr($entry_header_classes); ?>">
-	<div class="row">
-		<div class="col-md-3">
-			<?php if ($has_sidebar_9) { ?>
-				<div class="footer-widgets-wrapper1">
-					<?php if ($has_sidebar_9) { ?>
-						<div class="footer-widgets column-one1 grid-item">
-							<?php dynamic_sidebar('sidebar-9'); ?>
-						</div>
-					<?php } ?>
-				</div>
-			<?php } ?>
-		</div>
-		<div class="col-md-6" style="background: #f5f5f5;">
-			<div class="entry-header-inner section-inner medium">
-				<?php
+    <?php if (is_single()) { ?>
+    <div class="row">
+        <div class="col-md-3">
+            <?php } ?>
+            <?php if ($has_sidebar_9) { ?>
+            <div class="footer-widgets-wrapper1">
+                <?php if ($has_sidebar_9) { ?>
+                <div class="footer-widgets column-one1 grid-item">
+                    <?php dynamic_sidebar('sidebar-9'); ?>
+                </div>
+                <?php } ?>
+            </div>
+            <?php }
+			if (is_single()) { ?>
+        </div>
+        <div class="col-md-6" style="background: #f5f5f5;">
+            <?php } ?>
+
+            <div class="entry-header-inner section-inner medium">
+			<?php
+				 if(!is_single()){
+					
 				// Default to displaying the post meta.
 				twentytwenty_the_post_meta(get_the_ID(), $type_post);
+				 }
 				?>
-				<div class="entry-header-inner section-inner-content">
 
-					<?php
+                <div class="entry-header-inner section-inner-content">
+
+                    <?php
 					/**
 					 * Allow child themes and plugins to filter the display of the categories in the entry header.
 					 *
@@ -56,11 +65,11 @@ if (is_single()) {
 					if (true === $show_categories && has_category() && $type_post === 'single-top') {
 					?>
 
-						<div class="entry-categories">
-							<span class="screen-reader-text"><?php _e('Categories', 'twentytwenty'); ?></span>
-						</div><!-- .entry-categories -->
-						<hr width="100%" style="text-align: center;" />
-					<?php
+                    <div class="entry-categories">
+                        <span class="screen-reader-text"><?php _e('Categories', 'twentytwenty'); ?></span>
+                    </div><!-- .entry-categories -->
+                    <hr width="100%" style="text-align: center;" />
+                    <?php
 					}
 
 					if (is_singular()) {
@@ -69,29 +78,32 @@ if (is_single()) {
 						the_title('<h2 class="entry-title heading-size-1"><a href="' . esc_url(get_permalink()) . '">', '</a></h2>');
 					}
 					?>
-					<?php
-					$day = $month = $year = 0;
-					if (strtotime($post->post_date)) {
-						$timestamp = strtotime($post->post_date);
-						$day = date("d", $timestamp);
-						$month = date("m", $timestamp);
-						$year = date("y", $timestamp);
-					}
-					?>
-					<div class="headlinesdate">
-						<div class="headlinesdm">
-							<div class="headlinesday">
-								<?php echo $day ?>
-							</div>
-							<div class="headlinesmonth">
-								<?php echo $month ?>
-							</div>
-						</div>
-						<div class="headlinesyear">
-							<?php echo $year ?>
-						</div>
-					</div>
-					<?php
+
+                    <?php if (is_single()) {
+						$day = $month = $year = 0;
+						if (strtotime($post->post_date)) {
+							$timestamp = strtotime($post->post_date);
+							$day = date("d", $timestamp);
+							$month = date("m", $timestamp);
+							$year = date("y", $timestamp);
+						} ?>
+
+                    <div class="headlinesdate">
+                        <div class="headlinesdm">
+                            <div class="headlinesday">
+                                <?php echo $day ?>
+                            </div>
+                            <div class="headlinesmonth">
+                                <?php echo $month ?>
+                            </div>
+                        </div>
+                        <div class="headlinesyear">
+                            <?php echo $year ?>
+                        </div>
+                    </div>
+                    <?php } ?>
+
+                    <?php
 					$intro_text_width = '';
 
 					if (is_singular()) {
@@ -103,45 +115,46 @@ if (is_single()) {
 					if (has_excerpt() && is_singular()) {
 					?>
 
-						<div class="intro-text section-inner max-percentage<?php echo $intro_text_width; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output 
+                    <div class="intro-text section-inner max-percentage<?php echo $intro_text_width; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output 
 																			?>">
-							<?php the_excerpt(); ?>
-						</div>
+                        <?php the_excerpt(); ?>
+                    </div>
 
 
-					<?php
+                    <?php
 					}
 					?>
-					<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
+                    <div
+                        class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
 
-						<div class="entry-content">
+                        <div class="entry-content">
 
-							<?php
+                            <?php
 							if (is_search() || !is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
 								the_excerpt();
 							} else {
 								if (is_single()) {
 									the_content(__('Continue reading', 'twentytwenty'));
 								} else {
-									$post  = get_post();
-									$content = $post->post_content;
-									$str = preg_replace('/<figure.*?>.*?<\/figure>/', ' ', $content);
-									echo substr($str, 0, 200);
+									the_excerpt();
 								}
 							}
 							?>
-						</div><!-- .entry-content -->
+                        </div><!-- .entry-content -->
 
-					</div><!-- .post-inner -->
-				</div> <!-- .entry-header-inner-content -->
+                    </div><!-- .post-inner -->
+                </div> <!-- .entry-header-inner-content -->
 
-			</div><!-- .entry-header-inner -->
-		</div>
-	</div>
-	<div class="col-md-3">
+            </div><!-- .entry-header-inner -->
+            <?php if (is_single()) { ?>
+        </div>
+    </div>
+    <div class="col-md-3">
 
-	</div>
-	</div>
+    </div>
+    <?php } ?>
+
+    </div>
 
 
 

@@ -6249,3 +6249,7 @@ px
     left: 600px;
     top: -37px;
 }
+.col-md-3 {
+    color: black;
+    background: aqua;
+}
