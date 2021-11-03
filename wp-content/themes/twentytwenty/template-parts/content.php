@@ -12,8 +12,8 @@
  */
 
 $class='';
-if(!is_single()){
-$class= 'list_post';
+if (!is_single()) {
+    $class= 'list_post';
 }
 ?>
 
@@ -21,45 +21,65 @@ $class= 'list_post';
 
 	<?php
 
-	get_template_part( 'template-parts/entry-header' );
+    get_template_part('template-parts/entry-header');
 
-	if ( ! is_search() ) {
-		get_template_part( 'template-parts/featured-image' );
+    if (! is_search()) {
+        get_template_part('template-parts/featured-image');
+    }
+	if ($class != 'list_post') {
+    ?>
+	<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
+
+		<div class="entry-content">
+
+			<?php
+            if (is_search() || ! is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
+                the_excerpt();
+            } else {
+                if (is_single()) {
+                    the_content(__('Continue reading', 'twentytwenty'));
+                } else {
+                    $post  = get_post();
+                    $content = $post->post_content;
+                    $str = preg_replace('/<figure.*?>.*?<\/figure>/', ' ', $content);
+                    echo substr($str, 0, 200);
+                }
+            }
 	}
+   ?>
+		</div><!-- .entry-content -->
 
-	?>
-
+	</div><!-- .post-inner -->
 	<div class="section-inner">
 		<?php
-		wp_link_pages(
-			array(
-				'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__( 'Page', 'twentytwenty' ) . '"><span class="label">' . __( 'Pages:', 'twentytwenty' ) . '</span>',
-				'after'       => '</nav>',
-				'link_before' => '<span class="page-number">',
-				'link_after'  => '</span>',
-			)
-		);
+        wp_link_pages(
+       array(
+                'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__('Page', 'twentytwenty') . '"><span class="label">' . __('Pages:', 'twentytwenty') . '</span>',
+                'after'       => '</nav>',
+                'link_before' => '<span class="page-number">',
+                'link_after'  => '</span>',
+            )
+   );
 
-		// edit_post_link();
+        // edit_post_link();
 
-		// Single bottom post meta.
-		twentytwenty_the_post_meta( get_the_ID(), 'single-bottom' );
+        // Single bottom post meta.
+        twentytwenty_the_post_meta(get_the_ID(), 'single-bottom');
 
-		if ( post_type_supports( get_post_type( get_the_ID() ), 'author' ) && is_single() ) {
-
-			get_template_part( 'template-parts/entry-author-bio' );
-
-		}
-		?>
+        if (post_type_supports(get_post_type(get_the_ID()), 'author') && is_single()) {
+            get_template_part('template-parts/entry-author-bio');
+        }
+        ?>
 
 	</div><!-- .section-inner -->
 
 	<?php
 
-	if ( is_single() ) {
+    if (is_single()) {
+        get_template_part('template-parts/navigation');
+    }
 
-		get_template_part( 'template-parts/navigation' );
-
+<<<<<<< HEAD
 	}
 	
 	/*
@@ -68,15 +88,23 @@ $class= 'list_post';
 	 */
 	if ( ( is_single() || is_page() ) && ( comments_open() || get_comments_number() ) && ! post_password_required() ) {
 		?>
+=======
+    /*
+     * Output comments wrapper if it's a post, or if comments are open,
+     * or if there's a comment number – and check for password.
+     */
+    if ((is_single() || is_page()) && (comments_open() || get_comments_number()) && ! post_password_required()) {
+        ?>
+>>>>>>> 1-wordpress-581-202109/2-groups/1-H/5-34-Thien-Module-1
 
-		<div class="comments-wrapper section-inner">
+	<div class="comments-wrapper section-inner">
 
-			<?php comments_template(); ?>
+		<?php comments_template(); ?>
 
-		</div><!-- .comments-wrapper -->
+	</div><!-- .comments-wrapper -->
 
-		<?php
-	}
-	?>
+	<?php
+    }
+    ?>
 
 </article><!-- .post -->
