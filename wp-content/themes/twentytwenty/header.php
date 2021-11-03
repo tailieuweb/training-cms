@@ -19,7 +19,7 @@
 
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-6-7.css" type="text/css" media="screen" />
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
