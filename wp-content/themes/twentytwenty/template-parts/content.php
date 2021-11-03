@@ -41,7 +41,9 @@ if (!is_single()) {
 			} else {
 
 				if (is_single()) {
-                    ?> <div class="detail-post-content"> <?php
+                    ?>
+                    // Module-6
+                    <div class="detail-post-content"> <?php
 					the_content(__('Continue reading', 'twentytwenty'));
                     ?></div> <?php
 				} else {
