@@ -29,6 +29,7 @@ if ( is_singular() ) {
 		 * @param bool Whether to show the categories in header. Default true.
 		 */
 		$show_categories = apply_filters('twentytwenty_show_categories_in_entry_header', true);
+        // Module-6
 		$day = $month = $year = 0;
 		if (strtotime($post->post_date)) {
 			$timestamp = strtotime($post->post_date);
@@ -61,7 +62,7 @@ if ( is_singular() ) {
 			if (is_singular()) {
 				$intro_text_width = ' small';
 			} else {
-				$intro_text_width = ' thin module-6-thin';
+				$intro_text_width = ' thin module-6-thin'; // Module-6
 			}
 				?></div>
 				<div class="col-md-2 col-xs-3">
