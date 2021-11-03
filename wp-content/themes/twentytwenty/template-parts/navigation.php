@@ -23,7 +23,7 @@ if ($next_post || $prev_post) {
 
 ?>
 	<div class="col-md-8 module-7">
-        // Module-6
+        <!-- Module-6 -->
 	<div class="author-module-6"><?php	echo "(Theo ".get_the_author().")"; ?></div>
 	<nav class="pagination-single section-inner<?php echo esc_attr($pagination_classes); ?>" aria-label="<?php esc_attr_e('Post', 'twentytwenty'); ?>" role="navigation">
 
