@@ -321,6 +321,26 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 
 		$post_meta_wrapper_classes = ' post-meta-single post-meta-single-bottom';
 
+	}elseif('single-date' === $location){
+/**
+		 * Filters post tags visibility.
+		 *
+		 * Use this filter to hide post date.
+		 *
+		 * @since Twenty Twenty 1.0
+		 *
+		 * @param array $args {
+		 *     @type string $tags
+		 * }
+		 */
+		$post_meta = apply_filters(
+			'twentytwenty_post_meta_location_single_date',
+			array(				
+				'post-date',
+			)
+		);
+
+		$post_meta_wrapper_classes = ' post-meta-single post-meta-single-date';
 	}
 
 	// If the post meta setting has the value 'empty', it's explicitly empty and the default post meta shouldn't be output.
@@ -388,18 +408,24 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 					$has_meta = true;
 					?>
 					<li class="post-date meta-wrapper">
-						<span class="meta-icon">
+						<?php if($location === 'single-top'){ ?>
+							<span class="meta-icon">
 							<span class="screen-reader-text"><?php _e( 'Post date', 'twentytwenty' ); ?></span>
-							<?php twentytwenty_the_theme_svg( 'calendar' ); ?>
-						</span>
-						<span class="meta-text">
-							<a href="<?php the_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
-						</span>
+								<?php twentytwenty_the_theme_svg( 'calendar' ); ?>
+							</span>
+							<span class="meta-text">
+								<a href="<?php the_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
+							</span>
+						<?php }else{ ?>
+							<span class="meta-text">
+								<a href="<?php the_permalink(); ?>"><?php the_time( 'd' ); ?></a>
+								<a href="<?php the_permalink(); ?>"><?php the_time( 'F' ); ?></a>
+							</span>
+						<?php }?>
 					</li>
 					<?php
 
 				}
-
 				// Categories.
 				if ( in_array( 'categories', $post_meta, true ) && has_category() ) {
 
