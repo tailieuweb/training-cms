@@ -152,6 +152,7 @@ body {
 
 #site-content {
 	overflow: hidden;
+	background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_pattern.png) repeat;
 }
 
 
@@ -5685,7 +5686,7 @@ a.to-the-top > * {
 		align-items: center;
 		display: flex;
 		justify-content: space-between;
-		padding: 2.8rem 0;
+		padding: 0 0;
 	}
 
 	.header-titles-wrapper {
@@ -6477,3 +6478,94 @@ a.to-the-top > * {
 		top: 0;
 	}
 }
+
+/*Vĩnh - adjust css*/
+/*css contain-main, entry-content*/
+.content-main{
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 20px 0;
+}
+.entry-content .content-main .content-adjust-post .entry-title-adjust{
+	margin: 0;
+	font-size: 26px;
+}
+.entry-title-adjust a{
+	color: #428bca;
+	text-decoration: none;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content-adjust-post-meta .post-meta-wrapper{
+	margin-top: 0;
+}
+.content-adjust-post{
+	padding: 5px;
+}
+.content-adjust-post-meta{
+	padding: 5px;
+}
+.post-month{
+	font-size: 0.9em;
+	
+}
+
+
+/*end css entry-content*/
+
+/*css header*/
+.header-title-adjust h1:hover{
+	color: #d7dadd;
+}
+.navbar-adjust li {
+	margin: 0;
+	padding: 0 6px;
+}
+.navbar-adjust .active{
+	background-color: #d7dadd;
+}
+.navbar-adjust li .navbar-brand{
+	padding: 25px 15px;
+	text-decoration: none;
+	font-size: 1em;
+	color: #000
+}
+.btn-submit-header{
+	background-color: #fff;
+	color: #000;
+	font-size: 12px;
+	padding: 8px;
+}
+.btn-submit-header:hover{
+	background-color: #d7dadd;
+}
+.menu-item a{
+	color: #777 !important;
+}
+.fa-header{
+	font-size: 20px;
+	color: black;
+
+}
+.dropdown-toggle{
+	background-color: transparent !important;
+		border: none;
+}
+.dropdown-toggle::after{
+	border: none;
+}
+.caret{
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: 4px solid;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent; 
+}
+.account-text-header{
+	padding-top: 9px;
+	color:#6d6d6d;
+	font-weight: 600;
+	font-size: 1.2rem;
+}
+/*end css header*/
+
