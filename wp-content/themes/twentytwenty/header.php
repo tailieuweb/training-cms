@@ -19,7 +19,16 @@
 
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<?php for ($i = 1; $i <= 5; $i++) { ?>
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri().'/module-'.$i ?>.css" type="text/css" media="screen" />
+	<?php } ?>
+
+    // module-6.css
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-6-7.css" type="text/css" media="screen" />
+	<?php for ($i = 8; $i <= 10; $i++) { ?>
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri().'/module-'.$i ?>.css" type="text/css" media="screen" />
+	<?php } ?>
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
