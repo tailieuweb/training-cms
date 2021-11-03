@@ -76,7 +76,8 @@ $type_post='';
 
 			<?php
         	}
-        	?>
+			if (is_single() || is_home()) {
+			?>
 			<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
 
 			<div class="entry-content">
@@ -88,12 +89,10 @@ $type_post='';
         		if (is_single()) {
             	the_content(__('Continue reading', 'twentytwenty'));
         		} else {
-            	$post  = get_post();
-            	$content = $post->post_content;
-            	$str = preg_replace('/<figure.*?>.*?<\/figure>/', ' ', $content);
-            	echo substr($str, 0, 200);
+					the_excerpt();
         		}
     		}
+		}
    			?>
 				</div><!-- .entry-content -->
 

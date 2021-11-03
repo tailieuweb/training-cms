@@ -6174,5 +6174,11 @@ section .section-title {
 
 article.list_post.post {
     box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
-    margin: 2% 30%;
+    margin: 2% 20%;
+}
+
+article.post {
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
+    margin: 2px 20%;
+    width: 60%;
 }
