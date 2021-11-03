@@ -41,7 +41,9 @@ if (!is_single()) {
 			} else {
 
 				if (is_single()) {
+                    ?> <div class="detail-post-content"> <?php
 					the_content(__('Continue reading', 'twentytwenty'));
+                    ?></div> <?php
 				} else {
 					$post = get_post();
 					$day = $month = $year = 0;
@@ -75,7 +77,6 @@ if (!is_single()) {
 			?>
 
 		</div><!-- .entry-content -->
-
 	</div><!-- .post-inner -->
 
 	<div class="section-inner">
