@@ -21,7 +21,7 @@ $class= 'list_post';
 
 	<?php
 
-	get_template_part( 'template-parts/entry-header' );
+	get_template_part( 'template-parts/entry-header1' );
 
 	if ( ! is_search() ) {
 		get_template_part( 'template-parts/featured-image' );
