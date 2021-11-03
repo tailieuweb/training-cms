@@ -24,7 +24,7 @@
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri().'/module-'.$i ?>.css" type="text/css" media="screen" />
 	<?php } ?>
 
-    // module-6.css
+    // module-6.css -- Module-7.css
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-6-7.css" type="text/css" media="screen" />
 	<?php for ($i = 8; $i <= 10; $i++) { ?>
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri().'/module-'.$i ?>.css" type="text/css" media="screen" />
