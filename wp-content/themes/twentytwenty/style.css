@@ -6479,6 +6479,9 @@ a.to-the-top > * {
 }
 
 /* Search result */
+#site-content{
+	background: url('./assets/images/bg_pattern.png') repeat;
+}
 .search-danh-sach {
 	margin: 5rem 10em;
     background: #fff;
