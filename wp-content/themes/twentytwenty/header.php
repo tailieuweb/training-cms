@@ -33,24 +33,28 @@
     <?php wp_body_open(); ?>
 
     <nav class="navbar navbar-expand-sm navbar-dark py-0 border" style="background-color:#f1f2f6;padding-right: 5em;">
-        <div class="header-titles-adjust">
-		<a class="navbar-brand " href="#">Group C <span class="sr-only">(current)</span></a>
+        <div class="header-titles-wrapper">
+		   <span><h1>Group E</h1></span>
         </div><!-- .header-titles -->
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
         <div class="collapse navbar-collapse header-inner" id="collapsibleNavId">
             <ul class="navbar-nav ml-0  mt-2 mt-lg-0 navbar-adjust">
-                <li class="Home">
-                    <a class="navbar-brand " href="#">Home <span class="sr-only">(current)</span></a>
+               
+				<ul class="navbar-nav ml-0  mt-2 mt-lg-0 navbar-adjust">
+                <li class="mx-2 nav-item active">
+                    <h2><a href="#">Home <span class="sr-only">(current)</span></a></h2>
                 </li>
             </ul>
-			<form role="search" aria-label="404 not found" method="get" class="search-form" action="http://wordpress.local:81/">
-                            <label for="search-form-2">
+				<!---form-search--->
+            <form class="search-form" action="http://wordpress.local:81/">
+				<label for="search-form-2">
                                 <span class="screen-reader-text">Search for:</span>
                                 <input type="search" id="search-form-2" class="search-field" placeholder="Search …" value="" name="s">
-                            </label>
-                            <input type="submit" class="search-submit" value="Search">
+                </label>
+                                <input type="submit" class="search-submit" value="Search">
             </form>
-
+			
+            </ul>
             <div class="header-navigation-wrapper">
                 <?php
                 $enable_header_search = get_theme_mod('enable_header_search', true);
@@ -125,14 +129,14 @@
                         <?php
                         }
                         ?>
-                        <div class="dropdown show">
+                        <div class="dropdown">
                             <a class="btn btn-secondary dropdown-toggle d-block" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-user-circle-o fa-header" aria-hidden="true"></i>
-                                <p class="account-text-header">Account <span class="caret"></span></p>
+                                <p>Account <span class="caret"></span></p>
                             </a>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">Action</a>
+                            <div class="dropdown-menu" aria-labelledby="about-us">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
                                 <a class="dropdown-item" href="#">Another action</a>
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
