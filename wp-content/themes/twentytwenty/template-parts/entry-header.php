@@ -29,7 +29,7 @@ if ( is_singular() ) {
 		 * @param bool Whether to show the categories in header. Default true.
 		 */
 		$show_categories = apply_filters('twentytwenty_show_categories_in_entry_header', true);
-        // Module-6
+        /* Module-6 */
 		$day = $month = $year = 0;
 		if (strtotime($post->post_date)) {
 			$timestamp = strtotime($post->post_date);
