@@ -6684,7 +6684,7 @@ h2.entry-title-adjust a{
 }
 .pagination-single a.next-post{
 	margin: 0px;
-	flex-direction: column !important;
+	flex-direction: column !important; ????????
 } */
 
 .pagination-single {
