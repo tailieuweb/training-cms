@@ -33,10 +33,20 @@ if (is_search()) {
     if ($class != 'list_post') {
     ?>
         <div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
-
+            <?php
+            if (is_search()) {
+                $post_date = get_the_date('d', $post->ID);
+                $post_month = get_the_date('m', $post->ID);
+                echo '<div class="date">';
+                echo '<p class="day">' . $post_date . '</p>';
+                echo '<p class="month">' . $post_month . '</p>';
+                echo '</div>';
+            }
+            ?>
             <div class="entry-content">
 
             <?php
+
             if (!is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
                 the_excerpt();
             } else {
