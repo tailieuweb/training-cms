@@ -6689,3 +6689,13 @@ section .section-title {
 	width: 600px;
 	padding: 50px 0;
 }
+.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+	font-size: 3rem;
+}
+h2, .heading-size-2{
+	margin-top: 39px;
+	font-size: 3rem;
+}
+#footer{
+	padding: 5px 0;
+}
