@@ -1,1 +1,38 @@
 /* Module 4 css */
+
+.search-form .search-field {
+    width: 858px;
+    padding-left: 65px;
+    height: 75px;
+    font-size: 20px;
+}
+
+.section-inner.thin {
+    max-width: 85rem;
+}
+
+.section-inner.max-percentage {
+    width: 58rem;
+}
+
+.font-search {
+    position: relative;
+    top: 26px;
+    left: 60px;
+    font-size: 25px;
+    width: 25px;
+    height: 25px;
+}
+
+.search-submit {
+    position: relative;
+    top: 13px;
+    right: 137px;
+    height: 50px;
+    border-radius: 7px;
+    width: 115px;
+    border: 1px solid rgb(40, 167, 69);
+    background-color: rgb(40, 167, 69) !important;
+    color: white;
+    font-size: 20px;
+}
