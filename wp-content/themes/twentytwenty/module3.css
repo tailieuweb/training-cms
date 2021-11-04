@@ -1,4 +1,5 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
 section .section-title {
     text-align: center;
     color: #007b5e;
@@ -104,7 +105,7 @@ section.custom-module3-section {
     padding: 40px 0;
 }
 
-section.custom-module3-section.bottom_content_footer{
+section.custom-module3-section.bottom_content_footer {
     padding: 0 0 40px 0;
     margin-top: -40px;
 }
@@ -119,15 +120,15 @@ section.custom-module3-section.bottom_content_footer{
     font-size: 2.4rem;
 }
 
-.custom-widget-layout ul.has-small-font-size{
+.custom-widget-layout ul.content-footer, .custom-widget-layout ol {
     list-style-type: none;
 }
 
-.custom-widget-layout ul.has-small-font-size li {
+.custom-widget-layout ul.content-footer li, .custom-widget-layout ol {
     padding: 3px 0;
 }
 
-.custom-widget-layout ul.has-small-font-size li {
+.custom-widget-layout ul.content-footer li, .custom-widget-layout ol li {
     margin-right: 5px;
     font-size: 1.5rem;
     -webkit-transition: .5s all ease;
@@ -140,21 +141,21 @@ section.custom-module3-section.bottom_content_footer{
     margin: 0 1.5rem 0.5rem 0;
 }
 
-.custom-widget-layout ul.has-small-font-size li:hover {
+.custom-widget-layout ul.content-footer li:hover, .custom-widget-layout ol li:hover {
     color: #eeeeee;
     padding: 3px 0;
     margin-left: 5px;
     font-weight: 700;
 }
 
-.custom-widget-layout ul.has-small-font-size li {
+.custom-widget-layout ul.content-footer li, .custom-widget-layout ol li {
     padding: 3px 0;
     -webkit-transition: .5s all ease;
     -moz-transition: .5s all ease;
     transition: .5s all ease;
 }
 
-.custom-widget-layout ul.has-small-font-size li::before {
+.custom-widget-layout ul.content-footer li::before{
     content: "\f101"; /* FontAwesome Unicode */
     font-family: FontAwesome;
     display: inline-block;
@@ -162,3 +163,6 @@ section.custom-module3-section.bottom_content_footer{
     width: 1em;
 }
 
+ol.content-footer.comments footer, ol.content-footer.comments p, ol.content-footer.comments time {
+    color: #fff;
+}

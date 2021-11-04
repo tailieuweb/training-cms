@@ -410,7 +410,7 @@ function twentytwenty_sidebar_registration() {
         array_merge(
             $shared_args,
             array(
-                'name'        => __( 'Custom widget footer', 'twentytwenty' ),
+                'name'        => __( 'Custom widget footer first column', 'twentytwenty' ),
                 'id'          => 'custom-widget-footer',
                 'description' => __( 'Custom footer widgets.', 'twentytwenty' ),
             )
@@ -418,6 +418,18 @@ function twentytwenty_sidebar_registration() {
     );
 
     // Footer #4.
+    register_sidebar(
+        array_merge(
+            $shared_args,
+            array(
+                'name'        => __( 'Custom widget footer second column', 'twentytwenty' ),
+                'id'          => 'custom-widget-footer-second-col',
+                'description' => __( 'Custom footer widgets for second column.', 'twentytwenty' ),
+            )
+        )
+    );
+
+    // Footer #5.
     register_sidebar(
         array_merge(
             $shared_args,

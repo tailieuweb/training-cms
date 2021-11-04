@@ -14,6 +14,7 @@ $has_social_menu = has_nav_menu('social');
 $has_sidebar_1 = is_active_sidebar('sidebar-1');
 $has_sidebar_2 = is_active_sidebar('sidebar-2');
 $has_custom_sidebar = is_active_sidebar('custom-widget-footer');
+$has_custom_sidebar_second_col = is_active_sidebar('custom-widget-footer-second-col');
 $has_custom_sidebar_last_col = is_active_sidebar('custom-widget-footer-last-col');
 
 // Only output the container if there are elements to display.
@@ -38,14 +39,17 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
                 <section class="custom-module3-section" id="footer">
                     <div class="container">
                         <div class="row text-center text-xs-center text-sm-left text-md-left">
-                            <?php
-                            for ($i = 0; $i < 2; $i++) {
-                                ?>
+                            <?php if ($has_custom_sidebar) { ?>
                                 <div class="col-xs-12 col-sm-4 col-md-4 custom-widget-layout">
-                                        <?php dynamic_sidebar('custom-widget-footer'); ?>
+                                    <?php dynamic_sidebar('custom-widget-footer'); ?>
                                 </div>
-                                <?php
-                            } ?>
+                            <?php } ?>
+
+                            <?php if ($has_custom_sidebar_second_col) { ?>
+                                <div class="col-xs-12 col-sm-4 col-md-4 custom-widget-layout">
+                                    <?php dynamic_sidebar('custom-widget-footer-second-col'); ?>
+                                </div>
+                            <?php } ?>
 
                             <?php if ($has_custom_sidebar_last_col) { ?>
                                 <div class="col-xs-12 col-sm-4 col-md-4 custom-widget-layout">
