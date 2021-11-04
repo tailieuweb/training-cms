@@ -32,8 +32,8 @@ if (is_single()) {
             <?php } ?>
             <?php if ($has_sidebar_9 && is_single()) { ?>
                 <div class="footer-widgets-wrapper1">
-                    <?php if ($has_sidebar_9) { ?>
-                        <div class="footer-widgets column-one grid-item1">
+                    <?php if ($has_sidebar_9 && is_single()) { ?>
+                        <div class="footer-widgets1 column-one grid-item">
                             <?php dynamic_sidebar('sidebar-9'); ?>
                         </div>
                     <?php } ?>

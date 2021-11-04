@@ -7,6 +7,8 @@
 .col-md-3.category123 h2 {
     font-size: 35px !important;
     color: #cd2653;
+    position: relative;
+    bottom: 6px;
 }
 
 .footer-widgets-wrapper1 {
@@ -24,4 +26,13 @@ ul.list-unstyled.quick-links.wp-block-categories-list.wp-block-categories {
     margin-top: 4px;
     background-color: #f5f5f5;
     border: 1px solid #fff;
+}
+
+.footer-widgets1.column-one.grid-item {
+    position: relative;
+    left: 95px;
+}
+
+.widget:first-child {
+    margin-top: -5px;
 }
