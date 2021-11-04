@@ -6477,6 +6477,9 @@ a.to-the-top > * {
 		top: 0;
 	}
 }
+body{
+	font-family: 'Arial';
+}
 
 /* Search result */
 #site-content{
