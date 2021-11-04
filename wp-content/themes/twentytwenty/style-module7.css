@@ -1,0 +1,43 @@
+.pagination-single-inner .title .title-inner {
+  color: black !important;
+  font-size: 15px;
+}
+
+.pagination-single-inner a:hover {
+  text-decoration: none !important;
+}
+.pagination-single a {
+  display: block !important;
+}
+.headlinesdate .headlinesdm,
+.news > .headlinesdate,
+.headlinesdate {
+  float: left;
+  font-family: "Prata", serif !important;
+  color: black;
+}
+.headlinesdate {
+  font-size: 0.8em;
+  width: 15%;
+  min-width: 55px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.headlinesdate .headlinesday {
+  border-bottom: 1px solid rgb(22, 22, 22);
+}
+.headlinesdate .headlinesday,
+.news > .headlinesmonth {
+  line-height: 1.7em;
+}
+
+element.style {
+}
+.headlinesdate .headlinesyear {
+  line-height: 3.5em;
+  float: left;
+  margin-left: 3 px;
+}
+.headlinesdate {
+  margin-top: -11px;
+}
