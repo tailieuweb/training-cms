@@ -26,7 +26,7 @@ if (!is_single()) {
     if (! is_search()) {
         get_template_part('template-parts/featured-image');
     }
-	if ($class != 'list_post') {
+	if ($class == 'list_post') {
     ?>
 	<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
 
@@ -38,11 +38,6 @@ if (!is_single()) {
             } else {
                 if (is_single()) {
                     the_content(__('Continue reading', 'twentytwenty'));
-                } else {
-                    $post  = get_post();
-                    $content = $post->post_content;
-                    $str = preg_replace('/<figure.*?>.*?<\/figure>/', ' ', $content);
-                    echo substr($str, 0, 200);
                 }
             }
 	}
