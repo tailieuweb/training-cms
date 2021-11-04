@@ -1,0 +1,19 @@
+*** WooCommerce Subscriptions Core Changelog ***
+
+2021-10-29 - version 1.0.3
+* Fix: Errors when attempting to get the plugin version during PayPal requests. PR#27
+
+2021-10-29 - version 1.0.2
+* Fix: PHP 7.2 compatibility - remove trailing commas from function args. PR #23
+
+2021-10-22 - version 1.0.1
+* Fix: Don't show a downgrade notice when activating the WC Subscriptions extension after installing WCS Core. PR#7
+* Fix: Correctly show the available payment methods when paying for a subscription renewal order. PR#9
+* Fix: Don't show the WC Subscriptions extension welcome/installation message after installing WCS Core. PR#11
+* Fix: Remove the "Welcome to Subscriptions" notice that is displayed upon upgrading from previous minor versions. PR#14
+* Fix: Don't display a "Welcome to Subscriptions 2.1" for stores that have upgraded from really old version of Subscriptions. PR#16
+* Fix: Errors during the upgrade process for stores that are upgrading from very old versions of Subscriptions (1.5.0). PR#16
+* Fix: Show subscription billing information (recurring cart totals, sign up fees etc) on the WooCommerce Checkout block. PR#18
+
+2021-09-22 - version 1.0.0
+* New: Subscriptions Core first release
