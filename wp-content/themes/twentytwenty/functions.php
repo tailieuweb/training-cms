@@ -405,6 +405,7 @@ function twentytwenty_sidebar_registration() {
 		)
 	);
 
+<<<<<<< HEAD
     // Footer #3.
     register_sidebar(
         array_merge(
@@ -416,6 +417,21 @@ function twentytwenty_sidebar_registration() {
             )
         )
     );
+=======
+	
+	// Footer #3.Phuc
+	register_sidebar(
+		array_merge(
+			$shared_args,
+			array(
+				'name'        => __( 'Footer #3', 'twentytwenty' ),
+				'id'          => 'sidebar-3',
+				'description' => __( 'Widgets in this area will be displayed in the first column in the footer.', 'twentytwenty' ),
+			)
+		)
+	);
+
+>>>>>>> origin/1-wordpress-581-202109/2-groups/1-F/master
 }
 
 add_action( 'widgets_init', 'twentytwenty_sidebar_registration' );

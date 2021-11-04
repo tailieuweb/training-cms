@@ -1,0 +1,145 @@
+/* * Module-6 */
+.title-detail .headlinesdate {
+    background: #f5ce31;
+    border-radius: 50%;
+    padding: 10px 19px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 /20%);
+    width: 50% !important;
+}
+
+figure.wp-block-image {
+    text-align: center;
+}
+.wp-block-image img {
+    margin: auto;
+}
+
+.detail-post-content {
+    max-width: 80rem !important;
+}
+
+.title-detail .headlinesdate .headlinesmonth {
+    font-size: 14px;
+}
+
+.title-detail .headlinesdate .headlinesday {
+    font-size: 14px;
+}
+
+.title-detail .headlinesdate .headlinesyear {
+    font-size: 14px;
+}
+
+.title-detail .headlinesdate {
+    margin-left: -50% !important;
+}
+
+.row div.overviewline {
+    border-bottom: 1px solid #cecece;
+    margin: 25px auto;
+    position: relative;
+    width: 80%;
+}
+
+.row div.overviewline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 130px;
+    border-width: 12px 12px 0;
+    border-style: solid;
+    border-color: #cecece transparent;
+    display: block;
+    width: 0;
+}
+
+.row div.overviewline::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 131px;
+    border-width: 11px 11px 0;
+    border-style: solid;
+    border-color: #fff transparent;
+    display: block;
+    width: 0;
+}
+
+header.module-6-header.has-text-align-center.header-footer-group {
+    padding-bottom: 0;
+}
+
+.post-inner.module-6-thin {
+    padding-top: 3rem;
+}
+
+.post-inner .entry-content {
+    text-align: justify;
+}
+
+.author-module-6 {
+    text-align: right;
+    max-width: 110rem;
+    margin-right: 10%;
+    margin-top: 5%;
+    font-size: 15px;
+}
+
+/* * Module-7 css*/
+.module-7 {
+    margin: auto;
+}
+
+
+.pagination-single-inner {
+    display: contents!important;
+}
+
+.pagination-single a + a {
+    margin: 0 0 0 0rem;
+}
+
+.row .headlinesdate {
+    font-size: 0.8em;
+    width: 10%;
+    min-width: 55px;
+    display: table-cell;
+    vertical-align: middle;
+    margin-left: 10%;
+}
+
+.row .headlinesdate {
+    float: left;
+    font-family: "Prata", serif;
+}
+
+.row .headlinesdate .headlinesdm {
+    float: left;
+    font-family: "Prata", serif;
+}
+
+.row .headlinesdate .headlinesdm .headlinesday {
+    border-bottom: 1px solid #000;
+}
+
+.row .headlinesdate .headlinesyear {
+    line-height: 3.5em;
+    float: left;
+    margin-left: 3px;
+}
+
+.row span.title-inner {
+    font-size: 19.2px;
+    color: #000;
+    font-weight: 400;
+}
+
+.row a:hover {
+    color: #000;
+}
+
+.row span.title {
+    margin-top: 1%;
+}
