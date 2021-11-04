@@ -148,6 +148,14 @@ section.custom-module3-section.bottom_content_footer {
     font-weight: 700;
 }
 
+.custom-widget-layout ol a.wp-block-latest-comments__comment-author::before{
+    content: "\f101"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1em;
+    width: 1em;
+}
+
 .custom-widget-layout ul.content-footer li, .custom-widget-layout ol li {
     padding: 3px 0;
     -webkit-transition: .5s all ease;
