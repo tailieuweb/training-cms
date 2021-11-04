@@ -66,8 +66,6 @@ if ($next_post || $prev_post) {
 
         <a class="next-post" href="<?php echo esc_url(get_permalink($next_post->ID)); ?>">
             <!-- <span class="arrow" aria-hidden="true">&rarr;</span> -->
-            <span class="title"><span
-                    class="title-inner"><?php echo wp_kses_post(get_the_title($next_post->ID)); ?></span></span>
             <span>
                 <div class="headlinesdate">
                     <div class="headlinesdm">
@@ -77,6 +75,9 @@ if ($next_post || $prev_post) {
                     <div class="headlinesyear"><?php echo $year ?></div>
                 </div>
             </span>
+            <span class="title"><span
+                    class="title-inner"><?php echo wp_kses_post(get_the_title($next_post->ID)); ?></span></span>
+
         </a>
         <?php
 			}
