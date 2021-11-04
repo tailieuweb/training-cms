@@ -1,6 +1,7 @@
 .col-md-3.category123 {
     list-style: disc;
     margin-bottom: 0;
+    text-align: left;
 }
 
 .col-md-3.category123 h2 {

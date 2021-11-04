@@ -6177,73 +6177,91 @@ article.list_post.post {
     box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
     margin: 2% 30%;
 }
+
 hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 0;
-    border-top: 1px solid rgba(0,0,0,.1);
+    border-top: 1px solid rgba(0, 0, 0, .1);
     position: relative;
     bottom: -85px;
 }
-.headlinesdate {
+
+.entry-header-inner .headlinesdate {
     background: #f5ce31;
     border-radius: 50%;
-    padding: 10px 17px
-;
+    padding: 10px 17px;
     -webkit-box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
 }
-.headlinesdate .headlinesdm, .news > .headlines .headlinesdate, .headlinesdate {
+
+.entry-header-inner .headlinesdate .headlinesdm,
+.news>.headlines .headlinesdate,
+.headlinesdate {
     float: left;
     font-family: 'Prata', serif;
 }
+
 * {
     transition: all 0.1s linear;
 }
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.headlinesdate .headlinesdm, .news > .headlines .headlinesdate, .headlinesdate {
+
+.entry-header-inner .headlinesdate .headlinesdm,
+.news>.headlines .headlinesdate,
+.headlinesdate {
     float: left;
     font-family: 'Prata', serif;
 }
-:before, :after {
+
+:before,
+ :after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-:before, :after {
+
+:before,
+ :after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.headlinesdate .headlinesday {
+
+.entry-header-inner .headlinesdate .headlinesday {
     border-bottom: 1px solid #000;
 }
-.headlinesdate .headlinesday {
-    border-bottom: 1
-px
- solid #fff;
+
+.entry-header-inner .headlinesdate .headlinesday {
+    border-bottom: 1 px solid #fff;
 }
-.headlinesdate .headlinesmonth {
+
+.entry-header-inner .headlinesdate .headlinesmonth {
     line-height: 1.7em;
 }
-.headlinesdate .headlinesyear {
+
+.entry-header-inner .headlinesdate .headlinesyear {
     line-height: 3.5em;
     float: left;
     margin-left: 3px;
 }
-.headlinesdate, .headlinesdate {
+
+.entry-header-inner .headlinesdate,
+.headlinesdate {
     float: left;
     font-family: 'Prata', serif;
     position: relative;
-    left: 600px;
-    top: -37px;
+    left: 590px;
+    top: -38px;
 }
-h1.entry-title {
-    left: -20px;
+
+.entry-header-inner h1.entry-title {
     position: relative;
+    left: -15px;
 }

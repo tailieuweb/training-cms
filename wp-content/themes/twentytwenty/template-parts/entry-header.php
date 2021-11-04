@@ -14,6 +14,9 @@ $entry_header_classes = '';
 if (is_singular()) {
     $entry_header_classes .= ' header-footer-group';
 }
+if (is_single()) {
+    $class= 'footer-widgets-wrapper1';
+}
 $type_post = '';
 if (is_single()) {
     $type_post = 'single-top';
