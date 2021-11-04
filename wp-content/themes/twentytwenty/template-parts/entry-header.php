@@ -28,9 +28,9 @@ if (is_single()) {
         <div class="col-md-3">
             <?php } ?>
             <?php if ($has_sidebar_9) { ?>
-            <div class="category">
+            <div class="footer-widgets-wrapper1">
                 <?php if ($has_sidebar_9) { ?>
-                <div class="category column-one1">
+                <div class="footer-widgets column-one grid-item1">
                     <?php dynamic_sidebar('sidebar-9'); ?>
                 </div>
                 <?php } ?>
