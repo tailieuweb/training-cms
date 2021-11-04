@@ -20,6 +20,13 @@ if ($next_post || $prev_post) {
 	} elseif (!$prev_post) {
 		$pagination_classes = ' only-one only-next';
 	}
+	$day = $month = $year = 0;
+	if (strtotime($post->post_date)) {
+		$timestamp = strtotime($post->post_date);
+		$day = date("d", $timestamp);
+		$month = date("m", $timestamp);
+		$year = date("y", $timestamp);
+	} ?>
 
 ?>
 
@@ -39,10 +46,10 @@ if ($next_post || $prev_post) {
             <span>
                 <div class="headlinesdate">
                     <div class="headlinesdm">
-                        <div class="headlinesday">17</div>
-                        <div class="headlinesmonth">10</div>
+                        <div class="headlinesday"><?php echo $day ?></div>
+                        <div class="headlinesmonth"><?php echo $month ?></div>
                     </div>
-                    <div class="headlinesyear">21</div>
+                    <div class="headlinesyear"><?php echo $year ?></div>
                 </div>
             </span>
 
@@ -64,10 +71,10 @@ if ($next_post || $prev_post) {
             <span>
                 <div class="headlinesdate">
                     <div class="headlinesdm">
-                        <div class="headlinesday">17</div>
-                        <div class="headlinesmonth">10</div>
+                        <div class="headlinesday"><?php echo $day ?></div>
+                        <div class="headlinesmonth"><?php echo $month ?></div>
                     </div>
-                    <div class="headlinesyear">21</div>
+                    <div class="headlinesyear"><?php echo $year ?></div>
                 </div>
             </span>
         </a>

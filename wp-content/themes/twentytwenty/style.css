@@ -2712,10 +2712,11 @@ h2.entry-title {
   margin: 2.8rem 0 0.8rem 0;
 }
 
+/* CSS Module 7 */
 .pagination-single a {
   align-items: baseline;
   display: flex;
-  font-weight: 600;
+  /* font-weight: 600; */
   letter-spacing: -0.0275em;
   text-decoration: none;
   flex: 1;
@@ -5053,15 +5054,17 @@ a.to-the-top > * {
   .pagination-single hr:last-child {
     margin: 4rem 0 0.8rem 0;
   }
+  /* CSS module 7 */
   .pagination-single a + a {
-    margin: 0 0 0 4rem;
+    /* margin: 0 0 0 4rem; */
   }
   .pagination-single a .arrow {
     margin: 0 2rem 0 0;
   }
+  /* CSS module 7 */
   .pagination-single .next-post {
     flex-direction: row-reverse;
-    text-align: right;
+    /* text-align: right; */
   }
   .pagination-single .next-post .arrow {
     margin: 0 0 0 2rem;

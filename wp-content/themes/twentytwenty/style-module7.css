@@ -8,6 +8,10 @@
 }
 .pagination-single a {
   display: block !important;
+  white-space: nowrap;
+}
+.pagination-single-inner {
+  display: grid !important;
 }
 .headlinesdate .headlinesdm,
 .news > .headlinesdate,
