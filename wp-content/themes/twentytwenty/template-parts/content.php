@@ -33,21 +33,7 @@ if (!is_single()) {
 		<div class="entry-content">
 
 			<?php
-<<<<<<< HEAD
-			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
-				the_excerpt();
-			} else {
-				if(is_single()){
-				the_content( __( 'Continue reading', 'twentytwenty' ) );
-				}
-				else{
-					$post = get_post();
-					echo substr($post->post_content,0,300);
-				}
-			}
-			?>
 
-=======
             if (is_search() || ! is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
                 the_excerpt();
             } else {
@@ -57,7 +43,6 @@ if (!is_single()) {
             }
 	}
    ?>
->>>>>>> 1-wordpress-581-202109/2-groups/1-H/1-3-Danh-Module-9
 		</div><!-- .entry-content -->
 
 	</div><!-- .post-inner -->
