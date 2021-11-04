@@ -20,6 +20,9 @@
 	if(!is_single()){
 		$class = "trang-chu";
 	}
+	else{
+		$class = "chi-tiet";
+	}
 ?>
 <?php
 if(!is_single())
@@ -145,9 +148,12 @@ else{
 		}
 
 		?>
-    <div class="container">
-        <hr style="background-color: black; width: 600px;">
-    </div>
+	<div class="gn">
+		<div class="container">
+		<div class="row">
+			<div class="col-md-12"><div class="overviewline"></div></div>
+	</div>
+    
     <div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
 
         <div class="entry-content">
