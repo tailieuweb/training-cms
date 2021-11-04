@@ -37,6 +37,7 @@ if (is_single()) {
                 </div>
 
             <?php }
+            //Module 6 -Danh
             if (is_single()) { ?>
             </div>
             <div class="col-md-6" style="background: #f5f5f5;">

@@ -19,17 +19,6 @@
 
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<<<<<<< HEAD
-    <link rel="profile" href="https://gmpg.org/xfn/11">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module2.css" type="text/css"
-        media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module1.css" type="text/css"
-        media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module8.css" type="text/css"
-        media="screen" />
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-=======
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="stylesheet"
 		href="<?php echo get_template_directory_uri() ?>/style-module2.css"
@@ -40,8 +29,11 @@
 		<link rel="stylesheet"
 		href="<?php echo get_template_directory_uri() ?>/style-module9.css"
 		type="text/css" media="screen" />
+		<link rel="stylesheet"
+		href="<?php echo get_template_directory_uri() ?>/style-module6.css"
+		type="text/css" media="screen" />
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
->>>>>>> 1-wordpress-581-202109/2-groups/1-H/1-3-Danh-Module-9
+
 
     <?php wp_head(); ?>
 
