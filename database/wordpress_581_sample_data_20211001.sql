@@ -111,8 +111,8 @@ CREATE TABLE `wp581_options` (
 --
 
 INSERT INTO `wp581_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
-(1, 'siteurl', 'http://wordpress.local', 'yes'),
-(2, 'home', 'http://wordpress.local', 'yes'),
+(1, 'siteurl', 'http://wordpress.local:8282', 'yes'),
+(2, 'home', 'http://wordpress.local:8282', 'yes'),
 (3, 'blogname', 'Training CMS WordPress 5.8.1', 'yes'),
 (4, 'blogdescription', 'Just another WordPress site', 'yes'),
 (5, 'users_can_register', '0', 'yes'),
