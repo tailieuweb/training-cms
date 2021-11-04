@@ -1243,7 +1243,7 @@ button.toggle {
   display: flex;
   flex-wrap: nowrap;
   margin: 0 0 -0.8rem -0.8rem;
-  padding-right: 30rem;
+  padding-right: 40rem;
 }
 
 .search-form .search-field,
@@ -2378,7 +2378,8 @@ article.danhsach {
   font-size: 2.4rem;
   font-weight: 700;
   letter-spacing: -0.026666667em;
-  margin: 0;
+  margin: 0; 
+  color: #000;
 }
 
 .archive-subtitle p:last-child {

@@ -38,23 +38,16 @@
         </div><!-- .header-titles -->
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
         <div class="collapse navbar-collapse header-inner" id="collapsibleNavId">
-            <ul class="navbar-nav ml-0  mt-2 mt-lg-0 navbar-adjust">
-               
-				<ul class="navbar-nav ml-0  mt-2 mt-lg-0 navbar-adjust">
-                <li class="mx-2 nav-item active">
-                    <h2><a href="#">Home <span class="sr-only">(current)</span></a></h2>
-                </li>
+        <ul class="navbar-nav ml-0  mt-2 mt-lg-0 navbar-adjust">
+                <h2><a href="http://wordpress.local:81/">Home <span class="sr-only">(current)</span></a></h2>
             </ul>
-				<!---form-search--->
-            <form class="search-form" action="http://wordpress.local:81/">
-				<label for="search-form-2">
-                                <span class="screen-reader-text">Search for:</span>
+            <form role="search" aria-label="404 not found" method="get" class="search-form" action="http://wordpress.local:81/">
+                            <label for="search-form-2">
+                                <span class="screen-reader-text">Search for: </span>
                                 <input type="search" id="search-form-2" class="search-field" placeholder="Search …" value="" name="s">
-                </label>
-                                <input type="submit" class="search-submit" value="Search">
+                            </label>
+                            <input type="submit" class="search-submit" value="Search">
             </form>
-			
-            </ul>
             <div class="header-navigation-wrapper">
                 <?php
                 $enable_header_search = get_theme_mod('enable_header_search', true);
@@ -88,6 +81,8 @@
                             }
                             ?>
                         </ul>
+
+                        
 
                     </nav><!-- .primary-menu-wrapper -->
                 <?php
@@ -134,11 +129,9 @@
                                 <i class="fa fa-user-circle-o fa-header" aria-hidden="true"></i>
                                 <p>Account <span class="caret"></span></p>
                             </a>
-
                             <div class="dropdown-menu" aria-labelledby="about-us">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                  <li><a class="login" href="#">login</a></li>
+                                  <li><a class="logout" href="#">logout</a></li>
                             </div>
                         </div>
                     </div><!-- .header-toggles -->
