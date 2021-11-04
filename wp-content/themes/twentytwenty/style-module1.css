@@ -1,0 +1,72 @@
+#site-header .header-home {
+    color: black;
+    margin: 20px;
+    font-size: 20px;
+    padding: 45px 20px;
+    transition: all 0.2s;
+}
+
+#site-header .header-home:hover {
+    background-color: silver;
+}
+
+#site-header .header-search {
+    display: flex;
+    align-items: center;
+}
+
+#site-header .header-search .form-search {
+    margin: 0 5px 0 0;
+}
+
+#site-header .header-search .form-search input {
+    height: 10%;
+    padding: 0;
+}
+
+#site-header .header-search .btn {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+#site-header .header-search .btn:hover {
+    color: black;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+}
+
+#site-header .header-navigation-wrapper .menu-item a {
+    color: black;
+}
+
+#site-header .header-toggles .dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+#site-header .header-toggles .toggle-wrapper .dropdown-account-icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+}
+
+#site-header .header-toggles .toggle-wrapper .toggle .dropdown-toggle {
+    margin-top: 5px;
+}
+
+#site-header .header-toggles .toggle-wrapper.search-toggle-wrapper-dropdown:hover .dropdown-menu {
+    position: absolute;
+    top: 60px;
+    left: -40px;
+    display: block;
+}
+
+#site-header .header-toggles .toggle-wrapper .dropdown-menu {
+    font-size: 20px;
+}
+
+#site-header .header-toggles .toggle-wrapper .dropdown-menu a {
+    color: black;
+}
