@@ -1,0 +1,8 @@
+.btn-submit-comment {
+  background: #007bbf !important;
+  border-radius: 10px !important;
+}
+.btn-submit-comment:hover {
+  background: #073c58 !important;
+  text-decoration: none !important;
+}
