@@ -131,13 +131,11 @@
                         <div class="dropdown show">
                             <a class="btn btn-secondary dropdown-toggle d-block" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-user-circle-o fa-header" aria-hidden="true"></i>
-                                <p class="account-text-header">Account <span class="caret"></span></p>
+                                <p class="account-text-header">Account<span class="caret"></span></p>
                             </a>
-
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="<?= wp_login_url() ?>">Login</a>
+                                <a class="dropdown-item" href="<?= wp_logout_url() ?>">Logout</a>
                             </div>
                         </div>
                     </div><!-- .header-toggles -->
