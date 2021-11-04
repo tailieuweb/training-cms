@@ -11,9 +11,14 @@
  * @since Twenty Twenty 1.0
  */
 $home = '';
+
 if(!is_single()){
     $home = 'danh-sach';
 }
+if(is_search()){
+	$home = 'tim_kiem';
+}
+
 
 ?>
 
