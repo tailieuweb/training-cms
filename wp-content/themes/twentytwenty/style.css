@@ -6185,12 +6185,6 @@ hr {
     position: relative;
     bottom: -85px;
 }
-.footer-widgets-wrapper1 {
-    color: black !important;
-    position: relative;
-    top: 200px;
-    font-size: -3px;
-}
 .headlinesdate {
     background: #f5ce31;
     border-radius: 50%;
@@ -6249,7 +6243,7 @@ px
     left: 600px;
     top: -37px;
 }
-.col-md-3 {
-    color: black;
-    background: aqua;
+h1.entry-title {
+    left: -20px;
+    position: relative;
 }
