@@ -6554,7 +6554,8 @@ body{
 	display: none;
 }
 .search-danh-sach .post-inner{
-	padding-top: 2rem!important;
+	padding-top: 7px!important;
+    padding-left: 2%;
 }
 .search-danh-sach::before{
 	content: '';
