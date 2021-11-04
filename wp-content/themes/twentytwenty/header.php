@@ -19,10 +19,12 @@
 
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="profile" href="https://gmpg.org/xfn/11">
+
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/mycss2.css"/>
 
     <?php wp_head(); ?>
 
@@ -43,7 +45,7 @@
             </ul>
             <form role="search" aria-label="404 not found" method="get" class="search-form" action="http://wordpress.local:81/">
                             <label for="search-form-2">
-                                <span class="screen-reader-text">Search for: </span>
+                                <span class="screen-reader-text">Search for:</span>
                                 <input type="search" id="search-form-2" class="search-field" placeholder="Search …" value="" name="s">
                             </label>
                             <input type="submit" class="search-submit" value="Search">
@@ -124,14 +126,15 @@
                         <?php
                         }
                         ?>
-                        <div class="dropdown">
-                            <a class="btn btn-secondary dropdown-toggle d-block" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle d-block btn-dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-user-circle-o fa-header" aria-hidden="true"></i>
                                 <p>Account <span class="caret"></span></p>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="about-us">
-                                  <li><a class="login" href="#">login</a></li>
-                                  <li><a class="logout" href="#">logout</a></li>
+                                  <li></li><a class="dropdown-item" href="#">login</a></li>
+                                  <li></li><a class="dropdown-item" href="#">logout</a></li>
+                                  
                             </div>
                         </div>
                     </div><!-- .header-toggles -->
