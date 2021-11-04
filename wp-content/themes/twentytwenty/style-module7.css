@@ -1,3 +1,4 @@
+/* Pagination */
 .pagination-single-inner .title .title-inner {
   color: black !important;
   font-size: 15px;
@@ -13,35 +14,34 @@
 .pagination-single-inner {
   display: grid !important;
 }
-.headlinesdate .headlinesdm,
+/* Date time */
+.pagination-single-inner .headlinesdate .headlinesdm,
 .news > .headlinesdate,
 .headlinesdate {
   float: left;
   font-family: "Prata", serif !important;
   color: black;
 }
-.headlinesdate {
+.pagination-single-inner .headlinesdate {
   font-size: 0.8em;
   width: 15%;
   min-width: 55px;
   display: table-cell;
   vertical-align: middle;
 }
-.headlinesdate .headlinesday {
+.pagination-single-inner .headlinesdate .headlinesday {
   border-bottom: 1px solid rgb(22, 22, 22);
 }
-.headlinesdate .headlinesday,
+.pagination-single-inner .headlinesdate .headlinesday,
 .news > .headlinesmonth {
   line-height: 1.7em;
 }
 
-element.style {
-}
-.headlinesdate .headlinesyear {
+.pagination-single-inner .headlinesdate .headlinesyear {
   line-height: 3.5em;
   float: left;
   margin-left: 3 px;
 }
-.headlinesdate {
+.pagination-single-inner .headlinesdate {
   margin-top: -11px;
 }
