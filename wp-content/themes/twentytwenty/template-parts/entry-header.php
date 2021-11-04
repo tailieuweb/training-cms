@@ -15,7 +15,7 @@ if (is_singular()) {
     $entry_header_classes .= ' header-footer-group';
 }
 if (is_single()) {
-    $class= 'footer-widgets-wrapper1';
+    $class = 'footer-widgets-wrapper1';
 }
 $type_post = '';
 if (is_single()) {
@@ -27,22 +27,22 @@ if (is_single()) {
 
 <header class="entry-header has-text-align-center<?php echo esc_attr($entry_header_classes); ?>">
     <?php if (is_single()) { ?>
-        <div class="row">
-            <div class="col-md-3 category123">
+    <div class="row">
+        <div class="col-md-3 category123">
             <?php } ?>
             <?php if ($has_sidebar_9 && is_single()) { ?>
-                <div class="footer-widgets-wrapper1">
-                    <?php if ($has_sidebar_9 && is_single()) { ?>
-                        <div class="footer-widgets1 column-one grid-item">
-                            <?php dynamic_sidebar('sidebar-9'); ?>
-                        </div>
-                    <?php } ?>
+            <div class="footer-widgets-wrapper1">
+                <?php if ($has_sidebar_9 && is_single()) { ?>
+                <div class="footer-widgets1 column-one grid-item">
+                    <?php dynamic_sidebar('sidebar-9'); ?>
                 </div>
+                <?php } ?>
+            </div>
 
             <?php }
             if (is_single()) { ?>
-            </div>
-            <div class="col-md-6" style="background: #f5f5f5;">
+        </div>
+        <div class="col-md-6" style="background: #f5f5f5;">
             <?php } ?>
 
             <div class="entry-header-inner section-inner medium">
@@ -69,10 +69,10 @@ if (is_single()) {
                     if (true === $show_categories && has_category() && $type_post === 'single-top') {
                     ?>
 
-                        <div class="entry-categories">
-                            <span class="screen-reader-text"><?php _e('Categories', 'twentytwenty'); ?></span>
-                        </div><!-- .entry-categories -->
-                        <hr width="100%" style="text-align: center;" />
+                    <div class="entry-categories">
+                        <span class="screen-reader-text"><?php _e('Categories', 'twentytwenty'); ?></span>
+                    </div><!-- .entry-categories -->
+                    <hr width="100%" style="text-align: center;" />
                     <?php
                     }
 
@@ -92,19 +92,19 @@ if (is_single()) {
                             $year = date("y", $timestamp);
                         } ?>
 
-                        <div class="headlinesdate">
-                            <div class="headlinesdm">
-                                <div class="headlinesday">
-                                    <?php echo $day ?>
-                                </div>
-                                <div class="headlinesmonth">
-                                    <?php echo $month ?>
-                                </div>
+                    <div class="headlinesdate-module-9">
+                        <div class="headlinesdm">
+                            <div class="headlinesday">
+                                <?php echo $day ?>
                             </div>
-                            <div class="headlinesyear">
-                                <?php echo $year ?>
+                            <div class="headlinesmonth">
+                                <?php echo $month ?>
                             </div>
                         </div>
+                        <div class="headlinesyear">
+                            <?php echo $year ?>
+                        </div>
+                    </div>
                     <?php } ?>
 
                     <?php
@@ -119,16 +119,17 @@ if (is_single()) {
                     if (has_excerpt() && is_singular()) {
                     ?>
 
-                        <div class="intro-text section-inner max-percentage<?php echo $intro_text_width; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output 
+                    <div class="intro-text section-inner max-percentage<?php echo $intro_text_width; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output 
                                                                             ?>">
-                            <?php the_excerpt(); ?>
-                        </div>
+                        <?php the_excerpt(); ?>
+                    </div>
 
 
                     <?php
                     }
                     ?>
-                    <div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
+                    <div
+                        class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
 
                         <div class="entry-content">
 
@@ -150,11 +151,11 @@ if (is_single()) {
 
             </div><!-- .entry-header-inner -->
             <?php if (is_single()) { ?>
-            </div>
         </div>
-        <div class="col-md-3">
+    </div>
+    <div class="col-md-3">
 
-        </div>
+    </div>
     <?php } ?>
 
     </div>
