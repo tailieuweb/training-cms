@@ -1012,10 +1012,13 @@ section {
 	max-width: 100%;
 	border-right: 2px solid black;
 }
-/*
-Css for the post for result search
-*/
+
 .danh-sach .section-inner.medium {
+	max-width: 100%;
+	display: flex;
+	border-right: 2px solid black;
+}
+.tim_kiem .section-inner.medium {
 	max-width: 100%;
 	display: flex;
 	border-right: 2px solid black;
@@ -1286,12 +1289,17 @@ button.toggle {
 	width: 100%;
 }
 
+/*
+Edit width, padding of form input
+*/
 .search-form .search-field {
 	width: 100%;
 	padding: 25px 10px 25px 55px;
 	border: none;
 }
-
+/*
+Create icon search
+*/
 .search-form label::before{
 	content: '\f002';
 	font-family: FontAwesome !important;
@@ -1302,7 +1310,9 @@ button.toggle {
 	color: #000;
 	font-size: 28px;
 }
-
+/*
+Edit color, background and position of button submit
+*/
 .search-form .search-submit {
 	flex-shrink: 0;
 	background: #00a32a !important;
@@ -2467,11 +2477,12 @@ h1.entry-title,
 h2.entry-title {
 	margin: 0;
 }
-/*
-Css for the post for result search
-*/
 .danh-sach h1.entry-title,
 .danh-sach h2.entry-title {
+	width: 60%;
+}
+.tim_kiem h1.entry-title,
+.tim_kiem h2.entry-title {
 	width: 60%;
 }
 
@@ -2548,11 +2559,16 @@ Css for the post for result search
 	margin: 1rem;
 }
 .danh-sach .post-meta .meta-icon {
-
 	flex-shrink: 0;
 	margin: 0 auto;
 	display: block;
 }
+.tim_kiem .post-meta .meta-icon {
+	flex-shrink: 0;
+	margin: 0 auto;
+	display: block;
+}
+
 .sticky .post-sticky {
 	color: inherit;
 }
@@ -2670,14 +2686,15 @@ Css for the post for result search
 }
 
 /* POST META BOTTOM */
-/*
-Css for the post for result search
-*/
+
 .post-meta-wrapper.post-meta-single-bottom {
 	margin-top: 0rem;
 }
 
 .danh-sach .post-meta-wrapper.post-meta-single-bottom {
+	margin-top: 3rem;
+}
+.tim_kiem .post-meta-wrapper.post-meta-single-bottom {
 	margin-top: 3rem;
 }
 /* Author Bio -------------------------------- */
@@ -2847,10 +2864,11 @@ Css for the post for result search
 .has-text-align-center {
 	text-align: center;
 }
-/*
-Css for the post for result search
-*/
 article.danh-sach .has-text-align-center{
+	text-align: center;
+	width: 60%;
+}
+article.tim_kiem .has-text-align-center{
 	text-align: center;
 	width: 60%;
 }
@@ -4694,11 +4712,12 @@ a.to-the-top > * {
 	.template-cover .post-inner .author-bio {
 		width: calc( 100% - 4rem );
 	}
-	/*
-	Css for the post for result search
-	*/
 	.template-cover .danh-sach .post-inner .post-meta-wrapper,
 	.template-cover .danh-sach .post-inner .author-bio{
+		width: 40%;
+	}
+	.template-cover .tim_kiem.post-inner .post-meta-wrapper,
+	.template-cover .tim_kiem.post-inner .author-bio{
 		width: 40%;
 	}
 
@@ -5132,9 +5151,6 @@ a.to-the-top > * {
 	body:not(.singular) main > article:first-of-type {
 		padding: 8rem 0 0;
 	}
-	/*
-	Css for the post for result search
-	*/
 	body:not(.singular) main > article.danh-sach {
 		width: 100%;
 		display: flex;
@@ -5142,6 +5158,17 @@ a.to-the-top > * {
 		border: 1px solid #000;
 		border-radius: 5px;
 		box-shadow: 0 2px 10px gray;
+	}
+	body:not(.singular) main > article.tim_kiem:first-of-type {
+		margin-top: 4rem !important;
+	}
+	body:not(.singular) main > article.tim_kiem {
+		width: 100%;
+		display: flex;
+		padding: 8rem 0 8rem;
+		border-radius: 5px;
+		/* box-shadow: 0 2px 10px gray; */
+		background: #fff;
 	}
 
 	h2.entry-title {
@@ -5206,15 +5233,45 @@ a.to-the-top > * {
 		/*padding-top: 8rem;*/
 	}
 	/*
-	Css for the post for result search
+	page search
 	*/
 	.danh-sach .post-inner {
+		width: 40%;
+	}
+	.tim_kiem .post-inner {
 		/*padding-top: 8rem;*/
 		width: 40%;
 	}
 
 	.danh-sach .section-inner.medium p{
 		display: none !important;
+	}
+	.tim_kiem .section-inner.medium p{
+		display: none;
+	}
+
+	.danh-sach .section-inner.medium p.post-month{
+		display: block !important;
+		font-size: 2rem !important;
+		color: #000 !important;
+	}
+	.tim_kiem .section-inner.medium p.post-month{
+		display: block !important;
+		font-size: 2rem !important;
+		color: #000 !important;
+	}
+	.display-3{
+		font-size: 8.4rem !important;
+		font-weight: 600;
+		color: #000 !important;
+	}
+
+	.post-date.meta-wrapper{
+		padding-top: 50px !important;
+	}
+
+	.post-date.meta-wrapper .meta-icon{
+		display: none;
 	}
 	/* POST FOOTER */
 
@@ -6675,6 +6732,10 @@ End form search
 	.wp-block-pullquote.is-style-solid-color.alignright::before {
 		top: 0;
 	}
+}
+
+h2.entry-title a{
+	color: #2272b8 !important;
 }
 
 /* Footer */
