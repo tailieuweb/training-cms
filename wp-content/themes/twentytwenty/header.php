@@ -25,6 +25,8 @@
         media="screen" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module1.css" type="text/css"
         media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module7.css" type="text/css"
+        media="screen" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module8.css" type="text/css"
         media="screen" />
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -36,8 +38,8 @@
 <body <?php body_class(); ?>>
 
     <?php
-	wp_body_open();
-	?>
+    wp_body_open();
+    ?>
 
     <header id="site-header" class="header-footer-group" role="banner">
 
@@ -47,11 +49,11 @@
 
                 <?php
 
-				// Check whether the header search is activated in the customizer.
-				$enable_header_search = get_theme_mod('enable_header_search', true);
+                // Check whether the header search is activated in the customizer.
+                $enable_header_search = get_theme_mod('enable_header_search', true);
 
-				if (true === $enable_header_search) {
-				?>
+                if (true === $enable_header_search) {
+                ?>
 
                 <button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal"
                     data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field"
@@ -65,17 +67,17 @@
                 </button><!-- .search-toggle -->
 
                 <?php
-				} ?>
+                } ?>
 
                 <div class="header-titles">
 
                     <?php
-					// Site title or logo.
-					twentytwenty_site_logo();
+                    // Site title or logo.
+                    twentytwenty_site_logo();
 
-					// Site description.
-					twentytwenty_site_description();
-					?>
+                    // Site description.
+                    twentytwenty_site_description();
+                    ?>
                     <h2 class="site-home"><a id="site-home" class="header-home" href="<?php get_home_url() ?>">Home</a>
                     </h2>
 
@@ -102,8 +104,8 @@
             <div class="header-navigation-wrapper">
 
                 <?php
-				if (has_nav_menu('primary') || !has_nav_menu('expanded')) {
-				?>
+                if (has_nav_menu('primary') || !has_nav_menu('expanded')) {
+                ?>
 
                 <nav class="primary-menu-wrapper"
                     aria-label="<?php echo esc_attr_x('Horizontal', 'menu', 'twentytwenty'); ?>" role="navigation">
@@ -111,40 +113,40 @@
                     <ul class="primary-menu reset-list-style">
 
                         <?php
-							if (has_nav_menu('primary')) {
-								wp_nav_menu(
-									array(
-										'container'  => '',
-										'items_wrap' => '%3$s',
-										'theme_location' => 'primary',
-									)
-								);
-							} elseif (!has_nav_menu('expanded')) {
-								wp_list_pages(
-									array(
-										'match_menu_classes' => true,
-										'show_sub_menu_icons' => true,
-										'title_li' => false,
-										'walker'   => new TwentyTwenty_Walker_Page(),
-									)
-								);
-							} ?>
+                            if (has_nav_menu('primary')) {
+                                wp_nav_menu(
+                                    array(
+                                        'container'  => '',
+                                        'items_wrap' => '%3$s',
+                                        'theme_location' => 'primary',
+                                    )
+                                );
+                            } elseif (!has_nav_menu('expanded')) {
+                                wp_list_pages(
+                                    array(
+                                        'match_menu_classes' => true,
+                                        'show_sub_menu_icons' => true,
+                                        'title_li' => false,
+                                        'walker'   => new TwentyTwenty_Walker_Page(),
+                                    )
+                                );
+                            } ?>
 
                     </ul>
 
                 </nav><!-- .primary-menu-wrapper -->
 
                 <?php
-				}
+                }
 
-				if (true === $enable_header_search || has_nav_menu('expanded')) {
-				?>
+                if (true === $enable_header_search || has_nav_menu('expanded')) {
+                ?>
 
                 <div class="header-toggles hide-no-js">
 
                     <?php
-						if (has_nav_menu('expanded')) {
-						?>
+                        if (has_nav_menu('expanded')) {
+                        ?>
 
                     <div class="toggle-wrapper nav-toggle-wrapper has-expanded-menu">
 
@@ -162,10 +164,10 @@
                     </div><!-- .nav-toggle-wrapper -->
 
                     <?php
-						}
+                        }
 
-						if (true === $enable_header_search) {
-						?>
+                        if (true === $enable_header_search) {
+                        ?>
 
                     <div class="toggle-wrapper search-toggle-wrapper">
 
@@ -181,7 +183,7 @@
                     </div>
 
                     <?php
-						} ?>
+                        } ?>
                     <div class="toggle-wrapper search-toggle-wrapper search-toggle-wrapper-dropdown">
 
                         <button class="toggle search-toggle desktop-search-toggle" data-toggle-target=".search-modal"
@@ -205,8 +207,8 @@
                     </div><!-- .header-account -->
                 </div><!-- .header-toggles -->
                 <?php
-				}
-				?>
+                }
+                ?>
 
 
             </div><!-- .header-navigation-wrapper -->
@@ -214,14 +216,14 @@
         </div><!-- .header-inner -->
 
         <?php
-		// Output the search modal (if it is activated in the customizer).
-		if (true === $enable_header_search) {
-			get_template_part('template-parts/modal-search');
-		}
-		?>
+        // Output the search modal (if it is activated in the customizer).
+        if (true === $enable_header_search) {
+            get_template_part('template-parts/modal-search');
+        }
+        ?>
 
     </header><!-- #site-header -->
 
     <?php
-	// Output the menu modal.
-	get_template_part('template-parts/modal-menu');
+    // Output the menu modal.
+    get_template_part('template-parts/modal-menu');
