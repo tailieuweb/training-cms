@@ -3588,7 +3588,7 @@ figure.wp-block-table.is-style-stripes {
 /* Alignment Classes ------------------------- */
 
 .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
-	max-width: 58rem;
+	max-width: 55rem;
 	width: calc(100% - 4rem);
 }
 
@@ -6489,17 +6489,26 @@ a.to-the-top > * {
 .entry-content .content-main .content-adjust-post .entry-title-adjust{
 	margin: 0;
 	font-size: 26px;
+		font-family: 'Open Sans Condensed', sans-serif;
 }
 .entry-title-adjust a{
 	color: #428bca;
 	text-decoration: none;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+	font-size: 18px;
 }
 .content-adjust-post-meta .post-meta-wrapper{
 	margin-top: 0;
 }
 .content-adjust-post{
 	padding: 5px;
+}
+.content-adjust-post p{
+	font-size: 0.9em;
+	font-family: 'Open Sans', sans-serif;
+	color: #777;
 }
 .content-adjust-post-meta{
 	padding: 5px;

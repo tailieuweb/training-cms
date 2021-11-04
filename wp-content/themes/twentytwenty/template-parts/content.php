@@ -44,7 +44,7 @@ if (!is_single()) { ?>
 								</div>
 
 							</div>
-							<div class="col-md-8">
+							<div class="col-md-6">
 								<div class="content-adjust-post">
 									<?php
 									if (is_singular()) {
