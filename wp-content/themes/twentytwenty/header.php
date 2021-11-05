@@ -190,11 +190,9 @@
                                 Account <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
+                                <li><a href="http://wordpress.local/admin">Login</a></li>
+                                <li><a href="http://wordpress.local/wp-admin/profile.php">Profile</a></li>
+                                <li><a href="http://wordpress.local/wp-login.php?loggedout=true&wp_lang=en_US">Log out</a></li>
                             </ul>
                         </li>
                     </div>
