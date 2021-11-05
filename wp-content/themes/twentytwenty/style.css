@@ -994,10 +994,6 @@ section {
   width: 100%;
 }
 
-.section-inner.thin {
-  max-width: 58rem;
-}
-
 .section-inner.small {
   max-width: 80rem;
 }
