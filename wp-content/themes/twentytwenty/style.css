@@ -5045,10 +5045,8 @@ a.to-the-top > * {
     flex-direction: row;
     justify-content: space-between;
   }
-
-  /* CSS Module 7 */
   .pagination-single.only-next .pagination-single-inner {
-    /* justify-content: flex-end; */
+    justify-content: flex-end;
   }
   .pagination-single hr:first-child {
     margin: 0 0 4rem 0;
@@ -6299,107 +6297,4 @@ section .section-title {
 article.list_post.post {
   box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
   margin: 2% 20%;
-}
-/**
-* search result
-*/
-
-.list_post_search_test {
-  width: 1200px;
-  margin: 0 auto;
-  margin-top: 30px;
-  height: 300px;
-  box-shadow: 9px 0px 16px rgb(18 17 17 / 21%);
-  position: relative;
-  overflow: hidden;
-  padding: 0rem 0 0 !important;
-}
-
-.list_post_search_test .entry-header-inner .entry-title a {
-  font-size: 25px;
-  color: #428bca;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: all 0.1s linear;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: bold;
-}
-.list_post_search_test .entry-title {
-  position: absolute;
-  right: 0;
-  text-align: left;
-  height: 70px;
-  width: 440px;
-  overflow: hidden;
-  line-height: 0.6;
-}
-/* Ẩn category trên cùng */
-.list_post_search_test .entry-categories {
-  display: none;
-}
-.list_post_search_test .entry-content .wp-block-image {
-  position: absolute;
-  width: 440px !important;
-  top: -41px;
-}
-/* Ẩn caption của figure */
-.list_post_search_test figure figcaption {
-  display: none;
-}
-.list_post_search_test .entry-content p {
-  display: none;
-}
-.list_post_search_test .entry-content p:first-child {
-  color: #9999b3;
-  display: block;
-  position: absolute;
-  right: 0;
-  margin: -110px 5px 0px 0px;
-  width: 435px !important;
-  height: 150px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.9em;
-}
-
-.list_post_search_test .entry-content blockquote {
-  display: none;
-}
-.list_post_search_test .post-inner {
-  padding-top: 2rem !important;
-}
-.list_post_search_test::before {
-  content: "";
-  position: absolute;
-  right: 38%;
-  width: 1px;
-  height: 255px;
-  background: rgb(75, 75, 75);
-  margin-top: 21px;
-}
-.list_post_search_test .post-meta {
-  display: none;
-}
-
-.list_post_search_test .date {
-  text-align: center;
-}
-
-.list_post_search_test .date .day {
-  font-size: 110px;
-  letter-spacing: -4px;
-  font-family: "Prata", serif;
-}
-
-.list_post_search_test .date .month {
-  margin-top: -40px;
-  color: #9999b3;
-  font-size: 15px;
-}
-
-.list_post_search_test .date .month::before {
-  content: "THÁNG ";
 }
