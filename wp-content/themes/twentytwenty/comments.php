@@ -20,16 +20,16 @@ if ( post_password_required() ) {
 if ( $comments ) {
 	?>
 
-	<div class="comments" id="comments">
+<div class="comments" id="comments">
 
-		<?php
+    <?php
 		$comments_number = absint( get_comments_number() );
 		?>
 
-		<div class="comments-header section-inner small max-percentage">
+    <div class="comments-header section-inner small max-percentage">
 
-			<h2 class="comment-reply-title">
-			<?php
+        <h2 class="comment-reply-title">
+            <?php
 			if ( ! have_comments() ) {
 				_e( 'Leave a comment', 'twentytwenty' );
 			} elseif ( 1 === $comments_number ) {
@@ -51,13 +51,13 @@ if ( $comments ) {
 			}
 
 			?>
-			</h2><!-- .comments-title -->
+        </h2><!-- .comments-title -->
 
-		</div><!-- .comments-header -->
+    </div><!-- .comments-header -->
 
-		<div class="comments-inner section-inner thin max-percentage">
+    <div class="comments-inner section-inner thin max-percentage">
 
-			<?php
+        <?php
 			wp_list_comments(
 				array(
 					'walker'      => new TwentyTwenty_Walker_Comment(),
@@ -85,19 +85,20 @@ if ( $comments ) {
 				}
 				?>
 
-				<nav class="comments-pagination pagination<?php echo $pagination_classes; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output ?>" aria-label="<?php esc_attr_e( 'Comments', 'twentytwenty' ); ?>">
-					<?php echo wp_kses_post( $comment_pagination ); ?>
-				</nav>
+        <nav class="comments-pagination pagination<?php echo $pagination_classes; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output ?>"
+            aria-label="<?php esc_attr_e( 'Comments', 'twentytwenty' ); ?>">
+            <?php echo wp_kses_post( $comment_pagination ); ?>
+        </nav>
 
-				<?php
+        <?php
 			}
 			?>
 
-		</div><!-- .comments-inner -->
+    </div><!-- .comments-inner -->
 
-	</div><!-- comments -->
+</div><!-- comments -->
 
-	<?php
+<?php
 }
 
 if ( comments_open() || pings_open() ) {
@@ -122,11 +123,11 @@ if ( comments_open() || pings_open() ) {
 
 	?>
 
-	<div class="comment-respond" id="respond">
+<div class="comment-respond" id="respond">
 
-		<p class="comments-closed"><?php _e( 'Comments are closed.', 'twentytwenty' ); ?></p>
+    <p class="comments-closed"><?php _e( 'Comments are closed.', 'twentytwenty' ); ?></p>
 
-	</div><!-- #respond -->
+</div><!-- #respond -->
 
-	<?php
+<?php
 }
