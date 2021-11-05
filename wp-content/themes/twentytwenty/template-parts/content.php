@@ -32,7 +32,7 @@ if (is_search()) {
     if (!is_search()) {
         get_template_part('template-parts/featured-image');
     }
-    if ($class == 'list_post' || $class = 'list_post_search') {
+    if (!is_single() || is_search()) {
     ?>
     <div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
         <?php
