@@ -27,6 +27,9 @@
 	<link rel="stylesheet"
 		href="<?php echo get_template_directory_uri() ?>/style-module1.css"
 		type="text/css" media="screen" />
+		<link rel="stylesheet"
+		href="<?php echo get_template_directory_uri() ?>/style-module9.css"
+		type="text/css" media="screen" />
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
 	<?php wp_head(); ?>
