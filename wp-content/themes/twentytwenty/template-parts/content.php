@@ -30,8 +30,6 @@ if(!is_single())
 ?>
 <div class="ct">
 <div class="container">
-<div class="container">
-<div class="container">
     <div class="row">
 		<div class="col-md-3 col-xs-3 topnewstime">
 			<span class="topnewsdate">30</span><br>
@@ -126,8 +124,6 @@ if(!is_single())
             </article><!-- .post -->
         </div>
     </div>
-</div>
-</div>
 </div>
 </div>
 <hr class="hr">
