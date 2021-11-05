@@ -122,7 +122,7 @@ if ( ! is_search() ) {
 	<div class="entry-content">
 	<?php $has_sidebar_9 = is_active_sidebar( 'sidebar-9' );?>
 		<div class="row row-adjust">
-			<div class="col-md-4">
+			<div class="col-md-4" >
 				<?php if ( $has_sidebar_9 ) { ?>	
 					<div class="content-widgets-wrapper">
 						<?php if ( $has_sidebar_9 ) { ?>
@@ -150,8 +150,7 @@ if ( ! is_search() ) {
 			?>
 			</div>
 			
-			<div class="col-md-4">Module 10
-				hahahaahjhjdhsjkfhshdhfjdhjkhsjkhsfjkdhfjdhfkdshfkdhfkdjshfkdshfjkdfhfdjskfhk
+			<div class="col-md-4">Đây là module 10 của Xuân hưng
 			</div>
 		</div>
 	</div><!-- .entry-content -->
