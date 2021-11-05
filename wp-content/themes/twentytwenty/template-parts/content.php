@@ -30,6 +30,8 @@ if(!is_single())
 ?>
 <div class="ct">
 <div class="container">
+<div class="container">
+<div class="container">
     <div class="row">
         <div class="col-md-3">
             <span class="meta-text-copy">
@@ -132,17 +134,40 @@ if(!is_single())
     </div>
 </div>
 </div>
+</div>
+</div>
 <hr class="hr">
 <?php }
 else{
 ?>
 
 <article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
+	<div class="header">
+		<div class="container">
+		<div class="container">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					<?php
 
-    <?php
-
-		get_template_part( 'template-parts/entry-header' );
-
+					get_template_part( 'template-parts/entry-header' );
+					?>
+				</div>
+				<div class="col-md-2">
+					<div class="headlinesdate">
+						<div class="headlinesdm">
+							<div class="headlinesday">30</div>
+							<div class="headlinesmonth">09</div>
+						</div>
+						<div class="headlinesyear">'21</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+	</div>
+		<?php
 		if ( ! is_search() ) {
 			get_template_part( 'template-parts/featured-image' );
 		}
