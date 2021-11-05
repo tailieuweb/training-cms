@@ -121,12 +121,12 @@ if ( ! is_search() ) {
 
 	<div class="entry-content">
 	<?php $has_sidebar_9 = is_active_sidebar( 'sidebar-9' );?>
-		<div class="row">
+		<div class="row row-adjust">
 			<div class="col-md-4">
 				<?php if ( $has_sidebar_9 ) { ?>	
-					<div class="footer-widgets-wrapper">
+					<div class="content-widgets-wrapper">
 						<?php if ( $has_sidebar_9 ) { ?>
-							<div class="footer-widgets column-one grid-item">
+							<div class="content-widgets column-one grid-item">
 							<?php dynamic_sidebar( 'sidebar-9' ); ?>
 						</div>
 						<?php } ?>
@@ -149,7 +149,7 @@ if ( ! is_search() ) {
 			}
 			?>
 			</div>
-
+			
 			<div class="col-md-4">Module 10</div>
 		</div>
 	</div><!-- .entry-content -->
