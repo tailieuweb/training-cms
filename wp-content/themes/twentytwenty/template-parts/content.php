@@ -115,25 +115,43 @@ if ( ! is_search() ) {
 
 ?>
 
+
 <div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
 
+
 	<div class="entry-content">
-
-		<?php
-		if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
-			the_excerpt();	
-		} else {
-			// the_content( __( 'Continue reading', 'twentytwenty' ) );
-			if(is_single()){
-				the_content( __( 'Continue reading', 'twentytwenty' ) );
-			}else{
-				$post = get_post();
-				$content = $post->post_content;
-				echo substr($content,0, 120);
+	<?php $has_sidebar_9 = is_active_sidebar( 'sidebar-9' );?>
+		<div class="row">
+			<div class="col-md-4">
+				<?php if ( $has_sidebar_9 ) { ?>	
+					<div class="footer-widgets-wrapper">
+						<?php if ( $has_sidebar_9 ) { ?>
+							<div class="footer-widgets column-one grid-item">
+							<?php dynamic_sidebar( 'sidebar-9' ); ?>
+						</div>
+						<?php } ?>
+					</div>
+				<?php } ?>
+			</div>
+			<div class="col-md-4">
+			<?php
+				if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
+					the_excerpt();	
+				} else {
+				// the_content( __( 'Continue reading', 'twentytwenty' ) );
+				if(is_single()){
+					the_content( __( 'Continue reading', 'twentytwenty' ) );
+				}else{
+					$post = get_post();
+					$content = $post->post_content;
+					echo substr($content,0, 120);
+				}
 			}
-		}
-		?>
+			?>
+			</div>
 
+			<div class="col-md-4">Module 10</div>
+		</div>
 	</div><!-- .entry-content -->
 
 </div><!-- .post-inner -->
