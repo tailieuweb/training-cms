@@ -33,16 +33,10 @@ if(!is_single())
 <div class="container">
 <div class="container">
     <div class="row">
-        <div class="col-md-3">
-            <span class="meta-text-copy">
-                <div class="ngay">
-					30
-				</div>
-				<div class="thang">
-					THÁNG 9
-				</div>
-            </span>
-        </div>
+		<div class="col-md-3 col-xs-3 topnewstime">
+			<span class="topnewsdate">30</span><br>
+			<span class="topnewsmonth">Tháng 9</span><br>
+		</div>
         <div class="col-md-9">
             <article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
 
