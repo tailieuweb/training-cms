@@ -32,7 +32,7 @@ if (is_search()) {
     if (!is_search()) {
         get_template_part('template-parts/featured-image');
     }
-	if ($class == 'list_post') {
+    if ($class == 'list_post' || $class = 'list_post_search') {
     ?>
         <div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
             <?php
@@ -41,7 +41,7 @@ if (is_search()) {
                 $post_date = get_the_date('d', $post->ID);
                 $post_month = get_the_date('m', $post->ID);
                 $title = $postDetail->post_title;
-                $content = $postDetail->post_content;
+                $content = $postDetail->post_content; #
                 $str = preg_replace('/<figure.*?>.*?<\/figure>/', ' ', $content);
                 $link = esc_url(get_permalink());
             ?>
@@ -62,7 +62,7 @@ if (is_search()) {
                                     <h4>
                                         <a href="<?= $link ?>"><?php echo $title ?></a>
                                     </h4>
-                                    <p><?php echo substr($str, 0, 300); ?><a href="<?= $link ?>"><?php echo $title ?>">[...]</a></p>
+                                    <p><?php echo substr($str, 0, 300); ?><a href="<?= $link ?>">[...]</a></p>
                                 </div>
 
                             </div>
