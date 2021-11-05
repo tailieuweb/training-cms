@@ -134,8 +134,6 @@ else{
 <article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
 	<div class="header">
 		<div class="container">
-		<div class="container">
-		<div class="container">
 			<div class="row">
 				<div class="col-md-8">
 					<?php
@@ -153,8 +151,6 @@ else{
 					</div>
 				</div>
 			</div>
-		</div>
-		</div>
 		</div>
 	</div>
 		<?php
