@@ -1376,6 +1376,7 @@ body:not(.enable-search-modal) .header-titles-wrapper {
 	justify-content: flex-start;
 	padding-left: 0;
 	text-align: left;
+	background: url(/assets/images/bg_pattern.png) repeat;
 }
 
 .site-title,
@@ -6553,3 +6554,20 @@ section .section-title {
     margin-bottom: 10px;
 }
 }
+
+.headlinesdate .headlinesdm, .news > .headlines .headlinesdate, .headlinesdate {
+	float: left;
+	font-family: 'Prata', serif;
+}
+.headlines .headlinesdate { font-size: 0.8em; width: 15%; min-width: 55px; display: table-cell; vertical-align: middle;}
+.headlinesdate .headlinesday, .news > .headlines .headlinesmonth {line-height: 1.7em;}
+.headlinesdate .headlinesday {
+	border-bottom: 1px solid #fff;
+}
+.headlinesdate .headlinesyear {
+	line-height: 3.5em;
+	float: left;
+	margin-left: 3px;
+}
+
+
