@@ -835,9 +835,9 @@ input[type="reset"],
 input[type="submit"] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	background: #cd2653;
+	background: #09aefa;
 	border: none;
-	border-radius: 0;
+	border-radius: 15px;
 	color: #fff;
 	cursor: pointer;
 	display: inline-block;
@@ -4862,6 +4862,7 @@ a.to-the-top > * {
 	input[type="reset"],
 	input[type="submit"] {
 		font-size: 1.7rem;
+		background-color: #09aefa !important;
 	}
 
 	/* MEDIA */
