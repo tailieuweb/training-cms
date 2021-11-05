@@ -106,11 +106,15 @@
   margin-left: 3px;
 }
 .col-md-2{
-  margin-top: 110px;
+  margin-top: 55px;
   font-size: 20px;
 }
 .chi-tiet .col-md-8 .entry-header{
   background-color: rgb(244 244 244);
   text-align: left;
-  margin-left: 195px;
+  margin-left: 225px;
+}
+.entry-header{
+  margin-top: -50px;
+  margin-bottom: -80px;
 }
