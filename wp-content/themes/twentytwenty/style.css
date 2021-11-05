@@ -150,12 +150,6 @@ body {
 
 #site-content {
   overflow: hidden;
-  display: flex;
-  row-gap: 10px;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 /* Clearing ---------------------------------- */
@@ -837,7 +831,7 @@ input[type="submit"] {
   -moz-appearance: none;
   background: #cd2653;
   border: none;
-  border-radius: 10px;
+  border-radius: 0;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -852,9 +846,6 @@ input[type="submit"] {
   text-decoration: none;
   text-transform: uppercase;
   transition: opacity 0.15s linear;
-}
-.bnt-submit-comment {
-  background: #007bff !important;
 }
 
 button:focus,
@@ -989,8 +980,7 @@ section {
 }
 
 .entry-header .section-inner {
-  display: flex;
-  flex-direction: row-reverse;
+  display: inline;
 }
 
 .section-inner {
@@ -2718,10 +2708,11 @@ h2.entry-title {
   margin: 2.8rem 0 0.8rem 0;
 }
 
+/* CSS Module 7 */
 .pagination-single a {
   align-items: baseline;
   display: flex;
-  font-weight: 600;
+  /* font-weight: 600; */
   letter-spacing: -0.0275em;
   text-decoration: none;
   flex: 1;
@@ -3995,7 +3986,7 @@ div.comment:first-of-type {
 }
 
 .comment-respond #submit {
-  /* display: block; */
+  display: block;
 }
 
 .comment-respond .comments-closed {
@@ -5059,15 +5050,17 @@ a.to-the-top > * {
   .pagination-single hr:last-child {
     margin: 4rem 0 0.8rem 0;
   }
+  /* CSS module 7 */
   .pagination-single a + a {
-    margin: 0 0 0 4rem;
+    /* margin: 0 0 0 4rem; */
   }
   .pagination-single a .arrow {
     margin: 0 2rem 0 0;
   }
+  /* CSS module 7 */
   .pagination-single .next-post {
     flex-direction: row-reverse;
-    text-align: right;
+    /* text-align: right; */
   }
   .pagination-single .next-post .arrow {
     margin: 0 0 0 2rem;
@@ -5527,7 +5520,7 @@ a.to-the-top > * {
   }
   .header-inner .toggle-wrapper::before {
     background: #dedfdf;
-    content: "";
+    /* content: ""; */
     display: block;
     height: 2.7rem;
     position: absolute;
@@ -5542,7 +5535,7 @@ a.to-the-top > * {
     .primary-menu-wrapper
     + .header-toggles
     .toggle-wrapper:first-child::before {
-    content: "";
+    /* content: ""; */
   }
   .nav-toggle-wrapper:not(.has-expanded-menu) {
     display: none;
@@ -6296,9 +6289,10 @@ section .section-title {
   padding-left: 10px;
   border-left: 3px solid #eeeeee;
 }
-
-article.post {
+/* Update css article */
+article.list_post.post {
   box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
+<<<<<<< HEAD
   margin: 2px 20%;
   width: 100%;
 }
@@ -6340,4 +6334,7 @@ i.fa.fa-search.fa-4x {
   max-width: 58rem;
   top: 50%;
   transform: translateY(-50%);
+=======
+  margin: 2% 20%;
+>>>>>>> 1-wordpress-581-202109/2-groups/1-H/master
 }
