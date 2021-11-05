@@ -1259,7 +1259,11 @@ button.toggle {
 	align-items: stretch;
 	display: flex;
 	flex-wrap: nowrap;
-	margin: 0 0 -0.8rem -0.8rem;
+	margin-top: -20px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 15px 200px 10px 200px;
 }
 
 .search-form .search-field,
@@ -1271,7 +1275,7 @@ button.toggle {
 	align-items: stretch;
 	display: flex;
 	font-size: inherit;
-	margin: 0;
+	margin-left: -100px;
 	width: 100%;
 }
 
@@ -6474,7 +6478,7 @@ a.to-the-top > * {
 	}
 }
 
-/ Footer
+ Footer
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
     padding: 60px 0;
@@ -6553,4 +6557,36 @@ section .section-title {
 }
 .row p{
 	font-size: medium;
+}
+
+/* *************CSS */
+/* Module 4 Search */
+
+.form-control-borderless {
+    border: none !important;
+}
+
+.form-search{
+	margin-right: -250px;
+    margin-left: -250px;
+	padding-bottom: 20px;
+}
+
+.search-center{
+	margin-top: -45px;
+}
+
+
+.icon-search{
+	padding: 5px;
+}
+
+.search-input{
+	padding-left: 5px!important;
+}
+
+.btn-submit{
+	padding: 10px;
+	text-transform: capitalize !important;
+	font-size: 15px;
 }
