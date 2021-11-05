@@ -122,7 +122,7 @@ html {
 }
 
 body {
-  background: #f5efe0;
+  background: #f5efe0 !important;
   box-sizing: border-box;
   color: #000;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica,
@@ -3245,7 +3245,6 @@ figure.wp-block-gallery.alignfull {
   margin-left: 3px;
   margin: 0;
 }
-
 /* Block: Image ------------------------------ */
 
 /* Block: Media And Text --------------------- */
@@ -6849,50 +6848,62 @@ section .section-title {
   color: white;
 }
 
-.trang-chu > .has-text-align-center {
-  text-align: left;
-  font-size: 10%;
-}
-
-.trang-chu {
+/*css header*/
+.site-title a {
+  color: inherit;
   display: block;
-  border-left: 5px solid #2f3031;
-  margin: 20px;
-  text-align: left;
-}
-.entry-categories-inner {
-  flex-wrap: wrap;
-  margin: -0.5rem 0 0 -1rem;
-  text-align: left;
-}
-
-.trang-chu .entry-header .entry-header-inner h2 a {
-  color: #6ca8e8;
   text-decoration: none;
-
-  font-size: 50px;
+  color: #6d6d6d;
 }
-.trang-chu .entry-content {
-  text-align: left;
-  margin-right: 100px;
+.site-description {
+  background-color: #f0f0f1;
+  border: 5px #f0f0f1 solid;
+  border-top: 10px #f0f0f1 solid;
+  border-bottom: 10px #f0f0f1 solid;
+}
+li {
+  color: #000;
+}
+.search-form {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 0 -0.8rem -0.8rem;
+  height: 50px;
+}
+.search-form .search-submit {
+  flex-shrink: 0;
+  text-align: center;
+  border-radius: 5px;
+  background: white;
+  color: rgb(124, 124, 124);
+  width: 100px;
+  border: 1px solid rgb(173, 171, 171);
+  font-size: 12px;
+}
+.search-form .search-field {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/*css trang detail*/
+.entry-header .entry-header-inner .entry-categories a {
+  display: none;
+}
+.meta-text a {
+  display: none;
+}
+.meta-text {
+  display: none;
+}
+.meta-icon {
+  display: none;
+}
+h1.entry-title,
+h2.entry-title {
+  margin: 0;
   font-size: 30px;
 }
-.trang-chu .entry-header .entry-header-inner .entry-categories a {
-  display: none;
-}
-.trang-chu .meta-text a {
-  display: none;
-}
-.trang-chu .meta-text {
-  display: none;
-}
-.trang-chu .meta-icon {
-  display: none;
-}
-.col-md-3 {
-  font-size: 50px;
-  margin-top: 100px;
-}
-.container .row .col-md-3 a {
-  color: black;
+.entry-content > *:first-child {
+  text-align: left;
 }

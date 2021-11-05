@@ -14,23 +14,27 @@
 
 
 ?>
+<!--content-->
 <?php
 	$class="";
 	if(!is_single()){
 		$class = "trang-chu";
+	}
+	else{
+		$class = "chi-tiet";
 	}
 ?>
 <?php
 if(!is_single())
 {
 ?>
+<div class="ct">
 <div class="container">
     <div class="row">
-        <div class="col-md-3">
-            <span class="meta-text">
-                <a href="http://wordpress.local/2021/09/30/usyk-khong-muon-knock-out-joshua/">September 30, 2021</a>
-            </span>
-        </div>
+		<div class="col-md-3 col-xs-3 topnewstime">
+			<span class="topnewsdate">30</span><br>
+			<span class="topnewsmonth">Tháng 9</span><br>
+		</div>
         <div class="col-md-9">
             <article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
 
@@ -121,23 +125,48 @@ if(!is_single())
         </div>
     </div>
 </div>
+</div>
+<hr class="hr">
 <?php }
 else{
 ?>
 
 <article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<?php
 
-    <?php
-
-		get_template_part( 'template-parts/entry-header' );
-
+					get_template_part( 'template-parts/entry-header' );
+					?>
+				</div>
+				<div class="col-md-2">
+					<div class="headlinesdate">
+						<div class="headlinesdm">
+							<div class="headlinesday">30</div>
+							<div class="headlinesmonth">09</div>
+						</div>
+						<div class="headlinesyear">'21</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<?php
 		if ( ! is_search() ) {
 			get_template_part( 'template-parts/featured-image' );
 		}
 
 		?>
-
-    <div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
+	<div class="gn">
+		<div class="container">
+		<div class="row">
+			<div class="col-md-12"><div class="overviewline"></div></div>
+	</div>
+    
+    <br>
+	<br>
 
         <div class="entry-content">
 
