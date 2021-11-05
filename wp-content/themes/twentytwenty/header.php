@@ -21,6 +21,8 @@
 		<link rel="profile" href="https://gmpg.org/xfn/11">
 
 		<?php wp_head(); ?>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 	</head>
 
@@ -169,6 +171,16 @@
 								</button><!-- .search-toggle -->
 
 							</div>
+                            <!-- Example single danger button -->
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Action
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Login</a>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </div>
+                            </div>
 
 							<?php
 						}
