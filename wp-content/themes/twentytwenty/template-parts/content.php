@@ -173,7 +173,8 @@ else{
 			<div class="col-md-12"><div class="overviewline"></div></div>
 	</div>
     
-    <div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
+    <br>
+	<br>
 
         <div class="entry-content">
 
