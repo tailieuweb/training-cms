@@ -991,7 +991,7 @@ section {
 }
 
 .section-inner.max-percentage {
-  width: 100%;
+  width: 68%;
 }
 
 .section-inner.small {
@@ -5854,7 +5854,7 @@ a.to-the-top > * {
   /* TITLES */
   h1,
   .heading-size-1 {
-    font-size: 8.4rem;
+    font-size: 0.4rem;
   }
   /* Helper Classes ------------------------ */
   /* Site Header --------------------------- */
