@@ -6304,7 +6304,7 @@ article.list_post.post {
 * search result
 */
 
-.list_post_search {
+.list_post_search_test {
   width: 1200px;
   margin: 0 auto;
   margin-top: 30px;
@@ -6315,7 +6315,7 @@ article.list_post.post {
   padding: 0rem 0 0 !important;
 }
 
-.list_post_search .entry-header-inner .entry-title a {
+.list_post_search_test .entry-header-inner .entry-title a {
   font-size: 25px;
   color: #428bca;
   text-decoration: none;
@@ -6324,7 +6324,7 @@ article.list_post.post {
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: bold;
 }
-.list_post_search .entry-title {
+.list_post_search_test .entry-title {
   position: absolute;
   right: 0;
   text-align: left;
@@ -6334,22 +6334,22 @@ article.list_post.post {
   line-height: 0.6;
 }
 /* Ẩn category trên cùng */
-.list_post_search .entry-categories {
+.list_post_search_test .entry-categories {
   display: none;
 }
-.list_post_search .entry-content .wp-block-image {
+.list_post_search_test .entry-content .wp-block-image {
   position: absolute;
   width: 440px !important;
   top: -41px;
 }
 /* Ẩn caption của figure */
-.list_post_search figure figcaption {
+.list_post_search_test figure figcaption {
   display: none;
 }
-.list_post_search .entry-content p {
+.list_post_search_test .entry-content p {
   display: none;
 }
-.list_post_search .entry-content p:first-child {
+.list_post_search_test .entry-content p:first-child {
   color: #9999b3;
   display: block;
   position: absolute;
@@ -6365,13 +6365,13 @@ article.list_post.post {
   font-size: 0.9em;
 }
 
-.list_post_search .entry-content blockquote {
+.list_post_search_test .entry-content blockquote {
   display: none;
 }
-.list_post_search .post-inner {
+.list_post_search_test .post-inner {
   padding-top: 2rem !important;
 }
-.list_post_search::before {
+.list_post_search_test::before {
   content: "";
   position: absolute;
   right: 38%;
@@ -6380,26 +6380,26 @@ article.list_post.post {
   background: rgb(75, 75, 75);
   margin-top: 21px;
 }
-.list_post_search .post-meta {
+.list_post_search_test .post-meta {
   display: none;
 }
 
-.list_post_search .date {
+.list_post_search_test .date {
   text-align: center;
 }
 
-.list_post_search .date .day {
+.list_post_search_test .date .day {
   font-size: 110px;
   letter-spacing: -4px;
   font-family: "Prata", serif;
 }
 
-.list_post_search .date .month {
+.list_post_search_test .date .month {
   margin-top: -40px;
   color: #9999b3;
   font-size: 15px;
 }
 
-.list_post_search .date .month::before {
+.list_post_search_test .date .month::before {
   content: "THÁNG ";
 }
