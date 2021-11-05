@@ -2435,7 +2435,7 @@ function comment_form( $args = array(), $post_id = null ) {
 	$defaults = array(
 		'fields'               => $fields,
 		'comment_field'        => sprintf(
-			'<p class="comment-form-comment">%s %s</p>',
+			'<div class="comment-wrapper"><p class="comment-form-comment">%s %s</p>',
 			sprintf(
 				'<label for="comment">%s</label>',
 				_x( 'Make a Post', 'noun' )
@@ -2443,7 +2443,7 @@ function comment_form( $args = array(), $post_id = null ) {
 			'<div class="wrapper>">
 				<textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required" placeholder="What are you thinking..."></textarea>
 				<input name="submit" type="submit" id="submit" class="submit" value="Share">
-			</div>'
+			</div></div>'
 		),
 		'must_log_in'          => sprintf(
 			'<p class="must-log-in">%s</p>',

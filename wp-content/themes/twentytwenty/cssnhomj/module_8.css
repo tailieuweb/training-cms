@@ -1,7 +1,12 @@
 .comments-wrapper .comment-respond {
-  background: #f8f8f8;
+  background: #fff;
   position: relative;
   padding: 50px;
+}
+.comments-wrapper .comment-respond #commentform .comment-wrapper {
+  background: #f6f6f6;
+  padding: 10px 0 0 0;
+  border-radius: 5px;
 }
 .comments-wrapper .comment-respond #commentform .form-submit .submit {
   display: none;
@@ -11,9 +16,10 @@
 }
 .comment-respond #commentform div {
   background: #fff;
-  padding: 15px 30px 60px 30px;
+  padding: 20px 20px 59px 20px;
   border: 1px solid #d6d6d6;
-  border-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
   position: relative;
 }
 .comment-respond #commentform div textarea {
@@ -27,7 +33,7 @@
   border-radius: 3px;
   text-transform: lowercase;
   position: absolute;
-  right: 30px;
+  right: 20px;
   bottom: 13px;
 }
 .comment-form-comment label {
@@ -40,7 +46,7 @@
   border-bottom: none;
   color: #7b7b7b;
   margin-bottom: 0;
-  margin-left: 20px;
+  margin-left: 10px;
   position: relative;
 }
 .comment-form-comment label::before {
