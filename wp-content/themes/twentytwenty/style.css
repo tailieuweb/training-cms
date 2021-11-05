@@ -6653,12 +6653,11 @@ section .section-title {
 	background:white;
 }
 .comment-form-comment label{
-	border: 1px solid #ced4da;
     color: #495057;
     text-align: center;
-    margin-left: 30px;
-    margin-right: 410px;
-	padding: 10px;
+	margin-left: 10%;
+	
+	padding: 80%;
 	position: relative;
 	padding:  10px ;
 	
@@ -6672,15 +6671,55 @@ input#submit {
     font-size: 8px;
 	padding-bottom: 15px;
 	position: relative;
-	right: 18px;
-	bottom: 80px;
+	bottom: 15px;
+}
+.comment-respond p:not(.comment-notes){
+	max-width: none;
+	border: none;
 }
 input#submit:hover{
 	background-color: #0069d9;
 }
 p.comment-form-comment {
-	padding: 8px;
-	padding-top: 70px;
-	padding-bottom: 70px;
+	padding: x;
+    background: #f7f7f7;
+    position: relative;
+	max-width: none !important;
+}
+
+
+/* .comment-form-comment label::before{
+	content: '';
+	background: red;
+	position: absolute;
+	width: 100%;
+} */
+form#commentform {
+	max-width: none;
+    background: white;
+    /* padding-top: 55px;
+	padding-bottom: 35px; */
+	padding: 30px;
+	max-width: none;
+}
+.comment-form-comment label{
+	background: white;
+    color: #495057;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 80%;
 	position: relative;
+    right: 90px;
+    top: 5px;
+    padding: 10px;
+}
+textarea#comment:checked{
+	border: #f7f7f7;
+}
+label{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border: none;
+	position: relative;
+	top: 6px;
 }

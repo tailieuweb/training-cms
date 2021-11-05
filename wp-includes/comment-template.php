@@ -2436,9 +2436,8 @@ function comment_form( $args = array(), $post_id = null ) {
 	$defaults = array(
 		'fields'               => $fields,
 		'comment_field'        => sprintf(
-			'<p class="comment-form-comment">%s %s</p>',
+			'<div class="bg-comment"><p class="comment-form-comment">%s %s</p></div>',
 			sprintf(
-				
 				'<label for="comment">%s</label>',
 				_x( 'Make a Post', 'noun' ),
 				'<label id="comment-post">%s</label>',
@@ -2454,19 +2453,19 @@ function comment_form( $args = array(), $post_id = null ) {
 				wp_login_url( apply_filters( 'the_permalink', get_permalink( $post_id ), $post_id ) )
 			)
 		),
-		'logged_in_as'         => sprintf(
-			'<p class="logged-in-as">%s</p>',
-			sprintf(
-				/* translators: 1: Edit user link, 2: Accessibility text, 3: User name, 4: Logout URL. */
-				__( '<a href="%1$s" aria-label="%2$s">Logged in as %3$s</a>. <a href="%4$s">Log out?</a>' ),
-				get_edit_user_link(),
-				/* translators: %s: User name. */
-				esc_attr( sprintf( __( 'Logged in as %s. Edit your profile.' ), $user_identity ) ),
-				$user_identity,
-				/** This filter is documented in wp-includes/link-template.php */
-				wp_logout_url( apply_filters( 'the_permalink', get_permalink( $post_id ), $post_id ) )
-			)
-		),
+		// 'logged_in_as'         => sprintf(
+		// 	'<p class="logged-in-as">%s</p>',
+		// 	sprintf(
+		// 		/* translators: 1: Edit user link, 2: Accessibility text, 3: User name, 4: Logout URL. */
+		// 		__( '<a href="%1$s" aria-label="%2$s">Logged in as %3$s</a>. <a href="%4$s">Log out?</a>' ),
+		// 		get_edit_user_link(),
+		// 		/* translators: %s: User name. */
+		// 		esc_attr( sprintf( __( 'Logged in as %s. Edit your profile.' ), $user_identity ) ),
+		// 		$user_identity,
+		// 		/** This filter is documented in wp-includes/link-template.php */
+		// 		wp_logout_url( apply_filters( 'the_permalink', get_permalink( $post_id ), $post_id ) )
+		// 	)
+		// ),
 		// 'comment_notes_before' => sprintf(
 		// 	'<p class="comment-notes">%s%s</p>',
 		// 	sprintf(
