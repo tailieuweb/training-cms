@@ -6480,15 +6480,10 @@ a.to-the-top > * {
 
 /* Module 9 */
 .post-inner .entry-content .row-adjust{
-	max-width: 100% !important;
-	width:100%;
+	max-width: calc(100% - 12rem) !important;
 }
 
-/* .post-inner .entry-content .row .col-md-4 .content-widgets-wrapper {
-    margin-left: -6rem;
-    width: calc(100% + 6rem);
-    background: white;
-} */
+
 
 
 

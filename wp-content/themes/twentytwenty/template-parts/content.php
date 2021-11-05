@@ -150,7 +150,9 @@ if ( ! is_search() ) {
 			?>
 			</div>
 			
-			<div class="col-md-4">Module 10</div>
+			<div class="col-md-4">Module 10
+				hahahaahjhjdhsjkfhshdhfjdhjkhsjkhsfjkdhfjdhfkdshfkdhfkdjshfkdshfjkdfhfdjskfhk
+			</div>
 		</div>
 	</div><!-- .entry-content -->
 
