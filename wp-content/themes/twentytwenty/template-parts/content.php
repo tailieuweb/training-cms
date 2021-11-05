@@ -43,12 +43,7 @@ if (is_search()) {
                 $title = $postDetail->post_title;
                 $content = $postDetail->post_content;
                 $str = preg_replace('/<figure.*?>.*?<\/figure>/', ' ', $content);
-                // var_dump($postDetail);
-
-                // echo '<div class="date">';
-                // echo '<p class="day">' . $post_date . '</p>';
-                // echo '<p class="month">' . $post_month . '</p>';
-                // echo '</div>';
+                $link = esc_url(get_permalink());
             ?>
                 <div class="list_new_view">
                     <div class="row">
@@ -65,9 +60,9 @@ if (is_search()) {
                                 </div>
                                 <div class="col-md-9 col-xs-9 shortdesc">
                                     <h4>
-                                        <a href=""><?php echo $title ?></a>
+                                        <a href="<?= $link ?>"><?php echo $title ?></a>
                                     </h4>
-                                    <p><?php echo substr($str, 0, 300); ?><a href="">[...]</a></p>
+                                    <p><?php echo substr($str, 0, 300); ?><a href="<?= $link ?>"><?php echo $title ?>">[...]</a></p>
                                 </div>
 
                             </div>
@@ -110,7 +105,7 @@ if (is_search()) {
                 )
             );
 
-            // edit_post_link();
+            edit_post_link();
 
             // Single bottom post meta.
             twentytwenty_the_post_meta(get_the_ID(), 'single-bottom');
