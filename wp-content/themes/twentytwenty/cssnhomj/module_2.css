@@ -6,7 +6,7 @@
   
   .trang-chu {
     display: block;
-    border-left: 5px solid #2f3031;
+    border-left: 1px solid #2f3031;
     margin: 20px;
     text-align: left;
   }
@@ -75,4 +75,32 @@
 }
 .col-md-3{
   font: Garamond;
+}
+.trang-chu .col-md-3 , .col-xs-3{
+  position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.topnewstime {
+  text-align: center;
+  padding-left: 0;
+  margin-top: 30px;
+}
+.topnewstime > .topnewsdate {
+  font-family: 'Prata', serif;
+  font-size: 2.5em;
+  line-height: 1em;
+  margin-left: 15px;
+}
+.topnewstime > .topnewsmonth {
+  text-transform: uppercase;
+  font-size: 0.6em;
+  margin-left: 15px;
+  color: #8d8585;
+}
+.col-xs-3 {
+  width: 25%;
+  float: left;
 }
