@@ -24,13 +24,21 @@ if (empty($twentytwenty_aria_label) && !empty($args['label'])) {
 	$twentytwenty_aria_label = 'aria-label="' . esc_attr($args['label']) . '"';
 }
 ?>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./styleSearch.css">
 <form role="search" <?php echo $twentytwenty_aria_label; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. 
 					?> method="get" class="search-form" action="<?php echo esc_url(home_url('/')); ?>">
-	<label for="<?php echo esc_attr($twentytwenty_unique_id); ?>">
-		<i class="fa fa-search fa-3x" aria-hidden="true"></i>
-		<span class="screen-reader-text"><?php _e('Search for:', 'twentytwenty'); // phpcs:ignore: WordPress.Security.EscapeOutput.UnsafePrintingFunction -- core trusts translations 
+    <label for="<?php echo esc_attr($twentytwenty_unique_id); ?>">
+        <i class="fa fa-search fa-3x" aria-hidden="true"></i>
+        <span class="screen-reader-text"><?php _e('Search for:', 'twentytwenty'); // phpcs:ignore: WordPress.Security.EscapeOutput.UnsafePrintingFunction -- core trusts translations 
 											?></span>
-		<input type="search" id="<?php echo esc_attr($twentytwenty_unique_id); ?>" class="search-field" placeholder="<?php echo esc_attr_x('Search topics or keywords &hellip;', 'placeholder', 'twentytwenty'); ?>" value="<?php echo get_search_query(); ?>" name="s" />
-	</label>
-	<input type="submit" class="search-submit HIHI" value="<?php echo esc_attr_x('Search', 'submit button', 'twentytwenty'); ?>" />
+        <input type="search" id="<?php echo esc_attr($twentytwenty_unique_id); ?>" class="search-field"
+            placeholder="<?php echo esc_attr_x('Search topics or keywords &hellip;', 'placeholder', 'twentytwenty'); ?>"
+            value="<?php echo get_search_query(); ?>" name="s" />
+    </label>
+    <input type="submit" class="search-submit HIHI"
+        value="<?php echo esc_attr_x('Search', 'submit button', 'twentytwenty'); ?>" />
 </form>

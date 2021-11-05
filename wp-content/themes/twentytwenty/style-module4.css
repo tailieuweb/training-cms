@@ -7,10 +7,15 @@
   padding: 9px !important;
   padding-right: 25px !important;
   border-radius: 4px !important;
+  margin-left: -170px;
+  width: 920px;
 }
 .search_result {
-  padding: 0px 0px 50px 0;
-  margin-top: -35px;
+  padding-top: 60px;
+  background: #f5efe0;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: -45px;
 }
 
 .search_result input#search-form-2 {
