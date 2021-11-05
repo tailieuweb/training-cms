@@ -1,3 +1,10 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrach p/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!------ Include the above in your HEAD tag ---------->
 <?php
 /**
  * The main template file
@@ -21,7 +28,7 @@ get_header();
 
 	<?php
 
-	$archive_title    = '';
+	$archive_title    = '';	
 	$archive_subtitle = '';
 
 	if ( is_search() ) {
@@ -91,17 +98,34 @@ get_header();
 
 		}
 	} elseif ( is_search() ) {
+
 		?>
 
 		<div class="no-search-results-form section-inner thin">
-
-			<?php
-			get_search_form(
-				array(
-					'aria_label' => __( 'search again', 'twentytwenty' ),
-				)
-			);
-			?>
+		<div class="container">
+    <br/>
+	<div class="row search-demo">
+                        <div class="col-12 col-md-10 col-lg-8">
+                            <form class="card card-sm">
+                                <div class="card-body row no-gutters align-items-center">
+                                    <div class="col-auto">
+									<i class="fas fa-search"></i>
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col">
+                                        <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search topics or keywords">
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col-auto">
+                                        <button class="btn btn-lg btn-success" type="submit">search</button>
+                                    </div>
+                                    <!--end of col-->
+                                </div>
+                            </form>
+                        </div>
+                        <!--end of col-->
+                    </div> 
+			
 
 		</div><!-- .no-search-results -->
 

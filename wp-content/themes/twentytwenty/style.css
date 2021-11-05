@@ -1254,7 +1254,20 @@ button.toggle {
 }
 
 /* Search Form ------------------------------- */
-
+.search-demo form{
+	width: 150%;
+}
+.search-demo form input{
+	border: none;
+}
+.search-demo .card-body{
+	 position: relative;
+ }
+.search-demo button{
+	position: absolute;
+    right: 10px;
+    bottom: -15px;
+}
 .search-form {
 	align-items: stretch;
 	display: flex;
