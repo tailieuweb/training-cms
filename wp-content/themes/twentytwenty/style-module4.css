@@ -4,14 +4,13 @@
   display: flex;
   flex-wrap: nowrap;
   background-color: white;
-  padding: 9px !important;
   padding-right: 25px !important;
   border-radius: 4px !important;
-  margin-left: -170px;
+  margin-left: -240px;
   width: 920px;
 }
 .search_result {
-  padding-top: 60px;
+  padding-top: 40px;
   background: #f5efe0;
   align-items: center;
   flex-direction: row;
@@ -26,11 +25,10 @@
 }
 
 .search_result input.search-submit.HIHI {
-  background-color: #17d1a5;
-  padding: 20px 22px !important;
-  font-size: 20px;
-  margin: 13px 2px 13px 9px !important;
-  border-radius: 9px !important;
+  background-color: hsl(134deg 61% 41%);
+  margin: 21px 3px !important;
+  border-radius: 5px !important;
+  font-size: 15px;
 }
 
 .search_result i.fa.fa-search.fa-4x {
