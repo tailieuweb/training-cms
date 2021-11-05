@@ -90,13 +90,13 @@
 }
 .topnewstime > .topnewsdate {
   font-family: 'Prata', serif;
-  font-size: 5em;
+  font-size: 8em;
   line-height: 1em;
   margin-left: 15px;
 }
 .topnewstime > .topnewsmonth {
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 1.5em;
   margin-left: 15px;
   color: #8d8585;
 }
@@ -107,4 +107,10 @@
 .ct{
   padding-left: 300px;
   padding-right: 300px;
+}
+.col-md-9{
+  margin-top: -5px;
+}
+.col-md-3{
+  margin-top: 30px;
 }
