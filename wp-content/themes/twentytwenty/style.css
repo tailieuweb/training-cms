@@ -6573,3 +6573,49 @@ section .section-title {
 	border-left: 3px solid #fff;
 	color: #fff;
 }
+
+/* Css comment */
+#comment{
+	background: #fff;
+	border-block-color: #ced4da;
+	font-size: 13px;
+	border-radius: 3px;
+	padding-top: 10px;
+}
+
+.comment-form-comment  {
+    border: 1px solid #dfdfdf;
+	background:white;
+}
+.comment-form-comment label{
+	border: 1px solid #ced4da;
+    color: #495057;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 410px;
+	padding: 10px;
+	position: relative;
+	padding:  10px ;
+	
+}
+input#submit {
+	text-decoration: none;
+    background:#007bff;
+    border-radius: 3px;
+    float: right;
+    height: 22px;	
+    font-size: 15px;
+	padding-bottom: 15px;
+	position: relative;
+	right: 18px;
+	bottom: 80px;
+}
+input#submit:hover{
+	background-color: #0069d9;
+}
+p.comment-form-comment {
+	padding: 8px;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	position: relative;
+}
