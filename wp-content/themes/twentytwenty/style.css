@@ -6562,34 +6562,25 @@ section .section-title {
 /* CSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 /* Module 2 */
 .list_new_view {
-	margin-bottom: 15px;
-	width: 60%;
-}
-
-.list_new_view {
+	margin: auto;
+	width: 50%;
+	font-size: 0.9em;
+	padding: 15px 15px 1px 15px;
 	background: #fff;
-	-webkit-box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
-	-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 	box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
 }
 
-
-.list_new_view {
-	font-size: 0.9em;
-	padding: 15px;
-}
-
-.list_new_view .topnewstime>span.topnewsdate {
+.list_new_view .time_post>span.date_post {
 	font-family: 'Prata', serif;
 	font-size: 3.1em;
 	line-height: 1em;
-	margin-left: 60px;
+	margin-left: 33px;
 }
 
-.list_new_view .topnewstime>span.topnewsmonth {
+.list_new_view .time_post>span.month_post {
 	text-transform: uppercase;
 	font-size: 0.9em;
-	margin-left: 45px;
+	margin-left: 18px;
 }
 
 .list_new_view a {
@@ -6597,18 +6588,18 @@ section .section-title {
 	text-decoration: none;
 }
 
-.list_new_view .shortdesc {
+.list_new_view .desc_post {
 	border-left: 1px solid #666;
 }
 
-.list_new_view .shortdesc h4 {
+.list_new_view .desc_post h4 {
 	font-size: 20px;
     text-transform: uppercase;
     padding-top: 0;
     margin-top: 0;
 }
 
-.list_new_view .row .top_news_block_desc {
+.list_new_view .row .detail-new {
 	background: #fff;
 	-webkit-box-shadow: 0px 0px 5px 0px rgb(0 0 calc(0 / 20%));
 	-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
@@ -6616,9 +6607,6 @@ section .section-title {
 	padding: 15px;
 }
 
-.list_new_view {
-	margin-bottom: 15px;
-}
 
 #site-content {
 	margin-left: 20px;
@@ -6628,24 +6616,24 @@ section .section-title {
 	margin-top: 15px;
 }
 
-.top_news_block_desc {
+.detail-new {
 	font-size: 0.9em;
 	padding: 15px;
 }
 
-.topnewstime>.topnewsdate {
+.topnewstime>.date_post {
 	font-family: 'Prata', serif;
 	font-size: 3.1em;
 	line-height: 1em;
 	margin-left: 15px;
 }
-.topnewsmonth {
+.month_post {
 	text-transform: uppercase;
 	font-size: 0.9em;
 	margin-left: 15px;
 }
 
-.shortdesc {
+.desc_post {
 	border-left: 1px solid #666;
 }
 
