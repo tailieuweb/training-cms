@@ -835,7 +835,7 @@ input[type="reset"],
 input[type="submit"] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	background: #09aefa;
+	background: #dd2443;
 	border: none;
 	border-radius: 15px;
 	color: #fff;
@@ -853,7 +853,9 @@ input[type="submit"] {
 	text-transform: uppercase;
 	transition: opacity 0.15s linear;
 }
-
+input[type="submit"]{
+	background: #00aeff !important;
+}
 button:focus,
 button:hover,
 .button:focus,
@@ -6475,7 +6477,7 @@ a.to-the-top > * {
 	}
 }
 
-/ Footer
+/* / Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
     padding: 60px 0;
