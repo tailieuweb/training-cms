@@ -122,7 +122,7 @@ if ( ! is_search() ) {
 	<div class="entry-content">
 	<?php $has_sidebar_9 = is_active_sidebar( 'sidebar-9' );?>
 		<div class="row row-adjust">
-			<div class="col-md-4" >
+			<div class="col-md-3" >
 				<?php if ( $has_sidebar_9 ) { ?>	
 					<div class="content-widgets-wrapper">
 						<?php if ( $has_sidebar_9 ) { ?>
@@ -133,7 +133,7 @@ if ( ! is_search() ) {
 					</div>
 				<?php } ?>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-6">
 			<?php
 				if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
 					the_excerpt();	
@@ -150,7 +150,7 @@ if ( ! is_search() ) {
 			?>
 			</div>
 			
-			<div class="col-md-4">Đây là module 10 của Xuân hưng
+			<div class="col-md-3">Đây là module 10 của Xuân hưng
 			</div>
 		</div>
 	</div><!-- .entry-content -->
