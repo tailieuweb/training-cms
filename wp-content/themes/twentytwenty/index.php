@@ -125,11 +125,10 @@ get_header();
 						</div>
                 
 						<div class="col-auto">
-							<button class="btn btn-lg btn-success btn-submit search-submit" type="submit">
+							<button class="btn btn-lg btn-success btn-submit search-submit" type="submit" value="<?php echo esc_attr_x( 'Search', 'submit button', 'twentytwenty' ); ?>">
 								Search
 							</button>
 						</div>
-                
             		</div>
         		</form>
     		</div>

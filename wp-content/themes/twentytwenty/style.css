@@ -6572,21 +6572,28 @@ section .section-title {
 	padding-bottom: 20px;
 }
 
+.item-center{
+
+}
+
 .search-center{
-	margin-top: -45px;
+	margin: -55px -50px 0px -50px;
 }
 
 
 .icon-search{
-	padding: 5px;
+	padding: 0px 5px 10px 5px;
+	font-size: 25px;
 }
 
 .search-input{
 	padding-left: 5px!important;
+	font-size: 18px !important;
 }
 
 .btn-submit{
-	padding: 10px;
+	padding: 11px 16px ;
 	text-transform: capitalize !important;
-	font-size: 15px;
+	font-size: 18px ;
+	border-radius: 8px;
 }
