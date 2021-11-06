@@ -5013,6 +5013,7 @@ a.to-the-top > * {
   }
   .post-inner {
     padding-top: 8rem;
+    text-align: justify;
   }
   /* POST FOOTER */
   .post-meta-wrapper.post-meta-single-bottom {
