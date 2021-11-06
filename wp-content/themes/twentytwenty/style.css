@@ -6640,14 +6640,14 @@ section .section-title {
 /* Css comment */
 .card-body{
 	background: white;
-	padding-bottom: 65px;
+	padding-bottom: 60px;
 }
 .card-header{
 	background: #f7f7f7;
 }
 
 form#commentform {
-    max-width: 120%;
+    max-width: 100%;
 }
 .comment-reply-title {
 	display: none;
@@ -6656,10 +6656,16 @@ form#commentform {
 	float: right;
 }
 input#submit{
-	background: blue;
-    text-decoration: none;
-    font-size: 13px;
+	background: #007bff;
+	padding: 10px 20px ;
+    font-size: 1rem;
+    line-height: 1.5;
+	border-radius: 0.25rem;
+	text-decoration: none;
 }
 .comment-respond p:not(.comment-notes) {
 	max-width: 100%;
+}
+input#submit:hover{
+	background:#337ab7 ;
 }
