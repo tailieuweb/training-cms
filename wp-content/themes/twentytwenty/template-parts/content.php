@@ -100,7 +100,7 @@ if (is_search()) {
                 )
             );
 
-            edit_post_link();
+            // edit_post_link();
 
             // Single bottom post meta.
             twentytwenty_the_post_meta(get_the_ID(), 'single-bottom');
@@ -111,6 +111,7 @@ if (is_search()) {
             ?>
 
     </div><!-- .section-inner -->
+
 
     <?php
 
