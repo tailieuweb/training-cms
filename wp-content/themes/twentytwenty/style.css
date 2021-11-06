@@ -989,9 +989,9 @@ section {
   max-width: 120rem;
   width: calc(100% - 4rem);
 }
-
+/* CSS Module 8 */
 .section-inner.max-percentage {
-  width: 68%;
+  /* width: 68%; */
 }
 
 .section-inner.small {
