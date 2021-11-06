@@ -25,17 +25,18 @@
 	}
 
 	?>
-<div class="col-md-2 module-10">
-				<?php if ($has_sidebar_10) { ?>
 
-					<div class="footer-widgets column-one grid-item">
-						<?php dynamic_sidebar('sidebar-10'); ?>
-					</div>
-
-				<?php } ?>
-			</div>
 	<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
-	
+		<!-- Module 10 sidebar-right -->
+		<div class="col-md-2 module-10">
+			<?php if ($has_sidebar_10) { ?>
+
+				<div class="footer-widgets column-one grid-item">
+					<?php dynamic_sidebar('sidebar-10'); ?>
+				</div>
+
+			<?php } ?>
+		</div>
 		<div class="entry-content  ">
 
 			<?php
@@ -45,7 +46,7 @@
 				the_content(__('Continue reading', 'twentytwenty'));
 			}
 			?>
-			
+
 		</div><!-- .entry-content -->
 
 	</div><!-- .post-inner -->
