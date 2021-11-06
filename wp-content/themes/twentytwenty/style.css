@@ -6637,3 +6637,20 @@ section .section-title {
 .footer-widgets .widget .wp-block-group{
 	margin-top: 0!important;
 }
+/* CSS module 10 */
+
+.col1.module-10 {
+	float: right;
+	
+}
+.footer-widgets{
+	width: 100%;
+    position: relative;
+    right: 80px;
+	top: 70px;
+}
+li.cat-item.cat-item-4 a,li.cat-item.cat-item-2 a,li.cat-item.cat-item-1 a{
+	color: #428bca;
+	font-size: 14px;
+	
+}
