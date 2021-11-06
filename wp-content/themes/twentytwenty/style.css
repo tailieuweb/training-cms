@@ -3947,9 +3947,7 @@ div.comment:first-of-type {
 	margin-right: auto;
 }
 
-.comment-respond p:not(.comment-notes) {
-	max-width: 58rem;
-}
+
 
 .comment-form-cookies-consent {
 	align-items: baseline;
@@ -6640,86 +6638,28 @@ section .section-title {
 
 
 /* Css comment */
-#comment{
-	background: #fff;
-	border-block-color: #ced4da;
-	font-size: 13px;
-	border-radius: 3px;
-	padding-top: 10px;
-}
-
-.comment-form-comment  {
-    border: 1px solid #dfdfdf;
-	background:white;
-}
-.comment-form-comment label{
-    color: #495057;
-    text-align: center;
-	margin-left: 10%;
-	
-	padding: 80%;
-	position: relative;
-	padding:  10px ;
-	
-}
-input#submit {
-	text-decoration: none;
-    background:#007bff;
-    border-radius: 3px;
-    float: right;
-    height: 22px;
-    font-size: 8px;
-	padding-bottom: 15px;
-	position: relative;
-	bottom: 15px;
-}
-.comment-respond p:not(.comment-notes){
-	max-width: none;
-	border: none;
-}
-input#submit:hover{
-	background-color: #0069d9;
-}
-p.comment-form-comment {
-	padding: x;
-    background: #f7f7f7;
-    position: relative;
-	max-width: none !important;
-}
-
-
-/* .comment-form-comment label::before{
-	content: '';
-	background: red;
-	position: absolute;
-	width: 100%;
-} */
-form#commentform {
-	max-width: none;
-    background: white;
-    /* padding-top: 55px;
-	padding-bottom: 35px; */
-	padding: 30px;
-	max-width: none;
-}
-.comment-form-comment label{
+.card-body{
 	background: white;
-    color: #495057;
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 80%;
-	position: relative;
-    right: 90px;
-    top: 5px;
-    padding: 10px;
+	padding-bottom: 65px;
 }
-textarea#comment:checked{
-	border: #f7f7f7;
+.card-header{
+	background: #f7f7f7;
 }
-label{
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	border: none;
-	position: relative;
-	top: 6px;
+
+form#commentform {
+    max-width: 120%;
+}
+.comment-reply-title {
+	display: none;
+}
+.comment-respond #submit {
+	float: right;
+}
+input#submit{
+	background: blue;
+    text-decoration: none;
+    font-size: 13px;
+}
+.comment-respond p:not(.comment-notes) {
+	max-width: 100%;
 }
