@@ -88,10 +88,7 @@ $type_post='';
         		if (is_single()) {
             	the_content(__('Continue reading', 'twentytwenty'));
         		} else {
-            	$post  = get_post();
-            	$content = $post->post_content;
-            	$str = preg_replace('/<figure.*?>.*?<\/figure>/', ' ', $content);
-            	echo substr($str, 0, 200);
+                the_excerpt();
         		}
     		}
    			?>

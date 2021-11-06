@@ -1,7 +1,7 @@
 article.list_post .section-inner {
     display: grid;
     grid-template-columns: 150px 1fr;
-    padding-top: 20px;
+    padding: 20px 0;
 }
 
 article.list_post .entry-title a {
