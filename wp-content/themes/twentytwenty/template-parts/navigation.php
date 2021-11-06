@@ -1,3 +1,4 @@
+
 <?php
 
 /**
@@ -23,45 +24,48 @@ if ($next_post || $prev_post) {
 		$pagination_classes = ' only-one only-next';
 	}
 ?>
-	<nav class="pagination-single section-inner<?php echo esc_attr($pagination_classes); ?>" aria-label="<?php esc_attr_e('Post', 'twentytwenty'); ?>" role="navigation">
-		<div class="pagination-single-inner">
-			<?php
+<div class="list_news<?php echo esc_attr($pagination_classes); ?>" aria-label="<?php esc_attr_e('Post', 'twentytwenty'); ?>" role="navigation">
+    <div class="headlines">
+	<?php
 			if ($prev_post) {
 			?>
-				<a class="previous-post" href="<?php echo esc_url(get_permalink($prev_post->ID)); ?>">
-					<div class="time" style="
-    font-size: 0.8em;
-    width: 15%;
-    min-width: 55px;
-    display: flex;
-    vertical-align: middle;
-">
-						<div class="day"><?php echo $day . "<br>" . $month ?></div>
-						<div class="year" style="margin-top: 7%;margin-left: 5%;"><?php echo $year ?></div>
-					</div>
-					<span class="title"><span class="title-inner"><?php echo wp_kses_post(get_the_title($prev_post->ID)); ?></span></span>
-				</a>
+        <ul>
+            <li>
+			<div class="headlinesdate">
+                                                <div class="headlinesdm">
+                            <div class="headlinesday"><?php echo $day ?></div>
+                            <div class="headlinesmonth"><?php echo $month ?></div>
+                        </div>
+                        <div class="headlinesyear"><?php echo $year ?></div>
+                    </div>
+                    <div class="headlinestitle">
+                        <a class="previous-post" href="<?php echo esc_url(get_permalink($prev_post->ID)); ?>">
+						<span class="title"><span class="title-inner"><?php echo wp_kses_post(get_the_title($prev_post->ID)); ?></span></span>
+					</a>                    </div>
+            </li>
 			<?php
 			}
 			if ($next_post) {
-			?>
-				<a class="next-post" href="<?php echo esc_url(get_permalink($next_post->ID)); ?>">
-				<div class="time" style="
-    font-size: 0.8em;
-    width: 15%;
-    min-width: 55px;
-    display: flex;
-    vertical-align: middle;
-">
-						<div class="day"><?php echo $day . "<br>" . $month ?></div>
-						<div class="year" style="margin-top: 7%;margin-left: 5%;"><?php echo $year ?></div>
-					</div>
+			?> 
+			<li>
+			<div class="headlinesdate">
+                                                <div class="headlinesdm">
+                            <div class="headlinesday"><?php echo $day ?></div>
+                            <div class="headlinesmonth"><?php echo $month ?></div>
+                        </div>
+                        <div class="headlinesyear"><?php echo $year ?></div>
+                    </div>
+                    <div class="headlinestitle">
+					<a class="next-post" href="<?php echo esc_url(get_permalink($next_post->ID)); ?>">
+				
 					<span class="title"><span class="title-inner"><?php echo wp_kses_post(get_the_title($next_post->ID)); ?></span></span>
-				</a>
+				</a>                   </div>
+            </li>  
 			<?php
 			}
-			?>
-		</div><!-- .pagination-single-inner -->
-	</nav><!-- .pagination-single -->
+			?>                                                                                
+        </ul>
+    </div>
+</div>
 <?php
 }
