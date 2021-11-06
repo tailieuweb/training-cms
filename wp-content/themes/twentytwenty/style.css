@@ -6295,3 +6295,12 @@ article.list_post.post {
   box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
   margin: 2% 20%;
 }
+/* Css hr detail page */
+.hr-detail {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  bottom: -85px;
+}
