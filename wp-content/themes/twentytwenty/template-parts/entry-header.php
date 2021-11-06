@@ -28,17 +28,16 @@ if (is_single()) {
 <header class="entry-header has-text-align-center<?php echo esc_attr($entry_header_classes); ?>">
 	<?php if (is_single()) { ?>
 		<div class="row">
-			<div class="col-md-3 category123">
+			<div class="col-md-3 module9">
 			<?php } ?>
 			<?php if ($has_sidebar_9 && is_single()) { ?>
-				<div class="footer-widgets-wrapper1">
+				<div class="footer-widgets-wrapper9">
 					<?php if ($has_sidebar_9 && is_single()) { ?>
 						<div class="footer-widgets1 column-one grid-item">
 							<?php dynamic_sidebar('sidebar-9'); ?>
+						<?php } ?>
 						</div>
-					<?php } ?>
 				</div>
-
 			<?php }
 			if (is_single()) { ?>
 			</div>
