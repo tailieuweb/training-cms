@@ -6304,3 +6304,12 @@ article.list_post.post {
   position: relative;
   bottom: -85px;
 }
+/* CSS Module 3 */
+.footer-inner li a::before {
+  font-family: "FontAwesome";
+  content: "\f101";
+  padding-right: 5px;
+}
+.footer-inner li {
+  list-style-type: none;
+}

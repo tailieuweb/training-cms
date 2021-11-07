@@ -134,3 +134,17 @@
   position: relative;
   left: -15px;
 }
+
+.module9 .footer-widgets-wrapper9 a::before {
+  font-family: "FontAwesome";
+  content: "\f111";
+  padding-right: 15px;
+  width: 5px;
+  height: 5px;
+  color: #f5ce31;
+}
+
+.module9 .footer-widgets-wrapper9 li a {
+  color: #90bbe0 !important;
+  padding-bottom: 10px;
+}
