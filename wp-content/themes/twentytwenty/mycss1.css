@@ -1,0 +1,30 @@
+#site-header .header-toggles .dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+#site-header .header-toggles .toggle-wrapper .dropdown-account-icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+}
+
+#site-header .header-toggles .toggle-wrapper .toggle .dropdown-toggle {
+    margin-top: 5px;
+}
+
+#site-header .header-toggles .toggle-wrapper.search-toggle-wrapper-dropdown:hover .dropdown-menu {
+    position: absolute;
+    top: 60px;
+    left: -40px;
+    display: block;
+}
+
+#site-header .header-toggles .toggle-wrapper .dropdown-menu {
+    font-size: 20px;
+}
+
+#site-header .header-toggles .toggle-wrapper .dropdown-menu a {
+    color: black;
+}
