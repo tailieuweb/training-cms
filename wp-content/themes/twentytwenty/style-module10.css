@@ -37,5 +37,11 @@
 }
 .module10 .footer-widgets-wrapper1 {
   background-color: #f5f5f5;
-  padding-top: 10px;
+  padding-top: 1px;
+}
+
+.module10 .footer-widgets-wrapper1 h2 {
+  font-size: 30px !important;
+  margin-bottom: -20px;
+  margin-top: -10px;
 }
