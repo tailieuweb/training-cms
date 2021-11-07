@@ -45,3 +45,13 @@
   margin-bottom: -20px;
   margin-top: -10px;
 }
+.module10 a::before {
+  font-family: "FontAwesome";
+  content: "\f111";
+  padding-right: 15px;
+  color: #f5ce31;
+}
+.module10 .footer-widgets-wrapper1 li a {
+  color: #90bbe0 !important;
+  padding-bottom: 10px;
+}
