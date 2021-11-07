@@ -6486,7 +6486,7 @@ a.to-the-top > * {
 	background: white;
 } */
 .entry-content .wp-block-archives *, .entry-content .wp-block-categories *, .entry-content .wp-block-latest-posts *, .entry-content .wp-block-latest-comments * {
-	list-style-type: circle;
+	/* list-style-type: circle; */
 	font-family: inherit;
     color: #428bca;
 	 background: #f7f3f3;
@@ -6494,15 +6494,60 @@ a.to-the-top > * {
 	 margin-left: 35px;
 }
 
-/* border: none;
-    border-bottom: 1pxs#d9d9d9 solid; */
+.widget-content h2{
+	font-weight: 800;
+    font-size: 1.8em
+}
+.widget_categories .widget-content{
+	padding: 10px 20px;
+    background: #fff;
+	position: relative;
+}
 
-/* .crossedbg {
-    background: url(../img/bg_cr_grey.png);
-    height: 15px;
-} */
+.widget_categories .widget-content::before{
+	content: '';
+	position: absolute;
+	top: -13px;
+	left: 0;
+	width: 100%;
+	height: 18px;
+	background: url('./assets/images/bg_cr_grey.png') repeat;
+}
 
+.widget_categories .widget-content ul{
+	margin: 0!important;
+}
+.widget_categories .widget-content ul li{
+	position: relative;
+	border-bottom: 1px#d9d9d9 solid;
+	background: #fff !important;
+	height: 60px;
+}
 
+.widget_categories .widget-content ul li:last-child{
+	border-bottom: none;
+}
+
+.widget_categories .widget-content ul li::before{
+	font-family: Arial, Helvetica, sans-serif;
+    color: #f5ce31;
+    content: "\2022";
+    font-size: 2em;
+    padding-right: 0.5em;
+	padding-left: 16px;
+    position: relative;
+}
+
+.widget_categories .widget-content ul li a{
+	position: absolute;
+	margin: 0 !important;
+    top: 17px;
+	background: #fff !important;
+	font-size: 17px;
+	font-weight: 200;
+}
+
+/* End Module 9 */
 
 
 
