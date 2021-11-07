@@ -1,5 +1,6 @@
 <head>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module2.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/styleModule5.css" type="text/css" media="screen" />
 </head>
 <?php
 /**
@@ -113,6 +114,34 @@ get_header();
 									<span class='month_post'><?= $post_month ?></span><br>
 								</div>
 								<div class='col-md-9 col-xs-9 desc_post'>
+									<h4>
+										<a href='<?= esc_url( get_permalink() )?>'><?= $post_title ?></a>
+									</h4>
+									<?= $post_content ?>
+									<a href='<?= esc_url( get_permalink() )?>'>[...]</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<?php } ?>
+		<?php if ( is_search() ) { ?>
+		<div class="container">
+			<div class="list_new_search">
+				<div class='list_new_view_search'>
+					<div class='row'>
+						<div class='col-md detail-new_search'>
+							<div class='row'>
+								<div class='col-md-3 col-xs-3 img_search'>
+									<img src="<?php echo catch_that_image() ?>" alt="">
+								</div>
+								<div class='col-md-3 col-xs-3 time_search'>
+									<span class='date_search'><?= $post_date ?></span><br>
+									<span class='month_search'><?= $post_month ?></span><br>
+								</div>
+								<div class='col-md-6 col-xs-6 desc_search'>
 									<h4>
 										<a href='<?= esc_url( get_permalink() )?>'><?= $post_title ?></a>
 									</h4>
