@@ -404,6 +404,18 @@ function twentytwenty_sidebar_registration() {
 			)
 		)
 	);
+	// module9.
+	register_sidebar(
+		array_merge(
+			$shared_args,
+			array(
+				'name'        => __( 'Mundule10', 'twentytwenty' ),
+				'id'          => 'sidebar-10',
+				'description' => __( 'Widgets in this area will be displayed in the second column in the footer.', 'twentytwenty' ),
+			)
+		)
+	);
+	
 
 }
 
