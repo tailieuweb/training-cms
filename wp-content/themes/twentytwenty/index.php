@@ -103,7 +103,7 @@ get_header();
                 <div class='row'>
                     <div class='col-md detail-new'>
                         <div class='row'>
-                            <?php if ( get_post() ) { ?>
+                            <?php if ( get_post() && get_post()!= is_search() ) { ?>
 								<div class='col-md-3 col-xs-3 time_post'>
 									<span class='date_post'><?= $post_date ?></span><br>
 									<span class='month_post'><?= $post_month ?></span><br>
