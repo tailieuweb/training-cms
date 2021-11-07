@@ -405,7 +405,7 @@ function twentytwenty_sidebar_registration() {
 		)
 	);
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
     // Footer #3.
     register_sidebar(
         array_merge(
@@ -417,7 +417,7 @@ function twentytwenty_sidebar_registration() {
             )
         )
     );
-=======
+//=======
 	
 	// Footer #3.Phuc
 	register_sidebar(
@@ -431,7 +431,7 @@ function twentytwenty_sidebar_registration() {
 		)
 	);
 
->>>>>>> origin/1-wordpress-581-202109/2-groups/1-F/master
+//>>>>>>> origin/1-wordpress-581-202109/2-groups/1-F/master
 }
 
 add_action( 'widgets_init', 'twentytwenty_sidebar_registration' );
