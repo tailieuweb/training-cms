@@ -1,3 +1,6 @@
+<head>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module2.css" type="text/css" media="screen" />
+</head>
 <?php
 /**
  * The main template file
@@ -97,13 +100,14 @@ get_header();
 
 			//hien thi du lieu da lay
 		?>
-    <div class="container">
-        <div class="list_new">
-            <div class='list_new_view'>
-                <div class='row'>
-                    <div class='col-md detail-new'>
-                        <div class='row'>
-                            <?php if ( get_post() && get_post()!= is_search() ) { ?>
+		<?php if ( get_post() && get_post()!= is_search() ) { ?>
+		<div class="container">
+			<div class="list_new_post">
+				<div class='list_new_view_post'>
+					<div class='row'>
+						<div class='col-md detail-new_post'>
+							<div class='row'>
+
 								<div class='col-md-3 col-xs-3 time_post'>
 									<span class='date_post'><?= $post_date ?></span><br>
 									<span class='month_post'><?= $post_month ?></span><br>
@@ -115,13 +119,13 @@ get_header();
 									<?= $post_content ?>
 									<a href='<?= esc_url( get_permalink() )?>'>[...]</a>
 								</div>
-                            <?php } ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<?php } ?>
     <?php
 		}	
 	} elseif ( is_search() ) {
