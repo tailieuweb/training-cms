@@ -9,6 +9,7 @@
  */
 get_header();
 $has_sidebar_9 = is_active_sidebar('sidebar-9');
+$has_sidebar_10 = is_active_sidebar('sidebar-10');
 $entry_header_classes = '';
 
 if (is_singular()) {
@@ -154,13 +155,20 @@ if (is_single()) {
 
             </div><!-- .entry-header-inner -->
             <?php if (is_single()) { ?>
+            </div>
+       
+        <div class="col-md-3 module10">
+        <?php } ?>
+            <?php if ($has_sidebar_10 && is_single()) { ?>
+                <div class="footer-widgets-wrapper1">
+                    <?php if ($has_sidebar_10 && is_single()) { ?>
+                        <div class="footer-widgets1 column-one grid-item">
+                            <?php dynamic_sidebar('sidebar-10'); ?>
+                            <?php } ?>
         </div>
-    </div>
-    <div class="col-md-3">
-
-    </div>
     <?php } ?>
-
+    
+    </div>
     </div>
 
 
