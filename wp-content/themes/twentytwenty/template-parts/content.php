@@ -13,7 +13,7 @@
 if(!is_single()){
     ?>
 }
-    <article <?php post_class('danhsachs'); ?> id="post-<?php the_ID(); ?>" style="background: url(../assets/images/bg_pattern.png) repeat;">
+    <article <?php post_class('danhsach'); ?> id="post-<?php the_ID(); ?>" style="background: url(../assets/images/bg_pattern.png) repeat;">
 	<?php
 
 	get_template_part( 'template-parts/entry-header' );
