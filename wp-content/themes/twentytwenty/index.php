@@ -179,11 +179,11 @@ get_header();
     <div class="no-search-results-form section-inner thin">
 
         <?php
-			get_search_form(
-				array(
-					'aria_label' => __( 'search again', 'twentytwenty' ),
-				)
-			);
+			// get_search_form(
+			// 	array(
+			// 		'aria_label' => __( 'search again', 'twentytwenty' ),
+			// 	)
+			// );
 			?> -->
 		<!-- Change button search -->
 		<div class="row justify-content-center form-search">

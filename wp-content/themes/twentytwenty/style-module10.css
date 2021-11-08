@@ -1,0 +1,172 @@
+.module10 h2 {
+  font-size: 30px !important;
+  color: black;
+  text-align: left !important;
+  position: relative;
+  top: 28px;
+  background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_pattern.png)
+}
+
+.module10 a {
+  color: #2a6496 !important;
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+.module10 .wp-block-group__inner-container {
+  height: 500px;
+  margin-right: 50px;
+  margin-left: -30px;
+  padding-top:10px;
+  background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_pattern.png)
+  
+}
+.wp-block-latest-posts__list wp-block-latest-posts{
+  background: white;
+    /* padding: 10px; */
+    /* margin: 20px; */
+    margin-top: 50px;
+    /* margin-left: 21px; */
+    margin-right: 36px;
+    /* height: 300px; */
+    width: 80%;
+}
+.module10 .wp-block-latest-posts__list .wp-block-latest-posts li {
+  font-family: Arial, Helvetica, sans-serif;
+    color: #f5ce31;
+    content: "\f111";
+    font-size: 2em;
+    padding-right: .5em;
+    position: relative;
+    top: .15em;
+}
+
+.module10 .fa-angle-double-right {
+  color: #f5ce31 !important;
+  font-size: 15px;
+}
+
+.module10 .footer-widgets1.column-one.grid-item {
+  position: relative;
+  left: 45px;
+}
+
+.module10 li {
+  border-bottom: 1px solid #d9d9d9;
+  text-align: left;
+  position: relative;
+  top: 7px;
+}
+
+.module10 .fa-circle {
+  color: #f5ce31;
+  font-size: 8px;
+}
+
+.module10 .footer-widgets-wrapper10 {
+  background: #f5f5f5;
+  position: relative;
+  bottom: 40px;
+  /* height: 368px;
+    width: 280px;
+    left: 30px; */
+}
+.entry-header-inner .headlinesdate-module-10 {
+  background: #f5ce31;
+  border-radius: 50%;
+  padding: 10px 17px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
+}
+
+.entry-header-inner .headlinesdate-module-10 .headlinesdm,
+.news > .headlines .headlinesdate-module-10,
+.headlinesdate-module-10 {
+  float: left;
+  font-family: "Prata", serif;
+}
+
+* {
+  transition: all 0.1s linear;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.entry-header-inner .headlinesdate-module-10 .headlinesdm,
+.news > .headlines .headlinesdate-module-10,
+.headlinesdate-module-9 {
+  float: left;
+  font-family: "Prata", serif;
+}
+
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.entry-header-inner .headlinesdate-module-10 .headlinesday {
+  border-bottom: 1px solid #000;
+}
+
+.entry-header-inner .headlinesdate-module-10 .headlinesday {
+  border-bottom: 1 px solid #fff;
+}
+
+.entry-header-inner .headlinesdate-module-10 .headlinesmonth {
+  line-height: 1.7em;
+}
+
+.entry-header-inner .headlinesdate-module-10 .headlinesyear {
+  line-height: 3.5em;
+  float: left;
+  margin-left: 3px;
+}
+
+.entry-header-inner .headlinesdate-module-10,
+.headlinesdate-module-10 {
+  float: left;
+  font-family: "Prata", serif;
+  position: relative;
+  left: 750px;
+  top: -38px;
+}
+
+.entry-header-inner h1.entry-title {
+  position: relative;
+  left: -15px;
+}
+
+.module10 .footer-widgets-wrapper10 a::before {
+  font-family: "FontAwesome";
+  content: "\f111";
+  padding-right: 15px;
+  width: 5px;
+  height: 5px;
+  color: #f5ce31;
+}
+
+.module10 .footer-widgets-wrapper10 li a {
+  color: #90bbe0 !important;
+  padding-bottom: 10px;
+}
+[class*="__inner-container"]
+  > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+  max-width: 58rem;
+  width: 85%;
+  background: white;
+
+}

@@ -30,6 +30,7 @@
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module3.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module9.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module6.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module10.css" type="text/css"
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.css" type="text/css" media="screen" />
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -45,11 +46,8 @@
 		?>
 
     <header id="site-header" class="header-footer-group" role="banner">
-
         <div class="header-inner section-inner">
-
             <div class="header-titles-wrapper">
-
                 <?php
 
 					// Check whether the header search is activated in the customizer.
@@ -177,7 +175,6 @@
 						if ( true === $enable_header_search ) {
 							?>
 
-                    <div class="toggle-wrapper search-toggle-wrapper">
 
                         <button class="toggle search-toggle desktop-search-toggle" data-toggle-target=".search-modal"
                             data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field"

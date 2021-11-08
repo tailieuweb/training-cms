@@ -404,18 +404,6 @@ function twentytwenty_sidebar_registration() {
 			)
 		)
 	);
-	// module10.
-	register_sidebar(
-		array_merge(
-			$shared_args,
-			array(
-				'name'        => __( 'Mundule10', 'twentytwenty' ),
-				'id'          => 'sidebar-10',
-				'description' => __( 'Widgets in this area will be displayed in the second column in the footer.', 'twentytwenty' ),
-			)
-		)
-	);
-	
 
 	// Footer #3.
 	register_sidebar(
@@ -428,6 +416,7 @@ function twentytwenty_sidebar_registration() {
 			)
 		)
 	);
+
 	// Module #9.
 	register_sidebar(
 		array_merge(
@@ -435,6 +424,18 @@ function twentytwenty_sidebar_registration() {
 			array(
 				'name'        => __( 'Module #9', 'twentytwenty' ),
 				'id'          => 'sidebar-9',
+				'description' => __( 'Widgets in this area will be displayed in the second column in the footer.', 'twentytwenty' ),
+			)
+		)
+	);
+
+	// Module #10.
+	register_sidebar(
+		array_merge(
+			$shared_args,
+			array(
+				'name'        => __( 'Module #10', 'twentytwenty' ),
+				'id'          => 'sidebar-10',
 				'description' => __( 'Widgets in this area will be displayed in the second column in the footer.', 'twentytwenty' ),
 			)
 		)
