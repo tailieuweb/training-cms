@@ -31,6 +31,10 @@ function twentytwenty_get_starter_content() {
 			'sidebar-2' => array(
 				'text_business_info',
 			),
+			// Place one core-defined widgets in the second footer widget area.
+			'sidebar-3' => array(
+				'text_business_info',
+			),
 		),
 
 		// Create the custom image attachments used as post thumbnails for pages.
