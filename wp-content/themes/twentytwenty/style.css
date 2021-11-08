@@ -3647,8 +3647,8 @@ figure.wp-block-table.is-style-stripes {
 
 [class*="__inner-container"]>*:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
     max-width: 58rem;
-    width: 90%;
-    
+    width: 85%;
+    background: #fff;
 }
 
 .alignnone,
