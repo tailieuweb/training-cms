@@ -3594,7 +3594,9 @@ figure.wp-block-table.is-style-stripes {
 [class*="__inner-container"]
   > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
   max-width: 58rem;
-  width: 100%;
+  width: 85%;
+  background: white;
+
 }
 
 .alignnone,
@@ -4120,6 +4122,7 @@ div.comment:first-of-type {
 .widget li > ul,
 .widget li > ol {
   margin-top: 0;
+  
 }
 
 .widget table,

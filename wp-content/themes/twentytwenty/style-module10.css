@@ -4,6 +4,7 @@
   text-align: left !important;
   position: relative;
   top: 28px;
+  background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_pattern.png)
 }
 
 .module10 a {
@@ -13,12 +14,23 @@
 }
 
 .module10 .wp-block-group__inner-container {
+  height: 500px;
   margin-right: 50px;
   margin-left: -30px;
   padding-top:10px;
   background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_pattern.png)
+  
 }
-
+.wp-block-latest-posts__list wp-block-latest-posts{
+  background: white;
+    /* padding: 10px; */
+    /* margin: 20px; */
+    margin-top: 50px;
+    /* margin-left: 21px; */
+    margin-right: 36px;
+    /* height: 300px; */
+    width: 80%;
+}
 .module10 .wp-block-latest-posts__list .wp-block-latest-posts li {
   font-family: Arial, Helvetica, sans-serif;
     color: #f5ce31;
@@ -150,4 +162,11 @@
 .module10 .footer-widgets-wrapper10 li a {
   color: #90bbe0 !important;
   padding-bottom: 10px;
+}
+[class*="__inner-container"]
+  > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+  max-width: 58rem;
+  width: 85%;
+  background: white;
+
 }
