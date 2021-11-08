@@ -2468,8 +2468,7 @@ h2.entry-title {
 	margin-top: 2rem;
 	margin-right: auto;
 	margin-left: auto;
-	max-width: 58rem;
-	width: 100%;
+	width: 120px;
 }
 
 .post-meta {
@@ -2503,6 +2502,8 @@ h2.entry-title {
 	align-items: center;
 	display: flex;
 	flex-wrap: nowrap;
+	padding-top: 25px;
+	padding-right: 10px;
 }
 
 .post-meta .meta-icon {
@@ -4821,7 +4822,7 @@ a.to-the-top > * {
 
 	h2,
 	.heading-size-2 {
-		font-size: 4.8rem;
+		/* font-size: 4.8rem; */
 	}
 
 	h3,
@@ -6474,7 +6475,7 @@ a.to-the-top > * {
 	}
 }
 
-/ Footer
+/* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
     padding: 60px 0;
@@ -6526,6 +6527,8 @@ section .section-title {
 }
 #footer ul.quick-links li{
 	padding: 3px 0;
+	color: white;
+	font-size: medium;
 	-webkit-transition: .5s all ease;
 	-moz-transition: .5s all ease;
 	transition: .5s all ease;
@@ -6554,3 +6557,4 @@ section .section-title {
 .row p{
 	font-size: medium;
 }
+
