@@ -8,7 +8,7 @@
  * @since Twenty Twenty 1.0
  */
 get_header();
-
+$has_sidebar_10 = is_active_sidebar('sidebar-10');
 $entry_header_classes = '';
 
 if (is_singular()) {
@@ -31,11 +31,11 @@ if (is_single()) {
         <div class="col-md-3 module3">
             <?php } ?>
             <?php if ($has_sidebar_9 && is_single()) { ?>
-            
+
             <?php }
 			if (is_single()) { ?>
         </div>
-        <div class="col-md-6" >
+        <div class="col-md-6">
             <?php } ?>
 
             <div class="entry-header-inner section-inner medium">
@@ -65,7 +65,7 @@ if (is_single()) {
                     <div class="entry-categories">
                         <span class="screen-reader-text"><?php _e('Categories', 'twentytwenty'); ?></span>
                     </div><!-- .entry-categories -->
-                   
+
                     <?php
 					}
 
@@ -99,7 +99,7 @@ if (is_single()) {
                         </div>
                     </div>
                     <?php } ?>
-					<hr width="100%" class="hr-detail" style="text-align: center;" />
+                    <hr width="100%" class="hr-detail" style="text-align: center;" />
                     <?php
 					$intro_text_width = '';
 
@@ -148,12 +148,22 @@ if (is_single()) {
 
             </div><!-- .entry-header-inner -->
             <?php if (is_single()) { ?>
+        </div>
+        <div class="col-md-3 module10 " style="
+    margin-top: -50px;">
+            <?php } ?>
+            <?php if ($has_sidebar_10 && is_single()) { ?>
+            <div class="footer-widgets-wrapper1">
+                <?php if ($has_sidebar_10 && is_single()) { ?>
+                <div class="footer-widgets1 column-one grid-item">
+                    <?php dynamic_sidebar('sidebar-10'); ?>
+                    <?php } ?>
+                </div>
+                <?php } ?>
+
+
             </div>
-       
-    <?php } ?>
-    
-    </div>
-    </div>
+        </div>
 
 
 
