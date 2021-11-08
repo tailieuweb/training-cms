@@ -1,5 +1,9 @@
 <head>
-<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module2.css" type="text/css" media="screen" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="./wp-content/themes/twentytwenty/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 </head>
 <?php
 /**
@@ -22,7 +26,7 @@ get_header();
 
 <main id="site-content" role="main">
 
-    <?php
+	<?php
 
 	$archive_title    = '';
 	$archive_subtitle = '';
@@ -68,10 +72,18 @@ get_header();
             <h1 class="archive-title"><?php echo wp_kses_post( $archive_title ); ?></h1>
             <?php } ?>
 
-            <?php if ( $archive_subtitle ) { ?>
-            <div class="archive-subtitle section-inner thin max-percentage intro-text">
-                <?php echo wp_kses_post( wpautop( $archive_subtitle ) ); ?></div>
-            <?php } ?>
+
+			<div class="archive-header-inner section-inner medium">
+
+				<?php if ( $archive_title ) { ?>
+					<h1 class="archive-title"><?php echo wp_kses_post( $archive_title ); ?></h1>
+				<?php } ?>
+
+				<?php if ( $archive_subtitle ) { ?>
+					<div class="archive-subtitle section-inner thin max-percentage intro-text"><?php echo wp_kses_post( wpautop( $archive_subtitle ) ); ?></div>
+				<?php } ?>
+                        <!--end of col-->
+                    </div>
 
         </div><!-- .archive-header-inner -->
 
@@ -133,13 +145,38 @@ get_header();
 
     <div class="no-search-results-form section-inner thin">
 
-        <?php
+		<div class="no-search-results-form section-inner thin">
+
+			<!-- <?php
 			get_search_form(
 				array(
 					'aria_label' => __( 'search again', 'twentytwenty' ),
 				)
 			);
-			?>
+			?> -->
+		<!-- Change button search -->
+		<div class="row justify-content-center form-search">
+    		<div class="col-12 col-md-10 col-lg-8">
+        		<form class="card card-sm search-center">
+            		<div class="card-body row no-gutters align-items-center item-center">
+                		<div class="col-auto">
+                    		<i class="fas fa-search icon-search"></i>
+                		</div>
+                
+						<div class="col">
+							<input class="form-control form-control-lg form-control-borderless search-input search-field" id="<?php echo esc_attr( $twentytwenty_unique_id ); ?>" type="search" placeholder="Search topics or keywords">
+						</div>
+                
+						<div class="col-auto">
+							<button class="btn btn-lg btn-success btn-submit search-submit" type="submit" value="<?php echo esc_attr_x( 'Search', 'submit button', 'twentytwenty' ); ?>">
+								Search
+							</button>
+						</div>
+            		</div>
+        		</form>
+    		</div>
+    
+		</div>
 
     </div><!-- .no-search-results -->
 

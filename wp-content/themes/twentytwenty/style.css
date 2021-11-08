@@ -1259,7 +1259,11 @@ button.toggle {
 	align-items: stretch;
 	display: flex;
 	flex-wrap: nowrap;
-	margin: 0 0 -0.8rem -0.8rem;
+	margin-top: -20px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 15px 200px 10px 200px;
 }
 
 .search-form .search-field,
@@ -1271,7 +1275,7 @@ button.toggle {
 	align-items: stretch;
 	display: flex;
 	font-size: inherit;
-	margin: 0;
+	margin-left: -100px;
 	width: 100%;
 }
 
@@ -2468,7 +2472,8 @@ h2.entry-title {
 	margin-top: 2rem;
 	margin-right: auto;
 	margin-left: auto;
-	width: 120px;
+	max-width: 58rem;
+	width: 100%;
 }
 
 .post-meta {
@@ -4822,7 +4827,7 @@ a.to-the-top > * {
 
 	h2,
 	.heading-size-2 {
-		/* font-size: 4.8rem; */
+		font-size: 4.8rem;
 	}
 
 	h3,
@@ -6475,7 +6480,7 @@ a.to-the-top > * {
 	}
 }
 
-/* Footer */
+ Footer
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
     padding: 60px 0;
@@ -6558,3 +6563,36 @@ section .section-title {
 	font-size: medium;
 }
 
+/* *************CSS */
+/* Module 4 Search */
+
+.form-control-borderless {
+    border: none !important;
+}
+
+.form-search{
+	margin-right: -250px;
+    margin-left: -250px;
+	padding-bottom: 20px;
+}
+
+.search-center{
+	margin: -55px -50px 0px -50px;
+}
+
+
+.icon-search{
+	padding: 0px 5px 10px 5px;
+	font-size: 25px;
+}
+
+.search-input{
+	padding-left: 5px!important;
+	font-size: 18px !important;
+}
+
+.btn-submit{
+	padding: 11px 16px ;
+	text-transform: capitalize !important;
+	font-size: 18px ;
+	border-radius: 8px;
