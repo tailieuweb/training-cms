@@ -153,7 +153,7 @@ body {
 #site-content {
 	overflow: hidden;
 }
-
+/* Css content danh-sach ----------------*/
 
 /* Clearing ---------------------------------- */
 
@@ -1488,6 +1488,7 @@ body:not(.enable-search-modal) .site-logo img {
 
 .header-navigation-wrapper {
 	display: none;
+	margin-right: 30px;
 }
 .header-navigation-wrapper ul li a{
 	color: #ccc !important;
@@ -5769,10 +5770,19 @@ a.to-the-top > * {
 		font-weight: 600;
 	}
 	.header-toggles li{
-		justify-content: center;
-		align-items: center;
 		list-style-type: none;
 		text-align: center;
+	}
+	.header-toggles .dropdown ul li{
+		text-align: left;
+		list-style-type: square;
+	}
+	.header-toggles .dropdown ul li a{
+		font-size: 14px;
+		color: #000 !important;
+	}
+	.header-toggles .dropdown ul li:hover{
+		background-color: #6d6d6d;
 	}
 	.header-toggles li i{
 		font-size: 25px;
