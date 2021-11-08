@@ -3,11 +3,13 @@
 		text-align: left;
 		max-width: none !important;
 		margin: 0;
+		font-family: 'Open Sans', sans-serif;
 		
 	}
 	.post-inner {
 		padding-top: 5px;
 	}
+	
 </style>
 <?php
 

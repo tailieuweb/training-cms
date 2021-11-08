@@ -6,6 +6,18 @@
 		text-transform: uppercase;
 		max-width: none !important;
 	}
+
+	/* 
+	entry-title a. (level)> a.name_class.
+	*/
+	.entry-title a.title-blue {
+		color: #428bca !important;
+
+		font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+	}
+
+
 </style>
 <?php
 /**
@@ -93,12 +105,12 @@ if (is_singular()) {
 			<div class="entry-header-inner section-inner medium">
 
 				<?php
-				
+
 
 				if (is_singular()) {
 					the_title('<h1 class="entry-title">', '</h1>');
 				} else {
-					the_title('<h2 class="entry-title heading-size-1"><a class="text-primary" href="' . esc_url(get_permalink()) . '">', '</a></h2>');
+					the_title('<h2 class="entry-title heading-size-1"><a class="title-blue" href="' . esc_url(get_permalink()) . '">', '</a></h2>');
 				}
 
 				$intro_text_width = '';
