@@ -1,0 +1,96 @@
+.entry-header-inner .headlinesdate-module-3 {
+  background: #f5ce31;
+  border-radius: 50%;
+  padding: 10px 17px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
+}
+
+.entry-header-inner .headlinesdate-module-3 .headlinesdm,
+.news > .headlines .headlinesdate-module-3,
+.headlinesdate-module-3 {
+  float: left;
+  font-family: "Prata", serif;
+}
+
+* {
+  transition: all 0.1s linear;
+}
+.col-md-6{
+  background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_pattern.png);
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.entry-header-inner .headlinesdate-module-3 .headlinesdm,
+.news > .headlines .headlinesdate-module-3,
+.headlinesdate-module-3 {
+  float: left;
+  font-family: "Prata", serif;
+}
+
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.entry-header-inner .headlinesdate-module-3 .headlinesday {
+  border-bottom: 1px solid #000;
+}
+
+.entry-header-inner .headlinesdate-module-3 .headlinesday {
+  border-bottom: 1 px solid #fff;
+}
+
+.entry-header-inner .headlinesdate-module-3 .headlinesmonth {
+  line-height: 1.7em;
+}
+
+.entry-header-inner .headlinesdate-module-3 .headlinesyear {
+  line-height: 3.5em;
+  float: left;
+  margin-left: 3px;
+}
+
+.entry-header-inner .headlinesdate-module-3,
+.headlinesdate-module-3 {
+  float: left;
+  font-family: "Prata", serif;
+  position: relative;
+  left: 750px;
+  top: -38px;
+}
+
+.entry-header-inner h1.entry-title {
+  position: relative;
+  left: -15px;
+}
+
+.module3 .footer-widgets-wrapper3 a::before {
+  font-family: "FontAwesome";
+  content: "\f111";
+  padding-right: 15px;
+  width: 5px;
+  height: 5px;
+  color: #f5ce31;
+}
+
+.module3 .footer-widgets-wrapper3 li a {
+  color: #90bbe0 !important;
+  padding-bottom: 10px;
+}
