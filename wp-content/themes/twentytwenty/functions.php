@@ -404,7 +404,7 @@ function twentytwenty_sidebar_registration() {
 			)
 		)
 	);
-	// module9.
+	// module10.
 	register_sidebar(
 		array_merge(
 			$shared_args,

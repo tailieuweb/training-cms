@@ -1,6 +1,7 @@
 /* Module 5 */
 .list_new_search{
 	padding-top: 20px;
+	padding-bottom: 10px;
 }
 .list_new_view_search {
 	margin: auto;
@@ -9,6 +10,7 @@
 	padding: 15px 15px 1px 15px;
 	background: #fff;
 	box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
+	
 }
 
 .list_new_view_search .time_search>span.date_search {
