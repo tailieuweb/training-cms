@@ -7224,12 +7224,10 @@ section .section-title {
     margin-bottom: 10px;
   }
 }
-.row {
+/* .row {
   color: white;
-}
-.footer-nav-widgets-wrapper a::before{
-	font-family: "FontAwesome";
-   content: "\f101";
-   display: inline-block;
-   padding-right: 10px;
+} */
+
+.title_text{
+  color: #fff;
 }
