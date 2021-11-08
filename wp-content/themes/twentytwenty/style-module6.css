@@ -73,12 +73,16 @@
   float: left;
   font-family: "Prata", serif;
   position: relative;
-  left: 85%;
+  left: 95%;
   top: -38px;
 }
 
 .entry-header-inner h1.entry-title {
   position: relative;
   left: -15px;
+}
+
+.content_module6{
+  padding-bottom: 50px;
 }
 

@@ -22,7 +22,7 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 || 
 
 	<div class="footer-nav-widgets-wrapper header-footer-group">
 
-		<div class="footer-inner section-inner">
+		<!-- <div class="footer-inner section-inner">
 
 			<?php
 
@@ -52,7 +52,7 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 || 
 								?>
 							</ul>
 
-						</nav><!-- .site-nav -->
+						</nav>
 
 					<?php } ?>
 					<?php if ($has_social_menu) { ?>
@@ -78,18 +78,18 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 || 
 								);
 								?>
 
-							</ul><!-- .footer-social -->
+							</ul>
 
-						</nav><!-- .footer-social-wrapper -->
+						</nav>
 
 					<?php } ?>
-				</div><!-- .footer-top -->
+				</div>
 
 			<?php } ?>
 
 			
 
-		</div><!-- .footer-inner -->
+		</div> -->
 
 	</div><!-- .footer-nav-widgets-wrapper -->
 

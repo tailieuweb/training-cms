@@ -35,7 +35,7 @@ if (is_single()) {
             <?php }
 			if (is_single()) { ?>
         </div>
-        <div class="col-md-6" >
+        <div class="col-md-6 content_module6" >
             <?php } ?>
 
             <div class="entry-header-inner section-inner medium">
