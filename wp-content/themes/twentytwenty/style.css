@@ -835,9 +835,9 @@ input[type="reset"],
 input[type="submit"] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	background: #cd2653;
+	background: #dd2443;
 	border: none;
-	border-radius: 0;
+	border-radius: 15px;
 	color: #fff;
 	cursor: pointer;
 	display: inline-block;
@@ -853,7 +853,9 @@ input[type="submit"] {
 	text-transform: uppercase;
 	transition: opacity 0.15s linear;
 }
-
+input[type="submit"]{
+	background: #00aeff !important;
+}
 button:focus,
 button:hover,
 .button:focus,
@@ -4868,6 +4870,7 @@ a.to-the-top > * {
 	input[type="reset"],
 	input[type="submit"] {
 		font-size: 1.7rem;
+		background-color: #09aefa !important;
 	}
 
 	/* MEDIA */
@@ -6480,7 +6483,7 @@ a.to-the-top > * {
 	}
 }
 
-/* Footer*/
+/* / Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
     padding: 60px 0;
