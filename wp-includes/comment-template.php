@@ -2437,8 +2437,10 @@ function comment_form( $args = array(), $post_id = null ) {
 		'comment_field'        => sprintf(
 			'<p class="comment-form-comment">%s %s</p>',
 			sprintf(
-				'<label for="comment">%s</label>',
-				_x( 'Comment', 'noun' )
+				//unstard label comment
+				// '<label for="comment">%s</label>',
+				_x( ' ', 'noun' )
+				
 			),
 			'<textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea>'
 		),
