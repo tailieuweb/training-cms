@@ -28,7 +28,7 @@ if (is_single()) {
 <header class="entry-header has-text-align-center<?php echo esc_attr($entry_header_classes); ?>">
     <?php if (is_single()) { ?>
     <div class="row">
-        <div class="col-md-3 module3">
+        <div class="col-md-3 module6">
             <?php } ?>
             <?php if ($has_sidebar_9 && is_single()) { ?>
             
@@ -85,7 +85,7 @@ if (is_single()) {
 							$year = date("y", $timestamp);
 						} ?>
 
-                    <div class="headlinesdate-module-3">
+                    <div class="headlinesdate-module-6">
                         <div class="headlinesdm">
                             <div class="headlinesday">
                                 <?php echo $day ?>

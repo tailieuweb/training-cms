@@ -6681,9 +6681,3 @@ section .section-title {
 .row {
   color: white;
 }
-.footer-nav-widgets-wrapper a::before{
-	font-family: "FontAwesome";
-   content: "\f101";
-   display: inline-block;
-   padding-right: 10px;
-}
