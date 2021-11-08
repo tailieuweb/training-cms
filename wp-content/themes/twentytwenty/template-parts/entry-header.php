@@ -8,7 +8,7 @@
  * @since Twenty Twenty 1.0
  */
 get_header();
-
+$has_sidebar_9 = is_active_sidebar('sidebar-9');
 $entry_header_classes = '';
 
 if (is_singular()) {
@@ -28,7 +28,18 @@ if (is_single()) {
 <header class="entry-header has-text-align-center<?php echo esc_attr($entry_header_classes); ?>">
     <?php if (is_single()) { ?>
     <div class="row">
-        <div class="col-md-3 module6">
+	<div class="col-md-3 module9"style="margin-top: -11px;">
+            <?php } ?>
+            <?php if ($has_sidebar_9 && is_single()) { ?>
+            <div class="footer-widgets-wrapper9">
+                <?php if ($has_sidebar_9 && is_single()) { ?>
+                <div class="footer-widgets1 column-one grid-item">
+                    <div class="categories_module9" style="background:white;">
+					<?php dynamic_sidebar('sidebar-9'); ?>
+					</div>
+                    <?php } ?>
+                </div>
+            </div>
             <?php } ?>
             <?php if ($has_sidebar_9 && is_single()) { ?>
             
