@@ -1,4 +1,5 @@
 <head>
+<!-- linkcss -->
 <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module2.css" type="text/css" media="screen" />
 </head>
 <?php
