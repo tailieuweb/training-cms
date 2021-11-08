@@ -6480,7 +6480,7 @@ a.to-the-top > * {
 	}
 }
 
- Footer
+/* Footer*/
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
     padding: 60px 0;
@@ -6562,7 +6562,6 @@ section .section-title {
 .row p{
 	font-size: medium;
 }
-
 /* *************CSS */
 /* Module 4 Search */
 
@@ -6596,3 +6595,318 @@ section .section-title {
 	text-transform: capitalize !important;
 	font-size: 18px ;
 	border-radius: 8px;
+}
+
+/*-----------------------------------Tin tá»©c----------------------------------------*/
+.news {
+	background: none;
+	padding: 0;
+	color: #fff;
+}
+
+.news > .topnews {
+	background: #4bb4b6;
+	padding: 30px 0;
+}
+
+.topnews .topnewstime {
+	text-align: center;
+}
+.topnewstime > .topnewsdate{
+	font-family: 'Prata', serif;
+	font-size: 3.1em;
+	line-height: 1em;
+	margin-left: 15px;
+}
+.topnewstime > .topnewsmonth{
+	text-transform: uppercase;
+	font-size: 0.9em;
+	margin-left: 15px;
+}
+
+.news > .topnews .topnewsthumb {
+}
+.news > .topnews .topnewsthumb img {
+	width: 100%;
+	max-width: 100%;
+}
+
+.news > .topnews h4, .toparticle > h4 {
+	font-weight: bold;
+	font-size: 1.1em;
+	line-height: 1.3em;
+}
+
+.news > .topnews h4 a {
+	color: #fff;
+}
+.news > .topnews .col-md-8 {
+
+}
+.news > .topnews > .row .row {
+	margin:0 !important;
+}
+.news a {
+	color: #fff;
+}
+.row > .col-md-6 > img {
+	max-width: 100%;
+}
+.headlines {
+	background: #56bdbf;
+	overflow: hidden;
+	padding: 20px 30px;
+}
+.headlines ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-left: 10%;
+	font-size: 2rem;
+}
+.headlines ul > li {
+	overflow: hidden;
+	display: table;
+	margin-bottom: 5px;
+	width: 100%;
+}
+.headlines ul > li > .headlinestitle {
+	display: table-cell; vertical-align: middle; width: 85%;
+}
+
+.headlinesdate .headlinesdm, .news > .headlines .headlinesdate, .headlinesdate {
+	float: left;
+	font-family: 'Prata', serif;
+}
+.headlines .headlinesdate { font-size: 0.8em; width: 15%; min-width: 55px; display: table-cell; vertical-align: middle;}
+.headlinesdate .headlinesday, .news > .headlines .headlinesmonth {line-height: 1.7em;}
+.headlinesdate .headlinesday {
+	border-bottom: 1px solid #fff;
+}
+.headlinesdate .headlinesyear {
+	line-height: 3.5em;
+	float: left;
+	margin-left: 3px;
+}
+
+.news > .newsall {
+	display: block;
+	padding: 10px;
+	text-align: center;
+	background: #62c6c8;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/*-----------------------------------List item panel -----------------------------------*/
+.list-group-item {
+	border: none;
+	border-bottom: 1px #d9d9d9 solid;
+	margin-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	margin: 0 15px;
+}
+
+.list-group-item:last-child {
+	border: none;
+}
+
+.list-group {
+	list-style: disc;
+	margin-bottom: 0;
+}
+
+.list-group-item:before {
+	font-family: Arial, Helvetica, sans-serif;
+	color:#f5ce31;
+	content:"\2022";
+	font-size:2em;
+	padding-right:.5em;
+	position:relative;
+	top:.15em;
+}
+.top_news_block, .list_new_view {
+	background: #fff;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+}
+.top_news_block_thumb img {
+	max-width: 100%;
+	width: 100%;
+}
+.top_news_block_desc {
+	font-size: 0.9em;
+	padding: 15px;
+}
+.top_news_block_desc h4 {
+	text-transform: uppercase;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
+}
+.top_news_block_desc .topnewstime {
+	margin-top: 12px;
+	text-align:center;
+	padding-left: 0;
+}
+.list_new_view .top_news_block_desc .topnewstime {padding-left: 15px;}
+.shortdesc {
+	border-left: 1px solid #666;
+}
+
+.pagination-centered {
+  text-align: center;
+}
+/*--------------------------------------------------Students-----------------------------------------*/
+.list_news .headlines {background: #fff;}
+.list_news .headlines a {color: #000;}
+.list_news .headlines .headlinesday, .detail .headlinesdate .headlinesday {border-bottom: 1px solid #000;}
+.feedback_item {margin: 0 0 15px;}
+.feedback_owner .feedback_thumb img {border-radius: 50%;}
+.feedback_owner .feedback_name {
+	color: #f5ce31;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
+	text-transform: capitalize;
+	font-size: 1.2em;
+}
+.feedback_owner { margin: 15px 0;}
+.feedback_owner .feedback_title { margin: 5px 0 0;}
+.feedback_owner .feedback_desc {padding: 5px 0;}
+.feedback_detail {
+	background:#fff; padding: 25px;
+    position: relative;
+	border: 1px solid #e0e0e0;
+}
+.feedback_detail:before {
+	content: "";
+	position: absolute;
+	top: -12px;
+	left: 30px;
+	border-width: 0 12px 12px;
+	border-style: solid;
+	border-color: #d2d2d2 transparent;
+	display: block;
+	width: 0;
+}
+.feedback_detail:after {
+	content: "";
+	position: absolute;
+	top: -11px;
+	left: 31px;
+	border-width: 0 11px 11px;
+	border-style: solid;
+	border-color: #fff transparent;
+	display: block;
+	width: 0;
+}
+.feedback_detail blockquote {
+	padding: 0;
+	border: none;
+	margin: 0;
+	font-size: 0.9em;
+	text-align: justify;
+}
+.feedback_detail blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 5em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+  font-family: 'Prata', serif;
+}
+.feedback_detail blockquote:after {
+	content: close-quote;
+}
+
+.contest_list img {width: 100%; max-width: 100%;}
+.contest_list .contest_item {padding-bottom: 4px;}
+.contest_list .contest_item:nth-child(2n+0) {
+	padding-left: 2px;
+}
+.contest_list .contest_item:nth-child(2n+1) {
+	padding-right: 2px;
+}
+
+.dep_item {
+	padding: 10px;
+	background: #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1.3em;
+	margin-bottom: 1px;
+}
+.dep_network {
+	border-left: 10px #45b29d solid;
+	color: #45b29d;
+}
+.dep_software {
+	border-left: 10px #efc94c solid;
+	color: #efc94c;
+}
+.dep_informatics {
+	border-left: 10px #992255 solid;
+	color: #992255;
+}
+.dep_graphic {
+	border-left: 10px #e27a3f solid;
+	color: #e27a3f;
+}
+.dep_name {
+	padding: 15px 0;
+}
+
+/*--------------------------------------------------Details-----------------------------------------*/
+.detail .title {
+	border: none;
+	margin-top: 45px;
+}
+
+.detail .title .headlinesdate {
+	background: #f5ce31;
+	border-radius: 50%;
+	padding: 10px 17px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+}
+.detail .title h1 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 2.1em;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+.detail .overview {
+	font-style: italic;
+	margin: 15px 0;
+	text-align: justify;
+}
+.detail .maincontent {margin: 20px 0; text-align: justify; line-height: 1.7em;}
+.detail .overview_thumb img, .detail .maincontent img {width: 100%; max-width: 100%;}
+.detail .overviewline {border-bottom: 1px solid #cecece; margin: 25px 0 15px; position: relative;}
+.detail .overviewline:before {
+content: "";
+position: absolute;
+top: 0;
+left: 50px;
+border-width: 12px 12px 0;
+border-style: solid;
+border-color: #cecece transparent;
+display: block;
+width: 0;
+}
+
+.detail .overviewline:after {
+content: "";
+position: absolute;
+top: 0;
+left: 51px;
+border-width: 11px 11px 0;
+border-style: solid;
+border-color: #f5f5f5 transparent;
+display: block;
+width: 0;
+}

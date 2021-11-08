@@ -25,7 +25,9 @@
 
 get_header();
 ?>
-
+<link href="./wp-content/themes/twentytwenty/module7.css" rel="stylesheet">
+<link href="./wp-content/themes/twentytwenty/style.css" rel="stylesheet">
+<link href="./wp-content/themes/twentytwenty/bootstrap.min.css" rel="stylesheet">
 <main id="site-content" role="main">
 
 	<?php
