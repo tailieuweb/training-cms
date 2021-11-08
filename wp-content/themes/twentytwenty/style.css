@@ -4094,12 +4094,11 @@ div.comment:first-of-type {
 /* Widget Base ------------------------------- */
 
 .widget {
-  margin-top: 3rem;
+  margin-top: 5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.widget:first-child {
-  margin-top: 0;
-}
+
 
 .widget-content > div > *:first-child {
   margin-top: 0;
