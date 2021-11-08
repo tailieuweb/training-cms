@@ -73,7 +73,7 @@
   float: left;
   font-family: "Prata", serif;
   position: relative;
-  left: 750px;
+  left: 85%;
   top: -38px;
 }
 
@@ -82,16 +82,3 @@
   left: -15px;
 }
 
-.module3 .footer-widgets-wrapper3 a::before {
-  font-family: "FontAwesome";
-  content: "\f111";
-  padding-right: 15px;
-  width: 5px;
-  height: 5px;
-  color: #f5ce31;
-}
-
-.module3 .footer-widgets-wrapper3 li a {
-  color: #90bbe0 !important;
-  padding-bottom: 10px;
-}
