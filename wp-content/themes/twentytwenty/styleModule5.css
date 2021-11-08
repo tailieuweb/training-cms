@@ -33,6 +33,7 @@
 
 .list_new_view_search .desc_search {
 	border-left: 1px solid #666;
+	background: #fff !important;
 }
 
 .list_new_view_search .desc_search h4 {
