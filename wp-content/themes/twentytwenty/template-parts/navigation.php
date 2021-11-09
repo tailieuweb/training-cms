@@ -24,8 +24,8 @@ if ($next_post || $prev_post) {
 ?>
     <!-- Module-7 -->
 	<div class="col-md-8 module-7">
-        // Module-6
-	<div class="author-module-6"><?php	echo "(Theo ".get_the_author().")"; ?></div>
+        <!-- Module-6 -->
+	
 	<nav class="pagination-single section-inner<?php echo esc_attr($pagination_classes); ?>" aria-label="<?php esc_attr_e('Post', 'twentytwenty'); ?>" role="navigation">
 
 		<!-- <hr class="styled-separator is-style-wide" aria-hidden="true" /> -->
