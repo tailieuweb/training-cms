@@ -1,0 +1,70 @@
+@media (min-width: 700px) {
+    .pagination-single-inner {
+        all: unset;
+    }
+}
+
+#another__post-wrapper {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    font-size: 1.8rem !important;
+    overflow: hidden;
+    padding: 20px 30px;
+}
+
+#another__post-wrapper .another__post {
+    display: flex;
+    flex-direction: row;
+    max-width: 58rem;
+    width: calc(100% - 4rem);
+    margin-bottom: 10px;
+}
+
+#another__post-wrapper .another__post .headlinesdate {
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.6rem !important;
+}
+
+#another__post-wrapper .another__post .headlinesdate .headlinesdm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#another__post-wrapper .another__post .headlinesdate .headlinesday {
+    border-bottom: 1px solid #000;
+}
+
+#another__post-wrapper .another__post .headlinesdate .headlinesmonth {
+}
+
+#another__post-wrapper .another__post .headlinesdate .headlinesyear {
+    margin-left: 3px;
+}
+
+#another__post-wrapper .another__post .headlinestitle {
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+}
+
+#another__post-wrapper .another__post .headlinestitle a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    font-weight: 200;
+    flex: unset;
+}
+
+#another__post-wrapper .another__post .headlinestitle a:hover {
+    text-decoration: underline;
+}

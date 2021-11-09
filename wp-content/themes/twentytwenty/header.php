@@ -34,84 +34,10 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
               integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
               crossorigin="anonymous">
-        <style>
 
-            .list_new_view {
-
-                font-size: 0.9em;
-                padding: 15px;
-                margin-bottom: 15px;
-
-            }
-
-            .list_new_view .vu-class-center {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-
-            }
-
-            .list_new_view .topnewstime > span.topnewsdate {
-                font-family: 'Prata', serif;
-                font-size: 3.1em;
-                line-height: 1em;
-                margin-left: 15px;
-            }
-
-            .list_new_view .topnewstime > span.topnewsmonth {
-                text-transform: uppercase;
-                font-size: 0.9em;
-                margin-left: 15px;
-            }
-
-            .list_new_view a {
-                color: #428bca;
-                text-decoration: none;
-            }
-
-            .list_new_view .shortdesc {
-                border-left: 1px solid #666;
-            }
-
-            .list_new_view .shortdesc p {
-                display: inline;
-            }
-
-            .list_new_view .shortdesc h4 {
-                padding-top: 0;
-                margin-top: 0;
-            }
-
-            .list_new_view .row .top_news_block_desc {
-                background: #fff;
-                -webkit-box-shadow: 0px 0px 5px 0px rgb(0 0 calc(0 / 20%));
-                -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-                box-shadow: 0px 0px 5px 0px rgb(0 0 calc(0 / 20%));
-                padding: 15px;
-            }
-
-            #site-content {
-                margin-left: 20px;
-            }
-
-            /*    search */
-            #search-form-2-label::before {
-                transform: translateX(40px) translateY(20%);
-                content: "\f002";
-                font-weight: 900;
-                font-size: 2rem;
-                font-family: "Font Awesome 5 Free";
-                -moz-osx-font-smoothing: grayscale;
-                -webkit-font-smoothing: antialiased;
-            }
-
-            #search-form-2 {
-                padding-left: 40px;
-            }
-        </style>
         <?php wp_head(); ?>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module7.css" type="text/css" media="screen" />
-
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module2.css" type="text/css" media="screen" />
     </head>
 
 <body <?php body_class(); ?>>
