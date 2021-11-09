@@ -143,7 +143,7 @@ if ( ! is_search() ) {
 			?>
 			</div>
 			<?php $has_sidebar_10 = is_active_sidebar( 'sidebar-10' );?>
-			<div class="col-md-4">
+			<div class="col-md-4 sidebar10">
 			<?php if ( $has_sidebar_10 ) { ?>	
 					<div class="content-widgets-wrapper">
 						<?php if ( $has_sidebar_10 ) { ?>
