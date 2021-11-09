@@ -13,7 +13,7 @@
 
 ?>
 <?php
-if (!is_single()) { ?>
+if (!is_single() && !is_search()) { ?>
 	<!-- Trang content !-->
 	<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
@@ -125,84 +125,98 @@ if (!is_single()) { ?>
 		?>
 
 	</article><!-- .post -->
-<?php } else { ?>
-	<!-- Trang chi tiết !-->
-	<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+<?php } else if(is_search()) { ?>
+	<!-- Trang search !-->
+	<article <?php post_class('search-danh-sach'); ?> id="post-<?php the_ID(); ?>">
 
+	<?php
+
+	get_template_part('template-parts/entry-header');
+
+	if (!is_search()) {
+		get_template_part('template-parts/featured-image');
+	}
+
+	?>
+
+	<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
 		<?php
-
-		get_template_part('template-parts/entry-header');
-
-		if (!is_search()) {
-			get_template_part('template-parts/featured-image');
+		if (is_search()) {
+			echo '<div class="time-post">';
+			$post_date = get_the_date('d', $post->ID);
+			$post_month = get_the_date('m', $post->ID);
+			echo '<span class="day">' . $post_date . '</span> <br>';
+			echo '<span class="month">' . $post_month . '</span>';
+			echo '</div>';
 		}
-
 		?>
+		<div class="entry-content">
 
-		<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
-
-			<div class="entry-content">
-
-				<?php
-				if (is_search() || !is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
-					the_excerpt();
-				} else {
-					the_content(__('Continue reading', 'twentytwenty'));
-				}
-				?>
-			</div><!-- .entry-content -->
-
-		</div><!-- .post-inner -->
-
-		<div class="section-inner">
 			<?php
-			wp_link_pages(
-				array(
-					'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__('Page', 'twentytwenty') . '"><span class="label">' . __('Pages:', 'twentytwenty') . '</span>',
-					'after'       => '</nav>',
-					'link_before' => '<span class="page-number">',
-					'link_after'  => '</span>',
-				)
-			);
-
-			edit_post_link();
-
-			// Single bottom post meta.
-			twentytwenty_the_post_meta(get_the_ID(), 'single-bottom');
-
-			if (post_type_supports(get_post_type(get_the_ID()), 'author') && is_single()) {
-
-				get_template_part('template-parts/entry-author-bio');
+			if (!is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
+				the_excerpt();
+			} else {
+				the_content(__('Continue reading', 'twentytwenty'));
 			}
 			?>
 
-		</div><!-- .section-inner -->
+		</div><!-- .entry-content -->
 
+	</div><!-- .post-inner -->
+
+	<div class="section-inner">
 		<?php
+		wp_link_pages(
+			array(
+				'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__('Page', 'twentytwenty') . '"><span class="label">' . __('Pages:', 'twentytwenty') . '</span>',
+				'after'       => '</nav>',
+				'link_before' => '<span class="page-number">',
+				'link_after'  => '</span>',
+			)
+		);
 
-		if (is_single()) {
+		edit_post_link();
 
-			get_template_part('template-parts/navigation');
+		// Single bottom post meta.
+		twentytwenty_the_post_meta(get_the_ID(), 'single-bottom');
+
+		if (post_type_supports(get_post_type(get_the_ID()), 'author') && is_single()) {
+
+			get_template_part('template-parts/entry-author-bio');
 		}
-
-		/*
- * Output comments wrapper if it's a post, or if comments are open,
- * or if there's a comment number – and check for password.
- */
-		if ((is_single() || is_page()) && (comments_open() || get_comments_number()) && !post_password_required()) {
 		?>
 
-			<div class="comments-wrapper section-inner">
+	</div><!-- .section-inner -->
 
-				<?php comments_template(); ?>
+	<?php
 
-			</div><!-- .comments-wrapper -->
+	if (is_single()) {
 
-		<?php
-		}
-		?>
+		get_template_part('template-parts/navigation');
+	}
 
-	</article><!-- .post -->
+	/*
+	 * Output comments wrapper if it's a post, or if comments are open,
+	 * or if there's a comment number – and check for password.
+	 */
+	if ((is_single() || is_page()) && (comments_open() || get_comments_number()) && !post_password_required()) {
+	?>
+
+		<div class="comments-wrapper section-inner">
+
+			<?php comments_template(); ?>
+
+		</div><!-- .comments-wrapper -->
+
+	<?php
+	}
+	?>
+
+</article><!-- .post -->
 
 
-<?php } ?>
+<?php } else if(is_single()){ ?>
+	
+
+
+	<?php }?>
