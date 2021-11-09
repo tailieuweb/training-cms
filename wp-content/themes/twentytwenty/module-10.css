@@ -16,9 +16,10 @@
     margin-top: 100px;
 }
 
-.rowRecent h2 {
+.rowRecent .module-10-recent {
     font-weight: 800 !important;
     font-size: 1.3em !important;
+    color: black;
 }
 
 .rowRecent .list-group {
@@ -31,13 +32,13 @@
     margin: 15px !important;
 }
 
-.rowRecent .wp-block-latest-posts li a {
-    color: #428bca;
+.rowRecent .wp-block-latest-posts .module-10-listLi .module-10-listA {
+    color: #428bca !important;
     text-decoration: none;
     font-size: 10px;
 }
 
-.rowRecent .wp-block-latest-posts li {
+.rowRecent .wp-block-latest-posts .module-10-listLi {
     position: relative;
     display: block;
     padding: 10px 15px;
