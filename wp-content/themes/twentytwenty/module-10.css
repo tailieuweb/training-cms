@@ -33,7 +33,7 @@
 }
 
 .rowRecent .wp-block-latest-posts .module-10-listLi .module-10-listA {
-    color: #428bca;
+    color: #428bca !important;
     text-decoration: none;
     font-size: 10px;
 }
