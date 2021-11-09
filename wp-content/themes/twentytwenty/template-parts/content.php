@@ -12,6 +12,7 @@
  * @since Twenty Twenty 1.0
  */
 
+$has_sidebar_9 = is_active_sidebar('module-9');
 $class = '';
 if (!is_single()) {
 	$class = 'danh-sach';
@@ -44,7 +45,17 @@ if (!is_single()) {
 			?>
 					<div class="row rowContent">
 
-						<div class="col-md-3"></div>
+						<div class="col-md-3">
+							<?php if ($has_sidebar_9) { ?>
+								<div class="footer-widgets-wrapper">
+									<?php if ($has_sidebar_9) { ?>
+										<div class="footer-widgets9 column-one grid-item ">
+											<?php dynamic_sidebar('module-9'); ?>
+										</div>
+									<?php } ?>
+								</div>
+							<?php } ?>
+						</div>
 						<!-- Module-6 -->
 						<div class="col-md-6">
 							<div class="detail-post-content">
