@@ -56,20 +56,19 @@ if (!is_single()) {
 						<!-- Module-10 -->
 						<div class="col-md-3">
 							<div class="footer-widgets column-one grid-item rowRecent">
-
 								<div class="widget widget_block">
 									<div class="widget-content">
 										<div class="wp-block-group">
 											<div class="wp-block-group__inner-container">
-												<h2>Recent Posts</h2>
+												<h2 class="module-10-recent">Recent Posts</h2>
 												<div class="bg_gray"></div>
 												<div class="list-group">
 													<ul class="wp-block-latest-posts__list wp-block-latest-posts">
-														<li><a href="http://wordpress.local:82/2021/09/30/pin-co-the-uon-va-co-gian-nhu-ran/">Pin có thể uốn và co giãn như rắn</a></li>
-														<li><a href="http://wordpress.local:82/2021/09/30/tim-nguoi-gioi-cho-nhung-nghien-cuu-hang-dau-tai-vkist/">Tìm người giỏi cho những nghiên cứu hàng đầu tại VKIST</a></li>
-														<li><a href="http://wordpress.local:82/2021/09/30/usyk-khong-muon-knock-out-joshua/">Usyk không muốn knock-out Joshua</a></li>
-														<li><a href="http://wordpress.local:82/2021/09/30/bo-dao-nha-vao-chung-ket-futsal-world-cup/">Bồ Đào Nha vào chung kết futsal World Cup</a></li>
-														<li><a href="http://wordpress.local:82/2021/09/30/mourinho-cham-moc-200-tran-tai-cup-chau-au/">Mourinho chạm mốc 200 trận tại Cup châu Âu</a></li>
+														<li class="module-10-listLi"><a class="module-10-listA" href="http://wordpress.local:82/2021/09/30/pin-co-the-uon-va-co-gian-nhu-ran/">Pin có thể uốn và co giãn như rắn</a></li>
+														<li class="module-10-listLi"><a class="module-10-listA" href="http://wordpress.local:82/2021/09/30/tim-nguoi-gioi-cho-nhung-nghien-cuu-hang-dau-tai-vkist/">Tìm người giỏi cho những nghiên cứu hàng đầu tại VKIST</a></li>
+														<li class="module-10-listLi"><a class="module-10-listA" href="http://wordpress.local:82/2021/09/30/usyk-khong-muon-knock-out-joshua/">Usyk không muốn knock-out Joshua</a></li>
+														<li class="module-10-listLi"><a class="module-10-listA" class="module-10-listA" href="http://wordpress.local:82/2021/09/30/bo-dao-nha-vao-chung-ket-futsal-world-cup/">Bồ Đào Nha vào chung kết futsal World Cup</a></li>
+														<li class="module-10-listLi"><a class="module-10-listA" href="http://wordpress.local:82/2021/09/30/mourinho-cham-moc-200-tran-tai-cup-chau-au/">Mourinho chạm mốc 200 trận tại Cup châu Âu</a></li>
 													</ul>
 												</div>
 
