@@ -6685,3 +6685,110 @@ body{
 .search-danh-sach .time-post .month::before{
 	content: 'THÁNG ';
 }
+/* ==================================== CSS POST DETAIL ========================================== */
+.post-detail{
+	background: url('./assets/images/bg_pattern.png') repeat;
+}
+
+.post-detail header{
+	background-color: transparent !important;
+}
+
+.post-detail .entry-categories{
+	display: none;
+}
+
+.post-detail .entry-header-inner {
+	display: flex;
+}
+
+.post-detail h1.entry-title {
+    font-size: 2.1em;
+	text-align: left;
+	width: 77%;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.post-detail .post-meta-wrapper{
+	display: none;
+}
+
+.post-detail .time-post {
+	font-family: 'Prata', serif;
+	position: absolute;
+    top: 14rem;
+    right: 18em;
+    width: 100px;
+    height: 100px;
+    background: #f5ce31;
+	box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+.post-detail .time-post span{
+	position: absolute;
+}
+
+.post-detail .time-post .box-date{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+	font-size: 19px;
+}
+
+.post-detail .time-post .box-date .year{
+	margin-left: 7px;
+}
+
+.post-detail .time-post .box-date .year::before{
+	content: "'";
+}
+
+.post-detail .time-post hr{
+	margin: 0;
+	border-color: black;
+}
+
+.post-detail .entry-content p{
+	max-width: 100rem !important;
+}
+
+.post-detail .post-inner{
+	padding-top: 0;
+}
+
+.post-detail .entry-content p:nth-child(1){
+	border-top: 1px solid #cecece;
+	padding-top: 28px;
+	position: relative;
+}
+
+
+.post-detail .entry-content p:nth-child(1)::before{
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 50px;
+	border-width: 12px 12px 0;
+    border-style: solid;
+    border-color: #cecece transparent;
+    display: block;
+    width: 0;
+} 
+
+ .post-detail .entry-content p:nth-child(1)::after{
+	content: "";
+    position: absolute;
+    top: -1px;
+    left: 51px;
+    border-width: 11px 11px 0;
+    border-style: solid;
+    border-color: #f5f5f5 transparent;
+    display: block;
+    width: 0;
+}

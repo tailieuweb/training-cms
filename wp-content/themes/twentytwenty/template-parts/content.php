@@ -14,6 +14,9 @@
 if (is_search()) {
 	$newClass = 'search-danh-sach';
 }
+if (is_single()) {
+	$newClass = 'post-detail';
+}
 ?>
 <?php
 if (!is_single() && !is_search()) { ?>
@@ -136,6 +139,23 @@ if (!is_single() && !is_search()) { ?>
 		<?php
 
 		get_template_part('template-parts/entry-header');
+
+		// Chèn thời gian
+		if (is_single()) {
+			echo '<div class="time-post">';
+			$post_date = get_the_date('d', $post->ID);
+			$post_month = get_the_date('m', $post->ID);
+			$post_year = get_the_date('y', $post->ID);
+			echo '<div class="box-date">';
+			echo '<div class="head-dm">';
+			echo '<div class="day">' . $post_date . '</div>';
+			echo '<hr style="margin: 0;">';
+			echo '<div class="month">' . $post_month . '</div>';
+			echo '</div>';
+			echo '<div class="year">' . $post_year . '</div>';
+			echo '</div>';
+			echo '</div>';
+		}
 
 		if (!is_search()) {
 			get_template_part('template-parts/featured-image');
