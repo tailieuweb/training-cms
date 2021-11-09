@@ -22,7 +22,19 @@
 		<!-- Module 4: -->
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module4.css" type="text/css" media="screen" />
 
+
+        <!-- Chèn bootstrap; Lê Anh Vũ; -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!------ Include the above in your HEAD tag ---------->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
 		<?php wp_head(); ?>
+
+
+        <!-- chèn đường dẫn css module 4; Lê Anh Vũ; -->
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module2.css" type="text/css" media="screen" />
 
 	</head>
 
