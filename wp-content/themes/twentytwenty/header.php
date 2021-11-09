@@ -33,17 +33,73 @@
 		list-style-type: none !important;
 	}
 
-
 	.fa {
 		width: auto;
 		padding-left: 30% !important;
 		padding-bottom: 10% !important;
-	} 
-	 a{
+	}
+
+	a {
 		text-decoration: none !important;
 	}
 
+	.account{
+		margin-left: -10px;
+		margin-top: 30px;
+	}
 
+	.account>.dropdown >a {
+		
+		color: #777777;
+	}
+
+	.nenxam {
+		background-color: #e7e7e7;
+		padding: 40px 0px 30px 0px;
+		max-width: 100%;
+	}
+
+	.header-titles {
+		display: flow-root !important;
+	}
+
+	.logo {
+		padding: 40px 0px;
+	}
+
+	.header-inner {
+		padding: 0px !important;
+	}
+
+	.tim {
+		padding-top: 20px;
+	}
+
+	.kinhlup>a>i {
+		font-size: 21px;
+		padding-top: 20px;
+		margin-left: -27px;
+		color: #777777;
+	}
+	.kinhlup>a>p{
+		font-size: 12px;
+		margin-left: -27px;
+		margin-top: 1px;
+		color: black;
+	}
+	.kinhlup{
+		display: block;
+		margin-top: 25px;
+		
+		
+	}
+
+	.header-navigation-wrapper{
+		margin-right: -17px;
+	}
+	.primary-menu > ul>{
+		color: black;
+	}
 </style>
 <?php
 
@@ -67,10 +123,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
@@ -91,64 +145,36 @@
 
 			<div class="header-titles-wrapper">
 				<div class="row">
-					<div class="col-md-4">
-						<?php
-
-						// Check whether the header search is activated in the customizer.
-						$enable_header_search = get_theme_mod('enable_header_search', true);
-
-						if (true === $enable_header_search) {
-
-						?>
-
-							<button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
-								<span class="toggle-inner">
-									<span class="toggle-icon">
-										<?php twentytwenty_the_theme_svg('search'); ?>
-									</span>
-									<span class="toggle-text"><?php _ex('Search', 'toggle text', 'twentytwenty'); ?></span>
-								</span>
-							</button><!-- .search-toggle -->
-
-						<?php } ?>
-
+					<div class="col-md-5 co4">
 						<div class="header-titles">
-
-							<?php
-							// Site title or logo.
-							twentytwenty_site_logo();
-
-							// Site description.
-							twentytwenty_site_description();
-							?>
-
+							<div class="row">
+								<div class="col-md-6 logo">
+									<?php
+									// Site title or logo.
+									twentytwenty_site_logo(); ?>
+								</div>
+								<div class="col-md-6 nenxam">
+									<?php // Site description.
+									twentytwenty_site_description(); ?>
+								</div>
+							</div>
 						</div><!-- .header-titles -->
 
-						<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
-							<span class="toggle-inner">
-								<span class="toggle-icon">
-									<?php twentytwenty_the_theme_svg('ellipsis'); ?>
-								</span>
-								<span class="toggle-text"><?php _e('Menu', 'twentytwenty'); ?></span>
-							</span>
-						</button><!-- .nav-toggle -->
 					</div>
-					<div class="col-md-8">
+					<div class="col-md-7 co7">
 
-						<form role="search" class="navbar-form navbar-left" <?php echo $twentytwenty_aria_label; ?> method="get" class="search-form" action="<?php echo esc_url(home_url('/')); ?>">
-							<div class="form-group">
-								<input type="search" id="<?php echo esc_attr($twentytwenty_unique_id); ?>" class="search-field" placeholder="<?php echo esc_attr_x('Search &hellip;', 'placeholder', 'twentytwenty'); ?>" value="<?php echo get_search_query(); ?>" name="s" />
-							</div>
-							<button type="submit" class="search-sub" value="<?php echo esc_attr_x('Search', 'submit button', 'twentytwenty'); ?>">Submit</button>
-						</form>
+						<div class="tim">
+							<form role="search" class="navbar-form navbar-left" <?php echo $twentytwenty_aria_label; ?> method="get" class="search-form" action="<?php echo esc_url(home_url('/')); ?>">
+								<div class="form-group">
+									<input type="search" id="<?php echo esc_attr($twentytwenty_unique_id); ?>" class="search-field" placeholder="<?php echo esc_attr_x('Search &hellip;', 'placeholder', 'twentytwenty'); ?>" value="<?php echo get_search_query(); ?>" name="s" />
+								</div>
+								<button type="submit" class="search-sub" value="<?php echo esc_attr_x('Search', 'submit button', 'twentytwenty'); ?>">Submit</button>
+							</form>
+						</div>
 						</li>
 					</div>
 				</div>
-
-
-
 			</div><!-- .header-titles-wrapper -->
-
 			<div class="header-navigation-wrapper">
 
 				<?php
@@ -238,21 +264,29 @@
 				?>
 
 			</div><!-- .header-navigation-wrapper -->
-
-			<div class="account">
-				<div class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-						<i class="fa fa-user-circle-o"></i>
-						Account
-					</a>
-					<ul class="dropdown-menu">
-						<li><a href="<?php header("location:..tranning-cms\wp-includes\wp-login.php"); ?>">Login</a></li>
-						<li><a href="#">Loguot</a></li>
-					</ul>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="kinhlup">
+						<a href=""><i class="fa fa-search" aria-hidden="true"></i>
+						<p>search</p></a>
+						
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="account">
+						<div class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								<i class="fa fa-user-circle-o"></i>
+								Account								
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Login</a></li>
+								<li><a href="#">Loguot</a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
-
-
 
 
 		</div><!-- .header-inner -->
