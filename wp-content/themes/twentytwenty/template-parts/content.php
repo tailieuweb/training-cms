@@ -114,7 +114,7 @@ if ( ! is_search() ) {
 
 	<div class="entry-content">
 	<?php $has_sidebar_9 = is_active_sidebar( 'sidebar-9' );?>
-		<div class="row row-adjust">
+		<div class="row-adjust">
 			<div class="col-md-3" >
 				<?php if ( $has_sidebar_9 ) { ?>	
 					<div class="content-widgets-wrapper">

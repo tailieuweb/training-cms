@@ -6479,10 +6479,12 @@ a.to-the-top > * {
 
 
 /* Module 9 */
-.post-inner .entry-content .row-adjust{
-	max-width: calc(100% - 12rem) !important;
+.post-inner  .row-adjust{
+	/* max-width: 98rem !important; */
+	display: flex;
+	flex-direction: row;
+	max-width: 118rem !important;
 }
-
 .entry-content .wp-block-archives *, .entry-content .wp-block-categories *, .entry-content .wp-block-latest-posts *, .entry-content .wp-block-latest-comments * {
 	font-family: inherit;
     color: #428bca;
