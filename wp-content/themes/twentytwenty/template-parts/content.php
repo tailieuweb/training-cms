@@ -64,6 +64,11 @@
 				$strContent = str_replace('</p>', '', $temp);
 				$temp = mb_substr($strContent, 0, 250);
 
+				// Get image:
+				preg_match('/src="([^"]*)"/', $content, $matches);
+				preg_match('/(?<!_)src=([\'"])?(.*?)\\1/', $content, $matches);
+				// echo '<p>Image URL: ' . var_dump($matches[0]) . '</p>';
+
 				// Title:
 				$title = $a_post->post_title;
 

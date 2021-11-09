@@ -5472,6 +5472,22 @@ a.to-the-top>* {
 	font-size: 15px;
 }
 
+.card-item .post__iwrapper .secs {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	/* align-items: center; */
+}
+
+.card-item .post__iwrapper .sec-left {
+	width: 70%;
+    max-width: 300px;
+}
+
+.card-item .post__iwrapper .sec-left .post-img {
+	width: 100%;
+}
+
 
 
 /* Search box: */

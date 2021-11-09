@@ -85,9 +85,26 @@ if ( is_singular() ) {
 <header class="entry-header has-text-align-center<?php echo esc_attr( $entry_header_classes ); ?>">
 	<div class="post__iwrapper">
 		<?php
+			// Get image src:
+			preg_match('/src="([^"]*)"/', get_post()->post_content, $matches);
+			preg_match('/(?<!_)src=([\'"])?(.*?)\\1/', get_post()->post_content, $matches);
+			// echo '<img ' . $matches[0] . '>';
+
+			echo '<div class="secs">';
+
+			echo '<div class="sec-left">';
+			if (count($matches) != 0) {
+				echo '<img ' . $matches[0] . ' class="post-img">';
+			}
+			echo '</div>';
+
+			echo '<div class="sec-right">';
 			echo '<div class="post__iwrapper__day">' . substr(get_post()->post_date, 8, 2) . '</div>';
 			echo '<div class="post__iwrapper__month">Tháng ' . substr(get_post()->post_date, 5, 2) . ',</div>';
 			echo '<div class="post__iwrapper__year">' . substr(get_post()->post_date, 0, 4) . '</div>';
+			echo '</div>';
+
+			echo '</div>';
 		?>
 	</div>
 </header><!-- .entry-header -->
