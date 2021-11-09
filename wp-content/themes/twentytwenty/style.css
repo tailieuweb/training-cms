@@ -3587,7 +3587,7 @@ figure.wp-block-table.is-style-stripes {
 /* Alignment Classes ------------------------- */
 
 .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
-	max-width: 58rem;
+	max-width: 55rem;
 	width: calc(100% - 4rem);
 }
 
@@ -6501,9 +6501,20 @@ a.to-the-top > * {
 .content-adjust-post{
 	padding: 5px;
 }
+.content-adjust-post p{
+	font-size: 0.9em;
+	font-family: 'Open Sans', sans-serif;
+	color: #777;
+}
 .content-adjust-post-meta{
 	padding: 5px;
 }
+.post-month{
+	font-size: 0.9em;
+	
+}
+
+
 /*end css entry-content*/
 
 /*css header*/
