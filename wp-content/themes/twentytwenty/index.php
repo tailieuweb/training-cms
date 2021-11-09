@@ -106,7 +106,7 @@ get_header();
 
                 echo "
   <div class='list_new_view'>
-    <div class='row'>
+    <div class='row vu-class-center'>
       <div class='col-md-7 top_news_block_desc'>
         <div class='row'>
           <div class='col-md-3 col-xs-3 topnewstime'>
