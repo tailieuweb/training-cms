@@ -6589,33 +6589,4 @@ section .section-title {
 /*	border-left: 1px solid #666;*/
 /*	padding-top: 3rem;*/
 /*}*/
-.item-inner>.content-inner{
-	border-left: 1px solid #666;
-	padding-top: 1rem;
-}
-.title-entry{
-	font-size: 18px !important;
-	text-transform: uppercase;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: bold;
-	/*margin: 0 !important;*/
-}
-.p-entry>p{
-	font-size: 0.9em;
-	font-family: 'Open Sans', sans-serif;
-
-}
-.title-entry:hover{
-	text-decoration: underline;
-
-}
-.title-entry>a{
-	color: #428bca !important;
-	text-decoration: none;
-}
-.title-entry>a:hover{
-color: #2A6496 !important;
-
-}
-
 
