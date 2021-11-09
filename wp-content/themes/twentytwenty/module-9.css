@@ -1,1 +1,35 @@
 /* Module 9 css */
+.footer-widgets-wrapper9 h2 {
+    color: #000 !important;
+}
+.footer-widgets-wrapper9 .wp-block-group__inner-container .cat-item a{
+    color: #118fb6 !important;
+    font-weight: 100;
+}
+
+.footer-widgets-wrapper9 .wp-block-group__inner-container .cat-item{
+    height: 56px;
+    border-top: 1px #c7c7c7 solid;
+    width: 190px;
+}
+.footer-widgets-wrapper9 .wp-block-group__inner-container {
+    text-align: left;
+    position: absolute;
+    left: 15%;
+
+    border: none;
+	border-bottom: 1px #d9d9d9 solid;
+	margin-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	margin: 0 15px;
+}
+.footer-widgets-wrapper9 .wp-block-group__inner-container .cat-item a::before{
+    font-family: Arial, Helvetica, sans-serif;
+	color:#f5ce31;
+	content:"\2022";
+	font-size:2em;
+	padding-right:.5em;
+	position:relative;
+	top:.15em;
+}
