@@ -30,22 +30,22 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ) 
 			$footer_top_classes .= $has_social_menu ? ' has-social-menu' : '';
 
 			if ( $has_footer_menu || $has_social_menu ) {
-				?>
-				<div class="footer-top<?php echo $footer_top_classes; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output ?>">
-					<?php if ( $has_footer_menu ) { ?>
+                            ?>
+                            <div class="footer-top<?php echo $footer_top_classes; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output ?>">
+                                <?php if ( $has_footer_menu ) { ?>
 
-						<nav aria-label="<?php esc_attr_e( 'Footer', 'twentytwenty' ); ?>" role="navigation" class="footer-menu-wrapper">
+                                    <nav aria-label="<?php esc_attr_e( 'Footer', 'twentytwenty' ); ?>" role="navigation" class="footer-menu-wrapper">
 
-							<ul class="footer-menu reset-list-style">
-								<?php
-								wp_nav_menu(
-									array(
-										'container'      => '',
-										'depth'          => 1,
-										'items_wrap'     => '%3$s',
-										'theme_location' => 'footer',
-									)
-								);
+                                        <ul class="footer-menu reset-list-style">
+                                            <?php
+                                            wp_nav_menu(
+                                                array(
+                                                    'container'      => '',
+                                                    'depth'          => 1,
+                                                    'items_wrap'     => '%3$s',
+                                                    'theme_location' => 'footer',
+                                                )
+                                            );
 								?>
 							</ul>
 
@@ -86,29 +86,29 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ) 
 
 			<?php if ( $has_sidebar_1 || $has_sidebar_2 ) { ?>
 
-				<aside class="footer-widgets-outer-wrapper" role="complementary">
+<!--				<aside class="footer-widgets-outer-wrapper" role="complementary">-->
 
-					<div class="footer-widgets-wrapper">
+<!--					<div class="footer-widgets-wrapper">-->
+<!---->
+<!--						--><?php //if ( $has_sidebar_1 ) { ?>
+<!---->
+<!--							<div class="footer-widgets column-one grid-item">-->
+<!--								--><?php //dynamic_sidebar( 'sidebar-1' ); ?>
+<!--							</div>-->
+<!---->
+<!--						--><?php //} ?>
+<!---->
+<!--						--><?php //if ( $has_sidebar_2 ) { ?>
+<!---->
+<!--							<div class="footer-widgets column-two grid-item">-->
+<!--								--><?php //dynamic_sidebar( 'sidebar-2' ); ?>
+<!--							</div>-->
+<!---->
+<!--						--><?php //} ?>
+<!---->
+<!--					</div>--><!-- .footer-widgets-wrapper -->
 
-						<?php if ( $has_sidebar_1 ) { ?>
-
-							<div class="footer-widgets column-one grid-item">
-								<?php dynamic_sidebar( 'sidebar-1' ); ?>
-							</div>
-
-						<?php } ?>
-
-						<?php if ( $has_sidebar_2 ) { ?>
-
-							<div class="footer-widgets column-two grid-item">
-								<?php dynamic_sidebar( 'sidebar-2' ); ?>
-							</div>
-
-						<?php } ?>
-
-					</div><!-- .footer-widgets-wrapper -->
-
-				</aside><!-- .footer-widgets-outer-wrapper -->
+<!--				</aside>--><!-- .footer-widgets-outer-wrapper -->
 
 			<?php } ?>
 
