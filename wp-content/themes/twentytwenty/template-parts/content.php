@@ -41,11 +41,53 @@ if (!is_single()) {
 			} else {
 
 				if (is_single()) {
-                    ?>
-                    <!-- Module-6 -->
-                    <div class="detail-post-content"> <?php
-					the_content(__('Continue reading', 'twentytwenty'));
-                    ?></div> <?php
+			?>
+					<div class="row rowContent">
+
+						<div class="col-md-3"></div>
+						<!-- Module-6 -->
+						<div class="col-md-6">
+							<div class="detail-post-content">
+								<?php
+								the_content(__('Continue reading', 'twentytwenty'));
+								?>
+							</div>
+						</div>
+						<!-- Module-10 -->
+						<div class="col-md-3">
+							<div class="footer-widgets column-one grid-item rowRecent">
+
+								<div class="widget widget_block">
+									<div class="widget-content">
+										<div class="wp-block-group">
+											<div class="wp-block-group__inner-container">
+												<h2>Recent Posts</h2>
+												<div class="bg_gray"></div>
+												<div class="list-group">
+													<ul class="wp-block-latest-posts__list wp-block-latest-posts">
+														<li><a href="http://wordpress.local:82/2021/09/30/pin-co-the-uon-va-co-gian-nhu-ran/">Pin có thể uốn và co giãn như rắn</a></li>
+														<li><a href="http://wordpress.local:82/2021/09/30/tim-nguoi-gioi-cho-nhung-nghien-cuu-hang-dau-tai-vkist/">Tìm người giỏi cho những nghiên cứu hàng đầu tại VKIST</a></li>
+														<li><a href="http://wordpress.local:82/2021/09/30/usyk-khong-muon-knock-out-joshua/">Usyk không muốn knock-out Joshua</a></li>
+														<li><a href="http://wordpress.local:82/2021/09/30/bo-dao-nha-vao-chung-ket-futsal-world-cup/">Bồ Đào Nha vào chung kết futsal World Cup</a></li>
+														<li><a href="http://wordpress.local:82/2021/09/30/mourinho-cham-moc-200-tran-tai-cup-chau-au/">Mourinho chạm mốc 200 trận tại Cup châu Âu</a></li>
+													</ul>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="widget widget_block">
+									<div class="widget-content">
+										<div class="wp-block-group">
+											<div class="wp-block-group__inner-container"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<?php
 				} else {
 					$post = get_post();
 					$day = $month = $year = 0;
@@ -57,7 +99,7 @@ if (!is_single()) {
 					/** $content = preg_replace('/<figure.*?>.*?<\/figure>/', '', $post->post_content); */
 					$content = findHTMLTag($post->post_content, 'p');
 					$content = $content ? $content : 'This post hasn\'t description !!';
-			?>
+				?>
 					<div class="list_new_view">
 						<div class="row post-home-page top_news_block_desc">
 							<div class="col-md-3 col-xs-3 topnewstime">
