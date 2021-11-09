@@ -6810,58 +6810,39 @@ body{
 
 .footer-nav-widgets-wrapper h2{
 	font-size: 25px;
+}
+.align-items-center{
 	position: relative;
+	left: -32%;
+	width: 600px;
+	padding: 30px 0;
+	/* padding-top: 0px; */
 }
-
-.footer-nav-widgets-wrapper h2::before{
-	content: '';
-    position: absolute;
-    width: 3px;
-    left: -18px;
-    background: #fff;
-    height: 40px;
+.btn-group-lg>.btn, .btn-lg{
+	margin-left: -87px;
 }
-
-
-.footer-nav-widgets-wrapper a{
-	text-decoration: none;
-	color: #fff !important;
-	font-size: 15px;
-	font-weight: 400;
+.fa-search:before{
+	position: relative;
+	z-index: 1;
+	left: 153%;
 }
-
-.footer-nav-widgets-wrapper a::before{
-	font-family: "FontAwesome";
-   content: "\f101";
-   display: inline-block;
-   padding-right: 10px;
-}
-
-.footer-nav-widgets-wrapper a:hover{
-	margin-left: 6px;
-	text-decoration: none;
-}
-
-.column-two{
-	display: flex;
-	margin-top: 0px;
-}
-.column-three h2{
-	margin-top: 0px;
-}
-
-.column-three ul{
-	margin-top: -10px!important;
-}
-
-
-.footer-widgets .widget{
-	margin-top: 0;
-}
-
-
-.footer-widgets .widget .wp-block-group{
-	margin-top: 0!important;
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+textarea{
+	padding-left: 40px;
+	padding-right: 96px;
 }
 .column-two{
 	flex-direction: column;
@@ -6909,4 +6890,7 @@ body{
 
 #footer ul.list-unstyled li a::before{
 	content: '';
+}
+.section-inner.thin{
+	padding-top: 0px;
 }
