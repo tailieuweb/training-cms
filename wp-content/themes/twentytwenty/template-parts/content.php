@@ -29,7 +29,7 @@ if (is_single()) {
 			echo '<div class="box-date">';
 			echo '<div class="head-dm">';
 			echo '<div class="day">' . $post_date . '</div>';
-			echo '<hr>';
+			echo '<hr style="margin: 0;">';
 			echo '<div class="month">' . $post_month . '</div>';
 			echo '</div>';
 			echo '<div class="year">' . $post_year . '</div>';

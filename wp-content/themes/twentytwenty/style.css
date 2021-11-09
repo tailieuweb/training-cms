@@ -6496,7 +6496,6 @@ a.to-the-top > * {
 }
 
 .post-detail h1.entry-title {
-    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 2.1em;
 	text-align: left;
 	width: 77%;
@@ -6573,9 +6572,9 @@ a.to-the-top > * {
     border-color: #cecece transparent;
     display: block;
     width: 0;
-}
+} 
 
-.post-detail .entry-content p:nth-child(1)::after{
+ .post-detail .entry-content p:nth-child(1)::after{
 	content: "";
     position: absolute;
     top: -1px;
