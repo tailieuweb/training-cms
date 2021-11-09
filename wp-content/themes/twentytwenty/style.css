@@ -5407,6 +5407,7 @@ input#submit {
 	background: #007bff;
 	border-radius: 4px;
 	text-decoration: none;
+	text-transform: lowercase;
 	border: none;
 	float: right;
 	padding: 13px 18px;
@@ -5417,15 +5418,19 @@ input#submit {
 	/* left: 0px; */
 	right: 17px;
 	bottom: 71px;
+	
 }
-
-input#submit:hover {
-	background-color: #0069d9;
-}
-
 p.comment-form-comment {
 	padding: 8px;
-	padding-top: 70px;
-	padding-bottom: 70px;
+	padding-top: 68px;
+	padding-bottom: 68px;
 	position: relative;
+}
+input#submit:hover {
+	display: inline-block;
+    background-color: #4a99ee;
+	border: #0453a7;
+}
+input#submit:hover {
+	background-color: #0069d9;
 }
