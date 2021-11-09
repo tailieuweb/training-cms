@@ -6481,35 +6481,35 @@ a.to-the-top > * {
 
 /*Vĩnh - adjust css*/
 /*css contain-main, entry-content*/
-.content-main{
+.home-page .content-main{
 	background-color: #fff;
 	border-radius: 5px;
 	padding: 20px 0;
 }
-.entry-content .content-main .content-adjust-post .entry-title-adjust{
+.home-page .entry-content .content-main .content-adjust-post .entry-title-adjust{
 	margin: 0;
 	font-size: 26px;
 }
-.entry-title-adjust a{
+.home-page .entry-title-adjust a{
 	color: #428bca;
 	text-decoration: none;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.content-adjust-post-meta .post-meta-wrapper{
+.home-page .content-adjust-post-meta .post-meta-wrapper{
 	margin-top: 0;
 }
-.content-adjust-post{
+.home-page .content-adjust-post{
 	padding: 5px;
 }
-.content-adjust-post p{
+.home-page .content-adjust-post p{
 	font-size: 0.9em;
 	font-family: 'Open Sans', sans-serif;
 	color: #777;
 }
-.content-adjust-post-meta{
+.home-page .content-adjust-post-meta{
 	padding: 5px;
 }
-.post-month{
+.home-page .post-month{
 	font-size: 0.9em;
 	
 }
@@ -6575,6 +6575,9 @@ a.to-the-top > * {
 /*end css header*/
 
 
+body{
+	font-family: 'Arial';
+}
 
 /* Search result */
 #site-content{
@@ -6601,6 +6604,7 @@ a.to-the-top > * {
 .search-danh-sach .entry-title {
 	position: absolute;
 	right: 0;
+	top: 12%;
 	text-align: left;
 	width: 35%;
 	line-height: 20px;
