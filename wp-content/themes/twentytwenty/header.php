@@ -64,7 +64,17 @@
 
 							// Site description.
 							twentytwenty_site_description();
+
+                            // Site search.
 						?>
+                        <form role="search" aria-label="404 not found" method="get" class="search-form" action="http://wordpress.local/">
+                            <label for="search-form-2">
+                                <span class="screen-reader-text">Search for:</span>
+                                <input type="search" id="search-form-2" class="search-field" placeholder="Search …" value="" name="s">
+                            </label>
+                            <input type="submit" class="search-submit" value="Search">
+                        </form>
+
 
 					</div><!-- .header-titles -->
 
