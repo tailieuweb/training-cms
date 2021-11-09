@@ -11,15 +11,15 @@
 
 .list_new_view_post .time_post>span.date_post {
     font-family: 'Prata', serif;
-    font-size: 6em;
+    font-size: 7em;
     line-height: 1em;
-    margin-left: 22px;
+    margin-left: 28px;
 }
 
 .list_new_view_post .time_post>span.month_post {
     text-transform: uppercase;
-    font-size: 1em;
-    margin-left: 24px;
+    font-size: 2em;
+    margin-left: 15px;
 }
 
 .list_new_view_post a {
