@@ -425,7 +425,7 @@ function twentytwenty_sidebar_registration() {
 			$shared_args,
 			array(
 				'name'        => __( 'Module 9', 'twentytwenty' ),
-				'id'          => 'sidebar-9',
+				'id'          => 'module-9',
 				'description' => __( 'Widgets in this area will be displayed in the first column in the footer.', 'twentytwenty' ),
 			)
 		)
