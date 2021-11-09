@@ -1,35 +1,42 @@
 /* Module 9 css */
-.footer-widgets-wrapper9 h2 {
-    color: #000 !important;
-}
-.footer-widgets-wrapper9 .wp-block-group__inner-container .cat-item a{
-    color: #118fb6 !important;
-    font-weight: 100;
-}
 
-.footer-widgets-wrapper9 .wp-block-group__inner-container .cat-item{
-    height: 56px;
-    border-top: 1px #c7c7c7 solid;
-    width: 190px;
-}
-.footer-widgets-wrapper9 .wp-block-group__inner-container {
-    text-align: left;
+.footer-widgets9 {
     position: absolute;
-    left: 15%;
-
-    border: none;
-	border-bottom: 1px #d9d9d9 solid;
-	margin-bottom: 0;
-	padding-left: 0;
-	padding-right: 0;
-	margin: 0 15px;
+    top: 50px;
+    left: 20px;
 }
-.footer-widgets-wrapper9 .wp-block-group__inner-container .cat-item a::before{
+
+.footer-widgets9 h2 {
+    font-weight: 700;
+    color: black;
+}
+
+.footer-widgets9 .cat-item a {
+    color: #37bbe4 !important;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.footer-widgets9 .cat-item::before {
     font-family: Arial, Helvetica, sans-serif;
-	color:#f5ce31;
-	content:"\2022";
-	font-size:2em;
-	padding-right:.5em;
-	position:relative;
-	top:.15em;
+    color: #f5ce31;
+    content: "\2022";
+    font-size: 30px;
+    padding-right: 0.5em;
+    position: relative;
+    top: 0.15em;
+}
+
+.footer-widgets9 .wp-block-categories-list {
+    background: #fff;
+    padding-right: 130px;
+    padding-left: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    box-shadow: 0px -16px 0px #c1c1c161;
+}
+
+.footer-widgets9 .wp-block-categories-list .cat-item {
+    border-bottom: 1px #c1c1c1 solid;
+    width: 190%;
 }
