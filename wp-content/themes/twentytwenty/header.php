@@ -27,6 +27,7 @@
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
               id="bootstrap-css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
         <!--	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!------ Include the above in your HEAD tag ---------->
@@ -36,8 +37,18 @@
         <style>
 
             .list_new_view {
+
                 font-size: 0.9em;
                 padding: 15px;
+                margin-bottom: 15px;
+
+            }
+
+            .list_new_view .vu-class-center {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
             }
 
             .list_new_view .topnewstime > span.topnewsdate {
@@ -62,6 +73,10 @@
                 border-left: 1px solid #666;
             }
 
+            .list_new_view .shortdesc p {
+                display: inline;
+            }
+
             .list_new_view .shortdesc h4 {
                 padding-top: 0;
                 margin-top: 0;
@@ -75,16 +90,12 @@
                 padding: 15px;
             }
 
-            .list_new_view {
-                margin-bottom: 15px;
-            }
-
             #site-content {
                 margin-left: 20px;
             }
 
             /*    search */
-            #search-form-2-label::before{
+            #search-form-2-label::before {
                 transform: translateX(40px) translateY(20%);
                 content: "\f002";
                 font-weight: 900;
@@ -93,11 +104,13 @@
                 -moz-osx-font-smoothing: grayscale;
                 -webkit-font-smoothing: antialiased;
             }
+
             #search-form-2 {
                 padding-left: 40px;
             }
         </style>
         <?php wp_head(); ?>
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module7.css" type="text/css" media="screen" />
 
     </head>
 
@@ -251,7 +264,19 @@ wp_body_open();
                         }
                         ?>
 
-                        template account <here></here>
+                        <!--                        template account <here></here>-->
+
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
                     </div><!-- .header-toggles -->
                     <?php
                 }
