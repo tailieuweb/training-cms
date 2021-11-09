@@ -108,7 +108,7 @@ get_header();
 
 	<?php get_template_part('template-parts/pagination'); ?>
 
-</main><!-- #site-content -->
+</main><!-- # -->
 
 <?php #get_template_part( 'template-parts/footer-menus-widgets' ); 
 ?>

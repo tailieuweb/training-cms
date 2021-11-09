@@ -68,11 +68,7 @@ $has_sidebar_3 = is_active_sidebar('sidebar-3');
 	</div>
 </section>
 <!-- ./Footer -->
-
-
-
 		<?php wp_footer(); ?>
-
 	</body>
 </html>
 <!-- jQuery library -->
