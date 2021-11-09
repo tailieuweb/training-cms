@@ -22,6 +22,7 @@ if ($next_post || $prev_post) {
 	}
 
 ?>
+    <!-- Module-7 -->
 	<div class="col-md-8 module-7">
         <!-- Module-6 -->
 	<div class="author-module-6"><?php	echo "(Theo ".get_the_author().")"; ?></div>
