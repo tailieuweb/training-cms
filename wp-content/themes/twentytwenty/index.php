@@ -111,7 +111,8 @@ get_header();
                 , strpos($_post->post_content, "<!-- /wp:image -->"));
 
             // lấy đường dẫn đến trang chi tiết bài viết.
-            $_new_string_guid = $_post->guid;
+            // $_new_string_guid = $_post->guid;
+			$_new_string_guid = get_permalink();
 
             // hiển thị nội dung chỉnh sửa theo yêu cầu.
             echo "
