@@ -1,1 +1,41 @@
 /* Module 4 css */
+
+.module-4-formSearch .search-cont {
+    width: 858px !important;
+    padding-left: 65px;
+    height: 75px;
+    font-size: 20px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.clSearch {
+    max-width: 85rem !important;
+}
+
+.section-inner .max-percentage {
+    width: 58rem !important;
+}
+
+.module-4-fontSearch {
+    position: relative;
+    top: 26px;
+    left: 60px;
+    font-size: 25px;
+    width: 25px;
+    height: 25px;
+}
+
+.module-4-searchSub {
+    position: relative;
+    top: 13px;
+    right: 137px;
+    height: 50px;
+    border-radius: 7px !important;
+    width: 115px;
+    border: 1px solid rgb(40, 167, 69);
+    background-color: rgb(40, 167, 69) !important;
+    color: white;
+    font-size: 20px;
+    line-height: 0 !important;
+}

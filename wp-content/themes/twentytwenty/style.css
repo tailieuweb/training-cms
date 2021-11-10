@@ -6427,6 +6427,7 @@ a.to-the-top > * {
     }
 }
 
+
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 section {
     padding: 60px 0;
@@ -6602,3 +6603,4 @@ ul.wp-block-categories-list.wp-block-categories li a {
 time.wp-block-latest-comments__comment-date {
 	color: #fff;
 }
+
