@@ -6426,3 +6426,181 @@ a.to-the-top > * {
         top: 0;
     }
 }
+
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#site-footer {
+    background: #007b5e !important;
+    font-size: 20px;
+}
+
+#site-footer .h6 {
+    font-size: 20px;
+}
+
+#site-footer h5 {
+    padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#site-footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+#site-footer ul.social li {
+    padding: 3px 0;
+}
+
+#site-footer ul.social li a i {
+    margin-right: 5px;
+    font-size: 35px;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+}
+
+#site-footer ul.social li:hover a i {
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+#site-footer ul.social li a,
+#site-footer ul.quick-links li a {
+    color: #ffffff;
+}
+
+#site-footer ul.social li a:hover {
+    color: #eeeeee;
+}
+
+#site-footer ul.quick-links li {
+    padding: 3px 0;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+}
+
+#site-footer ul.quick-links li:hover {
+    padding: 3px 0;
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+#site-footer ul.quick-links li a i {
+    margin-right: 5px;
+}
+
+#site-footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+.footer-more-information {
+    background: #007b5e !important;
+    color: #eeeeee !important;
+}
+
+.footer-more-information a,
+.footer-more-information a:hover,
+.footer-more-information a:visited {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+#footer {
+    padding-bottom: 0;
+}
+
+/* List Post in home page */
+.post-home-page {
+    background-color: white;
+    width: 180%;
+    margin-left: -40% !important;
+    padding: 20px 0;
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
+}
+
+.shortdesc {
+    border-left: 2px solid #666;
+    padding-right: 30px;
+}
+
+.top_news_block_desc .post-title {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: bold;
+}
+
+.topnewstime {
+    text-align: center;
+}
+
+.topnewstime > .topnewsdate {
+    font-family: "Prata", serif;
+    font-size: 3.1em;
+    line-height: 1em;
+    margin-left: 15px;
+}
+
+.danh-sach {
+    padding-bottom: 10px !important;
+    margin: 0;
+    background-color: rgb(238, 238, 238);
+}
+
+.danh-sach .post-inner {
+    padding-top: 0;
+}
+
+.footer-nav-widgets-wrapper.header-footer-group {
+	background-color: #007b5e;
+	color: #FFF;
+}
+
+.footer-nav-widgets-wrapper.header-footer-group .wp-block-group__inner-container a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.footer-nav-widgets-wrapper.header-footer-group .wp-block-group__inner-container h2 {
+	font-size: 30px;
+}
+
+.footer-nav-widgets-wrapper.header-footer-group ul.wp-block-latest-posts__list.wp-block-latest-posts a {
+	color: #FFF;
+	font-size: 15px;
+}
+
+footer.wp-block-latest-comments__comment-meta a {
+	color: #FFF;
+}
+
+ul.wp-block-categories-list.wp-block-categories li a {
+	color: #FFF;
+}
+
+time.wp-block-latest-comments__comment-date {
+	color: #fff;
+}
+

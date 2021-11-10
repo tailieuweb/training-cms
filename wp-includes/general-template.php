@@ -4973,8 +4973,28 @@ function wp_heartbeat_settings($settings)
 function findHTMLTag($str = '',$htmlTag)
 {
 	$tagOpen = '<'.$htmlTag;
-	$tagClose = '</'.$htmlTag.'>';
+	$tagClose = '/'.$htmlTag.'>';
 	if ($str == '' || !strpos($str, $tagOpen) || !strpos($str, $tagClose)) {
+		return NULL;
+	}
+	$checkTag = '';
+	$tagContent = $tagOpen;
+	for ($i = 0; $i < strlen($str); $i++) {
+		if (strpos($checkTag, $tagOpen)) {
+			$tagContent .= $str[$i];
+			if (strpos($tagContent, $tagClose)) {
+				return $tagContent;
+			}
+		}
+		$checkTag .= $str[$i];
+	}
+	return NULL;
+}
+function findImgHTMLTag($str = '')
+{
+	$tagOpen = '<img';
+	$tagClose = '/>';
+	if (!strpos($str, $tagOpen) || !strpos($str, $tagClose)) {
 		return NULL;
 	}
 	$checkTag = '';
