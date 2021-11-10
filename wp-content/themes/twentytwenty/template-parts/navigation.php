@@ -28,28 +28,34 @@ if ( $next_post || $prev_post ) {
 
 		<div class="pagination-single-inner">
 
-			<?php
-			if ( $prev_post ) {
-				?>
+		<div class="pagination-single-next post-prev-next">
+					<?php if ($next_post) {
+						twentytwenty_the_post_meta('single-top');
+					?>
 
-				<a class="previous-post" href="<?php echo esc_url( get_permalink( $prev_post->ID ) ); ?>">
-					<span class="arrow" aria-hidden="true">&larr;</span>
-					<span class="title"><span class="title-inner"><?php echo wp_kses_post( get_the_title( $prev_post->ID ) ); ?></span></span>
-				</a>
+						<a class="next-post" href="<?php echo esc_url(get_permalink($next_post->ID)); ?>">
+							<!-- <span class="arrow" aria-hidden="true">&rarr;</span> -->
+							<span class="title"><span class="title-inner"><?php echo wp_kses_post(get_the_title($next_post->ID)); ?></span></span>
+						</a>
+					<?php
+					}
+					?>
+				</div>
+				<div class="pagination-single-prev post-prev-next">
+					<?php
+					if ($prev_post) {
+						twentytwenty_the_post_meta('single-top');
+					?>
 
-				<?php
-			}
+						<a class="previous-post" href="<?php echo esc_url(get_permalink($prev_post->ID)); ?>">
+							<!-- <span class="arrow" aria-hidden="true">&larr;</span> -->
+							<span class="title"><span class="title-inner"><?php echo wp_kses_post(get_the_title($prev_post->ID)); ?></span></span>
+						</a>
 
-			if ( $next_post ) {
-				?>
+					<?php
+					} ?>
 
-				<a class="next-post" href="<?php echo esc_url( get_permalink( $next_post->ID ) ); ?>">
-					<span class="arrow" aria-hidden="true">&rarr;</span>
-						<span class="title"><span class="title-inner"><?php echo wp_kses_post( get_the_title( $next_post->ID ) ); ?></span></span>
-				</a>
-				<?php
-			}
-			?>
+				</div>
 
 		</div><!-- .pagination-single-inner -->
 
