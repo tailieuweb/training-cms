@@ -1,0 +1,86 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* Title group A and categories fields */
+.site-title,
+#menu-item-21 a,
+#menu-item-22 a,
+#menu-item-23 a {
+    color: #777 !important;
+
+}
+.site-title a:hover,
+.site-title a:focus,
+#menu-item-21 a:hover,
+#menu-item-22 a:hover,
+#menu-item-23 a:hover {
+    text-decoration: none !important;
+}
+
+/* Button Home  */
+
+.btn-wrapper  {
+    margin: 0 25px;
+    padding: 25px 25px;
+    background: #e7e7e7;
+}
+
+.btn-wrapper .home-btn {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Search */
+
+.search-box-wrapper {
+    margin: 0 20px;
+}
+
+.header-inner {
+    padding: 1rem 0 !important;
+}
+
+#site-header {
+    background: #f8f8f8;
+}
+
+.search-form .search-field,
+.search-form .search-submit {
+    border-radius: 10px;
+    height: 50px;
+    font-size: 13px;
+}
+
+.search-form .search-submit {
+    background: #fff !important;
+    color: #000;
+    border: 1px solid #d6d6d6;
+}
+
+/* User dropdown */
+
+.user-module-1 {
+    background: transparent;
+    color: #000;
+    border: none;
+    display: block !important;
+}
+
+
+.fa-user-circle {
+    font-size: 38px;
+}
+
+/* Reponsive header */
+
+@media screen and (max-width: 755px) {
+    .btn-wrapper,
+    .search-form,
+    #search-header {
+        display: none;
+    }
+
+    .site-title {
+        text-align: center;
+    }
+    
+}

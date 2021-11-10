@@ -19,25 +19,29 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
 		<link rel="profile" href="https://gmpg.org/xfn/11">
-		
-		<!-- Module 2: -->
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module2.css" type="text/css" media="screen" />
-
 		<!-- Module 4: -->
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module4.css" type="text/css" media="screen" />
 
-		<!-- Module 5: -->
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module5.css" type="text/css" media="screen" />
 
         <!-- Chèn bootstrap; Lê Anh Vũ; -->
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-        <!--__________ Include the above in your HEAD tag __________-->
+        <!------ Include the above in your HEAD tag ---------->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 		<?php wp_head(); ?>
+
+		<!-- Insert css module1 & module5 by Liem -->
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module1.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module5.css" type="text/css" media="screen" />
+
+        <!-- chèn đường dẫn css module 4; Lê Anh Vũ; -->
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module2.css" type="text/css" media="screen" />
+
+ 
+
+
 
 	</head>
 
@@ -62,16 +66,19 @@
 
 						?>
 
-						<button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
-							<span class="toggle-inner">
-								<span class="toggle-icon">
-									<?php twentytwenty_the_theme_svg( 'search' ); ?>
-								</span>
-								<span class="toggle-text"><?php _ex( 'Search', 'toggle text', 'twentytwenty' ); ?></span>
-							</span>
-						</button><!-- .search-toggle -->
+							<div id="search-header">
+							<button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
+									<span class="toggle-inner">
+										<span class="toggle-icon">
+											<?php twentytwenty_the_theme_svg( 'search' ); ?>
+										</span>
+										<span class="toggle-text"><?php _ex( 'Search', 'toggle text', 'twentytwenty' ); ?></span>
+									</span>
+								</button><!-- .search-toggle -->
+							</div>
 
 					<?php } ?>
+					
 
 					<div class="header-titles">
 
@@ -85,6 +92,20 @@
 
 					</div><!-- .header-titles -->
 
+				<!-- Insert button Home and search-box by Liem -->
+				<div class="btn-wrapper">
+					<a href="index.php" class="home-btn">Home</a>
+				</div>
+
+				<div class="search-box-wrapper">
+					<div class="search-box">
+						<form action="" method="get" class="search-form">
+							<input type="text" class="search-field" name="s" placeholder="Search">
+							<input type="submit" class="search-submit" value="submit">
+						</form>
+					</div>
+				</div>
+
 					<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal"  data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
 						<span class="toggle-inner">
 							<span class="toggle-icon">
@@ -95,6 +116,8 @@
 					</button><!-- .nav-toggle -->
 
 				</div><!-- .header-titles-wrapper -->
+
+				
 
 				<div class="header-navigation-wrapper">
 
@@ -166,21 +189,36 @@
 						if ( true === $enable_header_search ) {
 							?>
 
-							<div class="toggle-wrapper search-toggle-wrapper">
+								<div class="toggle-wrapper search-toggle-wrapper">
+									<button class="toggle search-toggle desktop-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
+										<span class="toggle-inner">
+											<?php twentytwenty_the_theme_svg( 'search' ); ?>
+											<span class="toggle-text"><?php _ex( 'Search', 'toggle text', 'twentytwenty' ); ?></span>
+										</span>
+									</button><!-- .search-toggle -->
 
-								<button class="toggle search-toggle desktop-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
-									<span class="toggle-inner">
-										<?php twentytwenty_the_theme_svg( 'search' ); ?>
-										<span class="toggle-text"><?php _ex( 'Search', 'toggle text', 'twentytwenty' ); ?></span>
-									</span>
-								</button><!-- .search-toggle -->
-
-							</div>
+									</div>
 
 							<?php
 						}
 						?>
-
+						<!-- Add dropdown user menu by Liem -->
+						<div class="dropdown">
+							<button class="btn btn-secondary dropdown-toggle user-module-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<div class="user-icon">
+								<i class="fas fa-user-circle"></i>
+							</div>
+							<div class="user-title">
+								Account
+							</div>
+                                
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+						</div>
 						</div><!-- .header-toggles -->
 						<?php
 					}
@@ -196,6 +234,8 @@
 				get_template_part( 'template-parts/modal-search' );
 			}
 			?>
+
+
 
 		</header><!-- #site-header -->
 
