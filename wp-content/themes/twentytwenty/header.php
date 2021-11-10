@@ -19,9 +19,23 @@
 
 		<link rel="profile" href="https://gmpg.org/xfn/11">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!--  -->
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module1.css" type="text/css" media="screen" />
+		<!--  -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<!--  -->
+		<!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
+
 		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!--  -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 		<?php wp_head(); ?>
 
 	</head>
@@ -35,11 +49,11 @@
 		<header id="site-header" class="header-footer-group" role="banner">
 
 			<div class="header-inner section-inner">
-
+					
 				<div class="header-titles-wrapper">
 
 					<?php
-
+					
 					// Check whether the header search is activated in the customizer.
 					$enable_header_search = get_theme_mod( 'enable_header_search', true );
 
@@ -67,11 +81,31 @@
 							// Site description.
 							twentytwenty_site_description();
 						?>
+						
 
 					</div><!-- .header-titles -->
-
+					<!-- <div style="display: flex" class="header-search" >
+						
+						<input class="search-form" type="text" placeholder="Search">
+						
+						<input type="submit" value="Submit">
+					</div> -->
 					
+					<!-- <form role="search" aria-label="Search for:" method="get" class="search-form" action="http://wordpress.local/">
+						<label for="search-form-1">
+							<span class="screen-reader-text">Search for:</span>
+							<input type="search" id="search-form-1" class="search-field" placeholder="Search …" value="" name="s">
+						</label>
+						<input type="submit" class="search-submit" value="Search">
+					</form> -->
 
+					<form action="get" class="search-form">
+						<input type="text" placeholder=" Search" class="field-search">
+
+						<input type="submit" value="Submit" class="btn-search">
+					</form>
+
+					<!--  -->
 					<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal"  data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
 						<span class="toggle-inner">
 							<span class="toggle-icon">
@@ -167,7 +201,17 @@
 							<?php
 						}
 						?>
-
+							<div class="dropdown">
+								<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<img src="https://img.icons8.com/ios/50/000000/user-male-circle.png"/>
+									Account
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="<?= wp_login_url() ?>">Login</a>
+									<a class="dropdown-item" href="<?= wp_logout_url() ?>">Logout</a>
+									
+								</div>
+							</div>
 						</div><!-- .header-toggles -->
 						<?php
 					}
