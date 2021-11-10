@@ -164,26 +164,41 @@ if (!is_single() && !is_search()) { ?>
 		?>
 
 		<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
-			<?php
-			if (is_search()) {
-				echo '<div class="time-post">';
-				$post_date = get_the_date('d', $post->ID);
-				$post_month = get_the_date('m', $post->ID);
-				echo '<span class="day">' . $post_date . '</span> <br>';
-				echo '<span class="month">' . $post_month . '</span>';
-				echo '</div>';
-			}
-			?>
 			<div class="entry-content">
+				<?php $has_sidebar_9 = is_active_sidebar('sidebar-9'); ?>
+				<div class="row-adjust">
+					<div class="col-md-3">
+						<?php if ($has_sidebar_9) { ?>
+							<div class="content-widgets-wrapper">
+								<?php if ($has_sidebar_9) { ?>
+									<div class="content-widgets column-one grid-item">
+										<?php dynamic_sidebar('sidebar-9'); ?>
+									</div>
+								<?php } ?>
+							</div>
+						<?php } ?>
+					</div>
+					<div class="col-md-6">
+						<?php
+						if (is_search() || !is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
+							the_excerpt();
+						} else {
+							// the_content( __( 'Continue reading', 'twentytwenty' ) );
+							if (is_single()) {
+								the_content(__('Continue reading', 'twentytwenty'));
+							} else {
+								$post = get_post();
+								$content = $post->post_content;
+								echo substr($content, 0, 120);
+							}
+						}
+						?>
+					</div>
 
-				<?php
-				if (!is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
-					the_excerpt();
-				} else {
-					the_content(__('Continue reading', 'twentytwenty'));
-				}
-				?>
+					<div class="col-md-3">
 
+					</div>
+				</div>
 			</div><!-- .entry-content -->
 
 		</div><!-- .post-inner -->

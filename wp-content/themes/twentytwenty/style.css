@@ -1514,15 +1514,9 @@ body:not(.enable-search-modal) .site-logo img {
 
 .search-toggle .toggle-icon,
 .search-toggle svg {
-<<<<<<< HEAD
 	height: 2.5rem;
 	max-width: 2.3rem;
 	width: 2rem;
-=======
-  height: 2.5rem;
-  max-width: 2.3rem;
-  width: 2.3rem;
->>>>>>> 1-wordpress-581-202109/2-groups/1-D/3-15-Khang-Module7.1
 }
 
 /* Navigation Toggle ------------------------- */
@@ -7931,7 +7925,7 @@ textarea{
 	padding-left: 15px;
 }
 .widget-content h2{
-	border-left: 5px solid white;
+	/* border-left: 5px solid white; */
 	padding-left: 15px;
 }
 /* .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
@@ -7945,6 +7939,83 @@ textarea{
 	padding: 5px 0;
 	background-color: #007b5e !important;
 }
+/* Module 9 */
+.post-inner  .row-adjust{
+	/* max-width: 98rem !important; */
+	display: flex;
+	flex-direction: row;
+	max-width: 118rem !important;
+}
+.entry-content .wp-block-archives *, .entry-content .wp-block-categories *, .entry-content .wp-block-latest-posts *, .entry-content .wp-block-latest-comments * {
+	font-family: inherit;
+    color: #428bca;
+	 background: #f7f3f3;
+	 padding: 5px;
+	 margin-left: 35px;
+}
+
+.widget-content h2{
+	font-weight: 800;
+    font-size: 1.8em
+}
+.widget_categories .widget-content{
+	padding: 10px 20px;
+    background: #fff;
+	position: relative;
+}
+
+.widget-content h2{
+  margin: 0rem auto 5rem !important;
+}
+
+.widget_categories .widget-content::before{
+	content: '';
+	position: absolute;
+	top: -13px;
+	left: 0;
+	width: 100%;
+	height: 18px;
+	background: url('./assets/images/bg_cr_grey.png') repeat;
+}
+
+.widget_categories .widget-content ul{
+	margin: 0!important;
+}
+.widget_categories .widget-content ul li{
+	position: relative;
+	border-bottom: 1px#d9d9d9 solid;
+	background: #fff !important;
+	height: 60px;
+}
+
+.widget_categories .widget-content ul li:last-child{
+	border-bottom: none;
+}
+
+.widget_categories .widget-content ul li::before{
+	font-family: Arial, Helvetica, sans-serif;
+    color: #f5ce31;
+    content: "\2022";
+    font-size: 2em;
+    padding-right: 0.5em;
+	padding-left: 16px;
+    position: relative;
+}
+
+.widget_categories .widget-content ul li a{
+	position: absolute;
+	margin: 0 !important;
+    top: 17px;
+	background: #fff !important;
+	font-size: 17px;
+	font-weight: 200;
+}
+
+/* End Module 9 */
+
+
+
+
 
 #footer h5{
 	color:  #fff !important;

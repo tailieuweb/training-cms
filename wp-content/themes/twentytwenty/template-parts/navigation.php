@@ -96,7 +96,7 @@ if ( $next_post || $prev_post ) {
 
 		</div><!-- .pagination-single-inner -->
 
-		<!--<hr class="styled-separator is-style-wide" aria-hidden="true" />-->
+		<hr class="styled-separator is-style-wide" aria-hidden="true" />
 
 	</nav><!-- .pagination-single -->
 
