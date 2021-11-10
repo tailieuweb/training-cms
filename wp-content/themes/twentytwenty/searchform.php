@@ -31,11 +31,11 @@ if (empty($twentytwenty_aria_label) && !empty($args['label'])) {
 																			?></span>
     <?php
 		if (strpos($twentytwenty_aria_label, 'search again') !== false) {
-			echo '<i class="fas fa-search" style="color: black;font-size: 25px;"></i>';
+			echo '<i class="fa fa-search" style="color: black;font-size: 25px;"></i>';
 		}
 		?>
     <input type="search" id="<?php echo esc_attr($twentytwenty_unique_id); ?>" class="search-field"
-      placeholder="<?php echo esc_attr_x('Search &hellip;', 'placeholder', 'twentytwenty'); ?>"
+      placeholder="Search topics or keywords"
       value="<?php echo get_search_query(); ?>" name="s" />
   </label>
   <input type="submit" class="search-submit"
