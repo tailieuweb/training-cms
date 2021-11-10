@@ -60,9 +60,7 @@ if (strtotime($post->post_date)) {
 								<div class="footer-widgets9 column-one grid-item ">
 									<?php dynamic_sidebar('module-9'); ?>
 								</div>
-
 							</div>
-
 						</div>
 						<!-- Module-6 -->
 						<div class="col-md-6">

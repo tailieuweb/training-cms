@@ -419,7 +419,7 @@ function twentytwenty_sidebar_registration() {
 	);
 
 	
-	// module #9.
+	// module #9
 	register_sidebar(
 		array_merge(
 			$shared_args,
