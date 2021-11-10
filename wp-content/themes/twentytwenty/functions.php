@@ -405,6 +405,41 @@ function twentytwenty_sidebar_registration() {
 		)
 	);
 
+    // Footer #3.
+    register_sidebar(
+        array_merge(
+            $shared_args,
+            array(
+                'name'        => __( 'Custom widget footer first column', 'twentytwenty' ),
+                'id'          => 'custom-widget-footer',
+                'description' => __( 'Custom footer widgets.', 'twentytwenty' ),
+            )
+        )
+    );
+
+    // Footer #4.
+    register_sidebar(
+        array_merge(
+            $shared_args,
+            array(
+                'name'        => __( 'Custom widget footer second column', 'twentytwenty' ),
+                'id'          => 'custom-widget-footer-second-col',
+                'description' => __( 'Custom footer widgets for second column.', 'twentytwenty' ),
+            )
+        )
+    );
+
+    // Footer #5.
+    register_sidebar(
+        array_merge(
+            $shared_args,
+            array(
+                'name'        => __( 'Custom widget footer last column', 'twentytwenty' ),
+                'id'          => 'custom-widget-footer-last-col',
+                'description' => __( 'Custom footer widgets for last column.', 'twentytwenty' ),
+            )
+        )
+    );
 }
 
 add_action( 'widgets_init', 'twentytwenty_sidebar_registration' );
