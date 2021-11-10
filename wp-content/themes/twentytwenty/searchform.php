@@ -41,7 +41,7 @@ if (empty($twentytwenty_aria_label) && !empty($args['label'])) {
 	$twentytwenty_aria_label = 'aria-label="' . esc_attr($args['label']) . '"';
 }
 ?>
-<!-- form search -->
+<!-- form search - by Nguyen Dinh Khanh Vi -->
 <div class="row justify-content-center">
 	<div class="col-12 col-md-12">
 		<form role="search" <?php echo $twentytwenty_aria_label; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. 
