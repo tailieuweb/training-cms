@@ -25,29 +25,81 @@
 	}
 
 	?>
+	<!-- Search -->
 
+	
+	
 	<div class="post-inner <?php echo  is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
+	<div class="entry-content">
 
-		<div class="entry-content">
-
-			<?php
-			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
-				the_excerpt();
+		<?php
+		if (!is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
+			the_excerpt();
+			
+		} else {
+			if (is_single()) {
+				the_content(__('Continue reading', 'twentytwenty'));
 			} else {
-			    if (is_single()){
-                    the_content( __( 'Continue reading', 'twentytwenty' ) );
-                }
-			    else{
-			        $post = get_post();
-			        echo substr($post->post_content,0,100);
-                }
-			}
-			?>
+				$post = get_post();
+				$date = date('d',strtotime($post->post_date));
+				$month = date('m',strtotime($post->post_date));
+				
+		?>
+				<div class="list-search-content">
+					<div class="list_search">
+						<div class="row">
+							<?php if (is_search()){?>
+								<div class="col-md-5">
+									<div class="top_news_block_thumb">
+										<img src="<?= get_the_post_thumbnail_url($post) ?>">
+									</div>
+								</div>
+								<div class="col-md-7 top_news_block_desc">
+								<div class="row">
+									<div class="col-md-3 col-xs-3 topnewstime">
+										<span class="topnewsdate"><?php echo $date ?></span><br>
+										<span class="topnewsmonth">Thang <?php echo $month ?></span><br>
+									</div>
+									<div class="col-md-9 col-xs-9 shortdesc">
+										<h4 class="entry-title">
+											<a href="<?php echo esc_url(get_permalink()) ?>"><?php echo $post->post_title ?></a>
+										</h4>
+										<p><?php echo substr($post->post_content, 0, 50);  ?><a href="<?php echo esc_url(get_permalink()) ?>">[...]</a></p>
+									</div>
 
-		</div><!-- .entry-content -->
+								</div>
+							</div>
+							<?php } else {?>
+							<div class="col-md-12 top_news_block_desc">
+								<div class="row">
+									<div class="col-md-3 col-xs-3 topnewstime">
+										<span class="topnewsdate"><?php echo $date ?></span><br>
+										<span class="topnewsmonth">Tháng <?php echo $month ?></span><br>
+									</div>
+									<div class="col-md-9 col-xs-9 shortdesc">
+										<h4 class="entry-title">
+											<a href="<?php echo esc_url(get_permalink()) ?>"><?php echo $post->post_title ?></a>
+										</h4>
+										<p><?php echo substr($post->post_content, 0, 100);  ?><a href="<?php echo esc_url(get_permalink()) ?>">[...]</a></p>
+									</div>
 
+								</div>
+							</div>
+							<?php } ?>
+						</div>
+					</div>
+				</div>
+
+		<?php }
+		}
+		?>
+
+	</div><!-- .entry-content -->
+		</div>
+	</div>
+		
 	</div><!-- .post-inner -->
-
+	
 	<div class="section-inner">
 		<?php
 		wp_link_pages(
@@ -88,7 +140,6 @@
 		?>
 
 		<div class="comments-wrapper section-inner">
-
 			<?php comments_template(); ?>
 
 		</div><!-- .comments-wrapper -->
