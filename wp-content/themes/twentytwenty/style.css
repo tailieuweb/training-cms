@@ -1537,13 +1537,8 @@ body:not(.enable-search-modal) .site-logo img {
 
 .nav-toggle .toggle-icon,
 .nav-toggle svg {
-<<<<<<< HEAD
 	height: 0.8rem;
 	width: 2rem;
-=======
-  height: 0.8rem;
-  width: 2.6rem;
->>>>>>> 1-wordpress-581-202109/2-groups/1-D/3-15-Khang-Module7.1
 }
 
 .nav-toggle .toggle-inner {
