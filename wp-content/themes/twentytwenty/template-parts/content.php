@@ -40,6 +40,7 @@ $class = 'danh-sach';
 				if(is_single()){
 					the_content( __( 'Continue reading', 'twentytwenty' ) );
 				}else{
+					the_title( '<h2 class="entry-title heading-size-1 name-post"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
 					$post = get_post();
 					echo substr($post->post_content, 0,200 );
 				}
@@ -50,7 +51,7 @@ $class = 'danh-sach';
 
     </div><!-- .post-inner -->
 
-    <div class="section-inner">
+    <div class="section-inner none-section">
         <?php
 		wp_link_pages(
 			array(

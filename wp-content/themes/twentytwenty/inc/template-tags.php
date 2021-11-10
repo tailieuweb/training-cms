@@ -393,7 +393,7 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 							<?php twentytwenty_the_theme_svg( 'calendar' ); ?>
 						</span>
 						<span class="meta-text">
-							<a href="<?php the_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
+							<a href="<?php the_permalink(); ?>"><?php strtotime(the_time( get_option( 'date_format' )) ); ?></a>
 						</span>
 					</li>
 					<?php
