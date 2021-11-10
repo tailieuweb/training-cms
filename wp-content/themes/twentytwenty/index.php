@@ -26,7 +26,7 @@ get_header();
 	$archive_title    = '';
 	$archive_subtitle = '';
 
-	if (is_search()) {
+	if ( is_search() ) {
 		global $wp_query;
 
 		$archive_title = sprintf(
@@ -75,7 +75,7 @@ get_header();
 
 		</header><!-- .archive-header -->
 
-	<?php
+		<?php
 	}
 
 	if (have_posts()) {
@@ -106,11 +106,11 @@ get_header();
 
 		</div><!-- .no-search-results -->
 
-	<?php
+		<?php
 	}
 	?>
 
-	<?php get_template_part('template-parts/pagination'); ?>
+	<?php get_template_part( 'template-parts/pagination' ); ?>
 
 </main><!-- #site-content -->
 

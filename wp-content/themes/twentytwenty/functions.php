@@ -413,15 +413,14 @@ function twentytwenty_sidebar_registration()
 			)
 		)
 	);
-
-	// Footer #3.
+	// Footer #3
 	register_sidebar(
 		array_merge(
 			$shared_args,
 			array(
-				'name'        => __('Footer #3', 'twentytwenty'),
+				'name'        => __( 'Footer #3', 'twentytwenty' ),
 				'id'          => 'sidebar-3',
-				'description' => __('Widgets in this area will be displayed in the thirs column in the footer.', 'twentytwenty'),
+				'description' => __( 'Widgets in this area will be displayed in the third column in the footer.', 'twentytwenty' ),
 			)
 		)
 	);
@@ -812,15 +811,4 @@ function twentytwenty_get_elements_array()
 	 * @param array Array of elements.
 	 */
 	return apply_filters('twentytwenty_get_elements_array', $elements);
-}
-add_filter('gutenberg_use_widgets_block_editor', '__return_false');
-add_filter('use_widgets_block_editor', '__return_false');
-add_filter('wp_nav_menu_items', 'add_search_box_to_nav_menu', 10, 2);
-
-function add_search_box_to_nav_menu($items, $args)
-{
-	if ($args->theme_location == 'primary')
-		return $items . get_search_form();
-
-	return $items;
 }

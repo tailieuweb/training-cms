@@ -988,7 +988,6 @@ th {
 /* Sections ---------------------------------- */
 
 section {
-    padding: 5rem 0;
     width: 100%;
 }
 
@@ -4522,9 +4521,6 @@ ul.footer-social li {
 
 /* Footer Widgets ---------------------------- */
 
-.footer-widgets-outer-wrapper {
-    border-bottom: 0.1rem solid #dedfdf;
-}
 
 .footer-widgets+.footer-widgets {
     margin-top: 3rem;
@@ -4739,7 +4735,6 @@ a.to-the-top>* {
     /* Element Base ------------------------- */
     ul,
     ol {
-        margin-bottom: 4rem;
     }
     pre {
         padding: 3rem;
@@ -4782,7 +4777,7 @@ a.to-the-top>* {
     .heading-size-2,
     h3,
     .heading-size-3 {
-        margin: 6rem auto 3rem;
+        margin: 6rem auto -2rem;
     }
     h4,
     .heading-size-4,
@@ -4839,9 +4834,6 @@ a.to-the-top>* {
     }
     /* Helper Classes ------------------------- */
     /* SECTIONS */
-    section {
-        padding: 8rem 0;
-    }
     .section-inner {
         width: calc(100% - 8rem);
     }
@@ -5384,9 +5376,6 @@ a.to-the-top>* {
         width: auto;
     }
     /* FOOTER WIDGETS */
-    .footer-widgets-outer-wrapper {
-        padding: 8rem 0;
-    }
     .footer-widgets-wrapper {
         display: flex;
         justify-content: space-between;
@@ -6062,6 +6051,7 @@ section .section-title {
 }
 
 #footer {
+    padding-bottom: 30px;
     background: #007b5e;
 }
 
@@ -6145,13 +6135,14 @@ section .section-title {
 
 .footer-inner.section-inner .widget.widget_block .widget-content ul li a {
     color: #fff;
+    font-size: 14px;
 }
 
 .footer-inner.section-inner .widget.widget_block .widget-content ul li a::before {
-    content: '»';
-    font-size: 28px;
-    font-weight: 300;
-    margin-right: 10px;
+    font-family: "FontAwesome";
+    content: "\f101";
+    display: inline-block;
+    padding-right: 10px;
 }
 
 .footer-inner.section-inner .widget.widget_block .widget-content h2 {
@@ -6179,4 +6170,13 @@ section .section-title {
 
 #sub-search {
     margin-left: 10px;
+}
+.wp-block-group__inner-container h2 {
+    font-size: 18px;
+}
+.wp-block-latest-posts__list li {
+    font-size:10px;
+}
+.wp-block-group__inner-container {
+    color: #fff;
 }
