@@ -127,7 +127,11 @@ get_header();
 			</div>
 		</div>
 		<?php } ?>
-		<?php if ( is_search() ) { ?>
+		<?php if ( is_search() ) {
+			$post = get_post();
+			$img = findImgHTMLTag($post->post_content);
+			$img = $img?$img:'<img src="https://artbaselmanawynwood.com/wp-content/uploads/2021/09/noimage.png">';
+			?>
 		<div class="container">
 			<div class="list_new_search">
 				<div class='list_new_view_search'>
@@ -135,7 +139,7 @@ get_header();
 						<div class='col-md detail-new_search'>
 							<div class='row'>
 								<div class='col-md-3 col-xs-3 img_search'>
-									<img src="<?php echo catch_that_image() ?>" alt="">
+									<?= $img?>
 								</div>
 								<div class='col-md-3 col-xs-3 time_search'>
 									<span class='date_search'><?= $post_date ?></span><br>
