@@ -19,8 +19,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
 		<link rel="profile" href="https://gmpg.org/xfn/11">
-		<!-- Module 4: -->
+
+		<!-- Module 2 & 7 - Vũ: -->
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module2.css" type="text/css" media="screen" />
+
+		<!-- Module 4 & 5 - Linh: -->
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module4.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module5.css" type="text/css" media="screen" />
 
 
         <!-- Chèn bootstrap; Lê Anh Vũ; -->
@@ -35,13 +40,6 @@
 		<!-- Insert css module1 & module6 by Liem -->
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module1.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module6.css" type="text/css" media="screen" />
-
-        <!-- chèn đường dẫn css module 4; Lê Anh Vũ; -->
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module2.css" type="text/css" media="screen" />
-
- 
-
-
 
 	</head>
 
