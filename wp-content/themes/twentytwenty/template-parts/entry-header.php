@@ -9,20 +9,6 @@
  */
 get_header();
 $has_sidebar_9 = is_active_sidebar('sidebar-9');
-$entry_header_classes = '';
-
-if (is_singular()) {
-	$entry_header_classes .= ' header-footer-group';
-}
-if (is_single()) {
-	$class = 'footer-widgets-wrapper1';
-}
-$type_post = '';
-if (is_single()) {
-	$type_post = 'single-top';
-} else {
-	$type_post = 'single-date';
-}
 ?>
 
 <header class="entry-header has-text-align-center<?php echo esc_attr($entry_header_classes); ?>">
