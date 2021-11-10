@@ -198,6 +198,27 @@ function twentytwenty_the_post_meta( $post_id = null, $location = 'single-top' )
 }
 
 /**
+ * Định dạng date ngày tháng * 
+ */
+
+function format_post_time($post_id)
+{
+	if (empty($post_id)) {
+		return;
+	}
+
+	$post = get_post($post_id);
+	$post_date = $post->post_date;
+	$post_date_day = date('d', strtotime($post_date));
+	$post_date_month = date('m', strtotime($post_date));
+	$post_date_finish = printf("<span class='display-3' >%u</span> <br> <p class='post-month'>THÁNG %u</p>"
+	,$post_date_day,$post_date_month);
+
+}
+
+
+
+/**
  * Filters the edit post link to add an icon and use the post meta structure.
  *
  * @since Twenty Twenty 1.0
