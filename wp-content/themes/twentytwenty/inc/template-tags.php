@@ -393,7 +393,16 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 							<?php twentytwenty_the_theme_svg( 'calendar' ); ?>
 						</span>
 						<span class="meta-text">
-							<a href="<?php the_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
+							<?php 
+								$string_date = strtotime($post->post_date);
+								$en_date = getdate($string_date);
+								$day =  $en_date['mday'];
+								$month = "THÁNG " . $en_date['mon'];
+							?>
+							<a class="time-box" href="<?php the_permalink(); ?>">
+								<div class="day-box"><?php echo $day; ?></div>
+								<div class="month-box"><?php echo $month; ?></div>
+							</a>
 						</span>
 					</li>
 					<?php
