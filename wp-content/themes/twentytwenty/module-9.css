@@ -1,1 +1,42 @@
 /* Module 9 css */
+
+.footer-widgets9 {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.footer-widgets9 h2 {
+    font-weight: 700;
+    color: black;
+}
+
+.footer-widgets9 .cat-item a {
+    color: #37bbe4 !important;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.footer-widgets9 .cat-item::before {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f5ce31;
+    content: "\2022";
+    font-size: 30px;
+    padding-right: 0.5em;
+    position: relative;
+    top: 0.15em;
+}
+
+.footer-widgets9 .wp-block-categories-list {
+    background: #fff;
+    padding-right: 130px;
+    padding-left: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    box-shadow: 0px -16px 0px #c1c1c161;
+}
+
+.footer-widgets9 .wp-block-categories-list .cat-item {
+    border-bottom: 1px #c1c1c1 solid;
+    width: 190%;
+}
