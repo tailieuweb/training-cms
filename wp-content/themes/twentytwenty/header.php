@@ -32,9 +32,9 @@
 
 		<?php wp_head(); ?>
 
-		<!-- Insert css module1 & module5 by Liem -->
+		<!-- Insert css module1 & module6 by Liem -->
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module1.css" type="text/css" media="screen" />
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module5.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module6.css" type="text/css" media="screen" />
 
         <!-- chèn đường dẫn css module 4; Lê Anh Vũ; -->
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module2.css" type="text/css" media="screen" />

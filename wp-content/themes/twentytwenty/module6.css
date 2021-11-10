@@ -9,7 +9,7 @@
     display: flex !important;
 }
 
-.meta-text-module5 {
+.meta-text-module6 {
     position: absolute;
     top: 0;
     right: 20%;
@@ -22,7 +22,7 @@
 
 }
 
-.meta-text-module5 a:hover {
+.meta-text-module6 a:hover {
     text-decoration: none;
 }
 
@@ -64,7 +64,7 @@
     font-style: italic;
 }
 
-.singular-group-module5 {
+.singular-group-module6 {
     position: relative;
 }
 
@@ -72,7 +72,7 @@
 
 @media screen and (max-width: 770px) {
 
-    .meta-text-module5 {
+    .meta-text-module6 {
        position: relative;
     }
 }
