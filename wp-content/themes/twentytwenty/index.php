@@ -67,12 +67,12 @@ $post_meta = apply_filters(
 
 
 get_header();
-//Ngoc Yen - module 12 
+//Ngọc Yến- module 12 
 $has_sidebar_12 = is_active_sidebar('sidebar-12');
 ?>
  
 <main id="site-content" role="main">
-	<!-- Ngoc Yen - chia cot de hien thi module 12 -->
+	<!-- chia cột để hiển thị module 12 -by Ngọc Yến --->
 	<div class="row">
 		<div class="col-md-3">
 			
@@ -194,7 +194,7 @@ $has_sidebar_12 = is_active_sidebar('sidebar-12');
 			<?php get_template_part('template-parts/pagination'); ?>
 
 		</div>
-		<!-- đây là module 12 - by Ngọc Yến -->
+		<!-- đây là module 12  - by Ngọc Yến -->
 		<div class="col-md-3">
 			<?php if ($has_sidebar_12) { ?>
 
