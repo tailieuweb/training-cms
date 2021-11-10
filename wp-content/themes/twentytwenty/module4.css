@@ -1,0 +1,50 @@
+.module4-searchBox {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.module4-searchBox label.module4-searchWrapper {
+    position: relative;
+}
+
+.module4-searchBox .module4-searchField {
+    padding: 18px 18px 18px 66px;
+    font-size: 18px;
+    margin: 0;
+    line-height: 42px;
+    border-radius: 5px;
+}
+
+.module4-searchBox .module4-searchField:focus {
+    outline: thin solid #eee;
+}
+
+.module4-searchBox .module4-submitBtn {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    background-color: green;
+    margin: 0;
+}
+
+.module4-searchBox label.module4-searchWrapper .search-icon-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+}
+
+.module4-searchBox label.module4-searchWrapper .search-icon-wrapper .search-icon-img {
+    user-select: none;
+    display: inline-block;
+    width: 30px;
+    height: auto;
+}
