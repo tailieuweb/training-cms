@@ -1267,7 +1267,7 @@ button.toggle {
     align-items: stretch;
     display: flex;
     flex-wrap: nowrap;
-    margin: 0 0 -0.8rem -0.8rem;
+    margin: 0 0 -0.8rem 1.2rem;
 }
 
 .search-form .search-field,
@@ -6162,4 +6162,21 @@ section .section-title {
 
 .footer-nav-widgets-wrapper.header-footer-group {
     background: #007b5e;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+}
+
+.icon #icon-user {
+    font-size: 28px;
+}
+
+#exampleInputPassword1 {
+    padding: 7px;
+}
+
+#sub-search {
+    margin-left: 10px;
 }
