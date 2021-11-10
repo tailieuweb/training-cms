@@ -2536,7 +2536,7 @@ function comment_form( $args = array(), $post_id = null ) {
     <div class="card-header">
         <ul class="nav nav-tabs card-header-tabs" role="tablist">
             <li class="nav-item">
-                <i class="nav-link active" id="posts-tab" data-toggle="tab" role="tab" aria-controls="posts"
+                <i class="nav-link active" style="font-style: normal;" id="posts-tab" data-toggle="tab" role="tab" aria-controls="posts"
                     aria-selected="true">
                     <?php
             comment_form_title( $args['title_reply'], $args['title_reply_to'] );
