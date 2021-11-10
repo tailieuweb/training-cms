@@ -27,7 +27,7 @@
 
 	<?php wp_head(); ?>
 	
-	<!-- đây là link css module 3 - by Ngọc Yến -->
+	<!-- đây là link file css module 3 - by Ngọc Yến -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module3.css">
 	<!-- đây là link css module 12 - by Ngọc Yến -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module12.css">
