@@ -14,8 +14,6 @@
 <!DOCTYPE html>
 
 <html class="no-js" <?php language_attributes(); ?>>
-
-<<<<<<< HEAD
 	<head>
 
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -29,9 +27,7 @@
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,700,800|Open+Sans+Condensed:300,700|Prata&amp;subset=vietnamese" rel="stylesheet" type="text/css">
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 		<?php wp_head(); ?>
-=======
 <head>
->>>>>>> origin/1-wordpress-581-202109/2-groups/1-E/master
 
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
