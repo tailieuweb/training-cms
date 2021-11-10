@@ -110,8 +110,9 @@ body {
 	word-break: break-word;
 	word-wrap: break-word;
 }
-
+/* site content -- link backround fit.tdc */
 #site-content {
+	background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_pattern.png) repeat;
 	overflow: hidden;
 	padding: 4rem 16rem;
 }
@@ -525,14 +526,10 @@ video {
 	display: block;
 }
 
-<<<<<<< HEAD
-
+svg,
 img,
 embed,
 object {
-=======
-svg, img, embed, object {
->>>>>>> 1-wordpress-581-202109/2-groups/1-C/4-2-Anh-module-8
 	display: block;
 	height: auto;
 	max-width: 100%;
@@ -2414,15 +2411,13 @@ h1.entry-title, h2.entry-title {
 	margin-top: 0rem;
 }
 
-<<<<<<< HEAD
 .danh-sach .post-meta-wrapper.post-meta-single-bottom {
 	margin-top: 3rem;
 }
 .tim_kiem .post-meta-wrapper.post-meta-single-bottom {
 	margin-top: 3rem;
 }
-=======
->>>>>>> 1-wordpress-581-202109/2-groups/1-C/4-2-Anh-module-8
+
 /* Author Bio -------------------------------- */
 
 .author-bio {
@@ -3945,13 +3940,7 @@ div.comment:first-of-type {
 .footer-top, .footer-widgets-outer-wrapper, #site-footer {
 	padding: 3rem 0;
 }
-<<<<<<< HEAD
-/*.footer-widgets-outer-wrapper.search-main .footer-widgets-wrapper{*/
-/*	display: block;*/
-/*	margin: 0 auto;*/
-/*}*/
-=======
->>>>>>> 1-wordpress-581-202109/2-groups/1-C/4-2-Anh-module-8
+
 
 /* Footer Top -------------------------------- */
 
@@ -5646,6 +5635,7 @@ section .section-title {
 	border-left: 3px solid #fff;
 	color: #fff;
 }
+<<<<<<< HEAD
 
 /* Css comment */
 
@@ -5711,4 +5701,38 @@ p.comment-form-comment {
 	padding-top: 70px;
 	padding-bottom: 70px;
 	position: relative;
+/* ---------------------------------------------- */
+/* content post CSS  */
+/* contain-main //-> in modul 2 */
+.content-main{
+	padding: 20px 0;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 3px #000;
 }
+.entry-content .content-main .content-adjust-post .entry-title-adjust{
+	margin: 0;
+	font-size: 26px;
+}
+.entry-title-adjust a{
+	color: #2272b8 ;
+	text-decoration: none;
+	font-feature-settings: "lnum";
+    font-variant-numeric: lining-nums;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.post-month{
+	font-size: 0.9em;
+}
+.content-adjust-post-meta .post-meta-wrapper{
+	margin-top: 0;
+}
+.content-adjust-post{
+	padding: 5px;
+}
+.content-adjust-post-meta{
+	padding: 4px ;
+	margin: 15px 0px;
+	
+}
+/* end css -content */
