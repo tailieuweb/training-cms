@@ -6163,3 +6163,76 @@ section .section-title {
 .footer-nav-widgets-wrapper.header-footer-group {
     background: #007b5e;
 }
+
+
+/* comment */
+
+section.card {
+    padding: 0px !important;
+}
+
+.card-body {
+    margin: 0;
+    padding: 0px 6px !important;
+    box-sizing: border-box;
+}
+
+#comment {
+    background: #fff;
+    /* border-block-color: #ced4da; */
+    border-radius: 5px;
+    font-size: 13px;
+    border-radius: 3px;
+    padding-top: 10px;
+}
+
+.comment-form-comment {
+    /* Unstand boder comment */
+    /* border: 1px solid #dfdfdf; */
+    background: white;
+}
+
+.comment-form-comment label {
+    /* border: 1px solid #ced4da; */
+    color: #495057;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 410px;
+    padding: 10px;
+    position: relative;
+    padding: 10px;
+}
+
+input#submit {
+    background: #007bff;
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: lowercase;
+    border: none;
+    float: right;
+    padding: 13px 18px;
+    /* display: inline-block; */
+    font-size: 15px;
+    /* margin-top: -7px;*/
+    position: relative;
+    /* left: 0px; */
+    right: 17px;
+    bottom: 71px;
+}
+
+p.comment-form-comment {
+    padding: 8px;
+    padding-top: 68px;
+    padding-bottom: 68px;
+    position: relative;
+}
+
+input#submit:hover {
+    display: inline-block;
+    background-color: #4a99ee;
+    border: #0453a7;
+}
+
+input#submit:hover {
+    background-color: #0069d9;
+}
