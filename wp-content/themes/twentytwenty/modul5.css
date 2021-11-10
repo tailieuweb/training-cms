@@ -1,0 +1,57 @@
+/* css tại trang index.php
+By : Nguyễn Thị Thanh Thư
+module 5: Search result
+module 2: content*/
+
+.meta-day {
+    font-family: "Prata", serif;
+    font-size: 3.1em;
+    line-height: 1em;
+    position: sticky !important;
+    margin-top: 20px;
+}
+
+.meta-thang {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    position: sticky !important;
+    margin-top: -50px;
+    /* margin-left: 50px; */
+}
+
+.meta-month {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    position: sticky !important;
+    margin-top: -10px;
+    /* margin-left: 50px; */
+}
+
+.dinhDangDay {
+    text-align: center !important;
+    margin-left: 30px;
+}
+
+.verticalLine {
+    border-right: 1px solid #666;
+}
+
+
+/* khoong nen css cho class cua framework (vd: bootstrap, ...) */
+
+.baro {
+    background-color: white;
+    padding: 10px 0;
+    margin: 0 10%;
+}
+
+.entry-content p {
+    max-width: 100% !important;
+    text-align: justify !important;
+}
+
+.entry-title a {
+    max-width: 100% !important;
+    text-align: justify !important;
+    font-size: 95%;
+}

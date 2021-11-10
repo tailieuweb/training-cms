@@ -1,0 +1,28 @@
+/* css tại trang content.php và entry-header.php
+By : Nguyễn Thị Thanh Thư
+module 2: content*/
+
+.hea-post>.entry-header-inner {
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left !important;
+    text-transform: uppercase;
+    max-width: none !important;
+}
+
+.entry-title a.title-blue {
+    color: #428bca !important;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+}
+
+.post-str {
+    text-align: left;
+    max-width: none !important;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.post-inner {
+    padding-top: 5px;
+}
