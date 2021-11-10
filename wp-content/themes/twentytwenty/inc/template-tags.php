@@ -390,19 +390,29 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 					<li class="post-date meta-wrapper">
 						<span class="meta-icon">
 							<span class="screen-reader-text"><?php _e( 'Post date', 'twentytwenty' ); ?></span>
+							<?php if(!is_singular()) { ?>
 							<?php twentytwenty_the_theme_svg( 'calendar' ); ?>
+							<?php } ?>
 						</span>
 						<span class="meta-text">
-							<?php 
-								$string_date = strtotime($post->post_date);
-								$en_date = getdate($string_date);
-								$day =  $en_date['mday'];
-								$month = "THÁNG " . $en_date['mon'];
-							?>
-							<a class="time-box" href="<?php the_permalink(); ?>">
-								<div class="day-box"><?php echo $day; ?></div>
-								<div class="month-box"><?php echo $month; ?></div>
-							</a>
+							<?php if(!is_singular()) { ?>
+							<a href="<?php the_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
+							<?php } ?>
+							<?php if(is_singular()) { ?>
+								<div class="headlinesdate">
+									<div class="headlinesdm">
+										<div class="headlinesday">
+										<a href="<?php the_permalink(); ?>"><?php the_time( substr(get_option('date_format'),2,1)) ; ?></a>
+										</div>
+										<div class="headlinesmonth">
+										<a href="<?php the_permalink(); ?>"><?php the_time( substr(get_option('date_format'),0,1)) ; ?></a>
+										</div>
+										<div class="headlinesyear">
+										<a href="<?php the_permalink(); ?>"><?php the_time( substr(get_option('date_format'),4,6)) ; ?></a>
+										</div>
+									</div>
+								</div>
+							<?php } ?>
 						</span>
 					</li>
 					<?php
@@ -446,7 +456,7 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 				}
 
 				// Comments link.
-				if ( in_array( 'comments', $post_meta, true ) && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+				if ( in_array( 'comments', $post_meta, true ) && ! post_password_required() && ( comments_open() || get_comments_number() ) && !is_singular()) {
 
 					$has_meta = true;
 					?>
