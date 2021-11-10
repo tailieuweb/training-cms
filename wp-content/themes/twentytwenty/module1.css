@@ -16,6 +16,10 @@
     text-decoration: none !important;
 }
 
+#site-content .entry-title.title-detail {
+    width: 60%;
+}
+
 /* Button Home  */
 
 .btn-wrapper  {

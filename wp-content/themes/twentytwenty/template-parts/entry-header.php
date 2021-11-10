@@ -13,7 +13,7 @@ $singular_group = '';
 
 if ( is_singular() ) {
 	$entry_header_classes .= ' header-footer-group';
-	$singular_group = 'singular-group-module5';
+	$singular_group = 'singular-group-module6';
 }
 
 ?>

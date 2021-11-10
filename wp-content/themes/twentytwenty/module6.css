@@ -1,0 +1,81 @@
+/* Set background header and content of detail */
+.header-footer-group,
+.content-detail {
+    background: url(./assets/images/bg_pattern.png);
+}
+
+/* Header of detail */
+.header-footer-group {
+    display: flex !important;
+}
+
+.meta-text-module6 {
+    position: absolute;
+    top: 0;
+    right: 20%;
+    background: #f5ce31;
+    display: block;
+    line-height: 50px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+
+}
+
+.meta-text-module6 a:hover {
+    text-decoration: none;
+}
+
+/* Line between header and content of detail */
+.overviewLine {
+    border-bottom: 1px solid #cecece;
+    margin: 25px 0 15px;
+    position: relative;
+}
+
+.overviewLine::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50px;
+    border-width: 12px 12px 0;
+    border-style: solid;
+    border-color: #cecece transparent;
+    display: block;
+    width: 0;
+}
+
+.overviewLine::before {
+    box-sizing: border-box;
+}
+
+.title-detail {
+    font-size: 40px;
+    text-align: left;
+}
+
+/* Content of detail */
+.content-detail .entry-content {
+    padding: 30px 0;
+}
+
+.content-detail .entry-content * {
+    max-width: 100rem !important;
+    font-style: italic;
+}
+
+.singular-group-module6 {
+    position: relative;
+}
+
+/* Reponsive detail */
+
+@media screen and (max-width: 770px) {
+
+    .meta-text-module6 {
+       position: relative;
+    }
+}
+
+
+

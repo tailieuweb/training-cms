@@ -385,8 +385,8 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 					$has_meta = true;
 					?>
 					<li class="post-date meta-wrapper">
-						<!-- Add class meta-text-module5 when it's detail -->
-						<span class="meta-text <?= is_singular() ? 'meta-text-module5' : '' ?>">
+						<!-- Add class meta-text-module6 when it's detail -->
+						<span class="meta-text <?= is_singular() ? 'meta-text-module6' : '' ?>">
 							<a href="<?php the_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
 						</span>
 					</li>
