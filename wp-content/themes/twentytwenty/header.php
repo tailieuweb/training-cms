@@ -21,7 +21,10 @@
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 		<link rel="profile" href="https://gmpg.org/xfn/11">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomb/module_6.css" type="text/css"
+        media="screen" />
 
 		<?php wp_head(); ?>
 
@@ -166,6 +169,19 @@
 							<?php
 						}
 						?>
+						
+							<div class="toggle-wrapper account-toggle-wrapper">
+
+							<button class="toggle account-toggle desktop-account-toggle" aria-expanded="false">
+								<span class="toggle-inner">
+									<a href="http://wordpress.local/training-cms/wp-admin/">
+										<img src="http://wordpress.local/training-cms/wp-content/uploads/2021/10/account.jpg">
+									</a>
+									<span class="toggle-text"><a href="http://wordpress.local/training-cms/wp-admin/">Account</a></span>
+								</span>
+							</button><!-- .search-toggle -->
+
+							</div>
 
 						</div><!-- .header-toggles -->
 						<?php

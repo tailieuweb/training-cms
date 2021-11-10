@@ -847,7 +847,7 @@ input[type="submit"] {
 	line-height: 1.25;
 	margin: 0;
 	opacity: 1;
-	padding: 1.1em 1.44em;
+	padding: -0.9em 1.44em;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -6625,4 +6625,44 @@ footer#site-footer {
     border-bottom: none;
 }
 
+form.search {
+	margin-right: 355px;
+	max-width: 100%;
+	width: 300px;
+	height: 50px;
+	display: flex;
+}
+form.search input {
+	border: 0 none;
+	font-style: italic;
+	line-height: 50px;
+	padding: 0 15px;
+	width: 80%;
+	border: 1px solid #777;
+}
+form.search button {
+	background-color: #169eb7;
+	border: 0 none;
+	color: #fff;
+	font-size: 20px;
+	line-height: 50px;
+	width: 20%;
 
+}
+form.search button {
+	-webkit-padding-after:0px;
+}
+.selection{
+	color: #fff;
+	background: #169eb7;
+}
+@media (min-width: 1220px){
+	.primary-menu > li {
+		margin: 1.8rem 0 0 2.5rem;
+	}
+}
+@media (min-width: 1220px){
+	ul.primary-menu {
+		margin: -0.8rem 0 0 -10.5rem;
+	}
+}
