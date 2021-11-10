@@ -22,6 +22,7 @@
 		
 		<!-- Module 2 & 7 - Vũ: -->
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module2.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module7.css" type="text/css" media="screen" />
 
 		<!-- Module 4 & 5 - Linh: -->
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module4.css" type="text/css" media="screen" />
