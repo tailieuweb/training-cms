@@ -47,7 +47,7 @@ if (!is_single()) { ?>
 				the_excerpt();
 			} else {
 
-				the_content( __( 'Continue reading', 'twentytwenty' ) );
+				the_content( __( 'Continue reading', 'twentytwenty' ) );}?>
     <div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
         <div class="entry-content">
             <?php
@@ -127,7 +127,7 @@ if (!is_single()) { ?>
 
     </div><!-- .section-inner -->
 
-    <?php
+
 
 
 <!--	<div class="section-inner">-->
