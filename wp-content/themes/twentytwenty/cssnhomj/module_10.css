@@ -1,0 +1,26 @@
+.crossedbg {
+    background: url(../img/bg_cr_grey.png);
+    height: 15px;
+}
+.panel-body {
+    background: #fff;
+}
+.row .col-md-3 .panel-body .list-group {
+    background: #ebebeb;
+    padding-right: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.panel-body {
+    padding: 15px;
+    background: #f9f9f9;
+}
