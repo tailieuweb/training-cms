@@ -4602,6 +4602,14 @@ a.to-the-top > * {
 }
 
 
+body:not(.singular) main > article.tim_kiem{
+		max-width: 1140px;
+		display: block;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+}
+
 /* -------------------------------------------------------------------------- */
 
 /*	17. Media Queries
@@ -5255,6 +5263,7 @@ a.to-the-top > * {
 		font-size: 2rem !important;
 		color: #000 !important;
 	}
+	/**/
 	.tim_kiem .section-inner.medium p.post-month{
 		display: block !important;
 		font-size: 2rem !important;
