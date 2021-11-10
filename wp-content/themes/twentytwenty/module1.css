@@ -1,0 +1,175 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+	.search-sub {
+		/* padding: 0 !important; */
+		font-size: 70% !important;
+		background-color: white !important;
+		color: black !important;
+		width: 35% !important;
+		height: 15%;
+		border-radius: 7px !important;
+		border-color: black !important;
+		border-style: solid !important;
+		border-width: 1px !important;
+		/* margin-left: 7% !important ; */
+
+	}
+
+	.navbar-left {
+		display: flex;
+	}
+
+	.search-field {
+		font-size: 50%;
+		width: 95% !important;
+		height: 70% !important;
+		border-radius: 7px !important;
+		/* margin-right: 10% !important; */
+
+	}
+
+	.li {
+		list-style-type: none !important;
+	}
+
+	.fa {
+		width: auto;
+		padding-left: 30% !important;
+		padding-bottom: 10% !important;
+	}
+
+	a {
+		text-decoration: none !important;
+	}
+
+	.account {
+		margin-left: -10px;
+		font-size: 16px;
+		font-weight: 550;
+		margin-top: 22px;
+	}
+
+	.account>.dropdown>a {
+
+		color: #777777;
+	}
+
+	.site-description {
+		margin: 1rem 0 0 2.4rem;
+		margin-left: 8%;
+	}
+
+	.col-md-4 {
+
+		margin-left: -16%;
+	}
+
+	.nenxam {
+		background-color: #e7e7e7;
+		padding: 40px 0px 30px 0px;
+		max-width: 100%;
+
+	}
+
+	.header-titles {
+		display: flow-root !important;
+		/* margin-top: -27px; */
+	}
+
+	.logo {
+		padding: 40px 0px;
+		margin-right: -6%;
+		padding-left: 5%;
+	}
+
+	.header-inner {
+		padding: 0px !important;
+	}
+
+	.tim {
+		padding-top: 20px;
+	}
+
+	.kinhlup>a>i {
+		font-size: 21px;
+		/* padding-top: 20px; */
+		margin-left: -35px;
+		color: #777777;
+	}
+
+	.kinhlup>a>p {
+		font-size: 16px;
+		font-weight: 600;
+		margin-left: -5rem;
+		margin-top: 1px;
+		color: #777777;
+	}
+
+	.kinhlup {
+		display: block;
+		margin-top: 24px;
+
+
+	}
+
+	.header-navigation-wrapper {
+		margin-right: -17px;
+		display: flex !important;
+	}
+
+	.primary-menu>ul> {
+		color: black;
+	}
+
+	.co4 {
+		margin-top: -4%;
+	}
+
+	.navbar-form .form-group {
+		display: inline-block;
+		margin-bottom: 0;
+
+		padding-right: 17%;
+		margin-left: -26%;
+		margin-top: -4%;
+	}
+
+	[type=reset],
+	[type=submit],
+	button,
+	html [type=button] {
+		-webkit-appearance: button;
+		width: 4rem;
+		width: 100%;
+		height: 4rem;
+		margin-left: -17%;
+		padding-right: 6%;
+		margin-top: -2%;
+
+	}
+
+	.header-toggles:only-child .toggle-inner .toggle-text {
+		position: absolute !important;
+		padding-right: 10px;
+		font-size: 16px !important;
+		color: #777777 !important;
+
+	}
+
+	.header-toggles:only-child .toggle-inner .toggle-icon {
+		margin-left: -20px !important;
+		color: #777777;
+	}
+
+	.header-inner .toggle-wrapper {
+		margin-right: -120px !important;
+		margin-top: -30px !important;
+	}
+
+	ul.primary-menu {
+		padding-left: 0px !important;
+		padding-right: 20px;
+	}
+	.chinhlogo{
+		padding-top: 10px;
+	}
