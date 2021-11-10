@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The default template for displaying content
  *
@@ -10,13 +11,11 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
-
 $class = "";
 if (!is_single()) {
 	$class = 'danh-sach';
 }
 ?>
-
 <?php if (is_single()) { ?>
 	<div class="row">
 		<div class="col-md-3">
