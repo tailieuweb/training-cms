@@ -1,27 +1,19 @@
-<style>
-	.form-control-borderless {
-		border: none !important;
-	}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module4.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
 
-	.form-control-borderless:hover,
-	.form-control-borderless:active,
-	.form-control-borderless:focus {
-		border: none !important;
-		outline: none;
-		box-shadow: none;
-	}
 
-	.justify-content-center {
-		background-color: white;
-	}
-
-	.submitcl {
-		background-color: #007b5e !important;
-		border-radius: 7px !important;
-	}
-</style>
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 <?php
 /**
@@ -49,6 +41,7 @@ if (empty($twentytwenty_aria_label) && !empty($args['label'])) {
 	$twentytwenty_aria_label = 'aria-label="' . esc_attr($args['label']) . '"';
 }
 ?>
+<!-- form search -->
 <div class="row justify-content-center">
 	<div class="col-12 col-md-12">
 		<form role="search" <?php echo $twentytwenty_aria_label; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. 

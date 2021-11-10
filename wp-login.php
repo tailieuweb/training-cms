@@ -286,7 +286,7 @@ function login_footer( $input_id = '' ) {
 			<?php
 			$html_link = sprintf(
 				'<a href="%s">%s</a>',
-				esc_url( home_url( '/' ) ),
+				esc_url( ( '/' ) ),
 				sprintf(
 					/* translators: %s: Site title. */
 					_x( '&larr; Go to %s', 'site' ),
