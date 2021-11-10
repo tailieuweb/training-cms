@@ -12,13 +12,13 @@
  * @since Twenty Twenty 1.0
  */
 
-$has_sidebar_9 = is_active_sidebar('module-9');
+
 $class = '';
 if (!is_single()) {
 	$class = 'danh-sach';
 }
 ?>
-<?php 
+<?php
 $post = get_post();
 $day = $month = $year = 0;
 if (strtotime($post->post_date)) {
@@ -56,51 +56,49 @@ if (strtotime($post->post_date)) {
 					<div class="row rowContent">
 						<!-- Module-9-->
 						<div class="col-md-3">
-							<?php if ($has_sidebar_9) { ?>
-								<div class="footer-widgets-wrapper">
-									<?php if ($has_sidebar_9) { ?>
-										<div class="footer-widgets9 column-one grid-item ">
-											<?php dynamic_sidebar('module-9'); ?>
-										</div>
-									<?php } ?>
+							<div class="footer-widgets-wrapper">
+								<div class="footer-widgets9 column-one grid-item ">
+									<?php dynamic_sidebar('module-9'); ?>
 								</div>
-							<?php } ?>
+
+							</div>
+
 						</div>
 						<!-- Module-6 -->
 						<div class="col-md-6">
 
-						<div class="row">
-							<div class="col-md-10 col-xs-9">
-						<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
-						</div>
-						<div class="col-md-2 col-xs-3">
-								<div class="headlinesdate">
-									<div class="headlinesdm">
-										<div class="headlinesday"><?php echo $day ?></div>
-										<div class="headlinesmonth"><?php echo $month ?></div>
-									</div>
-									<div class="headlinesyear"><?php echo "'" . $year ?></div>
+							<div class="row">
+								<div class="col-md-10 col-xs-9">
+									<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
 								</div>
-							</div>
+								<div class="col-md-2 col-xs-3">
+									<div class="headlinesdate">
+										<div class="headlinesdm">
+											<div class="headlinesday"><?php echo $day ?></div>
+											<div class="headlinesmonth"><?php echo $month ?></div>
+										</div>
+										<div class="headlinesyear"><?php echo "'" . $year ?></div>
+									</div>
+								</div>
 							</div>
 
 
 							<div class="row">
-							<div class="col-md-12">
-								<div class="overviewline"></div>
+								<div class="col-md-12">
+									<div class="overviewline"></div>
+								</div>
 							</div>
-						</div>
 
 
 
 
-						
+
 							<div class="detail-post-content">
 								<?php
 								the_content(__('Continue reading', 'twentytwenty'));
 								?>
 							</div>
-						<div class="author-module-6"><?php	echo "(Theo ".get_the_author().")"; ?></div>
+							<div class="author-module-6"><?php echo "(Theo " . get_the_author() . ")"; ?></div>
 
 						</div>
 						<!-- Module-10 -->
@@ -138,7 +136,7 @@ if (strtotime($post->post_date)) {
 					</div>
 				<?php
 				} else {
-					
+
 					/** $content = preg_replace('/<figure.*?>.*?<\/figure>/', '', $post->post_content); */
 					$content = findHTMLTag($post->post_content, 'p');
 					$content = $content ? $content : 'This post hasn\'t description !!';
