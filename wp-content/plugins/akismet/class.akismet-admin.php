@@ -897,7 +897,10 @@ class Akismet_Admin {
 			'usage_limit'  => get_option( 'akismet_alert_usage_limit' ),
 			'upgrade_plan' => get_option( 'akismet_alert_upgrade_plan' ),
 			'upgrade_url'  => get_option( 'akismet_alert_upgrade_url' ),
+<<<<<<< HEAD
 			'upgrade_type' => get_option( 'akismet_alert_upgrade_type' ),
+=======
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 		);
 	}
 
@@ -1039,7 +1042,11 @@ class Akismet_Admin {
 		}
 
 		$alert_code = get_option( 'akismet_alert_code' );
+<<<<<<< HEAD
 		if ( isset( Akismet::$limit_notices[ $alert_code ] ) ) {
+=======
+		if ( isset( Akismet::$LIMIT_NOTICES[ $alert_code ] ) ) {
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 			$notices[] = self::get_usage_limit_alert_data();
 		}
 
@@ -1079,11 +1086,20 @@ class Akismet_Admin {
 
 		if ( in_array( $hook_suffix, array( 'edit-comments.php' ) ) && (int) get_option( 'akismet_alert_code' ) > 0 ) {
 			Akismet::verify_key( Akismet::get_api_key() ); //verify that the key is still in alert state
+<<<<<<< HEAD
 
 			$alert_code = get_option( 'akismet_alert_code' );
 			if ( isset( Akismet::$limit_notices[ $alert_code ] ) ) {
 				self::display_usage_limit_alert();
 			} elseif ( $alert_code > 0 ) {
+=======
+		
+			$alert_code = get_option( 'akismet_alert_code' );
+			if ( isset( Akismet::$LIMIT_NOTICES[ $alert_code ] ) ) {
+				self::display_usage_limit_alert();
+			}
+			elseif ( $alert_code > 0 ) {
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 				self::display_alert();
 			}
 		}
@@ -1158,7 +1174,11 @@ class Akismet_Admin {
 		if ( !class_exists('Jetpack') )
 			return false;
 
+<<<<<<< HEAD
 		if ( defined( 'JETPACK__VERSION' ) && version_compare( JETPACK__VERSION, '7.7', '<' ) ) {
+=======
+		if ( defined( 'JETPACK__VERSION' ) && version_compare( JETPACK__VERSION, '7.7', '<' )  ) {
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 			// For version of Jetpack prior to 7.7.
 			Jetpack::load_xml_rpc_client();
 		}

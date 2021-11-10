@@ -67,7 +67,11 @@ if ( function_exists( 'register_block_pattern' ) ) {
 					'<!-- wp:columns {"align":"wide"} -->',
 					'<div class="wp-block-columns alignwide"><!-- wp:column -->',
 					'<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#ffffff"}}} -->',
+<<<<<<< HEAD
 					'<div class="wp-block-group has-background" style="background-color:#ffffff"><div class="wp-block-group__inner-container" ><!-- wp:heading {"align":"center"} -->',
+=======
+					'<div class="wp-block-group has-background" style="background-color:#ffffff"><div class="wp-block-group__inner-container"><!-- wp:heading {"align":"center"} -->',
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 					'<h2 class="has-text-align-center">' . esc_html__( 'The Museum', 'twentytwenty' ) . '</h2>',
 					'<!-- /wp:heading -->',
 					'<!-- wp:paragraph {"align":"center"} -->',
@@ -82,7 +86,11 @@ if ( function_exists( 'register_block_pattern' ) ) {
 					'<!-- /wp:column -->',
 					'<!-- wp:column -->',
 					'<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#ffffff"}}} -->',
+<<<<<<< HEAD
 					'<div class="wp-block-group has-background" style="background-color:#ffffff"><div class="wp-block-group__inner-container" ><!-- wp:heading {"align":"center"} -->',
+=======
+					'<div class="wp-block-group has-background" style="background-color:#ffffff"><div class="wp-block-group__inner-container"><!-- wp:heading {"align":"center"} -->',
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 					'<h2 class="has-text-align-center">' . esc_html__( 'The Store', 'twentytwenty' ) . '</h2>',
 					'<!-- /wp:heading -->',
 					'<!-- wp:paragraph {"align":"center"} -->',
@@ -112,7 +120,11 @@ if ( function_exists( 'register_block_pattern' ) ) {
 				'',
 				array(
 					'<!-- wp:group {"align":"wide","backgroundColor":"primary"} -->',
+<<<<<<< HEAD
 					'<div class="wp-block-group alignwide has-primary-background-color has-background"><div class="wp-block-group__inner-container" ><!-- wp:columns -->',
+=======
+					'<div class="wp-block-group alignwide has-primary-background-color has-background"><div class="wp-block-group__inner-container"><!-- wp:columns -->',
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 					'<div class="wp-block-columns"><!-- wp:column -->',
 					'<div class="wp-block-column"><!-- wp:paragraph {"align":"center","textColor":"background","fontSize":"large"} -->',
 					'<p class="has-text-align-center has-background-color has-text-color has-large-font-size">' . wp_kses_post( __( '<em>Dates</em><br>Aug 1 — Dec 1', 'twentytwenty' ) ) . '</p>',

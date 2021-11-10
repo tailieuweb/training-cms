@@ -10,6 +10,7 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
+<<<<<<< HEAD
 //  var_dump(is_search());die();
 $class = '';
 if(!is_single()){
@@ -20,15 +21,28 @@ $class = 'danh-sach';
 <article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
 
     <?php
+=======
+
+?>
+
+<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+
+	<?php
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 
 	get_template_part( 'template-parts/entry-header' );
 
 	if ( ! is_search() ) {
+<<<<<<< HEAD
 		get_template_part( 'template-parts/featuredimage-' );
+=======
+		get_template_part( 'template-parts/featured-image' );
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 	}
 
 	?>
 
+<<<<<<< HEAD
     <div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
 
         <div class="entry-content">
@@ -52,6 +66,26 @@ $class = 'danh-sach';
 
     <div class="section-inner">
         <?php
+=======
+	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
+
+		<div class="entry-content">
+
+			<?php
+			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
+				the_excerpt();
+			} else {
+				the_content( __( 'Continue reading', 'twentytwenty' ) );
+			}
+			?>
+
+		</div><!-- .entry-content -->
+
+	</div><!-- .post-inner -->
+
+	<div class="section-inner">
+		<?php
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 		wp_link_pages(
 			array(
 				'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__( 'Page', 'twentytwenty' ) . '"><span class="label">' . __( 'Pages:', 'twentytwenty' ) . '</span>',
@@ -73,9 +107,15 @@ $class = 'danh-sach';
 		}
 		?>
 
+<<<<<<< HEAD
     </div><!-- .section-inner -->
 
     <?php
+=======
+	</div><!-- .section-inner -->
+
+	<?php
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 
 	if ( is_single() ) {
 
@@ -90,6 +130,7 @@ $class = 'danh-sach';
 	if ( ( is_single() || is_page() ) && ( comments_open() || get_comments_number() ) && ! post_password_required() ) {
 		?>
 
+<<<<<<< HEAD
     <div class="comments-wrapper section-inner">
 
         <?php comments_template(); ?>
@@ -101,3 +142,16 @@ $class = 'danh-sach';
 	?>
 
 </article><!-- .post -->
+=======
+		<div class="comments-wrapper section-inner">
+
+			<?php comments_template(); ?>
+
+		</div><!-- .comments-wrapper -->
+
+		<?php
+	}
+	?>
+
+</article><!-- .post -->
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh

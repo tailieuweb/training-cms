@@ -14,10 +14,16 @@ $has_social_menu = has_nav_menu( 'social' );
 $has_sidebar_1 = is_active_sidebar( 'sidebar-1' );
 $has_sidebar_2 = is_active_sidebar( 'sidebar-2' );
 $has_sidebar_3 = is_active_sidebar( 'sidebar-3' );
+<<<<<<< HEAD
 $has_sidebar_4 = is_active_sidebar( 'sidebar-4' );
 
 // Only output the container if there are elements to display.
 if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3 || $has_sidebar_4) {
+=======
+
+// Only output the container if there are elements to display.
+if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3 ) {
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 	?>
 
 	<div class="footer-nav-widgets-wrapper header-footer-group">
@@ -86,10 +92,17 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ||
 
 			<?php } ?>
 
+<<<<<<< HEAD
 			<?php if ( $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3 || $has_sidebar_4) { ?>
 
 				<aside class="footer-widgets-outer-wrapper" role="complementary">
 					
+=======
+			<?php if ( $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3 ) { ?>
+
+				<aside class="footer-widgets-outer-wrapper" role="complementary">
+
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 					<div class="footer-widgets-wrapper">
 
 						<?php if ( $has_sidebar_1 ) { ?>
@@ -110,11 +123,16 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ||
 
 						<?php if ( $has_sidebar_3 ) { ?>
 
+<<<<<<< HEAD
 							<div class="footer-widgets column-one grid-item">
+=======
+							<div class="footer-widgets column-three grid-item">
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 								<?php dynamic_sidebar( 'sidebar-3' ); ?>
 							</div>
 
 						<?php } ?>
+<<<<<<< HEAD
 						<?php if ( $has_sidebar_4 ) { ?>
 
 							<div class="footer-widgets column-one grid-item">
@@ -122,6 +140,8 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ||
 							</div>
 
 						<?php } ?>
+=======
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 
 					</div><!-- .footer-widgets-wrapper -->
 

@@ -99,6 +99,7 @@ class Akismet_Widget extends WP_Widget {
 ?>
 
 	<div class="a-stats">
+<<<<<<< HEAD
 		<a href="https://akismet.com" target="_blank" rel="noopener" title="">
 			<?php
 
@@ -122,6 +123,9 @@ class Akismet_Widget extends WP_Widget {
 
 			?>
 		</a>
+=======
+		<a href="https://akismet.com" target="_blank" rel="noopener" title=""><?php printf( _n( '<strong class="count">%1$s spam</strong> blocked by <strong>Akismet</strong>', '<strong class="count">%1$s spam</strong> blocked by <strong>Akismet</strong>', $count , 'akismet'), number_format_i18n( $count ) ); ?></a>
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 	</div>
 
 <?php

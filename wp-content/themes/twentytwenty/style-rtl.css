@@ -125,7 +125,11 @@ html {
 }
 
 body {
+<<<<<<< HEAD
 	background: #f5efe0;
+=======
+	background: f5efe0;
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 	box-sizing: border-box;
 	color: #000;
 	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
@@ -3143,7 +3147,10 @@ figure.wp-block-gallery.alignfull {
 
 .wp-block-group__inner-container {
 	margin: 0 auto;
+<<<<<<< HEAD
 	
+=======
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 }
 
 .wp-block-group__inner-container,
@@ -4493,6 +4500,10 @@ a.to-the-top > * {
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 /* -------------------------------------------------------------------------- */
 
 /*	17. Media Queries
@@ -6364,3 +6375,7 @@ a.to-the-top > * {
 		top: 0;
 	}
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh

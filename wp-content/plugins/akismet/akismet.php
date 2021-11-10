@@ -6,7 +6,11 @@
 Plugin Name: Akismet Anti-Spam
 Plugin URI: https://akismet.com/
 Description: Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from spam</strong>. It keeps your site protected even while you sleep. To get started: activate the Akismet plugin and then go to your Akismet Settings page to set up your API key.
+<<<<<<< HEAD
 Version: 4.2
+=======
+Version: 4.1.12
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 Author: Automattic
 Author URI: https://automattic.com/wordpress-plugins/
 License: GPLv2 or later
@@ -37,8 +41,13 @@ if ( !function_exists( 'add_action' ) ) {
 	exit;
 }
 
+<<<<<<< HEAD
 define( 'AKISMET_VERSION', '4.2' );
 define( 'AKISMET__MINIMUM_WP_VERSION', '5.0' );
+=======
+define( 'AKISMET_VERSION', '4.1.12' );
+define( 'AKISMET__MINIMUM_WP_VERSION', '4.0' );
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 define( 'AKISMET__PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'AKISMET_DELETE_LIMIT', 100000 );
 

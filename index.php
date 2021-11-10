@@ -13,5 +13,9 @@
  */
 define( 'WP_USE_THEMES', true );
 
+<<<<<<< HEAD
 /** Loads the WordPress Environment and Template. */
+=======
+/** Loads the WordPress Environment and Template */
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 require __DIR__ . '/wp-blog-header.php';

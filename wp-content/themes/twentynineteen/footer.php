@@ -47,7 +47,11 @@
 				</nav><!-- .footer-navigation -->
 			<?php endif; ?>
 		</div><!-- .site-info -->
+<<<<<<< HEAD
 	</footer><!-- #colophon -->
+=======
+	</footer>#colophon
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 
 </div><!-- #page -->
 

@@ -52,14 +52,22 @@ function twentytwenty_get_starter_content() {
 					'',
 					array(
 						'<!-- wp:group {"align":"wide"} -->',
+<<<<<<< HEAD
 						'<div class="wp-block-group alignwide" ><div class="wp-block-group__inner-container" ><!-- wp:heading {"align":"center"} -->',
+=======
+						'<div class="wp-block-group alignwide"><div class="wp-block-group__inner-container"><!-- wp:heading {"align":"center"} -->',
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 						'<h2 class="has-text-align-center">' . __( 'The premier destination for modern art in Northern Sweden. Open from 10 AM to 6 PM every day during the summer months.', 'twentytwenty' ) . '</h2>',
 						'<!-- /wp:heading --></div></div>',
 						'<!-- /wp:group -->',
 						'<!-- wp:columns {"align":"wide"} -->',
 						'<div class="wp-block-columns alignwide"><!-- wp:column -->',
 						'<div class="wp-block-column"><!-- wp:group -->',
+<<<<<<< HEAD
 						'<div class="wp-block-group" ><div class="wp-block-group__inner-container" >',
+=======
+						'<div class="wp-block-group"><div class="wp-block-group__inner-container">',
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 						'<!-- wp:image {"align":"full","id":37,"sizeSlug":"full"} -->',
 						'<figure class="wp-block-image alignfull size-full"><img src="' . get_theme_file_uri() . '/assets/images/2020-three-quarters-1.png" alt="" class="wp-image-37"/></figure>',
 						'<!-- /wp:image -->',
@@ -74,7 +82,11 @@ function twentytwenty_get_starter_content() {
 						'<!-- /wp:button --></div></div>',
 						'<!-- /wp:group -->',
 						'<!-- wp:group -->',
+<<<<<<< HEAD
 						'<div class="wp-block-group" style="background: #000;"><div class="wp-block-group__inner-container">',
+=======
+						'<div class="wp-block-group"><div class="wp-block-group__inner-container">',
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 						'<!-- wp:image {"align":"full","id":37,"sizeSlug":"full"} -->',
 						'<figure class="wp-block-image alignfull size-full"><img src="' . get_theme_file_uri() . '/assets/images/2020-three-quarters-3.png" alt="" class="wp-image-37"/></figure>',
 						'<!-- /wp:image -->',
@@ -91,7 +103,11 @@ function twentytwenty_get_starter_content() {
 						'<!-- /wp:column -->',
 						'<!-- wp:column -->',
 						'<div class="wp-block-column"><!-- wp:group -->',
+<<<<<<< HEAD
 						'<div class="wp-block-group" ><div class="wp-block-group__inner-container">',
+=======
+						'<div class="wp-block-group"><div class="wp-block-group__inner-container">',
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 						'<!-- wp:image {"align":"full","id":37,"sizeSlug":"full"} -->',
 						'<figure class="wp-block-image alignfull size-full"><img src="' . get_theme_file_uri() . '/assets/images/2020-three-quarters-2.png" alt="" class="wp-image-37"/></figure>',
 						'<!-- /wp:image -->',
@@ -140,8 +156,13 @@ function twentytwenty_get_starter_content() {
 						'<p></p>',
 						'<!-- /wp:paragraph -->',
 						'<!-- wp:group {"customBackgroundColor":"#ffffff","align":"wide"} -->',
+<<<<<<< HEAD
 						'<div class="wp-block-group alignwide has-background" style="background-color:#ffffff"><div class="wp-block-group__inner-container" ><!-- wp:group -->',
 						'<div class="wp-block-group" ><div class="wp-block-group__inner-container"><!-- wp:heading {"align":"center"} -->',
+=======
+						'<div class="wp-block-group alignwide has-background" style="background-color:#ffffff"><div class="wp-block-group__inner-container"><!-- wp:group -->',
+						'<div class="wp-block-group"><div class="wp-block-group__inner-container"><!-- wp:heading {"align":"center"} -->',
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 						'<h2 class="has-text-align-center">' . __( 'Become a Member and Get Exclusive Offers!', 'twentytwenty' ) . '</h2>',
 						'<!-- /wp:heading -->',
 						'<!-- wp:paragraph {"align":"center"} -->',

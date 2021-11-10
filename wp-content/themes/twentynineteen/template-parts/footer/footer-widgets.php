@@ -13,7 +13,11 @@ if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 		<?php
 		if ( is_active_sidebar( 'sidebar-1' ) ) {
 			?>
+<<<<<<< HEAD
 					<div class="widget-column footer-widget-1" >
+=======
+					<div class="widget-column footer-widget-1">
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 					<?php dynamic_sidebar( 'sidebar-1' ); ?>
 					</div>
 				<?php

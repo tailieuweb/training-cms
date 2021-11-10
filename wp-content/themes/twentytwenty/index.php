@@ -19,11 +19,19 @@ get_header();
 
 <main id="site-content" role="main">
 
+<<<<<<< HEAD
     <?php
 
 	$archive_title    = '';
 	$archive_subtitle = '';
 	// var_dump(is_search()); die;
+=======
+	<?php
+
+	$archive_title    = '';
+	$archive_subtitle = '';
+
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 	if ( is_search() ) {
 		global $wp_query;
 
@@ -57,6 +65,7 @@ get_header();
 	if ( $archive_title || $archive_subtitle ) {
 		?>
 
+<<<<<<< HEAD
     <header class="archive-header has-text-align-center header-footer-group">
 
         <div class="archive-header-inner section-inner medium">
@@ -75,6 +84,25 @@ get_header();
     </header><!-- .archive-header -->
 
     <?php
+=======
+		<header class="archive-header has-text-align-center header-footer-group">
+
+			<div class="archive-header-inner section-inner medium">
+
+				<?php if ( $archive_title ) { ?>
+					<h1 class="archive-title"><?php echo wp_kses_post( $archive_title ); ?></h1>
+				<?php } ?>
+
+				<?php if ( $archive_subtitle ) { ?>
+					<div class="archive-subtitle section-inner thin max-percentage intro-text"><?php echo wp_kses_post( wpautop( $archive_subtitle ) ); ?></div>
+				<?php } ?>
+
+			</div><!-- .archive-header-inner -->
+
+		</header><!-- .archive-header -->
+
+		<?php
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 	}
 
 	if ( have_posts() ) {
@@ -94,9 +122,15 @@ get_header();
 	} elseif ( is_search() ) {
 		?>
 
+<<<<<<< HEAD
     <div class="no-search-results-form section-inner thin">
 
         <?php
+=======
+		<div class="no-search-results-form section-inner thin">
+
+			<?php
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 			get_search_form(
 				array(
 					'aria_label' => __( 'search again', 'twentytwenty' ),
@@ -104,6 +138,7 @@ get_header();
 			);
 			?>
 
+<<<<<<< HEAD
     </div><!-- .no-search-results -->
 
     <?php
@@ -111,10 +146,23 @@ get_header();
 	?>
 
     <?php get_template_part( 'template-parts/pagination' ); ?>
+=======
+		</div><!-- .no-search-results -->
+
+		<?php
+	}
+	?>
+
+	<?php get_template_part( 'template-parts/pagination' ); ?>
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 
 </main><!-- #site-content -->
 
 <?php get_template_part( 'template-parts/footer-menus-widgets' ); ?>
 
 <?php
+<<<<<<< HEAD
 get_footer();
+=======
+get_footer();
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh

@@ -404,6 +404,7 @@ function twentytwenty_sidebar_registration() {
 			)
 		)
 	);
+<<<<<<< HEAD
 	// Footer #2.
 	register_sidebar(
 		array_merge(
@@ -415,6 +416,9 @@ function twentytwenty_sidebar_registration() {
 			)
 		)
 	);
+=======
+
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 	// Footer #3.
 	register_sidebar(
 		array_merge(
@@ -422,6 +426,7 @@ function twentytwenty_sidebar_registration() {
 			array(
 				'name'        => __( 'Footer #3', 'twentytwenty' ),
 				'id'          => 'sidebar-3',
+<<<<<<< HEAD
 				'description' => __( 'Widgets in this area will be displayed in the second column in the footer.', 'twentytwenty' ),
 			)
 		)
@@ -434,6 +439,9 @@ function twentytwenty_sidebar_registration() {
 				'name'        => __( 'Footer #4', 'twentytwenty' ),
 				'id'          => 'sidebar-4',
 				'description' => __( 'Widgets in this area will be displayed in the second column in the footer.', 'twentytwenty' ),
+=======
+				'description' => __( 'Widgets in this area will be displayed in the three column in the footer.', 'twentytwenty' ),
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 			)
 		)
 	);

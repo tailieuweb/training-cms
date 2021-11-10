@@ -5,7 +5,11 @@ class Akismet {
 	const API_PORT = 80;
 	const MAX_DELAY_BEFORE_MODERATION_EMAIL = 86400; // One day in seconds
 
+<<<<<<< HEAD
 	public static $limit_notices = array(
+=======
+	public static $LIMIT_NOTICES = array(
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 		10501 => 'FIRST_MONTH_OVER_LIMIT',
 		10502 => 'SECOND_MONTH_OVER_LIMIT',
 		10504 => 'THIRD_MONTH_APPROACHING_LIMIT',
@@ -41,7 +45,15 @@ class Akismet {
 		add_action( 'akismet_schedule_cron_recheck', array( 'Akismet', 'cron_recheck' ) );
 
 		add_action( 'comment_form',  array( 'Akismet',  'add_comment_nonce' ), 1 );
+<<<<<<< HEAD
 		add_action( 'comment_form', array( 'Akismet', 'output_custom_form_fields' ) );
+=======
+
+		add_action( 'admin_head-edit-comments.php', array( 'Akismet', 'load_form_js' ) );
+		add_action( 'comment_form', array( 'Akismet', 'load_form_js' ) );
+		add_action( 'comment_form', array( 'Akismet', 'inject_ak_js' ) );
+		add_filter( 'script_loader_tag', array( 'Akismet', 'set_form_js_async' ), 10, 3 );
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 
 		add_filter( 'comment_moderation_recipients', array( 'Akismet', 'disable_moderation_emails_if_unreachable' ), 1000, 2 );
 		add_filter( 'pre_comment_approved', array( 'Akismet', 'last_comment_status' ), 10, 2 );
@@ -50,6 +62,7 @@ class Akismet {
 
 		// Run this early in the pingback call, before doing a remote fetch of the source uri
 		add_action( 'xmlrpc_call', array( 'Akismet', 'pre_check_pingback' ) );
+<<<<<<< HEAD
 
 		// Jetpack compatibility
 		add_filter( 'jetpack_options_whitelist', array( 'Akismet', 'add_to_jetpack_options_whitelist' ) );
@@ -64,6 +77,11 @@ class Akismet {
 		add_filter( 'wpcf7_form_elements', array( 'Akismet', 'append_custom_form_fields' ) );
 		add_filter( 'wpcf7_akismet_parameters', array( 'Akismet', 'prepare_custom_form_values' ) );
 
+=======
+		
+		// Jetpack compatibility
+		add_filter( 'jetpack_options_whitelist', array( 'Akismet', 'add_to_jetpack_options_whitelist' ) );
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 		add_action( 'update_option_wordpress_api_key', array( 'Akismet', 'updated_option' ), 10, 2 );
 		add_action( 'add_option_wordpress_api_key', array( 'Akismet', 'added_option' ), 10, 2 );
 
@@ -423,7 +441,11 @@ class Akismet {
 
 			clean_comment_cache( $comment_ids );
 			do_action( 'akismet_delete_comment_batch', count( $comment_ids ) );
+<<<<<<< HEAD
 
+=======
+			
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 			foreach ( $comment_ids as $comment_id ) {
 				do_action( 'deleted_comment', $comment_id );
 			}
@@ -989,7 +1011,11 @@ class Akismet {
 		if ( is_user_logged_in() )
 			return false;
 	
+<<<<<<< HEAD
 		return ( get_option( 'akismet_strictness' ) === '1' );
+=======
+		return ( get_option( 'akismet_strictness' ) === '1'  );
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 	}
 
 	public static function get_ip_address() {
@@ -1139,12 +1165,19 @@ class Akismet {
 		if ( ! empty( self::$prevent_moderation_email_for_these_comments ) && ! empty( $emails ) ) {
 			$comment = get_comment( $comment_id );
 
+<<<<<<< HEAD
 			if ( $comment ) {
 				foreach ( self::$prevent_moderation_email_for_these_comments as $possible_match ) {
 					if ( self::comments_match( $possible_match, $comment ) ) {
 						update_comment_meta( $comment_id, 'akismet_delayed_moderation_email', true );
 						return array();
 					}
+=======
+			foreach ( self::$prevent_moderation_email_for_these_comments as $possible_match ) {
+				if ( self::comments_match( $possible_match, $comment ) ) {
+					update_comment_meta( $comment_id, 'akismet_delayed_moderation_email', true );
+					return array();
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 				}
 			}
 		}
@@ -1284,6 +1317,7 @@ class Akismet {
 			'usage-limit',
 			'upgrade-plan',
 			'upgrade-url',
+<<<<<<< HEAD
 			'upgrade-type',
 		);
 
@@ -1291,13 +1325,26 @@ class Akismet {
 			$value = null;
 			if ( isset( $response[0][ $alert_header_prefix . $alert_header_name ] ) ) {
 				$value = $response[0][ $alert_header_prefix . $alert_header_name ];
+=======
+		);
+
+		foreach( $alert_header_names as $alert_header_name ) {
+			$value = null;
+			if ( isset( $response[0][$alert_header_prefix . $alert_header_name] ) ) {
+				$value = $response[0][$alert_header_prefix . $alert_header_name];
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 			}
 
 			$option_name = $alert_option_prefix . str_replace( '-', '_', $alert_header_name );
 			if ( $value != get_option( $option_name ) ) {
 				if ( ! $value ) {
 					delete_option( $option_name );
+<<<<<<< HEAD
 				} else {
+=======
+				}
+				else {
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 					update_option( $option_name, $value );
 				}
 			}
@@ -1305,6 +1352,7 @@ class Akismet {
 	}
 
 	public static function load_form_js() {
+<<<<<<< HEAD
 		/* deprecated */
 	}
 
@@ -1371,6 +1419,36 @@ class Akismet {
 		}
 
 		return $form;
+=======
+		if ( function_exists( 'is_amp_endpoint' ) && is_amp_endpoint() ) {
+			return;
+		}
+
+		if ( ! self::get_api_key() ) {
+			return;
+		}
+
+		wp_register_script( 'akismet-form', plugin_dir_url( __FILE__ ) . '_inc/form.js', array(), AKISMET_VERSION, true );
+		wp_enqueue_script( 'akismet-form' );
+	}
+	
+	/**
+	 * Mark form.js as deferred. Because nothing depends on it, it can run at any time
+	 * after it's loaded, and the browser won't have to wait for it to load to continue
+	 * parsing the rest of the page.
+	 */
+	public static function set_form_js_async( $tag, $handle, $src ) {
+		if ( 'akismet-form' !== $handle ) {
+			return $tag;
+		}
+		
+		return preg_replace( '/^<script /i', '<script defer ', $tag );
+	}
+	
+	public static function inject_ak_js( $post_id ) {
+		echo '<input type="hidden" id="ak_js" name="ak_js" value="' . mt_rand( 0, 250 ) . '"/>';
+		echo '<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea>';
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 	}
 
 	private static function bail_on_activation( $message, $deactivate = true ) {

@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 <?php
 
 //phpcs:disable VariableAnalysis
 // There are "undefined" variables here because they're defined in the code that includes this file as a template.
 
 ?>
+=======
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 <div id="akismet-plugin-container">
 	<div class="akismet-masthead">
 		<div class="akismet-masthead__inside-container">
@@ -59,7 +62,11 @@
 			</div>
 		<?php endif;?>
 
+<<<<<<< HEAD
 		<?php if ( $akismet_user ) : ?>
+=======
+		<?php if ( $akismet_user ):?>
+>>>>>>> 1-wordpress-581-202109/2-groups/1-J/5-52-Manh
 			<div class="akismet-card">
 				<div class="akismet-section-header">
 					<div class="akismet-section-header__label">
