@@ -2692,7 +2692,7 @@ h2.entry-title {
 }
 
 .pagination-single-inner {
-    display: flex;
+    display: inline-table;
     flex-direction: column;
 }
 
@@ -5127,22 +5127,16 @@ a.to-the-top > * {
         margin: 4rem 0 0.8rem 0;
     }
 
-    .pagination-single a + a {
-        margin: 0 0 0 4rem;
-    }
 
     .pagination-single a .arrow {
-        margin: 0 2rem 0 0;
+        margin: 0 0rem 0 0;
     }
 
     .pagination-single .next-post {
-        flex-direction: row-reverse;
         text-align: right;
+        margin: 0 2rem 0 0;
     }
-
-    .pagination-single .next-post .arrow {
-        margin: 0 0 0 2rem;
-    }
+}
 
     /* Blocks -------------------------------- */
     /* BLOCK: SHARED MEDIA STYLES */
@@ -5575,8 +5569,6 @@ a.to-the-top > * {
     .to-the-top-short {
         display: none;
     }
-
-}
 
 @media (min-width: 782px) {
 
