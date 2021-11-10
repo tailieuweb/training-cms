@@ -4469,9 +4469,6 @@ ul.footer-social li {
 
 /* Footer Widgets ---------------------------- */
 
-.footer-widgets-outer-wrapper {
-	border-bottom: 0.1rem solid #dedfdf;
-}
 
 .footer-widgets + .footer-widgets {
 	margin-top: 3rem;
@@ -6530,7 +6527,7 @@ a.to-the-top > * {
 /* Footer */
 
 section {
-    padding: 60px 0;
+    padding: 15px 0;
 }
 
 section .section-title {
@@ -6538,6 +6535,17 @@ section .section-title {
     color: #007b5e;
     margin-bottom: 50px;
     text-transform: uppercase;
+}
+#footer {
+    background: #007b5e;
+    color: #fff;
+}
+#footer i {
+    font-size: 30px;
+    color: #fff;
+}
+#footer a {
+    color: #fff;
 }
 #site-footer {
     background: #007b5e !important;
@@ -6656,4 +6664,35 @@ section .section-title {
 }
 .entry-header {
     align-self: flex-start;
+}
+
+.footer-inner.section-inner .widget.widget_block .widget-content ul li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer-inner.section-inner .widget.widget_block .widget-content ul li a::before {
+    font-family: "FontAwesome";
+    content: "\f101";
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.footer-inner.section-inner .widget.widget_block .widget-content h2 {
+    padding-left: 10px;
+    border-left: 3px solid #fff;
+    color: #fff;
+}
+
+.footer-nav-widgets-wrapper.header-footer-group {
+    background: #007b5e;
+}
+.wp-block-group__inner-container h2 {
+    font-size: 18px;
+}
+.wp-block-latest-posts__list li {
+    font-size:10px;
+}
+.wp-block-group__inner-container {
+    color: #fff;
 }
