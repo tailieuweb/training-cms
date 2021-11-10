@@ -10,7 +10,7 @@
 
 ?>
 <div class="search-modal cover-modal header-footer-group" data-modal-target-string=".search-modal">
-	<div class="container"
+	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-10 col-lg-8 py-5">
 				<form class="card card-sm" method="get" role="search" action="<?php echo esc_url( home_url( '/' ) ); ?> ">
