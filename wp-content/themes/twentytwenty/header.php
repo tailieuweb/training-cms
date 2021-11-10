@@ -189,7 +189,8 @@
 									Account
 								</a>
 							
-								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">					
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<!-- login logout-->
 									<?php 
 									if ( is_home()) { ?>
 										<a class="dropdown-item" href="http://wordpress.local/logout">Logout</a>
