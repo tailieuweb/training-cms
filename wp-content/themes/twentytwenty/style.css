@@ -1007,7 +1007,7 @@ section {
 }
 
 .section-inner.medium {
-    max-width: 100rem;
+    max-width: 60rem;
 }
 
 .section-inner.no-margin {
@@ -5067,7 +5067,7 @@ a.to-the-top > * {
 
     .post-meta {
         font-size: 1.6rem;
-        margin: -1.4rem 0 0 -3rem;
+        margin: -1.4rem -13rem 0 7rem;
     }
 
     .post-meta li {
@@ -5080,7 +5080,7 @@ a.to-the-top > * {
     }
 
     .post-inner {
-        padding-top: 5rem;
+        padding-top: 9rem;
     }
 
     /* POST FOOTER */

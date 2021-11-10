@@ -27,9 +27,18 @@ if (!is_single()){
 	}
 
 	?>
-
+    <?php $boder ="boder" ?>
 	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
+        <?php
+        if (is_single()) {
+            ?>
+            <div class="container">
+                <div class="border2">
 
+                </div>
+            </div>
+        <?php }
+        ?>
 		<div class="entry-content">
 
 			<?php

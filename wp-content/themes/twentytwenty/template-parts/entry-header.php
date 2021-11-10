@@ -78,15 +78,4 @@ if (is_singular()) {
         ?>
 
     </div><!-- .entry-header-inner -->
-    <?php
-    if (is_single()) {
-        ?>
-        <div class="container">
-            <div class="border">
-
-            </div>
-        </div>
-    <?php }
-    ?>
-
 </header><!-- .entry-header -->

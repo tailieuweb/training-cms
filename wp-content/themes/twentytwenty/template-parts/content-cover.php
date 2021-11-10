@@ -122,11 +122,8 @@
 			</div><!-- .cover-header-inner -->
 		</div><!-- .cover-header-inner-wrapper -->
 	</div><!-- .cover-header -->
-
 	<div class="post-inner" id="post-inner">
-
 		<div class="entry-content">
-
 		<?php
 		the_content();
 		?>
