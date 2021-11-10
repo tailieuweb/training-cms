@@ -384,23 +384,41 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 				}
 
 				// Post date.
-				if ( in_array( 'post-date', $post_meta, true ) ) {
+				if (in_array('post-date', $post_meta, true)) {
 
 					$has_meta = true;
-					?>
+				?>
 					<li class="post-date meta-wrapper">
 						<span class="meta-icon">
-							<span class="screen-reader-text"><?php _e( 'Post date', 'twentytwenty' ); ?></span>
-							<?php twentytwenty_the_theme_svg( 'calendar' ); ?>
+							<span class="screen-reader-text"><?php _e('Post date', 'twentytwenty'); ?></span>
+							<?php if (!is_singular()) { ?>
+								<?php twentytwenty_the_theme_svg('calendar'); ?>
+							<?php } ?>
 						</span>
 						<span class="meta-text">
-							<a href="<?php the_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
+							<?php if (!is_singular()) { ?>
+								<a href="<?php the_permalink(); ?>"><?php the_time(get_option('date_format')); ?></a>
+							<?php } ?>
+
+							<?php if (is_singular()) { ?>
+								<div class="headlinesdates">
+									<div class="headlinesdms">
+										<div class="headlinesdays">
+											<a href="<?php the_permalink(); ?>"><?php the_time(substr(get_option('date_format'), 0, 1)); ?></a>
+										</div>
+										<div class="headlinesmonths">
+											<a href="<?php the_permalink(); ?>"><?php the_time(substr(get_option('date_format'), 2, 1)); ?></a>
+										</div>
+									</div>
+									<div class="headlinesyears">
+										<a href="<?php the_permalink(); ?>"><?php the_time(substr(get_option('date_format'), 4, 6)); ?></a>
+									</div>
+								</div>
+							<?php } ?>
 						</span>
 					</li>
-					<?php
-
+				<?php
 				}
-
 				// Categories.
 				if ( in_array( 'categories', $post_meta, true ) && has_category() ) {
 
@@ -444,10 +462,14 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 					?>
 					<li class="post-comment-link meta-wrapper">
 						<span class="meta-icon">
-							<?php twentytwenty_the_theme_svg( 'comment' ); ?>
+							<?php if (!is_singular()) { ?>
+								<?php twentytwenty_the_theme_svg('comment'); ?>
+							<?php } ?>
 						</span>
 						<span class="meta-text">
-							<?php comments_popup_link(); ?>
+							<?php if (!is_singular()) { ?>
+								<?php comments_popup_link(); ?>
+							<?php } ?>
 						</span>
 					</li>
 					<?php
