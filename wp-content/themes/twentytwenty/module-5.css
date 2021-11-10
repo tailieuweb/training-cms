@@ -51,6 +51,10 @@
     padding: 15px;
 }
 
+#site-content {
+    margin-left: 20px;
+}
+
 .list_new_post {
     margin-top: 15px;
 }
