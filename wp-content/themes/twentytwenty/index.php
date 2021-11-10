@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/modul5.css">
-	<title>Document</title>
-</head>
-<body>
-	
-</body>
-</html>
+<!-- link add file css và file php -->
+<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/modul5.css">
 <?php
 
 /**
@@ -99,8 +88,9 @@ get_header();
 	//post
 
 	if (have_posts()) {
-
-		// hàm tách lấy ảnh.
+		//khi không ở trang chi tiết
+		//By : Nguyễn Thị Thanh Thư
+		// hàm tách lấy ảnh. m5
 		function catch_that_image($input_post_content)
 		{
 			$first_img = '';
@@ -122,13 +112,18 @@ get_header();
 
 		while (have_posts()) {
 			$i++;
+			//  khi không ở trang search
+			// 	By : Nguyễn Thị Thanh Thư
+			// 	chia cột và date. m2 
 			if (!is_search()) {
 				if ($i > 1) {
 					echo "<div style='margin-top: 10px;'></div>";
 				} ?>
-
 				<div class="baro">
 					<div class="row">
+						<!-- khi không ở trang search
+			 			By : Nguyễn Thị Thanh Thư
+		 				date. m2  -->
 						<div class="col-2 verticalLine">
 							<?php
 							// Post date.
@@ -156,12 +151,18 @@ get_header();
 				</div>
 			<?php
 
-			} elseif (is_search()) {
+			}
+			// khi ở trang search
+			// 	By : Nguyễn Thị Thanh Thư
+			// 	chia cột, date, gắn ảnh. m5
+			elseif (is_search()) {
 
 				if ($i > 1) {
 					echo "<div style='margin-top: 10px;'></div>";
 				} ?>
-
+				<!-- khi ở trang search
+				By : Nguyễn Thị Thanh Thư
+		 		gắn ảnh. m5 -->
 				<div class="baro">
 					<div class="row">
 						<div class="col-3">
@@ -177,6 +178,9 @@ get_header();
 						</div>
 						<div class="col-9">
 							<div class="row">
+								<!-- khi không ở trang search
+			 					By : Nguyễn Thị Thanh Thư
+		 						date. m5  -->
 								<div class="col-2 verticalLine">
 									<?php
 									// Post date.
@@ -196,7 +200,7 @@ get_header();
 								</div>
 								<div class="col-10 noidung">
 									<?php
-									 the_post();
+									the_post();
 									get_template_part('template-parts/content', get_post_type());
 									?>
 								</div>
