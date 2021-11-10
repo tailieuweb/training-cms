@@ -1,5 +1,5 @@
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-
+	/* Tạo phần nhập tìm kiếm */
 	.search-sub {
 		/* padding: 0 !important; */
 		font-size: 70% !important;
@@ -41,7 +41,7 @@
 	a {
 		text-decoration: none !important;
 	}
-
+	/* Account */
 	.account {
 		margin-left: -10px;
 		font-size: 16px;
@@ -63,7 +63,7 @@
 
 		margin-left: -16%;
 	}
-
+	/* Home */
 	.nenxam {
 		background-color: #e7e7e7;
 		padding: 40px 0px 30px 0px;
@@ -73,7 +73,7 @@
 
 	.header-titles {
 		display: flow-root !important;
-		/* margin-top: -27px; */
+		
 	}
 
 	.logo {
@@ -89,7 +89,7 @@
 	.tim {
 		padding-top: 20px;
 	}
-
+	/* Iconsearch */
 	.kinhlup>a>i {
 		font-size: 21px;
 		/* padding-top: 20px; */
@@ -133,7 +133,7 @@
 		margin-left: -26%;
 		margin-top: -4%;
 	}
-
+	/* Nút submit */
 	[type=reset],
 	[type=submit],
 	button,
@@ -148,6 +148,7 @@
 
 	}
 
+	/* toggle của menu */
 	.header-toggles:only-child .toggle-inner .toggle-text {
 		position: absolute !important;
 		padding-right: 10px;

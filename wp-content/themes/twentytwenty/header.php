@@ -1,4 +1,3 @@
-
 <?php
 
 /**
@@ -36,7 +35,8 @@
 	<?php
 	wp_body_open();
 	?>
-
+	<!-- Người thực hiện Nguyễn Đình Khánh Vi -->
+	<!--Tạo container fluid và chia lại cột-->
 	<header id="site-header" class="header-footer-group" role="banner">
 		<div class="container-fuild">
 			<div class="header-inner section-inner">
@@ -170,6 +170,7 @@
 						?>
 					</div>
 				</div><!-- .header-navigation-wrapper -->
+				<!--Tạo icon search-->
 				<div class="row">
 					<div class="col-md-3">
 						<div class="kinhlup">
@@ -179,7 +180,7 @@
 
 						</div>
 					</div>
-					<!-- account -->
+					<!-- Tạo khung account -->
 					<div class="col-md-9">
 						<div class="account">
 							<div class="dropdown">
@@ -187,10 +188,15 @@
 									<i class="fa fa-user-circle-o"></i>
 									Account
 								</a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Login</a></li>
-									<li><a href="#">Loguot</a></li>
-								</ul>
+							
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">					
+									<?php 
+									if ( is_home()) { ?>
+										<a class="dropdown-item" href="http://wordpress.local/logout">Logout</a>
+									<?php } else { ?>
+										<a class="dropdown-item" href="http://wordpress.local">Login</a>
+									<?php } ?>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -211,6 +217,7 @@
 			get_template_part('template-parts/modal-search');
 		}
 		?>
+
 
 	</header><!-- #site-header -->
 
