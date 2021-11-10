@@ -95,10 +95,10 @@ get_header();
 				$_post = get_post();
 
 				// Get post title:
-				$post_title = $post->post_title;
+				$post_title = $_post->post_title;
 
 				// Get post content:
-				$content = $post->post_content;
+				$content = $_post->post_content;
 				// $strContent = preg_replace('/\<figure class=\"wp-block-image\"\>(.*?)\<\/figure\>/', '', $content);
 				// $temp = str_replace('<p>', '', $strContent);
 				// $strContent = str_replace('</p>', '', $temp);
@@ -168,7 +168,7 @@ get_header();
 				// Người làm : Lê Anh Vũ
 				// Module: 2
 				// Công việc: Tùy chỉnh giao diện danh sách bài viết tại trang chủ.
-
+                the_post();
 				// lấy bài viết.
 				$_post = get_post();
 
@@ -225,7 +225,7 @@ get_header();
 				</div>
                 ";
 
-				the_post();
+
 			}
 		}
 	} elseif (is_search()) {
