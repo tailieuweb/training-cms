@@ -12,7 +12,7 @@
  * @since Twenty Twenty 1.0
  */
 
-$has_sidebar_9 = is_active_sidebar('module-9');
+
 $class = '';
 if (!is_single()) {
 	$class = 'danh-sach';
@@ -56,9 +56,7 @@ if (strtotime($post->post_date)) {
 					<div class="row rowContent">
 						<!-- Module-9-->
 						<div class="col-md-3">
-
 							<div class="footer-widgets-wrapper">
-
 								<div class="footer-widgets9 column-one grid-item ">
 									<?php dynamic_sidebar('module-9'); ?>
 								</div>

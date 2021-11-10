@@ -13,15 +13,10 @@
 $has_footer_menu = has_nav_menu('footer');
 $has_social_menu = has_nav_menu('social');
 
-//<<<<<<< HEAD
-//$has_sidebar_1 = is_active_sidebar( 'sidebar-1' );
-//$has_sidebar_2 = is_active_sidebar( 'sidebar-2' );
-//$has_sidebar_3 = is_active_sidebar( 'sidebar-3' );
-//=======
 $has_sidebar_1 = is_active_sidebar('sidebar-1');
 $has_sidebar_2 = is_active_sidebar('sidebar-2');
 $has_sidebar_3 = is_active_sidebar('sidebar-3');
-//>>>>>>> origin/1-wordpress-581-202109/2-groups/1-F/master
+$has_sidebar_9 = is_active_sidebar('module-9');
 
 // Only output the container if there are elements to display.
 if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
@@ -94,11 +89,8 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
 
 				<?php } ?>
 
-<!--				--><?php //if ($has_sidebar_1 || $has_sidebar_2) { ?>
+				<?php if ($has_sidebar_1 || $has_sidebar_2) { ?>
 
-<!--<<<<<<< HEAD-->
-			<?php if ( $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3 ) { ?>
-<!--=======-->
 					<aside class="footer-widgets-outer-wrapper" role="complementary">
 
 						<div class="footer-widgets-wrapper">
@@ -127,17 +119,6 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
 
 						</div><!-- .footer-widgets-wrapper -->
 
-<!--<<<<<<< HEAD-->
-<!--                        --><?php //if ( $has_sidebar_3 ) { ?>
-<!---->
-<!--                            <div class="footer-widgets column-one grid-item">-->
-<!--                                --><?php //dynamic_sidebar( 'sidebar-3' ); ?>
-<!--                            </div>-->
-<!---->
-<!--                        --><?php //} ?>
-<!---->
-					</div><!-- .footer-widgets-wrapper -->
-<!--=======-->
 					</aside><!-- .footer-widgets-outer-wrapper -->
 
 				<?php } ?>
