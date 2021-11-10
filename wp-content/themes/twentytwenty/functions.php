@@ -405,7 +405,7 @@ function twentytwenty_sidebar_registration() {
 		)
 	);
 
-		// Footer #3.
+	// Footer #3.
 	register_sidebar(
 		array_merge(
 			$shared_args,

@@ -475,7 +475,7 @@ function twentytwenty_get_post_meta($post_id = null, $location = 'single-top')
 					</li>
 				<?php
 
-				}
+				}}
 
 				/**
 				 * Fires after post meta HTML display.
