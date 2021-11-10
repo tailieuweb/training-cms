@@ -119,7 +119,7 @@ blockquote::after {
 }
 .top_news_block, .list_search {
 	background: #fff;
-	border: 1px solid black;
+	border: 1px solid #e1d8d8a6;
 }
 .top_news_block, .list_search .top_news_block_thumb, .top_news_block, .list_search .top_news_block_thumb img {
 	height: 100%;
