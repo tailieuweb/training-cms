@@ -1,14 +1,14 @@
-.search-form.module4-searchBox {
+.module4-searchBox {
     position: relative;
     margin: 0;
     padding: 0;
 }
 
-.search-form.module4-searchBox label.module4-searchWrapper {
+.module4-searchBox label.module4-searchWrapper {
     position: relative;
 }
 
-.search-form.module4-searchBox .module4-searchField {
+.module4-searchBox .module4-searchField {
     padding: 18px 18px 18px 66px;
     font-size: 18px;
     margin: 0;
@@ -16,11 +16,11 @@
     border-radius: 5px;
 }
 
-.search-form.module4-searchBox .module4-searchField:focus {
+.module4-searchBox .module4-searchField:focus {
     outline: thin solid #eee;
 }
 
-.search-form.module4-searchBox .module4-submitBtn {
+.module4-searchBox .module4-submitBtn {
     display: inline-block;
     position: absolute;
     top: 50%;
@@ -35,14 +35,14 @@
     margin: 0;
 }
 
-.search-form.module4-searchBox label.module4-searchWrapper .search-icon-wrapper {
+.module4-searchBox label.module4-searchWrapper .search-icon-wrapper {
     position: absolute;
     top: 50%;
     left: 18px;
     transform: translateY(-50%);
 }
 
-.search-form.module4-searchBox label.module4-searchWrapper .search-icon-wrapper .search-icon-img {
+.module4-searchBox label.module4-searchWrapper .search-icon-wrapper .search-icon-img {
     user-select: none;
     display: inline-block;
     width: 30px;

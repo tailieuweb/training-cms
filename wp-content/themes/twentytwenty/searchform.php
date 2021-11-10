@@ -23,7 +23,7 @@ if ( empty( $twentytwenty_aria_label ) && ! empty( $args['label'] ) ) {
 	$twentytwenty_aria_label = 'aria-label="' . esc_attr( $args['label'] ) . '"';
 }
 ?>
-<form role="search" <?php echo $twentytwenty_aria_label; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. ?> method="get" class="search-form module4-searchBox" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+<form role="search" <?php echo $twentytwenty_aria_label; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. ?> method="get" class="module4-searchBox" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 	<label class="module4-searchWrapper" for="<?php echo esc_attr( $twentytwenty_unique_id ); ?>">
 		<span class="screen-reader-text"><?php _e( 'Search for:', 'twentytwenty' ); // phpcs:ignore: WordPress.Security.EscapeOutput.UnsafePrintingFunction -- core trusts translations ?></span>
 		<input type="search"
