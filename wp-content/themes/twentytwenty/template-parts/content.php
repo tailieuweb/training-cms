@@ -1,16 +1,4 @@
-<style>
-	.post-str{
-		text-align: left;
-		max-width: none !important;
-		margin: 0;
-		font-family: 'Open Sans', sans-serif;
-		
-	}
-	.post-inner {
-		padding-top: 5px;
-	}
-	
-</style>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/modul2.css">
 <?php
 
 /**

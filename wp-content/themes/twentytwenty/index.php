@@ -1,47 +1,16 @@
-<style>
-	.meta-day {
-		font-family: 'Prata', serif;
-		font-size: 3.1em;
-		line-height: 1em;
-		position: sticky !important;
-		margin-top: 20px;
-	}
-
-	.meta-thang {
-		text-transform: uppercase;
-		font-size: 0.9em;
-		position: sticky !important;
-		margin-top: -50px;
-		/* margin-left: 50px; */
-	}
-
-	.meta-month {
-		text-transform: uppercase;
-		font-size: 0.9em;
-		position: sticky !important;
-		margin-top: -10px;
-		/* margin-left: 50px; */
-
-	}
-
-	.dinhDangDay {
-		text-align: center !important;
-
-		margin-left: 30px;
-	}
-
-	.verticalLine {
-		border-right: 1px solid #666;
-	}
-
-	/* khoong nen css cho class cua framework (vd: bootstrap, ...) */
-
-	.baro {
-		background-color: white;
-		padding: 10px 0;
-	}
-</style>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/modul5.css">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
 <?php
 
 /**
@@ -195,7 +164,7 @@ get_header();
 
 				<div class="baro">
 					<div class="row">
-						<div class="col-2">
+						<div class="col-3">
 							<?php the_post();
 
 							// lấy bài post hiện tại tương ứng.
@@ -206,7 +175,7 @@ get_header();
 							echo "<img src='$_image' />";
 							?>
 						</div>
-						<div class="col-10">
+						<div class="col-9">
 							<div class="row">
 								<div class="col-2 verticalLine">
 									<?php
@@ -225,9 +194,9 @@ get_header();
 									<?php
 									} ?>
 								</div>
-								<div class="col-10">
+								<div class="col-10 noidung">
 									<?php
-									// the_post();
+									 the_post();
 									get_template_part('template-parts/content', get_post_type());
 									?>
 								</div>
