@@ -1,3 +1,4 @@
+<!-- link kêt nối file css vào php -->
 <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/modul2.css">
 <?php
 
@@ -35,15 +36,22 @@
 			if (is_search() || !is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
 				the_excerpt();
 			} else {
+				//khi không ở trang chi tiết
+				//By : Nguyễn Thị Thanh Thư
+				//Hiện thị full bài viết
 				if (is_single()) {
 					the_content(__('Continue reading', 'twentytwenty'));
-				} else {
+				}
+				//khi không ở trang chủ
+				//By : Nguyễn Thị Thanh Thư
+				//Hiện thị bài viết thu gọn (sử dụng substr)
+				else {
 
 					$post = get_post(); ?>
 					<div class="post-str">
-					<?php
-					echo substr($post->post_content, 0, 150) . '<a href="' . esc_url(get_permalink()) . '" rel="bookmark">[...]</a>';
-					?>
+						<?php
+						echo substr($post->post_content, 0, 150) . '<a href="' . esc_url(get_permalink()) . '" rel="bookmark">[...]</a>';
+						?>
 					</div>
 			<?php
 				}
