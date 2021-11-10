@@ -54,7 +54,7 @@ if (strtotime($post->post_date)) {
 				if (is_single()) {
 			?>
 					<div class="row rowContent">
-
+						<!-- Module-9-->
 						<div class="col-md-3">
 							<?php if ($has_sidebar_9) { ?>
 								<div class="footer-widgets-wrapper">
