@@ -197,9 +197,9 @@ else{
 		
 	<div class="crossedbg"></div>
 	<div class="panel-body">
-	
+	<h class="post" >Recent Post</h>
         <ul class="list-group">
-		<h style = "font-size: 20px;">Recent Post</h>
+		
                                     <li class="list-group-item">
                             <a href="http://fit.tdc.edu.vn/viec-lam/dot-net-developer-w2solution">.Net Developer</a>                        </li>
                                     <li class="list-group-item">
