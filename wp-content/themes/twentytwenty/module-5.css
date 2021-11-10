@@ -16,15 +16,15 @@
 
 .list_new_view_search .time_search>span.date_search {
     font-family: 'Prata', serif;
-    font-size: 6em;
+    font-size: 7em;
     line-height: 1em;
-    margin-left: 54px;
+    margin-left: 66px;
 }
 
 .list_new_view_search .time_search>span.month_search {
     text-transform: uppercase;
-    font-size: 1em;
-    margin-left: 58px;
+    font-size: 2em;
+    margin-left: 50px;
 }
 
 .list_new_view_search a {
