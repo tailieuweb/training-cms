@@ -2464,6 +2464,7 @@ h2.entry-title {
 
 .post-meta-single-top .post-meta {
 	justify-content: center;
+    width: 250px;
 }
 
 .post-meta-wrapper {
@@ -2595,7 +2596,6 @@ h2.entry-title {
 }
 
 .post-inner {
-	padding-top: 5rem;
 }
 
 .reduced-spacing.missing-post-thumbnail .post-inner {
@@ -5166,9 +5166,6 @@ a.to-the-top > * {
 		margin-top: 6rem;
 	}
 
-	.post-inner {
-		padding-top: 8rem;
-	}
 
 	/* POST FOOTER */
 
@@ -6644,6 +6641,19 @@ section .section-title {
     display: none;
 }
 #site-content .post .post-date {
-    display: inline-flex;
+}
+.time-box {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.day-box {
+    font-size: 60px;
+    color: #000;
+}.right-content {
+    border-left: 1px solid #000;
+}
+.entry-header {
+    align-self: flex-start;
 }
