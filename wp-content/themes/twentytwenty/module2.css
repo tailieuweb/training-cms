@@ -48,9 +48,10 @@
 
 .list_new_view .row .top_news_block_desc {
     background: #fff;
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-    /*-webkit-box-shadow: 0px 0px 5px 0px rgb(0 0 calc(0 / 20%));*/
-    /*box-shadow: 0px 0px 5px 0px rgb(0 0 calc(0 / 20%));*/
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
     padding: 15px;
 }
 
