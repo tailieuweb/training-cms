@@ -16,6 +16,7 @@
  */
 
 get_header();
+$has_sidebar_10 = is_active_sidebar('sidebar-10');
 ?>
 
 <main id="site-content" role="main">
@@ -56,7 +57,6 @@ get_header();
 	}
 
 	if ($archive_title || $archive_subtitle) {
-
 	?>
 
 		<header class="archive-header has-text-align-center header-footer-group">
@@ -72,9 +72,8 @@ get_header();
 				<?php } ?>
 
 			</div><!-- .archive-header-inner -->
-
+			
 		</header><!-- .archive-header -->
-
 	<?php
 	}
 
@@ -99,7 +98,7 @@ get_header();
 				)
 			);
 			?>
-
+			
 		</div><!-- .no-search-results -->
 
 	<?php

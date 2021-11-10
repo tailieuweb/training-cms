@@ -17,7 +17,9 @@ if (is_search()) {
 if (is_single()) {
 	$newClass = 'post-detail';
 }
+$has_sidebar_10 = is_active_sidebar('sidebar-10');
 ?>
+
 <?php
 if (!is_single() && !is_search()) { ?>
 	<!-- Trang content !-->
@@ -167,18 +169,20 @@ if (!is_single() && !is_search()) { ?>
 			<div class="entry-content">
 				<?php $has_sidebar_9 = is_active_sidebar('sidebar-9'); ?>
 				<div class="row-adjust">
-					<div class="col-md-3">
-						<?php if ($has_sidebar_9) { ?>
-							<div class="content-widgets-wrapper">
-								<?php if ($has_sidebar_9) { ?>
-									<div class="content-widgets column-one grid-item">
-										<?php dynamic_sidebar('sidebar-9'); ?>
-									</div>
-								<?php } ?>
-							</div>
-						<?php } ?>
+					<div class="col-sm-4">
+						<div class="sidebar9">
+							<?php if ($has_sidebar_9 == true) { ?>
+								<div class="content-widgets-wrapper">
+									<?php if ($has_sidebar_9 == true) { ?>
+										<div class="content-widgets column-one grid-item">
+											<?php dynamic_sidebar('sidebar-9'); ?>
+										</div>
+									<?php } ?>
+								</div>
+							<?php } ?>
+						</div>
 					</div>
-					<div class="col-md-6">
+					<div class="col-sm-4">
 						<?php
 						if (is_search() || !is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
 							the_excerpt();
@@ -195,8 +199,18 @@ if (!is_single() && !is_search()) { ?>
 						?>
 					</div>
 
-					<div class="col-md-3">
-
+					<div class="col-sm-4">
+						<div class="sidebar10">
+							<?php if ($has_sidebar_10  == true) { ?>
+								<div class="content-widgets-wrapper">
+									<?php if ($has_sidebar_10  == true) { ?>
+										<div class="content-widgets column-one grid-item">
+											<?php dynamic_sidebar('sidebar-10'); ?>
+										</div>
+									<?php } ?>
+								</div>
+							<?php } ?>
+						</div>
 					</div>
 				</div>
 			</div><!-- .entry-content -->
