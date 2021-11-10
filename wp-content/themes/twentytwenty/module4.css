@@ -1,0 +1,23 @@
+.search-submit {
+   padding-bottom: 35px !important;
+}
+.form-control-borderless {
+  border: none !important;
+}
+
+.form-control-borderless:hover,
+.form-control-borderless:active,
+.form-control-borderless:focus {
+  border: none !important;
+  outline: none;
+  box-shadow: none;
+}
+
+.justify-content-center {
+  background-color: white;
+}
+
+.submitcl {
+  background-color: #007b5e !important;
+  border-radius: 7px !important;
+}
