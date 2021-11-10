@@ -1,1 +1,56 @@
 /* Module 1 css */
+/* Home Button */
+.module-1-header-button-home{
+    padding: 54px 20px;
+    background-color: rgb(231, 231, 231);
+    margin: -18px 15px -28px 15px;
+
+}
+.module-1-header-button-home a,
+.module-1-header-button-home a:hover,
+.module-1-header-button-home a:visited,
+.module-1-header-button-home a:focus{
+
+    color: rgb(109, 126, 144) !important;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Form search */
+.module-1-header-search-form label input{
+    border-radius: 5px;
+}
+.module-1-header-search-form .search-submit{
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(109, 126, 144);
+    border: 1px solid rgb(212, 204, 193);
+}
+/* Header Left Item */
+.module-1-header-left-item{
+    color: rgb(119, 119, 119) !important;
+    align-items: baseline !important;
+    display: flex !important;
+    align-content: center !important;
+}
+.module-1-header-left-item .reset-list-style a{
+    color: rgb(119, 119, 119) !important;
+}
+
+/* User Login logout dropdown */
+.module-1-user-login-logout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+    padding: 10px 0 0 32px;
+    color: rgb(119, 119, 119) !important;
+}
+.module-1-user-login-logout .module-1-dropdown-menu,
+.module-1-user-login-logout .module-1-dropdown-menu:hover{
+    color: rgb(119, 119, 119) !important;
+    background-color: white;
+    border: none;
+    font-size: 18px;
+}

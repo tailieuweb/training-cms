@@ -22,13 +22,13 @@
 
 
 	<?php for ($i = 1; $i <= 5; $i++) { ?>
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri().'/module-'.$i ?>.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/module-' . $i ?>.css" type="text/css" media="screen" />
 	<?php } ?>
 
-    <!-- Module-6 Module-7.css -->
+	<!-- Module-6 Module-7.css -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-6-7.css" type="text/css" media="screen" />
 	<?php for ($i = 8; $i <= 10; $i++) { ?>
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri().'/module-'.$i ?>.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/module-' . $i ?>.css" type="text/css" media="screen" />
 	<?php } ?>
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
@@ -36,9 +36,7 @@
 
 	<!-- Import libraries -->
 	<!-- Bootstrap -->
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -88,6 +86,18 @@
 					twentytwenty_site_description();
 					?>
 
+					<!-- Home Button -->
+					<div class="module-1-header-button-home">
+						<a href="<?= get_home_url() ?>">Home</a>
+					</div>
+					<!-- Form Search -->
+					<form role="search" aria-label="search again" method="get" class="search-form module-1-header-search-form" action="<?= get_home_url() ?>">
+						<label for="search-form">
+							<span class="screen-reader-text">Search for:</span>
+							<input type="search" id="search-form" class="search-field" placeholder="Search …" name="s">
+						</label>
+						<input type="submit" class="search-submit" value="Submit">
+					</form>
 				</div><!-- .header-titles -->
 
 				<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
@@ -101,7 +111,7 @@
 
 			</div><!-- .header-titles-wrapper -->
 
-			<div class="header-navigation-wrapper">
+			<div class="header-navigation-wrapper module-1-header-left-item">
 
 				<?php
 				if (has_nav_menu('primary') || !has_nav_menu('expanded')) {
@@ -185,6 +195,22 @@
 						?>
 
 					</div><!-- .header-toggles -->
+
+					<!-- Header User Login/Logout Dropdown -->
+					<div class="dropdown module-1-user-login-logout">
+						<i class="fa fa-user-circle-o fa-3x" aria-hidden="true"></i>
+						<button class="btn btn-secondary dropdown-toggle module-1-dropdown-menu" type="button" 
+						id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Account
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<?php if (!is_user_logged_in()) { ?>
+								<a class="dropdown-item" href="<?= get_home_url().'/login'?>">Login</a>
+							<?php } else { ?>
+								<a class="dropdown-item" href="<?= wp_logout_url()?>">Logout</a>
+							<?php } ?>
+						</div>
+					</div>
 				<?php
 				}
 				?>
