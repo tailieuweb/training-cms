@@ -4,7 +4,7 @@
 .dropdown-menu:hover{
     display: block;
 }
-.header-titles-wrapper {
+/* .header-titles-wrapper {
     align-items: center;
     display: flex;
     justify-content: center;
@@ -96,4 +96,4 @@ body:not(.enable-search-modal) .header-titles-wrapper {
   }
 .search-modal .search-submit:focus {
     right: 0;
-  }
+  } */
