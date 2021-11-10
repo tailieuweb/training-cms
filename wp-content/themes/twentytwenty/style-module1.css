@@ -1,0 +1,99 @@
+.btn-dropdown:hover ~ .dropdown-menu{
+    display: block;
+}
+.dropdown-menu:hover{
+    display: block;
+}
+.header-titles-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0 4rem;
+    text-align: center;
+  }
+.header-titles-wrapper {
+    margin-right: 4rem;
+    max-width: 50%;
+    padding: 0;
+    text-align: left;
+  }
+body:not(.enable-search-modal) .header-titles-wrapper {
+    justify-content: flex-start;
+    padding-left: 0;
+    text-align: left;
+  }
+.search-form {
+    align-items: stretch;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 0 -0.8rem -0.8rem;
+    padding-right: 40rem;
+  }
+.search-form .search-field,
+.search-form .search-submit {
+  margin: 0 0 0.8rem 0.8rem;
+}
+.search-form label {
+    align-items: stretch;
+    display: flex;
+    font-size: inherit;
+    margin: 0;
+    width: 100%;
+  }
+.search-form .search-field {
+    width: 100%;
+  }
+.search-form .search-submit {
+    flex-shrink: 0;
+  }
+.search-form .search-submit:focus,
+.search-form .search-submit:hover {
+    text-decoration: none;
+  }
+.error404 #site-content .search-form {
+    justify-content: center;
+    margin-top: 3rem;
+  }
+.widget_search .search-field {
+    border-color: #dedfdf;
+  }
+.search-modal .search-field {
+    border: none;
+    font-size: 3.2rem;
+    height: 14rem;
+  }
+.search-modal .search-field::-moz-placeholder {
+    line-height: 4.375;
+  }
+.search-modal .search-field {
+    background: none;
+    border: none;
+    border-radius: 0;
+    color: inherit;
+    font-size: 2rem;
+    letter-spacing: -0.0277em;
+    height: 8.4rem;
+    margin: 0 0 0 -2rem;
+    max-width: calc(100% + 2rem);
+    padding: 0 0 0 2rem;
+    width: calc(100% + 2rem);
+  }
+.search-modal .search-field::-webkit-input-placeholder {
+    color: inherit;
+  }
+.search-modal .search-field:-ms-input-placeholder {
+    color: inherit;
+  }
+.search-modal .search-field::-moz-placeholder {
+    color: inherit;
+    line-height: 4;
+  }
+.search-modal .search-submit {
+    position: absolute;
+    right: -9999rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+.search-modal .search-submit:focus {
+    right: 0;
+  }

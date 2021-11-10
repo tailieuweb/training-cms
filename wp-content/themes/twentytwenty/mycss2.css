@@ -1,6 +1,0 @@
-.btn-dropdown:hover ~ .dropdown-menu{
-    display: block;
-}
-.dropdown-menu:hover{
-    display: block;
-}
