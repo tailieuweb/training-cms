@@ -23,9 +23,16 @@
 		get_template_part( 'template-parts/featured-image' );
 	}
 
+	// Style content when it's detail page
+	$content_detail = '';
+	if(is_singular()) {
+		$content_detail = 'content-detail';
+	}
 	?>
 
-	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
+
+	<!-- Insert class content-detail here -->
+	<div class="post-inner <?php echo $content_detail ?> <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
 
 		<div class="entry-content">
 

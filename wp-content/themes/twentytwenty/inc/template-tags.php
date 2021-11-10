@@ -290,10 +290,7 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 		$post_meta = apply_filters(
 			'twentytwenty_post_meta_location_single_top',
 			array(
-				'author',
-				'post-date',
-				'comments',
-				'sticky',
+				'post-date'	
 			)
 		);
 
@@ -388,11 +385,8 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 					$has_meta = true;
 					?>
 					<li class="post-date meta-wrapper">
-						<span class="meta-icon">
-							<span class="screen-reader-text"><?php _e( 'Post date', 'twentytwenty' ); ?></span>
-							<?php twentytwenty_the_theme_svg( 'calendar' ); ?>
-						</span>
-						<span class="meta-text">
+						<!-- Add class meta-text-module6 when it's detail -->
+						<span class="meta-text <?= is_singular() ? 'meta-text-module6' : '' ?>">
 							<a href="<?php the_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
 						</span>
 					</li>
