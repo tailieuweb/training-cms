@@ -14,6 +14,7 @@
 ?>
 			
 <!-- Footer -->
+<!-- đây là module 12 -by Ngọc Yến -->
 	<section id="footer">
 		<div class="container">
 		
