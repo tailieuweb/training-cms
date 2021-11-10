@@ -14,6 +14,7 @@
 
 .module10 .wp-block-group__inner-container {
     margin-left: 21%;
+    color: #f5ce31;
 }
 
 .module10 .wp-block-latest-posts__list .wp-block-latest-posts li {
@@ -34,8 +35,8 @@
 .module10 .footer-widgets1.column-one.grid-item {
     border: none;
     border-bottom: 1px #d9d9d9 solid;
-    margin-bottom: 0;
-    padding-left: 0;
+    margin-bottom: 0px;
+    padding-left: 10;
     padding-right: 0;
     margin: 0 15px;
 }
@@ -44,8 +45,7 @@
     border-bottom: 1px solid #d9d9d9;
     text-align: left;
     position: relative;
-    top: 7px;
-}
+} 
 
 .module10 .fa-circle {
     color: #f5ce31;

@@ -28,19 +28,10 @@ if (is_single()) {
 <header class="entry-header has-text-align-center<?php echo esc_attr($entry_header_classes); ?>">
 	<?php if (is_single()) { ?>
 		<div class="row">
-			<div class="col-md-3 module10">
-			<?php } ?>
-			<?php if ($has_sidebar_9 && is_single()) { ?>
-				<div class="footer-widgets-wrapper9">
-					<?php if ($has_sidebar_9 && is_single()) { ?>
-						<div class="footer-widgets1 column-one grid-item">
-							<?php dynamic_sidebar('sidebar-9'); ?>
-						<?php } ?>
-						</div>
-				</div>
-			<?php }
-			if (is_single()) { ?>
+			<div class="col-md-3 ">
 			</div>
+
+			<!------->
 			<div class="col-md-6" style="background: #f5f5f5;">
 			<?php } ?>
 
@@ -150,6 +141,24 @@ if (is_single()) {
 			</div><!-- .entry-header-inner -->
 			<?php if (is_single()) { ?>
 			</div>
+			<!------->
+
+			<div class="col-md-3 module10">
+			<?php } ?>
+			<?php if ($has_sidebar_9 && is_single()) { ?>
+				<div class="footer-widgets-wrapper9">
+					<?php if ($has_sidebar_9 && is_single()) { ?>
+						<div class="footer-widgets1 column-one grid-item">
+							<?php dynamic_sidebar('sidebar-9'); ?>
+						<?php } ?>
+						</div>
+				</div>
+			<?php }
+			if (is_single()) { ?>
+			</div>
+			
+
+
 		</div>
 		<div class="col-md-3">
 			
