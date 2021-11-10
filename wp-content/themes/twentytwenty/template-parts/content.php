@@ -18,6 +18,16 @@ if (!is_single()) {
 	$class = 'danh-sach';
 }
 ?>
+<?php 
+$post = get_post();
+$day = $month = $year = 0;
+if (strtotime($post->post_date)) {
+	$timestamp = strtotime($post->post_date);
+	$day = date("d", $timestamp);
+	$month = date("m", $timestamp);
+	$year = date("y", $timestamp);
+}
+?>
 
 <article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
 
@@ -58,11 +68,40 @@ if (!is_single()) {
 						</div>
 						<!-- Module-6 -->
 						<div class="col-md-6">
+
+						<div class="row">
+							<div class="col-md-10 col-xs-9">
+						<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
+						</div>
+						<div class="col-md-2 col-xs-3">
+								<div class="headlinesdate">
+									<div class="headlinesdm">
+										<div class="headlinesday"><?php echo $day ?></div>
+										<div class="headlinesmonth"><?php echo $month ?></div>
+									</div>
+									<div class="headlinesyear"><?php echo "'" . $year ?></div>
+								</div>
+							</div>
+							</div>
+
+
+							<div class="row">
+							<div class="col-md-12">
+								<div class="overviewline"></div>
+							</div>
+						</div>
+
+
+
+
+						
 							<div class="detail-post-content">
 								<?php
 								the_content(__('Continue reading', 'twentytwenty'));
 								?>
 							</div>
+						<div class="author-module-6"><?php	echo "(Theo ".get_the_author().")"; ?></div>
+
 						</div>
 						<!-- Module-10 -->
 						<div class="col-md-3">
@@ -99,13 +138,7 @@ if (!is_single()) {
 					</div>
 				<?php
 				} else {
-					$post = get_post();
-					$day = $month = $year = 0;
-					if (strtotime($post->post_date)) {
-						$timestamp = strtotime($post->post_date);
-						$day = date("d", $timestamp);
-						$month = date("m", $timestamp);
-					}
+					
 					/** $content = preg_replace('/<figure.*?>.*?<\/figure>/', '', $post->post_content); */
 					$content = findHTMLTag($post->post_content, 'p');
 					$content = $content ? $content : 'This post hasn\'t description !!';

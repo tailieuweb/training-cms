@@ -31,13 +31,7 @@ if (is_singular()) {
 		 */
 		$show_categories = apply_filters('twentytwenty_show_categories_in_entry_header', true);
 		/* Module-6 */
-		$day = $month = $year = 0;
-		if (strtotime($post->post_date)) {
-			$timestamp = strtotime($post->post_date);
-			$day = date("d", $timestamp);
-			$month = date("m", $timestamp);
-			$year = date("y", $timestamp);
-		}
+	
 		if (true === $show_categories && has_category()) {
 		?>
 
@@ -53,7 +47,6 @@ if (is_singular()) {
 			}
 
 			if (is_singular()) {
-				the_title('<h1 class="entry-title">', '</h1>');
 			} else {
 				the_title('<h2 class="entry-title heading-size-1"><a href="' . esc_url(get_permalink()) . '">', '</a></h2>');
 			}
@@ -66,22 +59,10 @@ if (is_singular()) {
 				$intro_text_width = ' thin module-6-thin'; // Module-6
 			}
 				?></div>
-				<div class="col-md-2 col-xs-3">
-					<div class="headlinesdate">
-						<div class="headlinesdm">
-							<div class="headlinesday"><?php echo $day ?></div>
-							<div class="headlinesmonth"><?php echo $month ?></div>
-						</div>
-						<div class="headlinesyear"><?php echo "'" . $year ?></div>
-					</div>
-				</div>
+				
 			</div>
 
-			<div class="row">
-				<div class="col-md-12">
-					<div class="overviewline"></div>
-				</div>
-			</div>
+			
 			<?php
 			if (has_excerpt() && is_singular()) {
 			?>
