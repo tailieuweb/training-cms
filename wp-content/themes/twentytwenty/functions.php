@@ -444,7 +444,6 @@ function twentytwenty_sidebar_registration() {
     );
 
 }
-}
 
 add_action( 'widgets_init', 'twentytwenty_sidebar_registration' );
 
