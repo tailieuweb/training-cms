@@ -91,6 +91,8 @@ get_header();
 			// var_dump(get_post());
 
 			while (have_posts()) {
+				the_post();
+				
 				// Get posts:
 				$_post = get_post();
 
@@ -158,8 +160,6 @@ get_header();
 					</div>
 				</div>
             	";
-
-				the_post();
 			}
 		} else {
 			// $i = 0;
