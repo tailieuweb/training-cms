@@ -91,7 +91,7 @@ get_header();
 			get_template_part('template-parts/content', get_post_type());
 		}
 	?>
-		<div class="no-search-results-form section-inner thin">
+		<div class="no-search-results-form section-inner thin clSearch">
 
 			<?php
 			get_search_form(
@@ -106,7 +106,7 @@ get_header();
 	<?php } elseif (is_search()) {
 	?>
 
-		<div class="no-search-results-form section-inner thin">
+		<div class="no-search-results-form section-inner thin clSearch">
 
 			<?php
 			get_search_form(

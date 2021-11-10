@@ -1,21 +1,23 @@
 /* Module 4 css */
 
-.search-form .search-field {
-    width: 858px;
+.module-4-formSearch .search-cont {
+    width: 858px !important;
     padding-left: 65px;
     height: 75px;
     font-size: 20px;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
-.section-inner.thin {
-    max-width: 85rem;
+.clSearch {
+    max-width: 85rem !important;
 }
 
-.section-inner.max-percentage {
-    width: 58rem;
+.section-inner .max-percentage {
+    width: 58rem !important;
 }
 
-.font-search {
+.module-4-fontSearch {
     position: relative;
     top: 26px;
     left: 60px;
@@ -24,7 +26,7 @@
     height: 25px;
 }
 
-.search-submit {
+.module-4-searchSub {
     position: relative;
     top: 13px;
     right: 137px;
