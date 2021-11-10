@@ -380,7 +380,7 @@ function twentytwenty_sidebar_registration() {
 		'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
 		'after_widget'  => '</div></div>',
 	);
-
+    // Ngoc Yen - Module 3
 	// Footer #1.
 	register_sidebar(
 		array_merge(
@@ -412,6 +412,17 @@ function twentytwenty_sidebar_registration() {
 			array(
 				'name'        => __( 'Footer #3', 'twentytwenty' ),
 				'id'          => 'sidebar-3',
+				'description' => __( 'Widgets in this area will be displayed in the second column in the footer.', 'twentytwenty' ),
+			)
+		)
+	); 
+     // module #12 
+	register_sidebar(
+		array_merge(
+			$shared_args,
+			array(
+				'name'        => __( 'Module #12', 'twentytwenty' ),
+				'id'          => 'sidebar-12',
 				'description' => __( 'Widgets in this area will be displayed in the second column in the footer.', 'twentytwenty' ),
 			)
 		)

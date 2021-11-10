@@ -154,6 +154,15 @@ body {
 	overflow: hidden;
 }
 
+/*hihi*/
+/* #sidebar-right .wp-block-group__inner-container h2 {
+	color: #fff !important; 
+}
+#sidebar-right .cat-item a {
+	color: #fff !important;
+} */
+	
+/* end hihihi */
 
 /* Clearing ---------------------------------- */
 
@@ -2965,40 +2974,6 @@ h2.entry-title {
 	color: #6d6d6d;
 }
 
-.wp-block-archives a,
-.wp-block-categories a,
-.wp-block-latest-posts a,
-.wp-block-latest-comments a {
-	font-weight: 700;
-	text-decoration: none;
-}
-
-.wp-block-archives a:hover,
-.wp-block-categories a:hover,
-.wp-block-latest-posts a:hover,
-.wp-block-latest-comments a:hover,
-.wp-block-archives a:focus,
-.wp-block-categories a:focus,
-.wp-block-latest-posts a:focus,
-.wp-block-latest-comments a:focus {
-	text-decoration: underline;
-}
-
-.wp-block-latest-posts a,
-.wp-block-latest-comments__comment-meta {
-	font-weight: 700;
-	letter-spacing: -0.025em;
-	line-height: 1.25;
-}
-
-.wp-block-latest-comments__comment-date,
-.wp-block-latest-posts__post-date {
-	color: #6d6d6d;
-	font-size: 0.7em;
-	font-weight: 600;
-	letter-spacing: normal;
-	margin-top: 0.15em;
-}
 
 
 /* Block: Shared Media Styles ---------------- */
@@ -5195,164 +5170,7 @@ a.to-the-top > * {
 		margin: 0 0 0 2rem;
 	}
 
-	/* Blocks -------------------------------- */
-
-	/* BLOCK: SHARED MEDIA STYLES */
-
-	.wp-block-embed figcaption,
-	.wp-block-image figcaption {
-		font-size: 1.6rem;
-	}
-
-	/* BLOCK: BASE MARGINS */
-
-	.wp-block-archives:not(.alignwide):not(.alignfull),
-	.wp-block-categories:not(.alignwide):not(.alignfull),
-	.wp-block-code,
-	.wp-block-columns:not(.alignwide):not(.alignfull),
-	.wp-block-cover:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.aligncenter),
-	.wp-block-embed:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.aligncenter),
-	.wp-block-gallery:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.aligncenter),
-	.wp-block-group:not(.has-background):not(.alignwide):not(.alignfull),
-	.wp-block-image:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.aligncenter),
-	.wp-block-latest-comments:not(.aligncenter):not(.alignleft):not(.alignright),
-	.wp-block-latest-posts:not(.aligncenter):not(.alignleft):not(.alignright),
-	.wp-block-media-text:not(.alignwide):not(.alignfull),
-	.wp-block-preformatted,
-	.wp-block-pullquote:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright),
-	.wp-block-quote,
-	.wp-block-quote.is-large,
-	.wp-block-quote.is-style-large,
-	.wp-block-verse,
-	.wp-block-video:not(.alignwide):not(.alignfull) {
-		margin-bottom: 4rem;
-		margin-top: 4rem;
-	}
-
-	/* BLOCK: COLUMNS */
-
-	.wp-block-columns.alignwide + .wp-block-columns.alignwide,
-	.wp-block-columns.alignfull + .wp-block-columns.alignfull {
-		margin-top: -6rem;
-	}
-
-	.entry-content .wp-block-columns h1,
-	.entry-content .wp-block-columns h2,
-	.entry-content .wp-block-columns h3,
-	.entry-content .wp-block-columns h4,
-	.entry-content .wp-block-columns h5,
-	.entry-content .wp-block-columns h6 {
-		margin: 3.5rem 0 2rem;
-	}
-
-	/* BLOCK: COVER */
-
-	.wp-block-cover-image .wp-block-cover__inner-container,
-	.wp-block-cover .wp-block-cover__inner-container {
-		width: calc(100% - 8rem);
-	}
-
-	.wp-block-cover-image h2,
-	.wp-block-cover h2 {
-		font-size: 4.8rem;
-	}
-
-	/* BLOCK: GALLERY */
-
-	figure.wp-block-gallery.alignnone,
-	figure.wp-block-gallery.aligncenter {
-		margin-bottom: 4rem;
-		margin-top: 4rem;
-	}
-
-	figure.wp-block-gallery.alignwide,
-	figure.wp-block-gallery.alignfull {
-		margin-bottom: 6rem;
-		margin-top: 6rem;
-	}
-
-	/* BLOCK: GROUP */
-
-	.wp-block-group.has-background {
-		padding: 4rem;
-		margin-top: 0;
-		margin-bottom: 0;
-	}
-
-	.alignfull:not(.has-background) > .wp-block-group__inner-container > p:not(.has-background-color) {
-		padding-left: 0;
-		padding-right: 0;
-	}
-
-	/* BLOCK: MEDIA AND TEXT */
-
-	.wp-block-media-text .wp-block-media-text__content {
-		padding: 4rem;
-	}
-
-	/* BLOCK: PULLQUOTE */
-
-	.wp-block-pullquote blockquote p {
-		font-size: 3.2rem;
-	}
-
-	.wp-block-pullquote cite {
-		margin-top: 2rem;
-	}
-
-	.wp-block-pullquote.alignfull:not(.is-style-solid-color) {
-		padding-left: 1rem;
-		padding-right: 1rem;
-	}
-
-	.wp-block-pullquote.alignwide::before,
-	.wp-block-pullquote.alignfull::before {
-		font-size: 11.272727272rem;
-		height: 8rem;
-		margin-bottom: 2rem;
-		width: 8rem;
-	}
-
-	.wp-block-pullquote.alignwide blockquote p,
-	.wp-block-pullquote.alignfull blockquote p {
-		font-size: 4.8rem;
-		line-height: 1.203125;
-	}
-
-	.wp-block-pullquote.alignleft p,
-	.wp-block-pullquote.alignright p,
-	.wp-block-pullquote.alignleft.is-style-solid-color blockquote p,
-	.wp-block-pullquote.alignright.is-style-solid-color blockquote p {
-		font-size: 3.2rem;
-		line-height: 1.1875;
-	}
-
-	.wp-block-pullquote.is-style-solid-color.alignwide,
-	.wp-block-pullquote.is-style-solid-color.alignfull {
-		padding: 6rem 4rem 4rem;
-	}
-
-	.wp-block-pullquote.alignleft.is-style-solid-color blockquote p,
-	.wp-block-pullquote.alignright.is-style-solid-color blockquote p {
-		font-size: 2.6rem;
-	}
-
-	/* BLOCK: QUOTE */
-
-	.wp-block-quote.is-large p,
-	.wp-block-quote.is-style-large p {
-		font-size: 2.8rem;
-	}
-
-	/* BLOCK: SEPARATOR */
-
-	hr.wp-block-separator {
-		margin: 6rem auto;
-	}
-
-	.wp-block-separator.is-style-wide {
-		max-width: calc(100vw - 8rem);
-	}
+	
 
 	/* Entry Content ------------------------- */
 
@@ -6479,29 +6297,4 @@ a.to-the-top > * {
 	}
 }
 
-#footer-nav-widgets-wrapper-id {
-	background: #007b5e !important;
-}
 
-#footer-nav-widgets-wrapper-id h2 {
-	color: #ffffff !important;
-	padding-left: 10px;
-    border-left: 3px solid #eeeeee;
-    padding-bottom: 6px;
-    margin-bottom: 20px;
-}
-
-#footer-nav-widgets-wrapper-id a {
-	color: #ffffff !important;
-}
-
-#footer-nav-widgets-wrapper-id a::before {
-	content: "\f101";
-	margin-right: 5px;
-	display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
