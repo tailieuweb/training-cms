@@ -26,6 +26,7 @@
 
 		<?php wp_head(); ?>
 
+
 	</head>
 
 	<body <?php body_class(); ?>>
@@ -168,10 +169,37 @@
 						}
 						?>
 
+                            <?php
+                            if ( has_nav_menu( 'expanded' ) ) {
+                                ?>
+
+                                <div class="toggle-wrapper nav-toggle-wrapper has-expanded-menu">
+
+                                    <button class="toggle nav-toggle desktop-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
+									<span class="toggle-inner">
+										<span class="toggle-text"><?php _e( 'Account', 'twentytwenty' ); ?></span>
+										<span  class="toggle-icon">
+											<?php twentytwenty_the_theme_svg( 'user'); ?>
+										</span>
+									</span>
+                                    </button><!-- .nav-toggle -->
+
+                                </div><!-- .nav-toggle-wrapper -->
+
+                                <?php
+                            }
+                            ?>
+
+
+
+
+
 						</div><!-- .header-toggles -->
 						<?php
 					}
 					?>
+
+
 
 				</div><!-- .header-navigation-wrapper -->
 
