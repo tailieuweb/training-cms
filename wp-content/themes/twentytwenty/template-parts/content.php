@@ -27,13 +27,19 @@
 
 	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
 
-		<div class="entry-content">
+        <div class="entry-content right-content">
 
 			<?php
 			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
 				the_excerpt();
 			} else {
-				the_content( __( 'Continue reading', 'twentytwenty' ) );
+				if(is_single()){
+					the_content( __( 'Continue reading', 'twentytwenty' ) );
+				}else{
+					the_title( '<h2 class="entry-title heading-size-1 name-post"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
+					$post = get_post();
+					echo substr($post->post_content, 0,200 );
+				}
 			}
 			?>
 
@@ -41,8 +47,8 @@
 
 	</div><!-- .post-inner -->
 
-	<div class="section-inner">
-		<?php
+    <div class="section-inner none-section">
+        <?php
 		wp_link_pages(
 			array(
 				'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__( 'Page', 'twentytwenty' ) . '"><span class="label">' . __( 'Pages:', 'twentytwenty' ) . '</span>',
