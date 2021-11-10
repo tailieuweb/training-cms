@@ -22,8 +22,10 @@
 
         <!--        Bootstrap 4-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <!--        Ho si Hung-->
+        <!--        Ho si Hung module 3-->
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module3.css" type="text/css" media="screen" />
+        <!--        Ho si Hung module 8-->
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module8.css" type="text/css" media="screen" />
 
         <!--        Script for bs4-->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
