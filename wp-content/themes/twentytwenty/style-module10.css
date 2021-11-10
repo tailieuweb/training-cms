@@ -53,7 +53,10 @@
 }
 
 .module10 .footer-widgets-wrapper9 {
-    background: #f5f5f5;
+    background: #ececec;
     position: relative;
     
+}
+.module10 .wp-block-group{
+    background: white;
 }
