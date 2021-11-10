@@ -26,6 +26,10 @@
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,700,800|Open+Sans+Condensed:300,700|Prata&amp;subset=vietnamese" rel="stylesheet" type="text/css">
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/pagesearch.css">
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/1-wordpress-581-202109/2-groups/1-E/5-1-An-Module5
   <?php wp_head(); ?>
 
 </head>
