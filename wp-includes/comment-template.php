@@ -2524,7 +2524,7 @@ function comment_form( $args = array(), $post_id = null ) {
 	 */
 	do_action( 'comment_form_before' );
 	?>
-	<div id="respond" class="<?php echo esc_attr( $args['class_container'] ); ?>">
+	<div id="respond" class="<?php echo esc_attr( $args['class_container'] ); ?> aaaaaa">
 		<?php
 		echo $args['title_reply_before'];
 
