@@ -1,6 +1,6 @@
 <head>
-<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-2.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-5.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-2.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-5.css" type="text/css" media="screen" />
 </head>
 <?php
 
@@ -24,7 +24,7 @@ get_header();
 
 <main id="site-content" role="main">
 
-    <?php
+	<?php
 
 	$archive_title    = '';
 	$archive_subtitle = '';
@@ -62,27 +62,27 @@ get_header();
 	if ($archive_title || $archive_subtitle) {
 	?>
 
-    <header class="archive-header has-text-align-center header-footer-group">
+		<header class="archive-header has-text-align-center header-footer-group">
 
-        <div class="archive-header-inner section-inner medium">
-
-
-            <?php if ( $archive_title ) { ?>
-            <h1 class="archive-title"><?php echo wp_kses_post( $archive_title ); ?></h1>
-            <?php } ?>
-
-            <?php if ( $archive_subtitle ) { ?>
-            <div class="archive-subtitle section-inner thin max-percentage intro-text">
-                <?php echo wp_kses_post( wpautop( $archive_subtitle ) ); ?></div>
-            <?php } ?>
+			<div class="archive-header-inner section-inner medium">
 
 
-        </div><!-- .archive-header-inner -->
+				<?php if ($archive_title) { ?>
+					<h1 class="archive-title"><?php echo wp_kses_post($archive_title); ?></h1>
+				<?php } ?>
 
-    </header><!-- .archive-header -->
+				<?php if ($archive_subtitle) { ?>
+					<div class="archive-subtitle section-inner thin max-percentage intro-text">
+						<?php echo wp_kses_post(wpautop($archive_subtitle)); ?></div>
+				<?php } ?>
 
 
-    <?php
+			</div><!-- .archive-header-inner -->
+
+		</header><!-- .archive-header -->
+
+
+		<?php
 
 	}
 
@@ -103,78 +103,77 @@ get_header();
 			$post_title = $post->post_title;
 			$post_date = get_the_date('d', $post->ID);
 			$post_month = get_the_date('F', $post->ID);
-			$post_content = substr($post->post_content,0,150);
+			$post_content = substr($post->post_content, 0, 150);
 			//get_template_part( 'template-parts/content', get_post_type() );
-
 			//hien thi du lieu da lay
 		?>
-		<?php if ( get_post() && get_post()!= is_search() ) { ?>
-		<div class="container">
-			<div class="list_new_post">
-				<div class='list_new_view_post'>
-					<div class='row'>
-						<div class='col-md detail-new_post'>
+			<?php if (get_post() && get_post() != is_search()) { ?>
+				<div class="container">
+					<div class="list_new_post">
+						<div class='list_new_view_post'>
 							<div class='row'>
+								<div class='col-md detail-new_post'>
+									<div class='row'>
 
-								<div class='col-md-3 col-xs-3 time_post'>
-									<span class='date_post'><?= $post_date ?></span><br>
-									<span class='month_post'><?= $post_month ?></span><br>
-								</div>
-								<div class='col-md-9 col-xs-9 desc_post'>
-									<h4>
-										<a href='<?= esc_url( get_permalink() )?>'><?= $post_title ?></a>
-									</h4>
-									<?= $post_content ?>
-									<a href='<?= esc_url( get_permalink() )?>'>[...]</a>
+										<div class='col-md-3 col-xs-3 time_post'>
+											<span class='date_post'><?= $post_date ?></span><br>
+											<span class='month_post'><?= $post_month ?></span><br>
+										</div>
+										<div class='col-md-9 col-xs-9 desc_post'>
+											<h4>
+												<a href='<?= esc_url(get_permalink()) ?>'><?= $post_title ?></a>
+											</h4>
+											<?= $post_content ?>
+											<a href='<?= esc_url(get_permalink()) ?>'>[...]</a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<?php } ?>
-		<?php if ( is_search() ) {
-			$post = get_post();
-			$img = findImgHTMLTag($post->post_content);
-			$img = $img?$img:'<img src="https://artbaselmanawynwood.com/wp-content/uploads/2021/09/noimage.png">';
+			<?php } ?>
+
+			<?php if (is_search()) {
+				$post = get_post();
+				$img = findImgHTMLTag($post->post_content);
+				$img = $img ? $img : '<img src="https://artbaselmanawynwood.com/wp-content/uploads/2021/09/noimage.png">';
 			?>
-		<div class="container">
-			<div class="list_new_search">
-				<div class='list_new_view_search'>
-					<div class='row'>
-						<div class='col-md detail-new_search'>
+				<div class="container">
+					<div class="list_new_search">
+						<div class='list_new_view_search'>
 							<div class='row'>
-								<div class='col-md-3 col-xs-3 img_search'>
-									<?= $img?>
-								</div>
-								<div class='col-md-3 col-xs-3 time_search'>
-									<span class='date_search'><?= $post_date ?></span><br>
-									<span class='month_search'><?= $post_month ?></span><br>
-								</div>
-								<div class='col-md-6 col-xs-6 desc_search'>
-									<h4>
-										<a href='<?= esc_url( get_permalink() )?>'><?= $post_title ?></a>
-									</h4>
-									<?= $post_content ?>
-									<a href='<?= esc_url( get_permalink() )?>'>[...]</a>
+								<div class='col-md detail-new_search'>
+									<div class='row'>
+										<div class='col-md-3 col-xs-3 img_search'>
+											<?= $img ?>
+										</div>
+										<div class='col-md-3 col-xs-3 time_search'>
+											<span class='date_search'><?= $post_date ?></span><br>
+											<span class='month_search'><?= $post_month ?></span><br>
+										</div>
+										<div class='col-md-6 col-xs-6 desc_search'>
+											<h4>
+												<a href='<?= esc_url(get_permalink()) ?>'><?= $post_title ?></a>
+											</h4>
+											<?= $post_content ?>
+											<a href='<?= esc_url(get_permalink()) ?>'>[...]</a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<?php } ?>
-    <?php
-		}	
-	} elseif ( is_search() ) {
+			<?php } ?>
+		<?php
+		}
 		?>
 
-    <div class="no-search-results-form section-inner thin">
+		<div class="no-search-results-form section-inner thin">
 
 
-        <?php
+			<?php
 			get_search_form(
 				array(
 					'aria_label' => __('search again', 'twentytwenty'),
@@ -182,14 +181,30 @@ get_header();
 			);
 			?>
 
-    </div><!-- .no-search-results -->
+		</div><!-- .no-search-results -->
+
+	<?php } elseif (is_search()) {
+	?>
+
+		<div class="no-search-results-form section-inner thin">
 
 
-    <?php
+			<?php
+			get_search_form(
+				array(
+					'aria_label' => __('search again', 'twentytwenty'),
+				)
+			);
+			?>
+
+		</div><!-- .no-search-results -->
+
+
+	<?php
 	}
 	?>
 
-    <?php get_template_part( 'template-parts/pagination' ); ?>
+	<?php get_template_part('template-parts/pagination'); ?>
 
 
 </main><!-- #site-content -->
