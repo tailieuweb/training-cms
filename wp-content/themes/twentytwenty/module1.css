@@ -17,7 +17,7 @@
 }
 
 #site-content .entry-title.title-detail {
-    width: 60%;
+    width: 100%;
 }
 
 /* Button Home  */
@@ -78,7 +78,7 @@
 
 @media screen and (max-width: 755px) {
     .btn-wrapper,
-    .search-form,
+    .search-box,
     #search-header {
         display: none;
     }
