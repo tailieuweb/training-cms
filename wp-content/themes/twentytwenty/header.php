@@ -48,12 +48,12 @@
 						<div class="col-md-5 co4">
 							<div class="header-titles">
 								<div class="row chinhlogo">
-									<div class="col-md-8 logo">
+									<div class="col-md-7 logo">
 										<?php
 										// Site title or logo.
 										twentytwenty_site_logo(); ?>
 									</div>
-									<div class="col-md-4 nenxam">
+									<div class="col-md-5 nenxam">
 										<?php // Site description.
 										twentytwenty_site_description(); ?>
 									</div>
