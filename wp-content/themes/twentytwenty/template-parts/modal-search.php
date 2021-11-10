@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Displays the search icon and modal
  *
@@ -9,26 +10,28 @@
 
 ?>
 <div class="search-modal cover-modal header-footer-group" data-modal-target-string=".search-modal">
-
-	<div class="search-modal-inner modal-inner">
-
-		<div class="section-inner">
-
-			<?php
-			get_search_form(
-				array(
-					'aria_label' => __( 'Search for:', 'twentytwenty' ),
-				)
-			);
-			?>
-
-			<button class="toggle search-untoggle close-search-toggle fill-children-current-color" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field">
-				<span class="screen-reader-text"><?php _e( 'Close search', 'twentytwenty' ); ?></span>
-				<?php twentytwenty_the_theme_svg( 'cross' ); ?>
-			</button><!-- .search-toggle -->
-
-		</div><!-- .section-inner -->
-
-	</div><!-- .search-modal-inner -->
-
-</div><!-- .menu-modal -->
+	<div class="container"
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-10 col-lg-8 py-5">
+				<form class="card card-sm" method="get" role="search" action="<?php echo esc_url( home_url( '/' ) ); ?> ">
+					<div class="card-body row no-gutters align-items-center">
+						<div class="col-auto">
+							<i class="fa fa-search text-body"></i>
+						</div>
+						<!--end of col-->
+						<div class="col">
+							<input class=" form-control form-control-lg form-control-borderless" value="<?php echo get_search_query(); ?>" name="s" type="search" placeholder="Search topics or keywords">
+						</div>
+						<!--end of col-->
+						<div class="col-auto">
+							<button class="btn btn-lg btn-success" type="submit" value="<?php echo esc_attr_x('Search', 'submit button', 'twentytwenty'); ?>">Search</button>
+							<input type="submit" class="search-submit" value="<?php echo esc_attr_x( 'Search', 'submit button', 'twentytwenty' ); ?>" />
+						</div>
+						<!--end of col-->
+					</div>
+				</form>
+			</div>
+			<!--end of col-->
+		</div>
+	</div>
+</div>

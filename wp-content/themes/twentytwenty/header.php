@@ -8,6 +8,7 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
+//chung 
 
 ?><!DOCTYPE html>
 
@@ -33,7 +34,7 @@
 		wp_body_open();
 		?>
 
-		<header id="site-header" class="header-footer-group" role="banner">
+		<header id="site-header" class="header-footer-group header-tim-thay-roi" role="banner">
 
 			<div class="header-inner section-inner">
 

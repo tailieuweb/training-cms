@@ -96,7 +96,7 @@ function render_block_core_search( $attributes ) {
 	$wrapper_attributes = get_block_wrapper_attributes( array( 'class' => $classnames ) );
 
 	return sprintf(
-		'<form role="search" method="get" action="%s" %s>%s</form>',
+		'<form role="search"  method="get" action="%s" %s>%s</form>',
 		esc_url( home_url( '/' ) ),
 		$wrapper_attributes,
 		$label_markup . $field_markup
