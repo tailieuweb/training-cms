@@ -209,7 +209,7 @@
 						<div class="dropdown">
 							<button class="btn btn-secondary dropdown-toggle user-module-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<div class="user-icon">
-								<i class="fas fa-user-circle"></i>
+							<i class="fa fa-user-circle" aria-hidden="true"></i>
 							</div>
 							<div class="user-title">
 								Account
