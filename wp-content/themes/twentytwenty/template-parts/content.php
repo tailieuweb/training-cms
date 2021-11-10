@@ -92,7 +92,13 @@
 
 			<?php
             if (is_user_logged_in())
-            comments_template();
+            {
+                ?>
+                <section class="card my-card">
+                    <?php comments_template(); ?>
+                </section>
+            <?php
+            }
             ?>
 
 		</div><!-- .comments-wrapper -->
