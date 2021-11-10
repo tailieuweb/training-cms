@@ -5485,7 +5485,8 @@ section .section-title {
 }
 
 #footer>div.container>div>div>div>div>div>div>ul>li:hover {
-	background-color: chartreuse;
+
+	text-shadow: #ccc;
 }
 
 #footer>div.container>div>div>div>div>div>div>ul>li:hover a i {
