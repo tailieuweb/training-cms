@@ -13,19 +13,14 @@ $has_social_menu = has_nav_menu( 'social' );
 
 $has_sidebar_1 = is_active_sidebar( 'sidebar-1' );
 $has_sidebar_2 = is_active_sidebar( 'sidebar-2' );
-$has_sidebar_3 = is_active_sidebar( 'sidebar-3' );
-
 
 // Only output the container if there are elements to display.
 if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ) {
 	?>
-    <script src="https://kit.fontawesome.com/473ccb2a41.js" crossorigin="anonymous"></script>
-    <link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
 
+	<div class="footer-nav-widgets-wrapper header-footer-group">
 
-	<div  class="footer-nav-widgets-wrapper header-footer-group">
-
-		<div class="footer-inner section-inner" >
+		<div class="footer-inner section-inner">
 
 			<?php
 
@@ -57,7 +52,7 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ) 
 						</nav><!-- .site-nav -->
 
 					<?php } ?>
-					<?php if ( $has_social_menu ) {  // Không có social menu ?>
+					<?php if ( $has_social_menu ) { ?>
 
 						<nav aria-label="<?php esc_attr_e( 'Social links', 'twentytwenty' ); ?>" class="footer-social-wrapper">
 
@@ -89,18 +84,16 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ) 
 
 			<?php } ?>
 
-			<?php if ( $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3 ) {   ?>
+			<?php if ( $has_sidebar_1 || $has_sidebar_2 ) { ?>
 
 				<aside class="footer-widgets-outer-wrapper" role="complementary">
 
-					<div class="footer-widgets-wrapper"      >
+					<div class="footer-widgets-wrapper">
 
-						<?php if ( $has_sidebar_1 ) {  ?>
+						<?php if ( $has_sidebar_1 ) { ?>
 
 							<div class="footer-widgets column-one grid-item">
-								<?php  dynamic_sidebar( 'sidebar-1' ); ?>
-
-
+								<?php dynamic_sidebar( 'sidebar-1' ); ?>
 							</div>
 
 						<?php } ?>
@@ -108,21 +101,10 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ) 
 						<?php if ( $has_sidebar_2 ) { ?>
 
 							<div class="footer-widgets column-two grid-item">
-								<?php dynamic_sidebar( 'sidebar-1' ); ?>
-
+								<?php dynamic_sidebar( 'sidebar-2' ); ?>
 							</div>
 
 						<?php } ?>
-
-                        <?php if ( $has_sidebar_3 ) {  ?>
-
-                            <div class="footer-widgets column-one grid-item">
-                                <?php dynamic_sidebar( 'sidebar-1' ); ?>
-
-                            </div>
-
-                        <?php } ?>
-
 
 					</div><!-- .footer-widgets-wrapper -->
 
