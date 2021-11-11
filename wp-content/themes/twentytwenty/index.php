@@ -30,7 +30,9 @@ $has_sidebar_12 = is_active_sidebar('sidebar-12');
 
 <main id="site-content" role="main">
 	<!-- chia cột để hiển thị module 12 -by Ngọc Yến --->
+
 	<?php
+
 	//header
 	$archive_title    = '';
 	$archive_subtitle = '';
@@ -85,11 +87,11 @@ $has_sidebar_12 = is_active_sidebar('sidebar-12');
 
 	<?php
 	}
+
+
+	//post
 	?>
-
-	<!-- post -->
 	<div class="row">
-
 		<div class="col-md-9">
 			<?php
 			if (have_posts()) {
@@ -220,11 +222,9 @@ $has_sidebar_12 = is_active_sidebar('sidebar-12');
 			} elseif (is_search()) {
 				?>
 			<?php
-			}
-			?>
+			} ?>
 
-		</div><!-- .no-search-results -->
-
+		</div>
 		<div class="col-md-3">
 			<?php if ($has_sidebar_12) { ?>
 
@@ -235,7 +235,9 @@ $has_sidebar_12 = is_active_sidebar('sidebar-12');
 			<?php } ?>
 		</div>
 
-		<?php get_template_part('template-parts/pagination'); ?>
+	</div><!-- .no-search-results -->
+
+	<?php get_template_part('template-parts/pagination'); ?>
 
 	</div>
 	<!-- đây là module 12  - by Ngọc Yến -->
