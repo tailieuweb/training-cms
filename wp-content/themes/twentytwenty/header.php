@@ -41,7 +41,7 @@
         <div class="collapse navbar-collapse header-inner" id="collapsibleNavId">
             <ul class="navbar-nav ml-0  mt-2 mt-lg-0 navbar-adjust">
                 <li class="mx-2 nav-item active">
-                    <a class="navbar-brand " href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="navbar-brand " href="http://cms.local/">Home <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
             <form class="mx-1 form-inline mr-auto">
