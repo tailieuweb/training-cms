@@ -141,6 +141,7 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
                           </div>
                          <?php } ?>   
 
+<<<<<<< HEAD
 =======
 
 				<!-- <aside class="footer-widgets-outer-wrapper" role="complementary"> -->
@@ -189,6 +190,8 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
 
 <?php } ?>
 >>>>>>> 1-wordpress-581-202109/2-groups/1-K/1-16-Khoa-Module3
+=======
+>>>>>>> 1-wordpress-581-202109/2-groups/1-K/1-16-Khoa-Module6
 				</div>
 		</div><!-- .footer-widgets-wrapper -->
 
