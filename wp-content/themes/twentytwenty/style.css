@@ -1272,7 +1272,7 @@ button.toggle {
 	align-items: stretch;
 	display: flex;
 	flex-wrap: nowrap;
-	margin: 0 0 -0.8rem -0.8rem;
+	/* margin: 0 0 -0.8rem -0.8rem; */
 	position: relative;
 }
 
@@ -1392,7 +1392,7 @@ ul.social-icons li {
 
 
 #site-header {
-	background: #fff;
+	background: #f8f8f8;
 	position: relative;
 }
 
@@ -1426,14 +1426,15 @@ body:not(.enable-search-modal) .header-titles-wrapper {
 
 .site-title {
 	font-size: 2.1rem;
-	font-weight: 600;
+	font-weight: 500;
 	line-height: 1;
 }
 
 .site-title a {
-	color: inherit;
+	color: #6d6d70;
 	display: block;
 	text-decoration: none;
+	font-size: 28px;
 }
 
 .site-title a:hover,
@@ -4974,10 +4975,10 @@ a.to-the-top > * {
 	.header-inner {
 		padding: 3.8rem 0;
 	}
-
+	/*  */
 	.site-title {
 		font-size: 2.4rem;
-		font-weight: 700;
+		font-weight: 600;
 	}
 
 	.site-description {
