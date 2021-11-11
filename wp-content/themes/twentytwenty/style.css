@@ -103,7 +103,11 @@ with others.
     }
     /* categories */
     
-    li.cate-name {
+    .cate {
+        padding-left: 25px;
+    }
+    
+    .cate li.cate-name {
         line-height: 80px !important;
         color: #7FB1DB;
         line-height: 5rem;
@@ -485,7 +489,7 @@ Inter variable font. Usage:
     
     ul,
     ol {
-        margin: 0 0 3rem 3rem;
+        margin: 0 0 3rem 1.5rem;
     }
     
     ul {
@@ -514,7 +518,7 @@ Inter variable font. Usage:
     
     li {
         line-height: 1.5;
-        margin: 0.5rem 0 0 2rem;
+        margin: 0rem 0 0 2rem;
     }
     
     li>ul,

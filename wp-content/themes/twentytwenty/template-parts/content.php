@@ -19,11 +19,10 @@ if (!is_single()) {
 <?php if (is_single()) { ?>
 	<div class="row">
 		<div class="col-md-3">
-        <h5 style="padding-left: 3rem;margin-bottom: 10px;">Categories</h5>
+        <h5 style="padding-left: 25px;margin-bottom: 10px;">Categories</h5>
 			<div class="cate">
 				<div class="crossedbg"></div>
 				<div class="ul-cate">
-
 					<ul>
 						<?php $catID = get_terms('category');
 						foreach ($catID as $key => $value) { ?>
