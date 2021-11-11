@@ -133,19 +133,20 @@ else{
 
 <article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
 <div class="row">
-	<div class="col-md-2/5">
-		<div class="crossedbg"></div>
-			<div class="panel-body">
-			<h class="categories" style = "padding-left: 30px;font-size: 30px;" >Categories </h>
-				<ul class="list-group">
-				
-											<li class="list-group-item">
-									<a href="http://fit.tdc.edu.vn/viec-lam/dot-net-developer-w2solution">.Net Developer</a>                        </li>
-											<li class="list-group-item">
-									<a href="http://fit.tdc.edu.vn/viec-lam/thuc-tap-sinh-tester-w2solution">Thực Tập Sinh Tester</a>                        </li>
-											<li class="list-group-item">
-									<a href="http://fit.tdc.edu.vn/viec-lam/tro-giang-lap-trinh-part-time">Trợ giảng lập trình - Part time</a>                        </li>
-							</ul>
+	<div class="col-md-2">
+	<div class="cate">
+				<h2>Categories</h2>
+				<div class="crossedbg-categories"></div>
+				<div class="ul-cate">
+					<ul>
+						<?php $catID = get_terms('category');
+						foreach ($catID as $key => $value) { ?>
+
+							<li class="cate-name"><a href="<?= "http://" . $_SERVER["HTTP_HOST"]."/category/".$value->slug ?>"><?php echo $value->name ?></a></li>
+						<?php } ?>
+					</ul>
+				</div>
+
 			</div>
 	</div>
 	<div class="col-md-8">
