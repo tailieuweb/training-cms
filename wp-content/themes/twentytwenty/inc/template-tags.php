@@ -413,19 +413,6 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 										<a href="<?php the_permalink(); ?>"><?php the_time(substr(get_option('date_format'), 4, 6)); ?></a>
 									</div>
 								</div>
-								<!-- <div class="headlinesdate">
-									<div class="headlinesdm">
-										<div class="headlinesday">
-											<a href="<?php the_permalink(); ?>"><?php the_time(substr(get_option('date_format'), 0, 1)); ?></a>
-										</div>
-										<div class="headlinesmonth">
-											<a href="<?php the_permalink(); ?>"><?php the_time(substr(get_option('date_format'), 2, 1)); ?></a>
-										</div>
-									</div>
-									<div class="headlinesyear">
-										<a href="<?php the_permalink(); ?>"><?php the_time(substr(get_option('date_format'), 4, 6)); ?></a>
-									</div>
-								</div> -->
 							<?php } ?>
 						</span>
 					</li>

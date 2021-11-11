@@ -1288,7 +1288,6 @@ button.toggle {
 	text-decoration: none;
 }
 
-
 /* Social Icons ------------------------------ */
 
 ul.social-icons {
@@ -1480,7 +1479,7 @@ body:not(.enable-search-modal) .site-logo img {
 }
 
 .header-inner .toggle {
-	align-items: center;
+	/* align-items: center; */
 	display: flex;
 	overflow: visible;
 	padding: 0 2rem;
@@ -6150,6 +6149,7 @@ a.to-the-top > * {
 
 	.primary-menu-wrapper + .header-toggles {
 		margin-left: 4rem;
+		
 	}
 
 	.header-toggles {
@@ -6612,6 +6612,3 @@ section .section-title {
 	font-size: 1.8rem;
 	margin-top: 14px;
 }
-
-
-
