@@ -1,4 +1,9 @@
+<head>
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-2.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-5.css" type="text/css" media="screen" />
+</head>
 <?php
+
 /**
  * The main template file
  *
@@ -17,23 +22,23 @@
 get_header();
 ?>
 
-<main id="site-content " role="main">
+<main id="site-content" role="main">
 
 	<?php
 
 	$archive_title    = '';
 	$archive_subtitle = '';
 
-	if ( is_search() ) {
+	if (is_search()) {
 		global $wp_query;
 
 		$archive_title = sprintf(
 			'%1$s %2$s',
-			'<span class="color-accent">' . __( 'Search:', 'twentytwenty' ) . '</span>',
+			'<span class="color-accent">' . __('Search:', 'twentytwenty') . '</span>',
 			'&ldquo;' . get_search_query() . '&rdquo;'
 		);
 
-		if ( $wp_query->found_posts ) {
+		if ($wp_query->found_posts) {
 			$archive_subtitle = sprintf(
 				/* translators: %s: Number of search results. */
 				_n(
@@ -42,77 +47,169 @@ get_header();
 					$wp_query->found_posts,
 					'twentytwenty'
 				),
-				number_format_i18n( $wp_query->found_posts )
+				number_format_i18n($wp_query->found_posts)
 			);
 		} else {
-			$archive_subtitle = __( 'We could not find any results for your search. You can give it another try through the search form below.', 'twentytwenty' );
+			$archive_subtitle = __('We could not find any results for your search. You can give it another try through the search form below.', 'twentytwenty');
 		}
-	} elseif ( is_archive() && ! have_posts() ) {
-		$archive_title = __( 'Nothing Found', 'twentytwenty' );
-	} elseif ( ! is_home() ) {
+	} elseif (is_archive() && !have_posts()) {
+		$archive_title = __('Nothing Found', 'twentytwenty');
+	} elseif (!is_home()) {
 		$archive_title    = get_the_archive_title();
 		$archive_subtitle = get_the_archive_description();
 	}
 
-	if ( $archive_title || $archive_subtitle ) {
-		?>
+	if ($archive_title || $archive_subtitle) {
+	?>
 
 		<header class="archive-header has-text-align-center header-footer-group">
 
 			<div class="archive-header-inner section-inner medium">
 
-				<?php if ( $archive_title ) { ?>
-					<h1 class="archive-title"><?php echo wp_kses_post( $archive_title ); ?></h1>
+
+				<?php if ($archive_title) { ?>
+					<h1 class="archive-title"><?php echo wp_kses_post($archive_title); ?></h1>
 				<?php } ?>
 
-				<?php if ( $archive_subtitle ) { ?>
-					<div class="archive-subtitle section-inner thin max-percentage intro-text"><?php echo wp_kses_post( wpautop( $archive_subtitle ) ); ?></div>
+				<?php if ($archive_subtitle) { ?>
+					<div class="archive-subtitle section-inner thin max-percentage intro-text">
+						<?php echo wp_kses_post(wpautop($archive_subtitle)); ?></div>
 				<?php } ?>
+
 
 			</div><!-- .archive-header-inner -->
 
 		</header><!-- .archive-header -->
 
+
 		<?php
+
 	}
 
-	if ( have_posts() ) {
+	if (have_posts()) {
 
 		$i = 0;
 
-		while ( have_posts() ) {
+
+		while (have_posts()) {
 			$i++;
-			if ( $i > 1 ) {
-				echo '<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
-			}
+
+			// 	echo '<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
+			// }
 			the_post();
 
-			get_template_part( 'template-parts/content', get_post_type() );
+			$post = get_post();
+			//lay thong tin tu post
+			$post_title = $post->post_title;
+			$post_date = get_the_date('d', $post->ID);
+			$post_month = get_the_date('F', $post->ID);
+			$post_content = substr($post->post_content, 0, 150);
+			//get_template_part( 'template-parts/content', get_post_type() );
+			//hien thi du lieu da lay
+		?>
+			<?php if (get_post() && get_post() != is_search()) { ?>
+				<div class="container">
+					<div class="list_new_post">
+						<div class='list_new_view_post'>
+							<div class='row'>
+								<div class='col-md detail-new_post'>
+									<div class='row'>
+
+										<div class='col-md-3 col-xs-3 time_post'>
+											<span class='date_post'><?= $post_date ?></span><br>
+											<span class='month_post'><?= $post_month ?></span><br>
+										</div>
+										<div class='col-md-9 col-xs-9 desc_post'>
+											<h4>
+												<a href='<?= esc_url(get_permalink()) ?>'><?= $post_title ?></a>
+											</h4>
+											<?= $post_content ?>
+											<a href='<?= esc_url(get_permalink()) ?>'>[...]</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<?php } ?>
+
+			<?php if (is_search()) {
+				$post = get_post();
+				$img = findImgHTMLTag($post->post_content);
+				$img = $img ? $img : '<img src="https://artbaselmanawynwood.com/wp-content/uploads/2021/09/noimage.png">';
+			?>
+				<div class="container">
+					<div class="list_new_search">
+						<div class='list_new_view_search'>
+							<div class='row'>
+								<div class='col-md detail-new_search'>
+									<div class='row'>
+										<div class='col-md-3 col-xs-3 img_search'>
+											<?= $img ?>
+										</div>
+										<div class='col-md-3 col-xs-3 time_search'>
+											<span class='date_search'><?= $post_date ?></span><br>
+											<span class='month_search'><?= $post_month ?></span><br>
+										</div>
+										<div class='col-md-6 col-xs-6 desc_search'>
+											<h4>
+												<a href='<?= esc_url(get_permalink()) ?>'><?= $post_title ?></a>
+											</h4>
+											<?= $post_content ?>
+											<a href='<?= esc_url(get_permalink()) ?>'>[...]</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<?php } ?>
+		<?php
 		}
-	} elseif ( is_search() ) {
 		?>
 
 		<div class="no-search-results-form section-inner thin">
 
+
 			<?php
 			get_search_form(
 				array(
-					'aria_label' => __( 'search again', 'twentytwenty' ),
+					'aria_label' => __('search again', 'twentytwenty'),
 				)
 			);
 			?>
 
 		</div><!-- .no-search-results -->
 
-		<?php
+	<?php } elseif (is_search()) {
+	?>
+
+		<div class="no-search-results-form section-inner thin">
+
+
+			<?php
+			get_search_form(
+				array(
+					'aria_label' => __('search again', 'twentytwenty'),
+				)
+			);
+			?>
+
+		</div><!-- .no-search-results -->
+
+
+	<?php
 	}
 	?>
 
-	<?php get_template_part( 'template-parts/pagination' ); ?>
+	<?php get_template_part('template-parts/pagination'); ?>
+
 
 </main><!-- #site-content -->
 
-<?php get_template_part( 'template-parts/footer-menus-widgets' ); ?>
+<?php get_template_part('template-parts/footer-menus-widgets'); ?>
 
 <?php
 get_footer();
