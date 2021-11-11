@@ -164,6 +164,7 @@ function apply_filters( $hook_name, $value ) {
 	global $wp_filter, $wp_current_filter;
 
 	$args = func_get_args();
+
 	// Do 'all' actions first.
 	if ( isset( $wp_filter['all'] ) ) {
 		$wp_current_filter[] = $hook_name;
@@ -171,9 +172,7 @@ function apply_filters( $hook_name, $value ) {
 	}
 
 	if ( ! isset( $wp_filter[ $hook_name ] ) ) {
-
-		if ( isset( $wp_filter['all'] ) ) { // ko vào if này -> có khả năng return luôn
-
+		if ( isset( $wp_filter['all'] ) ) {
 			array_pop( $wp_current_filter );
 		}
 
@@ -181,7 +180,6 @@ function apply_filters( $hook_name, $value ) {
 	}
 
 	if ( ! isset( $wp_filter['all'] ) ) {
-
 		$wp_current_filter[] = $hook_name;
 	}
 

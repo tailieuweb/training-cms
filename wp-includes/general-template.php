@@ -131,7 +131,6 @@ function get_sidebar( $name = null, $args = array() ) {
 		$templates[] = "sidebar-{$name}.php";
 	}
 
-
 	$templates[] = 'sidebar.php';
 
 	if ( ! locate_template( $templates, true, true, $args ) ) {

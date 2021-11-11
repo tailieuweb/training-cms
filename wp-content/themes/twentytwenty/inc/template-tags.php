@@ -105,9 +105,8 @@ function twentytwenty_site_description( $echo = true ) {
 	if ( ! $description ) {
 		return;
 	}
-	$dovao = '<h1 style="background: #CCC"> Home </h1> <input style="padding-left: 10px; margin-left: 5px;  " placeholder="Search"> 
-<button style="margin-left: 10px;background: #fff;border:1px solid #ccc;border-radius: 6px;color: black;" type="submit"> Submit </button>';
-	$wrapper = '<div class="site-description" style="display: flex"> '.$dovao.'  </div> <!-- .site-description -->';
+
+	$wrapper = '<div class="site-description">%s</div><!-- .site-description -->';
 
 	$html = sprintf( $wrapper, esc_html( $description ) );
 
@@ -394,16 +393,7 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 							<?php twentytwenty_the_theme_svg( 'calendar' ); ?>
 						</span>
 						<span class="meta-text">
-							<?php 
-								$string_date = strtotime($post->post_date);
-								$en_date = getdate($string_date);
-								$day =  $en_date['mday'];
-								$month = "THÁNG " . $en_date['mon'];
-							?>
-							<a class="time-box" href="<?php the_permalink(); ?>">
-								<div class="day-box"><?php echo $day; ?></div>
-								<div class="month-box"><?php echo $month; ?></div>
-							</a>
+							<a href="<?php the_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
 						</span>
 					</li>
 					<?php

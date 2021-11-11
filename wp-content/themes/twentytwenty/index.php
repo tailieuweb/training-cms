@@ -17,7 +17,7 @@
 get_header();
 ?>
 
-<main id="site-content " role="main">
+<main id="site-content" role="main">
 
 	<?php
 
@@ -88,6 +88,7 @@ get_header();
 			the_post();
 
 			get_template_part( 'template-parts/content', get_post_type() );
+
 		}
 	} elseif ( is_search() ) {
 		?>
