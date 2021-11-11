@@ -2,82 +2,80 @@
 /**
  * Displays the post header
  *
- * @package WordPress
+ * @package    WordPress
  * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
+ * @since      Twenty Twenty 1.0
  */
 
 $entry_header_classes = '';
 
-if ( is_singular() ) {
-	$entry_header_classes .= ' header-footer-group';
+if (is_singular()) {
+    $entry_header_classes .= ' header-footer-group';
 }
 
 ?>
 
-<header class="entry-header has-text-align-center<?php echo esc_attr( $entry_header_classes ); ?>">
+<header class="entry-header has-text-align-center<?php echo esc_attr($entry_header_classes); ?>">
+    <?php if (is_single()) {
 
-	<div class="entry-header-inner section-inner medium">
 
-		<?php
-		/**
-		 * Allow child themes and plugins to filter the display of the categories in the entry header.
-		 *
-		 * @since Twenty Twenty 1.0
-		 *
-		 * @param bool Whether to show the categories in header. Default true.
-		 */
-		$show_categories = apply_filters( 'twentytwenty_show_categories_in_entry_header', true );
+        $class_dislay = "dislay-title";
+    }
+    ?>
 
-//		if ( true === $show_categories && has_category() ) {
-//			?>
-<!---->
-<!--			<div class="entry-categories">-->
-<!--				<span class="screen-reader-text">--><?php //_e( 'Categories', 'twentytwenty' ); ?><!--</span>-->
-<!--				<div class="entry-categories-inner">-->
-<!--					--><?php //the_category( ' ' ); ?>
-<!--				</div>-->
-<!--			</div>-->
-<!---->
-<!--			--><?php
-//		}
+    <div class="entry-header-inner section-inner medium <?= $class_dislay ?>">
 
-		if ( is_singular() ) {
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		} else {
-//			the_title( '<h2 class="entry-title heading-size-1"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
-			//Get url image of post
-            $value = get_post();
-            $posta = $value->post_content;
-            $temp_start = strpos($posta,'<figure');
-            $temp_end = strpos($posta,'</figure>');
-            $temp2 = substr($posta, $temp_start, $temp_end);
-            echo $temp2;
+        <?php
+        /**
+         * Allow child themes and plugins to filter the display of the categories in the entry header.
+         *
+         * @param  bool Whether to show the categories in header. Default true.
+         *
+         * @since Twenty Twenty 1.0
+         *
+         */
+        $show_categories = apply_filters('twentytwenty_show_categories_in_entry_header', true);
+        if ( ! is_single()) {
+            if (true === $show_categories && has_category()) {
+                ?>
 
-		}
+                <div class="entry-categories">
+                    <span class="screen-reader-text"><?php _e('Categories', 'twentytwenty'); ?></span>
+                    <div class="entry-categories-inner">
+                        <?php the_category(' '); ?>
+                    </div><!-- .entry-categories-inner -->
+                </div><!-- .entry-categories -->
 
-		$intro_text_width = '';
+                <?php
+            }
+        }
+        $class_title = "title-detail";
+        if (is_singular()) {
+            the_title('<h1 class="entry-title '.$class_title.'">', '</h1>');
+        } else {
+            the_title('<h2 class="entry-title heading-size-1"><a href="'.esc_url(get_permalink()).'">', '</a></h2>');
+        }
 
-		if ( is_singular() ) {
-			$intro_text_width = ' small';
-		} else {
-			$intro_text_width = ' thin';
-		}
+        $intro_text_width = '';
 
-		if ( has_excerpt() && is_singular() ) {
-			?>
+        if (is_singular()) {
+            $intro_text_width = ' small';
+        } else {
+            $intro_text_width = ' thin';
+        }
 
-			<div class="intro-text section-inner max-percentage<?php echo $intro_text_width; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output ?>">
-				<?php the_excerpt(); ?>
-			</div>
+        if (has_excerpt() && is_singular()) {
+            ?>
 
-			<?php
-		}
+            <div class="intro-text section-inner max-percentage<?php echo $intro_text_width; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output ?>">
+                <?php the_excerpt(); ?>
+            </div>
 
-		// Default to displaying the post meta.
-		twentytwenty_the_post_meta( get_the_ID(), 'single-top' );
-		?>
+            <?php
+        }
+        // Default to displaying the post meta.
+        twentytwenty_the_post_meta(get_the_ID(), 'single-top');
+        ?>
 
-	</div><!-- .entry-header-inner -->
-
+    </div><!-- .entry-header-inner -->
 </header><!-- .entry-header -->
