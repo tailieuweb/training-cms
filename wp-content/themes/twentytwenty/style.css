@@ -155,15 +155,20 @@ body {
     overflow: hidden;
 }
 
+
 /*hihi*/
+
+
 /* #sidebar-right .wp-block-group__inner-container h2 {
 	color: #fff !important; 
 }
 #sidebar-right .cat-item a {
 	color: #fff !important;
 } */
-	
+
+
 /* end hihihi */
+
 
 /* Clearing ---------------------------------- */
 
@@ -7496,3 +7501,4 @@ li {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}

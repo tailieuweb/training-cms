@@ -27,17 +27,9 @@ get_header();
 //Ngọc Yến- module 12 
 $has_sidebar_12 = is_active_sidebar('sidebar-12');
 ?>
- 
+
 <main id="site-content" role="main">
 	<!-- chia cột để hiển thị module 12 -by Ngọc Yến --->
-	<div class="row">
-		<div class="col-md-3">
-			
-		</div>
-		<div class="col-md-6">
-			<?php
-
-
 	<?php
 	//header
 	$archive_title    = '';
@@ -91,106 +83,52 @@ $has_sidebar_12 = is_active_sidebar('sidebar-12');
 
 		</header><!-- .archive-header -->
 
-		<?php
+	<?php
 	}
+	?>
 
+	<!-- post -->
+	<div class="row">
 
-	//post
-
-	if (have_posts()) {
-		//khi không ở trang chi tiết
-		//By : Nguyễn Thị Thanh Thư
-		// hàm tách lấy ảnh. m5
-		function catch_that_image($input_post_content)
-		{
-			$first_img = '';
-			ob_start();
-			ob_end_clean();
-
-			// regex
-			$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $input_post_content, $matches);
-			// danh sách kết quả match với chuỗi regex.
-			$first_img = $matches[1][0];
-
-			if (empty($first_img)) { //Defines a default image
-				$first_img = "/images/default.jpg"; //Duong dan anh mac dinh khi khong tim duoc anh dai dien
-			}
-
-			return $first_img;
-		}
-		$i = 0;
-
-		while (have_posts()) {
-			$i++;
-			//  khi không ở trang search
-			// 	By : Nguyễn Thị Thanh Thư
-			// 	chia cột và date. m2 
-			if (!is_search()) {
-				if ($i > 1) {
-					echo "<div style='margin-top: 10px;'></div>";
-				} ?>
-				<div class="baro">
-					<div class="row">
-						<!-- khi không ở trang search
-			 			By : Nguyễn Thị Thanh Thư
-		 				date. m2  -->
-						<div class="col-2 verticalLine">
-							<?php
-							// Post date.
-							if (in_array('post-date', $post_meta, true)) {
-								$has_meta = true;
-							?>
-								<div class="dinhDangDay">
-									<p class="meta-day">
-										<?php the_time("d"); ?>
-									</p>
-									<p class="meta-thang">
-										<?php echo 'tháng ', the_time("m"); ?>
-									</p>
-								</div>
-							<?php
-							} ?>
-						</div>
-						<div class="col-10">
-							<?php
-							the_post();
-							get_template_part('template-parts/content', get_post_type());
-							?>
-						</div>
-					</div>
-				</div>
+		<div class="col-md-9">
 			<?php
+			if (have_posts()) {
+				//khi không ở trang chi tiết
+				//By : Nguyễn Thị Thanh Thư
+				// hàm tách lấy ảnh. m5
+				function catch_that_image($input_post_content)
+				{
+					$first_img = '';
+					ob_start();
+					ob_end_clean();
 
-			}
-			// khi ở trang search
-			// 	By : Nguyễn Thị Thanh Thư
-			// 	chia cột, date, gắn ảnh. m5
-			elseif (is_search()) {
+					// regex
+					$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $input_post_content, $matches);
+					// danh sách kết quả match với chuỗi regex.
+					$first_img = $matches[1][0];
 
-				if ($i > 1) {
-					echo "<div style='margin-top: 10px;'></div>";
-				} ?>
-				<!-- khi ở trang search
-				By : Nguyễn Thị Thanh Thư
-		 		gắn ảnh. m5 -->
-				<div class="baro">
-					<div class="row">
-						<div class="col-3">
-							<?php the_post();
+					if (empty($first_img)) { //Defines a default image
+						$first_img = "/images/default.jpg"; //Duong dan anh mac dinh khi khong tim duoc anh dai dien
+					}
 
-							// lấy bài post hiện tại tương ứng.
-							$_post = get_post();
-							// đường dẫn ảnh tìm thấy đầu tiên.
-							$_image = catch_that_image($_post->post_content);
-							// hiển thị ảnh.
-							echo "<img src='$_image' />";
-							?>
-						</div>
-						<div class="col-9">
+					return $first_img;
+				}
+				$i = 0;
+
+				while (have_posts()) {
+					$i++;
+					//  khi không ở trang search
+					// 	By : Nguyễn Thị Thanh Thư
+					// 	chia cột và date. m2 
+					if (!is_search()) {
+						if ($i > 1) {
+							echo "<div style='margin-top: 10px;'></div>";
+						} ?>
+						<div class="baro">
 							<div class="row">
 								<!-- khi không ở trang search
-			 					By : Nguyễn Thị Thanh Thư
-		 						date. m5  -->
+			 			By : Nguyễn Thị Thanh Thư
+		 				date. m2  -->
 								<div class="col-2 verticalLine">
 									<?php
 									// Post date.
@@ -208,7 +146,7 @@ $has_sidebar_12 = is_active_sidebar('sidebar-12');
 									<?php
 									} ?>
 								</div>
-								<div class="col-10 noidung">
+								<div class="col-10">
 									<?php
 									the_post();
 									get_template_part('template-parts/content', get_post_type());
@@ -216,86 +154,92 @@ $has_sidebar_12 = is_active_sidebar('sidebar-12');
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
+					<?php
 
-		<?php
-			}
-		}
-	} elseif (is_search()) {
-		?>
-				<?php
-			}
+					}
+					// khi ở trang search
+					// 	By : Nguyễn Thị Thanh Thư
+					// 	chia cột, date, gắn ảnh. m5
+					elseif (is_search()) {
 
-			if (have_posts()) {
-				$i = 0;
-				while (have_posts()) {
-					$i++;
-					if ($i > 1) {
-						echo '<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
-					} ?>
-					<div class="row">
-						<div class="col-md-2">
-							<?php
-							// Post date.
-							if (in_array('post-date', $post_meta, true)) {
-								$has_meta = true;
-							?>
-								<div class="dinhDangDay">
-									<p class="meta-day">
-										<?php the_time("d"); ?>
-									</p>
-									<p class="meta-thang">
-										<?php echo 'tháng ', the_time("m"); ?>
-									</p>
+						if ($i > 1) {
+							echo "<div style='margin-top: 10px;'></div>";
+						} ?>
+						<!-- khi ở trang search
+				By : Nguyễn Thị Thanh Thư
+		 		gắn ảnh. m5 -->
+						<div class="baro">
+							<div class="row">
+								<div class="col-3">
+									<?php the_post();
+
+									// lấy bài post hiện tại tương ứng.
+									$_post = get_post();
+									// đường dẫn ảnh tìm thấy đầu tiên.
+									$_image = catch_that_image($_post->post_content);
+									// hiển thị ảnh.
+									echo "<img src='$_image' />";
+									?>
 								</div>
-							<?php
-							} ?>
-						</div>
-						<div class="col-md-10">
-							<div class="post-doithay">
-								<?php
-								the_post();
-								get_template_part('template-parts/content', get_post_type());
-								?>
+								<div class="col-9">
+									<div class="row">
+										<!-- khi không ở trang search
+			 					By : Nguyễn Thị Thanh Thư
+		 						date. m5  -->
+										<div class="col-2 verticalLine">
+											<?php
+											// Post date.
+											if (in_array('post-date', $post_meta, true)) {
+												$has_meta = true;
+											?>
+												<div class="dinhDangDay">
+													<p class="meta-day">
+														<?php the_time("d"); ?>
+													</p>
+													<p class="meta-thang">
+														<?php echo 'tháng ', the_time("m"); ?>
+													</p>
+												</div>
+											<?php
+											} ?>
+										</div>
+										<div class="col-10 noidung">
+											<?php
+											the_post();
+											get_template_part('template-parts/content', get_post_type());
+											?>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-				<?php
 
+				<?php
+					}
 				}
 			} elseif (is_search()) {
 				?>
-
-				<div class="no-search-results-form section-inner thin">
-
-					<?php
-					get_search_form(
-						array(
-							'aria_label' => __('search again', 'twentytwenty'),
-						)
-					);
-					?>
-
-				</div><!-- .no-search-results -->
-
 			<?php
 			}
 			?>
 
-			<?php get_template_part('template-parts/pagination'); ?>
+		</div><!-- .no-search-results -->
 
-		</div>
-		<!-- đây là module 12  - by Ngọc Yến -->
-		<div class="col-md-3">
-			<?php if ($has_sidebar_12) { ?>
 
-				<div class="footer-widgets column-three grid-item" id="sidebar-right">
-					<?php dynamic_sidebar('sidebar-12'); ?>
-				</div>
 
-			<?php } ?>
-		</div>
+		<?php get_template_part('template-parts/pagination'); ?>
+
+	</div>
+	<!-- đây là module 12  - by Ngọc Yến -->
+	<div class="col-md-3">
+		<?php if ($has_sidebar_12) { ?>
+
+			<div class="footer-widgets column-three grid-item" id="sidebar-right">
+				<?php dynamic_sidebar('sidebar-12'); ?>
+			</div>
+
+		<?php } ?>
+	</div>
 	</div>
 </main><!-- #site-content -->
 

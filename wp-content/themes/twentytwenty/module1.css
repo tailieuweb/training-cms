@@ -69,6 +69,10 @@ a {
     margin-left: -16%;
 }
 
+.timandac {
+    margin-left: -25% !important;
+}
+
 
 /* Home */
 
@@ -123,7 +127,7 @@ a {
 }
 
 .header-navigation-wrapper {
-    margin-right: -17px;
+    margin-right: 0px !important;
     display: flex !important;
 }
 

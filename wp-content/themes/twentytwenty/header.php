@@ -176,13 +176,12 @@
 					</div>
 				</div><!-- .header-navigation-wrapper -->
 				<!--Tạo icon search-->
-				<div class="row">
+				<div class="row timandac">
 					<div class="col-md-3">
 						<div class="kinhlup">
 							<a href=""><i class="fa fa-search" aria-hidden="true"></i>
 								<p>search</p>
 							</a>
-
 						</div>
 					</div>
 					<!-- Tạo khung account -->
@@ -192,8 +191,7 @@
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 									<i class="fa fa-user-circle-o"></i>
 									Account
-								</a>
-							
+								</a>							
 								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">					
 									<?php 
 									if ( is_home()) { ?>
