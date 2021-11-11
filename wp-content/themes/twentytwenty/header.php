@@ -71,6 +71,12 @@
 							// Site description.
 							twentytwenty_site_description();
 						?>
+						 <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
 
 					</div><!-- .header-titles -->
 
@@ -171,6 +177,21 @@
 						?>
 
 						</div><!-- .header-toggles -->
+						<div class="toggle-wrapper search-toggle-wrapper search-toggle-wrapper-dropdown">
+
+                            <button class="toggle search-toggle desktop-search-toggle"
+                                data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal"
+                                data-set-focus=".search-modal .search-field" aria-expanded="false">
+                                <span class="toggle-inner">
+                                    <i class="fa fa-user-circle-o dropdown-account-icon" style="padding-top: 4px;  font-size: 25px;  padding-left: 20px;"></i>
+                                    <span class="toggle-text"><a href="#" class="dropdown-toggle toggle-text" style="padding-left: 36px;"
+                                            data-toggle="dropdown" role="button" aria-haspopup="true"
+                                            aria-expanded="false">Account
+                                        </a></span>
+                                </span>
+                            </button><!-- .sear
+
+				
 						<?php
 					}
 					?>
