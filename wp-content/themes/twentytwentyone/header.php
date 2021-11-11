@@ -75,12 +75,18 @@
 							twentytwenty_site_description();
 							
 						?>
-                    <form class="navbar-form navbar-left">
+						<form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                    <!-- <form class="navbar-form navbar-left">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Search">
                         </div>
                         <button style="padding: 6px;" type="submit" class="btn btn-default">Submit</button>
-                    </form>
+                    </form> -->
 
                 </div><!-- .header-titles -->
 

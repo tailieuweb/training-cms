@@ -29,3 +29,7 @@
 #site-header .header-toggles .toggle-wrapper .dropdown-menu a {
     color: black;
 }
+/* Form search */
+.form-search-module-1{
+    display: flex !important;
+}
