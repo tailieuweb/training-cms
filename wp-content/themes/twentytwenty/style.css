@@ -6603,14 +6603,14 @@ section .section-title {
 	justify-content: flex-start;
 }
 .pagination-single .next-post{
-	margin-top: 15px;
+	margin-top: 14px;
 	text-align: left;
 	font-size: 1.8rem;
 }
 .pagination-single .previous-post{
 	text-align: left;
 	font-size: 1.8rem;
-	margin-top: 15px;
+	margin-top: 14px;
 }
 
 
