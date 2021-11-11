@@ -11,10 +11,8 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
-// var_dump(is_search());die();
 if (is_search()) {
 	$post = get_post();
-	// var_dump($post);die();
 	$date = $post->post_date;
 	$day = date("j", strtotime($date));
 	$month = date("m", strtotime($date));
