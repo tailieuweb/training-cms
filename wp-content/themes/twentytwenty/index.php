@@ -225,21 +225,21 @@ $has_sidebar_12 = is_active_sidebar('sidebar-12');
 
 		</div><!-- .no-search-results -->
 
+		<div class="col-md-3">
+			<?php if ($has_sidebar_12) { ?>
 
+				<div class="footer-widgets column-three grid-item" id="sidebar-right">
+					<?php dynamic_sidebar('sidebar-12'); ?>
+				</div>
+
+			<?php } ?>
+		</div>
 
 		<?php get_template_part('template-parts/pagination'); ?>
 
 	</div>
 	<!-- đây là module 12  - by Ngọc Yến -->
-	<div class="col-md-3">
-		<?php if ($has_sidebar_12) { ?>
 
-			<div class="footer-widgets column-three grid-item" id="sidebar-right">
-				<?php dynamic_sidebar('sidebar-12'); ?>
-			</div>
-
-		<?php } ?>
-	</div>
 	</div>
 </main><!-- #site-content -->
 
