@@ -22,6 +22,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-1.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
