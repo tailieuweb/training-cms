@@ -1256,10 +1256,11 @@ button.toggle {
 /* Search Form ------------------------------- */
 
 .search-form {
-	align-items: stretch;
-	display: flex;
-	flex-wrap: nowrap;
-	margin: 0 0 -0.8rem -0.8rem;
+    align-items: stretch;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 0 -0.8rem -0.8rem;
+    height: 45px;
 }
 
 .search-form .search-field,
@@ -1281,6 +1282,7 @@ button.toggle {
 
 .search-form .search-submit {
 	flex-shrink: 0;
+	
 }
 
 .search-form .search-submit:focus,
@@ -1352,7 +1354,7 @@ ul.social-icons li {
 
 
 #site-header {
-	background: #fff;
+	background: #ececec;
 	position: relative;
 }
 
@@ -5686,6 +5688,7 @@ a.to-the-top > * {
 		display: flex;
 		justify-content: space-between;
 		padding: 2.8rem 0;
+		height: 116px;
 	}
 
 	.header-titles-wrapper {
@@ -5702,7 +5705,10 @@ a.to-the-top > * {
 		justify-content: flex-start;
 		margin: -1rem 0 0 -2.4rem;
 	}
-
+	#site-header {
+		background: #ececec;
+		position: relative;
+	}
 	.header-titles .site-title,
 	.header-titles .site-logo,
 	.header-titles .site-description {
@@ -6150,10 +6156,13 @@ a.to-the-top > * {
 
 	.primary-menu-wrapper + .header-toggles {
 		margin-left: 4rem;
+		
 	}
 
 	.header-toggles {
 		margin-right: -4rem;
+		margin-top: 13px;
+		height: 75px;
 	}
 
 	.header-toggles .toggle {

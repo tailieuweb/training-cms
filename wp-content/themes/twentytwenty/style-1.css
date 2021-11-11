@@ -1,5 +1,33 @@
+#site-header {
+    background: #ececec;
+    position: relative;
+}
 .header-navigation-wrapper {
     align-items: center;
     display: flex;
     margin-right: 50px
 ;}
+.search-form {
+    border-color: #dcd7ca;
+    /* font-size: 10px; */
+    padding-left: 60px;
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    font-size: 13px;
+    background-color: #fff;
+    color: #7d787d  ;
+    border: 1px solid #dcd7ca ;
+    margin-left: 20px;
+}
+.dropdown .btn.btn-secondary{
+    background-color: #ececec;
+    border: none;
+}
+.dropdown .user-icon{
+    font-size: 30px;
+}
+.header-titles .site-description {
+    margin: 0 25px;
+    padding: 40px 40px;
+    background: #e7e7e7;
+}
