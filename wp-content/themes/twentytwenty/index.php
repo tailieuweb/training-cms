@@ -82,7 +82,7 @@ get_header();
 
 		while ( have_posts() ) {
 			$i++;
-			if ( $i > 1 ) {
+			if ( $i > 1 && is_single()) {
 				echo '<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
 			}
 			the_post();
