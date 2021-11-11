@@ -1,0 +1,57 @@
+.module10 h2 {
+  font-size: 20px !important;
+  color: black;
+  text-align: left !important ;
+}
+.module10 a {
+  color: #2a6496 !important;
+  font-size: 14px;
+  margin-left: 4px;
+}
+.module10 .wp-block-group__inner-container {
+  margin-right: 21%;
+}
+.module10 .wp-block-latest-posts__list .wp-block-latest-posts li {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f5ce31 !important;
+  content: "\2022";
+  font-size: 2em;
+  padding-right: 0.5em;
+  position: relative;
+  top: 0.15em;
+}
+.module10 .fa-angle-double-right {
+  color: #f5ce31 !important;
+}
+.module10 .footer-widgets1.column-one.grid-item {
+  position: relative;
+  left: 45px;
+}
+.module10 li {
+  border-bottom: 1px solid #d9d9d9;
+  text-align: left;
+}
+.module10 .fa-circle {
+  color: #f5ce31;
+  font-size: 8px;
+}
+.module10 .footer-widgets-wrapper1 {
+  background-color: #f5f5f5;
+  padding-top: 1px;
+}
+
+.module10 .footer-widgets-wrapper1 h2 {
+  font-size: 30px !important;
+  margin-bottom: -20px;
+  margin-top: -10px;
+}
+.module10 a::before {
+  font-family: "FontAwesome";
+  content: "\f111";
+  padding-right: 15px;
+  color: #f5ce31;
+}
+.module10 .footer-widgets-wrapper1 li a {
+  color: #90bbe0 !important;
+  padding-bottom: 10px;
+}

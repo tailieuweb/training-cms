@@ -9,6 +9,7 @@
  */
 get_header();
 $has_sidebar_9 = is_active_sidebar('sidebar-9');
+$has_sidebar_10 = is_active_sidebar('sidebar-10');
 $entry_header_classes = '';
 
 if (is_singular()) {
@@ -26,27 +27,26 @@ if (is_single()) {
 ?>
 
 <header class="entry-header has-text-align-center<?php echo esc_attr($entry_header_classes); ?>">
-	<?php if (is_single()) { ?>
-		<div class="row">
-			<div class="col-md-3 category123">
-			<?php } ?>
-			<?php if ($has_sidebar_9 && is_single()) { ?>
-				<div class="footer-widgets-wrapper1">
-					<?php if ($has_sidebar_9 && is_single()) { ?>
-						<div class="footer-widgets1 column-one grid-item">
-							<?php dynamic_sidebar('sidebar-9'); ?>
-						</div>
-					<?php } ?>
-				</div>
-
-			<?php }
+    <?php if (is_single()) { ?>
+    <div class="row">
+        <div class="col-md-3 module9">
+            <?php } ?>
+            <?php if ($has_sidebar_9 && is_single()) { ?>
+            <div class="footer-widgets-wrapper9">
+                <?php if ($has_sidebar_9 && is_single()) { ?>
+                <div class="footer-widgets1 column-one grid-item">
+                    <?php dynamic_sidebar('sidebar-9'); ?>
+                    <?php } ?>
+                </div>
+            </div>
+            <?php }
 			if (is_single()) { ?>
-			</div>
-			<div class="col-md-6" style="background: #f5f5f5;">
-			<?php } ?>
+        </div>
+        <div class="col-md-6" style="background: #f5f5f5;">
+            <?php } ?>
 
-			<div class="entry-header-inner section-inner medium">
-				<?php
+            <div class="entry-header-inner section-inner medium">
+                <?php
 				if (!is_single()) {
 
 					// Default to displaying the post meta.
@@ -54,9 +54,9 @@ if (is_single()) {
 				}
 				?>
 
-				<div class="entry-header-inner section-inner-content">
+                <div class="entry-header-inner section-inner-content">
 
-					<?php
+                    <?php
 					/**
 					 * Allow child themes and plugins to filter the display of the categories in the entry header.
 					 *
@@ -69,11 +69,11 @@ if (is_single()) {
 					if (true === $show_categories && has_category() && $type_post === 'single-top') {
 					?>
 
-						<div class="entry-categories">
-							<span class="screen-reader-text"><?php _e('Categories', 'twentytwenty'); ?></span>
-						</div><!-- .entry-categories -->
-						<hr width="100%" style="text-align: center;" />
-					<?php
+                    <div class="entry-categories">
+                        <span class="screen-reader-text"><?php _e('Categories', 'twentytwenty'); ?></span>
+                    </div><!-- .entry-categories -->
+                    <hr width="100%" class="hr-detail" style="text-align: center;" />
+                    <?php
 					}
 
 					if (is_singular()) {
@@ -83,7 +83,7 @@ if (is_single()) {
 					}
 					?>
 
-					<?php if (is_single()) {
+                    <?php if (is_single()) {
 						$day = $month = $year = 0;
 						if (strtotime($post->post_date)) {
 							$timestamp = strtotime($post->post_date);
@@ -92,22 +92,22 @@ if (is_single()) {
 							$year = date("y", $timestamp);
 						} ?>
 
-						<div class="headlinesdate-module-9">
-							<div class="headlinesdm">
-								<div class="headlinesday">
-									<?php echo $day ?>
-								</div>
-								<div class="headlinesmonth">
-									<?php echo $month ?>
-								</div>
-							</div>
-							<div class="headlinesyear">
-								<?php echo $year ?>
-							</div>
-						</div>
-					<?php } ?>
+                    <div class="headlinesdate-module-9">
+                        <div class="headlinesdm">
+                            <div class="headlinesday">
+                                <?php echo $day ?>
+                            </div>
+                            <div class="headlinesmonth">
+                                <?php echo $month ?>
+                            </div>
+                        </div>
+                        <div class="headlinesyear">
+                            <?php echo $year ?>
+                        </div>
+                    </div>
+                    <?php } ?>
 
-					<?php
+                    <?php
 					$intro_text_width = '';
 
 					if (is_singular()) {
@@ -119,21 +119,22 @@ if (is_single()) {
 					if (has_excerpt() && is_singular()) {
 					?>
 
-						<div class="intro-text section-inner max-percentage<?php echo $intro_text_width; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output 
+                    <div class="intro-text section-inner max-percentage<?php echo $intro_text_width; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output 
 																			?>">
-							<?php the_excerpt(); ?>
-						</div>
+                        <?php the_excerpt(); ?>
+                    </div>
 
 
-					<?php
+                    <?php
 					}
 					if (!is_search()) {
 					?>
-						<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
+                    <div
+                        class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
 
-							<div class="entry-content">
+                        <div class="entry-content">
 
-								<?php
+                            <?php
 								if (is_search() || !is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
 									the_excerpt();
 								} else {
@@ -144,24 +145,31 @@ if (is_single()) {
 									}
 								}
 								?>
-							</div><!-- .entry-content -->
+                        </div><!-- .entry-content -->
 
-						</div><!-- .post-inner -->
-				</div> <!-- .entry-header-inner-content -->
-			<?php
+                    </div><!-- .post-inner -->
+                </div> <!-- .entry-header-inner-content -->
+                <?php
 					}
 			?>
 
-			</div><!-- .entry-header-inner -->
-			<?php if (is_single()) { ?>
-			</div>
-		</div>
-		<div class="col-md-3">
-
-		</div>
-	<?php } ?>
-
-	</div>
+            </div><!-- .entry-header-inner -->
+            <?php if (is_single()) { ?>
+            </div>
+       
+        <div class="col-md-3 module10">
+        <?php } ?>
+            <?php if ($has_sidebar_10 && is_single()) { ?>
+                <div class="footer-widgets-wrapper1">
+                    <?php if ($has_sidebar_10 && is_single()) { ?>
+                        <div class="footer-widgets1 column-one grid-item">
+                            <?php dynamic_sidebar('sidebar-10'); ?>
+                            <?php } ?>
+        </div>
+    <?php } ?>
+    
+    </div>
+    </div>
 
 
 

@@ -989,13 +989,9 @@ section {
   max-width: 120rem;
   width: calc(100% - 4rem);
 }
-
+/* CSS Module 8 */
 .section-inner.max-percentage {
-  width: 100%;
-}
-
-.section-inner.thin {
-  max-width: 58rem;
+  /* width: 68%; */
 }
 
 .section-inner.small {
@@ -3589,10 +3585,10 @@ figure.wp-block-table.is-style-stripes {
 }
 
 /* Alignment Classes ------------------------- */
-
+/* CSS Module 9 (fix max-width detail) */
 .entry-content
   > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
-  max-width: 58rem;
+  /* max-width: 58rem; */
   width: calc(100% - 4rem);
 }
 
@@ -5017,6 +5013,7 @@ a.to-the-top > * {
   }
   .post-inner {
     padding-top: 8rem;
+    text-align: justify;
   }
   /* POST FOOTER */
   .post-meta-wrapper.post-meta-single-bottom {
@@ -5858,7 +5855,7 @@ a.to-the-top > * {
   /* TITLES */
   h1,
   .heading-size-1 {
-    font-size: 8.4rem;
+    font-size: 0.4rem;
   }
   /* Helper Classes ------------------------ */
   /* Site Header --------------------------- */
@@ -6297,4 +6294,22 @@ section .section-title {
 article.list_post.post {
   box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
   margin: 2% 20%;
+}
+/* Css hr detail page */
+.hr-detail {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  bottom: -85px;
+}
+/* CSS Module 3 */
+.footer-inner li a::before {
+  font-family: "FontAwesome";
+  content: "\f101";
+  padding-right: 5px;
+}
+.footer-inner li {
+  list-style-type: none;
 }
