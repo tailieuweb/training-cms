@@ -6,8 +6,11 @@
   background-color: white;
   padding-right: 25px !important;
   border-radius: 4px !important;
-  margin-left: -240px;
+  margin-left: -150px;
   width: 920px;
+}
+.section-inner.max-percentage {
+  width: 68% !important;
 }
 .search_result {
   padding-top: 40px;
