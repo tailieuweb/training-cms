@@ -72,7 +72,6 @@ get_header();
 
 		</header><!-- .archive-header -->
 
-		
 		<?php
 	}
 
