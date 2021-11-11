@@ -2610,7 +2610,7 @@ h2.entry-title {
 }
 
 .post-inner {
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
 }
 
 .reduced-spacing.missing-post-thumbnail .post-inner {
@@ -5069,7 +5069,7 @@ a.to-the-top>* {
         margin-top: 6rem;
     }
     .post-inner {
-        padding-top: 8rem;
+        /* padding-top: 8rem; */
     }
     /* POST FOOTER */
     .post-meta-wrapper.post-meta-single-bottom {
@@ -6235,7 +6235,7 @@ section .section-title {
     top: -36px;
 }
 
-.add-heading {
+.heading {
     width: 70%;
     font-size: 2.1em;
     font-weight: bold;
