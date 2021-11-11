@@ -1276,18 +1276,11 @@ button.toggle {
 /* Search Form ------------------------------- */
 
 .search-form {
-<<<<<<< HEAD
 	align-items: stretch;
 	display: flex;
 	flex-wrap: nowrap;
 	
 	position: relative;
-=======
-    align-items: stretch;
-    display: flex;
-    flex-wrap: nowrap;
-    margin: 0 0 -0.8rem -0.8rem;
->>>>>>> 1-wordpress-581-202109/2-groups/1-C/Tinh-Module-6
 }
 
 .search-form .search-field,
