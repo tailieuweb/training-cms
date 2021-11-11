@@ -3942,9 +3942,13 @@ div.comment:first-of-type {
   margin-right: auto;
 }
 
+<<<<<<< HEAD
 .comment-respond p:not(.comment-notes) {
   max-width: 58rem;
 }
+=======
+
+>>>>>>> 1-wordpress-581-202109/2-groups/1-D/5-14-Hung-Module8
 
 .comment-form-cookies-consent {
   align-items: baseline;
@@ -8035,7 +8039,7 @@ textarea{
 /* Module 7 */
 
 .section-inner {
-	width: calc(100% - 12rem) !important;
+	/* width: calc(100% - 12rem) !important; */
   }
   
   .pagination-single {
@@ -8188,4 +8192,38 @@ li.cat-item.cat-item-4 a,li.cat-item.cat-item-2 a,li.cat-item.cat-item-1 a{
 .sidebar10 .wp-block-group ul li a:hover {
 	color: #2a6496;
 	text-decoration: underline;
+}
+
+
+/* Css comment */
+.card-body{
+	background: white;
+	padding-bottom: 60px;
+}
+.card-header{
+	background: #383a3c0d;
+}
+
+form#commentform {
+    max-width: 100%;
+}
+.comment-reply-title {
+	display: none;
+}
+.comment-respond #submit {
+	float: right;
+}
+input#submit{
+	background: #007bff;
+	padding: 10px 20px ;
+    font-size: 1rem;
+    line-height: 1.5;
+	border-radius: 0.25rem;
+	text-decoration: none;
+}
+.comment-respond p:not(.comment-notes) {
+	max-width: 100%;
+}
+input#submit:hover{
+	background:#337ab7 ;
 }

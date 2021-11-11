@@ -730,17 +730,18 @@ function wp_allow_comment( $commentdata, $wp_error = false ) {
 		 *
 		 * @param string $comment_duplicate_message Duplicate comment error message.
 		 */
-		$comment_duplicate_message = apply_filters( 'comment_duplicate_message', __( 'Duplicate comment detected; it looks as though you&#8217;ve already said that!' ) );
+		
+		// $comment_duplicate_message = apply_filters( 'comment_duplicate_message', __( 'Duplicate comment detected; it looks as though you&#8217;ve already said that!' ) );
 
-		if ( $wp_error ) {
-			return new WP_Error( 'comment_duplicate', $comment_duplicate_message, 409 );
-		} else {
-			if ( wp_doing_ajax() ) {
-				die( $comment_duplicate_message );
-			}
+		// if ( $wp_error ) {
+		// 	return new WP_Error( 'comment_duplicate', $comment_duplicate_message, 409 );
+		// } else {
+		// 	if ( wp_doing_ajax() ) {
+		// 		die( $comment_duplicate_message );
+		// 	}
 
-			wp_die( $comment_duplicate_message, 409 );
-		}
+		// 	wp_die( $comment_duplicate_message, 409 );
+		// }
 	}
 
 	/**
@@ -3527,13 +3528,13 @@ function wp_handle_comment_submission( $comment_data ) {
 
 	$comment_type = 'comment';
 
-	if ( get_option( 'require_name_email' ) && ! $user->exists() ) {
-		if ( '' == $comment_author_email || '' == $comment_author ) {
-			return new WP_Error( 'require_name_email', __( '<strong>Error</strong>: Please fill the required fields (name, email).' ), 200 );
-		} elseif ( ! is_email( $comment_author_email ) ) {
-			return new WP_Error( 'require_valid_email', __( '<strong>Error</strong>: Please enter a valid email address.' ), 200 );
-		}
-	}
+	// if ( get_option( 'require_name_email' ) && ! $user->exists() ) {
+	// 	if ( '' == $comment_author_email || '' == $comment_author ) {
+	// 		return new WP_Error( 'require_name_email', __( '<strong>Error</strong>: Please fill the required fields (name, email).' ), 200 );
+	// 	} elseif ( ! is_email( $comment_author_email ) ) {
+	// 		return new WP_Error( 'require_valid_email', __( '<strong>Error</strong>: Please enter a valid email address.' ), 200 );
+	// 	}
+	// }
 
 	$commentdata = compact(
 		'comment_post_ID',

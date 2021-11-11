@@ -123,7 +123,7 @@ if (!is_single() && !is_search()) { ?>
 		if ((is_single() || is_page()) && (comments_open() || get_comments_number()) && !post_password_required()) {
 		?>
 
-			<div class="comments-wrapper section-inner">
+			<div class="comments-wrapper border-dark section-inner">
 
 				<?php comments_template(); ?>
 
@@ -164,7 +164,7 @@ if (!is_single() && !is_search()) { ?>
 		}
 
 		?>
-
+		<div class="container-fluid">
 		<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
 			<div class="entry-content">
 				<?php $has_sidebar_9 = is_active_sidebar('sidebar-9'); ?>
@@ -216,6 +216,8 @@ if (!is_single() && !is_search()) { ?>
 			</div><!-- .entry-content -->
 
 		</div><!-- .post-inner -->
+		</div>
+		
 
 		<div class="section-inner">
 			<?php
