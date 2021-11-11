@@ -10,6 +10,7 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
+<<<<<<< HEAD
 $home = '';
 //Check page
 if(!is_single()){
@@ -23,6 +24,15 @@ if(is_search()){
 ?>
 
 <article <?php post_class($home); ?> id="post-<?php the_ID(); ?>">
+=======
+$class= '';
+if (!is_single()){
+    $class = 'danh-sach';
+}
+?>
+
+<article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
+>>>>>>> 1-wordpress-581-202109/2-groups/1-C/Tinh-Module-6
 
 	<?php
 
@@ -33,9 +43,18 @@ if(is_search()){
 	}
 
 	?>
-
+    <?php $boder ="boder" ?>
 	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
+        <?php
+        if (is_single()) {
+            ?>
+            <div class="container">
+                <div class="border2">
 
+                </div>
+            </div>
+        <?php }
+        ?>
 		<div class="entry-content">
 
 			<?php
