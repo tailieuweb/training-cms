@@ -2354,47 +2354,7 @@ function comment_form( $args = array(), $post_id = null ) {
 	$html_req = ( $req ? " required='required'" : '' );
 	$html5    = 'html5' === $args['format'];
 
-	$fields = array(
-		'author' => sprintf(
-			'<p class="comment-form-author">%s %s</p>',
-			sprintf(
-				'<label for="author">%s%s</label>',
-				__( 'Name' ),
-				( $req ? ' <span class="required">*</span>' : '' )
-			),
-			sprintf(
-				'<input id="author" name="author" type="text" value="%s" size="30" maxlength="245"%s />',
-				esc_attr( $commenter['comment_author'] ),
-				$html_req
-			)
-		),
-		'email'  => sprintf(
-			'<p class="comment-form-email">%s %s</p>',
-			sprintf(
-				'<label for="email">%s%s</label>',
-				__( 'Email' ),
-				( $req ? ' <span class="required">*</span>' : '' )
-			),
-			sprintf(
-				'<input id="email" name="email" %s value="%s" size="30" maxlength="100" aria-describedby="email-notes"%s />',
-				( $html5 ? 'type="email"' : 'type="text"' ),
-				esc_attr( $commenter['comment_author_email'] ),
-				$html_req
-			)
-		),
-		'url'    => sprintf(
-			'<p class="comment-form-url">%s %s</p>',
-			sprintf(
-				'<label for="url">%s</label>',
-				__( 'Website' )
-			),
-			sprintf(
-				'<input id="url" name="url" %s value="%s" size="30" maxlength="200" />',
-				( $html5 ? 'type="url"' : 'type="text"' ),
-				esc_attr( $commenter['comment_author_url'] )
-			)
-		),
-	);
+
 
 	if ( has_action( 'set_comment_cookies', 'wp_set_comment_cookies' ) && get_option( 'show_comments_cookies_opt_in' ) ) {
 		$consent = empty( $commenter['comment_author_email'] ) ? '' : ' checked="checked"';
@@ -2407,7 +2367,7 @@ function comment_form( $args = array(), $post_id = null ) {
 			),
 			sprintf(
 				'<label for="wp-comment-cookies-consent">%s</label>',
-				__( 'Save my name, email, and website in this browser for the next time I comment.' )
+				__( 'Save information' )
 			)
 		);
 
@@ -2440,7 +2400,7 @@ function comment_form( $args = array(), $post_id = null ) {
 				'<label for="comment"><div id="divcomment"><p id="lblcomment">%s</p></div></label>',
 				_x( 'Comment', 'noun' )
 			),
-			'<textarea id="comment" name="comment" cols="45" rows="8" placeholder="What are you thinking..." maxlength="65525" required="required"></textarea>'
+			'<textarea placeholder="What are you thinking..." id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea>'
 		),
 		'must_log_in'          => sprintf(
 			'<p class="must-log-in">%s</p>',
