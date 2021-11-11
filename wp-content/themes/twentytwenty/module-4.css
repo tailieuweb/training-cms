@@ -1,7 +1,7 @@
 /* Module 4 css */
 
 .module-4-formSearch .search-cont {
-    width: 858px !important;
+    width: 885px !important;
     padding-left: 65px;
     height: 75px;
     font-size: 20px;
@@ -27,15 +27,20 @@
 }
 
 .module-4-searchSub {
+  
     position: relative;
     top: 13px;
     right: 137px;
     height: 50px;
     border-radius: 7px !important;
-    width: 115px;
+    width: 100px;
     border: 1px solid rgb(40, 167, 69);
     background-color: rgb(40, 167, 69) !important;
-    color: white;
+    color: black;
     font-size: 20px;
     line-height: 0 !important;
+}
+.search-form .module-4-formSearch{
+    color: rgb(40, 167, 69) !important;
+    width: 150px !important;
 }
