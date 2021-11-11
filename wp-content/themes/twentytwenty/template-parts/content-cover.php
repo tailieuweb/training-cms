@@ -118,7 +118,6 @@
 
 						</div><!-- .entry-header-inner -->
 					</header><!-- .entry-header -->
-
 			</div><!-- .cover-header-inner -->
 		</div><!-- .cover-header-inner-wrapper -->
 	</div><!-- .cover-header -->
