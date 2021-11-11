@@ -6571,3 +6571,21 @@ section .section-title {
 }
 
 
+/* List Post Search */
+.list_new_view {
+    margin-bottom: 15px;
+	border: 2px solid rgb(202, 202, 202);
+	padding: 10px 0;
+	border-radius: 2px;
+}
+.top_news_block_desc {
+    font-size: 0.9em;
+    padding: 15px;
+}
+.topnewstime .topnewsdate {
+    text-align: center !important;
+    font-size: 35px;
+}
+.shortdesc {
+    border-left: 1px solid rgb(202, 202, 202);
+}
