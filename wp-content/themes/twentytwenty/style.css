@@ -4933,6 +4933,13 @@ a.to-the-top>* {
 section {
 	padding: 0;
 }
+.row.text-center.text-xs-center.text-sm-left.text-md-left {
+    margin-left: 73px;
+}
+
+nav.footer-menu-wrapper {
+    margin-left: 73px;
+}
 
 section .section-title {
 	text-align: center;
