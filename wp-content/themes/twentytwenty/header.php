@@ -27,6 +27,11 @@
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
 	<?php wp_head(); ?>
+	
+	<!-- đây là link file css module 3 - by Ngọc Yến -->
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module3.css">
+	<!-- đây là link file css module 12 - by Ngọc Yến -->
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module12.css">
 
 </head>
 

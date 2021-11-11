@@ -512,6 +512,7 @@ function twentytwenty_get_post_meta($post_id = null, $location = 'single-top')
 	}
 
 
+
 /**
  * Menus
  */

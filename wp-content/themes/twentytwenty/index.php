@@ -24,9 +24,19 @@ $post_meta = apply_filters(
 );
 
 get_header();
+//Ngọc Yến- module 12 
+$has_sidebar_12 = is_active_sidebar('sidebar-12');
 ?>
-
+ 
 <main id="site-content" role="main">
+	<!-- chia cột để hiển thị module 12 -by Ngọc Yến --->
+	<div class="row">
+		<div class="col-md-3">
+			
+		</div>
+		<div class="col-md-6">
+			<?php
+
 
 	<?php
 	//header
@@ -214,25 +224,79 @@ get_header();
 		}
 	} elseif (is_search()) {
 		?>
+				<?php
+			}
 
-		<div class="no-search-results-form section-inner thin">
+			if (have_posts()) {
+				$i = 0;
+				while (have_posts()) {
+					$i++;
+					if ($i > 1) {
+						echo '<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
+					} ?>
+					<div class="row">
+						<div class="col-md-2">
+							<?php
+							// Post date.
+							if (in_array('post-date', $post_meta, true)) {
+								$has_meta = true;
+							?>
+								<div class="dinhDangDay">
+									<p class="meta-day">
+										<?php the_time("d"); ?>
+									</p>
+									<p class="meta-thang">
+										<?php echo 'tháng ', the_time("m"); ?>
+									</p>
+								</div>
+							<?php
+							} ?>
+						</div>
+						<div class="col-md-10">
+							<div class="post-doithay">
+								<?php
+								the_post();
+								get_template_part('template-parts/content', get_post_type());
+								?>
+							</div>
+						</div>
+					</div>
+				<?php
+
+				}
+			} elseif (is_search()) {
+				?>
+
+				<div class="no-search-results-form section-inner thin">
+
+					<?php
+					get_search_form(
+						array(
+							'aria_label' => __('search again', 'twentytwenty'),
+						)
+					);
+					?>
+
+				</div><!-- .no-search-results -->
 
 			<?php
-			get_search_form(
-				array(
-					'aria_label' => __('search again', 'twentytwenty'),
-				)
-			);
+			}
 			?>
 
-		</div><!-- .no-search-results -->
+			<?php get_template_part('template-parts/pagination'); ?>
 
-	<?php
-	}
-	?>
+		</div>
+		<!-- đây là module 12  - by Ngọc Yến -->
+		<div class="col-md-3">
+			<?php if ($has_sidebar_12) { ?>
 
-	<?php get_template_part('template-parts/pagination'); ?>
+				<div class="footer-widgets column-three grid-item" id="sidebar-right">
+					<?php dynamic_sidebar('sidebar-12'); ?>
+				</div>
 
+			<?php } ?>
+		</div>
+	</div>
 </main><!-- #site-content -->
 
 <?php get_template_part('template-parts/footer-menus-widgets'); ?>

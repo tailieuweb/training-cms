@@ -11,17 +11,16 @@
 
 $has_footer_menu = has_nav_menu('footer');
 $has_social_menu = has_nav_menu('social');
-
-$has_footer_menu = has_nav_menu( 'footer' );
-$has_social_menu = has_nav_menu( 'social' );
-
-$has_sidebar_1 = is_active_sidebar( 'sidebar-1' );
-$has_sidebar_2 = is_active_sidebar( 'sidebar-2' );
-$has_sidebar_3 = is_active_sidebar( 'sidebar-3' );
-
+// đây là module 3 -By Ngọc Yến
+$has_sidebar_1 = is_active_sidebar('sidebar-1');
+$has_sidebar_2 = is_active_sidebar('sidebar-2');
+$has_sidebar_3 = is_active_sidebar('sidebar-3');
+$has_sidebar_12 = is_active_sidebar('sidebar-12');
 // Only output the container if there are elements to display.
-if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3 ) {
-	?>
+// đây là module 3 - By Ngọc Yến
+if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3 || $has_sidebar_12) {
+?>
+
 
 	<div class="footer-nav-widgets-wrapper header-footer-group" id="footer-nav-widgets-wrapper-id">
 
@@ -89,8 +88,8 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ||
 				</div><!-- .footer-top -->
 
 			<?php } ?>
-
-			<?php if ( $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3  ) { ?>
+			<!-- đây là module 3  - by Ngọc Yến -->
+			<?php if ($has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3 || $has_sidebar_12) { ?>
 
 				<aside class="footer-widgets-outer-wrapper" role="complementary" >
 
@@ -119,10 +118,10 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ||
 							</div>
 
 						<?php } ?>
-						<?php if ( $has_sidebar_3 ) { ?>
+						<?php if ($has_sidebar_12) { ?>
 
 							<div class="footer-widgets column-three grid-item">
-								<?php dynamic_sidebar( 'sidebar-3' ); ?>
+								<?php dynamic_sidebar('sidebar-12'); ?>
 							</div>
 
 						<?php } ?>
