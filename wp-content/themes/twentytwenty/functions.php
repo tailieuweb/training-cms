@@ -404,7 +404,6 @@ function twentytwenty_sidebar_registration() {
 			)
 		)
 	);
-
 	
 	// Footer #3.
 	register_sidebar(
@@ -417,7 +416,6 @@ function twentytwenty_sidebar_registration() {
 			)
 		)
 	);
-
 	
 	// module #9
 	register_sidebar(
