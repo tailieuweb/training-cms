@@ -28,7 +28,7 @@ if ( $next_post || $prev_post ) {
 				?>
 				<a class="previous-post" href="<?php echo esc_url( get_permalink( $prev_post->ID ) );?>">
 				<?php
-						//nếu là trang detail thì hiển thị thời gain
+						//nếu là trang detail thì hiển thị thời gian
 						if (is_single()) {
 							echo '<div class="date-time-post">';
 							$post_date = get_the_date('d', $post->ID);

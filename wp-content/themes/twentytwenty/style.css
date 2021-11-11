@@ -6619,7 +6619,7 @@ a.to-the-top > * {
   color: #424542;
   align-items: center;
 }
-/* D9ing5 dạng ngày tháng năm */
+/* Đinh dạng theo day mont year */
 .pagination-single .post-date {
   display: flex;
   justify-content: center;
@@ -6634,7 +6634,7 @@ a.to-the-top > * {
     margin-top: 8rem;
   }
 }
-/* Nút next-post */
+/* button next-post */
 @media (min-width: 700px) {
   .pagination-single .next-post {
     flex-direction: row;
