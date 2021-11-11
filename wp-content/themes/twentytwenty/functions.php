@@ -404,29 +404,40 @@ function twentytwenty_sidebar_registration() {
 			)
 		)
 	);
-	// Footer #3
-	register_sidebar(
-		array_merge(
-			$shared_args,
-			array(
-				'name'        => __( 'Footer #3', 'twentytwenty' ),
-				'id'          => 'sidebar-3',
-				'description' => __( 'Widgets in this area will be displayed in the third column in the footer.', 'twentytwenty' ),
-			)
-		)
-	);
-
 	// Footer #3.
 	register_sidebar(
 		array_merge(
 			$shared_args,
 			array(
-				'name'        => __( 'Footer #3', 'twentytwenty' ),
+				'name'        => __('Footer #3', 'twentytwenty'),
 				'id'          => 'sidebar-3',
-				'description' => __( 'Widgets in this area will be displayed in the second column in the footer.', 'twentytwenty' ),
+				'description' => __('Widgets in this area will be displayed in the third column in the footer.', 'twentytwenty'),
 			)
 		)
 	);
+	// Footer #4.
+	register_sidebar(
+		array_merge(
+			$shared_args,
+			array(
+				'name'        => __('Footer #3', 'twentytwenty'),
+				'id'          => 'sidebar-4',
+				'description' => __('Widgets in this area will be displayed in the third column in the footer.', 'twentytwenty'),
+			)
+		)
+	);
+	// Footer #5.
+	register_sidebar(
+		array_merge(
+			$shared_args,
+			array(
+				'name'        => __('Footer #3', 'twentytwenty'),
+				'id'          => 'sidebar-5',
+				'description' => __('Widgets in this area will be displayed in the third column in the footer.', 'twentytwenty'),
+			)
+		)
+	);
+
 }
 
 add_action( 'widgets_init', 'twentytwenty_sidebar_registration' );
@@ -808,3 +819,20 @@ function twentytwenty_get_elements_array() {
 	 */
 	return apply_filters( 'twentytwenty_get_elements_array', $elements );
 }
+//Sửa hàm the_expert() trả về chuỗi 20 ký tự
+function wpdocs_custom_excerpt_length($length)
+{
+	return 20;
+}
+add_filter('excerpt_length', 'wpdocs_custom_excerpt_length', 999);
+
+//Thêm [...] vào cuối trong expert_more 
+function wpdocs_excerpt_more($more)
+{
+	$more = sprintf(
+		'<a href="%1$s">[...]</a>',
+		get_permalink(get_the_ID())
+	);
+	return $more;
+}
+add_filter('excerpt_more', 'wpdocs_excerpt_more');

@@ -92,6 +92,7 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
 			<?php } ?>
 
 			<?php if ($has_sidebar_1 || $has_sidebar_2) { ?>
+<<<<<<< HEAD
 
 				<!-- <aside class="footer-widgets-outer-wrapper" role="complementary"> -->
 
@@ -140,6 +141,54 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
                           </div>
                          <?php } ?>   
 
+=======
+
+				<!-- <aside class="footer-widgets-outer-wrapper" role="complementary"> -->
+
+				<!-- <div class="footer-widgets-wrapper"> -->
+				<div class="row text-center text-xs-center text-sm-left text-md-left">
+					<?php if ($has_sidebar_1) { ?>
+
+						<!-- <div class="footer-widgets column-one grid-item"> -->
+						<div class="col-xs-12 col-sm-4 col-md-3">
+							<?php dynamic_sidebar('sidebar-1'); ?>
+						</div>
+
+					<?php } ?>
+
+					<?php if ($has_sidebar_2) { ?>
+
+						<!-- <div class="footer-widgets column-two grid-item"> -->
+						<div class="col-xs-12 col-sm-4 col-md-3">
+							<?php dynamic_sidebar('sidebar-2'); ?>
+						</div>
+
+					<?php } ?>
+					<?php if ($has_sidebar_3) { ?>
+
+						<!-- <div class="footer-widgets column-three grid-item"> -->
+						<div class="col-xs-12 col-sm-4 col-md-3">
+							<?php dynamic_sidebar('sidebar-3'); ?>
+						</div>
+
+					<?php } ?>
+					<?php if ($has_sidebar_4) { ?>
+
+<!-- <div class="footer-widgets column-one grid-item"> -->
+<div class="col-xs-12 col-sm-4 col-md-3">
+	<?php dynamic_sidebar('sidebar-4'); ?>
+</div>
+
+<?php } ?>
+<?php if ($has_sidebar_5) { ?>
+
+<!-- <div class="footer-widgets column-one grid-item"> -->
+<div class="col-xs-12 col-sm-4 col-md-3">
+	<?php dynamic_sidebar('sidebar-5'); ?>
+</div>
+
+<?php } ?>
+>>>>>>> 1-wordpress-581-202109/2-groups/1-K/1-16-Khoa-Module3
 				</div>
 		</div><!-- .footer-widgets-wrapper -->
 
