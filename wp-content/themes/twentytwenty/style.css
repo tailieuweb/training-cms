@@ -53,7 +53,9 @@ with others.
 /*	0. CSS Reset
 /* -------------------------------------------------------------------------- */
 
-
+html{
+	text-decoration: none;
+}
 
 html,
 body {
