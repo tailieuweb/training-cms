@@ -82,7 +82,6 @@ function get_option( $option, $default = false ) {
 		return false;
 	}
 
-
 	/*
 	 * Until a proper _deprecated_option() function can be introduced,
 	 * redirect requests to deprecated keys to the new, correct ones.
@@ -103,7 +102,7 @@ function get_option( $option, $default = false ) {
 				$deprecated_keys[ $option ]
 			)
 		);
-		return get_option( $deprecated_keys[ $option ], $default ); // ko return chỗ này
+		return get_option( $deprecated_keys[ $option ], $default );
 	}
 
 	/**
