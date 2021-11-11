@@ -119,14 +119,18 @@
                             </div><!-- .entry-header-inner -->
                         </header><!-- .entry-header -->
 
+<<<<<<< HEAD
                 </div><!-- .cover-header-inner -->
             </div><!-- .cover-header-inner-wrapper -->
         </div><!-- .cover-header -->
 
+=======
+			</div><!-- .cover-header-inner -->
+		</div><!-- .cover-header-inner-wrapper -->
+	</div><!-- .cover-header -->
+>>>>>>> 1-wordpress-581-202109/2-groups/1-C/Tinh-Module-6
 	<div class="post-inner" id="post-inner">
-
 		<div class="entry-content">
-
 		<?php
 		the_content();
 		?>
