@@ -2743,8 +2743,7 @@ function comment_form( $args = array(), $post_id = null ) {
                         
                         </div> -->
                     </div>
-                </section>
-				
+                </section>				
 		<?php
 		
 		// echo $args['title_reply_before'];
@@ -2938,7 +2937,8 @@ function comment_form( $args = array(), $post_id = null ) {
 
 		// endif;
 		?>
-	//</div><!-- #respond -->
+	<!-- </div> -->
+	<!-- #respond -->
 	
 	<?php
 

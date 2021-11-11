@@ -6843,8 +6843,7 @@ section .section-title {
 	margin-left: 15px;
 }
 
-.news > .topnews .topnewsthumb {
-}
+
 .news > .topnews .topnewsthumb img {
 	width: 100%;
 	max-width: 100%;
@@ -6859,9 +6858,7 @@ section .section-title {
 .news > .topnews h4 a {
 	color: #fff;
 }
-.news > .topnews .col-md-8 {
 
-}
 .news > .topnews > .row .row {
 	margin:0 !important;
 }
@@ -6880,7 +6877,7 @@ section .section-title {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	padding-left: 10%;
+	padding-left: 29%;
 	font-size: 2rem;
 }
 .headlines ul > li {
@@ -7205,10 +7202,9 @@ section .section-title {
     margin-bottom: 10px;
   }
 }
-/* .row {
-  color: white;
-} */
-
+.card{
+  padding: 0 !important;
+}
 .title_text{
   color: #fff;
 }
