@@ -6479,7 +6479,6 @@ a.to-the-top > * {
 		top: 0;
 	}
 }
-<<<<<<< HEAD
 /*Start CSS Footer */
 section {
 	padding: 60px 0;
@@ -6602,7 +6601,7 @@ ul, ol {
 }
 .footer-widgets-outer-wrapper {
 	padding: 0;
-=======
+}
 #commentform #submit{
 	background: #007bff;
 	margin-left: auto;
@@ -6624,8 +6623,8 @@ ul, ol {
 }
 .comment-form-comment{
 	max-width: 70rem !important;
->>>>>>> 2-wordpress-581-202109/2-B/4-1-Anh-Comments
 }
+
 #divcomment{
 	border-bottom: rgba(0,0,0,.125) solid 1px;
 	margin-bottom: 3rem;
