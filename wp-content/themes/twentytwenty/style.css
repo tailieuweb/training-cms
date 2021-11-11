@@ -1257,7 +1257,6 @@ button.toggle {
 
 .search-form {
 
-	height: 40px;
 	align-items: stretch;
 	display: flex;
 	flex-wrap: nowrap;
@@ -1266,11 +1265,7 @@ button.toggle {
 
 .search-form .search-field,
 .search-form .search-submit {
-	background: white;
-	color: hsl(208deg 7% 42%);
-	border: 1px solid hsl(0deg 0% 84%);
 	margin: 0 0 0.8rem 0.8rem;
-	text-transform: capitalize;
 }
 
 .search-form label {
@@ -1282,14 +1277,10 @@ button.toggle {
 }
 
 .search-form .search-field {
-	border-radius: 4px;
 	width: 100%;
 }
 
 .search-form .search-submit {
-	padding: 0.5rem;
-	border-radius: 4px;
-	/* padding-top: 5px; */
 	flex-shrink: 0;
 }
 
@@ -1496,7 +1487,6 @@ body:not(.enable-search-modal) .site-logo img {
 }
 
 .header-inner .toggle svg {
-	color: hsl(240deg 1% 55%);
 	display: block;
 	position: relative;
 	z-index: 1;
@@ -5688,15 +5678,14 @@ a.to-the-top > * {
 	/* Site Header --------------------------- */
 
 	#site-header {
-		background: hsl(0deg 0% 97%);
 		z-index: 2;
 	}
 
 	.header-inner {
-		align-items: baseline;
+		align-items: center;
 		display: flex;
 		justify-content: space-between;
-		padding: 0.8rem 0;
+		padding: 2.8rem 0;
 	}
 
 	.header-titles-wrapper {
@@ -5799,7 +5788,7 @@ a.to-the-top > * {
 		left: 0;
 		right: 0;
 		text-align: center;
-		top: calc(70% - 0.3rem);
+		top: calc(100% - 0.3rem);
 		width: auto;
 	}
 
@@ -6165,8 +6154,7 @@ a.to-the-top > * {
 	}
 
 	.header-toggles {
-		/* margin-right: -4rem; */
-		margin-right: 0px;
+		margin-right: -4rem;
 	}
 
 	.header-toggles .toggle {
@@ -6566,6 +6554,7 @@ section .section-title {
     margin-bottom: 10px;
 }
 }
+/* module 1 */
 .btn-dropdown{
 	background: none !important;
 	border: none !important;
@@ -6589,6 +6578,39 @@ section .section-title {
     margin-left: 20px !important;
 }
 .site-description:hover{
-	background: #007b5e;
+	background: #2e3130;
 	cursor: pointer;
+}
+.search-form {
+	height: 40px;
+}
+.search-form .search-field,
+.search-form .search-submit {
+	background: white;
+	color: hsl(208deg 7% 42%);
+	border: 1px solid hsl(0deg 0% 84%);
+	text-transform: capitalize;
+}
+.search-form .search-field {
+	border-radius: 4px;
+}
+.search-form .search-submit {
+	padding: 0.5rem;
+	border-radius: 4px;
+}
+.header-inner .toggle svg {
+	color: hsl(240deg 1% 55%);
+}
+#site-header {
+	background: hsl(0deg 0% 97%);
+}
+.header-inner {
+	align-items: baseline;
+	padding: 0.8rem 0;
+}
+.toggle-inner .toggle-text {
+	top: calc(70% - 0.3rem);
+}
+.header-toggles {
+	margin-right: 0px;
 }
