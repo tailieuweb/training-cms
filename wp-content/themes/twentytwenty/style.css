@@ -106,7 +106,7 @@ blockquote::before,
 blockquote::after {
     content: "";
 }
-/* recent-post */
+/*Css module10 recent-post */
     
 li.recent-name {
     line-height: 27px !important;
@@ -115,7 +115,7 @@ li.recent-name {
     list-style: none;
     border-bottom: 0.25px solid gray;
     padding-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
 }
 
 ul li.recent-name a {
