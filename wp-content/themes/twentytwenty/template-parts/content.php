@@ -136,7 +136,7 @@ else{
 	<div class="col-md-2/5">
 		<div class="crossedbg"></div>
 			<div class="panel-body">
-			<h class="post" >Categories </h>
+			<h class="categories" style = "padding-left: 30px;font-size: 30px;" >Categories </h>
 				<ul class="list-group">
 				
 											<li class="list-group-item">
