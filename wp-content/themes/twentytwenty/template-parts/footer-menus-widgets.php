@@ -15,6 +15,8 @@ $has_social_menu = has_nav_menu('social');
 $has_sidebar_1 = is_active_sidebar('sidebar-1');
 $has_sidebar_2 = is_active_sidebar('sidebar-2');
 $has_sidebar_3 = is_active_sidebar('sidebar-3');
+$has_sidebar_4 = is_active_sidebar('sidebar-4');
+$has_sidebar_5 = is_active_sidebar('sidebar-5');
 
 
 // Only output the container if there are elements to display.
@@ -98,7 +100,7 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
 					<?php if ($has_sidebar_1) { ?>
 
 						<!-- <div class="footer-widgets column-one grid-item"> -->
-						<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="col-xs-12 col-sm-4 col-md-3">
 							<?php dynamic_sidebar('sidebar-1'); ?>
 						</div>
 
@@ -107,7 +109,7 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
 					<?php if ($has_sidebar_2) { ?>
 
 						<!-- <div class="footer-widgets column-two grid-item"> -->
-						<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="col-xs-12 col-sm-4 col-md-3">
 							<?php dynamic_sidebar('sidebar-2'); ?>
 						</div>
 
@@ -115,11 +117,27 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
 					<?php if ($has_sidebar_3) { ?>
 
 						<!-- <div class="footer-widgets column-three grid-item"> -->
-						<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="col-xs-12 col-sm-4 col-md-3">
 							<?php dynamic_sidebar('sidebar-3'); ?>
 						</div>
 
 					<?php } ?>
+					<?php if ($has_sidebar_4) { ?>
+
+<!-- <div class="footer-widgets column-one grid-item"> -->
+<div class="col-xs-12 col-sm-4 col-md-3">
+	<?php dynamic_sidebar('sidebar-4'); ?>
+</div>
+
+<?php } ?>
+<?php if ($has_sidebar_5) { ?>
+
+<!-- <div class="footer-widgets column-one grid-item"> -->
+<div class="col-xs-12 col-sm-4 col-md-3">
+	<?php dynamic_sidebar('sidebar-5'); ?>
+</div>
+
+<?php } ?>
 				</div>
 		</div><!-- .footer-widgets-wrapper -->
 
