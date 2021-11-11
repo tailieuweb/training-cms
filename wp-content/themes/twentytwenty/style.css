@@ -127,16 +127,6 @@ with others.
         height: 15px;
     }
     
-    .cate {
-        padding-left: 20px;
-        padding-bottom: 1px;
-        margin-left: 60px;
-        width: 321px;
-        margin-top: 90px;
-        background: #F3F3F3;
-        height: auto;
-    }
-    
     .ul-cate {
         width: 270px;
         background: white;
@@ -5908,5 +5898,3 @@ Inter variable font. Usage:
             margin-bottom: 10px;
         }
     }
-    
-    re
