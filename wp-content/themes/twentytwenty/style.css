@@ -1266,6 +1266,12 @@ button.toggle {
 .search-form .search-submit:hover {
   text-decoration: none;
 }
+.front{
+  padding: 30px  !important;
+}
+.btn:not(:disabled):not(.disabled) {
+  padding: 10px;
+}
 
 /* Social Icons ------------------------------ */
 
@@ -3942,13 +3948,9 @@ div.comment:first-of-type {
   margin-right: auto;
 }
 
-<<<<<<< HEAD
 .comment-respond p:not(.comment-notes) {
   max-width: 58rem;
 }
-=======
-
->>>>>>> 1-wordpress-581-202109/2-groups/1-D/5-14-Hung-Module8
 
 .comment-form-cookies-consent {
   align-items: baseline;
@@ -7778,12 +7780,13 @@ body{
 }
 
 .post-detail .entry-header-inner {
-	display: flex;
+	text-align: center;
+    padding-left: 8%;
 }
 
 .post-detail h1.entry-title {
     font-size: 2.1em;
-	text-align: left;
+	text-align: center;
 	width: 77%;
     font-weight: bold;
     margin: 0;
@@ -7800,7 +7803,7 @@ body{
 .post-detail .time-post {
 	font-family: 'Prata', serif;
 	position: absolute;
-    top: 14rem;
+    top: 21rem;
     right: 18em;
     width: 100px;
     height: 100px;
@@ -8135,7 +8138,7 @@ li.cat-item.cat-item-4 a,li.cat-item.cat-item-2 a,li.cat-item.cat-item-1 a{
 	font-family: inherit;
     color: #428bca;
 	 background: #f7f3f3;
-	 padding: 12px;
+	 /* padding: 12px; */
 	 height: 115;
 }
 .sidebar10 .entry-content .wp-block-latest-posts > li{
@@ -8197,7 +8200,7 @@ li.cat-item.cat-item-4 a,li.cat-item.cat-item-2 a,li.cat-item.cat-item-1 a{
 
 /* Css comment */
 .card-body{
-	background: white;
+	/* background: white; */
 	padding-bottom: 60px;
 }
 .card-header{
@@ -8226,4 +8229,10 @@ input#submit{
 }
 input#submit:hover{
 	background:#337ab7 ;
+}
+
+
+.card-body-adjust{
+  background: white !important;
+  padding: 30px;
 }

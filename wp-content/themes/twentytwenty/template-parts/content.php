@@ -17,7 +17,7 @@ if (is_search()) {
 if (is_single()) {
 	$newClass = 'post-detail';
 }
-$has_sidebar_10 = is_active_sidebar('sidebar-10');
+$has_sidebar_1 = is_active_sidebar('sidebar-1');
 ?>
 
 <?php
@@ -134,8 +134,9 @@ if (!is_single() && !is_search()) { ?>
 		?>
 
 	</article><!-- .post -->
-<?php } else { ?>
-	<!-- Trang search !-->
+<?php } else if (is_single()) {
+
+?>
 	<article <?php post_class($newClass); ?> id="post-<?php the_ID(); ?>">
 
 		<?php
@@ -165,59 +166,159 @@ if (!is_single() && !is_search()) { ?>
 
 		?>
 		<div class="container-fluid">
-		<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
-			<div class="entry-content">
-				<?php $has_sidebar_9 = is_active_sidebar('sidebar-9'); ?>
-				<div class="row-adjust">
-					<div class="col-sm-4">
-						<div class="sidebar9">
-							<?php if ($has_sidebar_9 == true) { ?>
-								<div class="content-widgets-wrapper">
-									<?php if ($has_sidebar_9 == true) { ?>
-										<div class="content-widgets column-one grid-item">
-											<?php dynamic_sidebar('sidebar-9'); ?>
-										</div>
-									<?php } ?>
+			<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
+				<div class="entry-content">
+					<?php if (is_single()) { ?>
+						<?php $has_sidebar_2 = is_active_sidebar('sidebar-2'); ?>
+						<div class="row-adjust">
+							<div class="col-sm-3">
+								<div class="sidebar9">
+									<?php #if ($has_sidebar_2 == true) { 
+									?>
+									<div class="content-widgets-wrapper">
+										<?php if ($has_sidebar_2) { ?>
+											<div class="content-widgets column-one grid-item">
+												<?php dynamic_sidebar('sidebar-2'); ?>
+											</div>
+										<?php } ?>
+									</div>
+									<?php #} 
+									?>
 								</div>
-							<?php } ?>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<?php
-						if (is_search() || !is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
-							the_excerpt();
-						} else {
-							// the_content( __( 'Continue reading', 'twentytwenty' ) );
-							if (is_single()) {
-								the_content(__('Continue reading', 'twentytwenty'));
+							</div>
+						<?php } ?>
+						<div class="col-sm-6">
+							<?php
+							if (!is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
+								the_excerpt();
 							} else {
-								$post = get_post();
-								$content = $post->post_content;
-								echo substr($content, 0, 120);
-							}
-						}
-						?>
-					</div>
+								// the_content( __( 'Continue reading', 'twentytwenty' ) );
+								if (is_single()) {
+									
+									the_content(__('Continue reading', 'twentytwenty'));
+								} else {
 
-					<div class="col-sm-4">
-						<div class="sidebar10">
-							<?php if ($has_sidebar_10  == true) { ?>
-								<div class="content-widgets-wrapper">
-									<?php if ($has_sidebar_10  == true) { ?>
-										<div class="content-widgets column-one grid-item">
-											<?php dynamic_sidebar('sidebar-10'); ?>
-										</div>
-									<?php } ?>
-								</div>
-							<?php } ?>
+									$post = get_post();
+									$content = $post->post_content;
+									echo substr($content, 0, 120);
+								}
+								// if(is_search()){
+								// 	the_content(__('Continue reading', 'twentytwenty'));
+								// }
+							}
+							?>
 						</div>
-					</div>
-				</div>
+						<?php if (is_single()) { ?>
+							<div class="col-sm-3">
+								<div class="sidebar10">
+									<?php #if ($has_sidebar_10  == true) { 
+									?>
+									<div class="content-widgets-wrapper">
+										<?php if ($has_sidebar_1) { ?>
+											<div class="content-widgets column-one grid-item">
+												<?php dynamic_sidebar('sidebar-1'); ?>
+											</div>
+										<?php } ?>
+									</div>
+									<?php #} 
+									?>
+								</div>
+							</div>
+						<?php } ?>
+						</div>
+				</div><!-- .entry-content -->
+
+			</div><!-- .post-inner -->
+		</div>
+
+
+		<div class="section-inner">
+			<?php
+			wp_link_pages(
+				array(
+					'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__('Page', 'twentytwenty') . '"><span class="label">' . __('Pages:', 'twentytwenty') . '</span>',
+					'after'       => '</nav>',
+					'link_before' => '<span class="page-number">',
+					'link_after'  => '</span>',
+				)
+			);
+
+			edit_post_link();
+
+			// Single bottom post meta.
+			twentytwenty_the_post_meta(get_the_ID(), 'single-bottom');
+
+			if (post_type_supports(get_post_type(get_the_ID()), 'author') && is_single()) {
+
+				get_template_part('template-parts/entry-author-bio');
+			}
+			?>
+
+		</div><!-- .section-inner -->
+
+		<?php
+
+		if (is_single()) {
+
+			get_template_part('template-parts/navigation');
+		}
+
+		/*
+	 * Output comments wrapper if it's a post, or if comments are open,
+	 * or if there's a comment number – and check for password.
+	 */
+		if ((is_single() || is_page()) && (comments_open() || get_comments_number()) && !post_password_required()) {
+		?>
+
+			<div class="comments-wrapper section-inner">
+
+				<?php comments_template(); ?>
+
+			</div><!-- .comments-wrapper -->
+
+		<?php
+		}
+		?>
+
+	</article><!-- .post -->
+<?php } ?>
+<?php if (is_search()) { ?>
+	<article <?php post_class($newClass); ?> id="post-<?php the_ID(); ?>">
+
+		<?php
+
+		get_template_part('template-parts/entry-header');
+
+		if (!is_search()) {
+			get_template_part('template-parts/featured-image');
+		}
+
+		?>
+
+		<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
+			<?php
+			if (is_search()) {
+				echo '<div class="time-post">';
+				$post_date = get_the_date('d', $post->ID);
+				$post_month = get_the_date('m', $post->ID);
+				echo '<span class="day">' . $post_date . '</span> <br>';
+				echo '<span class="month">' . $post_month . '</span>';
+				echo '</div>';
+			}
+			?>
+			<div class="entry-content">
+
+				<?php
+				if (!is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
+					the_excerpt();
+				} else {
+					the_content(__('Continue reading', 'twentytwenty'));
+				}
+				?>
+
 			</div><!-- .entry-content -->
 
 		</div><!-- .post-inner -->
-		</div>
-		
 
 		<div class="section-inner">
 			<?php

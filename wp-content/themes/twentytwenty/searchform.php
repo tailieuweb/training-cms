@@ -37,7 +37,7 @@ if ( empty( $twentytwenty_aria_label ) && ! empty( $args['label'] ) ) {
                             </div>
                             <!--end of col-->
                             <div class="col">
-                                <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="<?php echo esc_attr_x( 'Scearch topics or keywords &hellip;', 'placeholder', 'twentytwenty' ); ?>" value="<?php echo get_search_query(); ?>" name="s">
+                                <input class="form-control form-control-lg form-control-borderless front" type="search" placeholder="<?php echo esc_attr_x( 'Scearch topics or keywords &hellip;', 'placeholder', 'twentytwenty' ); ?>" value="<?php echo get_search_query(); ?>" name="s">
                             </div>
                             <!--end of col-->
                             <div class="col-auto" value="<?php echo esc_attr_x( 'Scearch', 'submit button', 'twentytwenty' ); ?>">

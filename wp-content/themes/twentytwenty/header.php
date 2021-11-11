@@ -46,9 +46,9 @@
                         <a class="navbar-brand " href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
-                <form class="mx-1 form-inline mr-auto">
-                    <input class="form-control mr-sm-2 rounded" type="text" placeholder="Search">
-                    <button class="btn my-2 my-sm-0 border btn-submit-header" type="submit">Submit</button>
+                <form  method="get"  action="<?php echo esc_url( home_url( '/' ) ); ?>" class="mx-1 form-inline mr-auto">
+                    <input value="<?php echo get_search_query(); ?>" name="s" class="form-control mr-sm-2 rounded" type="text" placeholder="Search">
+                    <button value="<?php echo esc_attr_x( 'Scearch', 'submit button', 'twentytwenty' ); ?>" class="btn my-2 my-sm-0 border btn-submit-header" type="submit">Submit</button>
                 </form>
 
                 <div class="header-navigation-wrapper">

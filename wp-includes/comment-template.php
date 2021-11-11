@@ -2589,7 +2589,7 @@ function comment_form($args = array(), $post_id = null)
 				</li>
 			</ul>
 		</div>
-		<div class="card-body ">
+		<div class="card-body-adjust ">
 			<div class="tab-content" id="myTabContent">
 				<div class="tab-pane fade show active" id="posts" role="tabpanel" aria-labelledby="posts-tab">
 
