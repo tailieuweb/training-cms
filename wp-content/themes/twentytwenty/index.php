@@ -137,17 +137,24 @@ get_header();
 		}
 	} elseif (is_search()) {
 		?>
-
+		<!-- Phần hiển thị form tìm kiếm khi không có kết quả -->
 		<div class="no-search-results-form section-inner thin">
-
-			<?php
-			get_search_form(
-				array(
-					'aria_label' => __('search again', 'twentytwenty'),
-				)
-			);
-			?>
-
+			<form class="card card-sm" method="get" action="<?php echo home_url('/'); ?>">
+				<div class="card-body row no-gutters align-items-center">
+					<div class="col-auto">
+						<i class="fas fa-search h4 text-body"></i>
+					</div>
+					<!--end of col-->
+					<div class="col">
+						<input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search topics or keywords" name="s" id="search" value="<?php the_search_query(); ?>">
+					</div>
+					<!--end of col-->
+					<div class="col-auto">
+						<button class="btn btn-lg btn-success" type="submit">Search</button>
+					</div>
+					<!--end of col-->
+				</div>
+			</form>
 		</div><!-- .no-search-results -->
 
 	<?php
