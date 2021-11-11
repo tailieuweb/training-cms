@@ -6868,10 +6868,12 @@ section .section-title {
 .fa-header{
 	font-size: 20px;
 	color: black;
-
+}
 .news a {
 	color: #fff;
 }
+
+
 .row > .col-md-6 > img {
 	max-width: 100%;
 }
