@@ -130,8 +130,9 @@ if(!is_single())
 <?php }
 else{
 ?>
-<div class="row">
-	<div class="col-md-9">
+
+	
+	
 	<article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
 	<div class="header">
 		<div class="container">
@@ -192,23 +193,8 @@ else{
     
 
 </article><!-- .post -->
-	</div>
-	<div class="col-md-3">
-		
-	<div class="crossedbg"></div>
-	<div class="panel-body">
-	<h class="post" >Recent Post</h>
-        <ul class="list-group">
-		
-                                    <li class="list-group-item">
-                            <a href="http://fit.tdc.edu.vn/viec-lam/dot-net-developer-w2solution">.Net Developer</a>                        </li>
-                                    <li class="list-group-item">
-                            <a href="http://fit.tdc.edu.vn/viec-lam/thuc-tap-sinh-tester-w2solution">Thực Tập Sinh Tester</a>                        </li>
-                                    <li class="list-group-item">
-                            <a href="http://fit.tdc.edu.vn/viec-lam/tro-giang-lap-trinh-part-time">Trợ giảng lập trình - Part time</a>                        </li>
-                    </ul>
-    </div>
-</div>
+	
+	
 
 <div class="section-inner">
         <?php
