@@ -30,7 +30,7 @@
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module3.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module9.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module6.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module10.css" type="text/css"
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module10.css" type="text/css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.css" type="text/css" media="screen" />
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -192,8 +192,8 @@
                                 data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal"
                                 data-set-focus=".search-modal .search-field" aria-expanded="false">
                                 <span class="toggle-inner">
-                                    <i class="fa fa-user-circle-o dropdown-account-icon"></i>
-                                    <span class="toggle-text"><a href="#" class="dropdown-toggle toggle-text"
+                                    <i class="fa fa-user-circle-o dropdown-account-icon" style="padding-top: 4px;  font-size: 25px;  padding-left: 20px;"></i>
+                                    <span class="toggle-text"><a href="#" class="dropdown-toggle toggle-text" style="padding-left: 36px;"
                                             data-toggle="dropdown" role="button" aria-haspopup="true"
                                             aria-expanded="false">Account
                                         </a></span>
