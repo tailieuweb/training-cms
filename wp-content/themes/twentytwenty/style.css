@@ -55,7 +55,6 @@ with others.
 
 
 
-
 html,
 body {
 	border: none;
@@ -6480,7 +6479,7 @@ a.to-the-top > * {
 		top: 0;
 	}
 }
-/* Footer */
+/*Start CSS Footer */
 section {
 	padding: 60px 0;
 }
@@ -6600,18 +6599,6 @@ ul, ol {
 .footer-nav-widgets-wrapper.header-footer-group {
     background-color: #007b5e;
 }
-.wp-block-search__label{
-	color:white;
-}
-.wp-block-search__label:hover{
-	color:white;
-	font-weight:800;
-	margin-left:10px;
-}
-.wp-block-search__button:hover{
-	text-decoration:none;
-	color:red;
-}
 .footer-widgets-outer-wrapper {
 	padding: 0;
 }
@@ -6627,5 +6614,59 @@ footer#site-footer {
 .header-footer-group pre, .header-footer-group fieldset, .header-footer-group input, .header-footer-group textarea, .header-footer-group table, .header-footer-group table *, .footer-nav-widgets-wrapper, #site-footer, .menu-modal nav *, .footer-widgets-outer-wrapper, .footer-top {
     border-bottom: none;
 }
+.column-one{
+	display: contents !important;
+}
+.column-one .widget{
+	width: 33%;
+}
+.widget{
+	padding: 0px 30px;
+	margin-top: 0px !important;
+}
+.widget-content h2{
+	font-size: 20px;
+	color: white;
+}
+.widget-content h2{
+	padding-left: 10px;
+    border-left: 3px solid white;
+	color:white;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+}
+.widget-content ul li::before {
+	font-family:"FontAwesome";
+	content:"\f101";
+	color:white;
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+.widget-content ul li:hover{
+	color: white;
+	margin-left:-10px;
+	font-weight:700;
+}
+.widget-content ul li a:hover{
+	color:white;
+	text-decoration:none;
+}
+.widget-content ul li a{
+	color:white;
+}
+.footer-inner{
+	padding-top: 50px;
+}
+.danh-sach .entry-title  a{
+text-transform: uppercase;
+font-family: 'Open Sans Condensed', sans-serif;
+font-weight: bold;
+font-size:23px;
+letter-spacing: -1px;
+}
+/*End CSS Footer*/
+
+
 
 

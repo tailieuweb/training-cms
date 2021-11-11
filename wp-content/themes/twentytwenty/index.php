@@ -23,7 +23,6 @@ get_header();
 
 	$archive_title    = '';
 	$archive_subtitle = '';
-
 	if ( is_search() ) {
 		global $wp_query;
 
@@ -77,7 +76,6 @@ get_header();
 	}
 
 	if ( have_posts() ) {
-
 		$i = 0;
 
 		while ( have_posts() ) {
