@@ -62,12 +62,12 @@ if ( $next_post || $prev_post ) {
             if ( $next_post ) {
                 // lấy ngày-tháng-năm bài viết.
                 $next_post_new_post_date = $next_post->post_date;
-                $next_post_time = strtotime($prev_post_new_post_date);
-                $next_post_newformat = date('y-m-d',$prev_post_time);
-                $next_post_expore = explode("-",$prev_post_newformat);
-                $next_post_day = $prev_post_expore[2];
-                $next_post_month = $prev_post_expore[1];
-                $next_post_year = $prev_post_expore[0];
+                $next_post_time = strtotime($next_post_new_post_date);
+                $next_post_newformat = date('y-m-d',$next_post_time);
+                $next_post_expore = explode("-",$next_post_newformat);
+                $next_post_day = $next_post_expore[2];
+                $next_post_month = $next_post_expore[1];
+                $next_post_year = $next_post_expore[0];
                 ?>
                 <!-- Bài viết tiếp theo -->
                 <div class="another__post">
