@@ -52,11 +52,10 @@ with others.
 
 /*	0. CSS Reset
 /* -------------------------------------------------------------------------- */
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
 
 html,
 body {
-	
 	border: none;
 	margin: 0;
 	padding: 0;
@@ -135,86 +134,6 @@ body {
 	text-align: left;
 }
 
-
-/* Footer */
-.footer-nav-widgets-wrapper.header-footer-group {
-    background: #007b5e !important;
-}
-h2.border-rg {
-    color: white;
-}
-@media (min-width: 700px){
-	.footer-widgets .widget {
-    border-top: none;
-    margin-top: 0rem;
-    padding-top: 0;
-	}
-}
-
-.wp-block-group__inner-container li a {
-    text-decoration: none !important;
-}
-
-.wp-block-group__inner-container li:hover {
-    margin-left: 5px;
-	transition: .5s all ease;
-}
-
-/* .wp-block-group__inner-container li:hover a{
-    color: #e51000;
-} */
-
-
-.wp-block-group__inner-container li a:nth-child(1):before {
-    content: "\f101";
-    font: normal normal normal 14px/1 FontAwesome;
-    top: 3px;
-    left: -18px;
-    width: 5px;
-    padding-right: 10px;
-    height: 5px;
-}
-
-.footer-widgets.column-one.grid-item {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-.footer-widgets.column-two.grid-item {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-.widget.widget_block {
-    padding-right: 20px;
-}
-.wp-block-group__inner-container {
-    font-size: 10px;
-}
-.wp-block-group__inner-container h2 {
-    font-size: 25px;
-}
-h2.border-rg {
-    border-left: 5px solid white;
-    padding-left: 5px;
-}
-ul.wp-block-archives-list.wp-block-archives li a {
-    color: white;
-}
-ul.wp-block-categories-list.wp-block-categories li a {
-    color: white;
-}
-
-ul.wp-block-latest-posts__list.aligncenter.demi.wp-block-latest-posts li a {
-    color: white;
-}
-footer.wp-block-latest-comments__comment-meta {
-    color: white;
-}
-footer.wp-block-latest-comments__comment-meta a{
-    color: white;
-}
-
-
-
 @supports ( font-variation-settings: normal ) {
 
 	body {
@@ -233,6 +152,7 @@ footer.wp-block-latest-comments__comment-meta a{
 
 #site-content {
 	overflow: hidden;
+	background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_pattern.png) repeat;
 }
 
 
@@ -1072,8 +992,7 @@ section {
 .section-inner {
 	margin-left: auto;
 	margin-right: auto;
-	/* Trang sua */
-	/* max-width: 120rem; */
+	max-width: 120rem;
 	width: calc(100% - 4rem);
 }
 
@@ -3082,6 +3001,7 @@ h2.entry-title {
 	margin-top: 0.15em;
 }
 
+
 /* Block: Shared Media Styles ---------------- */
 
 .wp-block-embed figcaption,
@@ -3668,7 +3588,7 @@ figure.wp-block-table.is-style-stripes {
 /* Alignment Classes ------------------------- */
 
 .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
-	max-width: 58rem;
+	max-width: 55rem;
 	width: calc(100% - 4rem);
 }
 
@@ -4457,7 +4377,7 @@ div.comment:first-of-type {
 
 .footer-nav-widgets-wrapper,
 #site-footer {
-	/* background-color: #007b5e; */
+	background-color: #fff;
 	border-color: #dedfdf;
 	border-style: solid;
 	border-width: 0;
@@ -5675,7 +5595,7 @@ a.to-the-top > * {
 	/* FOOTER WIDGETS */
 
 	.footer-widgets-outer-wrapper {
-		/* padding: 8rem 0; */
+		padding: 8rem 0;
 	}
 
 	.footer-widgets-wrapper {
@@ -5696,6 +5616,7 @@ a.to-the-top > * {
 
 	.footer-widgets .widget {
 		border-top: none;
+		margin-top: 5rem;
 		padding-top: 0;
 	}
 
@@ -5765,7 +5686,7 @@ a.to-the-top > * {
 		align-items: center;
 		display: flex;
 		justify-content: space-between;
-		padding: 2.8rem 0;
+		padding: 0 0;
 	}
 
 	.header-titles-wrapper {
@@ -6558,77 +6479,102 @@ a.to-the-top > * {
 	}
 }
 
-/* footer update */
-/* Footer */
-
-section {
-    padding: 60px 0;
+/*Vĩnh - adjust css*/
+/*css contain-main, entry-content*/
+.content-main{
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 20px 0;
 }
-
-section .section-title {
-    text-align: center;
-    color: #007b5e;
-    margin-bottom: 50px;
+.entry-content .content-main .content-adjust-post .entry-title-adjust{
+	margin: 0;
+	font-size: 26px;
+		font-family: 'Open Sans Condensed', sans-serif;
+}
+.entry-title-adjust a{
+	color: #428bca;
+	text-decoration: none;
     text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+	font-size: 18px;
 }
-#site-footer {
-    background: #007b5e !important;
+.content-adjust-post-meta .post-meta-wrapper{
+	margin-top: 0;
 }
-#site-footer .text{
-	text-align: center;
-	color: #fff;
+.content-adjust-post{
+	padding: 5px;
 }
-#site-footer .text a{
-	color: #fff;
+.content-adjust-post p{
+	font-size: 0.9em;
+	font-family: 'Open Sans', sans-serif;
+	color: #777;
 }
-#site-footer ul.social li{
-	padding: 3px 0;
+.content-adjust-post-meta{
+	padding: 5px;
 }
-#site-footer ul.social li a i {
-    margin-right: 5px;
-	font-size:25px;
-	-webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
-}
-#site-footer ul.social li:hover a i {
-	font-size:30px;
-	margin-top:-10px;
-}
-#site-footer ul.social li a,
-#site-footer ul.quick-links li a{
-	color:#ffffff;
-}
-#site-footer ul.social li a:hover{
-	color:#eeeeee;
-}
-#site-footer ul.quick-links li{
-	padding: 3px 0;
-	-webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
-}
-#site-footer ul.quick-links li:hover{
-	padding: 3px 0;
-	margin-left:5px;
-	font-weight:700;
-}
-#site-footer ul.quick-links li a i{
-	margin-right: 5px;
-}
-#site-footer ul.quick-links li:hover a i {
-    font-weight: 700;
-}
-#site-footer .list-unstyled{
-	text-align: center;
-	list-style: none;
+.post-month{
+	font-size: 0.9em;
+	
 }
 
-@media (max-width:767px){
-	#site-footer h5 {
-    padding-left: 0;
-    border-left: transparent;
-    padding-bottom: 0px;
-    margin-bottom: 10px;
+
+/*end css entry-content*/
+
+/*css header*/
+.header-title-adjust h1:hover{
+	color: #d7dadd;
 }
+.navbar-adjust li {
+	margin: 0;
+	padding: 0 6px;
 }
+.navbar-adjust .active{
+	background-color: #d7dadd;
+}
+.navbar-adjust li .navbar-brand{
+	padding: 25px 15px;
+	text-decoration: none;
+	font-size: 1em;
+	color: #000
+}
+.btn-submit-header{
+	background-color: #fff;
+	color: #000;
+	font-size: 12px;
+	padding: 8px;
+}
+.btn-submit-header:hover{
+	background-color: #d7dadd;
+}
+.menu-item a{
+	color: #777 !important;
+}
+.fa-header{
+	font-size: 20px;
+	color: black;
+
+}
+.dropdown-toggle{
+	background-color: transparent !important;
+		border: none;
+}
+.dropdown-toggle::after{
+	border: none;
+}
+.caret{
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: 4px solid;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent; 
+}
+.account-text-header{
+	padding-top: 9px;
+	color:#6d6d6d;
+	font-weight: 600;
+	font-size: 1.2rem;
+}
+/*end css header*/
+

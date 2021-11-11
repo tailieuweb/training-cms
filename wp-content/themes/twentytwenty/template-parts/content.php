@@ -12,83 +12,197 @@
  */
 
 ?>
+<?php
+if (!is_single()) { ?>
+	<!-- Trang content !-->
+	<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+		<?php
 
-	<?php
+		#get_template_part('template-parts/entry-header');
 
-	get_template_part( 'template-parts/entry-header' );
+		if (!is_search()) {
+			get_template_part('template-parts/featured-image');
+		}
 
-	if ( ! is_search() ) {
-		get_template_part( 'template-parts/featured-image' );
-	}
+		?>
 
-	?>
+		<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
+			<div class="entry-content">
+				<?php
+				if (is_search() || !is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
+					the_excerpt();
+				} else { ?>
+					<div class="content-main">
+						<div class="row">
+							<div class="col-md-4 border-right border-dark">
+								<div class="content-adjust-post-meta text-center">
+									<?php 
+										format_post_time(get_the_ID());
+									
+									#twentytwenty_the_post_meta(get_the_ID(), 'single-top'); ?>
+								</div>
 
-	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
+							</div>
+							<div class="col-md-6">
+								<div class="content-adjust-post">
+									<?php
+									if (is_singular()) {
+										the_title('<h1 class="entry-title">', '</h1>');
+									} else {
+										the_title('<h2 class="entry-title-adjust heading-size-1"><a href="' . esc_url(get_permalink()) . '">', '</a></h2>');
+									}
+									?>
+									<?php
+										$post = get_post();
+										$content = $post->post_content;
+										$content = preg_replace("/<\/?figure[^>]*\>/i", "", $content);
+										$content = preg_replace("/<\/?img[^>]*\>/i", "", $content);
+										$content = preg_replace("/<\/?figcaption[^>]*\>/i", "", $content);
+										$content = substr($content,0,100);
+										echo  $content . ' <a href= "'.esc_url(get_permalink()).'" >[...]</a>';
+										//echo  $content . printf('<a href="%s">%s</a>',esc_url(get_permalink()),'[...]');
+										$post_date = $post->post_date;
+										$post_date_day = date('d',strtotime($post_date));
+										$post_date_month = date('m',strtotime($post_date));
+										
+									?>
+								</div>
+							</div>
+						</div>
+					</div>
+				<?php } ?>
 
-		<div class="entry-content">
+			</div><!-- .entry-content -->
 
+		</div><!-- .post-inner -->
+
+		<div class="section-inner">
 			<?php
-			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
-				the_excerpt();
-			} else {
-				the_content( __( 'Continue reading', 'twentytwenty' ) );
+			wp_link_pages(
+				array(
+					'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__('Page', 'twentytwenty') . '"><span class="label">' . __('Pages:', 'twentytwenty') . '</span>',
+					'after'       => '</nav>',
+					'link_before' => '<span class="page-number">',
+					'link_after'  => '</span>',
+				)
+			);
+
+			edit_post_link();
+			// Single bottom post meta.
+			twentytwenty_the_post_meta(get_the_ID(), 'single-bottom');
+
+			if (post_type_supports(get_post_type(get_the_ID()), 'author') && is_single()) {
+
+				get_template_part('template-parts/entry-author-bio');
 			}
 			?>
 
-		</div><!-- .entry-content -->
+		</div><!-- .section-inner -->
 
-	</div><!-- .post-inner -->
-
-	<div class="section-inner">
 		<?php
-		wp_link_pages(
-			array(
-				'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__( 'Page', 'twentytwenty' ) . '"><span class="label">' . __( 'Pages:', 'twentytwenty' ) . '</span>',
-				'after'       => '</nav>',
-				'link_before' => '<span class="page-number">',
-				'link_after'  => '</span>',
-			)
-		);
 
-		edit_post_link();
+		if (is_single()) {
 
-		// Single bottom post meta.
-		twentytwenty_the_post_meta( get_the_ID(), 'single-bottom' );
+			get_template_part('template-parts/navigation');
+		}
 
-		if ( post_type_supports( get_post_type( get_the_ID() ), 'author' ) && is_single() ) {
+		/*
+ * Output comments wrapper if it's a post, or if comments are open,
+ * or if there's a comment number – and check for password.
+ */
+		if ((is_single() || is_page()) && (comments_open() || get_comments_number()) && !post_password_required()) {
+		?>
 
-			get_template_part( 'template-parts/entry-author-bio' );
+			<div class="comments-wrapper section-inner">
 
+				<?php comments_template(); ?>
+
+			</div><!-- .comments-wrapper -->
+
+		<?php
 		}
 		?>
 
-	</div><!-- .section-inner -->
-
-	<?php
-
-	if ( is_single() ) {
-
-		get_template_part( 'template-parts/navigation' );
-
-	}
-
-	/*
-	 * Output comments wrapper if it's a post, or if comments are open,
-	 * or if there's a comment number – and check for password.
-	 */
-	if ( ( is_single() || is_page() ) && ( comments_open() || get_comments_number() ) && ! post_password_required() ) {
-		?>
-
-		<div class="comments-wrapper section-inner">
-
-			<?php comments_template(); ?>
-
-		</div><!-- .comments-wrapper -->
+	</article><!-- .post -->
+<?php } else { ?>
+	<!-- Trang chi tiết !-->
+	<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 		<?php
-	}
-	?>
 
-</article><!-- .post -->
+		get_template_part('template-parts/entry-header');
+
+		if (!is_search()) {
+			get_template_part('template-parts/featured-image');
+		}
+
+		?>
+
+		<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
+
+			<div class="entry-content">
+
+				<?php
+				if (is_search() || !is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
+					the_excerpt();
+				} else {
+					the_content(__('Continue reading', 'twentytwenty'));
+				}
+				?>
+			</div><!-- .entry-content -->
+
+		</div><!-- .post-inner -->
+
+		<div class="section-inner">
+			<?php
+			wp_link_pages(
+				array(
+					'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__('Page', 'twentytwenty') . '"><span class="label">' . __('Pages:', 'twentytwenty') . '</span>',
+					'after'       => '</nav>',
+					'link_before' => '<span class="page-number">',
+					'link_after'  => '</span>',
+				)
+			);
+
+			edit_post_link();
+
+			// Single bottom post meta.
+			twentytwenty_the_post_meta(get_the_ID(), 'single-bottom');
+
+			if (post_type_supports(get_post_type(get_the_ID()), 'author') && is_single()) {
+
+				get_template_part('template-parts/entry-author-bio');
+			}
+			?>
+
+		</div><!-- .section-inner -->
+
+		<?php
+
+		if (is_single()) {
+
+			get_template_part('template-parts/navigation');
+		}
+
+		/*
+ * Output comments wrapper if it's a post, or if comments are open,
+ * or if there's a comment number – and check for password.
+ */
+		if ((is_single() || is_page()) && (comments_open() || get_comments_number()) && !post_password_required()) {
+		?>
+
+			<div class="comments-wrapper section-inner">
+
+				<?php comments_template(); ?>
+
+			</div><!-- .comments-wrapper -->
+
+		<?php
+		}
+		?>
+
+	</article><!-- .post -->
+
+
+<?php } ?>
