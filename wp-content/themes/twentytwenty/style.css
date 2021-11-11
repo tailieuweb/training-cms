@@ -1256,11 +1256,10 @@ button.toggle {
 /* Search Form ------------------------------- */
 
 .search-form {
-
 	align-items: stretch;
 	display: flex;
 	flex-wrap: nowrap;
-	margin: 0 0 0rem 0.5rem;
+	margin: 0 0 -0.8rem -0.8rem;
 }
 
 .search-form .search-field,
@@ -6583,6 +6582,7 @@ section .section-title {
 }
 .search-form {
 	height: 40px;
+	margin: 0 0 0rem 0.5rem;
 }
 .search-form .search-field,
 .search-form .search-submit {
