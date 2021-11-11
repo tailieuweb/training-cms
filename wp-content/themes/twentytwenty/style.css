@@ -188,10 +188,6 @@ h2.border-rg {
 footer.wp-block-latest-comments__comment-meta {
     color: white;
 }
-/* .wp-block-group__inner-container li:hover a{
-    color: #e51000;
-} */
-
 
 .footer-widgets .widget_block .widget-content .wp-block-group .wp-block-group__inner-container li a:nth-child(1):before {
     content: "\f101";
@@ -5786,7 +5782,7 @@ section .section-title {
 	border-bottom: 1px solid black;
 }
 
-/* panigation Trang */
+/* pagination Trang */
 .pagination-single-inner .post-meta-wrapper{
 	max-width: 12rem !important;
 }
