@@ -111,13 +111,11 @@ blockquote::after {
 li.recent-name {
     line-height: 27px !important;
     color: #7FB1DB;
-    width: 300px ;
+    width: 321px ;
     list-style: none;
     border-bottom: 0.25px solid gray;
     padding-top: 10px;
-    padding-bottom: 15px;
-    
-
+    padding-bottom: 30px;
 }
 
 ul li.recent-name a {
@@ -130,16 +128,15 @@ li.recent-name:last-child {
 }
 
 .crossedbg {
-    width: 400px;
+    width: 422px;
     background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
     height: 15px;
 }
 
 .ul-recent {
-    width: 400px;
+    width: 422px;
     background: white;
     padding-top: 15px;
-    padding-bottom:1px;
 }
 
 li.recent-name::before {
