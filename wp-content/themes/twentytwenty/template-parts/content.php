@@ -12,9 +12,14 @@
  */
 //add class 'danh-sach' for home page
 $home = '';
+
 if(!is_single()){
     $home = 'danh-sach';
 }
+if(is_search()){
+	$home = 'tim_kiem';
+}
+
 
 ?>
 <!-- Insert class 'danh-sach' -->

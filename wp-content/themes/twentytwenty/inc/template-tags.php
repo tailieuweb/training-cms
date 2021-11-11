@@ -393,11 +393,15 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 							<?php twentytwenty_the_theme_svg( 'calendar' ); ?>
 						</span>
 						<span class="meta-text">
-                            <?php
-                            date_default_timezone_set('Asia/Ho_Chi_Minh');
-                            $time = the_time( get_option( 'date_format' ));
-                            ?>
-							<a href="<?php the_permalink(); ?>"><?php   ?></a>
+							<!-- the_time( get_option( 'date_format' )); -->
+							<a href="<?php the_permalink(); ?>"><?php 
+								$post = get_post($post_id);
+								$post_date = $post->post_date;
+								$post_date_day = date('d', strtotime($post_date));
+								$post_date_month = date('m', strtotime($post_date));
+								$post_date_finish = printf("<span class='display-3' >%u</span> <br> <p class='post-month'>THÁNG %u</p>"
+								,$post_date_day,$post_date_month);  ?>
+							</a>
 						</span>
 					</li>
 					<?php
