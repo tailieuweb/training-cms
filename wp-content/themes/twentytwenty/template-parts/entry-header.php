@@ -25,7 +25,6 @@ if (is_single()) {
 	$type_post = 'single-date';
 }
 ?>
-
 <header class="entry-header<?php echo esc_attr($entry_header_classes); ?>">
     <?php if (is_single()) { ?>
     <div class="row">
