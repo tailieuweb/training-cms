@@ -1,42 +1,59 @@
-/* Module 9 css */
-
-.footer-widgets9 {
-    position: absolute;
-    top: 50px;
-    left: 20px;
+li.cate-name {
+	line-height: 80px !important;
+	color: #7FB1DB;
+    line-height: 5rem;
+    width: 200px;
+    list-style: none;
+    border-bottom: 0.25px solid gray;
 }
+ul li.cate-name a {
+    text-decoration: none;
+    color: #90BBE0;
+}
+li.cate-name:last-child{
+	border-bottom: 0px solid gray;
+}
+.crossedbg {
+	width: 270px;
+    background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
+    height: 15px;
+}
+.cate {
 
-.footer-widgets9 h2 {
-    font-weight: 700;
+	padding-left: 20px;
+	padding-bottom: 1px;
+	margin-left: 60px;
+    width: 321px;
+	margin-top: 90px;
+
+    height: auto;
+}
+.ul-cate {
+    width: 270px;
+    background: white;
+}
+li.cate-name::before {
+	margin-right: 10px;
+	color: #F5CE31;
+    content: "\f111";
+    font: normal normal normal 14px/1 FontAwesome;
+    top: 3px;
+    left: -18px;
+    width: 5px;
+    padding-right: 10px;
+    height: 5px;
+    font-size: 1px !important;
+    font-weight: bold !important;
+}
+.col-md-3>.cate>h2{
+    font-weight: 800 !important;
+    font-size: 1.3em !important;
     color: black;
-}
-
-.footer-widgets9 .cat-item a {
-    color: #37bbe4 !important;
-    font-weight: 400;
-    font-size: 12px;
-}
-
-.footer-widgets9 .cat-item::before {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #f5ce31;
-    content: "\2022";
-    font-size: 30px;
-    padding-right: 0.5em;
     position: relative;
-    top: 0.15em;
+    top: 0;
+    left: 0px;
+    padding-top:10px;
 }
-
-.footer-widgets9 .wp-block-categories-list {
-    background: #fff;
-    padding-right: 130px;
-    padding-left: 30px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    box-shadow: 0px -16px 0px #c1c1c161;
-}
-
-.footer-widgets9 .wp-block-categories-list .cat-item {
-    border-bottom: 1px #c1c1c1 solid;
-    width: 190%;
+h2{
+    color:#F5CE31
 }

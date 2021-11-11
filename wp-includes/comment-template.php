@@ -2327,8 +2327,7 @@ function wp_list_comments( $args = array(), $comments = null ) {
 function comment_form( $args = array(), $post_id = null ) {
 	if ( null === $post_id ) {
 		$post_id = get_the_ID();
-
-    }
+	}
 
 	// Exit the function when comments for the post are closed.
 	if ( ! comments_open( $post_id ) ) {
@@ -2345,60 +2344,19 @@ function comment_form( $args = array(), $post_id = null ) {
 	$commenter     = wp_get_current_commenter();
 	$user          = wp_get_current_user();
 	$user_identity = $user->exists() ? $user->display_name : '';
+
 	$args = wp_parse_args( $args );
 	if ( ! isset( $args['format'] ) ) {
 		$args['format'] = current_theme_supports( 'html5', 'comment-form' ) ? 'html5' : 'xhtml';
 	}
 
-	$req      = get_option( 'require_name_email' ); // Lấy  option có ràng buộc không 1 hoặc  0
+	$req      = get_option( 'require_name_email' );
 	$html_req = ( $req ? " required='required'" : '' );
 	$html5    = 'html5' === $args['format'];
 
 
-	$fields = array(
-		'author' => sprintf(
-			'<p class="comment-form-author">%s %s</p>',
-			sprintf(
-				'<label for="author">%s%s</label>',
-				__( 'Name' ),
-				( $req ? ' <span class="required">*</span>' : '' )
-			),
-			sprintf(
-				'<input id="author" name="author" type="text" value="%s" size="30" maxlength="245"%s />',
-				esc_attr( $commenter['comment_author'] ),
-				$html_req
-			)
-		), // phần form name
-		'email'  => sprintf(
-			'<p class="comment-form-email">%s %s</p>',
-			sprintf(
-				'<label for="email">%s%s</label>',
-				__( 'Email' ),
-				( $req ? ' <span class="required">*</span>' : '' )
-			),
-			sprintf(
-				'<input id="email" name="email" %s value="%s" size="30" maxlength="100" aria-describedby="email-notes"%s />',
-				( $html5 ? 'type="email"' : 'type="text"' ),
-				esc_attr( $commenter['comment_author_email'] ),
-				$html_req
-			)
-		),// phần form email
-		'url'    => sprintf(
-			'<p class="comment-form-url">%s %s</p>',
-			sprintf(
-				'<label for="url">%s</label>',
-				__( 'Website' )
-			),
-			sprintf(
-				'<input id="url" name="url" %s value="%s" size="30" maxlength="200" />',
-				( $html5 ? 'type="url"' : 'type="text"' ),
-				esc_attr( $commenter['comment_author_url'] )
-			)
-		),// khúc này là phần website
-	);
 
 	if ( has_action( 'set_comment_cookies', 'wp_set_comment_cookies' ) && get_option( 'show_comments_cookies_opt_in' ) ) {
-
 		$consent = empty( $commenter['comment_author_email'] ) ? '' : ' checked="checked"';
 
 		$fields['cookies'] = sprintf(
@@ -2409,13 +2367,12 @@ function comment_form( $args = array(), $post_id = null ) {
 			),
 			sprintf(
 				'<label for="wp-comment-cookies-consent">%s</label>',
-				__( 'Save my name, email, and website in this browser for the next time I comment.' )
+				__( 'Save information' )
 			)
-		); // này là save as ...
+		);
 
 		// Ensure that the passed fields include cookies consent.
 		if ( isset( $args['fields'] ) && ! isset( $args['fields']['cookies'] ) ) {
-		    // khúc này ko có vì ko có cookie consent
 			$args['fields']['cookies'] = $fields['cookies'];
 		}
 	}
@@ -2438,14 +2395,13 @@ function comment_form( $args = array(), $post_id = null ) {
 	$defaults = array(
 		'fields'               => $fields,
 		'comment_field'        => sprintf(
-			'<p style="font-size: 20px;background: #cccccc" class="comment-form-comment">%s %s</p>',
+			'<p class="comment-form-comment">%s %s</p>',
 			sprintf(
-				'<div style="border-radius: 10px;padding-top: 40px; background: #f7f7f7;padding-left: 20px;" > <label style="font-size: 24px;
-            padding:10px 16px;padding-bottom: 0;background:#ffffff;width: 160px;border-radius: 10px 10px 0 0 " for="comment">Make a Post</label> </div>',
-				_x( 'Make a Post', 'noun' )
+				'<label for="comment"><div id="divcomment"><p id="lblcomment">%s</p></div></label>',
+				_x( 'Comment', 'noun' )
 			),
-			'<textarea style="font-size: 20px;" id="comment" placeholder="What are you thinking ?" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea>'
-		), // Chỗ này sửa cái form comment Style css nó
+			'<textarea placeholder="What are you thinking..." id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea>'
+		),
 		'must_log_in'          => sprintf(
 			'<p class="must-log-in">%s</p>',
 			sprintf(
@@ -2454,7 +2410,7 @@ function comment_form( $args = array(), $post_id = null ) {
 				/** This filter is documented in wp-includes/link-template.php */
 				wp_login_url( apply_filters( 'the_permalink', get_permalink( $post_id ), $post_id ) )
 			)
-		), // chỗ này là phải login . Ko có trên giao diện
+		),
 		'logged_in_as'         => sprintf(
 			'<p class="logged-in-as">%s</p>',
 			sprintf(
@@ -2467,7 +2423,7 @@ function comment_form( $args = array(), $post_id = null ) {
 				/** This filter is documented in wp-includes/link-template.php */
 				wp_logout_url( apply_filters( 'the_permalink', get_permalink( $post_id ), $post_id ) )
 			)
-		),// cái này ko có trên giao diện
+		),
 		'comment_notes_before' => sprintf(
 			'<p class="comment-notes">%s%s</p>',
 			sprintf(
@@ -2475,7 +2431,7 @@ function comment_form( $args = array(), $post_id = null ) {
 				__( 'Your email address will not be published.' )
 			),
 			( $req ? $required_text : '' )
-		), // cái này có trên giao diện nhưng là những cái note
+		),
 		'comment_notes_after'  => '',
 		'action'               => site_url( '/wp-comments-post.php' ),
 		'id_form'              => 'commentform',
@@ -2496,7 +2452,7 @@ function comment_form( $args = array(), $post_id = null ) {
 		'submit_button'        => '<input name="%1$s" type="submit" id="%2$s" class="%3$s" value="%4$s" />',
 		'submit_field'         => '<p class="form-submit">%1$s %2$s</p>',
 		'format'               => 'xhtml',
-	); // các thuộc tính chung của form comment
+	);
 
 	/**
 	 * Filters the comment form default arguments.
@@ -2508,9 +2464,10 @@ function comment_form( $args = array(), $post_id = null ) {
 	 * @param array $defaults The default comment form arguments.
 	 */
 	$args = wp_parse_args( $args, apply_filters( 'comment_form_defaults', $defaults ) );
+
 	// Ensure that the filtered arguments contain all required default values.
 	$args = array_merge( $defaults, $args );
-     // cái này là đã nối các thuộc tính vào với nhau rồi
+
 	// Remove `aria-describedby` from the email field if there's no associated description.
 	if ( isset( $args['fields']['email'] ) && false === strpos( $args['comment_notes_before'], 'id="email-notes"' ) ) {
 		$args['fields']['email'] = str_replace(
@@ -2529,7 +2486,7 @@ function comment_form( $args = array(), $post_id = null ) {
 	?>
 	<div id="respond" class="<?php echo esc_attr( $args['class_container'] ); ?>">
 		<?php
-		echo  $args['title_reply_before'];
+		echo $args['title_reply_before'];
 
 		comment_form_title( $args['title_reply'], $args['title_reply_to'] );
 
@@ -2542,7 +2499,7 @@ function comment_form( $args = array(), $post_id = null ) {
 		echo $args['title_reply_after'];
 
 		if ( get_option( 'comment_registration' ) && ! is_user_logged_in() ) :
-            // khúc này là  những comment phải đăng ký
+
 			echo $args['must_log_in'];
 			/**
 			 * Fires after the HTML-formatted 'must log in after' message in the comment form.
@@ -2559,7 +2516,7 @@ function comment_form( $args = array(), $post_id = null ) {
 				esc_attr( $args['id_form'] ),
 				esc_attr( $args['class_form'] ),
 				( $html5 ? ' novalidate' : '' )
-			);// chỗ này hiển thị cho thuộc tính của form
+			);
 
 			/**
 			 * Fires at the top of the comment form, inside the form tag.
@@ -2597,13 +2554,13 @@ function comment_form( $args = array(), $post_id = null ) {
 
 			else :
 
-				echo $args['comment_notes_before']; // Cái này là câu note trước comment  live cái đéo gì đó
+				echo $args['comment_notes_before'];
 
 			endif;
 
 			// Prepare an array of all fields, including the textarea.
 			$comment_fields = array( 'comment' => $args['comment_field'] ) + (array) $args['fields'];
-			// Cái này là các feild comment trừ cái  nút post comment ra
+
 			/**
 			 * Filters the comment form fields, including the textarea.
 			 *
@@ -2615,12 +2572,11 @@ function comment_form( $args = array(), $post_id = null ) {
 
 			// Get an array of field names, excluding the textarea.
 			$comment_field_keys = array_diff( array_keys( $comment_fields ), array( 'comment' ) );
-			  // cái đống này hiển thị đống key
+
 			// Get the first and the last field name, excluding the textarea.
 			$first_field = reset( $comment_field_keys );
 			$last_field  = end( $comment_field_keys );
 
-			// lấy ra cái first và last field
 			foreach ( $comment_fields as $name => $field ) {
 
 				if ( 'comment' === $name ) {
@@ -2670,17 +2626,13 @@ function comment_form( $args = array(), $post_id = null ) {
 				}
 			}
 
-            $args['label_submit'] = 'share'; // chỉnh sửa button Share ở cuối form
-            $args['class_submit'] = 'submit submit-btn-config'; // chỉnh sửa button Share ở cuối form
-            $submit_button = sprintf(
-                $args['submit_button'],
-                esc_attr( $args['name_submit'] ),
-                esc_attr( $args['id_submit'] ),
-                esc_attr( $args['class_submit'] ),
-                esc_attr( $args['label_submit'] )
-            );
-            // chỉnh sửa button Share ở cuối form
-
+			$submit_button = sprintf(
+				$args['submit_button'],
+				esc_attr( $args['name_submit'] ),
+				esc_attr( $args['id_submit'] ),
+				esc_attr( $args['class_submit'] ),
+				esc_attr( $args['label_submit'] )
+			);
 
 			/**
 			 * Filters the submit button for the comment form to display.
