@@ -5029,19 +5029,8 @@ section .section-title {
 	font-size: medium;
 }
 
-#footer>div.container>div>div>div>div>div>div>ul>li {
-	/* padding: 3px 0; */
-	margin-left: 20px;
-	-webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
-}
 
-#footer>div.container>div>div>div>div>div>div>ul>li:hover {
-	padding: 3px 0;
-	margin-left: 3px;
-	font-weight: 700;
-}
+
 
 #footer>div.container>div>div>div>div>div>div>ul>li:hover a i {
 	font-weight: 500;
