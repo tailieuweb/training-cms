@@ -12,6 +12,7 @@
  */
 
 ?>
+<!-- Moduele 2 -Trinh  !-->
 <!--Page content main!-->
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 	<?php
