@@ -393,60 +393,49 @@ function twentytwenty_get_post_meta($post_id = null, $location = 'single-top') {
 							<span class="screen-reader-text"><?php _e('Post author', 'twentytwenty'); ?></span>
 							<?php twentytwenty_the_theme_svg('user'); ?>
 						</span>
-                        <span class="meta-text">
-							<?php
-                            printf(
-                            /* translators: %s: Author name. */
-                                    __('By %s', 'twentytwenty'),
-                                    '<a href="'.esc_url(get_author_posts_url(get_the_author_meta('ID'))).'">'.esc_html(get_the_author_meta('display_name')).'</a>'
-                            );
-                            ?>
+//								/* translators: %s: Author name. */
+//								__( 'By %s', 'twentytwenty' ),
+//								'<a href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author_meta( 'display_name' ) ) . '</a>'
+//							);
+//							?>
+<!--						</span>-->
+<!--					</li>-->
+					<?php
+
+				}
+
+				// Post date.
+				if ( in_array( 'post-date', $post_meta, true ) ) {
+
+					$has_meta = true;
+					?>
+					<li class="post-date meta-wrapper">
+						<span class="meta-icon">
+							<span class="screen-reader-text"><?php _e( 'Post date', 'twentytwenty' ); ?></span>
+							<?php twentytwenty_the_theme_svg( 'calendar' ); ?>
 						</span>
-                    </li>
-                    <?php
+						<span class="meta-text">
+							<!-- the_time( get_option( 'date_format' )); -->
+							<a href="<?php the_permalink(); ?>"><?php 
+								$post = get_post($post_id);
+								$post_date = $post->post_date;
+								$post_date_day = date('d', strtotime($post_date));
+								$post_date_month = date('m', strtotime($post_date));
+								$post_date_finish = printf("<span class='display-3' >%u</span> <br> <p class='post-month'>THÁNG %u</p>"
+								,$post_date_day,$post_date_month);  ?>
+							</a>
+						</span>
+					</li>
+					<?php
 
-                }
+				}
 
-                // Post date.
-                $class = "";
-                if (is_single()) {
-                    $class = "myclass";
-                }
-                if (in_array('post-date', $post_meta, true)) {
+				// Categories.
+				if ( in_array( 'categories', $post_meta, true ) && has_category() ) {
 
-                    $has_meta = true;
-                    ?>
-                    <li class="post-date meta-wrapper ">
-                        <?php if ( ! is_single()) : ?>
-                            <span class="meta-icon ">
-							<span class="screen-reader-text "><?php _e('Post date', 'twentytwenty'); ?></span>
-							<?php twentytwenty_the_theme_svg('calendar'); ?>
-                    </span>
-                        <?php endif; ?>
-                        <span class="meta-text ">
-                    <?php if ( ! is_single()) : ?>
-                        <a href="<?php the_permalink(); ?>" <?php post_class($class); ?>><?php the_time(get_option('date_format')); ?></a>
-                    <?php else : ?>
-                        <div class="edit-date">
-                        <span class="span-day"><?php the_time('d'); ?></span>
-                        <span><?php the_time('m'); ?></span>
-                    </div>
-                        <div class="edit-year">
-                         <span>'<?php the_time('y'); ?></span>
-                    </div>
-                    <?php endif; ?>
-                            </span>
-                    </li>
-                    <?php
-
-                }
-
-                // Categories.
-                if (in_array('categories', $post_meta, true) && has_category() && ! is_single()) {
-
-                    $has_meta = true;
-                    ?>
-                    <li class="post-categories meta-wrapper">
+					$has_meta = true;
+					?>
+					<li class="post-categories meta-wrapper">
 						<span class="meta-icon">
 							<span class="screen-reader-text"><?php _e('Categories', 'twentytwenty'); ?></span>
 							<?php twentytwenty_the_theme_svg('folder'); ?>

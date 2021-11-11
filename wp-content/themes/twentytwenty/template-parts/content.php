@@ -10,13 +10,20 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
-$class= '';
-if (!is_single()){
-    $class = 'danh-sach';
-}
-?>
+//add class 'danh-sach' for home page
+$home = '';
 
-<article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
+if(!is_single()){
+    $home = 'danh-sach';
+}
+if(is_search()){
+	$home = 'tim_kiem';
+}
+
+
+?>
+<!-- Insert class 'danh-sach' -->
+<article <?php post_class($home); ?> id="post-<?php the_ID(); ?>">
 
 	<?php
 
@@ -27,24 +34,22 @@ if (!is_single()){
 	}
 
 	?>
-    <?php $boder ="boder" ?>
-	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
-        <?php
-        if (is_single()) {
-            ?>
-            <div class="container">
-                <div class="border2">
 
-                </div>
-            </div>
-        <?php }
-        ?>
+	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
+
 		<div class="entry-content">
 
 			<?php
 			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
+                if ( is_singular() ) {
+                    the_title( '<h1 class="entry-title">', '</h1>' );
+                } else {
+					//Show the post
+                    the_title( '<h2 class="entry-title heading-size-1-2"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
+                }
 				the_excerpt();
 			} else {
+
 				the_content( __( 'Continue reading', 'twentytwenty' ) );
 			}
 			?>
@@ -53,8 +58,8 @@ if (!is_single()){
 
 	</div><!-- .post-inner -->
 
-	<div class="section-inner">
-		<?php
+<!--	<div class="section-inner">-->
+<!--		--><?php
 		wp_link_pages(
 			array(
 				'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__( 'Page', 'twentytwenty' ) . '"><span class="label">' . __( 'Pages:', 'twentytwenty' ) . '</span>',
