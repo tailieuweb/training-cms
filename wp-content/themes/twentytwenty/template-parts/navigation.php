@@ -20,7 +20,8 @@ if ( $next_post || $prev_post ) {
 		$pagination_classes = ' only-one only-next';
 	}
 	?>
-	<nav class="pagination-single section-inner justify-content-center<?php echo esc_attr( $pagination_classes ); ?>" aria-label="<?php esc_attr_e( 'Post', 'twentytwenty' ); ?>" role="navigation">
+	<nav class="pagination-single section-inner justify-content-center<?php echo esc_attr( $pagination_classes ); ?>
+	y" aria-label="<?php esc_attr_e( 'Post', 'twentytwenty' ); ?>" role="navigation">
 		<div class="pagination-single-inner">
 			
 			<?php
