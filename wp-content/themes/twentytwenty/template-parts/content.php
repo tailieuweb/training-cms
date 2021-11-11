@@ -113,16 +113,16 @@ if ( ! is_search() ) {
 
 
 	<div class="entry-content">
-	<?php $has_sidebar_9 = is_active_sidebar( 'sidebar-9' );?>
+	<?php $has_sidebar_2 = is_active_sidebar( 'sidebar-2' );?>
 		<div class="row-adjust">
 			<div class="col-md-3" >
-				<?php if ( $has_sidebar_9 ) { ?>	
+				<!-- <?php if ( $has_sidebar_2 ) { ?>	 -->
 					<div class="content-widgets-wrapper">
-						<?php if ( $has_sidebar_9 ) { ?>
+						<?php if ( $has_sidebar_2 ) { ?>
 							<div class="content-widgets column-one grid-item">
-							<?php dynamic_sidebar( 'sidebar-9' ); ?>
+							<?php dynamic_sidebar( 'sidebar-2' ); ?>
 						</div>
-						<?php } ?>
+						<!-- <?php } ?> -->
 					</div>
 				<?php } ?>
 			</div>
