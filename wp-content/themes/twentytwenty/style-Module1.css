@@ -1,0 +1,77 @@
+#site-header .header-toggles .dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+#site-header .header-toggles .toggle-wrapper .dropdown-account-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 170%;
+    top: 0;
+    padding-left: 7px;
+}
+
+#site-header .header-toggles .toggle-wrapper .toggle .dropdown-toggle {
+    margin-top: 5px;
+}
+
+#site-header .header-toggles .toggle-wrapper.search-toggle-wrapper-dropdown:hover .dropdown-menu {
+    position: absolute;
+    top: 60px;
+    left: -40px;
+    display: block;
+}
+
+#site-header .header-toggles .toggle-wrapper .dropdown-menu {
+    font-size: 20px;
+}
+
+#site-header .header-toggles .toggle-wrapper .dropdown-menu a {
+    color: black;
+}
+/* Form search */
+.form-search-module-1{
+    display: flex !important;
+}
+.button-search-model-1{
+    margin-bottom: 12px;
+    margin-left: 11px;
+    padding-right: 11px;
+    border-radius: 5px    ;
+    background-color: white;
+    border: 1px solid rgb(119,119,119);
+    color: rgb(119,119,119);
+}
+
+/* Home button */
+.module-1-header-button-home {
+    padding: 50px 20px 39px 20px;
+    background-color: rgb(231, 231, 231);
+    margin: -18px 15px -28px 15px;
+}
+.header-inner.section-inner {padding: 0}
+.module-1-header-button-home a,
+.module-1-header-button-home a:hover,
+.module-1-header-button-home a:visited,
+.module-1-header-button-home a:focus {
+    color: rgb(109, 126, 144) !important;
+    text-decoration: none;
+    font-size: 18px;
+}
+/* User Login logout dropdown */
+.module-1-user-login-logout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+    padding: 10px 0 0 32px;
+    color: rgb(119, 119, 119) !important;
+}
+.module-1-user-login-logout .module-1-dropdown-menu,
+.module-1-user-login-logout .module-1-dropdown-menu:hover {
+    color: rgb(119, 119, 119) !important;
+    background-color: white;
+    border: none !important;
+    font-size: 18px;
+}

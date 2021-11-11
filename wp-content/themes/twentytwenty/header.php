@@ -17,8 +17,16 @@
 
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
-
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
 		<link rel="profile" href="https://gmpg.org/xfn/11">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/style-Module1.css' ?>" type="text/css" media="screen" />
 
 		<?php wp_head(); ?>
 
@@ -64,8 +72,18 @@
 							twentytwenty_site_logo();
 
 							// Site description.
-							twentytwenty_site_description();
+							// twentytwenty_site_description();
 						?>
+						<!-- Home Button -->
+					<div class="module-1-header-button-home">
+						<a href="<?= get_home_url() ?>">Home</a>
+					</div>
+						 <form class="navbar-form navbar-left form-search-module-1" method="GET">
+                			<div class="form-group">
+                        		<input type="text" class="form-control" name="s" placeholder="Search">
+                    		</div>
+                    		<button type="submit" class="btn btn-default button-search-model-1">Submit</button>
+                		</form>
 
 					</div><!-- .header-titles -->
 
@@ -191,6 +209,24 @@
 
 
 						</div><!-- .header-toggles -->
+						<!-- Header User Login/Logout Dropdown -->
+						<!-- Header User Login/Logout Dropdown -->
+					<div class="dropdown module-1-user-login-logout">
+						<i class="fa fa-user-circle-o fa-3x" aria-hidden="true"></i>
+						<button class="btn btn-secondary dropdown-toggle module-1-dropdown-menu" type="button" 
+						id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Account
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<?php if (!is_user_logged_in()) { ?>
+								<a class="dropdown-item" href="<?= get_home_url().'/login'?>">Login</a>
+							<?php } else { ?>
+								<a class="dropdown-item" href="<?= wp_logout_url()?>">Logout</a>
+							<?php } ?>
+						</div>
+					</div>
+
+				
 						<?php
 					}
 					?>
