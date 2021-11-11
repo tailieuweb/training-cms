@@ -6602,6 +6602,9 @@ a.to-the-top > * {
     top: 0;
   }
 }
+.row{
+  color: white;
+}
 
 /* Footer */
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
