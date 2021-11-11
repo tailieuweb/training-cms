@@ -106,7 +106,53 @@ blockquote::before,
 blockquote::after {
     content: "";
 }
+/* recent-post */
+    
+li.recent-name {
+    line-height: 27px !important;
+    color: #7FB1DB;
+    width: 300px ;
+    list-style: none;
+    border-bottom: 0.25px solid gray;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    
 
+}
+
+ul li.recent-name a {
+    text-decoration: none;
+    color: #90BBE0;
+}
+
+li.recent-name:last-child {
+    border-bottom: 0px solid gray;
+}
+
+.crossedbg {
+    width: 400px;
+    background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
+    height: 15px;
+}
+
+.ul-recent {
+    width: 400px;
+    background: white;
+    padding-top: 15px;
+    padding-bottom:1px;
+}
+
+li.recent-name::before {
+    margin-right: 15px;
+    color: #F5CE31;
+    content: "\f111";
+    font: normal normal normal 14px/1 FontAwesome;
+    top: 3px;
+    left: -18px;
+    width: 5px;
+    padding-right: 10px;
+    height: 5px;
+}
 
 /* -------------------------------------------------------------------------- */
 
