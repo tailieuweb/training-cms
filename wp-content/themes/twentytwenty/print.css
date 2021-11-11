@@ -17,9 +17,6 @@ Andreas Hecht in https://www.jotform.com/blog/css-perfect-print-stylesheet-98272
 # Links
 # Visibility
 --------------------------------------------------------------*/
-.html{
-  
-}
 @media print {
 
   /* Margins */

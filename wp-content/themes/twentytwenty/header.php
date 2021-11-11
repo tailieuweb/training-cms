@@ -12,7 +12,7 @@
 ?><!DOCTYPE html>
 
 <html class="no-js" <?php language_attributes(); ?>>
-<br>
+
 <head>
 
     <meta charset="<?php bloginfo('charset'); ?>">

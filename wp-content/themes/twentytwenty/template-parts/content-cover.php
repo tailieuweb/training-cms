@@ -8,7 +8,7 @@
  */
 
 ?>
-<?php echo"1213"?>
+
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 	<?php
 	// On the cover page template, output the cover header.
