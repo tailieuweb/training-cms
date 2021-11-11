@@ -1266,7 +1266,7 @@ button.toggle {
 	margin-right: auto;
 }
 
-/* Search Form ------------------------------- */
+/* Search Form */
 
 .search-form {
 	align-items: stretch;
@@ -1289,38 +1289,34 @@ button.toggle {
 	width: 100%;
 }
 
-/*
-Edit width, padding of form input
-*/
+/* Input */
 .search-form .search-field {
 	width: 100%;
-	padding: 25px 10px 25px 55px;
+	padding: 35px 20px 30px 60px;
 	border: none;
 }
-/*
-Create icon search
-*/
+
+/* Icon search */
 .search-form label::before{
 	content: '\f002';
 	font-family: FontAwesome !important;
 	color: #fff;
 	position: absolute;
-	top: 12px;
+	top: 15px;
 	left: 25px;
 	color: #000;
-	font-size: 28px;
+	font-size: 35px;
 }
-/*
-Edit color, background and position of button submit
-*/
+
+/* Submit */
 .search-form .search-submit {
 	flex-shrink: 0;
-	background: #00a32a !important;
-	border-radius: 5px;
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	padding: 15px !important;
+    background: #0b8329 !important;
+    border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    right: 24px;
+    padding: 15px;
 }
 
 .search-form .search-submit:focus,
