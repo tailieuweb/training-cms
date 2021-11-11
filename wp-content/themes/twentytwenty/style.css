@@ -6627,5 +6627,53 @@ footer#site-footer {
 .header-footer-group pre, .header-footer-group fieldset, .header-footer-group input, .header-footer-group textarea, .header-footer-group table, .header-footer-group table *, .footer-nav-widgets-wrapper, #site-footer, .menu-modal nav *, .footer-widgets-outer-wrapper, .footer-top {
     border-bottom: none;
 }
+#commentform #submit{
+	background: #007bff;
+	margin-left: auto;
+	border-radius: 5px;
+}
+#commentform #submit:hover{
+	background: #0069d9;
+	text-decoration: none;
+}
+#commentform{
+	border: rgba(0,0,0,.125) solid 1px;
+	background: white;
+	max-width: 100rem !important;
+	padding-bottom: 20px;
+	border-radius: 5px;
+}
+#commentform .form-submit{
+	max-width: 90% !important;
+}
+.comment-form-comment{
+	max-width: 70rem !important;
+}
+#divcomment{
+	border-bottom: rgba(0,0,0,.125) solid 1px;
+	margin-bottom: 3rem;
+}
+#lblcomment{
+	width: fit-content;
+	margin: 0rem 20rem -1px 20rem !important;
+	padding: 10px;
+	border: rgba(0,0,0,.125) solid 1px;
+	border-bottom: white 1px solid;
+	border-top-left-radius: 5px;
+    border-top-right-radius: 5px
+}
+.comment-respond textarea{
+	border-radius: 4px;
+	width: 90%;
+	margin:auto;
+}
+.comment-respond textarea:focus{
+	border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
 
-
+.logged-in-as{
+	margin: auto !important;
+	padding: 30px 0px;
+}
