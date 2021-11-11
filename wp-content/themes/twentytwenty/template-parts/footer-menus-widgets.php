@@ -12,23 +12,6 @@
 $has_footer_menu = has_nav_menu('footer');
 $has_social_menu = has_nav_menu('social');
 
-<<<<<<< HEAD
-$has_sidebar_1 = is_active_sidebar( 'sidebar-1' );
-$has_sidebar_2 = is_active_sidebar( 'sidebar-2' );
-$has_sidebar_3 = is_active_sidebar( 'sidebar-3' );
-
-
-// Only output the container if there are elements to display.
-if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ) {
-	?>
-    <script src="https://kit.fontawesome.com/473ccb2a41.js" crossorigin="anonymous"></script>
-    <link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
-
-
-	<div  class="footer-nav-widgets-wrapper header-footer-group">
-
-		<div class="footer-inner section-inner" >
-=======
 $has_sidebar_1 = is_active_sidebar('sidebar-1');
 $has_sidebar_2 = is_active_sidebar('sidebar-2');
 $has_sidebar_3 = is_active_sidebar('sidebar-3');
@@ -42,7 +25,6 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
 			<!-- <div class="footer-nav-widgets-wrapper header-footer-group"> -->
 
 			<!-- <div class="footer-inner section-inner"> -->
->>>>>>> 1-wordpress-581-202109/2-groups/1-L/1-22-Long-Module-3
 
 			<?php
 
@@ -75,11 +57,7 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
 						</nav><!-- .site-nav -->
 
 					<?php } ?>
-<<<<<<< HEAD
-					<?php if ( $has_social_menu ) {  // Không có social menu ?>
-=======
 					<?php if ($has_social_menu) { ?>
->>>>>>> 1-wordpress-581-202109/2-groups/1-L/1-22-Long-Module-3
 
 						<nav aria-label="<?php esc_attr_e('Social links', 'twentytwenty'); ?>" class="footer-social-wrapper">
 
@@ -133,38 +111,17 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
 							<?php dynamic_sidebar('sidebar-2'); ?>
 						</div>
 
-<<<<<<< HEAD
-							<div class="footer-widgets column-two grid-item">
-								<?php dynamic_sidebar( 'sidebar-1' ); ?>
-
-							</div>
-=======
 					<?php } ?>
 					<?php if ($has_sidebar_3) { ?>
->>>>>>> 1-wordpress-581-202109/2-groups/1-L/1-22-Long-Module-3
 
 						<!-- <div class="footer-widgets column-three grid-item"> -->
 						<div class="col-xs-12 col-sm-4 col-md-4">
 							<?php dynamic_sidebar('sidebar-3'); ?>
 						</div>
 
-<<<<<<< HEAD
-                        <?php if ( $has_sidebar_3 ) {  ?>
-
-                            <div class="footer-widgets column-one grid-item">
-                                <?php dynamic_sidebar( 'sidebar-1' ); ?>
-
-                            </div>
-
-                        <?php } ?>
-
-
-					</div><!-- .footer-widgets-wrapper -->
-=======
 					<?php } ?>
 				</div>
 		</div><!-- .footer-widgets-wrapper -->
->>>>>>> 1-wordpress-581-202109/2-groups/1-L/1-22-Long-Module-3
 
 		</aside><!-- .footer-widgets-outer-wrapper -->
 
