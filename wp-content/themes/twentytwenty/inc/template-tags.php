@@ -363,21 +363,21 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 
 					$has_meta = true;
 					?>
-					<li class="post-author meta-wrapper">
-						<span class="meta-icon">
-							<span class="screen-reader-text"><?php _e( 'Post author', 'twentytwenty' ); ?></span>
-							<?php twentytwenty_the_theme_svg( 'user' ); ?>
-						</span>
-						<span class="meta-text">
-							<?php
-							printf(
-								/* translators: %s: Author name. */
-								__( 'By %s', 'twentytwenty' ),
-								'<a href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author_meta( 'display_name' ) ) . '</a>'
-							);
-							?>
-						</span>
-					</li>
+<!--					<li class="post-author meta-wrapper">-->
+<!--						<span class="meta-icon">-->
+<!--							<span class="screen-reader-text">--><?php //_e( 'Post author', 'twentytwenty' ); ?><!--</span>-->
+<!--							--><?php //twentytwenty_the_theme_svg( 'user' ); ?>
+<!--						</span>-->
+<!--						<span class="meta-text">-->
+<!--							--><?php
+//							printf(
+//								/* translators: %s: Author name. */
+//								__( 'By %s', 'twentytwenty' ),
+//								'<a href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author_meta( 'display_name' ) ) . '</a>'
+//							);
+//							?>
+<!--						</span>-->
+<!--					</li>-->
 					<?php
 
 				}
@@ -393,7 +393,15 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 							<?php twentytwenty_the_theme_svg( 'calendar' ); ?>
 						</span>
 						<span class="meta-text">
-							<a href="<?php the_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
+							<!-- the_time( get_option( 'date_format' )); -->
+							<a href="<?php the_permalink(); ?>"><?php 
+								$post = get_post($post_id);
+								$post_date = $post->post_date;
+								$post_date_day = date('d', strtotime($post_date));
+								$post_date_month = date('m', strtotime($post_date));
+								$post_date_finish = printf("<span class='display-3' >%u</span> <br> <p class='post-month'>THÁNG %u</p>"
+								,$post_date_day,$post_date_month);  ?>
+							</a>
 						</span>
 					</li>
 					<?php
@@ -437,21 +445,21 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 				}
 
 				// Comments link.
-				if ( in_array( 'comments', $post_meta, true ) && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-
-					$has_meta = true;
-					?>
-					<li class="post-comment-link meta-wrapper">
-						<span class="meta-icon">
-							<?php twentytwenty_the_theme_svg( 'comment' ); ?>
-						</span>
-						<span class="meta-text">
-							<?php comments_popup_link(); ?>
-						</span>
-					</li>
-					<?php
-
-				}
+//				if ( in_array( 'comments', $post_meta, true ) && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+//
+//					$has_meta = true;
+//					?>
+<!--					<li class="post-comment-link meta-wrapper">-->
+<!--						<span class="meta-icon">-->
+<!--							--><?php //twentytwenty_the_theme_svg( 'comment' ); ?>
+<!--						</span>-->
+<!--						<span class="meta-text">-->
+<!--							--><?php //comments_popup_link(); ?>
+<!--						</span>-->
+<!--					</li>-->
+<!--					--><?php
+//
+//				}
 
 				// Sticky.
 				if ( in_array( 'sticky', $post_meta, true ) && is_sticky() ) {

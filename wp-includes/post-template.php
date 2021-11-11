@@ -29,6 +29,7 @@ function get_the_ID() { // phpcs:ignore WordPress.NamingConventions.ValidFunctio
 	return ! empty( $post ) ? $post->ID : false;
 }
 
+
 /**
  * Display or retrieve the current post title with optional markup.
  *
