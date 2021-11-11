@@ -1,0 +1,115 @@
+.header-detai-page {
+  width: 50%;
+}
+
+.body-detail-page{
+  width: 50%;
+}
+
+/* hidden categories  */
+.detail-page .entry-categories {
+  display: none;
+}
+
+/* hidden author name, comment, post date  */
+.detail-page .entry-header .entry-header-inner .post-meta-wrapper {
+  display: none;
+}
+
+.post-template-default .container .post-inner {
+  padding-top: 30px;
+}
+
+.container #site-content .detail-page .entry-header {
+  padding: 20px 0;
+}
+
+/* css line between tilte post and conten post  */
+.overviewline {
+    border-bottom: 1px solid #cecece;
+    margin: 25px 0 15px;
+    position: relative;
+}
+
+.overviewline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50px;
+  border-width: 12px 12px 0;
+  border-style: solid;
+  border-color: #cecece transparent;
+  display: block;
+  width: 0;
+}
+
+.overviewline::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 51px;
+  border-width: 11px 11px 0;
+  border-style: solid;
+  border-color: #f5f5f5 transparent;
+  display: block;
+  width: 0;
+}
+/* css line between tilte post and conten post  */
+
+/* css post day */
+.headlinesdate {
+  display: flex;
+  border-radius: 50%;
+  padding: 10px 15px;
+  background: #f5ce31;
+  float: right;
+}
+
+.headlinesmonth {
+  border-top: 1px solid black;
+}
+
+.headlinesyear {
+  align-self: center;
+}
+/* css post day */
+
+/* css background image for detail page  */
+.container #site-content .detail-page .entry-header {
+  background-image: url('../assets/images/bg_pattern.png');
+  padding-top: 50px;
+}
+/* css background image for detail page  */
+
+/* css title post  */
+.row .entry-header-inner {
+  text-align: left;
+}
+/* css title post  */
+
+/* css width of text content post  */
+.entry-content-detail-page p {
+  max-width: 100% !important;
+  width: calc(100% - 0rem) !important;
+}
+/* css width of text content post  */
+
+/* move image to center  */
+.wp-block-image {
+  text-align: -webkit-center;
+}
+/* move image to center  */
+
+/* css author name  */
+.container .post-inner .article-source {
+  text-align: right;
+  padding: 20px 0;
+  margin: 0;
+}
+/* css author name  */
+
+@media (min-width: 1220px){
+  .entry-header-inner .entry-title-detail-page {
+  font-size: 2.1em;
+}
+}

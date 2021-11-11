@@ -1,0 +1,96 @@
+.list_news {
+  margin: 45px 0;
+}
+
+.headlinestitle .link-pagination-title span {
+  font-weight: 400;
+  /* font-size: initial; */
+}
+
+.pagination-single-page .list_news {
+  justify-content: center;
+}
+
+.container .pagination-single-page {
+  width: 100%;
+  margin: 0;
+  font-size: larger;
+  font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+.pagination-detail-page {
+  width: 50%;
+}
+
+.list_news .headlines {
+    background: #fff;
+}
+
+.headlines {
+  overflow: hidden;
+  padding: 20px 40px;
+  width: 100%;
+}
+
+.headlines ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.headlines ul li .next-post-single {
+  flex-direction: column-reverse;
+  text-align: left;
+}
+
+.headlines ul > li {
+  overflow: hidden;
+  display: table;
+  /* margin-bottom: 5px; */
+  margin: 0;
+  width: 100%;
+}
+
+.headlines .headlinesdate {
+  /* font-size: 0.8em; */
+  /* font-size: initial; */
+  width: 15%;
+  min-width: 55px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.headlinesdate .headlinesdm, .news > .headlines .headlinesdate, .headlinesdate {
+  float: left;
+  /* font-family: 'Prata', serif; */
+}
+
+.headlinesdate .headlinesyear {
+  line-height: 3.5em;
+  float: left;
+  margin-left: 3px;
+}
+
+.list_news .headlines .headlinesday, .detail .headlinesdate .headlinesday {
+  border-bottom: 1px solid #000;
+}
+
+.headlinesdate .headlinesday, .news > .headlines .headlinesmonth {
+  line-height: 1.7em;
+}
+
+.headlines ul > li > .headlinestitle {
+  display: table-cell;
+  vertical-align: middle;
+  /* width: 85%; */
+  width: 100%;
+  padding: 0 50px;
+}
+
+.list_news .headlines a {
+  color: #000;
+}
+a {
+  /* color: #428bca; */
+  text-decoration: none;
+}

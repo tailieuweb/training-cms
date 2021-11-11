@@ -1,0 +1,82 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+.section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.footer-widgets-outer-wrapper {
+    padding-bottom: 0 !important;
+    border-bottom: none !important;
+}
+
+.footer-nav-widgets-wrapper,
+#site-footer {
+    background: #007b5e !important;
+    padding: 0 !important;
+}
+
+.widget-content>div>*:last-child h4 {
+    padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.widget li {
+    padding: 3px 0;
+    transition: all .5s ease !important;
+}
+
+.widget li:hover {
+    margin-left: 15px;
+    font-weight: 900;
+}
+
+.widget li a::before {
+    position: relative;
+    top: 2px;
+    left: 0;
+    content: "\00BB";
+    font-size: 24px;
+    margin-right: 4px;
+}
+
+.widget li a {
+    margin-right: 5px;
+    color: #ffffff !important;
+    font-size: 18px;
+    text-decoration: none !important;
+    font-weight: 400;
+}
+
+.widget li:hover a {
+    font-weight: 700;
+}
+
+.footer-height {
+    height: 90px;
+}
+
+#footer ul.social li {
+    padding: 3px 0;
+}
+
+#footer ul.social li a i {
+    margin-right: 5px;
+    font-size: 25px;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+#footer a {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+#footer p {
+    font-size: 16px;
+}

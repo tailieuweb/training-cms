@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Displays the menus and widgets at the end of the main element.
  * Visually, this output is presented as part of the footer element.
@@ -14,11 +13,10 @@ $has_social_menu = has_nav_menu( 'social' );
 
 $has_sidebar_1 = is_active_sidebar( 'sidebar-1' );
 $has_sidebar_2 = is_active_sidebar( 'sidebar-2' );
-
 $has_sidebar_3 = is_active_sidebar( 'sidebar-3' );
 
 // Only output the container if there are elements to display.
-if ( $has_footer_menu || $has_social_menu || $has_sidebar_2 || $has_sidebar_3 ) {
+if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ) {
 	?>
 
 <div class="footer-nav-widgets-wrapper header-footer-group">
@@ -89,7 +87,7 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_2 || $has_sidebar_3 ) 
 
         <?php } ?>
 
-        <?php if ( $has_sidebar_1 || $has_sidebar_2|| $has_sidebar_3 ) { ?>
+        <?php if ( $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3 ) { ?>
 
         <aside class="footer-widgets-outer-wrapper" role="complementary">
 
@@ -112,7 +110,7 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_2 || $has_sidebar_3 ) 
                 <?php } ?>
                 <?php if ( $has_sidebar_3 ) { ?>
 
-                <div class="footer-widgets column-one grid-item">
+                <div class="footer-widgets column-two grid-item">
                     <?php dynamic_sidebar( 'sidebar-3' ); ?>
                 </div>
 

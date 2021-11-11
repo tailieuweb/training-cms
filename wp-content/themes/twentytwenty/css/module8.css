@@ -1,0 +1,29 @@
+.card-body #submit {
+    margin-left: auto;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: -2px;
+}
+
+.card-body {
+    background: #ffffff;
+    padding-top: 30px;
+}
+
+.card-body .section-inner.thin {
+    max-width: 112rem;
+}
+
+#posts-tab {
+    font-size: 22px;
+    text-decoration: none;
+    padding: 10px 25px;
+}
+
+.comment-respond p:not(.comment-notes) {
+    max-width: 112rem !important;
+}

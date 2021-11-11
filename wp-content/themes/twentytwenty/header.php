@@ -22,12 +22,22 @@
 
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+	
 	<?php wp_head(); ?>
-
+	
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/module1.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/module2.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/module3.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/module8.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/module6.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/module7.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/module5.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/module4.css">
 </head>
 
 <body <?php body_class(); ?>>
@@ -36,7 +46,7 @@
 	wp_body_open();
 	?>
 
-	<header id="site-header" class="header-footer-group" role="banner">
+	<header id="site-header" class="header-footer-group custom-header" role="banner">
 
 		<div class="header-inner section-inner">
 
@@ -50,6 +60,7 @@
 				if (true === $enable_header_search) {
 
 				?>
+
 					<button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
 						<span class="toggle-inner">
 							<span class="toggle-icon">
@@ -72,7 +83,7 @@
 					?>
 
 				</div><!-- .header-titles -->
-				
+
 				<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
 					<span class="toggle-inner">
 						<span class="toggle-icon">
@@ -81,10 +92,21 @@
 						<span class="toggle-text"><?php _e('Menu', 'twentytwenty'); ?></span>
 					</span>
 				</button><!-- .nav-toggle -->
-				
-
+					
 			</div><!-- .header-titles-wrapper -->
-			
+			<div class="no-search-results-form section-inner thin">
+
+			<?php
+			get_search_form(
+				array(
+					'aria_label' => __( 'search again', 'twentytwenty' ),
+				)
+			);
+			?>
+
+		</div><!-- .no-search-results -->
+
+
 			<div class="header-navigation-wrapper">
 
 				<?php
@@ -127,6 +149,7 @@
 
 				if (true === $enable_header_search || has_nav_menu('expanded')) {
 				?>
+
 					<div class="header-toggles hide-no-js">
 
 						<?php
@@ -167,26 +190,21 @@
 						}
 						?>
 						<div class="toggle-wrapper accout-toggle-wrapper">
-							<div class="toggle search-toggle desktop-search-toggle">
-
-								<span class="toggle-inner">
-									<a href=<?php echo admin_url() ?> target="_blank">
-										<i class="fa fa-user-circle-o" aria-hidden="true"></i>
-										<span class="toggle-text"><?php _ex('Account', 'toggle text', 'twentytwenty'); ?></span>
-									</a>
-								</span>
-
-							</div><!-- .search-toggle -->
-
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								<i class="fa fa-user-circle-o"></i>
+								Account <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="/wp-admin">Login</a></li>
+								<li><a href="/wp-admin/profile.php">Profile</a></li>
+								<li><a href="<?php echo wp_logout_url('index.php') ?>">Logout</a></li>
+							</ul>
 						</div>
 					</div><!-- .header-toggles -->
 				<?php
 				}
 				?>
 
-				<!-- <div class="header__account">
-				<i class="fa fa-user-circle" aria-hidden="true"></i>
-					</div> -->
 			</div><!-- .header-navigation-wrapper -->
 
 		</div><!-- .header-inner -->
@@ -197,7 +215,6 @@
 			get_template_part('template-parts/modal-search');
 		}
 		?>
-
 
 	</header><!-- #site-header -->
 
