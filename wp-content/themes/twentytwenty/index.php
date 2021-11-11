@@ -110,7 +110,7 @@ $has_sidebar_12 = is_active_sidebar('sidebar-12');
 					$first_img = $matches[1][0];
 
 					if (empty($first_img)) { //Defines a default image
-						$first_img = "/images/default.jpg"; //Duong dan anh mac dinh khi khong tim duoc anh dai dien
+						$first_img = "https://lh3.googleusercontent.com/proxy/MYrYSZ77_jO4FiwSJKBjBOxZGye5UwCAKJ_ZKSIOm_RQzqI7BwnNDriAcLkOIIjcPpftnJLPN1kBe41iAbD-k2IBmqjdUx6ksNg"; //Duong dan anh mac dinh khi khong tim duoc anh dai dien
 					}
 
 					return $first_img;
