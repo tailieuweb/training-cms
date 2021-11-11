@@ -136,7 +136,7 @@ if (strtotime($post->post_date)) {
 				} else {
 
 					/** $content = preg_replace('/<figure.*?>.*?<\/figure>/', '', $post->post_content); */
-					
+					$content = findHTMLTag($post->post_content, 'p');
 					$content = $content ? $content : 'This post hasn\'t description !!';
 				?>
 					<div class="list_new_view">
