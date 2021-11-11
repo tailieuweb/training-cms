@@ -6582,10 +6582,30 @@ section .section-title {
     font-size: 0.9em;
     padding: 15px;
 }
-.topnewstime .topnewsdate {
-    text-align: center !important;
-    font-size: 35px;
+.post-content-model-5{
+	font-size: 12px;
+}
+.post-title-model-5{
+	font-size: 22px;
+}
+.topnewstime{
+	text-align: center;
+}
+.topnewstime .topnewsdate-module-5 {
+    font-size: 40px;
+}
+.topnewstime .topnewsdate-module-2 {
+    font-size: 80px;
+}
+.topnewstime .topnewsmonth-module-2 {
+    font-size: 15px;
 }
 .shortdesc {
     border-left: 1px solid rgb(202, 202, 202);
+}
+.shortdesc .post-title-module{
+	font-size: 32px;
+}
+.shortdesc .post-content-module{
+	font-size: 15px !important;
 }
