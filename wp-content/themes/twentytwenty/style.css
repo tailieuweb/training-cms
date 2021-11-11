@@ -735,7 +735,7 @@ button:focus, button:hover, .button:focus, .button:hover, .faux-button:focus, .f
 input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="color"]:focus, textarea:focus {
 	border-color: currentColor;
 }
-/* trang */
+/* page */
 input[type="search"]:focus {
 	outline: thin white;
 	outline-offset: -4px;
@@ -831,8 +831,6 @@ section {
 .section-inner {
 	margin-left: auto;
 	margin-right: auto;
-	/* Trang sua */
-	/* max-width: 120rem; */
 	width: calc(100% - 4rem);
 }
 
@@ -1092,7 +1090,7 @@ button.toggle {
 	margin: 0 0 0.8rem 0.8rem;
 }
 
-/* Trang */
+/* Page */
 
 .search-form label {
 	align-items: stretch;
@@ -1107,7 +1105,7 @@ button.toggle {
 	width: 100%;
 }
 
-/* Trang */
+/* Page */
 
 #search-form-2 {
 	padding: 27px 42px;
