@@ -1357,33 +1357,6 @@ button.toggle {
 .search-form .search-field {
 	width: 100%;
 }
-
-/* Trang */
-
-#search-form-2 {
-	padding: 27px 42px;
-}
-
-.search-form .search-submit {
-	flex-shrink: 0;
-	padding: 0px 14px;
-	border-radius: 8%;
-	font-size: 12px;
-	height: 44px;
-	margin-top: 14px;
-	position: absolute;
-	margin-right: 20px;
-	background-color: #28a745;
-}
-.icon-search{
-	position: absolute;
-    padding-top: 20px;
-    padding-left: 20px;
-}
-.search-form .search-submit:focus, .search-form .search-submit:hover {
-	text-decoration: none;
-}
-
 /* Social Icons ------------------------------ */
 
 ul.social-icons {
