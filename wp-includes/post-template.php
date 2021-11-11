@@ -241,10 +241,7 @@ function get_the_guid( $post = 0 ) {
  * @param bool   $strip_teaser   Optional. Strip teaser content before the more text. Default false.
  */
 function the_content( $more_link_text = null, $strip_teaser = false ) {
-
 	$content = get_the_content( $more_link_text, $strip_teaser );
-
-
 
 	/**
 	 * Filters the post content.

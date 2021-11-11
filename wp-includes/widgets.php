@@ -682,24 +682,21 @@ function wp_unregister_widget_control( $id ) {
  */
 function dynamic_sidebar( $index = 1 ) {
 	global $wp_registered_sidebars, $wp_registered_widgets;
+
 	if ( is_int( $index ) ) {
 		$index = "sidebar-$index";
 	} else {
-
-        $index = sanitize_title( $index ); // đang xem chỗ này
-        // Hàm này nó biến các link thành link slug
-		foreach ( (array) $wp_registered_sidebars as $key => $value ) { // chạy vô đây mà ko làm gì --- mặc định vô dụng
+		$index = sanitize_title( $index );
+		foreach ( (array) $wp_registered_sidebars as $key => $value ) {
 			if ( sanitize_title( $value['name'] ) === $index ) {
 				$index = $key;
-                break;
+				break;
 			}
 		}
 	}
 
-	$sidebars_widgets = wp_get_sidebars_widgets(); // Hàm này trả về tất cả sidebar kế bên  và wiget của  nó
-
+	$sidebars_widgets = wp_get_sidebars_widgets();
 	if ( empty( $wp_registered_sidebars[ $index ] ) || empty( $sidebars_widgets[ $index ] ) || ! is_array( $sidebars_widgets[ $index ] ) ) {
-	     // không làm hành động gì cả ok ! -> không return
 		/** This action is documented in wp-includes/widget.php */
 		do_action( 'dynamic_sidebar_before', $index, false );
 		/** This action is documented in wp-includes/widget.php */
@@ -710,11 +707,8 @@ function dynamic_sidebar( $index = 1 ) {
 
 	$sidebar = $wp_registered_sidebars[ $index ];
 
-
 	$sidebar['before_sidebar'] = sprintf( $sidebar['before_sidebar'], $sidebar['id'], $sidebar['class'] );
-	//var_dump($sidebar['before_sidebar']);
-    // tại sao là 1 hàm trống ?
-    // sidebar là biến chứa các sidebar nhưng cái before-sidebar lại là trống
+
 	/**
 	 * Fires before widgets are rendered in a dynamic sidebar.
 	 *
@@ -729,9 +723,7 @@ function dynamic_sidebar( $index = 1 ) {
 	 */
 	do_action( 'dynamic_sidebar_before', $index, true );
 
-    // Hàm này dùng hiển thị sidebar 1 và 2
 	if ( ! is_admin() && ! empty( $sidebar['before_sidebar'] ) ) {
-	    // không run vào đây
 		echo $sidebar['before_sidebar'];
 	}
 
@@ -741,7 +733,6 @@ function dynamic_sidebar( $index = 1 ) {
 		if ( ! isset( $wp_registered_widgets[ $id ] ) ) {
 			continue;
 		}
-		// cái if ở trên là nếu không tồn tại wiget id nào thì tiếp tục -> nó tốn tại 1 đống
 
 		$params = array_merge(
 			array(
@@ -763,20 +754,16 @@ function dynamic_sidebar( $index = 1 ) {
 				$classname_ .= '_' . $cn;
 			} elseif ( is_object( $cn ) ) {
 				$classname_ .= '_' . get_class( $cn );
-
 			}
 		}
+		$classname_ = ltrim( $classname_, '_' );
 
-
-		$classname_ = ltrim( $classname_, '_' ); // bỏ dấu gạch dưới phía trước
-   // var_dump($classname_);
 		$params[0]['before_widget'] = sprintf(
 			$params[0]['before_widget'],
 			str_replace( '\\', '_', $id ),
 			$classname_
 		);
-		// Hàm sprintf này làm gì ???
-         // Hàm sprintf này  để định dạng ???
+
 		/**
 		 * Filters the parameters passed to a widget's display callback.
 		 *
@@ -809,12 +796,9 @@ function dynamic_sidebar( $index = 1 ) {
 		 *     }
 		 * }
 		 */
-
 		$params = apply_filters( 'dynamic_sidebar_params', $params );
-        // Hàm apply_filters này lọc tất cả và dùng tên string đầu tiên để gọi cái hàm đó để lọc dữ liệu
-        // Dùng cái param kế bên để mà sau đó tạo ra dữ liệu đã lọc.
-		$callback = $wp_registered_widgets[ $id ]['callback'];
 
+		$callback = $wp_registered_widgets[ $id ]['callback'];
 
 		/**
 		 * Fires before a widget's display callback is called.
@@ -842,7 +826,6 @@ function dynamic_sidebar( $index = 1 ) {
 		 * }
 		 */
 		do_action( 'dynamic_sidebar', $wp_registered_widgets[ $id ] );
-        // thực thi hàm đc gọi ví dụ là dynamic_sidebar
 
 		if ( is_callable( $callback ) ) {
 			call_user_func_array( $callback, $params );
@@ -997,7 +980,6 @@ function is_active_sidebar( $index ) {
 	 *                                      In other words, whether the sidebar contains any widgets.
 	 * @param int|string $index             Index, name, or ID of the dynamic sidebar.
 	 */
-
 	return apply_filters( 'is_active_sidebar', $is_active_sidebar, $index );
 }
 
@@ -1030,7 +1012,6 @@ function wp_get_sidebars_widgets( $deprecated = true ) {
 	// If loading from front page, consult $_wp_sidebars_widgets rather than options
 	// to see if wp_convert_widget_settings() has made manipulations in memory.
 	if ( ! is_admin() ) {
-
 		if ( empty( $_wp_sidebars_widgets ) ) {
 			$_wp_sidebars_widgets = get_option( 'sidebars_widgets', array() );
 		}
