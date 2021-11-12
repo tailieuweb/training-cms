@@ -6553,20 +6553,3 @@ section .section-title {
     margin-bottom: 10px;
 }
 }
-.col_sidebar {
-    width: 20%;
-    float: left;
-}
-
-.col-middle {
-    width: 60%;
-    float: left;
-}
-.col_sidebar * {
-    width: 100%;
-    margin: 0px;
-}
-
-main#site-content {
-    margin: 0px 34px;
-}
