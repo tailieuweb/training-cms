@@ -33,6 +33,7 @@
  *
  * @since Twenty Twenty 1.0
  */
+
 function twentytwenty_theme_support() {
 
 	// Add default posts and comments RSS feed links to head.
@@ -405,6 +406,17 @@ function twentytwenty_sidebar_registration() {
 		)
 	);
 
+	// RecentPosts #3.
+	register_sidebar(
+		array_merge(
+			$shared_args,
+			array(
+				'name'        => __( 'RecentPosts #3', 'twentytwenty' ),
+				'id'          => 'sidebar-3',
+				'description' => __( 'Widgets in this area will be displayed in the second column in the footer.', 'twentytwenty' ),
+			)
+		)
+	);
 }
 
 add_action( 'widgets_init', 'twentytwenty_sidebar_registration' );
