@@ -25,37 +25,68 @@ if ( $next_post || $prev_post ) {
 	<nav class="pagination-single section-inner<?php echo esc_attr( $pagination_classes ); ?>" aria-label="<?php esc_attr_e( 'Post', 'twentytwenty' ); ?>" role="navigation">
 
 		<hr class="styled-separator is-style-wide" aria-hidden="true" />
-
 		<div class="pagination-single-inner">
 
-			<?php
-			if ( $prev_post ) {
-				?>
+<?php
+	if ( $prev_post ) {
+		$prev_post_date = explode("-", explode(' ', $prev_post->post_modified_gmt)[0]);
+		?>
+	   <div style="display: flex;width: 45% " >
+			<div style="display: flex;align-items: center;width: 16%" >
+				<div style="margin-right: 6px" >
+					<p style="font-size: 16px;margin: 0 ;border-bottom: 3px solid black"> <?php echo $prev_post_date[2]; ?> </p>
+					<p style="font-size: 16px;" > <?php echo $prev_post_date[1]; ?> </p>
 
-				<a class="previous-post" href="<?php echo esc_url( get_permalink( $prev_post->ID ) ); ?>">
-					<span class="arrow" aria-hidden="true">&larr;</span>
-					<span class="title"><span class="title-inner"><?php echo wp_kses_post( get_the_title( $prev_post->ID ) ); ?></span></span>
-				</a>
+				</div>
+				 <div>
+					 <p style="font-size: 16px;" > <?php echo $prev_post_date[0]; ?> </p>
 
-				<?php
-			}
+				 </div>
+			</div>
+		   <div >
+			   <a class="previous-post" href="<?php echo esc_url( get_permalink( $prev_post->ID ) ); ?>">
+				   <!-- <span class="arrow" aria-hidden="true">&larr;</span> -->
+				   <span  class="title"><span class="title-inner"><?php echo wp_kses_post( get_the_title( $prev_post->ID ) ); ?></span></span>
+			   </a>
+		   </div>
 
-			if ( $next_post ) {
-				?>
+	   </div>
+		<?php
+	}
+
+	if ( $next_post ) {
+		$next_post_date = explode("-", explode(' ', $next_post->post_modified_gmt)[0]);
+		?>
+
+	<div style="display: flex;width: 45% " >
+	<div style="display: flex;align-items: center;width: 16%" >
+			<div style="margin-right: 6px" >
+				<p style="font-size: 16px;margin: 0 ;border-bottom: 3px solid black"> <?php echo $next_post_date[2]; ?> </p>
+				<p style="font-size: 16px;" > <?php echo $next_post_date[1]; ?> </p>
+
+			</div>
+			<div>
+				<p style="font-size: 16px;" > <?php echo $next_post_date[0]; ?> </p>
+
+			</div>
+		</div>
+
+		<div >
 
 				<a class="next-post" href="<?php echo esc_url( get_permalink( $next_post->ID ) ); ?>">
-					<span class="arrow" aria-hidden="true">&rarr;</span>
-						<span class="title"><span class="title-inner"><?php echo wp_kses_post( get_the_title( $next_post->ID ) ); ?></span></span>
+					<!-- <span class="arrow" aria-hidden="true">&rarr;</span> -->
+					<span class="title"><span class="title-inner"><?php echo wp_kses_post( get_the_title( $next_post->ID ) ); ?></span></span>
 				</a>
-				<?php
-			}
-			?>
 
-		</div><!-- .pagination-single-inner -->
+		</div>
+	   
 
-		<hr class="styled-separator is-style-wide" aria-hidden="true" />
+	</div>
+		<?php
+	}
+	?>
 
-	</nav><!-- .pagination-single -->
+</div><!-- .pagination-single-inner -->
 
 	<?php
 }

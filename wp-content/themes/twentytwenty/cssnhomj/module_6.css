@@ -36,8 +36,8 @@
   .chi-tiet .gn .container .row .col-md-12{
     position: relative;
     min-height: 1px;
-    padding-left: 280px;
-    padding-right: 280px;
+    padding-left: 130px;
+    padding-right: 130px;
   }
   .chi-tiet .gn .container .row .col-md-12 .overviewline{
     border-bottom: 1px solid #474747;
@@ -103,7 +103,7 @@
 .chi-tiet .headlinesdate .headlinesyear {
   line-height: 3.5em;
   float: left;
-  margin-left: 3px;
+  margin-left: 12px;
 }
 .col-md-2{
   margin-top: 55px;
@@ -112,7 +112,7 @@
 .chi-tiet .col-md-8 .entry-header{
   background-color: rgb(244 244 244);
   text-align: left;
-  margin-left: 225px;
+  margin-left: 90px;
 }
 .chi-tiet .entry-header{
   margin-top: -50px;
