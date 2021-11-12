@@ -6609,3 +6609,9 @@ section .section-title {
 .shortdesc .post-content-module{
 	font-size: 15px !important;
 }
+#site-content{
+	margin-left: 50px;
+}
+.col-middle{
+	width: 100%;
+}
