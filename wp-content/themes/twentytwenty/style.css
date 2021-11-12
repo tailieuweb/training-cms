@@ -991,7 +991,6 @@ section {
 .section-inner {
 	margin-left: auto;
 	margin-right: auto;
-	/* nghi sua */
 	/* max-width: 120rem; */
 	width: calc(100% - 4rem);
 }
@@ -2423,8 +2422,8 @@ body:not(.singular) main > article:first-of-type {
 /* Post Header ------------------------------- */
 
 .singular .entry-header {
-	background-color: #fff;
-	padding: 4rem 0;
+	/* background-color: #fff;
+	padding: 4rem 0; */
 }
 
 .entry-categories {
@@ -5104,7 +5103,7 @@ a.to-the-top > * {
 	/* POST HEADER */
 
 	.singular .entry-header {
-		padding: 8rem 0;
+		/* padding: 8rem 0; */
 	}
 
 	.entry-categories {
@@ -6717,91 +6716,7 @@ section .section-title {
 	font-size: 1.8rem;
 	margin-top: 10px;
 }
-.entry-header {
-
-			margin-top: calc( 4 * #{$size__spacing-unit});
-			margin-bottom: 0;
-			margin-left: 0;
-			margin-right: 0;
-
-			@include media (tablet) {
-
-				margin-left: $size__site-margins;
-				margin-right: $size__site-margins;
-			}
-
-			.entry-title {
-
-				&:before {
-					background: $color__background-body;
-				}
-			}
-
-			/* Entry meta */
-
-			.entry-meta {
-
-				font-weight: 500;
-
-				> span {
-
-					margin-right: $size__spacing-unit;
-					display: inline-block;
-
-					&:last-child {
-						margin-right: 0;
-					}
-				}
-
-				a {
-
-					@include link-transition;
-					color: currentColor;
-
-					&:hover {
-						text-decoration: none;
-					}
-				}
-
-				.svg-icon {
-					position: relative;
-					display: inline-block;
-					vertical-align: middle;
-					margin-right: 0.5em;
-				}
-
-				.discussion-avatar-list {
-					display: none;
-				}
-			}
-
-			&.has-discussion {
-
-				@include media (tablet) {
-
-					.entry-meta {
-						display: flex;
-						position: relative;
-					}
-
-					.entry-title {
-						padding-right: calc(1 * (100vw / 12) + #{$size__spacing-unit});
-					}
-
-					.entry-meta .comment-count {
-						position: absolute;
-						right: 0;
-					}
-
-					.entry-meta .discussion-avatar-list {
-						display: block;
-						position: absolute;
-						bottom: 100%;
-					}
-				}
-			}
-		}
-	.post-prev-next .headlinesyears{
+.post-prev-next .headlinesyears{
 	margin-top: 2rem;
     margin-left: 7px;
 }
@@ -6856,8 +6771,29 @@ section .section-title {
 	font-size: 1.8rem;
 	margin-top: 10px;
 }
-/* nghi */
-input[type="search"]:focus {
-	outline: thin white;
-	outline-offset: -4px;
-}
+
+/* Site Header --------------------------- */
+	.header-inner {
+		/* padding: 3.8rem 0; */
+	}
+	.site-title {
+		font-size: 2.4rem;
+		font-weight: 700;
+	}
+	.site-description {
+		display: block;
+	}
+	.site-logo img {
+		max-height: 9rem;
+		transition: height 0.15s linear, width 0.15s linear, max-height 0.15s linear;
+	}
+	/* HEADER TOGGLES */
+	.toggle-inner .toggle-text {
+		font-size: 1.2rem;
+	}
+	.search-toggle {
+		left: 2rem;
+	}
+	.nav-toggle {
+		right: 2rem;
+	}
