@@ -11,27 +11,21 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
-<<<<<<< HEAD
 	$class = '';
 	if(!is_single()){
 		$class = 'danh-sach';
 	}
-=======
 $class = '';
->>>>>>> 2-wordpress-581-202109/7-G/2-An-Module-2
 
 if (!is_single()) {
 	$class = 'danh-sach';
 ?>
 
-<<<<<<< HEAD
 <article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
-=======
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2"></div>
 			<div class="col-md-8" style="margin-top: 20px;">
->>>>>>> 2-wordpress-581-202109/7-G/2-An-Module-2
 
 				<article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
 					<div class="row">
@@ -55,7 +49,6 @@ if (!is_single()) {
 
 								<div class="entry-content">
 
-<<<<<<< HEAD
 			<?php
 			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
 				the_excerpt();
@@ -68,7 +61,6 @@ if (!is_single()) {
 				}				
 			}
 			?>
-=======
 									<?php
 									if (is_search() || !is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
 										the_excerpt();
@@ -81,7 +73,6 @@ if (!is_single()) {
 										}
 									}
 									?>
->>>>>>> 2-wordpress-581-202109/7-G/2-An-Module-2
 
 								</div><!-- .entry-content -->
 
