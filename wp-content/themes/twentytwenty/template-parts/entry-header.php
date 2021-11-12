@@ -28,9 +28,10 @@ if (is_singular()) {
 		 *
 		 * @param bool Whether to show the categories in header. Default true.
 		 */
-		$show_categories = apply_filters('twentytwenty_show_categories_in_entry_header', true);
-		//Bỏ hiển thị category bằng cách sửa
 		//true === $show_categories && has_category()
+		$show_categories = apply_filters('twentytwenty_show_categories_in_entry_header', true);
+		//Bỏ hiển thị category 
+		
 		if (true === false) {
 		?>
 
@@ -38,8 +39,8 @@ if (is_singular()) {
 				<span class="screen-reader-text"><?php _e('Categories', 'twentytwenty'); ?></span>
 				<div class="entry-categories-inner">
 					<?php the_category(' '); ?>
-				</div><!-- .entry-categories-inner -->
-			</div><!-- .entry-categories -->
+				</div>
+			</div>
 
 		<?php
 		}
@@ -50,7 +51,7 @@ if (is_singular()) {
 					<?php the_title('<h1>', '</h1>'); ?>
 				</div>
 				<?php
-				//Xử lý lấy ngày tháng năm post
+				//lấy ngày tháng năm
 				$post = get_post();
 				$post_date = get_the_date('d', $post->ID);
 				$post_month = get_the_date('m', $post->ID);

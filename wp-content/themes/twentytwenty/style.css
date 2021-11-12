@@ -5647,4 +5647,7 @@ input[type="search"] {
 	text-align: justify;
 }
 
-/* CSS Detail add */
+/* back ground css */
+main#site-content {
+    background-color: #FFF;
+}

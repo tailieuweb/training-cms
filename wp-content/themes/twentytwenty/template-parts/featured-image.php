@@ -9,8 +9,8 @@
  */
 //Phần hiển thị featured-media trong bài viết
 //Sửa logic lại thành sai để khỏi hiện
-//Logic cũ: has_post_thumbnail() && ! post_password_required()
-//Logic mới: 
+//Cái cũ: has_post_thumbnail() && ! post_password_required()
+//Cái mới: 
 if (true === false) {
 
 	$featured_media_inner_classes = '';
@@ -23,7 +23,7 @@ if (true === false) {
 
 	<figure class="featured-media">
 
-		<div class="featured-media-inner section-inner<?php echo $featured_media_inner_classes; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output 
+		<div class="featured-media-inner section-inner<?php echo $featured_media_inner_classes; 
 														?>">
 
 			<?php
@@ -40,9 +40,9 @@ if (true === false) {
 			}
 			?>
 
-		</div><!-- .featured-media-inner -->
+		</div>
 
-	</figure><!-- .featured-media -->
+	</figure>
 
 <?php
 }
