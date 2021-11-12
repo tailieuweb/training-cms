@@ -1,0 +1,97 @@
+
+.news {
+	background: none;
+	padding: 0;
+	color: #fff;
+}
+
+.news > .topnews {
+	background: #4bb4b6;
+	padding: 30px 0;
+}
+
+.topnews .topnewstime {
+	text-align: center;
+}
+.topnewstime > .topnewsdate{
+	font-family: 'Prata', serif;
+	font-size: 3.1em;
+	line-height: 1em;
+	margin-left: 15px;
+}
+.topnewstime > .topnewsmonth{
+	text-transform: uppercase;
+	font-size: 0.9em;
+	margin-left: 15px;
+}
+
+
+.news > .topnews .topnewsthumb img {
+	width: 100%;
+	max-width: 100%;
+}
+
+.news > .topnews h4, .toparticle > h4 {
+	font-weight: bold;
+	font-size: 1.1em;
+	line-height: 1.3em;
+}
+
+.news > .topnews h4 a {
+	color: #fff;
+}
+
+.news > .topnews > .row .row {
+	margin:0 !important;
+}
+.news a {
+	color: #fff;
+}
+.row > .col-md-6 > img {
+	max-width: 100%;
+}
+.headlines {
+	background: #56bdbf;
+	overflow: hidden;
+	padding: 20px 30px;
+}
+.headlines ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-left: 29%;
+	font-size: 2rem;
+}
+.headlines ul > li {
+	overflow: hidden;
+	display: table;
+	margin-bottom: 5px;
+	width: 100%;
+}
+.headlines ul > li > .headlinestitle {
+	display: table-cell; vertical-align: middle; width: 85%;
+}
+
+.headlinesdate .headlinesdm, .news > .headlines .headlinesdate, .headlinesdate {
+	float: left;
+	font-family: 'Prata', serif;
+}
+.headlines .headlinesdate { font-size: 0.8em; width: 15%; min-width: 55px; display: table-cell; vertical-align: middle;}
+.headlinesdate .headlinesday, .news > .headlines .headlinesmonth {line-height: 1.7em;}
+.headlinesdate .headlinesday {
+	border-bottom: 1px solid #fff;
+}
+.headlinesdate .headlinesyear {
+	line-height: 3.5em;
+	float: left;
+	margin-left: 3px;
+}
+
+.news > .newsall {
+	display: block;
+	padding: 10px;
+	text-align: center;
+	background: #62c6c8;
+	text-transform: uppercase;
+	font-weight: bold;
+}
