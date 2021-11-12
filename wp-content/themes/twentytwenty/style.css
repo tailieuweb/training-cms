@@ -1259,7 +1259,7 @@ button.toggle {
 	align-items: stretch;
 	display: flex;
 	flex-wrap: nowrap;
-	margin: 0 0 -0.8rem -0.8rem;
+	margin: 0 0 0 0.5rem;
 }
 
 .search-form .search-field,
@@ -6552,4 +6552,21 @@ section .section-title {
     padding-bottom: 0px;
     margin-bottom: 10px;
 }
+}
+.col_sidebar {
+    width: 20%;
+    float: left;
+}
+
+.col-middle {
+    width: 60%;
+    float: left;
+}
+.col_sidebar * {
+    width: 100%;
+    margin: 0px;
+}
+
+main#site-content {
+    margin: 0px 34px;
 }

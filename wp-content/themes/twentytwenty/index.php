@@ -15,15 +15,16 @@
  */
 
 get_header();
+$has_sidebar_11 = is_active_sidebar( 'sidebar-11' );
+$has_sidebar_12 = is_active_sidebar( 'sidebar-12' );
 ?>
 
 <main id="site-content" role="main">
 
+	
 	<?php
-
 	$archive_title    = '';
 	$archive_subtitle = '';
-
 	if ( is_search() ) {
 		global $wp_query;
 
@@ -56,7 +57,6 @@ get_header();
 
 	if ( $archive_title || $archive_subtitle ) {
 		?>
-
 		<header class="archive-header has-text-align-center header-footer-group">
 
 			<div class="archive-header-inner section-inner medium">
@@ -75,7 +75,24 @@ get_header();
 
 		<?php
 	}
+	?>
+<div class="col_sidebar">
+	<?php if ( $has_sidebar_11 ) { ?>
 
+		<div class="footer-widgets column-two grid-item">
+			<?php if ( $has_sidebar_11 ) { ?>
+
+				<div class="footer-widgets column-two grid-item">
+					<?php dynamic_sidebar( 'sidebar-11' ); ?>
+				</div>
+
+			<?php } ?>
+		</div>
+
+	<?php } ?>
+	</div>
+	<div class="col-middle">
+	<?php 
 	if ( have_posts() ) {
 
 		$i = 0;
@@ -86,13 +103,11 @@ get_header();
 				echo '<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
 			}
 			the_post();
-
 			get_template_part( 'template-parts/content', get_post_type() );
 
 		}
 	} elseif ( is_search() ) {
 		?>
-
 		<div class="no-search-results-form section-inner thin">
 
 			<?php
@@ -108,7 +123,22 @@ get_header();
 		<?php
 	}
 	?>
+	</div>
+	<div class="col_sidebar">
+		<?php if ( $has_sidebar_12 ) { ?>
 
+			<div class="footer-widgets column-two grid-item">
+				<?php if ( $has_sidebar_12 ) { ?>
+
+					<div class="footer-widgets column-two grid-item">
+						<?php dynamic_sidebar( 'sidebar-12' ); ?>
+					</div>
+
+				<?php } ?>
+			</div>
+
+		<?php } ?>
+	</div>
 	<?php get_template_part( 'template-parts/pagination' ); ?>
 
 </main><!-- #site-content -->
