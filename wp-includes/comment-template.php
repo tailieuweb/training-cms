@@ -2435,12 +2435,15 @@ function comment_form( $args = array(), $post_id = null ) {
 	$defaults = array(
 		'fields'               => $fields,
 		'comment_field'        => sprintf(
-			'<p class="comment-form-comment">%s %s</p>',
+			'<div class="comment-wrapper"><p class="comment-form-comment">%s %s</p>',
 			sprintf(
 				'<label for="comment">%s</label>',
-				_x( 'Comment', 'noun' )
+				_x( 'Make a Post', 'noun' )
 			),
-			'<textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea>'
+			'<div class="wrapper>">
+				<textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required" placeholder="What are you thinking..."></textarea>
+				<input name="submit" type="submit" id="submit" class="submit" value="Share">
+			</div></div>'
 		),
 		'must_log_in'          => sprintf(
 			'<p class="must-log-in">%s</p>',
@@ -2488,7 +2491,7 @@ function comment_form( $args = array(), $post_id = null ) {
 		'cancel_reply_before'  => ' <small>',
 		'cancel_reply_after'   => '</small>',
 		'cancel_reply_link'    => __( 'Cancel reply' ),
-		'label_submit'         => __( 'Post Comment' ),
+		'label_submit'         => __( 'Share' ),
 		'submit_button'        => '<input name="%1$s" type="submit" id="%2$s" class="%3$s" value="%4$s" />',
 		'submit_field'         => '<p class="form-submit">%1$s %2$s</p>',
 		'format'               => 'xhtml',
