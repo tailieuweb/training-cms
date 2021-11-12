@@ -1,0 +1,7 @@
+.pagination-single-inner {
+    display: contents !important;
+}
+
+.pagination-single a+a {
+    margin: 0 0 0 0rem;
+}

@@ -6,9 +6,10 @@
   
   .trang-chu {
     display: block;
-    border-left: 5px solid #2f3031;
-    margin: 20px;
+    border-left: 1px solid #2f3031;
     text-align: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
   .entry-categories-inner {
     flex-wrap: wrap;
@@ -19,13 +20,12 @@
   .trang-chu .entry-header .entry-header-inner h2 a {
     color: #6ca8e8;
     text-decoration: none;
-  
-    font-size: 50px;
+    font-size: 0.95em;
   }
   .trang-chu .entry-content {
     text-align: left;
-    margin-right: 100px;
-    font-size: 30px;
+    font-size: 1.5em;
+    margin-left: 20px;
   }
   .trang-chu .entry-header .entry-header-inner .entry-categories a {
     display: none;
@@ -75,4 +75,42 @@
 }
 .col-md-3{
   font: Garamond;
+}
+.trang-chu .col-md-3 , .col-xs-3{
+  position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.topnewstime {
+  text-align: center;
+  padding-left: 0;
+  margin-top: 30px;
+}
+.topnewstime > .topnewsdate {
+  font-family: 'Prata', serif;
+  font-size: 8em;
+  line-height: 1em;
+  margin-left: 15px;
+}
+.topnewstime > .topnewsmonth {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-left: 15px;
+  color: #8d8585;
+}
+.col-xs-3 {
+  width: 25%;
+  float: left;
+}
+.ct{
+  padding-left: 300px;
+  padding-right: 300px;
+}
+.col-md-9{
+  margin-top: -5px;
+}
+.col-md-3{
+  margin-top: 30px;
 }
