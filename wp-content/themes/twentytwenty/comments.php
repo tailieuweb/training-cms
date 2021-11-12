@@ -37,6 +37,7 @@ if ( $comments ) {
 				printf( _x( 'One reply on &ldquo;%s&rdquo;', 'comments title', 'twentytwenty' ), get_the_title() );
 			} else {
 				printf(
+					
 					/* translators: 1: Number of comments, 2: Post title. */
 					_nx(
 						'%1$s reply on &ldquo;%2$s&rdquo;',

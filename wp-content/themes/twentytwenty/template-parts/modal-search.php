@@ -19,6 +19,7 @@
 				array(
 					'aria_label' => __( 'Search for:', 'twentytwenty' ),
 				)
+				
 			);
 			?>
 
