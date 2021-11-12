@@ -134,7 +134,20 @@ else{
 <article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
 <div class="row">
 	<div class="col-md-2">
-		<!--module 9-->
+	<div class="cate">
+				<h2>Categories</h2>
+				<div class="crossedbg-categories"></div>
+				<div class="ul-cate">
+					<ul>
+						<?php $catID = get_terms('category');
+						foreach ($catID as $key => $value) { ?>
+
+							<li class="cate-name"><a href="<?= "http://" . $_SERVER["HTTP_HOST"]."/category/".$value->slug ?>"><?php echo $value->name ?></a></li>
+						<?php } ?>
+					</ul>
+				</div>
+
+			</div>
 	</div>
 	<div class="col-md-8">
 		<div class="header">
@@ -189,8 +202,9 @@ else{
 
 			</div><!-- .entry-content -->
 
-		</div><!-- .post-inner -->
+		</div><!-- .post-inner --> 
 
+</article><!-- .post -->
 		<div class="section-inner">
 			<?php
 				wp_link_pages(
@@ -241,6 +255,4 @@ else{
     <?php
 		}
 		?>
-
-</article><!-- .post -->
 <?php }?>
