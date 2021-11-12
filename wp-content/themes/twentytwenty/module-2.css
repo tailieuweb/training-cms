@@ -71,3 +71,7 @@
 .desc_post {
     border-left: 1px solid #666;
 }
+.desc_post>h4>a:hover{
+    color: #428bca;
+    opacity: 0.5;
+}
