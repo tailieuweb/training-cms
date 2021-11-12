@@ -64,7 +64,8 @@
 				<?php } ?>
 
 				<div class="header-titles">
-
+ 
+				
 					<?php
 					// Site title or logo.
 					twentytwenty_site_logo();
@@ -115,7 +116,9 @@
 										'title_li' => false,
 										'walker'   => new TwentyTwenty_Walker_Page(),
 									)
-								);
+								); 
+
+
 							}
 							?>
 

@@ -4380,7 +4380,9 @@ div.comment:first-of-type {
 	border-color: #dedfdf;
 	border-style: solid;
 	border-width: 0;
-}
+} 
+
+
 
 .footer-top-visible .footer-nav-widgets-wrapper,
 .footer-top-hidden #site-footer {
