@@ -14,6 +14,7 @@ if ( (bool) get_the_author_meta( 'description' ) && (bool) get_theme_mod( 'show_
 			<?php echo get_avatar( get_the_author_meta( 'ID' ), 160 ); ?>
 		</div>
 		<h2 class="author-title heading-size-4">
+			
 			<?php
 			printf(
 				/* translators: %s: Author name. */

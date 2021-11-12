@@ -19,6 +19,7 @@ $prev_text = sprintf(
 	__( 'Newer <span class="nav-short">Posts</span>', 'twentytwenty' )
 );
 $next_text = sprintf(
+	
 	'<span class="nav-next-text">%s</span> %s',
 	/*
 	 * Translators: This text contains HTML to allow the text to be shorter on small screens.
