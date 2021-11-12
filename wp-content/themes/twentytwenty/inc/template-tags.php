@@ -312,9 +312,6 @@ function twentytwenty_get_post_meta($post_id = null, $location = 'single-top')
 			);
 		}
 
-
-
-
 		$post_meta_wrapper_classes = ' post-meta-single post-meta-single-top';
 	} elseif ('single-bottom' === $location) {
 
@@ -394,7 +391,7 @@ function twentytwenty_get_post_meta($post_id = null, $location = 'single-top')
 							?>
 						</span>
 					</li>
-					<?php
+				<?php
 
 				}
 
@@ -404,6 +401,17 @@ function twentytwenty_get_post_meta($post_id = null, $location = 'single-top')
 					$has_meta = true;
 					if (is_single()) {
 					?>
+				?>
+					<li class="post-date meta-wrapper">
+						<span class="meta-icon">
+							<span class="screen-reader-text"><?php _e('Post date', 'twentytwenty'); ?></span>
+							<?php twentytwenty_the_theme_svg('calendar'); ?>
+						</span>
+						<span class="meta-text">
+							<a href="<?php the_permalink(); ?>"><?php the_time(get_option('date_format')); ?></a>
+						</span>
+					</li>
+				<?php
 
 						<li class="post-date meta-wrapper">
 							<span class="meta-icon">
@@ -443,6 +451,7 @@ function twentytwenty_get_post_meta($post_id = null, $location = 'single-top')
 						<span class="meta-text">
 							<?php _ex('In', 'A string that is output before one or more categories', 'twentytwenty'); ?>
 							<?php the_category(', '); ?>
+							<?php _ex('In', 'A string that is output before one or more categories', 'twentytwenty'); ?> <?php the_category(', '); ?>
 						</span>
 					</li>
 				<?php
@@ -751,9 +760,10 @@ function twentytwenty_body_classes($classes)
 	$has_social_menu = has_nav_menu('social');
 	$has_sidebar_1   = is_active_sidebar('sidebar-1');
 	$has_sidebar_2   = is_active_sidebar('sidebar-2');
+	$has_sidebar_3   = is_active_sidebar('sidebar-3');
 
 	// Add a class indicating whether those elements are output.
-	if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
+	if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3) {
 		$classes[] = 'footer-top-visible';
 	} else {
 		$classes[] = 'footer-top-hidden';
