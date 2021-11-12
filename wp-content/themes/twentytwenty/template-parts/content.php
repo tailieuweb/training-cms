@@ -21,7 +21,7 @@ if (!is_single()) {
 	$class = 'danh-sach';
 ?>
 
-<article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
+<article style="background-color: grey;" <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2"></div>
