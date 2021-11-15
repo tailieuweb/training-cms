@@ -98,20 +98,7 @@ else{
     <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 	<div class="row">
 		<div class="col-md-3">
-			<div class="cate">
-				<h2>Categories</h2>
-				<div class="crossedbg-categories"></div>
-				<div class="ul-cate">
-					<ul>
-						<?php $catID = get_terms('category');
-						foreach ($catID as $key => $value) { ?>
 
-							<li class="cate-name"><a href="<?= "http://" . $_SERVER["HTTP_HOST"]."/category/".$value->slug ?>"><?php echo $value->name ?></a></li>
-						<?php } ?>
-					</ul>
-				</div>
-
-			</div>
 		</div>
 		<div class="col-md-6">
 			<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
@@ -183,7 +170,29 @@ else{
 			</article><!-- .post -->
 		</div>
 		<div class="col-md-3">
-			
+		<div class="cate">
+            <h2>Recent Posts</h2>
+            <div class="crossedbg-recentposts"></div>
+            <div class="ul-cate">
+                <ul>
+				<li class="cate-name">
+                    <a href="http://wordpress.local/?p=18">Pin có thể uốn và co giãn như rắn</a>
+				</li>
+				<li class="cate-name">
+                    <a href="http://wordpress.local/?p=16">Tìm người giỏi cho những nghiên cứu hàng đầu tại VKIST</a>
+				</li>
+				<li class="cate-name">
+                    <a href="http://wordpress.local/?p=14">Usyk không muốn knock-out Joshua</a>
+				</li>
+				<li class="cate-name">
+                    <a href="http://wordpress.local/?p=12">Bồ Đào Nha vào chung kết futsal World Cup</a>
+				</li>
+				<li class="cate-name">
+                    <a href="http://wordpress.local/?p=10">Mourinho chạm mốc 200 trận tại Cup châu Âu</a>
+				</li>
+				</ul>
+            </div>
+        </div>
 		</div>
 	</div>
 
