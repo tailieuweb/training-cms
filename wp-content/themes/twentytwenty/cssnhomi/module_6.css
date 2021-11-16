@@ -1,0 +1,120 @@
+/*css trang detail*/
+.entry-header .entry-header-inner .entry-categories a {
+    display: none;
+  }
+  .meta-text a {
+    display: none;
+  }
+  .meta-text {
+    display: none;
+  }
+  .meta-icon {
+    display: none;
+  }
+  h1.entry-title,
+  h2.entry-title {
+    margin: 0;
+    font-size: 30px;
+  }
+  .entry-content > *:first-child {
+    margin-top: 0;
+    text-align: left;
+  }
+  .chi-tiet .gn .container .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .chi-tiet .gn .container .row::before{
+    content: " ";
+    display: table;
+  }
+  .chi-tiet .gn .container .row::after{
+    clear: both;
+    content: " ";
+    display: table;
+  }
+  .chi-tiet .gn .container .row .col-md-12{
+    position: relative;
+    min-height: 1px;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+  .chi-tiet .gn .container .row .col-md-12 .overviewline{
+    border-bottom: 1px solid #474747;
+    margin: 25px 0 15px;
+    position: relative;
+  }
+  .chi-tiet .gn .container .row .col-md-12 .overviewline::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50px;
+    border-width: 12px 12px 0;
+    border-style: solid;
+    border-color: #474747 transparent;
+    display: block;
+    width: 0;
+  }
+  .chi-tiet .gn .container .row .col-md-12 .overviewline::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 51px;
+    border-width: 11px 11px 0;
+    border-style: solid;
+    border-color: #f5f5f5 transparent;
+    display: block;
+    width: 0;
+  }
+  .chi-tiet .singular .entry-header {
+    background-color: rgb(244 244 244);
+    padding: 4rem 0;
+}
+  
+.col-xs-3 {
+  width: 25%;
+  float: left;
+}
+.col-md-2, .col-xs-3{
+  position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 16px;
+}
+
+.headlinesdate {
+  background: #f5ce31;
+  border-radius: 50%;
+  padding: 10px 17px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
+  float: left;
+    font-family: 'Prata', serif;
+}
+.headlinesdate .headlinesday {
+  border-bottom: 1px solid #000;
+  line-height: 1.7em;
+}
+.headlinesdate .headlinesdm {
+  float: left;
+  font-family: 'Prata', serif;
+}
+.chi-tiet .headlinesdate .headlinesyear {
+  line-height: 3.5em;
+  float: left;
+  margin-left: 12px;
+}
+.col-md-2{
+  margin-top: 55px;
+  font-size: 20px;
+}
+.chi-tiet .col-md-8 .entry-header{
+  background-color: rgb(244 244 244);
+  text-align: left;
+  margin-left: 90px;
+}
+.chi-tiet .entry-header{
+  margin-top: -50px;
+  margin-bottom: -80px;
+}

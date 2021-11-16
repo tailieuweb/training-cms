@@ -1,0 +1,116 @@
+/*css content */
+.trang-chu > .has-text-align-center {
+    text-align: left;
+    font-size: 10%;
+  }
+  
+  .trang-chu {
+    display: block;
+    border-left: 1px solid #2f3031;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .entry-categories-inner {
+    flex-wrap: wrap;
+    margin: -0.5rem 0 0 -1rem;
+    text-align: left;
+  }
+  
+  .trang-chu .entry-header .entry-header-inner h2 a {
+    color: #6ca8e8;
+    text-decoration: none;
+    font-size: 0.95em;
+  }
+  .trang-chu .entry-content {
+    text-align: left;
+    font-size: 1.5em;
+    margin-left: 20px;
+  }
+  .trang-chu .entry-header .entry-header-inner .entry-categories a {
+    display: none;
+  }
+  .trang-chu .meta-text a {
+    display: none;
+  }
+  .trang-chu .meta-text {
+    display: none;
+  }
+  .trang-chu .meta-icon {
+    display: none;
+  }
+  
+  .container .row .col-md-3 a {
+    color: black;
+  }
+  .ngay{
+    text-align: center;
+    font-size: 100px;
+  }
+  .thang{
+    text-align: center;
+    font-size: 20px;
+    color: #8d8585;
+  }
+  cite, figcaption, .wp-caption-text, .post-meta, .entry-content .wp-block-archives li, .entry-content .wp-block-categories li, .entry-content .wp-block-latest-posts li, .wp-block-latest-comments__comment-date, .wp-block-latest-posts__post-date, .wp-block-embed figcaption, .wp-block-image figcaption, .wp-block-pullquote cite, .comment-metadata, .comment-respond .comment-notes, .comment-respond .logged-in-as, .pagination .dots, .entry-content hr:not(.has-background), hr.styled-separator, :root .has-secondary-color {
+    color: #6d6d6d;
+    display: none;
+}
+#site-content {
+  overflow: hidden;
+  background: rgb(244 244 244);
+}
+.ct .container .row{
+  background-color: white;
+}
+.hr{
+  background-color: rgb(244 244 244);
+  height: 10px;
+  width: 0px;
+}
+.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+  max-width: 58rem;
+  width: calc(100% - 4rem);
+  color: #8d8585;
+}
+.col-md-3{
+  font: Garamond;
+}
+.trang-chu .col-md-3 , .col-xs-3{
+  position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.topnewstime {
+  text-align: center;
+  padding-left: 0;
+  margin-top: 30px;
+}
+.topnewstime > .topnewsdate {
+  font-family: 'Prata', serif;
+  font-size: 8em;
+  line-height: 1em;
+  margin-left: 15px;
+}
+.topnewstime > .topnewsmonth {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-left: 15px;
+  color: #8d8585;
+}
+.col-xs-3 {
+  width: 25%;
+  float: left;
+}
+.ct{
+  padding-left: 300px;
+  padding-right: 300px;
+}
+.col-md-9{
+  margin-top: -5px;
+}
+.col-md-3{
+  margin-top: 30px;
+}

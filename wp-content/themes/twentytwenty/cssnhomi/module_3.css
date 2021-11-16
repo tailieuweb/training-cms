@@ -1,0 +1,6 @@
+.widget-content > div > *:last-child {
+    margin-bottom: 0;
+    /* margin-left: 50
+px
+; */
+}
