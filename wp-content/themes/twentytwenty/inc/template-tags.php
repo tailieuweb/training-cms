@@ -393,7 +393,38 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 							<?php twentytwenty_the_theme_svg( 'calendar' ); ?>
 						</span>
 						<span class="meta-text">
-							<a href="<?php the_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
+							<?php if (!is_singular()) { ?>
+								<a href="<?php the_permalink(); ?>"><?php the_time(get_option('date_format')); ?></a>
+							<?php } ?>
+
+							<?php if (is_singular()) { ?>
+								<div class="headlinesdates">
+									<div class="headlinesdms">
+										<div class="headlinesdays">
+											<a href="<?php the_permalink(); ?>"><?php the_time(substr(get_option('date_format'), 0, 1)); ?></a>
+										</div>
+										<div class="headlinesmonths">
+											<a href="<?php the_permalink(); ?>"><?php the_time(substr(get_option('date_format'), 2, 1)); ?></a>
+										</div>
+									</div>
+									<div class="headlinesyears">
+										<a href="<?php the_permalink(); ?>"><?php the_time(substr(get_option('date_format'), 4, 6)); ?></a>
+									</div>
+								</div>
+								<div class="headlinesdate">
+									<div class="headlinesdm">
+										<div class="headlinesday">
+											<a href="<?php the_permalink(); ?>"><?php the_time(substr(get_option('date_format'), 0, 1)); ?></a>
+										</div>
+										<div class="headlinesmonth">
+											<a href="<?php the_permalink(); ?>"><?php the_time(substr(get_option('date_format'), 2, 1)); ?></a>
+										</div>
+									</div>
+									<div class="headlinesyear">
+										<a href="<?php the_permalink(); ?>"><?php the_time(substr(get_option('date_format'), 4, 6)); ?></a>
+									</div>
+								</div>
+							<?php } ?>
 						</span>
 					</li>
 					<?php
