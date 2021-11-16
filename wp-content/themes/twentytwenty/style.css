@@ -6584,7 +6584,7 @@ ul li.cate-name a {
 li.cate-name:last-child{
 	border-bottom: 0px solid gray;
 }
-.crossedbg-categories {
+.crossedbg-categories {	
 	width: 270px;
     background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
     height: 15px;
@@ -6617,7 +6617,7 @@ li.cate-name::before {
     padding-right: 10px;
     height: 5px;
 }
-/* categories */
+/* recentposts */
 li.cate-name {
 	color: #7FB1DB;
     line-height: 5rem;
