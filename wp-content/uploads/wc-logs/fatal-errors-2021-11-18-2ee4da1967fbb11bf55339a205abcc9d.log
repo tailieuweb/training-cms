@@ -1,0 +1,72 @@
+2021-11-18T01:08:46+00:00 CRITICAL Uncaught TypeError: array_column(): Argument #1 ($array) must be of type array, string given in C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php:27
+Stack trace:
+#0 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php(27): array_column('', 'slug')
+#1 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\TransformerService.php(59): Automattic\WooCommerce\Admin\RemoteInboxNotifications\Transformers\ArrayColumn->transform('', Object(stdClass), '')
+#2 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\OptionRuleProcessor.php(45): Automattic\WooCommerce\Admin\RemoteInboxNotifications\TransformerService::apply('', Array, '')
+#3 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\RuleEvaluator.php(62): Automattic\WooCommerce\Admin\RemoteInboxNotifications\OptionRuleProcessor->process(Object(stdClass), NULL)
+#4 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\RemoteFreeExtensions\EvaluateExtension.php(27): Automattic\WooCommerce\Admin\RemoteInboxNotifications\RuleEvaluator->evaluate(Array)
+#5 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\RemoteFreeExtensions\Init.php(48): Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\EvaluateExtension::evaluate(Object(stdClass))
+#6 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\OnboardingFreeExtensions.php(75): Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\Init::get_extensions()
+#7 C:\Users\HUNG\Desktop\CMS\wp-includes\rest-api\class-wp-rest-server.php(1140): Automattic\WooCommerce\Admin\API\OnboardingFreeExtensions->get_available_extensions(Object(WP_REST_Request))
+#8 C:\Users\HUNG\Desktop\CMS\wp-includes\rest-api\class-wp-rest-server.php(987): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wc-admin/onboa...', Array, NULL)
+#9 C:\Users\HUNG\Desktop\CMS\wp-includes\rest-api\class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#10 C:\Users\HUNG\Desktop\CMS\wp-includes\rest-api.php(370): WP_REST_Server->serve_request('/wc-admin/onboa...')
+#11 C:\Users\HUNG\Desktop\CMS\wp-includes\class-wp-hook.php(303): rest_api_loaded(Object(WP))
+#12 C:\Users\HUNG\Desktop\CMS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#13 C:\Users\HUNG\Desktop\CMS\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#14 C:\Users\HUNG\Desktop\CMS\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#15 C:\Users\HUNG\Desktop\CMS\wp-includes\class-wp.php(750): WP->parse_request('')
+#16 C:\Users\HUNG\Desktop\CMS\wp-includes\functions.php(1291): WP->main('')
+#17 C:\Users\HUNG\Desktop\CMS\wp-blog-header.php(16): wp()
+#18 C:\Users\HUNG\Desktop\CMS\index.php(17): require('C:\\Users\\HUNG\\D...')
+#19 {main}
+  thrown in C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php on line 27
+
+2021-11-18T01:27:29+00:00 CRITICAL Uncaught TypeError: array_column(): Argument #1 ($array) must be of type array, string given in C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php:27
+Stack trace:
+#0 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php(27): array_column('', 'slug')
+#1 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\TransformerService.php(59): Automattic\WooCommerce\Admin\RemoteInboxNotifications\Transformers\ArrayColumn->transform('', Object(stdClass), '')
+#2 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\OptionRuleProcessor.php(45): Automattic\WooCommerce\Admin\RemoteInboxNotifications\TransformerService::apply('', Array, '')
+#3 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\RuleEvaluator.php(62): Automattic\WooCommerce\Admin\RemoteInboxNotifications\OptionRuleProcessor->process(Object(stdClass), NULL)
+#4 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\RemoteFreeExtensions\EvaluateExtension.php(27): Automattic\WooCommerce\Admin\RemoteInboxNotifications\RuleEvaluator->evaluate(Array)
+#5 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\RemoteFreeExtensions\Init.php(48): Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\EvaluateExtension::evaluate(Object(stdClass))
+#6 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\OnboardingFreeExtensions.php(75): Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\Init::get_extensions()
+#7 C:\Users\HUNG\Desktop\CMS\wp-includes\rest-api\class-wp-rest-server.php(1140): Automattic\WooCommerce\Admin\API\OnboardingFreeExtensions->get_available_extensions(Object(WP_REST_Request))
+#8 C:\Users\HUNG\Desktop\CMS\wp-includes\rest-api\class-wp-rest-server.php(987): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wc-admin/onboa...', Array, NULL)
+#9 C:\Users\HUNG\Desktop\CMS\wp-includes\rest-api\class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#10 C:\Users\HUNG\Desktop\CMS\wp-includes\rest-api.php(370): WP_REST_Server->serve_request('/wc-admin/onboa...')
+#11 C:\Users\HUNG\Desktop\CMS\wp-includes\class-wp-hook.php(303): rest_api_loaded(Object(WP))
+#12 C:\Users\HUNG\Desktop\CMS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#13 C:\Users\HUNG\Desktop\CMS\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#14 C:\Users\HUNG\Desktop\CMS\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#15 C:\Users\HUNG\Desktop\CMS\wp-includes\class-wp.php(750): WP->parse_request('')
+#16 C:\Users\HUNG\Desktop\CMS\wp-includes\functions.php(1291): WP->main('')
+#17 C:\Users\HUNG\Desktop\CMS\wp-blog-header.php(16): wp()
+#18 C:\Users\HUNG\Desktop\CMS\index.php(17): require('C:\\Users\\HUNG\\D...')
+#19 {main}
+  thrown in C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php on line 27
+
+2021-11-18T01:31:44+00:00 CRITICAL Uncaught TypeError: array_column(): Argument #1 ($array) must be of type array, string given in C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php:27
+Stack trace:
+#0 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php(27): array_column('', 'slug')
+#1 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\TransformerService.php(59): Automattic\WooCommerce\Admin\RemoteInboxNotifications\Transformers\ArrayColumn->transform('', Object(stdClass), '')
+#2 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\OptionRuleProcessor.php(45): Automattic\WooCommerce\Admin\RemoteInboxNotifications\TransformerService::apply('', Array, '')
+#3 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\RuleEvaluator.php(62): Automattic\WooCommerce\Admin\RemoteInboxNotifications\OptionRuleProcessor->process(Object(stdClass), NULL)
+#4 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\RemoteFreeExtensions\EvaluateExtension.php(27): Automattic\WooCommerce\Admin\RemoteInboxNotifications\RuleEvaluator->evaluate(Array)
+#5 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\RemoteFreeExtensions\Init.php(48): Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\EvaluateExtension::evaluate(Object(stdClass))
+#6 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\OnboardingFreeExtensions.php(75): Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\Init::get_extensions()
+#7 C:\Users\HUNG\Desktop\CMS\wp-includes\rest-api\class-wp-rest-server.php(1140): Automattic\WooCommerce\Admin\API\OnboardingFreeExtensions->get_available_extensions(Object(WP_REST_Request))
+#8 C:\Users\HUNG\Desktop\CMS\wp-includes\rest-api\class-wp-rest-server.php(987): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wc-admin/onboa...', Array, NULL)
+#9 C:\Users\HUNG\Desktop\CMS\wp-includes\rest-api\class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#10 C:\Users\HUNG\Desktop\CMS\wp-includes\rest-api.php(370): WP_REST_Server->serve_request('/wc-admin/onboa...')
+#11 C:\Users\HUNG\Desktop\CMS\wp-includes\class-wp-hook.php(303): rest_api_loaded(Object(WP))
+#12 C:\Users\HUNG\Desktop\CMS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#13 C:\Users\HUNG\Desktop\CMS\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#14 C:\Users\HUNG\Desktop\CMS\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#15 C:\Users\HUNG\Desktop\CMS\wp-includes\class-wp.php(750): WP->parse_request('')
+#16 C:\Users\HUNG\Desktop\CMS\wp-includes\functions.php(1291): WP->main('')
+#17 C:\Users\HUNG\Desktop\CMS\wp-blog-header.php(16): wp()
+#18 C:\Users\HUNG\Desktop\CMS\index.php(17): require('C:\\Users\\HUNG\\D...')
+#19 {main}
+  thrown in C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php on line 27
+
