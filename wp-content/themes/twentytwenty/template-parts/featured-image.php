@@ -22,9 +22,10 @@ if ( has_post_thumbnail() && ! post_password_required() ) {
 		<div class="featured-media-inner section-inner<?php echo $featured_media_inner_classes; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output ?>">
 
 			<?php
-			the_post_thumbnail();
-
+			if(is_search()){
+				the_post_thumbnail();
 			$caption = get_the_post_thumbnail_caption();
+			}
 
 			if ( $caption ) {
 				?>
