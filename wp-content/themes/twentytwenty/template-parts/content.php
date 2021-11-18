@@ -12,59 +12,132 @@
  * @since Twenty Twenty 1.0
  */
 
+
 $class = '';
 if (!is_single()) {
-	$class = 'danhsach';
+	$class = "posts-trangchu";
+	$pentry = "p-entry";
 }
+
+// code kiem tra dang dung trang search
 if (!is_search()) {
 	// print_r('true');
 } else {
 	$class = 'search';
 	// print_r('false');
 }
-
+// code kiem tra dang dung trang search
 ?>
 
 <article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
-
-	<?php
-
-	get_template_part('template-parts/entry-header');
-
-	if (!is_search()) {
-		get_template_part('template-parts/featured-image');
+  <?php if (!is_single() && !is_search()) {
+		echo "<div class='container'>";
+		echo "<div class='items-post'>";
+		echo "<div class='row'>";
+		echo "<div class='col-12 col-md-4'>";
 	}
-
 	?>
+  <?php
+	if (!is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
+		the_excerpt();
+		$post = get_post();
+		$content = $post->post_content;
+		echo $content;
+	}
+	// them cot hinh anh cho trang search
+	elseif (is_search()) {
+		$post = get_post();
+		$content = $post->post_content;
+		echo $content;
+		// var_dump('hello');
+	}
+	// them cot hinh anh cho trang search
+	if (isset($is_apache)) {
 
-	<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
+		get_template_part('template-parts/entry-header');
 
-		<div class="entry-content">
+		if (!is_search()) {
+			get_template_part('template-parts/featured-image');
+		}
+	} else {
+		if (!is_single()) {
+			echo "<div class='time-post'>";
+			$post = get_post();
+			$date = $post->post_date;
+			$day = date("j", strtotime($date));
+			$month = date("F", strtotime($date));
+			if (is_search()) {
+				$month = date("m", strtotime($date));
+			}
+			echo "<span class='day'>" . $day . "</span><br>";
+			// Kiem tra ney o trang search thi them tu Thang vao
+			if (is_search()) {
+				echo "<span class='month'> Tháng " . $month . "</span></div>";
+			} else {
+				echo "<span class='month'>" . $month . "</span></div>";
+			}
+			// Kiem tra ney o trang search thi them tu Thang vao
+		} else {
+			get_template_part('template-parts/entry-header');
+		}
+	}
+	?>
+  <?php if (!is_single()) {
+		echo "</div>";
+		echo "<div class='col-12 col-md-8 item-inner'>";
+	}
+	?>
+  <div
+    class="post-inner content-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
 
-			<?php
-			if (is_search() || !is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
+    <div class="entry-content <?php echo $pentry; ?>">
+      <?php
+			if (!is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
 				the_excerpt();
 				$post = get_post();
 				$content = $post->post_content;
 				echo $content;
-			} else {
-				if (is_single()) {
-					echo the_content(__('Continue reading', 'twentytwenty'));
-				} else {
-					// echo substr(the_content(__('Continue reading', 'twentytwenty')), 0, 50);
-					$post = get_post();
-					$content = $post->post_content;
-					echo $content;	
-				}
+				// var_dump('hello');
 			}
-			?>
+			// Neu dung tai trang search se xuat ra cot thu 3 khac
+			elseif (is_search()) {
+				$post = get_post();
+				// var_dump($post);
+				$title = $post->post_title;
+				$detail = $post->post_name;
+				$content = $post->post_content;
+				$str = str_replace('/<figure.*?>.*?<\ /figure>/', '', $content);
+        $a = strpos($str, '</p>');
+        $str = substr($str, 0, $a);
+        $str .= "<a class='more' href=" . $post->post_name . ">[....]</a>";
+        echo "<H4 class='title-entry'><a href='$detail'>$title</a></H4>";
+        echo $str;
+        }
+        // Neu dung tai trang search se xuat ra cot thu 3 khac
+        else {
+        if (is_single()) {
+        the_content(__('Continue reading', 'twentytwenty'));
+        } else {
+        $post = get_post();
+        $title = $post->post_title;
+        $detail = $post->post_name;
+        $content = $post->post_content;
+        $str = str_replace('/<figure.*?>.*?<\ /figure>/', '', $content);
+            $a = strpos($str, '</p>');
+            $str = substr($str, 0, $a);
+            $str .= "<a class='more' href=" . $post->post_name . ">[....]</a>";
+            echo "<H4 class='title-entry'><a href='$detail'>$title</a></H4>";
+            echo $str;
+            }
+            }
+            ?>
 
-		</div><!-- .entry-content -->
+    </div><!-- .entry-content -->
 
-	</div><!-- .post-inner -->
-
-	<div class="section-inner khongcan">
-		<?php
+  </div><!-- .post-inner -->
+  </div>
+  <div class="section-inner">
+    <?php
 		wp_link_pages(
 			array(
 				'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__('Page', 'twentytwenty') . '"><span class="label">' . __('Pages:', 'twentytwenty') . '</span>',
@@ -85,9 +158,9 @@ if (!is_search()) {
 		}
 		?>
 
-	</div><!-- .section-inner -->
+  </div><!-- .section-inner -->
 
-	<?php
+  <?php
 
 	if (is_single()) {
 
@@ -101,14 +174,18 @@ if (!is_search()) {
 	if ((is_single() || is_page()) && (comments_open() || get_comments_number()) && !post_password_required()) {
 	?>
 
-		<div class="comments-wrapper section-inner">
+  <div class="comments-wrapper section-inner">
 
-			<?php comments_template(); ?>
+    <?php comments_template(); ?>
 
-		</div><!-- .comments-wrapper -->
+  </div><!-- .comments-wrapper -->
 
-	<?php
+  <?php
 	}
 	?>
-
+  <?php if (!is_single()) {
+		echo "</div>
+    </div>
+    </div>";
+	} ?>
 </article><!-- .post -->

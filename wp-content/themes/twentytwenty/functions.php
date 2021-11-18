@@ -241,10 +241,12 @@ function twentytwenty_skip_link_focus_fix()
 	// The following is minified via `terser --compress --mangle -- assets/js/skip-link-focus-fix.js`.
 ?>
 	<script>
-		/(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function() {
-			var t, e = location.hash.substring(1);
-			/^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus())
-		}, !1);
+		/(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window
+			.addEventListener("hashchange", function() {
+				var t, e = location.hash.substring(1);
+				/^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i
+					.test(t.tagName) || (t.tabIndex = -1), t.focus())
+			}, !1);
 	</script>
 <?php
 }
@@ -413,7 +415,6 @@ function twentytwenty_sidebar_registration()
 			)
 		)
 	);
-
 	// Footer #3.
 	register_sidebar(
 		array_merge(
@@ -421,6 +422,17 @@ function twentytwenty_sidebar_registration()
 			array(
 				'name'        => __('Footer #3', 'twentytwenty'),
 				'id'          => 'sidebar-3',
+				'description' => __('Widgets in this area will be displayed in the second column in the footer.', 'twentytwenty'),
+			)
+		)
+	);
+	// Module 9.
+	register_sidebar(
+		array_merge(
+			$shared_args,
+			array(
+				'name'        => __('Module #9', 'twentytwenty'),
+				'id'          => 'sidebar-9',
 				'description' => __('Widgets in this area will be displayed in the second column in the footer.', 'twentytwenty'),
 			)
 		)
@@ -781,7 +793,7 @@ function twentytwenty_get_elements_array()
 		),
 		'header-footer' => array(
 			'accent'     => array(
-				'color'            => array('body:not(.overlay-header) .primary-menu > li > a', 'body:not(.overlay-header) .primary-menu > li > .icon', '.modal-menu a', '.footer-menu a, .footer-widgets a', '#site-footer .wp-block-button.is-style-outline', '.wp-block-pullquote:before', '.singular:not(.overlay-header) .entry-header a', '.archive-header a', '.header-footer-group .color-accent', '.header-footer-group .color-accent-hover:hover'),
+				'color'            => array('body:not(.overlay-header) .primary-menu > li > a', 'body:not(.overlay-header) .primary-menu > li > .icon', '.modal-menu a', '.footer-menu a', '#site-footer .wp-block-button.is-style-outline', '.wp-block-pullquote:before', '.singular:not(.overlay-header) .entry-header a', '.archive-header a', '.header-footer-group .color-accent', '.header-footer-group .color-accent-hover:hover'),
 				'background-color' => array('.social-icons a', '#site-footer button:not(.toggle)', '#site-footer .button', '#site-footer .faux-button', '#site-footer .wp-block-button__link', '#site-footer .wp-block-file__button', '#site-footer input[type="button"]', '#site-footer input[type="reset"]', '#site-footer input[type="submit"]'),
 			),
 			'background' => array(
@@ -789,7 +801,7 @@ function twentytwenty_get_elements_array()
 				'background-color' => array('#site-header', '.footer-nav-widgets-wrapper', '#site-footer', '.menu-modal', '.menu-modal-inner', '.search-modal-inner', '.archive-header', '.singular .entry-header', '.singular .featured-media:before', '.wp-block-pullquote:before'),
 			),
 			'text'       => array(
-				'color'               => array('.header-footer-group', 'body:not(.overlay-header) #site-header .toggle', '.menu-modal .toggle'),
+				'color'               => array('.footer-widgets a', '.header-footer-group', 'body:not(.overlay-header) #site-header .toggle', '.menu-modal .toggle'),
 				'background-color'    => array('body:not(.overlay-header) .primary-menu ul'),
 				'border-bottom-color' => array('body:not(.overlay-header) .primary-menu > li > ul:after'),
 				'border-left-color'   => array('body:not(.overlay-header) .primary-menu ul ul:after'),

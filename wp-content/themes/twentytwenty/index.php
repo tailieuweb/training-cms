@@ -17,22 +17,17 @@
 
 get_header();
 $class = '';
-$col = '';
-if (!is_single()) {
-	$class = 'danhsach';
-	$col = 'col-md-8';
-} 
 if (!is_search()) {
 	// print_r('true');
-}else{
-	$class = 'search';
-	$col = 'col-md-12';
+} else {
+	$class = 'search-content';
 	// print_r('false');
 }
 ?>
-<main id="site-content" role="main" class="<?php echo $col.' '.$class ?>">
 
-	<?php
+<main id="site-content" role="main" class="<?php echo $class; ?>">
+
+  <?php
 
 	$archive_title    = '';
 	$archive_subtitle = '';
@@ -69,22 +64,25 @@ if (!is_search()) {
 
 	if ($archive_title || $archive_subtitle) {
 	?>
-		<header class="archive-header has-text-align-center header-footer-group">
 
-			<div class="archive-header-inner section-inner medium">
+  <header class="archive-header has-text-align-center header-footer-group">
 
-				<?php if ($archive_title) { ?>
-					<h1 class="archive-title"><?php echo wp_kses_post($archive_title); ?></h1>
-				<?php } ?>
+    <div class="archive-header-inner section-inner medium">
 
-				<?php if ($archive_subtitle) { ?>
-					<div class="archive-subtitle section-inner thin max-percentage intro-text"><?php echo wp_kses_post(wpautop($archive_subtitle)); ?></div>
-				<?php } ?>
+      <?php if ($archive_title) { ?>
+      <h1 class="archive-title"><?php echo wp_kses_post($archive_title); ?></h1>
+      <?php } ?>
 
-			</div><!-- .archive-header-inner -->
+      <?php if ($archive_subtitle) { ?>
+      <div class="archive-subtitle section-inner thin max-percentage intro-text">
+        <?php echo wp_kses_post(wpautop($archive_subtitle)); ?></div>
+      <?php } ?>
 
-		</header><!-- .archive-header -->
-	<?php
+    </div><!-- .archive-header-inner -->
+
+  </header><!-- .archive-header -->
+
+  <?php
 	}
 
 	if (have_posts()) {
@@ -92,10 +90,7 @@ if (!is_search()) {
 		$i = 0;
 
 		while (have_posts()) {
-			// $i++;
-			// if ($i > 1) {
-			// 	echo '<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
-			// }
+
 			the_post();
 
 			get_template_part('template-parts/content', get_post_type());
@@ -103,25 +98,23 @@ if (!is_search()) {
 	} elseif (is_search()) {
 	?>
 
-		<div class="no-search-results-form section-inner thin">
+  <div class="no-search-results-form section-inner thin">
 
-			<?php
+    <?php
 			get_search_form(
 				array(
-					'aria_label' => __('search again 1', 'twentytwenty'),
+					'aria_label' => __('search again', 'twentytwenty'),
 				)
 			);
 			?>
 
-		</div><!-- .no-search-results -->
+  </div><!-- .no-search-results -->
 
-	<?php
+  <?php
 	}
 	?>
 
-
-
-	<?php get_template_part('template-parts/pagination'); ?>
+  <?php get_template_part('template-parts/pagination'); ?>
 
 </main><!-- #site-content -->
 

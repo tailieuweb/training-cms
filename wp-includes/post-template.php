@@ -802,6 +802,10 @@ function get_body_class($class = '')
 
 	if (current_theme_supports('responsive-embeds')) {
 		$classes[] = 'wp-embed-responsive';
+        if(!is_single()){
+            $bodyContents ="body-content";
+            $classes[].=$bodyContents;
+        }
 	}
 
 	$page = $wp_query->get('page');
