@@ -20,7 +20,7 @@ if (!is_single()) {
 	<div class="row">
 		<div class="col-md-3">
 			<div class="cate">
-				<h2>Categories</h2>
+				<h2>Danh mục</h2>
 				<div class="crossedbg-categories"></div>
 				<div class="ul-cate">
 					<ul>
@@ -163,7 +163,7 @@ if (!is_search()) {
 				// var_dump($post);
 				//die();
 		?>
-				<div class="list_news" style="max-width: 50%;">
+				<div class="list_news" style="max-width: 100%; margin-top: 20px;">
 					<div class="list_new_view">
 						<div class="row">
 							<?php if (is_search()){?>

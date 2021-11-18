@@ -128,6 +128,9 @@ li.cate-name:last-child{
 	margin-top: 90px;
     height: auto;
 }
+.home-row .cate{
+	margin-top: 0px;
+}
 .cate h2{
 	margin-bottom: 6px;
     font-weight: 800;
@@ -5847,6 +5850,9 @@ section .section-title {
 }
 
 /* recent post */
+.home-row .rp-box{
+	bottom: 27px;
+}
 .rp-box {
 	position: relative;
 }
