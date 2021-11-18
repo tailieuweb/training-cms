@@ -5896,7 +5896,7 @@ section .section-title {
 }
 .crossedbg{
 	position: absolute;
-	top: 13%;
+	top: 8%;
 	left:25px;
 	width: 87%;
 	background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
@@ -5916,7 +5916,7 @@ section .section-title {
 	padding-left: 0px;
     font-weight: 800;
 	font-size: 2.8rem !important;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
 }
 .rp-box .widget_block .widget-content .wp-block-group{
 	margin-top: 90px;

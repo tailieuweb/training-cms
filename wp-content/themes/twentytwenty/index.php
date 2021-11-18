@@ -17,126 +17,231 @@
 
 get_header();
 ?>
-<div class="row home-row">
-	<div class="col-md-3">
-		<div class="cate">
-			<h2>Danh mục</h2>
-			<div class="crossedbg-categories"></div>
-			<div class="ul-cate">
-				<ul>
-					<?php $catID = get_terms('category');
-					foreach ($catID as $key => $value) { ?>
+<?php if (is_home()) { ?>
+	<div class="row home-row">
+		<div class="col-md-3">
+			<div class="cate">
+				<h2>Danh mục</h2>
+				<div class="crossedbg-categories"></div>
+				<div class="ul-cate">
+					<ul>
+						<?php $catID = get_terms('category');
+						foreach ($catID as $key => $value) { ?>
 
-						<li class="cate-name"><a href="<?= "http://" . $_SERVER["HTTP_HOST"] . "/category/" . $value->slug ?>"><?php echo $value->name ?></a></li>
-					<?php } ?>
-				</ul>
+							<li class="cate-name"><a href="<?= "http://" . $_SERVER["HTTP_HOST"] . "/category/" . $value->slug ?>"><?php echo $value->name ?></a></li>
+						<?php } ?>
+					</ul>
+				</div>
+
 			</div>
-
 		</div>
-	</div>
-	<div class="col-md-6">
-		<main id="site-content" role="main">
-			<?php
+		<div class="col-md-6">
+			<main id="site-content" role="main">
+				<?php
 
-			$archive_title    = '';
-			$archive_subtitle = '';
+				$archive_title    = '';
+				$archive_subtitle = '';
 
-			if (is_search()) {
-				global $wp_query;
+				if (is_search()) {
+					global $wp_query;
 
-				$archive_title = sprintf(
-					'%1$s %2$s',
-					'<span class="color-accent">' . __('Search:', 'twentytwenty') . '</span>',
-					'&ldquo;' . get_search_query() . '&rdquo;'
-				);
-
-				if ($wp_query->found_posts) {
-					$archive_subtitle = sprintf(
-						/* translators: %s: Number of search results. */
-						_n(
-							'We found %s result for your search.',
-							'We found %s results for your search.',
-							$wp_query->found_posts,
-							'twentytwenty'
-						),
-						number_format_i18n($wp_query->found_posts)
+					$archive_title = sprintf(
+						'%1$s %2$s',
+						'<span class="color-accent">' . __('Search:', 'twentytwenty') . '</span>',
+						'&ldquo;' . get_search_query() . '&rdquo;'
 					);
-				} else {
-					$archive_subtitle = __('We could not find any results for your search. You can give it another try through the search form below.', 'twentytwenty');
-				}
-			} elseif (is_archive() && !have_posts()) {
-				$archive_title = __('Nothing Found', 'twentytwenty');
-			} elseif (!is_home()) {
-				$archive_title    = get_the_archive_title();
-				$archive_subtitle = get_the_archive_description();
-			}
 
-			if ($archive_title || $archive_subtitle ) {
-			?>
-
-				<header class="archive-header has-text-align-center header-footer-group">
-
-					<div class="archive-header-inner section-inner medium">
-
-						<?php if ($archive_title) { ?>
-							<h1 class="archive-title"><?php echo wp_kses_post($archive_title); ?></h1>
-						<?php } ?>
-
-						<?php if ($archive_subtitle) { ?>
-							<div class="archive-subtitle section-inner thin max-percentage intro-text"><?php echo wp_kses_post(wpautop($archive_subtitle)); ?></div>
-						<?php } ?>
-
-					</div><!-- .archive-header-inner -->
-
-				</header><!-- .archive-header -->
-
-			<?php
-			}
-
-			if (have_posts()) {
-
-				$i = 0;
-
-				while (have_posts()) {
-					$i++;
-					if ($i > 1) {
-						// echo '<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
+					if ($wp_query->found_posts) {
+						$archive_subtitle = sprintf(
+							/* translators: %s: Number of search results. */
+							_n(
+								'We found %s result for your search.',
+								'We found %s results for your search.',
+								$wp_query->found_posts,
+								'twentytwenty'
+							),
+							number_format_i18n($wp_query->found_posts)
+						);
+					} else {
+						$archive_subtitle = __('We could not find any results for your search. You can give it another try through the search form below.', 'twentytwenty');
 					}
-					the_post();
-
-					get_template_part('template-parts/content', get_post_type());
+				} elseif (is_archive() && !have_posts()) {
+					$archive_title = __('Nothing Found', 'twentytwenty');
+				} elseif (!is_home()) {
+					$archive_title    = get_the_archive_title();
+					$archive_subtitle = get_the_archive_description();
 				}
-			} elseif (is_search()) {
-			?>
 
-				<div class="no-search-results-form section-inner thin">
+				if ($archive_title || $archive_subtitle) {
+				?>
 
-					<?php
-					get_search_form(
-						array(
-							'aria_label' => __('search again', 'twentytwenty'),
-						)
-					);
-					?>
+					<header class="archive-header has-text-align-center header-footer-group">
 
-				</div><!-- .no-search-results -->
+						<div class="archive-header-inner section-inner medium">
 
-			<?php
-			}
-			?>
+							<?php if ($archive_title) { ?>
+								<h1 class="archive-title"><?php echo wp_kses_post($archive_title); ?></h1>
+							<?php } ?>
 
-			<?php get_template_part('template-parts/pagination'); ?>
+							<?php if ($archive_subtitle) { ?>
+								<div class="archive-subtitle section-inner thin max-percentage intro-text"><?php echo wp_kses_post(wpautop($archive_subtitle)); ?></div>
+							<?php } ?>
 
-		</main><!-- #site-content -->
-	</div>
-	<div class="col-md-3">
-		<div class="rp-box">
-			<div class="crossedbg"></div>
-			<?php dynamic_sidebar('sidebar-3'); ?>
+						</div><!-- .archive-header-inner -->
 
+					</header><!-- .archive-header -->
+
+				<?php
+				}
+
+				if (have_posts()) {
+
+					$i = 0;
+
+					while (have_posts()) {
+						$i++;
+						if ($i > 1) {
+							// echo '<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
+						}
+						the_post();
+
+						get_template_part('template-parts/content', get_post_type());
+					}
+				} elseif (is_search()) {
+				?>
+
+					<div class="no-search-results-form section-inner thin">
+
+						<?php
+						get_search_form(
+							array(
+								'aria_label' => __('search again', 'twentytwenty'),
+							)
+						);
+						?>
+
+					</div><!-- .no-search-results -->
+
+				<?php
+				}
+				?>
+
+				<?php get_template_part('template-parts/pagination'); ?>
+
+			</main><!-- #site-content -->
+		</div>
+		<div class="col-md-3">
+			<div class="rp-box">
+				<div class="crossedbg"></div>
+				<?php dynamic_sidebar('sidebar-3'); ?>
+
+			</div>
 		</div>
 	</div>
-</div>
+<?php } else { ?>
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6">
+			<main id="site-content" role="main">
+				<?php
+
+				$archive_title    = '';
+				$archive_subtitle = '';
+
+				if (is_search()) {
+					global $wp_query;
+
+					$archive_title = sprintf(
+						'%1$s %2$s',
+						'<span class="color-accent">' . __('Search:', 'twentytwenty') . '</span>',
+						'&ldquo;' . get_search_query() . '&rdquo;'
+					);
+
+					if ($wp_query->found_posts) {
+						$archive_subtitle = sprintf(
+							/* translators: %s: Number of search results. */
+							_n(
+								'We found %s result for your search.',
+								'We found %s results for your search.',
+								$wp_query->found_posts,
+								'twentytwenty'
+							),
+							number_format_i18n($wp_query->found_posts)
+						);
+					} else {
+						$archive_subtitle = __('We could not find any results for your search. You can give it another try through the search form below.', 'twentytwenty');
+					}
+				} elseif (is_archive() && !have_posts()) {
+					$archive_title = __('Nothing Found', 'twentytwenty');
+				} elseif (!is_home()) {
+					$archive_title    = get_the_archive_title();
+					$archive_subtitle = get_the_archive_description();
+				}
+
+				if ($archive_title || $archive_subtitle) {
+				?>
+
+					<header class="archive-header has-text-align-center header-footer-group">
+
+						<div class="archive-header-inner section-inner medium">
+
+							<?php if ($archive_title) { ?>
+								<h1 class="archive-title"><?php echo wp_kses_post($archive_title); ?></h1>
+							<?php } ?>
+
+							<?php if ($archive_subtitle) { ?>
+								<div class="archive-subtitle section-inner thin max-percentage intro-text"><?php echo wp_kses_post(wpautop($archive_subtitle)); ?></div>
+							<?php } ?>
+
+						</div><!-- .archive-header-inner -->
+
+					</header><!-- .archive-header -->
+
+				<?php
+				}
+
+				if (have_posts()) {
+
+					$i = 0;
+
+					while (have_posts()) {
+						$i++;
+						if ($i > 1) {
+							// echo '<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
+						}
+						the_post();
+
+						get_template_part('template-parts/content', get_post_type());
+					}
+				} elseif (is_search()) {
+				?>
+
+					<div class="no-search-results-form section-inner thin">
+
+						<?php
+						get_search_form(
+							array(
+								'aria_label' => __('search again', 'twentytwenty'),
+							)
+						);
+						?>
+
+					</div><!-- .no-search-results -->
+
+				<?php
+				}
+				?>
+
+				<?php get_template_part('template-parts/pagination'); ?>
+
+			</main><!-- #site-content -->
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+
+<?php } ?>
+
+
 
 
 <?php get_template_part('template-parts/footer-menus-widgets'); ?>
