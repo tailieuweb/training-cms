@@ -117,6 +117,7 @@ class WP_Widget_Recent_Comments extends WP_Widget {
 			)
 		);
 
+
 		$output .= $args['before_widget'];
 		if ( $title ) {
 			$output .= $args['before_title'] . $title . $args['after_title'];

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The default template for displaying content
  *
@@ -10,92 +11,12 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
-if(!is_single()){
-    ?>
+$class = "";
+if (!is_single()) {
+	$class = 'danh-sach';
 }
-    <article <?php post_class('danhsachs'); ?> id="post-<?php the_ID(); ?>" style="background: url(../assets/images/bg_pattern.png) repeat;">
-	<?php
-
-	get_template_part( 'template-parts/entry-header' );
-
-	if ( ! is_search() ) {
-		get_template_part( 'template-parts/featured-image' );
-	}
-
-	?>
-
-	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
-
-		<div class="entry-content">
-
-			<?php
-			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
-				the_excerpt();
-			} else {
-				the_content( __( 'Continue reading', 'twentytwenty' ) );
-			}
-			?>
-
-		</div><!-- .entry-content -->
-
-	</div><!-- .post-inner -->
-
-	<div class="section-inner">
-		<?php
-		wp_link_pages(
-			array(
-				'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__( 'Page', 'twentytwenty' ) . '"><span class="label">' . __( 'Pages:', 'twentytwenty' ) . '</span>',
-				'after'       => '</nav>',
-				'link_before' => '<span class="page-number">',
-				'link_after'  => '</span>',
-			)
-		);
-
-		edit_post_link();
-
-		// Single bottom post meta.
-		twentytwenty_the_post_meta( get_the_ID(), 'single-bottom' );
-
-		if ( post_type_supports( get_post_type( get_the_ID() ), 'author' ) && is_single() ) {
-
-			get_template_part( 'template-parts/entry-author-bio' );
-
-		}
-		?>
-
-	</div><!-- .section-inner -->
-
-	<?php
-
-	if ( is_single() ) {
-
-		get_template_part( 'template-parts/navigation' );
-
-	}
-
-	/*
-	 * Output comments wrapper if it's a post, or if comments are open,
-	 * or if there's a comment number – and check for password.
-	 */
-	if ( ( is_single() || is_page() ) && ( comments_open() || get_comments_number() ) && ! post_password_required() ) {
-		?>
-
-		<div class="comments-wrapper section-inner">
-
-			<?php comments_template(); ?>
-
-		</div><!-- .comments-wrapper -->
-
-		<?php
-	}
-	?>
-
-</article><!-- .post -->
-<?php
-}
-else{
 ?>
-    <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+<?php if (is_single()) { ?>
 	<div class="row">
 		<div class="col-md-3">
 			<div class="cate">
@@ -173,48 +94,24 @@ else{
 				}
 
 				/*
-				* Output comments wrapper if it's a post, or if comments are open,
-				* or if there's a comment number – and check for password.
-				*/
+* Output comments wrapper if it's a post, or if comments are open,
+* or if there's a comment number – and check for password.
+*/
+
 				?>
 
 			</article><!-- .post -->
 		</div>
 		<div class="col-md-3">
-			<div class="cate">
-				<h2>Recent Posts</h2>
-				<div class="crossedbg-recentposts"></div>
-				<div class="ul-cate">
-					<ul>
-					<li class="cate-name">
-						<a href="http://wordpress.local/?p=18">Pin có thể uốn và co giãn như rắn</a>
-					</li>
-					<li class="cate-name">
-						<a href="http://wordpress.local/?p=16">Tìm người giỏi cho những nghiên cứu hàng đầu tại VKIST</a>
-					</li>
-					<li class="cate-name">
-						<a href="http://wordpress.local/?p=14">Usyk không muốn knock-out Joshua</a>
-					</li>
-					<li class="cate-name">
-						<a href="http://wordpress.local/?p=12">Bồ Đào Nha vào chung kết futsal World Cup</a>
-					</li>
-					<li class="cate-name">
-						<a href="http://wordpress.local/?p=10">Mourinho chạm mốc 200 trận tại Cup châu Âu</a>
-					</li>
-					</ul>
-				</div>
+			<div class="rp-box">
+				<div class="crossedbg"></div>
+				<?php dynamic_sidebar('sidebar-3'); ?>
+
 			</div>
 		</div>
 	</div>
-	<?php
-
-				/*
-				* Output comments wrapper if it's a post, or if comments are open,
-				* or if there's a comment number – and check for password.
-				*/
-				 
-	if ( ( is_single() || is_page() ) && ( comments_open() || get_comments_number() ) && ! post_password_required() ) {
-		?>
+	<?php if ((is_single() || is_page()) && (comments_open() || get_comments_number()) && !post_password_required()) {
+	?>
 
 		<div class="comments-wrapper section-inner">
 
@@ -222,11 +119,149 @@ else{
 
 		</div><!-- .comments-wrapper -->
 
+	<?php
+	}
+	?>
+<?php } ?>
+
+<!-- home -->
+<?php if (!is_single()) { ?>
+
+	<article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
+
+<?php
+
+if(is_single()){
+
+	get_template_part('template-parts/entry-header');
+}
+
+
+if (!is_search()) {
+	get_template_part('template-parts/featured-image');
+}
+
+?>
+
+<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
+
+	<div class="entry-content">
+
 		<?php
+		if (!is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
+			the_excerpt();
+			
+		} else {
+			if (is_single()) {
+				the_content(__('Continue reading', 'twentytwenty'));
+			} else {
+				$post = get_post();
+				$date = date('d',strtotime($post->post_date));
+				$month = date('m',strtotime($post->post_date));
+				// // var_dump($date);
+				// var_dump($post);
+				//die();
+		?>
+				<div class="list_news">
+					<div class="list_new_view">
+						<div class="row">
+							<?php if (is_search()){?>
+								<div class="col-md-5">
+									<div class="top_news_block_thumb">
+										<img src="<?= get_the_post_thumbnail_url($post) ?>">
+									</div>
+								</div>
+								<div class="col-md-7 top_news_block_desc">
+								<div class="row">
+									<div class="col-md-3 col-xs-3 topnewstime">
+										<span class="topnewsdate"><?php echo $date ?></span><br>
+										<span class="topnewsmonth">Thang <?php echo $month ?></span><br>
+									</div>
+									<div class="col-md-9 col-xs-9 shortdesc">
+										<h4 class="entry-title">
+											<a href="<?php echo esc_url(get_permalink()) ?>"><?php echo $post->post_title ?></a>
+										</h4>
+										<p><?php echo substr($post->post_content, 0, 100);  ?><a href="<?php echo esc_url(get_permalink()) ?>">[...]</a></p>
+									</div>
+
+								</div>
+							</div>
+							<?php } else {?>
+							<div class="col-md-9 top_news_block_desc">
+								<div class="row">
+									<div class="col-md-5 col-xs-5 topnewstime">
+										<span class="topnewsdate"><?php echo $date ?></span><br>
+										<span class="topnewsmonth">Tháng <?php echo $month ?></span><br>
+									</div>
+									<div class="col-md-7 col-xs-7 shortdesc">
+										<h4 class="entry-title">
+											<a href="<?php echo esc_url(get_permalink()) ?>"><?php echo $post->post_title ?></a>
+										</h4>
+										<p><?php echo substr($post->post_content, 0, 100);  ?><a href="<?php echo esc_url(get_permalink()) ?>">[...]</a></p>
+									</div>
+
+								</div>
+							</div>
+							<?php } ?>
+						</div>
+					</div>
+				</div>
+
+		<?php }
+		}
+		?>
+
+	</div><!-- .entry-content -->
+
+</div><!-- .post-inner -->
+
+<div class="section-inner">
+	<?php
+	wp_link_pages(
+		array(
+			'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__('Page', 'twentytwenty') . '"><span class="label">' . __('Pages:', 'twentytwenty') . '</span>',
+			'after'       => '</nav>',
+			'link_before' => '<span class="page-number">',
+			'link_after'  => '</span>',
+		)
+	);
+
+	edit_post_link();
+
+	// Single bottom post meta.
+	twentytwenty_the_post_meta(get_the_ID(), 'single-bottom');
+
+	if (post_type_supports(get_post_type(get_the_ID()), 'author') && is_single()) {
+
+		get_template_part('template-parts/entry-author-bio');
 	}
 	?>
 
-</article><!-- .post -->
+</div><!-- .section-inner -->
+
+<?php
+
+if (is_single()) {
+
+	get_template_part('template-parts/navigation');
+}
+
+/*
+ * Output comments wrapper if it's a post, or if comments are open,
+ * or if there's a comment number – and check for password.
+ */
+if ((is_single() || is_page()) && (comments_open() || get_comments_number()) && !post_password_required()) {
+?>
+
+	<div class="comments-wrapper section-inner">
+
+		<?php comments_template(); ?>
+
+	</div><!-- .comments-wrapper -->
+
 <?php
 }
 ?>
+
+</article>
+<?php } ?>
