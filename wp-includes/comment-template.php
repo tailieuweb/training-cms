@@ -2435,12 +2435,18 @@ function comment_form( $args = array(), $post_id = null ) {
 	$defaults = array(
 		'fields'               => $fields,
 		'comment_field'        => sprintf(
-			'<p class="comment-form-comment">%s %s</p>',
+			'<div class="comment-form-comment">%s</div>',
 			sprintf(
-				'<label for="comment">%s</label>',
-				_x( 'Comment', 'noun' )
+				'<div class="card-header-tabs"><label for="comment" class="title-comment active">%s</label></div>',
+				_x( 'Make a Post', 'noun' )
+			),			
+		),
+		'submit_button'        => sprintf(
+			'<div class="comment-content" for="comment">%s %s</div>',
+			sprintf(
+				'<textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required" placeholder="What are you thinking..."></textarea>'
 			),
-			'<textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea>'
+			'<div class="submit-right"><input name="%1$s" type="submit" id="%2$s" class="%3$s share" value="%4$s" /></div>'
 		),
 		'must_log_in'          => sprintf(
 			'<p class="must-log-in">%s</p>',
@@ -2451,19 +2457,19 @@ function comment_form( $args = array(), $post_id = null ) {
 				wp_login_url( apply_filters( 'the_permalink', get_permalink( $post_id ), $post_id ) )
 			)
 		),
-		'logged_in_as'         => sprintf(
-			'<p class="logged-in-as">%s</p>',
-			sprintf(
-				/* translators: 1: Edit user link, 2: Accessibility text, 3: User name, 4: Logout URL. */
-				__( '<a href="%1$s" aria-label="%2$s">Logged in as %3$s</a>. <a href="%4$s">Log out?</a>' ),
-				get_edit_user_link(),
-				/* translators: %s: User name. */
-				esc_attr( sprintf( __( 'Logged in as %s. Edit your profile.' ), $user_identity ) ),
-				$user_identity,
-				/** This filter is documented in wp-includes/link-template.php */
-				wp_logout_url( apply_filters( 'the_permalink', get_permalink( $post_id ), $post_id ) )
-			)
-		),
+		// 'logged_in_as'         => sprintf(
+		// 	'<p class="logged-in-as">%s</p>',
+		// 	sprintf(
+		// 		/* translators: 1: Edit user link, 2: Accessibility text, 3: User name, 4: Logout URL. */
+		// 		__( '<a href="%1$s" aria-label="%2$s">Logged in as %3$s</a>. <a href="%4$s">Log out?</a>' ),
+		// 		get_edit_user_link(),
+		// 		/* translators: %s: User name. */
+		// 		esc_attr( sprintf( __( 'Logged in as %s. Edit your profile.' ), $user_identity ) ),
+		// 		$user_identity,
+		// 		/** This filter is documented in wp-includes/link-template.php */
+		// 		wp_logout_url( apply_filters( 'the_permalink', get_permalink( $post_id ), $post_id ) )
+		// 	)
+		// ),
 		'comment_notes_before' => sprintf(
 			'<p class="comment-notes">%s%s</p>',
 			sprintf(
@@ -2478,7 +2484,7 @@ function comment_form( $args = array(), $post_id = null ) {
 		'id_submit'            => 'submit',
 		'class_container'      => 'comment-respond',
 		'class_form'           => 'comment-form',
-		'class_submit'         => 'submit',
+		'class_submit'         => 'btn btn-primary',
 		'name_submit'          => 'submit',
 		'title_reply'          => __( 'Leave a Reply' ),
 		/* translators: %s: Author of the comment being replied to. */
@@ -2488,8 +2494,7 @@ function comment_form( $args = array(), $post_id = null ) {
 		'cancel_reply_before'  => ' <small>',
 		'cancel_reply_after'   => '</small>',
 		'cancel_reply_link'    => __( 'Cancel reply' ),
-		'label_submit'         => __( 'Post Comment' ),
-		'submit_button'        => '<input name="%1$s" type="submit" id="%2$s" class="%3$s" value="%4$s" />',
+		'label_submit'         => __( 'Share' ),	
 		'submit_field'         => '<p class="form-submit">%1$s %2$s</p>',
 		'format'               => 'xhtml',
 	);
@@ -2528,7 +2533,7 @@ function comment_form( $args = array(), $post_id = null ) {
 		<?php
 		echo $args['title_reply_before'];
 
-		comment_form_title( $args['title_reply'], $args['title_reply_to'] );
+		// comment_form_title( $args['title_reply'], $args['title_reply_to'] );
 
 		echo $args['cancel_reply_before'];
 
@@ -2599,7 +2604,7 @@ function comment_form( $args = array(), $post_id = null ) {
 			endif;
 
 			// Prepare an array of all fields, including the textarea.
-			$comment_fields = array( 'comment' => $args['comment_field'] ) + (array) $args['fields'];
+			$comment_fields = (array) $args['fields'] + array( 'comment' => $args['comment_field'] ) ;
 
 			/**
 			 * Filters the comment form fields, including the textarea.
