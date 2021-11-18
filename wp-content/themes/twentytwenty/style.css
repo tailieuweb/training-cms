@@ -1001,7 +1001,7 @@ section {
 }
 
 .section-inner.thin {
-    max-width: 58rem;
+	max-width: 58rem;
 }
 
 .section-inner.small {
@@ -1012,9 +1012,7 @@ section {
     max-width: 100%;
     border-right: 2px solid black;
 }
-/*
-Css for the post for result search
-*/
+
 .danh-sach .section-inner.medium {
     max-width: 100%;
     display: flex;
@@ -1024,6 +1022,11 @@ Css for the post for result search
     max-width: 100%;
     display: flex;
     border-right: 2px solid black;
+}
+.tim_kiem .section-inner.medium {
+	max-width: 100%;
+	display: flex;
+	border-right: 2px solid black;
 }
 
 .section-inner.no-margin {
@@ -2480,9 +2483,6 @@ h1.entry-title,
 h2.entry-title {
     margin: 0;
 }
-/*
-Css for the post for result search
-*/
 .danh-sach h1.entry-title,
 .danh-sach h2.entry-title {
     width: 60%;
@@ -2490,6 +2490,10 @@ Css for the post for result search
 .tim_kiem h1.entry-title,
 .tim_kiem h2.entry-title {
     width: 60%;
+}
+.tim_kiem h1.entry-title,
+.tim_kiem h2.entry-title {
+	width: 60%;
 }
 
 .entry-title a {
@@ -2565,14 +2569,14 @@ Css for the post for result search
     margin: 1rem;
 }
 .danh-sach .post-meta .meta-icon {
-    flex-shrink: 0;
-    margin: 0 auto;
-    display: block;
+	flex-shrink: 0;
+	margin: 0 auto;
+	display: block;
 }
 .tim_kiem .post-meta .meta-icon {
-    flex-shrink: 0;
-    margin: 0 auto;
-    display: block;
+	flex-shrink: 0;
+	margin: 0 auto;
+	display: block;
 }
 
 .sticky .post-sticky {
@@ -2692,9 +2696,7 @@ Css for the post for result search
 }
 
 /* POST META BOTTOM */
-/*
-Css for the post for result search
-*/
+
 .post-meta-wrapper.post-meta-single-bottom {
     margin-top: 0rem;
 }
@@ -2704,6 +2706,9 @@ Css for the post for result search
 }
 .tim_kiem .post-meta-wrapper.post-meta-single-bottom {
     margin-top: 3rem;
+}
+.tim_kiem .post-meta-wrapper.post-meta-single-bottom {
+	margin-top: 3rem;
 }
 /* Author Bio -------------------------------- */
 
@@ -2872,9 +2877,6 @@ Css for the post for result search
 .has-text-align-center {
     text-align: center;
 }
-/*
-Css for the post for result search
-*/
 article.danh-sach .has-text-align-center{
     text-align: center;
     width: 60%;
@@ -2882,6 +2884,10 @@ article.danh-sach .has-text-align-center{
 article.tim_kiem .has-text-align-center{
     text-align: center;
     width: 60%;
+}
+article.tim_kiem .has-text-align-center{
+	text-align: center;
+	width: 60%;
 }
 
 .has-text-align-right {
@@ -4747,6 +4753,18 @@ a.to-the-top > * {
     .template-cover .tim_kiem.post-inner .author-bio{
         width: 40%;
     }
+	.template-cover .post-inner .post-meta-wrapper,
+	.template-cover .post-inner .author-bio {
+		width: calc( 100% - 4rem );
+	}
+	.template-cover .danh-sach .post-inner .post-meta-wrapper,
+	.template-cover .danh-sach .post-inner .author-bio{
+		width: 40%;
+	}
+	.template-cover .tim_kiem.post-inner .post-meta-wrapper,
+	.template-cover .tim_kiem.post-inner .author-bio{
+		width: 40%;
+	}
 
     /* Post Footer --------------------------- */
 
@@ -5025,6 +5043,175 @@ a.to-the-top > * {
     .search-toggle {
         left: 2rem;
     }
+		margin-bottom: 4rem;
+	}
+
+	pre {
+		padding: 3rem;
+	}
+
+	hr {
+		margin: 8rem auto;
+	}
+
+	table {
+		font-size: 1.8rem;
+	}
+
+	/* VANILLA GALLERIES */
+
+	.gallery-columns-2 .gallery-item {
+		max-width: 50%;
+	}
+
+	.gallery-columns-3 .gallery-item {
+		max-width: 33.33%;
+	}
+
+	.gallery-columns-4 .gallery-item {
+		max-width: 25%;
+	}
+
+	.gallery-columns-5 .gallery-item {
+		max-width: 20%;
+	}
+
+	.gallery-columns-6 .gallery-item {
+		max-width: 16.66%;
+	}
+
+	.gallery-columns-7 .gallery-item {
+		max-width: 14.28%;
+	}
+
+	.gallery-columns-8 .gallery-item {
+		max-width: 12.5%;
+	}
+
+	.gallery-columns-9 .gallery-item {
+		max-width: 11.11%;
+	}
+
+	/* TITLES */
+
+	h1,
+	.heading-size-1,
+	h2,
+	.heading-size-2,
+	h3,
+	.heading-size-3 {
+		margin: 6rem auto 3rem;
+	}
+
+	h4,
+	.heading-size-4,
+	h5,
+	.heading-size-5,
+	h6,
+	.heading-size-6 {
+		margin: 4.5rem auto 2.5rem;
+	}
+
+	h1,
+	.heading-size-1 {
+		font-size: 6.4rem;
+	}
+
+	h2,
+	.heading-size-2 {
+		font-size: 4.8rem;
+	}
+
+	h3,
+	.heading-size-3 {
+		font-size: 4rem;
+	}
+
+	h4,
+	.heading-size-4 {
+		font-size: 3.2rem;
+	}
+
+	h5,
+	.heading-size-5 {
+		font-size: 2.4rem;
+	}
+
+	h6,
+	.heading-size-6 {
+		font-size: 1.8rem;
+	}
+
+	/* INPUTS */
+
+	fieldset {
+		padding: 3rem;
+	}
+
+	legend {
+		padding: 0 1.5rem;
+	}
+
+	button,
+	.button,
+	.faux-button,
+	.wp-block-button__link,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"] {
+		font-size: 1.7rem;
+	}
+
+	/* MEDIA */
+
+	figcaption,
+	.wp-caption-text {
+		margin-top: 1.8rem;
+	}
+
+
+	/* Helper Classes ------------------------- */
+
+	/* SECTIONS */
+
+	section {
+		padding: 8rem 0;
+	}
+
+	.section-inner {
+		width: calc(100% - 8rem);
+	}
+
+
+	/* Site Header --------------------------- */
+
+	.header-inner {
+		padding: 3.8rem 0;
+	}
+
+	.site-title {
+		font-size: 2.4rem;
+		font-weight: 700;
+	}
+
+	.site-description {
+		display: block;
+	}
+
+	.site-logo img {
+		max-height: 9rem;
+		transition: height 0.15s linear, width 0.15s linear, max-height 0.15s linear;
+	}
+
+	/* HEADER TOGGLES */
+
+	.toggle-inner .toggle-text {
+		font-size: 1.2rem;
+	}
+
+	.search-toggle {
+		left: 2rem;
+	}
 
     .nav-toggle {
         right: 2rem;
@@ -6363,6 +6550,7 @@ form.wp-block-search__button-outside input{
 }
 
 form.wp-block-search__button-outside .wp-block-search__button {
+<<<<<<< HEAD
     position: absolute;
     top: 15px;
     right: 20px;
@@ -6381,6 +6569,25 @@ form.wp-block-search__button-outside::before{
     color: #000;
     font-size: 32px;
 }
+form.wp-block-search__button-outside .wp-block-search__button {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	padding: 15px;
+	background: #28a745;
+	color: #fff;
+	border-radius: 5px;
+ }
+
+ form.wp-block-search__button-outside::before{
+	content: '\f002';
+	font-family: FontAwesome;
+	position: absolute;
+	top: 15px;
+	left: 25px;
+	color: #000;
+	font-size: 32px;
+ }
 /*
 End form search
 */
@@ -6768,6 +6975,10 @@ End form search
 <<<<<<< HEAD
 h2.entry-title a{
     color: #2272b8 !important;
+}
+
+h2.entry-title a{
+	color: #2272b8 !important;
 }
 
 /* Footer */

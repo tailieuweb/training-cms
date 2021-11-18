@@ -10,9 +10,8 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
-//add class 'danh-sach' for home page
 $home = '';
-
+//Check page
 if(!is_single()){
     $home = 'danh-sach';
 }
@@ -22,7 +21,7 @@ if(is_search()){
 
 
 ?>
-<!-- Insert class 'danh-sach' -->
+
 <article <?php post_class($home); ?> id="post-<?php the_ID(); ?>">
 
 	<?php
@@ -44,7 +43,6 @@ if(is_search()){
                 if ( is_singular() ) {
                     the_title( '<h1 class="entry-title">', '</h1>' );
                 } else {
-					//Show the post
                     the_title( '<h2 class="entry-title heading-size-1-2"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
                 }
 				the_excerpt();

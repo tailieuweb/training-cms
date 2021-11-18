@@ -864,11 +864,9 @@ function twentytwenty_toggle_duration() {
  * @since Twenty Twenty 1.0
  *
  */
-function twentytwenty_unique_id($prefix = '') {
-    static $id_counter = 0;
-    if (function_exists('wp_unique_id')) {
-        return wp_unique_id($prefix);
-    }
-
-    return $prefix.(string) ++$id_counter;
-}
+function twentytwenty_unique_id( $prefix = '' ) {
+	static $id_counter = 0;
+	if ( function_exists( 'wp_unique_id' ) ) {
+		return wp_unique_id( $prefix );
+	}
+	return $prefix . (string) ++$id_counter;
