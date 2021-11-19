@@ -94,9 +94,9 @@ if (!is_single()) {
 				}
 
 				/*
-* Output comments wrapper if it's a post, or if comments are open,
-* or if there's a comment number – and check for password.
-*/
+			* Output comments wrapper if it's a post, or if comments are open,
+			* or if there's a comment number – and check for password.
+			*/
 
 				?>
 
