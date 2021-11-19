@@ -417,6 +417,7 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 								<div class="headlinesdate">
 									<div class="headlinesdm">
 										<div class="headlinesday">
+										
 											<a href="<?php the_permalink(); ?>"><?php the_time(substr(get_option('date_format'), 0, 1)); ?></a>
 										</div>
 										<div class="headlinesmonth">

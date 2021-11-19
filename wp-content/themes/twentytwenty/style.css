@@ -128,6 +128,9 @@ li.cate-name:last-child{
 	margin-top: 90px;
     height: auto;
 }
+.home-row .cate{
+	margin-top: 0px;
+}
 .cate h2{
 	margin-bottom: 6px;
     font-weight: 800;
@@ -5847,6 +5850,9 @@ section .section-title {
 }
 
 /* recent post */
+.home-row .rp-box{
+	bottom: 27px;
+}
 .rp-box {
 	position: relative;
 }
@@ -5890,7 +5896,7 @@ section .section-title {
 }
 .crossedbg{
 	position: absolute;
-	top: 6%;
+	top: 8%;
 	left:25px;
 	width: 87%;
 	background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
@@ -5910,7 +5916,151 @@ section .section-title {
 	padding-left: 0px;
     font-weight: 800;
 	font-size: 2.8rem !important;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
+}
+.rp-box .widget_block .widget-content .wp-block-group{
+	margin-top: 90px;
+}
+/* recent post */
+.home-row .rp-box{
+	bottom: 27px;
+}
+.rp-box {
+	position: relative;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container li:hover {
+    margin-left: 0px;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li a{
+	color: #428bca !important;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: initial;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li {
+	color: #428bca;
+	text-decoration: none;
+	font-size: 14px;
+	border-bottom: 1px solid #d9d9d9;
+	padding: 15px 0 !important;
+	font-weight: initial;
+	margin: 0px 10px;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li:last-child {
+	border-bottom: none;
+}
+
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li::before{
+	content:"\f111";
+	font: normal normal normal 10px/1 FontAwesome;
+	padding-right: 15px;
+	color: #f5ce31;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li a:hover{
+	text-decoration: underline !important;
+	color: #2a6496 !important;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts {
+	background: white !important;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts {
+	padding: 15px;
+}
+.crossedbg{
+	position: absolute;
+	top: 7%;
+	left:25px;
+	width: 87%;
+	background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
+    height: 15px;
+}
+.rp-box .widget_block {
+	margin-top: 0px !important;
+	padding-right: 0px !important;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts{
+	margin-top: 0px !important;
+	
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container h2{
+	color: black;
+	border: none;
+	padding-left: 0px;
+    font-weight: 800;
+	font-size: 2.8rem !important;
+	/* margin-bottom: 20px; */
+}
+.rp-box .widget_block .widget-content .wp-block-group{
+	margin-top: 90px;
+}
+/* recent post */
+.home-row .rp-box{
+	bottom: 27px;
+}
+.rp-box {
+	position: relative;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container li:hover {
+    margin-left: 0px;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-categories li a{
+	color: #428bca !important;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: initial;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-categories li {
+	color: #428bca;
+	text-decoration: none;
+	font-size: 14px;
+	border-bottom: 1px solid #d9d9d9;
+	padding: 15px 0 !important;
+	font-weight: initial;
+	margin: 0px 10px;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-categories li:last-child {
+	border-bottom: none;
+}
+
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-categories li::before{
+	content:"\f111";
+	font: normal normal normal 10px/1 FontAwesome;
+	padding-right: 15px;
+	color: #f5ce31;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-categories li a:hover{
+	text-decoration: underline !important;
+	color: #2a6496 !important;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-categories {
+	background: white !important;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-categories {
+	padding: 15px;
+}
+.crossedbg2{
+	position: absolute;
+	top: 17%;
+	left:25px;
+	width: 87%;
+	background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
+    height: 15px;
+}
+.rp-box .widget_block {
+	margin-top: 0px !important;
+	padding-right: 0px !important;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-categories{
+	margin-top: 0px !important;
+	
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container h2{
+	color: black;
+	border: none;
+	padding-left: 0px;
+    font-weight: 800;
+	font-size: 2.8rem !important;
+	/* margin-bottom: 20px; */
 }
 .rp-box .widget_block .widget-content .wp-block-group{
 	margin-top: 90px;
