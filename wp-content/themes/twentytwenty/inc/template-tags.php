@@ -362,43 +362,11 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 				if ( post_type_supports( get_post_type( $post_id ), 'author' ) && in_array( 'author', $post_meta, true ) ) {
 
 					$has_meta = true;
-					?>
-					<li class="post-author meta-wrapper">
-						<span class="meta-icon">
-							<span class="screen-reader-text"><?php _e( 'Post author', 'twentytwenty' ); ?></span>
-							<?php twentytwenty_the_theme_svg( 'user' ); ?>
-						</span>
-						<span class="meta-text">
-							<?php
-							printf(
-								/* translators: %s: Author name. */
-								__( 'By %s', 'twentytwenty' ),
-								'<a href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author_meta( 'display_name' ) ) . '</a>'
-							);
-							?>
-						</span>
-					</li>
-					<?php
+				
 
 				}
 
-				// Post date.
-				if ( in_array( 'post-date', $post_meta, true ) ) {
-
-					$has_meta = true;
-					?>
-					<li class="post-date meta-wrapper">
-						<span class="meta-icon">
-							<span class="screen-reader-text"><?php _e( 'Post date', 'twentytwenty' ); ?></span>
-							<?php twentytwenty_the_theme_svg( 'calendar' ); ?>
-						</span>
-						<span class="meta-text">
-							<a href="<?php the_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
-						</span>
-					</li>
-					<?php
-
-				}
+			
 
 				// Categories.
 				if ( in_array( 'categories', $post_meta, true ) && has_category() ) {
@@ -406,7 +374,7 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 					$has_meta = true;
 					?>
 					<li class="post-categories meta-wrapper">
-						<span class="meta-icon">
+						<span class="meta-icon222">
 							<span class="screen-reader-text"><?php _e( 'Categories', 'twentytwenty' ); ?></span>
 							<?php twentytwenty_the_theme_svg( 'folder' ); ?>
 						</span>
@@ -423,8 +391,8 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 
 					$has_meta = true;
 					?>
-					<li class="post-tags meta-wrapper">
-						<span class="meta-icon">
+					<li class="post-tags meta-wrapper555s">
+						<span class="meta-icon333">
 							<span class="screen-reader-text"><?php _e( 'Tags', 'twentytwenty' ); ?></span>
 							<?php twentytwenty_the_theme_svg( 'tag' ); ?>
 						</span>
@@ -441,14 +409,7 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 
 					$has_meta = true;
 					?>
-					<li class="post-comment-link meta-wrapper">
-						<span class="meta-icon">
-							<?php twentytwenty_the_theme_svg( 'comment' ); ?>
-						</span>
-						<span class="meta-text">
-							<?php comments_popup_link(); ?>
-						</span>
-					</li>
+					
 					<?php
 
 				}

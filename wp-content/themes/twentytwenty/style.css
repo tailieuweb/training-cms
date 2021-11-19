@@ -2432,7 +2432,10 @@ body:not(.singular) main > article:first-of-type {
 .entry-categories a:hover {
 	border-bottom-color: transparent;
 }
-
+h1.entry-title{
+	font-size: 3rem;
+    
+}
 h1.entry-title,
 h2.entry-title {
 	margin: 0;
@@ -2593,6 +2596,7 @@ h2.entry-title {
 }
 
 .post-inner {
+	background: rgb(236, 231, 231);
 	padding-top: 5rem;
 }
 
@@ -5083,7 +5087,9 @@ a.to-the-top > * {
 	/* POST HEADER */
 
 	.singular .entry-header {
-		padding: 8rem 0;
+		border-bottom: 2px solid black;
+		padding: 5rem 0;
+		background-color: rgb(236, 231, 231);
 	}
 
 	.entry-categories {
