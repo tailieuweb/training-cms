@@ -20,18 +20,9 @@ get_header();
 <?php if (is_home()) { ?>
 	<div class="row home-row">
 		<div class="col-md-3">
-			<div class="cate">
-				<h2>Danh mục</h2>
-				<div class="crossedbg-categories"></div>
-				<div class="ul-cate">
-					<ul>
-						<?php $catID = get_terms('category');
-						foreach ($catID as $key => $value) { ?>
-
-							<li class="cate-name"><a href="<?= "http://" . $_SERVER["HTTP_HOST"] . "/category/" . $value->slug ?>"><?php echo $value->name ?></a></li>
-						<?php } ?>
-					</ul>
-				</div>
+		<div class="rp-box">
+				<div class="crossedbg2"></div>
+				<?php dynamic_sidebar('sidebar-4'); ?>
 
 			</div>
 		</div>
