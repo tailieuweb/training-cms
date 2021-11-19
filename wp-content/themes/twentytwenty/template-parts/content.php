@@ -28,6 +28,12 @@
 if(!is_single())
 {
 ?>
+<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-8"></div>
+	<div class="col-md-2"></div>
+</div>
+
 <div class="ct">
 <div class="container">
     <div class="row">
@@ -135,7 +141,7 @@ else{
 <div class="row">
 	<div class="col-md-2">
 	<div class="cate">
-				<h2>Categories</h2>
+				<h2>Danh Mục</h2>
 				<div class="crossedbg-categories"></div>
 				<div class="ul-cate">
 					<ul>
@@ -201,8 +207,9 @@ else{
 					?>
 
 			</div><!-- .entry-content -->
-
+			
 		</div><!-- .post-inner --> 
+		
 
 </article><!-- .post -->
 		<div class="section-inner">
