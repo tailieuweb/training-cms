@@ -58,6 +58,9 @@ twentytwenty_the_post_meta( get_the_ID(), 'single-top' );
 ?>
 
 </div><!-- .entry-header-inner -->
+<?php
+if(is_single()){
+?>
 <div class="col-md-2 dmy-border">
 	<div class="day-month-year">
 		<div class="day-month"style="float: left; margin-right: 10px;">
@@ -65,12 +68,11 @@ twentytwenty_the_post_meta( get_the_ID(), 'single-top' );
 			<div class="month"style="">06</div>
 		</div>
 		<div class="year" style="line-height: 3em; float: left;">18</div>
-	</div>
-	
-				
-	</div>
-	
+	</div>		
 </div>
+</div>
+<?php } ?>
+
 	
 
 </header><!-- .entry-header -->

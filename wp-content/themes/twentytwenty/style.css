@@ -2596,8 +2596,8 @@ h2.entry-title {
 }
 
 .post-inner {
-	background: rgb(236, 231, 231);
-	padding-top: 5rem;
+	background: whitesmoke;
+	padding-top: 2rem !important;
 }
 
 .reduced-spacing.missing-post-thumbnail .post-inner {
@@ -5088,9 +5088,22 @@ a.to-the-top > * {
 
 	.singular .entry-header {
 		border-bottom: 2px solid black;
-		padding: 5rem 0;
-		background-color: rgb(236, 231, 231);
+		padding: 3rem 0 0 0 !important;
+		background-color: whitesmoke;
 	}
+}
+ 	.entry-header .dmy-border .day-month-year{	
+		text-align: center;
+		height: 98px;
+		width: 100px;
+		background-color:yellow;
+		border-radius: 50%;
+		display: inline-block;
+		padding-top: 20px;
+		padding-left: 27px;
+	
+	}
+
 
 	.entry-categories {
 		margin-bottom: 3rem;
