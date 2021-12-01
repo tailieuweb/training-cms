@@ -1,0 +1,140 @@
+.mwb_pffw_plugin_extra_custom_tab {
+    vertical-align: middle;
+    display: inline-block;
+    width: 15px;
+    max-width: 100%;
+    margin: 0 5px;
+}
+
+/*Latest Style Update admin*/
+
+.pffw-secion-wrap {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.mwb-form-group .mwb-form-group__label,
+.mwb-pffw-text .mwb-form-group__label {
+    max-width: 250px;
+    min-width: 250px;
+}
+
+.mwb-form-select select {
+    min-width: 150px;
+}
+
+.mwb-pffw-text {
+    flex-wrap: nowrap;
+}
+
+.mwb-form-group__label label {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mwb-pffw-text .mwb-form-group__control label {
+    min-width: 200px;
+}
+
+.mwb-pffw-text .mwb-form-group__control {
+    padding: 0 15px;
+    text-align: left;
+}
+
+.mwb_pf_upld {
+    border-radius: 5px !important;
+    line-height: 1.25;
+    padding: 5px 15px !important;
+}
+
+.pff_filters_table-custom {
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: none !important;
+    box-shadow: 0px 5px 9px 0px rgb(0 0 0 / 0.10);
+    margin-top: 0;
+    margin: auto;
+    overflow-x: auto;
+    padding: 0 10px 10px;
+    position: relative;
+    top: -12px;
+    z-index: 0;
+}
+
+.pff_filters_table-custom table td {
+    min-width: 120px;
+    overflow-wrap: anywhere;
+    padding: 10px;
+}
+
+.pff_filters_table-custom .filter_table-custom {
+    width: 100%;
+}
+
+.pff_filters_table-custom table td:nth-child(odd) {
+    background-color: #e7f4ff;
+}
+
+.pff_filters_table-custom #custom_fil {
+    background-color: #ffc5c5;
+    border-radius: 2px;
+    color: #e05b5b;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+}
+
+.pff_filters_table-custom #custom_fil:hover {
+    background-color: #e05b5b;
+    color: #ffc5c5;
+}
+
+.mwb_pf_loader_gif {
+    object-fit: contain;
+}
+
+.mwb-form-group__control .selected_loader {
+    text-align: left;
+}
+
+#mwb_pf_custom_loader-rmv {
+    background: none;
+    border-radius: 5px;
+    border: 1px solid #2271B1;
+    color: #F44336;
+    cursor: pointer;
+    letter-spacing: 1px;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+#mwb_pf_custom_loader-rmv:hover {
+    background: #2271b1;
+    border: 1px solid #2271B1;
+    color: #fff;
+}
+
+#mwb_pf_custom_loader-rmv:focus {
+    outline: none;
+}
+
+@media screen and (max-width:768px) {
+    .mwb-pffw-text {
+        flex-wrap: wrap;
+    }
+
+    .mwb-form-group {
+        flex-wrap: wrap;
+    }
+
+    .mwb-form-group__control {
+        text-align: left;
+        width: 100%;
+    }
+
+    .attachments-browser.has-load-more .attachments-wrapper {
+        right: 0;
+    }
+
+}

@@ -1,0 +1,6 @@
+<wpml-config>
+    <admin-texts>
+        <key name="pffw_*"/>
+        <key name="mwb_pf_*"/>
+    </admin-texts>
+</wpml-config>

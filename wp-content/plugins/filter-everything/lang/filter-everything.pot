@@ -1,0 +1,1782 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Filter Everything PRO\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-23 21:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.0; wp-5.6.1\n"
+"X-Domain: filter-everything"
+
+#. Author of the plugin
+msgid "Andrii Stepasiuk"
+msgstr ""
+
+#. Name of the plugin
+msgid "Filter Everything PRO"
+msgstr ""
+
+#. Description of the plugin
+msgid "Filters Wordpress things."
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://stepasyuk.org.ua"
+msgstr ""
+
+#: pro/Admin/Admin.php:45 pro/PostTypes.php:15 pro/PostTypes.php:17
+#: pro/Settings/Tabs/SeoRulesTab.php:36
+msgid "SEO Rules"
+msgstr ""
+
+#: pro/Admin/Admin.php:59
+msgid "Rule ID"
+msgstr ""
+
+#: pro/Admin/Admin.php:60 src/Admin/AdminHooks.php:136
+msgid "Post type"
+msgstr ""
+
+msgid "Post Type to filter"
+msgstr ""
+
+#: pro/Admin/Admin.php:136
+msgid "Title will be created automatically"
+msgstr ""
+
+#: pro/Admin/Admin.php:170
+msgid "Enable Pop-up Filter widget"
+msgstr ""
+
+#: pro/Admin/MetaBoxes.php:16
+msgid "Rule Settings"
+msgstr ""
+
+#: pro/Admin/MetaBoxes.php:31 src/Admin/MetaBoxes.php:42
+#: src/Admin/MetaBoxes.php:266
+msgid "Publish"
+msgstr ""
+
+#: pro/Admin/SeoRules.php:110 pro/Admin/SeoRules.php:113
+msgid "SEO rule updated."
+msgstr ""
+
+#: pro/Admin/SeoRules.php:111 src/Admin/FilterSet.php:150
+msgid "Custom field updated."
+msgstr ""
+
+#: pro/Admin/SeoRules.php:112 src/Admin/FilterSet.php:151
+msgid "Custom field deleted."
+msgstr ""
+
+#: pro/Admin/SeoRules.php:115
+msgid "SEO rule created."
+msgstr ""
+
+#: pro/Admin/SeoRules.php:116
+msgid "SEO rule saved."
+msgstr ""
+
+#: pro/Admin/SeoRules.php:117
+msgid "SEO rule submitted."
+msgstr ""
+
+#: pro/Admin/SeoRules.php:118
+msgid "SEO rule scheduled for"
+msgstr ""
+
+#: pro/Admin/SeoRules.php:119
+msgid "SEO rule draft updated."
+msgstr ""
+
+#: pro/Admin/SeoRules.php:131
+#, php-format
+msgid "%s SEO rule updated."
+msgid_plural "%s SEO rules updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: pro/Admin/SeoRules.php:132
+msgid "1 SEO rule not updated, somebody is editing it."
+msgstr ""
+
+#: pro/Admin/SeoRules.php:134
+#, php-format
+msgid "%s SEO rule not updated, somebody is editing it."
+msgid_plural "%s SEO rules not updated, somebody is editing them."
+msgstr[0] ""
+msgstr[1] ""
+
+#: pro/Admin/SeoRules.php:136
+#, php-format
+msgid "%s SEO rule permanently deleted."
+msgid_plural "%s SEO rules permanently deleted."
+msgstr[0] ""
+msgstr[1] ""
+
+#: pro/Admin/SeoRules.php:138
+#, php-format
+msgid "%s SEO rule moved to the Trash."
+msgid_plural "%s SEO rules moved to the Trash."
+msgstr[0] ""
+msgstr[1] ""
+
+#: pro/Admin/SeoRules.php:140
+#, php-format
+msgid "%s SEO rule restored from the Trash."
+msgid_plural "%s SEO rules restored from the Trash."
+msgstr[0] ""
+msgstr[1] ""
+
+#: pro/Admin/SeoRules.php:159 src/Admin/FilterSet.php:30
+#: views/admin/filters-seo-rules.php:22
+msgid "Post Type"
+msgstr ""
+
+#: pro/Admin/SeoRules.php:165
+msgid "Select Post Type"
+msgstr ""
+
+#: pro/Admin/SeoRules.php:171
+msgid "SEO Title"
+msgstr ""
+
+#: pro/Admin/SeoRules.php:177
+msgid "Appears between <br />&#x3C;title&#x3E; and &#x3C;/title&#x3E;"
+msgstr ""
+
+#: pro/Admin/SeoRules.php:181
+msgid "Meta Description"
+msgstr ""
+
+#: pro/Admin/SeoRules.php:190
+msgid "H1 Title"
+msgstr ""
+
+#: pro/Admin/SeoRules.php:196
+msgid "Appears between <br />&#x3C;h1&#x3E; and &#x3C;/h1&#x3E;"
+msgstr ""
+
+#: pro/Admin/SeoRules.php:200
+msgid "SEO Description"
+msgstr ""
+
+#: pro/Admin/SeoRules.php:206
+msgid "Appears on the page(s) matches this Rule and is visible for visitors"
+msgstr ""
+
+#: pro/Admin/SeoRules.php:256
+msgid "There are no Post Types with filters available for SEO rules yet.<br />"
+msgstr ""
+
+#: pro/Admin/SeoRules.php:257
+#, php-format
+msgid ""
+"You have to activate them on the <a href=\"%s\" target=\"_blank\">%s "
+"settings page</a> first."
+msgstr ""
+
+#: pro/Admin/SeoRules.php:267
+msgid ""
+"Variables will be replaced with specific values on the page matches current "
+"SEO Rule.<br />For example on the page with URL path:<br />/color-blue/size-"
+"large/<br />variables {color} and {size} will be replaced with words "
+"\"blue\" and \"large\"."
+msgstr ""
+
+#: pro/Admin/SeoRules.php:326 pro/PluginPro.php:344
+#: src/Admin/FilterFields.php:992 src/Admin/FilterFields.php:1027
+msgid "An error occured. Please, refresh the page and try again."
+msgstr ""
+
+#: pro/Admin/SeoRules.php:460
+#, php-format
+msgid "Without %s"
+msgstr ""
+
+#: pro/Admin/SeoRules.php:461 pro/Admin/SeoRules.php:540
+#, php-format
+msgid "Any %s"
+msgstr ""
+
+#: pro/Admin/SeoRules.php:480 views/frontend/dropdown.php:12
+#, php-format
+msgid "Select %s"
+msgstr ""
+
+msgid "- Select %s -"
+msgstr ""
+
+#: pro/Admin/SeoRules.php:555
+msgid "Any Author"
+msgstr ""
+
+#: pro/Admin/SeoRules.php:559
+msgid "Author"
+msgstr ""
+
+#: pro/Admin/SeoRules.php:568
+msgid "No archive page"
+msgstr ""
+
+#: pro/Admin/SeoRules.php:570
+msgid "Without archive page"
+msgstr ""
+
+#: pro/Admin/SeoRules.php:580
+msgid "Page archive for"
+msgstr ""
+
+#: pro/Admin/SeoRules.php:587
+msgid "Include WordPress page for SEO rule"
+msgstr ""
+
+#: pro/Admin/SeoRules.php:1194
+msgid "No SEO vars"
+msgstr ""
+
+#: pro/PluginPro.php:250 src/Admin/FilterSet.php:41
+msgid "Location"
+msgstr ""
+
+#: pro/PluginPro.php:256
+msgid "Specify page(s) where to show this Filter Set"
+msgstr ""
+
+#: pro/PluginPro.php:263
+msgid "Hide empty Filters"
+msgstr ""
+
+#: pro/PluginPro.php:268
+msgid "Hide entire Filter if no one term contains posts"
+msgstr ""
+
+#: pro/PluginPro.php:287
+msgid "No specific location"
+msgstr ""
+
+#: pro/PluginPro.php:289
+msgid "All archive pages for this Post Type"
+msgstr ""
+
+#: pro/PluginPro.php:306
+#, php-format
+msgid "%s archive for:"
+msgstr ""
+
+#: pro/PluginPro.php:322
+msgid "Author archive for:"
+msgstr ""
+
+#: pro/PluginPro.php:399
+msgid "Available on"
+msgstr ""
+
+#: pro/PostTypes.php:18
+msgid "SEO Rule"
+msgstr ""
+
+#: pro/PostTypes.php:19
+msgid "Add SEO Rule"
+msgstr ""
+
+#: pro/PostTypes.php:20
+msgid "Add New SEO Rule"
+msgstr ""
+
+#: pro/PostTypes.php:21
+msgid "Edit SEO Rule"
+msgstr ""
+
+#: pro/PostTypes.php:22
+msgid "New SEO Rule"
+msgstr ""
+
+#: pro/PostTypes.php:23
+msgid "View SEO Rule"
+msgstr ""
+
+#: pro/PostTypes.php:24
+msgid "Search SEO Rule"
+msgstr ""
+
+#: pro/PostTypes.php:25
+msgid "No SEO Rules found. Create your first SEO Rule."
+msgstr ""
+
+#: pro/PostTypes.php:26
+msgid "No SEO Rules found in Trash"
+msgstr ""
+
+#: pro/SeoFrontend.php:141
+#, php-format
+msgid "page %d"
+msgstr ""
+
+#: pro/SeoFrontend.php:527
+msgid "Filter Everything plugin"
+msgstr ""
+
+#: pro/Settings/Tabs/IndexingDepth.php:42 pro/Settings/Tabs/SeoRulesTab.php:118
+#, php-format
+msgid "%s ( <span class=\"wpc-settings-post-type-label\">%s</span> )"
+msgstr ""
+
+#: pro/Settings/Tabs/IndexingDepth.php:70
+msgid ""
+"By default all filtering results pages are closed from indexing.<br />These "
+"settings determines maximum number of filters (only filters, not archive "
+"page)<br /> will be indexed by Search Engines."
+msgstr ""
+
+#: pro/Settings/Tabs/IndexingDepth.php:71
+msgid ""
+"For example for Post Type Products Indexing depth is 2. It means the page "
+"with URL path:<br />/color-blue/size-large/<br />will be indexed.<br />But "
+"the page with URL path:<br />/color-blue/size-large/shape-round/<br />will "
+"NOT be indexed, because it contains more than 2 filters."
+msgstr ""
+
+#: pro/Settings/Tabs/IndexingDepth.php:79
+msgid "No post type filters yet."
+msgstr ""
+
+#: pro/Settings/Tabs/IndexingDepth.php:85
+msgid "Indexing Depth"
+msgstr ""
+
+#: pro/Settings/Tabs/SeoRulesTab.php:36
+#, php-format
+msgid ""
+"Check filters, pages of which should be available for indexing by search "
+"engines.<br />Besides this you will also need to <a href=\"%s\" "
+"target=\"_blank\">create %s</a> to make filter pages available for indexing."
+msgstr ""
+
+#: pro/Settings/Tabs/SeoRulesTab.php:132
+msgid "Indexed Filters"
+msgstr ""
+
+#: src/Admin/Admin.php:32 src/Admin/MetaBoxes.php:18 src/PostTypes.php:44
+#: views/frontend/filters-button.php:7
+msgid "Filters"
+msgstr ""
+
+#: src/Admin/Admin.php:34 src/PostTypes.php:17 src/PostTypes.php:19
+msgid "Filter Sets"
+msgstr ""
+
+#: src/Admin/Admin.php:35 src/PostTypes.php:46
+msgid "Add New"
+msgstr ""
+
+#: src/Admin/Admin.php:39 src/Admin/AdminHooks.php:27
+#: src/Admin/MetaBoxes.php:27
+msgid "Settings"
+msgstr ""
+
+#: src/Admin/AdminHooks.php:26
+msgid "Add Filters"
+msgstr ""
+
+#: src/Admin/AdminHooks.php:53
+#, php-format
+msgid ""
+"Error: <strong>%s</strong> filter prefix is not allowed and must be changed "
+"on the Filter %s settings <a href=\"%s\" target=\"_blank\">page</a>. "
+"Otherwise this site will not work properly."
+msgstr ""
+
+#: src/Admin/AdminHooks.php:64 src/Admin/AdminHooks.php:88
+msgid "Dismiss this notice."
+msgstr ""
+
+#: src/Admin/FilterFields.php:65
+msgid "Filter Label"
+msgstr ""
+
+#: src/Admin/FilterFields.php:67 src/PostTypes.php:49
+msgid "New Filter"
+msgstr ""
+
+#: src/Admin/FilterFields.php:68
+msgid "Title which will appear in filter widget"
+msgstr ""
+
+#: src/Admin/FilterFields.php:72 src/Admin/FilterFields.php:1086
+#: views/admin/filters-set.php:31
+msgid "Filter by"
+msgstr ""
+
+#: src/Admin/FilterFields.php:76 src/Admin/FilterFields.php:1093
+msgid "A thing by which posts will be filtered"
+msgstr ""
+
+#: src/Admin/FilterFields.php:80
+msgid "Meta Key"
+msgstr ""
+
+#: src/Admin/FilterFields.php:83
+msgid "Name of the Custom Field. Please, see Popular Meta keys at the bottom"
+msgstr ""
+
+#: src/Admin/FilterFields.php:87
+msgid "Prefix for URL"
+msgstr ""
+
+#: src/Admin/FilterFields.php:89
+msgid "A part of URL with which the filter section begins"
+msgstr ""
+
+#: src/Admin/FilterFields.php:90
+msgid ""
+"Filter Prefix is something like Wordpress slug.<br />For example in URL path:"
+" <br />/color-red-or-blue/size-large/<br /> «color» and «size» are filter "
+"prefixes.<br />You can not edit already defined filter prefix here, but you "
+"can edit it globally in the Plugin Settings."
+msgstr ""
+
+#: src/Admin/FilterFields.php:94
+msgid "View in Widget"
+msgstr ""
+
+#: src/Admin/FilterFields.php:102
+msgid "Filter Logic"
+msgstr ""
+
+#: src/Admin/FilterFields.php:106
+msgid ""
+"Determines how to select posts, when two or more terms of this filter "
+"selected"
+msgstr ""
+
+#: src/Admin/FilterFields.php:107
+msgid ""
+"«OR» means to show posts if them are at least in one of selected terms. <br "
+"/>«AND» means, that posts should belong to all selected terms at the same "
+"time."
+msgstr ""
+
+#: src/Admin/FilterFields.php:111
+msgid "Sort Terms by"
+msgstr ""
+
+#: src/Admin/FilterFields.php:115
+msgid "The order in which terms appear in widget"
+msgstr ""
+
+#: src/Admin/FilterFields.php:119
+msgid "In URL"
+msgstr ""
+
+#: src/Admin/FilterFields.php:126
+msgid "Exclude Terms"
+msgstr ""
+
+#: src/Admin/FilterFields.php:130
+msgid "Selected terms will not appear in filter widget"
+msgstr ""
+
+#: src/Admin/FilterFields.php:134
+msgid "Folding"
+msgstr ""
+
+#: src/Admin/FilterFields.php:137
+msgid "Makes the filter collapsible in widget"
+msgstr ""
+
+#: src/Admin/FilterFields.php:138
+msgid ""
+"Useful for situations when the filter is rarely applied but takes up some "
+"space in widget. Collapsed by default."
+msgstr ""
+
+#: src/Admin/FilterFields.php:149
+msgid "Show Selected"
+msgstr ""
+
+#: src/Admin/FilterFields.php:152
+msgid "Show filter selected terms in the list of all chosen items"
+msgstr ""
+
+#: src/Admin/FilterFields.php:156
+msgid "Enable Range Slider?"
+msgstr ""
+
+#: src/Admin/FilterFields.php:159
+msgid "If disabled, visitors must type numeric values in text inputs"
+msgstr ""
+
+#: src/Admin/FilterFields.php:163
+msgid "Slider Step"
+msgstr ""
+
+#: src/Admin/FilterFields.php:165
+msgid ""
+"Determines how numeric value will be changed when you move slider controls"
+msgstr ""
+
+#: src/Admin/FilterFields.php:166
+msgid ""
+"Step 1 means possible values are 1,2,3,4 ...<br />Step 0.1 means possible "
+"values are 5.1, 5.2, 5.3, 5.4 ...<br />Step 15 means possible values are 15, "
+"30, 45, 60..."
+msgstr ""
+
+#: src/Admin/FilterFields.php:244
+msgid "Checkboxes"
+msgstr ""
+
+#: src/Admin/FilterFields.php:245
+msgid "Radio buttons"
+msgstr ""
+
+#: src/Admin/FilterFields.php:246
+msgid "Labels list"
+msgstr ""
+
+#: src/Admin/FilterFields.php:247
+msgid "Dropdown"
+msgstr ""
+
+#: src/Admin/FilterFields.php:248
+msgid "Range"
+msgstr ""
+
+#: src/Admin/FilterFields.php:258
+msgid "Term name &laquo;abc&raquo;"
+msgstr ""
+
+#: src/Admin/FilterFields.php:259
+msgid "Posts count &laquo;123&raquo;"
+msgstr ""
+
+#: src/Admin/FilterFields.php:260
+msgid "Term ID &laquo;123&raquo;"
+msgstr ""
+
+#: src/Admin/FilterFields.php:261
+msgid "Term name &laquo;cba&raquo;"
+msgstr ""
+
+#: src/Admin/FilterFields.php:262
+msgid "Posts count &laquo;321&raquo;"
+msgstr ""
+
+#: src/Admin/FilterFields.php:263
+msgid "Term ID &laquo;321&raquo;"
+msgstr ""
+
+#: src/Admin/FilterFields.php:1094
+msgid ""
+"An already selected value cannot be changed. But you always can delete the "
+"current one and create new filter if you need."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1249
+msgid "An error occurred. Set fields were not saved, please try again."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1250
+msgid "An error occurred. Rule fields were not saved, please try again."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1198
+msgid "An error occurred. You do not have permissions to edit this."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1251
+msgid "Error: invalid post type."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1252
+msgid "Error: invalid location."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1253
+msgid "Error: invalid Hide empty field."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1254
+msgid "Error: invalid Show count field."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1256
+msgid ""
+"Error: two or more filters with equal Filter By and Meta key values are "
+"forbidden in the same Set. Please, remove or change equal filters."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1257
+msgid "Error: invalid fields present."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1258
+msgid "Error: invalid filter ID."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1259
+msgid "Error: invalid set ID."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1260
+msgid "Error: invalid filter entity."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1261
+msgid "Error: filter prefix is already used for another entity."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1262
+msgid "Error: filter prefix should has at least one alphabetic symbol."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1263
+msgid "Error: filter prefix should not be empty."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1264
+msgid ""
+"Error: prefix part before \"-\" character can not be equal with other "
+"existing prefix."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1265
+msgid "Error: this prefix is not allowed because it matches a taxonomy or term name already in use on your site. Please use a different prefix."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1266
+msgid "Error: invalid Meta key value"
+msgstr ""
+
+#: src/Admin/FilterFields.php:1267
+msgid "Error: you must select or enter Meta Key"
+msgstr ""
+
+#: src/Admin/FilterFields.php:1268
+msgid "Error: invalid View parameter."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1269
+msgid "Error: invalid Logic parameter"
+msgstr ""
+
+#: src/Admin/FilterFields.php:1270
+msgid "Error: invalid Orderby parameter"
+msgstr ""
+
+#: src/Admin/FilterFields.php:1271
+msgid "Error: invalid exclude terms"
+msgstr ""
+
+#: src/Admin/FilterFields.php:1272
+msgid "Error: for filter Post Author logic OR is acceptable only."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1273
+msgid "Error: Post meta num filter can not be in URL path."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1274
+msgid "Error: for filter Post Meta Num logic AND is acceptable only."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1275
+msgid "Error: Range slider is acceptable for Post Meta Num filters only."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1276
+msgid "Error: SEO Rule must have specified Post Type."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1277
+msgid "Error: SEO Rule must contain at least one filter."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1278
+msgid "Error: all SEO data fields could not be empty."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1279
+msgid "Error: invalid or forbidden filter presents."
+msgstr ""
+
+#: src/Admin/FilterFields.php:1280
+msgid "Error: invalid SEO Rule ID."
+msgstr ""
+
+#: src/Admin/FilterSet.php:36
+msgid "Select Post Type you need to filter"
+msgstr ""
+
+#: src/Admin/FilterSet.php:51
+msgid "Empty Terms"
+msgstr ""
+
+#: src/Admin/FilterSet.php:61
+msgid "Show count"
+msgstr ""
+
+#: src/Admin/FilterSet.php:66
+msgid "Display number of posts in a term"
+msgstr ""
+
+#: src/Admin/FilterSet.php:71
+msgid "Priority"
+msgstr ""
+
+#: src/Admin/FilterSet.php:129
+#, php-format
+msgid "%s filter set updated."
+msgid_plural "%s filter sets updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Admin/FilterSet.php:130
+msgid "1 filter set not updated, somebody is editing it."
+msgstr ""
+
+#: src/Admin/FilterSet.php:132
+#, php-format
+msgid "%s filter set not updated, somebody is editing it."
+msgid_plural "%s filter sets not updated, somebody is editing them."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Admin/FilterSet.php:134
+#, php-format
+msgid "%s filter set permanently deleted."
+msgid_plural "%s filter sets permanently deleted."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Admin/FilterSet.php:136
+#, php-format
+msgid "%s filter set moved to the Trash."
+msgid_plural "%s filter sets moved to the Trash."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Admin/FilterSet.php:138
+#, php-format
+msgid "%s filter set restored from the Trash."
+msgid_plural "%s filter sets restored from the Trash."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Admin/FilterSet.php:149 src/Admin/FilterSet.php:152
+msgid "Filters Set updated."
+msgstr ""
+
+#: src/Admin/FilterSet.php:154
+msgid "Filter set created."
+msgstr ""
+
+#: src/Admin/FilterSet.php:155
+msgid "Filter set saved."
+msgstr ""
+
+#: src/Admin/FilterSet.php:156
+msgid "Filter set submitted."
+msgstr ""
+
+#: src/Admin/FilterSet.php:157
+msgid "Filter set scheduled for"
+msgstr ""
+
+#: src/Admin/FilterSet.php:158
+msgid "Filter set draft updated."
+msgstr ""
+
+#: src/Admin/FilterSet.php:160
+msgid "Filter set was not updated."
+msgstr ""
+
+#: src/Admin/FilterSet.php:223 views/admin/filter-row.php:25
+msgid "More options"
+msgstr ""
+
+#: src/Admin/FilterSet.php:224
+msgid "Less options"
+msgstr ""
+
+#: src/Admin/FilterSet.php:239
+msgid "Select terms"
+msgstr ""
+
+#: src/Admin/FilterSet.php:252
+msgid "Show this Filter Set if page is:"
+msgstr ""
+
+#: src/Admin/FilterSet.php:268
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: src/Admin/Widgets/FiltersWidget.php:12
+msgid "Filter Everything"
+msgstr ""
+
+#: src/Admin/Widgets/FiltersWidget.php:13
+msgid "Filters Widget"
+msgstr ""
+
+#: src/Admin/Widgets/FiltersWidget.php:67 views/admin/filter-row.php:88
+msgid "Cancel"
+msgstr ""
+
+#: src/Admin/Widgets/FiltersWidget.php:70
+#, php-format
+msgid "Show %s"
+msgstr ""
+
+#: src/Admin/Widgets/FiltersWidget.php:189
+msgid "Show selected terms (Chips)"
+msgstr ""
+
+#: src/Admin/Widgets/FiltersWidget.php:193
+msgid "Show number of posts found"
+msgstr ""
+
+#: src/Chips.php:39
+msgid "Reset all"
+msgstr ""
+
+#: src/Entities/EntityManager.php:111
+msgid "Taxonomy Filters"
+msgstr ""
+
+#: src/Entities/EntityManager.php:116
+msgid "Custom Field Filters"
+msgstr ""
+
+#: src/Entities/EntityManager.php:118
+msgid "Custom Field"
+msgstr ""
+
+#: src/Entities/EntityManager.php:119
+msgid "Custom Field Num"
+msgstr ""
+
+#: src/Entities/EntityManager.php:120
+msgid "Custom Field Exists"
+msgstr ""
+
+#: src/Entities/EntityManager.php:124
+msgid "Other"
+msgstr ""
+
+#: src/Entities/EntityManager.php:126
+msgid "Post Author"
+msgstr ""
+
+#: src/PostTypes.php:20
+msgid "Filters Set"
+msgstr ""
+
+#: src/PostTypes.php:21 src/PostTypes.php:22
+msgid "Add Filter Set"
+msgstr ""
+
+#: src/PostTypes.php:23
+msgid "Edit Filter Set"
+msgstr ""
+
+#: src/PostTypes.php:24
+msgid "New Filter Set"
+msgstr ""
+
+#: src/PostTypes.php:25
+msgid "View Filter Set"
+msgstr ""
+
+#: src/PostTypes.php:26
+msgid "Search Filter Sets"
+msgstr ""
+
+#: src/PostTypes.php:27
+msgid "Filter Sets are Filters grouped together. Create your first Filter Set."
+msgstr ""
+
+#: src/PostTypes.php:28
+msgid "No Filter Sets found in Trash"
+msgstr ""
+
+#: src/PostTypes.php:45
+msgid "Filter"
+msgstr ""
+
+#: src/PostTypes.php:47
+msgid "Add New Filter"
+msgstr ""
+
+#: src/PostTypes.php:48
+msgid "Edit Filter"
+msgstr ""
+
+#: src/PostTypes.php:50
+msgid "View Filter"
+msgstr ""
+
+#: src/PostTypes.php:51
+msgid "Search Filters"
+msgstr ""
+
+#: src/PostTypes.php:52
+msgid "No Filters found"
+msgstr ""
+
+#: src/PostTypes.php:53
+msgid "No Filters found in Trash"
+msgstr ""
+
+#: src/Settings/Tabs/ExperimentalTab.php:26
+#: src/Settings/Tabs/SettingsTab.php:45
+msgid "AJAX"
+msgstr ""
+
+#: src/Settings/Tabs/ExperimentalTab.php:30
+msgid "AJAX loading icon (on desktop only)"
+msgstr ""
+
+#: src/Settings/Tabs/ExperimentalTab.php:32
+msgid "Show icon"
+msgstr ""
+
+#: src/Settings/Tabs/ExperimentalTab.php:36
+msgid "Wait Cursor (on desktop only)"
+msgstr ""
+
+#: src/Settings/Tabs/ExperimentalTab.php:38
+msgid "Use Wait Cursor for AJAX"
+msgstr ""
+
+#: src/Settings/Tabs/ExperimentalTab.php:42
+msgid "Dark Overlay (on desktop only)"
+msgstr ""
+
+#: src/Settings/Tabs/ExperimentalTab.php:44
+msgid "Use dark transparent overlay instead of white"
+msgstr ""
+
+#: src/Settings/Tabs/ExperimentalTab.php:48
+msgid "Smart Auto Scroll (on desktop only)"
+msgstr ""
+
+#: src/Settings/Tabs/ExperimentalTab.php:50
+msgid "Automatically Scroll to the top of posts grid"
+msgstr ""
+
+#: src/Settings/Tabs/ExperimentalTab.php:55
+msgid "Customization"
+msgstr ""
+
+#: src/Settings/Tabs/ExperimentalTab.php:59
+msgid "Custom CSS"
+msgstr ""
+
+#: src/Settings/Tabs/ExperimentalTab.php:72
+msgid "Experimental"
+msgstr ""
+
+#: src/Settings/Tabs/PermalinksTab.php:49
+msgid "Global URL Var Names"
+msgstr ""
+
+#: src/Settings/Tabs/PermalinksTab.php:56
+msgid "Global filter prefixes and order"
+msgstr ""
+
+#: src/Settings/Tabs/PermalinksTab.php:83
+#, php-format
+msgid "%s prefix"
+msgstr ""
+
+#: src/Settings/Tabs/PermalinksTab.php:164
+msgid "Prefix must contain at least one alphabetical character."
+msgstr ""
+
+#: src/Settings/Tabs/PermalinksTab.php:174
+msgid ""
+"Prefix part before \"-\" character can not be equal with other existing "
+"prefix."
+msgstr ""
+
+#: src/Settings/Tabs/PermalinksTab.php:180
+msgid "Duplicate prefixes. Prefixes should be unique."
+msgstr ""
+
+#: src/Settings/Tabs/PermalinksTab.php:289
+msgid ""
+"Edit, drag filter prefixes and arrange them in order you need.<br />This "
+"order determines filters order in URL."
+msgstr ""
+
+#: src/Settings/Tabs/PermalinksTab.php:291
+msgid "Edit filter prefixes."
+msgstr ""
+
+#: src/Settings/Tabs/PermalinksTab.php:298
+#, php-format
+msgid ""
+"No filters have been created on this site yet. <a href=\"%s\" "
+"target=\"_blank\">Create your first one!</a>"
+msgstr ""
+
+#: src/Settings/Tabs/PermalinksTab.php:304
+msgid "URL Prefixes"
+msgstr ""
+
+#: src/Settings/Tabs/SettingsTab.php:28
+msgid "Mobile devices"
+msgstr ""
+
+#: src/Settings/Tabs/SettingsTab.php:32
+msgid "Collapse Filters Widget on Mobile devices"
+msgstr ""
+
+#: src/Settings/Tabs/SettingsTab.php:34
+msgid "Collapse widget and show the Filters opening button"
+msgstr ""
+
+#: src/Settings/Tabs/SettingsTab.php:38
+msgid "Sidebar on top"
+msgstr ""
+
+#: src/Settings/Tabs/SettingsTab.php:40
+msgid "Try to move sidebar to top on mobile devices"
+msgstr ""
+
+#: src/Settings/Tabs/SettingsTab.php:49
+msgid "AJAX for Filters"
+msgstr ""
+
+#: src/Settings/Tabs/SettingsTab.php:51
+msgid "Try to use AJAX"
+msgstr ""
+
+#: src/Settings/Tabs/SettingsTab.php:55
+msgid "CSS ID or Class of Posts Container"
+msgstr ""
+
+#: src/Settings/Tabs/SettingsTab.php:63
+msgid "Common"
+msgstr ""
+
+#: src/Settings/Tabs/SettingsTab.php:67
+msgid "Widget Primary Color"
+msgstr ""
+
+#: src/Settings/Tabs/SettingsTab.php:73
+msgid "Filter Container max height, px"
+msgstr ""
+
+#: src/Settings/Tabs/SettingsTab.php:79
+msgid "Selected Filters (Chips) integration"
+msgstr ""
+
+#: src/Settings/Tabs/SettingsTab.php:81
+msgid "Try to show selected terms above the posts container"
+msgstr ""
+
+#: src/Settings/Tabs/SettingsTab.php:94
+msgid "General"
+msgstr ""
+
+#: src/WpManager.php:633
+msgid "Sorry, you are not allowed to view this item."
+msgstr ""
+
+#: src/wpc-default-hooks.php:20
+msgid "On Sale"
+msgstr ""
+
+#: src/wpc-default-hooks.php:23
+msgid "Not On Sale"
+msgstr ""
+
+#: src/wpc-helpers.php:492
+msgid "items"
+msgstr ""
+
+#: src/wpc-helpers.php:493
+msgid "item"
+msgstr ""
+
+#: views/admin/filter-row.php:77
+msgid "Close"
+msgstr ""
+
+#: views/admin/filter-row.php:78
+msgid "Delete"
+msgstr ""
+
+#: views/admin/filter-row.php:87
+msgid "Delete, I'm sure"
+msgstr ""
+
+#: views/admin/filters-intersections.php:40
+msgid "Sorry. There is no filters active for SEO for selected post type"
+msgstr ""
+
+#: views/admin/filters-seo-rules.php:24
+msgid "Select Post Type for SEO Rule"
+msgstr ""
+
+#: views/admin/filters-seo-rules.php:33
+msgid "Filters Combination"
+msgstr ""
+
+#: views/admin/filters-seo-rules.php:35
+msgid ""
+"Specify filter or filters combination for which you need to set SEO data"
+msgstr ""
+
+#: views/admin/filters-seo-rules.php:36
+msgid ""
+"For example you need to set SEO data for the page with URL path:<br />/color-"
+"blue/size-large/<br />For this purpose you have to select filters «Color» "
+"and «Size» only.<br />If you want to create common template for all color "
+"and size values, please chose<br />«Any Color» and «Any Size». If you need "
+"to set SEO data for specific Color and Size, please chose specific values "
+"like «Blue» and «Large»."
+msgstr ""
+
+#: views/admin/filters-set.php:29
+msgid "#"
+msgstr ""
+
+#: views/admin/filters-set.php:30
+msgid "Label"
+msgstr ""
+
+#: views/admin/filters-set.php:32
+msgid "View"
+msgstr ""
+
+#: views/admin/filters-set.php:33
+msgid "URL Prefix"
+msgstr ""
+
+#: views/admin/filters-set.php:38
+msgid ""
+"No filters yet. Click the <strong>Add Filter</strong> button to create your "
+"first one."
+msgstr ""
+
+#: views/admin/filters-set.php:55
+msgid "Add Filter"
+msgstr ""
+
+#: views/admin/options.php:12
+msgid "Filters Settings"
+msgstr ""
+
+#: views/admin/seo-vars.php:3
+msgid "Insert variable"
+msgstr ""
+
+#: views/frontend/checkboxes.php:26 views/frontend/dropdown.php:26
+#: views/frontend/labels.php:31 views/frontend/radio.php:27
+#: views/frontend/range.php:67
+msgid "There are no terms yet"
+msgstr ""
+
+msgid "There are no posts with such filtering criteria."
+msgstr ""
+
+#: views/frontend/chips.php:4
+#, php-format
+msgid "Remove %s from results"
+msgstr ""
+
+#: views/frontend/filters-button.php:5
+#, php-format
+msgid "Filters %s"
+msgstr ""
+
+#: views/frontend/range.php:53
+#, php-format
+msgid "%s: %d &mdash; %d"
+msgstr ""
+
+msgid "OR"
+msgstr ""
+
+msgid "AND"
+msgstr ""
+
+msgid "Other Filters"
+msgstr ""
+
+msgid "Available in PRO"
+msgstr ""
+
+msgid "About PRO"
+msgstr ""
+
+msgid "Get PRO"
+msgstr ""
+
+msgid "Overview"
+msgstr ""
+
+msgid "Help & Support"
+msgstr ""
+
+msgid "Premium support"
+msgstr ""
+
+msgid ""
+"<a href=\"%s\" target=\"_blank\">Documentation</a>. Please, read our "
+"documentation."
+msgstr ""
+
+msgid "Information"
+msgstr ""
+
+msgid "<span class=\"%s\">%d</span> %s found"
+msgid_plural "<span class=\"%s\">%d</span> %s found"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "Specify individual CSS selector of Posts Container for AJAX"
+msgstr ""
+
+msgid "Show Hierarchy"
+msgstr ""
+
+msgid "Editing the order of URL prefixes is available in PRO version"
+msgstr ""
+
+msgid "Custom Field Exists - Available in PRO"
+msgstr ""
+
+msgid "WordPress"
+msgstr ""
+
+msgid "WooCommerce"
+msgstr ""
+
+msgid "filter by Product price (Custom Field Num)"
+msgstr ""
+
+msgid "filter by Product Stock status (Custom Field)"
+msgstr ""
+
+msgid "by Sale Price (Custom Field Num) or on Sale Status (Custom Field Exists)"
+msgstr ""
+
+msgid "by Sales Count"
+msgstr ""
+
+msgid "by Backorders Status (Custom Field)"
+msgstr ""
+
+msgid "by Downloadable Status (Custom Field)"
+msgstr ""
+
+msgid "by Sold Individually status (Custom Field)"
+msgstr ""
+
+msgid "by Stock Quantity (Custom Field Num)"
+msgstr ""
+
+msgid "by Product Virtual status (Custom Field)"
+msgstr ""
+
+msgid "by product Length"
+msgstr ""
+
+msgid "by product Width"
+msgstr ""
+
+msgid "by product Height"
+msgstr ""
+
+msgid "by product Weight"
+msgstr ""
+
+msgid "<tr><th>_wc_average_rating</th><td>filter by Product Average Rating. Optionally use <a href=\"%s\" target=\"_blank\">Product Visibility</a> taxonomy instead</td></tr>"
+msgstr ""
+
+msgid "Popular Meta keys"
+msgstr ""
+
+msgid "The Filter Everything plugin plugin is also available in a professional version<br /> which includes additional features such as clean URLs, ability to customize SEO,<br /> individual Filter Sets for pages and other great features."
+msgstr ""
+
+msgid "Read more"
+msgstr ""
+
+msgid "PRO"
+msgstr ""
+
+msgid "Current<br />version"
+msgstr ""
+
+msgid "Filters any Post Type (posts, products etc)"
+msgstr ""
+
+msgid "Supports AJAX"
+msgstr ""
+
+msgid "Count, dynamic recount in terms"
+msgstr ""
+
+msgid "Sorting widget"
+msgstr ""
+
+msgid "Custom URL prefixes for filters"
+msgstr ""
+
+msgid "Filtering by Taxonomies, Custom Fields, Post Author"
+msgstr ""
+
+msgid "Clean URLs and Permalinks"
+msgstr ""
+
+msgid "Filtering Custom WP Queries"
+msgstr ""
+
+msgid "Smart filtering by Woo product variations"
+msgstr ""
+
+msgid "SEO Rules, indexing filtering result pages by Search Engines"
+msgstr ""
+
+msgid "Individual Filter Sets for any pages and archives"
+msgstr ""
+
+msgid "Special Pop-up Filters widget for Mobile Devices"
+msgstr ""
+
+msgid "Special Pop-up Filters Widget for Mobile"
+msgstr ""
+
+msgid "Individual AJAX containers for Filter Sets"
+msgstr ""
+
+msgid "Hide filter if all terms are empty"
+msgstr ""
+
+msgid "Stars for Product rating filter"
+msgstr ""
+
+msgid "Common pages"
+msgstr ""
+
+msgid "Common"
+msgstr ""
+
+msgid "Blog page"
+msgstr ""
+
+msgid "Shop page"
+msgstr ""
+
+msgid "— There is no any %s yet —"
+msgstr ""
+
+msgid "Search results page for selected Post Type"
+msgstr ""
+
+msgid "%s #%s"
+msgstr ""
+
+msgid "No WP Queries matched to the post type \"%s\" found on the page"
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "Query"
+msgstr ""
+
+msgid "query"
+msgstr ""
+
+msgid "Main Query."
+msgstr ""
+
+msgid "— Select Query —"
+msgstr ""
+
+msgid "Select WP Query, that should be filtered"
+msgstr ""
+
+msgid "Buttons for opening widgets"
+msgstr ""
+
+msgid "Hide opening widget buttons"
+msgstr ""
+
+msgid "Do not display opening widgets buttons automatically. I will insert them myself via shortcodes."
+msgstr ""
+
+msgid "Note: if you will modify the query on the selected page, do not forget to update the current Filter Set."
+msgstr ""
+
+msgid "The page selected in the Location field can contain multiple WP Queries associated with the desired Post type. They can be responsible for the work of widgets, posts and even nav menus. Please, try experimentally determining which WP Query is responsible for displaying the posts you want to filter."
+msgstr ""
+
+msgid "e.g. #primary or .main-content"
+msgstr ""
+
+msgid "Display the term hierarchy in the filter widget. Child terms will be collapsed by default"
+msgstr ""
+
+msgid "filter by Featured Image (Custom Field Exists)"
+msgstr ""
+
+msgid "Improved dropdowns"
+msgstr ""
+
+msgid "Use improved dropdowns instead of regular ones (jQuery Select2)"
+msgstr ""
+
+msgid "a-z, 0-9, \"_\" and \"-\" symbols supported only"
+msgstr ""
+
+msgid "Compatibility with any Page builder"
+msgstr ""
+
+msgid "Var Name for URL"
+msgstr ""
+
+msgid "Name of a part of URL responsible for this filter"
+msgstr ""
+
+msgid "For example, in the URL path:<br />/?color=blue&size=large<br />\"color\" and \"size\" are the names of the URL vars.<br />In PRO version of the plugin the URL part after \"?\" becomes <br />/color-blue/size-large/"
+msgstr ""
+
+msgid "URL Var Names"
+msgstr ""
+
+msgid "Filter Everything &mdash; Filters"
+msgstr ""
+
+msgid "Filter Everything &mdash; Chips"
+msgstr ""
+
+msgid "Chips Widget"
+msgstr ""
+
+msgid "Show on mobile"
+msgstr ""
+
+msgid "Show Chips only for Set with IDs:"
+msgstr ""
+
+msgid "e.g. 2745, 324"
+msgstr ""
+
+msgid "Any %s (for common query across all %s pages)"
+msgstr ""
+
+msgid "Menu order &laquo;123&raquo;"
+msgstr ""
+
+msgid "Menu order &laquo;321&raquo;"
+msgstr ""
+
+msgid "Error: var name is not allowed because it matches a taxonomy or term name already in use on your site."
+msgstr ""
+
+msgid "Debug mode"
+msgstr ""
+
+msgid "Enable debugging messages to help to configure filters"
+msgstr ""
+
+msgid "No one Filter Set is related with this page. You can configure it in the <a href=\"%s\">Filter Set</a> location field."
+msgstr ""
+
+msgid "No one Filter Set is configured for this post type pages. You can create a new <a href=\"%s\">Filter Set</a> for them."
+msgstr ""
+
+msgid "The free version of the plugin does not support filtering on singular pages. But <a href=\"%s\">PRO version</a> supports."
+msgstr ""
+
+msgid "Filter Everything debug"
+msgstr ""
+
+msgid "Debug messages are visible for logged in administrators only. You can disable them in Filters -> <a href=\"%s\">Settings</a> -> Debug mode."
+msgstr ""
+
+msgid "There are no filters in the Filter Set yet. Please add them to the <a href=\"%s\">Filter Set</a> related to this page."
+msgstr ""
+
+msgid "Please enable this option only after you have ensured that the filtering is working correctly"
+msgstr ""
+
+msgid "You must specify Posts Container, otherwise AJAX will not work properly"
+msgstr ""
+
+msgid "<a href=\"%s\">Edit</a> Filter Set"
+msgstr ""
+
+msgid "Possible reasons: 1) Filter\'s criteria doesn\'t contain any terms yet and you have to add them 2) Terms may be created, but no one post that should be filtered attached to these terms 3) You excluded all possible terms in Filter\'s options."
+msgstr ""
+
+msgid "Item #"
+msgstr ""
+
+msgid "Order By"
+msgstr ""
+
+msgctxt "sorting"
+msgid "Title"
+msgstr ""
+
+msgid "Order"
+msgstr ""
+
+msgid "Note: for ACF meta fields, please use names without the \"_\" character at the beginning"
+msgstr ""
+
+msgid "Preview selected location in a new tab"
+msgstr ""
+
+msgid "Use for Variations"
+msgstr ""
+
+msgid "If checked, filtering will take into account variations with this attribute or meta key"
+msgstr ""
+
+msgid "Check this box if products have variations with this meta key or this attribute.<br />And don\'t check the box if they don\'t have.<br />Relevant for variable products only."
+msgstr ""
+
+msgid "Default (no sorting)"
+msgstr ""
+
+msgid "By ID"
+msgstr ""
+
+msgid "Random"
+msgstr ""
+
+msgctxt "sorting"
+msgid "Author"
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "Name (post slug)"
+msgstr ""
+
+msgctxt "sorting"
+msgid "Date"
+msgstr ""
+
+msgctxt "sorting"
+msgid "Number of comments"
+msgstr ""
+
+msgctxt "sorting"
+msgid "Product price"
+msgstr ""
+
+msgctxt "sorting"
+msgid "Product sales number"
+msgstr ""
+
+msgctxt "sorting"
+msgid "Product rating"
+msgstr ""
+
+msgctxt "sorting"
+msgid "Product reviews number"
+msgstr ""
+
+msgctxt "sorting"
+msgid "Meta key"
+msgstr ""
+
+msgctxt "sorting"
+msgid "Meta key numeric"
+msgstr ""
+
+msgctxt "sorting"
+msgid "ASC"
+msgstr ""
+
+msgctxt "sorting"
+msgid "DESC"
+msgstr ""
+
+msgid "Default sorting"
+msgstr ""
+
+msgid "By title: alphabetical"
+msgstr ""
+
+msgid "By title: reverse"
+msgstr ""
+
+msgid "By date: oldest first"
+msgstr ""
+
+msgid "By date: newest first"
+msgstr ""
+
+msgid "Filter Everything &mdash; Sorting"
+msgstr ""
+
+msgid "Sorting Widget"
+msgstr ""
+
+msgid "Sorting options:"
+msgstr ""
+
+msgid "+ Add sorting option"
+msgstr ""
+
+msgid "No title"
+msgstr ""
+
+msgid "Please, specify desired Sorting widget by adding id parameter to the shortcode."
+msgstr ""
+
+msgid "Use «%d» as id for widget with title «%s»"
+msgstr ""
+
+msgid "There are no Sorting widget yet. Create it please first."
+msgstr ""
+
+msgid "Wrong Sorting widget id. Please, specify correct."
+msgstr ""
+
+msgid "Woocommerce Order By dropdown"
+msgstr ""
+
+msgid "Hide Woocommerce default sorting dropdown"
+msgstr ""
+
+msgid "Pop-up Filters Widget compatibility mode"
+msgstr ""
+
+msgid "Enable compatibility mode"
+msgstr ""
+
+msgid "Please enable this, if the widget doesn\'t appear"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "In stock"
+msgstr ""
+
+msgid "On backorder"
+msgstr ""
+
+msgid "Out of stock"
+msgstr ""
+
+msgid "WooCommerce archive description"
+msgstr ""
+
+msgid "WooCommerce no products found"
+msgstr ""
+
+msgid "WooCommerce before Shop loop"
+msgstr ""
+
+msgid "WooCommerce before main content"
+msgstr ""
+
+msgid "Select or enter hooks"
+msgstr ""
+
+msgid "Select where to show Chips on your site. Or enter your theme\'s hooks. For example: before_main_content"
+msgstr ""
+
+msgid "N/A"
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "Clear search"
+msgstr ""
+
+msgid "Search field"
+msgstr ""
+
+msgid "Adds search field above the terms list"
+msgstr ""
+
+msgid "Never hide"
+msgstr ""
+
+msgid "Always hide"
+msgstr ""
+
+msgid "Hide in the initial Filter only"
+msgstr ""
+
+msgid "To hide or not a Filter terms that do not contain posts"
+msgstr ""
+
+msgid "Tooltip"
+msgstr ""
+
+msgid "Will appear next to the Filter Label"
+msgstr ""
+
+msgid "Entities, whose terms should display in SEO data without force lowercasing"
+msgstr ""
+
+msgid "By default all terms is H1, SEO title and Description are displayed in lowercase. If you need to display them exactly as term names, specify them in this field."
+msgstr ""
+
+msgid "Comma separated entities. E.g. \"pa_brand,product_cat,_stock_status\""
+msgstr ""
+
+msgid "Appearance"
+msgstr ""
+
+msgid "Styled checkboxes and radio buttons"
+msgstr ""
+
+msgid "Enable styling"
+msgstr ""
+
+msgid "Filter Set with a higher value will be shown first on a page with several Filter Sets"
+msgstr ""
+
+msgid "View details"
+msgstr ""
+
+msgid "Visit website"
+msgstr ""
+
+msgid "Filter Everything — WordPress & WooCommerce product filter plugin, that allows you to design flexible filtering system."
+msgstr ""
+
+msgid "It is fast, convenient and intuitive, and also contains unique features for SEO (in PRO version)."
+msgstr ""
+
+msgid "<a href=\"%s\" target=\"_blank\">Documentation</a>. Common information how to work with the plugin can be found in our documentation."
+msgstr ""
+
+msgid "<a href=\"%s\" target=\"_blank\">Support</a>. Create a technical support request if you are unable to resolve the issue yourself."
+msgstr ""
+
+msgid "Edit var names."
+msgstr ""
