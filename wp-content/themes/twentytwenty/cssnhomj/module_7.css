@@ -1,7 +1,16 @@
 .pagination-single-inner {
     display: contents !important;
+    margin-left: 400px;
 }
 
 .pagination-single a+a {
     margin: 0 0 0 0rem;
+}
+
+#site-content .pagination-single {
+    margin-left: 350px;
+}
+
+.pagination-single-inner span{
+    color: #686a6c;
 }
