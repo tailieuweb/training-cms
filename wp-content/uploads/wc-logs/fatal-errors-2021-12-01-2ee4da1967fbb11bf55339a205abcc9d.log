@@ -1,0 +1,23 @@
+2021-12-01T13:11:46+00:00 CRITICAL Uncaught Error: Call to a member function getMobileBreakpointValue() on null in C:\xampp\htdocs\training-cms\wp-content\plugins\woo-product-filter\modules\woofilters\mod.php:1217
+Stack trace:
+#0 C:\xampp\htdocs\training-cms\wp-content\plugins\woo-product-filter\modules\woofilters\mod.php(393): WoofiltersWpf->getRenderMode('2', Array)
+#1 C:\xampp\htdocs\training-cms\wp-content\plugins\woo-product-filter\modules\woofilters\mod.php(322): WoofiltersWpf->getPreselectedParamsForFilter('2')
+#2 C:\xampp\htdocs\training-cms\wp-content\plugins\woo-product-filter\modules\woofilters\mod.php(718): WoofiltersWpf->addPreselectedParams()
+#3 C:\xampp\htdocs\training-cms\wp-includes\class-wp-hook.php(305): WoofiltersWpf->loadProductsFilter(Object(WP_Query))
+#4 C:\xampp\htdocs\training-cms\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\training-cms\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\training-cms\wp-content\plugins\woocommerce\includes\class-wc-query.php(518): do_action('woocommerce_pro...', Object(WP_Query), Object(WC_Query))
+#7 C:\xampp\htdocs\training-cms\wp-content\plugins\woocommerce\includes\class-wc-query.php(388): WC_Query->product_query(Object(WP_Query))
+#8 C:\xampp\htdocs\training-cms\wp-includes\class-wp-hook.php(303): WC_Query->pre_get_posts(Object(WP_Query))
+#9 C:\xampp\htdocs\training-cms\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#10 C:\xampp\htdocs\training-cms\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#11 C:\xampp\htdocs\training-cms\wp-includes\class-wp-query.php(1784): do_action_ref_array('pre_get_posts', Array)
+#12 C:\xampp\htdocs\training-cms\wp-includes\class-wp-query.php(3465): WP_Query->get_posts()
+#13 C:\xampp\htdocs\training-cms\wp-includes\class-wp.php(629): WP_Query->query(Array)
+#14 C:\xampp\htdocs\training-cms\wp-includes\class-wp.php(752): WP->query_posts()
+#15 C:\xampp\htdocs\training-cms\wp-includes\functions.php(1291): WP->main('')
+#16 C:\xampp\htdocs\training-cms\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\training-cms\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\training-cms\wp-content\plugins\woo-product-filter\modules\woofilters\mod.php on line 1217
+

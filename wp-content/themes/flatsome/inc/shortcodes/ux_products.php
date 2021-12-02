@@ -287,7 +287,7 @@ function ux_products($atts, $content = null, $tag = '' ) {
 	            	<div class="<?php echo implode(' ', $classes_col); ?>" <?php echo $animate;?>>
 						<div class="col-inner">
 						<?php woocommerce_show_product_loop_sale_flash(); ?>
-						<div class="product-small <?php echo implode(' ', $classes_box); ?>">
+						<div class="product-small<?php echo implode(' ', $classes_box); ?>">
 							<div class="box-image" <?php echo get_shortcode_inline_css($css_args_img); ?>>
 								<div class="<?php echo implode(' ', $classes_image); ?>" <?php echo get_shortcode_inline_css($css_image_height); ?>>
 									<a href="<?php echo get_the_permalink(); ?>" aria-label="<?php echo esc_attr( $product->get_title() ); ?>">

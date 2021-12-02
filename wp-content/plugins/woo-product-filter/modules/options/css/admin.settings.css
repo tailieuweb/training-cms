@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {
+	#wpfSettingsForm .form-table th,
+	#wpfSettingsForm .form-table td{
+		width: 100%;
+	}
+	#wpfSettingsForm #wpfFormOptDetails_loader_icon {
+		padding-top: 30px;
+	}
+}

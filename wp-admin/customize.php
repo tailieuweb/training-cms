@@ -146,7 +146,6 @@ $body_class .= ' locale-' . sanitize_html_class( strtolower( str_replace( '_', '
 
 if ( wp_use_widgets_block_editor() ) {
 	$body_class .= ' wp-embed-responsive';
-
 }
 
 $admin_title = sprintf( $wp_customize->get_document_title_template(), __( 'Loading&hellip;' ) );

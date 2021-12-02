@@ -46,7 +46,7 @@ if ( $out_of_stock ) $classes[] = 'out-of-stock';
 <div <?php wc_product_class( $classes, $product ); ?>>
 	<div class="col-inner">
 	<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
-	<div class="product-small box <?php echo flatsome_product_box_class(); ?>">
+	<div class="product-small box<?php echo flatsome_product_box_class(); ?>">
 		<div class="box-image">
 			<div class="<?php echo flatsome_product_box_image_class(); ?>">
 				<a href="<?php echo get_the_permalink(); ?>" aria-label="<?php echo esc_attr( $product->get_title() ); ?>">

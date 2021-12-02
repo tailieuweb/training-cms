@@ -1,0 +1,106 @@
+.wpc-filters-section:not(.wpc-filter-post_meta_num,.wpc-filter-layout-dropdown) .wpc-filter-content:not(.wpc-filter-has-hierarchy) ul.wpc-filters-ul-list{
+                        max-height: 350px;
+                        overflow-y: auto;
+                }
+.ui-slider-horizontal .ui-slider-range{
+                        background-color: #0570e2;
+                    }
+                
+.wpc-spinner:after {
+                        border-top-color: #0570e2;
+                    }
+.theme-Avada .wpc-filter-product_visibility .star-rating:before,
+                .wpc-filter-product_visibility .star-rating span:before{
+                    color: #0570e2;
+                }
+.theme-twentyfourteen .widget-area input.wpc-label-input:checked+label span.wpc-filter-label-wrapper,
+                .widget-area input.wpc-label-input:checked+label span.wpc-filter-label-wrapper, 
+                .wpc-filters-widget-main-wrapper input.wpc-label-input:checked+label span.wpc-filter-label-wrapper{
+                        background-color: #0570e2;
+                }
+.widget-area input.wpc-label-input:checked+label, 
+                input.wpc-label-input:checked+label{
+                        border-color: #0570e2;
+                }
+#secondary .wpc-filters-labels li.wpc-term-item input:checked+label a,
+                #secondary .widget-area input.wpc-label-input:checked+label span.wpc-filter-label-wrapper,
+                .widget-area input.wpc-label-input:checked+label span.wpc-filter-label-wrapper, 
+                .wpc-filters-widget-main-wrapper input.wpc-label-input:checked+label span.wpc-filter-label-wrapper,
+                .widget-area .wpc-filters-labels li.wpc-term-item input:checked+label a, 
+                .wpc-filters-widget-main-wrapper .wpc-filters-labels li.wpc-term-item input:checked+label a,
+                body .wpc-filters-labels li.wpc-term-item input:checked+label a,
+                body#colibri .wpc-filters-labels li.wpc-term-item input:checked+label a,
+                body#colibri .widget-area input.wpc-label-input:checked+label span.wpc-filter-label-wrapper{
+                        color: #f5f5f5;
+                }
+#secondary .wpc-filter-chips-list li.wpc-filter-chip:not(.wpc-chip-reset-all) a,
+                .widget-area .widget .wpc-filter-chips-list li.wpc-filter-chip:not(.wpc-chip-reset-all) a, 
+                body .wpc-filter-chips-list li.wpc-filter-chip:not(.wpc-chip-reset-all) a, 
+                body#colibri .wpc-filter-chips-list li.wpc-filter-chip:not(.wpc-chip-reset-all) a,
+                .wpc-filter-chips-list li.wpc-filter-chip:not(.wpc-chip-reset-all) a{
+                    /*background-color: #0570e2;
+                    color: #f5f5f5;*/
+                    border-color: #0570e2;
+                }
+.widget-area .widget .wpc-filters-widget-controls-container a.wpc-filters-apply-button, 
+                .widget .wpc-filters-widget-controls-container a.wpc-filters-apply-button, 
+                .wpc-filters-widget-main-wrapper .wpc-filters-widget-controls-container a.wpc-filters-apply-button{
+                    border-color: #0570e2;
+                    background-color: #0570e2;
+                    color: #f5f5f5;
+                }
+.widget-area .widget .wpc-filter-chips-list li.wpc-filter-chip:not(.wpc-chip-reset-all) a:hover, 
+                .wpc-filter-chips-list li.wpc-filter-chip:not(.wpc-chip-reset-all) a:hover{
+                    opacity: 0.9;
+                }
+.widget-area .widget .wpc-filter-chips-list li.wpc-filter-chip:not(.wpc-chip-reset-all) a:active, 
+                .wpc-filter-chips-list li.wpc-filter-chip:not(.wpc-chip-reset-all) a:active{
+                    opacity: 0.75;
+                }
+.star-rating span,
+                .star-rating span:before{
+                    color: #0570e2;
+                }
+body a.wpc-filters-open-widget:active, a.wpc-filters-open-widget:active, 
+                .wpc-filters-open-widget:active{
+                    border-color: #0570e2;
+                    background-color: #0570e2;
+                    color: #f5f5f5;
+                }
+a.wpc-filters-open-widget:active span.wpc-icon-line-1:after,
+                a.wpc-filters-open-widget:active span.wpc-icon-line-2:after,
+                a.wpc-filters-open-widget:active span.wpc-icon-line-3:after{
+                    background-color: #0570e2;
+                    border-color: #f5f5f5;
+                }
+a.wpc-filters-open-widget:active .wpc-icon-html-wrapper span{
+                    background-color: #f5f5f5;
+                }
+@media screen and (min-width: 768px) {
+.theme-twentyfourteen .widget-area input.wpc-label-input+label:hover span.wpc-filter-label-wrapper,
+                    .widget-area input.wpc-label-input+label:hover span.wpc-filter-label-wrapper, 
+                    .wpc-filters-widget-main-wrapper input.wpc-label-input+label:hover span.wpc-filter-label-wrapper{
+                        color: #f5f5f5;
+                        background-color: #0570e2;
+                    }
+#secondary .wpc-filters-labels li.wpc-term-item input+label:hover a,
+                    body .wpc-filters-labels li.wpc-term-item input+label:hover a,
+                    body#colibri .wpc-filters-labels li.wpc-term-item input+label:hover a,
+                    .widget-area .wpc-filters-labels li.wpc-term-item input+label:hover a, 
+                    .wpc-filters-widget-main-wrapper .wpc-filters-labels li.wpc-term-item input+label:hover a{
+                        color: #f5f5f5;
+                    }
+.widget-area input.wpc-label-input+label:hover, 
+                    .wpc-filters-widget-main-wrapper input.wpc-label-input+label:hover{
+                        border-color: #0570e2;
+                    }
+}
+@media screen and (min-width: 768px) {
+html.is-active .wpc-spinner{
+                                display: block;
+                            }}
+@media screen and (min-width: 768px) {
+html.is-active .wpc-filters-overlay{
+                            opacity: .15;
+                            background: #000000;
+                        }}
