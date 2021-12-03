@@ -5,3 +5,14 @@
 .pagination-single a+a {
     margin: 0 0 0 0rem;
 }
+
+#site-content .pagination-single {
+    font-size: 1.8rem;
+    margin-top: 5rem;
+    margin-left: 350px;
+}
+
+#site-content .pagination-single span{
+    color: #47525e;
+    margin-top: 12px;
+}
