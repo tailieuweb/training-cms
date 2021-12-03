@@ -133,23 +133,22 @@ else{
 
 <article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
 <div class="row">
-	<div class="col-md-2">
-	<div class="cate">
+	<div class="col-md-3">
+		<div class="cate">
 				<h2>Categories</h2>
 				<div class="crossedbg-categories"></div>
-				<div class="ul-cate">
-					<ul>
-						<?php $catID = get_terms('category');
-						foreach ($catID as $key => $value) { ?>
+					<div class="ul-cate">
+						<ul>
+							<?php $catID = get_terms('category');
+							foreach ($catID as $key => $value) { ?>
 
-							<li class="cate-name"><a href="<?= "http://" . $_SERVER["HTTP_HOST"]."/category/".$value->slug ?>"><?php echo $value->name ?></a></li>
-						<?php } ?>
-					</ul>
-				</div>
-
+								<li class="cate-name"><a href="<?= "http://" . $_SERVER["HTTP_HOST"]."/category/".$value->slug ?>"><?php echo $value->name ?></a></li>
+							<?php } ?>
+						</ul>
+					</div>									
 			</div>
 	</div>
-	<div class="col-md-8">
+	<div class="col-md-6">
 		<div class="header">
 				<div class="row">
 					<div class="col-md-8">
@@ -202,9 +201,7 @@ else{
 
 			</div><!-- .entry-content -->
 
-		</div><!-- .post-inner --> 
-
-</article><!-- .post -->
+		</div><!-- .post-inner -->
 		<div class="section-inner">
 			<?php
 				wp_link_pages(
@@ -231,6 +228,34 @@ else{
 		</div><!-- .section-inner -->
 	</div>
 </div>
+<div class="col-md-3">
+		<div class="cate">
+				<h2>Recent Post</h2>
+				<div class="crossedbg-categories"></div>
+					<div class="ul-cate">
+						<ul>
+							<?php $catID = get_terms('category'); ?>
+
+								<li class="cate-name">
+									<a href="http://wordpress.local/2021/09/30/pin-co-the-uon-va-co-gian-nhu-ran/">Pin có thể uốn và co giãn như rắn</a>
+								</li>
+								<li class="cate-name">
+									<a href="http://wordpress.local/2021/09/30/tim-nguoi-gioi-cho-nhung-nghien-cuu-hang-dau-tai-vkist/">Tìm người giỏi cho những nghiên cứu hàng đầu tại VKIST</a>
+								</li>
+								<li class="cate-name">
+									<a href="http://wordpress.local/2021/09/30/usyk-khong-muon-knock-out-joshua/">Usyk không muốn knock-out Joshua</a>
+								</li>
+								<li class="cate-name">
+									<a href="http://wordpress.local/2021/09/30/bo-dao-nha-vao-chung-ket-futsal-world-cup/">Bồ Đào Nha vào chung kết futsal World Cup</a>
+								</li>
+								<li class="cate-name">
+									<a href="http://wordpress.local/2021/09/30/mourinho-cham-moc-200-tran-tai-cup-chau-au/">Mourinho chạm mốc 200 trận tại Cup châu Âu</a>
+								</li>
+						</ul>
+					</div>									
+			</div>
+	</div>
+</article><!-- .post -->
     <?php
 
 		if ( is_single() ) {

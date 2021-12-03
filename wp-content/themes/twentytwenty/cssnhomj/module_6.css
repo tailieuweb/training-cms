@@ -36,8 +36,8 @@
   .chi-tiet .gn .container .row .col-md-12{
     position: relative;
     min-height: 1px;
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
   .chi-tiet .gn .container .row .col-md-12 .overviewline{
     border-bottom: 1px solid #474747;
@@ -85,7 +85,9 @@
 .headlinesdate {
   background: #f5ce31;
   border-radius: 50%;
-  padding: 10px 17px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   -webkit-box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
   box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
@@ -112,7 +114,6 @@
 .chi-tiet .col-md-8 .entry-header{
   background-color: rgb(244 244 244);
   text-align: left;
-  margin-left: 90px;
 }
 .chi-tiet .entry-header{
   margin-top: -50px;
