@@ -256,6 +256,7 @@ else{
 			</div>
 	</div>
 </article><!-- .post -->
+<div class="next">
     <?php
 
 		if ( is_single() ) {
@@ -263,6 +264,9 @@ else{
 			get_template_part( 'template-parts/navigation' );
 
 		}
+	?>
+</div>
+	<?php
 
 		/*
 		* Output comments wrapper if it's a post, or if comments are open,
