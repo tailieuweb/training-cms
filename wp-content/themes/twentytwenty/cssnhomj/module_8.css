@@ -26,6 +26,7 @@
   height: 80px;
   padding: 10px;
   border-radius: 3px;
+  font-size: 13px;
 }
 .comment-respond #commentform div .submit {
   background: #007bff;
