@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Displays the menus and widgets at the end of the main element.
  * Visually, this output is presented as part of the footer element.
@@ -8,132 +9,129 @@
  * @since Twenty Twenty 1.0
  */
 
-$has_footer_menu = has_nav_menu( 'footer' );
-$has_social_menu = has_nav_menu( 'social' );
+$has_footer_menu = has_nav_menu('footer');
+$has_social_menu = has_nav_menu('social');
 
-$has_sidebar_1 = is_active_sidebar( 'sidebar-1' );
-$has_sidebar_2 = is_active_sidebar( 'sidebar-2' );
-$has_sidebar_3 = is_active_sidebar( 'sidebar-3' );
-$has_sidebar_4 = is_active_sidebar( 'sidebar-4' );
+$has_sidebar_1 = is_active_sidebar('sidebar-1');
+$has_sidebar_2 = is_active_sidebar('sidebar-2');
 
 // Only output the container if there are elements to display.
+<<<<<<< HEAD
 if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ) {
 	?>
+=======
+if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
+?>
+>>>>>>> origin/2-wordpress-581-202109/9-I/master
 
 	<div class="footer-nav-widgets-wrapper header-footer-group">
-        <section id="footer">
-            <div class="container">
-                <div class="row text-center text-xs-center text-sm-left text-md-left">
-                        <div class="footer-inner section-inner">
 
-                            <?php
+		<div class="footer-inner section-inner">
 
-                            $footer_top_classes = '';
+			<?php
 
-                            $footer_top_classes .= $has_footer_menu ? ' has-footer-menu' : '';
-                            $footer_top_classes .= $has_social_menu ? ' has-social-menu' : '';
+			$footer_top_classes = '';
 
-                            if ( $has_footer_menu || $has_social_menu ) {
-                                ?>
-                                <div class="footer-top<?php echo $footer_top_classes; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output ?>">
-                                    <?php if ( $has_footer_menu ) { ?>
+			$footer_top_classes .= $has_footer_menu ? ' has-footer-menu' : '';
+			$footer_top_classes .= $has_social_menu ? ' has-social-menu' : '';
 
-                                        <nav aria-label="<?php esc_attr_e( 'Footer', 'twentytwenty' ); ?>" role="navigation" class="footer-menu-wrapper">
+			if ($has_footer_menu || $has_social_menu) {
+			?>
+				<div class="footer-top<?php echo $footer_top_classes; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output 
+										?>">
+					<?php if ($has_footer_menu) { ?>
 
-                                            <ul class="footer-menu reset-list-style">
-                                                <?php
-                                                wp_nav_menu(
-                                                    array(
-                                                        'container'      => '',
-                                                        'depth'          => 1,
-                                                        'items_wrap'     => '%3$s',
-                                                        'theme_location' => 'footer',
-                                                    )
-                                                );
-                                                ?>
-                                            </ul>
+						<nav aria-label="<?php esc_attr_e('Footer', 'twentytwenty'); ?>" role="navigation" class="footer-menu-wrapper">
 
-                                        </nav><!-- .site-nav -->
+							<ul class="footer-menu reset-list-style">
+								<?php
+								wp_nav_menu(
+									array(
+										'container'      => '',
+										'depth'          => 1,
+										'items_wrap'     => '%3$s',
+										'theme_location' => 'footer',
+									)
+								);
+								?>
+							</ul>
 
-                                    <?php } ?>
-                                    <?php if ( $has_social_menu ) { ?>
+						</nav><!-- .site-nav -->
 
-                                        <nav aria-label="<?php esc_attr_e( 'Social links', 'twentytwenty' ); ?>" class="footer-social-wrapper">
+					<?php } ?>
+					<?php if ($has_social_menu) { ?>
 
-                                            <ul class="social-menu footer-social reset-list-style social-icons fill-children-current-color">
+						<nav aria-label="<?php esc_attr_e('Social links', 'twentytwenty'); ?>" class="footer-social-wrapper">
 
-                                                <?php
-                                                wp_nav_menu(
-                                                    array(
-                                                        'theme_location'  => 'social',
-                                                        'container'       => '',
-                                                        'container_class' => '',
-                                                        'items_wrap'      => '%3$s',
-                                                        'menu_id'         => '',
-                                                        'menu_class'      => '',
-                                                        'depth'           => 1,
-                                                        'link_before'     => '<span class="screen-reader-text">',
-                                                        'link_after'      => '</span>',
-                                                        'fallback_cb'     => '',
-                                                    )
-                                                );
-                                                ?>
+							<ul class="social-menu footer-social reset-list-style social-icons fill-children-current-color">
 
-                                            </ul><!-- .footer-social -->
-
-                                        </nav><!-- .footer-social-wrapper -->
-
-                                    <?php } ?>
-                                </div><!-- .footer-top -->
-
-                            <?php } ?>
-
+<<<<<<< HEAD
                             <?php if ( $has_sidebar_1 || $has_sidebar_2 ) { ?>
+=======
+								<?php
+								wp_nav_menu(
+									array(
+										'theme_location'  => 'social',
+										'container'       => '',
+										'container_class' => '',
+										'items_wrap'      => '%3$s',
+										'menu_id'         => '',
+										'menu_class'      => '',
+										'depth'           => 1,
+										'link_before'     => '<span class="screen-reader-text">',
+										'link_after'      => '</span>',
+										'fallback_cb'     => '',
+									)
+								);
+								?>
+>>>>>>> origin/2-wordpress-581-202109/9-I/master
 
-                                <aside class="footer-widgets-outer-wrapper" role="complementary">
+							</ul><!-- .footer-social -->
 
-                                    <div class="footer-widgets-wrapper">
+						</nav><!-- .footer-social-wrapper -->
 
-                                        <?php if ( $has_sidebar_1 ) { ?>
+					<?php } ?>
+				</div><!-- .footer-top -->
 
-                                            <div class="footer-widgets column-one grid-item">
-                                                <?php dynamic_sidebar( 'sidebar-1' ); ?>
-                                            </div>
+			<?php } ?>
 
-                                        <?php } ?>
+			<div class="container">
+				<?php if ($has_sidebar_1 || $has_sidebar_2) { ?>
 
-                                        <?php if ( $has_sidebar_2 ) { ?>
+					<aside class="footer-widgets-outer-wrapper" role="complementary">
 
-                                            <div class="footer-widgets column-two grid-item">
-                                                <?php dynamic_sidebar( 'sidebar-2' ); ?>
-                                            </div>
+						<div class="footer-widgets-wrapper">
 
-                                        <?php } ?>
-                                        <?php if ( $has_sidebar_3 ) { ?>
+							<?php if ($has_sidebar_1) { ?>
 
-                                            <div class="footer-widgets column-three grid-item">
-                                                <?php dynamic_sidebar( 'sidebar-3' ); ?>
-                                            </div>
+								<div class="footer-widgets column-one grid-item">
+									<?php dynamic_sidebar('sidebar-1'); ?>
+								</div>
 
-                                        <?php } ?>
-                                        <?php if ( $has_sidebar_4 ) { ?>
+							<?php } ?>
 
+<<<<<<< HEAD
                                             <div class="footer-widgets column-four grid-item">
                                                 <?php dynamic_sidebar( 'sidebar-3' ); ?>
                                             </div>
+=======
+							<?php if ($has_sidebar_2) { ?>
+>>>>>>> origin/2-wordpress-581-202109/9-I/master
 
-                                        <?php } ?>
+								<div class="footer-widgets column-two grid-item">
+									<?php dynamic_sidebar('sidebar-2'); ?>
+								</div>
 
-                                    </div><!-- .footer-widgets-wrapper -->
+							<?php } ?>
 
-                                </aside><!-- .footer-widgets-outer-wrapper -->
+						</div><!-- .footer-widgets-wrapper -->
 
-                            <?php } ?>
+					</aside><!-- .footer-widgets-outer-wrapper -->
 
-                        </div><!-- .footer-inner -->
-            </div>
-        </section>
+				<?php } ?>
+			</div>
 
+		</div><!-- .footer-inner -->
 
 	</div><!-- .footer-nav-widgets-wrapper -->
 
