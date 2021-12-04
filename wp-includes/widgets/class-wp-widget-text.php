@@ -41,6 +41,7 @@ class WP_Widget_Text extends WP_Widget {
 			'height' => 350,
 		);
 		parent::__construct( 'text', __( 'Text' ), $widget_ops, $control_ops );
+		
 	}
 
 	/**
@@ -281,7 +282,6 @@ class WP_Widget_Text extends WP_Widget {
 		$text = apply_filters( 'widget_text', $text, $instance, $this );
 
 		if ( $is_visual_text_widget ) {
-
 			/**
 			 * Filters the content of the Text widget to apply changes expected from the visual (TinyMCE) editor.
 			 *
@@ -299,7 +299,6 @@ class WP_Widget_Text extends WP_Widget {
 			if ( ! empty( $instance['filter'] ) ) {
 				$text = wpautop( $text );
 			}
-
 			/*
 			 * Manually do shortcodes on the content when the core-added filter is present. It is added by default
 			 * in core by adding do_shortcode() to the 'widget_text_content' filter to apply after wpautop().
@@ -323,22 +322,40 @@ class WP_Widget_Text extends WP_Widget {
 		// Undo suspension of legacy plugin-supplied shortcode handling.
 		if ( $should_suspend_legacy_shortcode_support ) {
 			add_filter( 'widget_text', 'do_shortcode', $widget_text_do_shortcode_priority );
+			?>
+			<div class="text_footer">
+				<Row>
+					<col-md-8>
+					<span>
+				CÔNG TY TNHH ABC XYZ
+		        </span>
+				<br>
+				<span>
+				GPKD số: 010222XXXX do Sở KH & ĐT Thành phố Hà Nội cấp ngày 09 tháng 12 năm 2001.
+		        </span>
+				<br>
+				<span>
+				Website design by: <a href="muathem">MuaTheme.com</a>
+		        </span>
+		            </col>
+					<col-md-2>
+					jhasdjhsadjh
+					</col>
+		        </Row>
+			</div>
+		<?php
+		echo $args['after_widget'];
 		}
 
 		echo $args['before_widget'];
 		if ( ! empty( $title ) ) {
 			echo $args['before_title'] . $title . $args['after_title'];
 		}
-
+		
 		$text = preg_replace_callback( '#<(video|iframe|object|embed)\s[^>]*>#i', array( $this, 'inject_video_max_width_style' ), $text );
 
 		// Adds 'noopener' relationship, without duplicating values, to all HTML A elements that have a target.
 		$text = wp_targeted_link_rel( $text );
-
-		?>
-			<div class="textwidget"><?php echo $text; ?></div>
-		<?php
-		echo $args['after_widget'];
 	}
 
 	/**

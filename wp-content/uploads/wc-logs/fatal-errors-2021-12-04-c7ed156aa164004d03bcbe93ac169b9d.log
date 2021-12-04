@@ -1,0 +1,14 @@
+2021-12-04T09:37:31+00:00 CRITICAL syntax error, unexpected token ";", expecting "function" or "const" in C:\xampp\htdocs\training-cms\wp-includes\widgets\class-wp-widget-text.php on line 340
+
+2021-12-04T09:37:32+00:00 CRITICAL syntax error, unexpected token ";", expecting "function" or "const" in C:\xampp\htdocs\training-cms\wp-includes\widgets\class-wp-widget-text.php on line 340
+
+2021-12-04T09:42:13+00:00 CRITICAL syntax error, unexpected token "<", expecting "function" or "const" in C:\xampp\htdocs\training-cms\wp-includes\widgets\class-wp-widget-text.php on line 338
+
+2021-12-04T09:43:47+00:00 CRITICAL syntax error, unexpected token "<" in C:\xampp\htdocs\training-cms\wp-includes\widgets\class-wp-widget-text.php on line 336
+
+2021-12-04T09:44:53+00:00 CRITICAL syntax error, unexpected token "<" in C:\xampp\htdocs\training-cms\wp-includes\widgets\class-wp-widget-text.php on line 336
+
+2021-12-04T09:44:56+00:00 CRITICAL syntax error, unexpected token "<" in C:\xampp\htdocs\training-cms\wp-includes\widgets\class-wp-widget-text.php on line 336
+
+2021-12-04T09:45:05+00:00 CRITICAL syntax error, unexpected token "<" in C:\xampp\htdocs\training-cms\wp-includes\widgets\class-wp-widget-text.php on line 336
+

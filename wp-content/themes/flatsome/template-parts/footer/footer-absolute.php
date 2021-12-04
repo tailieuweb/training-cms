@@ -25,18 +25,7 @@ $flatsome_footer_right_text = trim( get_theme_mod( 'footer_right_text' ) );
         <?php echo $flatsome_absolute_footer_secondary; ?>
       </div>
     <?php endif; ?>
-
     <div class="footer-primary pull-left">
-      <?php if ( has_nav_menu( 'footer' ) ) : ?>
-        <?php
-        wp_nav_menu( array(
-          'theme_location' => 'footer',
-          'menu_class' => 'links footer-nav uppercase',
-          'depth' => 1,
-          'fallback_cb' => false,
-        ) );
-        ?>
-      <?php endif; ?>
       <div class="copyright-footer">
         <?php echo do_shortcode( get_theme_mod( 'footer_left_text', 'Copyright [ux_current_year] &copy; <strong>Flatsome Theme</strong>' ) ); ?>
       </div>
