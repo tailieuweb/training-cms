@@ -1,0 +1,4865 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Woo Product Filter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-08 16:37+0300\n"
+"PO-Revision-Date: 2021-10-08 16:37+0300\n"
+"Last-Translator: \n"
+"Language-Team: Français\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Loco-Version: 2.5.3; wp-5.7.2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: classes/modInstaller.php:38
+#, php-format
+msgid "Move files for %s failed"
+msgstr "Échec du déplacement des fichiers pour %s"
+
+#: classes/modInstaller.php:42
+#, php-format
+msgid "%s is not plugin module"
+msgstr "%s n’est pas un module d’extension"
+
+#: classes/modInstaller.php:167
+#, php-format
+msgid "Install %s failed"
+msgstr "Erreur lors de l’installation %s"
+
+#: classes/validator.php:32
+#, fuzzy, php-format
+#| msgid "Invalid length for %s, max length is %s"
+msgid "Invalid length for %1$s, max length is %2$s"
+msgstr "Longueur invalide pour %s, la longueur maximale est %s"
+
+#: classes/validator.php:46
+#, php-format
+msgid "Invalid numeric value for %s"
+msgstr "Valeur numérique invalide pour %s"
+
+#: classes/validator.php:76
+#, php-format
+msgid "Please enter %s"
+msgstr "Veuillez saisir %s"
+
+#: classes/validator.php:84
+#, php-format
+msgid "Please select %s"
+msgstr "Veuillez sélectionner %s"
+
+#: classes/validator.php:92 classes/validator.php:111
+#, php-format
+msgid "Invalid %s"
+msgstr "%s invalide"
+
+#: classes/validator.php:96
+#, php-format
+msgid "%s is already registered"
+msgstr "%s est déjà enregistré"
+
+#: doc/woofilter-pro/license/models/license.php:218
+#, php-format
+msgid "License for plugin %s will expire today."
+msgstr "La licence de l’extension %1$s expire aujourd’hui."
+
+#: doc/woofilter-pro/license/models/license.php:221
+#, php-format
+msgid "License for plugin %s will expire tomorrow."
+msgstr "La licence de l’extension %1$s expirera demain."
+
+#: doc/woofilter-pro/license/models/license.php:224
+#, php-format
+msgid "License for plugin %1$s will expire in %2$d days."
+msgstr "La licence de l’extension %1$s expirera dans %2$d jours."
+
+#: doc/woofilter-pro/license/views/tpl/licenseAdmin.php:47
+msgid "Your email address, used on checkout procedure on"
+msgstr "Votre e-adresse mail, utilisée lors de l’achat sur"
+
+#: doc/woofilter-pro/license/views/tpl/licenseAdmin.php:90
+msgid "Your License Key from your account on"
+msgstr "Votre clé de licence selon votre compte sur"
+
+#: doc/woofilter-pro/woofilterpro/mod.php:80
+#, fuzzy
+#| msgid "Show border"
+msgid "Show More"
+msgstr "Afficher une bordure"
+
+#: doc/woofilter-pro/woofilterpro/mod.php:81
+#, fuzzy
+#| msgid "Show search"
+msgid "Show Fewer"
+msgstr "Afficher la recherche"
+
+#: doc/woofilter-pro/woofilterpro/models/autocomplete.php:112
+msgid "product attribute"
+msgstr "attribut produit"
+
+#: doc/woofilter-pro/woofilterpro/models/autocomplete.php:235
+msgid "product category"
+msgstr "catégorie de produit"
+
+#: doc/woofilter-pro/woofilterpro/models/autocomplete.php:241
+msgid "product tag"
+msgstr "étiquette produit"
+
+#: doc/woofilter-pro/woofilterpro/models/autocomplete.php:247
+msgid "product title"
+msgstr "titre produit"
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignBlocksPro.php:16
+#: modules/woofilters/views/tpl/woofiltersEditTabDesign.php:185
+#, fuzzy
+#| msgid ""
+#| "Choose custom styles for filter blocks. Any settings you leave blank will "
+#| "default. "
+msgid ""
+"Choose custom styles for filter blocks. Any settings you leave blank will "
+"default."
+msgstr ""
+"Choisissez des styles personnalisés pour les blocs de filtre. Toute valeur "
+"vide aura sa valeur par défaut."
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignBlocksPro.php:16
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignButtonsPro.php:23
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignTitlesPro.php:16
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabFiltersAttributeSliderPro.php:19
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabFiltersSearchTextPro.php:16
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabFiltersSearchTextPro.php:30
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabFiltersSearchTextPro.php:75
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabFiltersSearchTextPro.php:119
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabFiltersSearchTextPro.php:130
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabFiltersSearchTextPro.php:141
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabFiltersVendorsPro.php:53
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabOptionsContentPro.php:164
+#: modules/woofilters/views/tpl/woofiltersEditAdmin.php:73
+#: modules/woofilters/views/tpl/woofiltersEditTabCommonTitle.php:4
+#: modules/woofilters/views/tpl/woofiltersEditTabCustomTags.php:4
+#: modules/woofilters/views/tpl/woofiltersEditTabDesign.php:15
+#: modules/woofilters/views/tpl/woofiltersEditTabDesign.php:57
+#: modules/woofilters/views/tpl/woofiltersEditTabDesign.php:99
+#: modules/woofilters/views/tpl/woofiltersEditTabDesign.php:185
+#: modules/woofilters/views/tpl/woofiltersEditTabDesign.php:205
+#: modules/woofilters/views/tpl/woofiltersEditTabDesign.php:225
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAttribute.php:4
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAttribute.php:42
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAttribute.php:111
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAttribute.php:140
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAttribute.php:151
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAttribute.php:166
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAttribute.php:193
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAttribute.php:239
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAttribute.php:250
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAttribute.php:272
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAuthor.php:7
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAuthor.php:22
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAuthor.php:47
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAuthor.php:63
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAuthor.php:78
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAuthor.php:95
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAuthor.php:117
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:7
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:36
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:67
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:105
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:122
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:138
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:166
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:177
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:186
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:195
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:213
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:235
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:246
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:257
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:268
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:296
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:307
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:329
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersInStock.php:27
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersInStock.php:43
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersInStock.php:66
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersPrice.php:23
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersPriceRange.php:7
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersPriceRange.php:42
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersPriceRange.php:51
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersPriceRange.php:65
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersPriceRange.php:84
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersPriceRange.php:93
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersPriceRange.php:102
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersPriceRange.php:112
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersPriceRange.php:137
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersRating.php:16
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersRating.php:35
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersRating.php:64
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersRating.php:80
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersSortBy.php:27
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:7
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:39
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:50
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:64
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:96
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:107
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:118
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:136
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:153
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:164
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:211
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:222
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:244
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:19
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:130
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:147
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:166
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:193
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:224
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:244
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:257
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:358
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:404
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:435
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:456
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:493
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:512
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:535
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:550
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:565
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:595
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:610
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:665
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:683
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:692
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:702
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:731
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:761
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:786
+msgid "Learn More"
+msgstr "En savoir plus"
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignBlocksPro.php:123
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignTitlesPro.php:109
+msgid "Set borders width in this order: top, right, bottom, left."
+msgstr ""
+"Définissez les largeurs de bordures dans cet ordre: haut, droite, bas, "
+"gauche."
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignBlocksPro.php:152
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignButtonsPro.php:466
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignTitlesPro.php:138
+msgid "Set paddings in this order: top, right, bottom, left."
+msgstr "Définissez la marge interne dans cet ordre: haut, droite, bas, gauche."
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignBlocksPro.php:181
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignButtonsPro.php:495
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignTitlesPro.php:167
+msgid "Set margins in this order: top, right, bottom, left."
+msgstr "Définissez les marges dans cet ordre: haut, droite, bas, gauche."
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignBlocksPro.php:210
+msgid "Set styles for checkboxes."
+msgstr "Définissez les styles pour les cases à cocher."
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignBlocksPro.php:299
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignTitlesPro.php:220
+msgid "plus/minus"
+msgstr "plus/moins"
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignBlocksPro.php:300
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignTitlesPro.php:221
+msgid "chevron"
+msgstr "chevron"
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignBlocksPro.php:301
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignTitlesPro.php:222
+msgid "angle double"
+msgstr "double chevron"
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignBlocksPro.php:312
+msgid "You can resize the icon for collapsing / expanding categories"
+msgstr ""
+"Vous pouvez modifier la taille de l’icône d’ouverture/fermeture des noeuds "
+"de catégories."
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignBlocksPro.php:332
+msgid "Make category icons bold"
+msgstr "Met les icônes de catégories en gras."
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignButtonsPro.php:23
+#: modules/woofilters/views/tpl/woofiltersEditTabDesign.php:225
+#, fuzzy
+#| msgid ""
+#| " Choose custom styles for filter buttons. Any settings you leave blank "
+#| "will default ."
+msgid ""
+"Choose custom styles for filter buttons. Any settings you leave blank will "
+"default."
+msgstr ""
+"Choisissez des styles personnalisés pour les boutons de filtre. Toute valeur "
+"vide aura sa valeur par défaut."
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignTitlesPro.php:16
+#: modules/woofilters/views/tpl/woofiltersEditTabDesign.php:205
+#, fuzzy
+#| msgid ""
+#| "Choose custom styles for filter titles. Any settings you leave blank will "
+#| "default. "
+msgid ""
+"Choose custom styles for filter titles. Any settings you leave blank will "
+"default."
+msgstr ""
+"Choisissez des styles personnalisés pour les titres de filtre. Toute valeur "
+"vide aura sa valeur par défaut."
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabDesignTitlesPro.php:196
+msgid ""
+"You can set title height by that increase clickable title area for a open / "
+"close functionality."
+msgstr ""
+"Vous pouvez définir la hauteur du titre et rendre ainsi la zone de titre "
+"plus facilement cliquable pour la fonction d’ouverture/fermeture."
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabFiltersAttributeSliderPro.php:19
+#, fuzzy
+#| msgid "Select the attribute slider skin. "
+msgid "Select the attribute slider skin."
+msgstr "Choisissez l’aspect du filtre d’attributs glissière"
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabFiltersBrandPro.php:120
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAttribute.php:131
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:204
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersPerfectBrand.php:154
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:127
+msgid ""
+"By default if a value is selected in the filter, items without products will "
+"still be displayed (this was done on purpose so that you can quickly switch "
+"between items).If the option is enabled, empty elements will be hidden "
+"regardless of the filter activity (this also applies to loading via ajax and "
+"when reloading the page with the parameters specified in the url)."
+msgstr ""
+"Par défaut, si une valeur est choisie dans le filtre, le éléments sans "
+"produit seront toujours affiché (ceci a été fait sciemment pour que vous "
+"puissiez rapidement basculer entre les éléments). Si cette option est "
+"activée, les éléments vide seront cachés indépendamment de l'activité du "
+"filtre (ceci s'applique aussi au chargement via ajax et lors d'un "
+"rechargement de page avec les paramètres spécifiés dans l'url)."
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabFiltersCollapseLevelPro.php:4
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:91
+msgid "The level of child categories from which to start collapsing"
+msgstr ""
+"Le niveau de catégorie enfants à partir de laquelle commencer le repliage"
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabFiltersCollapseLevelPro.php:19
+msgid ""
+"Оn the category page automatically put a check mark for current category"
+msgstr "Sur une page catégorie, coche automatiquement la catégorie courante"
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabFiltersPriceSkinPro.php:29
+msgid "Set sliders step. Always > 0. Could be fractional."
+msgstr "Définissez le pas des glissères. Toujours >0. Peut être une fraction."
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabFiltersSearchTextPro.php:16
+#, fuzzy
+#| msgid "Set filter title as search input placeholder. "
+msgid "Set filter title as search input placeholder."
+msgstr ""
+"Utilise par défaut le titre du filtre comme texte d’indication dans le champ "
+"de recherche."
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabFiltersSearchTextPro.php:30
+#, fuzzy
+#| msgid "Chose searching params. "
+msgid "Chose searching params."
+msgstr "Choisissez les paramètres de recherche."
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabFiltersSearchTextPro.php:75
+#, fuzzy
+#| msgid "Only full matches search by default . "
+msgid "Only full matches search by default."
+msgstr "Par défaut recherche uniquement de correspondances exactes "
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabFiltersSearchTextPro.php:119
+#, fuzzy
+#| msgid "Search only by full words only . "
+msgid "Search only by full words only."
+msgstr "Rechercher par mots entiers uniquement"
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabFiltersSearchTextPro.php:130
+#, fuzzy
+#| msgid ""
+#| "Exclude from search results selected items or items with selected "
+#| "taxonomies . "
+msgid ""
+"Exclude from search results selected items or items with selected taxonomies."
+msgstr ""
+"Exclue des résultats de recherche les éléments choisis ou les éléments ayant "
+"les taxonomies choisies."
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabFiltersSearchTextPro.php:141
+#, fuzzy
+#| msgid ""
+#| "Autocomplete relevant variants. Works only when searching by title, "
+#| "categories and tags . "
+msgid ""
+"Autocomplete relevant variants. Works only when searching by title, "
+"categories and tags."
+msgstr ""
+"Complète automatiquement les variations. Fonctionne uniquement en recherche "
+"sur les titres, catégories et étiquettes."
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabFiltersVendorsPro.php:53
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAuthor.php:63
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:50
+#, fuzzy
+#| msgid "Show search field in multiple dropdown box. "
+msgid "Show search field in multiple dropdown box."
+msgstr ""
+"Affiche un champs de recherche dans la liste déroulante à choix multiple."
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabOptionsContentPro.php:37
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:674
+msgid "Selected parameters will be displayed in the top/bottom of the filter."
+msgstr "Les paramètres choisis seront affichés en haut/en bas du filtre."
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabOptionsContentPro.php:164
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:692
+#, fuzzy
+#| msgid ""
+#| "Turn on only when necessary. Please note that \"slug\" should only "
+#| "contain lowercase Latin letters, numbers and hyphens. "
+msgid ""
+"Turn on only when necessary. Please note that \"slug\" should only contain "
+"lowercase Latin letters, numbers and hyphens."
+msgstr ""
+"N’activer que si nécessaire. Veuillez noter que les \"slugs\" ne doivent "
+"contenir que des caractères latins en minuscules, des nombres ou des tirets."
+
+#: doc/woofilter-pro/woofilterpro/views/tpl/partEditTabOptionsMainPro.php:9
+msgid ""
+"You can select one of the available pages to redirect to it after selecting "
+"a filter"
+msgstr ""
+"Vous pouvez choisir une des pages disponibles pour rediriger l'utilisateur "
+"dessus après sélection d'un filtre"
+
+#: modules/mail/views/tpl/mailAdmin.php:53
+#: modules/options/views/tpl/optionsSettingsTabContent.php:51
+#, php-format
+msgid "Turned On %s"
+msgstr "Activé le %s"
+
+#: modules/mail/views/tpl/mailAdmin.php:56
+#: modules/options/views/tpl/optionsSettingsTabContent.php:54
+#, php-format
+msgid "Turned Off %s"
+msgstr "Désactivé le %s"
+
+#: modules/promo/mod.php:40
+#, php-format
+msgid "Hey, I noticed you just use %s over a week – that’s awesome!"
+msgstr ""
+"Hé, j’ai remarqué que vous utilisez %s depuis plus d’une semaine - c’est "
+"génial !"
+
+#: modules/promo/mod.php:47
+#, php-format
+msgid "More then eleven days with our %s plugin - Congratulations!"
+msgstr "<h3>Plus de onze jours avec notre plugin %s - Félicitations!</h3>"
+
+#: modules/promo/views/tpl/pluginDeactivation.php:33
+#, php-format
+msgid "If you have a moment, please share why you are deactivating %s"
+msgstr "Si vous avez un moment, veuillez nous dire pourquoi vous désactivez %s"
+
+#: modules/woofilters/views/tpl/woofiltersEditAdmin.php:73
+msgid ""
+"Using short code display the filter and products in the desired place of the "
+"template."
+msgstr ""
+"En utilisant un code court, vous pouvez afficher le filtre et les produits à "
+"l’endroit souhaité du modèle."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabCommonTitle.php:4
+msgid ""
+"Show title label with open/close filter functionality. Be carefull when show "
+"it as close with \"Hide filter by title click\" filter oprionality. In such "
+"case users do not see filter content."
+msgstr ""
+"Afficher l’étiquette du titre dépliable. Soyez vigilant lorsqu’il est "
+"affiché fermé avec l’option \"Masquer le filtre en cliquant son titre\". "
+"Dans un tel cas, les utilisateurs ne verront pas le contenu du filtre."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabCustomTags.php:4
+#, fuzzy
+#| msgid ""
+#| "Choose tags for filter titles. Any settings you leave blank will default ."
+msgid ""
+"Choose tags for filter titles. Any settings you leave blank will default."
+msgstr ""
+"Choisissez les balises pour les titres de filtres. Tout paramètre vide aura "
+"sa valeur par défaut."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabDesign.php:15
+#: modules/woofilters/views/tpl/woofiltersEditTabDesign.php:57
+#, fuzzy
+#| msgid "Set the filter width in pixels or percent ."
+msgid "Set the filter width in pixels or percent."
+msgstr "Définit la largeur en pixels ou pourcentage."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabDesign.php:99
+#, fuzzy
+#| msgid ""
+#| "Set the filter block height in pixels. If not filled, then the height is "
+#| "calculated automatically based on the content of the filter. Please note "
+#| "that if the value of the Maximum height in frontend of the filter is "
+#| "greater than the specified value, some data may be hidden ."
+msgid ""
+"Set the filter block height in pixels. If not filled, then the height is "
+"calculated automatically based on the content of the filter. Please note "
+"that if the value of the Maximum height in frontend of the filter is greater "
+"than the specified value, some data may be hidden."
+msgstr ""
+"Définissez la hauteur d’un bloc filtre en pixels. Si laissé vide, la hauteur "
+"est calculée automatiquement en fonction du contenu du filtre. Veuillez "
+"noter que si la valeur \"Hauteur maximale sur le site\" du bloc est "
+"inférieure à la valeur précisée, des données peuvent ne pas être visibles."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAttribute.php:4
+#, fuzzy
+#| msgid " Select attribute to be displayed on site from the list ."
+msgid "Select attribute to be displayed on site from the list."
+msgstr "Choisissez dans la liste l'attribut à afficher sur le site."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAttribute.php:42
+#, fuzzy
+#| msgid ""
+#| " Depending on whether you need one or several attributes to be available "
+#| "at the same time, show attributes list as checkbox or dropdown. "
+#| "<strong>Attention!</strong> Slider type work only with numeric titles of "
+#| "attributes ."
+msgid ""
+"Depending on whether you need one or several attributes to be available at "
+"the same time, show attributes list as checkbox or dropdown. "
+"<strong>Attention!</strong> Slider type work only with numeric titles of "
+"attributes."
+msgstr ""
+"Selon que vous avez besoin d'un ou plusieurs attributs en même temps, vous "
+"pouvez afficher votre liste d'attributs sous forme de case à cocher ou de "
+"liste déroulante. <strong>Attention!</strong> Le type slider ne fonctionne "
+"qu’avec des attributs numériques."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAttribute.php:111
+msgid ""
+"Attributes are displayed according to the order of their selection in the "
+"input fields."
+msgstr ""
+"Les attributs sont affichés selon l’ordre de leur sélection dans les champs "
+"de saisie."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAttribute.php:140
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:107
+msgid ""
+"Show count display the number of products that have the appropriate "
+"parameter."
+msgstr ""
+"Afficher le nombre affiche le nombre de produits qui ont le paramètre "
+"approprié."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAttribute.php:151
+#, fuzzy
+#| msgid ""
+#| " Select attributes to be displayed on site from the list. If you want to "
+#| "select several attributes, hold the \"Shift\" button and click on names. "
+#| "Or you can hold \"Ctrl\" and click on names. Press \"Ctrl\" + \"a\" for "
+#| "checking all names ."
+msgid ""
+"Select attributes to be displayed on site from the list. If you want to "
+"select several attributes, hold the \"Shift\" button and click on names. Or "
+"you can hold \"Ctrl\" and click on names. Press \"Ctrl\" + \"a\" for "
+"checking all names."
+msgstr ""
+"Choisissez dans la liste les catégories produits à afficher sur le site. Si "
+"vous voulez choisir plusieurs catégories, maintenez la touche \"Majuscule\" "
+"et cliquez sur les noms des catégories. Vous pouvez aussi maintenir la "
+"touche \"Ctrl\" et cliquer sue les noms des catégories. Appuyez sur les "
+"touches \"Ctrl\" + \"a\" pour choisir toutes les catégories."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAttribute.php:166
+msgid "Selected attributes will be marked as default."
+msgstr "Les attributs choisis seront sélectionnées par défaut."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAttribute.php:193
+#, fuzzy
+#| msgid " Set attributes sorting by ascendance or descendance  ."
+msgid "Set attributes sorting by ascendance or descendance."
+msgstr "Triez les attributs par ordre croissant ou décroissant."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAttribute.php:239
+#, fuzzy
+#| msgid ""
+#| " If checked, the entire list of attributes will always be visible, "
+#| "otherwise only available for filtered items  ."
+msgid ""
+"If checked, the entire list of attributes will always be visible, otherwise "
+"only available for filtered items."
+msgstr ""
+"Si sélectionné, la liste entière des attributs sera toujours visible, sinon "
+"seul ceux disponibles pour les éléments filtrés le seront."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAttribute.php:250
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:307
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersPriceRange.php:112
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:222
+msgid "Select a vertical or horizontal layout and set the count of columns."
+msgstr ""
+"Choisissez une mise en page verticale ou horizontale et définissez le nombre "
+"de colonnes."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAttribute.php:272
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAuthor.php:117
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:329
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersPriceRange.php:137
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:244
+msgid "Set maximum displayed height in frontend."
+msgstr "Définissez la hauteur d’affichage maximale sur site."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAuthor.php:7
+#, fuzzy
+#| msgid " Define which role show users in the drop down  ."
+msgid "Define which role show users in the drop down."
+msgstr ""
+"Définissez quels rôles afficher aux utilisateurs dans la liste déroulante"
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAuthor.php:22
+msgid "Show your roles list as checkbox or dropdown."
+msgstr ""
+"Affichez votre liste de rôle en tant que cases à cocher ou liste déroulante."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAuthor.php:47
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:122
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersInStock.php:27
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersRating.php:35
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:39
+msgid "Dropdown first option text."
+msgstr "Première option de la liste déroulante."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAuthor.php:78
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersAuthor.php:95
+msgid "Show search display the bar for searching by author name in the filter."
+msgstr "Affiche la barre de recherche par nom d’auteur dans le filtre."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:7
+msgid ""
+"Depending on whether you need one or several categories to be available at "
+"the same time, you may show your categories list as checkbox or dropdown."
+msgstr ""
+"Selon que vous avez besoin d’une ou de plusieurs catégories en même temps, "
+"vous pouvez afficher votre liste de catégories sous forme de case à cocher "
+"ou de liste déroulante."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:36
+msgid ""
+"Show paternal and subsidiary categories (for checkbox list). If you display "
+"only some categories, make sure that the parent categories are selected."
+msgstr ""
+"Affiche les catégories parents et enfants (pour une liste de case à cocher). "
+"Si vous afficher seulement certaines catégories, assurez-vous que les "
+"catégories parentes sont sélectionnées."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:67
+#, fuzzy
+#| msgid ""
+#| " Restrict filtering result only to child categories or only to parent if "
+#| "both of them selected in the same time ."
+msgid ""
+"Restrict filtering result only to child categories or only to parent if both "
+"of them selected in the same time."
+msgstr ""
+"Restreignez les résultats de filtrage aux catégories enfants ou parent "
+"uniquement si les deux sont sélectionnés en même temps."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:105
+#, fuzzy
+#| msgid ""
+#| " If parent filter category was selected then extend filter result to "
+#| "child categories ."
+msgid ""
+"If parent filter category was selected then extend filter result to child "
+"categories."
+msgstr ""
+"Si une catégorie parent est sélectionnée le résultat de filtrage est étendu "
+"aux catégories enfants."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:138
+msgid "Set categories sorting by ascendance or descendance."
+msgstr "Triez les catégories par ordre croissant ou décroissant."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:166
+msgid ""
+"Categories are displayed according to the order of their selection in the "
+"input fields."
+msgstr ""
+"Les catégories sont affichées selon l’ordre de leur sélection dans les "
+"champs de saisie."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:177
+msgid ""
+"Show count display the number of products that have the appropriate "
+"parameter (attribute, category, tag)."
+msgstr ""
+"Afficher le nombre affiche le nombre de produits qui ont le paramètre "
+"approprié (attribut, catégorie, étiquette)."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:186
+#, fuzzy
+#| msgid ""
+#| " Count for parent category also her children count. <strong>Warning!</"
+#| "strong> If filtering will slow do uncheck this option ."
+msgid ""
+"Count for parent category also her children count. <strong>Warning!</strong> "
+"If filtering will slow do uncheck this option."
+msgstr ""
+"Lors du compte d’une catégorie parent inclus les comptes de ses enfants. "
+"<strong>Attention !</strong> Si le filtrage est lent, décochez cette option."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:195
+#, fuzzy
+#| msgid " Hide categories without products."
+msgid "Hide categories without products."
+msgstr "Masquer les catégories sans produits."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:213
+#, fuzzy
+#| msgid ""
+#| " Select product categories to be displayed on site from the list. If you "
+#| "want to select several categories, hold the \"Shift\" button and click on "
+#| "category names. Or you can hold \"Ctrl\" and click on category names. "
+#| "Press \"Ctrl\" + \"a\" for checking all categories."
+msgid ""
+"Select product categories to be displayed on site from the list. If you want "
+"to select several categories, hold the \"Shift\" button and click on "
+"category names. Or you can hold \"Ctrl\" and click on category names. Press "
+"\"Ctrl\" + \"a\" for checking all categories."
+msgstr ""
+"Choisissez dans la liste les catégories produits à afficher sur le site. Si "
+"vous voulez choisir plusieurs catégories, maintenez la touche \"Majuscule\" "
+"et cliquez sur les noms des catégories. Vous pouvez aussi maintenir la "
+"touche \"Ctrl\" et cliquer sur les noms des catégories. Appuyez sur les "
+"touches \"Ctrl\" + \"a\" pour choisir toutes les catégories."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:235
+#, fuzzy
+#| msgid ""
+#| " Selected categories will be marked as default and hidden on frontend . "
+msgid "Selected categories will be marked as default and hidden on frontend."
+msgstr ""
+"Les catégories choisies seront sélectionnées par défaut et masquées sur le "
+"site."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:246
+msgid ""
+"When the filter is clear, he will be restrict filtered results only by "
+"selected items. Be careful when using with other filters in block!."
+msgstr ""
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:257
+#, fuzzy
+#| msgid "Exclude category terms from filter by ids. Example input: 1,2,3 . "
+msgid "Exclude category terms from filter by ids. Example input: 1,2,3."
+msgstr ""
+"Exclue du filtre des termes de catégories via leurs identifiants. Exemple "
+"d'entrée: 1,2,3 "
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:268
+msgid ""
+"Show search display the bar for searching by category name in the filter."
+msgstr "Affiche la barre de recherche par nom de catégorie dans le filtre."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersCategory.php:296
+#, fuzzy
+#| msgid ""
+#| "If checked, the entire list of categories will always be visible, "
+#| "otherwise only available for filtered items. "
+msgid ""
+"If checked, the entire list of categories will always be visible, otherwise "
+"only available for filtered items."
+msgstr ""
+"Si sélectionné, la liste entière des catégories sera toujours visible, sinon "
+"seul celles disponibles pour les éléments filtrés le seront."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersInStock.php:43
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersSortBy.php:27
+#, fuzzy
+#| msgid ""
+#| "Select the sorting options available for site users (min two options). "
+msgid "Select the sorting options available for site users (min two options)."
+msgstr ""
+"Choisissez les options de tri disponibles pour vos utilisateurs (au moins "
+"deux options)."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersInStock.php:66
+#, fuzzy
+#| msgid "Change stock status names. "
+msgid "Change stock status names."
+msgstr "Modifiez les noms de états de stock."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersPrice.php:23
+#, fuzzy
+#| msgid "Select the price filter skin. "
+msgid "Select the price filter skin."
+msgstr "Choisissez l’aspect du filtre de prix"
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersPriceRange.php:7
+#, fuzzy
+#| msgid ""
+#| "Depending on whether you need one or several categories to be available "
+#| "at the same time, show your categories list as checkbox or dropdown. "
+msgid ""
+"Depending on whether you need one or several categories to be available at "
+"the same time, show your categories list as checkbox or dropdown."
+msgstr ""
+"Selon que vous avez besoin d’une ou de plusieurs catégories en même temps, "
+"vous pouvez afficher votre liste de catégories sous forme de case à cocher "
+"ou de liste déroulante."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersPriceRange.php:42
+#, fuzzy
+#| msgid ""
+#| "If this option is enabled, set the price range settings automatically. "
+msgid "If this option is enabled, set the price range settings automatically."
+msgstr ""
+"Si cette option est activée, vous pouvez définir automatiquement les "
+"paramètres de la fourchette de prix."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersPriceRange.php:51
+#, fuzzy
+#| msgid ""
+#| "Set the value of prise increase step. The default value is set to 20. All "
+#| "the steps are equal. When setting the step, please note that the number "
+#| "of elements in the list should not exceed 100, otherwise the step setting "
+#| "will be reset and automatically calculated. "
+msgid ""
+"Set the value of prise increase step. The default value is set to 20. All "
+"the steps are equal. When setting the step, please note that the number of "
+"elements in the list should not exceed 100, otherwise the step setting will "
+"be reset and automatically calculated."
+msgstr ""
+"Définissez la valeur de pas d’augmentation du prix. La valeur par défaut est "
+"20. Tous les pas sont égaux. Quand vous définissez le pas, veuillez noter "
+"que le nombre d’éléments dans la liste ne devrait pas d&passer 100, sans "
+"quoi le paramètre de pas sera réinitialisé et calculé automatiquement."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersPriceRange.php:65
+#, fuzzy
+#| msgid ""
+#| "If this option is enabled, press the \"Setup\" button and customize price "
+#| "range settings. Increase or decrease the number of steps and set "
+#| "different values for each step. "
+msgid ""
+"If this option is enabled, press the \"Setup\" button and customize price "
+"range settings. Increase or decrease the number of steps and set different "
+"values for each step."
+msgstr ""
+"Si cette option est activée, vous pouvez cliquer sur le bouton "
+"\"Configuration\" et personnaliser vos paramètres d'intervalle de prix. Vous "
+"pouvez augmenter ou diminuer le nombre de pas et définir des valeurs "
+"différentes pour chaque pas."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersPriceRange.php:84
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersPriceRange.php:93
+msgid "Use Under/Over label instead of minimum and maximum values."
+msgstr ""
+"Affiche un libellé \"Inférieur à/Supérieur à\" au lieu des valeurs minimales "
+"et maximales."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersPriceRange.php:102
+msgid "This sets the number of decimal points shown in displayed prices."
+msgstr "Ceci définit le nombre de décimales montrées à l’affichage des prix."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersRating.php:16
+#, fuzzy
+#| msgid ""
+#| "Depending on whether you need one or several attributes to be available "
+#| "at the same time, show your attributes list as checkbox or dropdown. "
+msgid ""
+"Depending on whether you need one or several attributes to be available at "
+"the same time, show your attributes list as checkbox or dropdown."
+msgstr ""
+"Selon que vous avez besoin d'un ou plusieurs attributs en même temps, vous "
+"pouvez afficher votre liste d'attributs sous forme de case à cocher ou de "
+"liste déroulante."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersRating.php:64
+msgid "Additional text for 1-4 rating filter."
+msgstr "Texte additionnel pour filtre sur les notes de 1-4."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersRating.php:80
+msgid "Additional text for 5-star rating filter."
+msgstr "Texte additionnel pour filtre sur les notes à 5 étoiles."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersSortBy.php:7
+msgid "You can choose to display the sorting by dropdown or radio buttons"
+msgstr ""
+"Vous pouvez choisir d’afficher le tri comme liste déroulante ou boutons "
+"radio."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:7
+#, fuzzy
+#| msgid ""
+#| "Depending on whether you need one or several tags to be available at the "
+#| "same time, show tags list as checkbox or dropdown. "
+msgid ""
+"Depending on whether you need one or several tags to be available at the "
+"same time, show tags list as checkbox or dropdown."
+msgstr ""
+"Selon que vous avez besoin d'une ou de plusieurs étiquettes en même temps, "
+"vous pouvez afficher votre liste d'étiquettes sous forme de case à cocher ou "
+"de liste déroulante."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:64
+#, fuzzy
+#| msgid "Set tags sorting by ascendance or descendance. "
+msgid "Set tags sorting by ascendance or descendance."
+msgstr "Triez les étiquettes par ordre croissant ou décroissant."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:96
+msgid ""
+"Tags are displayed according to the order of their selection in the input "
+"fields."
+msgstr ""
+"Les étiquettes sont affichées selon l’ordre de leur sélection dans les "
+"champs de saisie."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:118
+#, fuzzy
+#| msgid "Hide tags without products. "
+msgid "Hide tags without products."
+msgstr "Masque les étiquettes sans produit."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:136
+#, fuzzy
+#| msgid ""
+#| "Select product tags to be displayed on site from the list. If you want to "
+#| "select several tags, hold the \"Shift\" button and click on tag names. Or "
+#| "hold \"Ctrl\" and click on tag names. Press \"Ctrl\" + \"a\" for checking "
+#| "all tags. "
+msgid ""
+"Select product tags to be displayed on site from the list. If you want to "
+"select several tags, hold the \"Shift\" button and click on tag names. Or "
+"hold \"Ctrl\" and click on tag names. Press \"Ctrl\" + \"a\" for checking "
+"all tags."
+msgstr ""
+"Choisissez dans la liste les étiquettes à afficher sur le site. Si vous "
+"voulez choisir plusieurs étiquettes, maintenez la touche \"Majuscule\" et "
+"cliquez sur les noms des étiquettes. Vous pouvez aussi maintenir la touche "
+"\"Ctrl\" et cliquer sur les noms des étiquettes. Appuyez sur les touches "
+"\"Ctrl\" + \"a\" pour choisir toutes les étiquettes."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:153
+#, fuzzy
+#| msgid "Selected tags will be marked as default and hidden on frontend. "
+msgid "Selected tags will be marked as default and hidden on frontend."
+msgstr ""
+"Les étiquettes choisies seront sélectionnées par défaut et masquées sur le "
+"site."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:164
+#, fuzzy
+#| msgid "Exclude tags terms from filter by ids. Example input: 1,2,3. "
+msgid "Exclude tags terms from filter by ids. Example input: 1,2,3."
+msgstr ""
+"Exclue du filtre des termes d’étiquettes via leurs identifiants. Exemple "
+"d'entrée: 1,2,3"
+
+#: modules/woofilters/views/tpl/woofiltersEditTabFiltersTags.php:211
+#, fuzzy
+#| msgid ""
+#| "If checked, the entire list of tags will always be visible, otherwise "
+#| "only available for filtered items. "
+msgid ""
+"If checked, the entire list of tags will always be visible, otherwise only "
+"available for filtered items."
+msgstr ""
+"Si sélectionné, la liste entière des étiquettes sera toujours visible, sinon "
+"seul celles disponibles pour les éléments filtrés le seront."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:19
+#, fuzzy
+#| msgid "Choose page for filter. "
+msgid "Choose page for filter."
+msgstr "Choisir la page pour le filtre"
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:81
+msgid "The filter will be displayed on all child categories"
+msgstr "Le filtre sera affiché sur toutes les catégories enfant."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:98
+msgid ""
+"By default, the filter added by the shortcode is displayed everywhere. This "
+"option allows you to restrict the display to only those selected in "
+"\"Display on pages\"."
+msgstr ""
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:119
+#, fuzzy
+#| msgid ""
+#| "You can select one of the available pages to redirect to it after "
+#| "selecting a filter"
+msgid ""
+"You can select one of the available pages to redirect to it after selecting "
+"a filter."
+msgstr ""
+"Vous pouvez choisir une des pages disponibles pour rediriger l'utilisateur "
+"dessus après sélection d'un filtre"
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:130
+#, fuzzy
+#| msgid "Choose where display filter. "
+msgid "Choose where display filter."
+msgstr "Choisissez où afficher le filtre"
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:147
+#, fuzzy
+#| msgid "Remove other woofilters on page except current filter. "
+msgid "Remove other woofilters on page except current filter."
+msgstr ""
+"Supprime de la page les filtres \"woofilters\" autre que le filtre courant."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:166
+#, fuzzy
+#| msgid ""
+#| "Set breakpoint for all options that depend on a mobile/desktop view. "
+#| "\"Show title label\", \"Display filter on\" etc . "
+msgid ""
+"Set breakpoint for all options that depend on a mobile/desktop view. \"Show "
+"title label\", \"Display filter on\" etc."
+msgstr ""
+"Définissez le point de rupture pour toutes les options variables selon "
+"mobile/ordinateur. \"Montrer l’étiquette de titre\", \"Afficher le filtre sur"
+"\" etc…"
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:193
+#, fuzzy
+#| msgid ""
+#| "Hide filter on shop and categories pages that displays only categories or "
+#| "subcategories without products. "
+msgid ""
+"Hide filter on shop and categories pages that displays only categories or "
+"subcategories without products."
+msgstr ""
+"Masque le filtre sur la page de la boutique et les pages des catégories qui "
+"n’affichent que des les catégories ou sous-catégories sans produits."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:224
+#, fuzzy
+#| msgid ""
+#| "Set number of products per row. This number will only be shown after "
+#| "filter is applied! "
+msgid ""
+"Set number of products per row. This number will only be shown after filter "
+"is applied!"
+msgstr ""
+"Définit le nombre de produits par ligne. Ce nombre sera uniqument affiché "
+"une fois le filtre appliqué!"
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:244
+#, fuzzy
+#| msgid ""
+#| "This option enables Ajax search. Product filtering and displaying results "
+#| "in a browser will be run in the background without full page reload. "
+msgid ""
+"This option enables Ajax search. Product filtering and displaying results in "
+"a browser will be run in the background without full page reload."
+msgstr ""
+"Cette option active la recherche via Ajax. Le filtrage des produtis et "
+"l’affichage des résultats dans le navigateur sera réalisé en arrière-plan "
+"sans recharger complètement la page."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:257
+#, fuzzy
+#| msgid ""
+#| "Enable this option when ajax filtering does not work as expected. For "
+#| "example, sorting does not work. Removes filters such as posts_orderby and "
+#| "pre_get_posts. "
+msgid ""
+"Enable this option when ajax filtering does not work as expected. For "
+"example, sorting does not work. Removes filters such as posts_orderby and "
+"pre_get_posts."
+msgstr ""
+"Activez cette option quand le filtrage ajax ne fonctionne pas comem attendu. "
+"Par exemple, le tri ne fonctionne pas. Supprime les filtres wordpress tels "
+"que posts_orderby et pre_get_posts. "
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:270
+msgid ""
+"Custom selector for loading a loader and updating the product list. The "
+"default product selector is `ul.products`. If the Filter after ajax "
+"filtering does not find the product block and cannot replace it with the "
+"filtered list of products, the page will reload. In this case, you need to "
+"specify the product block selector in this setting."
+msgstr ""
+"Sélecteur personnalisé pour le chargement et la mise à jour de la liste "
+"produits. Le sélecteur par défaut est `ul.products`. Si le filtrage ajax ne "
+"trouve pas le bloc produit et ne peut le remplacer avec la liste des "
+"produits filtrés, la page sera rechargée. Dans ce cas, vous devez préciser "
+"le sélecteur de bloc produit dans ce paramètre."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:287
+msgid ""
+"If there are several product shortcodes on the page, you can add a container "
+"selector that will limit the effect of this filter only inside it."
+msgstr ""
+"Si vous avez plusieurs codes courts de produits sur une page, vous pouvez "
+"préciser le sélecteur du conteneur qui limitera l’effet de ce filtre à ce "
+"conteneur."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:304
+msgid ""
+"If after ajax filtering there are differences in the styles of the list of "
+"products, pagination or count-block, then enable this option. Important: for "
+"correct operation, we recommend filling the Product container selector "
+"option."
+msgstr ""
+"Si après un filtrage en ajax il y a des différences de style dans la liste "
+"des produits, la pagination ou le bloc de comptage, activez cette option. "
+"Important: pour un fonctionnement correct, nous recommandons de remplir "
+"l’option \"Sélecteur du conteneur produits\"."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:320
+msgid ""
+"This option recalculates all filters and can be slow if the product base is "
+"large"
+msgstr ""
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:333
+msgid "Do not use shortcut settings on standard WooCommers pages"
+msgstr ""
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:358
+#, fuzzy
+#| msgid ""
+#| "If \"Filtering button\" option was selected, the \"Filter\" button "
+#| "appears at the page. It allows users to set all necessary filter "
+#| "parameters before starting the filtering. If \"Auto filtering\" option "
+#| "was selected, filtering starts as soon as filter elements change and the "
+#| "data reloads automatically. "
+msgid ""
+"If \"Filtering button\" option was selected, the \"Filter\" button appears "
+"at the page. It allows users to set all necessary filter parameters before "
+"starting the filtering. If \"Auto filtering\" option was selected, filtering "
+"starts as soon as filter elements change and the data reloads automatically."
+msgstr ""
+"Si \"Bouton de filtrage\" est choisi, le bouton \"Filtrer\" apparaît sur la "
+"page. Il permet aux utilisateurs de définir tous les paramètres de filtre "
+"avant que de filtrer. Si \"Filtrage automatique\" est choisi, le filtrage "
+"commence dès que les critères de filtre changent et les données sont "
+"rechargées automatiquement."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:388
+msgid ""
+"When you select one filter element, the rest of the elements will be updated "
+"based on its"
+msgstr ""
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:404
+msgid ""
+"If this option is enabled, the \"Clear\" button appears at the page. All "
+"filter presets will be removed after pressing the button."
+msgstr ""
+"Si cette option est activée, le bouton \"Effacer\" apparaît sur la page. "
+"Tous les préréglages de filtre seront supprimés après avoir appuyé sur le "
+"bouton."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:435
+#, fuzzy
+#| msgid "Select the position of filter buttons on the page. "
+msgid "Select the position of filter buttons on the page."
+msgstr "Choisissez la position sur la page des boutons du filtre."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:456
+#, fuzzy
+#| msgid "Change the order of filter buttons on the page. "
+msgid "Change the order of filter buttons on the page."
+msgstr "Change l'ordre des boutons du filtre sur le page."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:493
+#, fuzzy
+#| msgid ""
+#| "Search for a filtering results among all shop products on any shop pages. "
+msgid ""
+"Search for a filtering results among all shop products on any shop pages."
+msgstr ""
+"Cherche des résultats de filtrage sur tous les produits de la boutique sur "
+"toutes les pages boutique."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:512
+msgid ""
+"If this option is enabled, the \"< clear\" links appears at the page next to "
+"the filter block titles. The presets of this filter block will be deleted "
+"after clicking on the link."
+msgstr ""
+"Si cette option est activée, les liens \"< Effacer\" apparaissent sur la "
+"page à côté des titres des blocs de filtre. Les préréglages de ce bloc de "
+"filtre seront supprimés après avoir cliqué sur le lien."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:535
+msgid ""
+"Automatically recount product by selected filters (If product category "
+"loading slowly - Disable this function)."
+msgstr ""
+"Recompter automatiquement le produit par les filtres sélectionnés (Si la "
+"catégorie de produit se charge lentement - Désactivez cette fonction)."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:550
+#, fuzzy
+#| msgid ""
+#| "Automatically change min/max price by selected filters (If product "
+#| "category loading slowly - Disable this function). "
+msgid ""
+"Automatically change min/max price by selected filters (If product category "
+"loading slowly - Disable this function)."
+msgstr ""
+"Modifie automatiquement les prix min/max selon les critères choisis (si le "
+"chargement est lent, désactivez cette option)."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:565
+msgid ""
+"Automatically disabled parameters without products. Works only when options "
+"Show count and Always display all... are enabled."
+msgstr ""
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:595
+#, fuzzy
+#| msgid "Lets checked terms will be on the top. "
+msgid "Lets checked terms will be on the top."
+msgstr "Les éléments sélectionnés seront déplacés en haut"
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:610
+#, fuzzy
+#| msgid "Input \"no products found\" text for category. "
+msgid "Input \"no products found\" text for category."
+msgstr ""
+"Entrez ici le texte à afficher dans le cas où aucun produit n'est trouvé "
+"pour la catégorie."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:665
+msgid "For long vertical lists, \"Show more\" will be displayed."
+msgstr "Pour les longues listes verticales, \"Afficher plus\" sera affiché."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:683
+msgid ""
+"When you click on the block open icon, all other open blocks will be "
+"automatically closed"
+msgstr ""
+"Quand vous cliquez sur l’icône d’ouverture d’un bloc, tous les autres blocs "
+"ouverts sont automatiquement fermés."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:702
+#, fuzzy
+#| msgid ""
+#| "Be careful when deactivate it with filter titles shown as close, In such "
+#| "case users do not see filter content. "
+msgid ""
+"Be careful when deactivate it with filter titles shown as close, In such "
+"case users do not see filter content."
+msgstr ""
+"Soyez vigilant quand vous désactivez cela alors que les titres utilisent "
+"l’option \"Oui, afficher fermé\". Dans un tel cas les utilisateurs ne "
+"verront pas le contenu du filtre."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:731
+#, fuzzy
+#| msgid "Filtering of categories list on filter process. "
+msgid "Filtering of categories list on filter process."
+msgstr "Filtre la liste de catégories lors du processus de filtrage."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:746
+msgid ""
+"ATTENTION!!! This option can greatly slow down page loading if you have a "
+"lot of products."
+msgstr ""
+"ATTENTION!!! Cette option peut drastiquement ralentir le chargement de la "
+"page si vous avez beaucoup de produits."
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:761
+#, fuzzy
+#| msgid ""
+#| "Filter products by different filter blocks of categories / tags / "
+#| "attributes by logic and / or. "
+msgid ""
+"Filter products by different filter blocks of categories / tags / attributes "
+"by logic and / or."
+msgstr ""
+"Filtrez les produits sur plusieurs blocs de catégories / étiquettes / "
+"attributs en utilisant une logique et/ou. "
+
+#: modules/woofilters/views/tpl/woofiltersEditTabOptions.php:786
+#, fuzzy
+#| msgid "Enable filter icon while filtering results are loading. "
+msgid "Enable filter icon while filtering results are loading."
+msgstr ""
+"Activer l’icône de filtre pendant que les résultats de filtrage chargent."
+
+#: modules/woofilters_widget/elementor/woofilters.php:88
+msgid "Woofilters"
+msgstr ""
+
+#: modules/woofilters_widget/elementor/woofilters.php:120
+msgid "Select Woofilter"
+msgstr "Choisir un Woofilter"
+
+#: modules/woofilters_widget/elementor/woofilters.php:127
+msgid "Select Filter"
+msgstr "Filtre de recherche"
+
+#: modules/woofilters_widget/elementor/woofilters.php:137
+msgid "Filter Name"
+msgstr "Nom du filtre"
+
+#: modules/woofilters_widget/elementor/woofilters.php:139
+msgid "Enter product filter name"
+msgstr "Entrer le nom du filtre"
+
+#: modules/woofilters_widget/elementor/woofilters.php:151
+msgid "Create Filter"
+msgstr "Créer un filtre"
+
+#: modules/woofilters_widget/elementor/woofilters.php:154
+msgid "Create"
+msgstr "Créer"
+
+#: modules/woofilters_widget/elementor/woofilters.php:217
+#: modules/woofilters_widget/elementor/woofilters.php:262
+#: modules/woofilters_widget/elementor/woofilters.php:306
+msgid "Save"
+msgstr "Sauvegarder"
+
+#: modules/woofilters_widget/elementor/woofilters.php:279
+msgid "Design"
+msgstr "Design"
+
+#~ msgid "Done"
+#~ msgstr "Terminé"
+
+#~ msgid "Select"
+#~ msgstr "Sélectionner"
+
+#~ msgid "N/A"
+#~ msgstr "N/A"
+
+#~ msgid "Add Checkbox"
+#~ msgstr "Ajouter une case à cocher"
+
+#~ msgid "Add Item"
+#~ msgstr "Ajouter un élément"
+
+#~ msgid "Add Radio Button"
+#~ msgstr "Ajouter un bouton radio"
+
+#~ msgid "Dimensions"
+#~ msgstr "Dimensions"
+
+#~ msgid "width"
+#~ msgstr "largeur"
+
+#~ msgid "height"
+#~ msgstr "hauteur"
+
+#~ msgid "Click to set field \"id\" and \"class\""
+#~ msgstr "Cliquer pour définir les champs \"id\" et \"class\""
+
+#~ msgid "Attributes"
+#~ msgstr "Attributs"
+
+#~ msgid "There are no configuration options for this module"
+#~ msgstr "Il n’y a pas d’options de configuration pour ce module"
+
+#~ msgid "Apply To"
+#~ msgstr "Appliquer"
+
+#~ msgid "Address"
+#~ msgstr "Addresse"
+
+#~ msgid "Destination"
+#~ msgstr "Destination"
+
+#~ msgid "Country"
+#~ msgstr "Pays"
+
+#~ msgid "Categories"
+#~ msgstr "Catégorie"
+
+#~ msgid "You have no categories"
+#~ msgstr "Vous n’avez pas de catégories"
+
+#~ msgid "Brands"
+#~ msgstr "Fournisseurs"
+
+#~ msgid "You have no brands"
+#~ msgstr "Vous n’avez pas de fournisseurs"
+
+#~ msgid "Tax Rate"
+#~ msgstr "Taux de TVA"
+
+#~ msgid "Absolute"
+#~ msgstr "Absolu"
+
+#~ msgid "Not selected"
+#~ msgstr "Aucune sélection"
+
+#~ msgid "class"
+#~ msgstr "class"
+
+#~ msgid "id"
+#~ msgstr "id"
+
+#~ msgid "You have no permissions to view this page"
+#~ msgstr "Vous n’avez pas les autorisations pour accéder à cette page"
+
+#~ msgid "Upload"
+#~ msgstr "Télécharger"
+
+#~ msgid "ON"
+#~ msgstr "ON"
+
+#~ msgid "OFF"
+#~ msgstr "OFF"
+
+#~ msgid "Select %s"
+#~ msgstr "Sélectionner %s"
+
+#~ msgid "Cannot create module directory. Try to set permission to "
+#~ msgstr ""
+#~ "Impossible de créer le répertoire du module. Essayez de modifier les "
+#~ "permission à "
+
+#~ msgid "No modules were found in XML file"
+#~ msgstr "Aucun module trouvé dans le fichier XML"
+
+#~ msgid "Invalid XML file"
+#~ msgstr "Fichier XML invalide"
+
+#~ msgid "No XML file were found"
+#~ msgstr "Aucun fichier XML n’a été trouvé"
+
+#~ msgid "Error Activate module"
+#~ msgstr "Erreur lors de l’activation du module"
+
+#~ msgid "Error Deactivation module"
+#~ msgstr "Erreur lors de la désactivation du module"
+
+#~ msgid "Error Activating module"
+#~ msgstr "Erreur lors de l’activation du module"
+
+#~ msgid "Database error detected"
+#~ msgstr "Une erreur de la base de donnée a été détectée"
+
+#~ msgid "Invalid ID"
+#~ msgstr "ID erroné"
+
+#~ msgid "Empty or invalid ID"
+#~ msgstr "ID vide ou erroné"
+
+#~ msgid "Nothing to update"
+#~ msgstr "Pas de mise à jour"
+
+#~ msgid "Database error. Please contact your developer."
+#~ msgstr "Erreur de la base de données. Veuillez contacter votre développeur."
+
+#~ msgid "Label"
+#~ msgstr "Étiquette"
+
+#~ msgid "Type"
+#~ msgstr "Type"
+
+#~ msgid "Active"
+#~ msgstr "Actif"
+
+#~ msgid "Params"
+#~ msgstr "Paramètres"
+
+#~ msgid "Code"
+#~ msgstr "Code"
+
+#~ msgid "External plugin directory"
+#~ msgstr "Répertoire externe de l’extension"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "code"
+#~ msgstr "code"
+
+#~ msgid "visits"
+#~ msgstr "visites"
+
+#~ msgid "spent_time"
+#~ msgstr "temps_passé"
+
+#~ msgid "modify_timestamp"
+#~ msgstr "modifier_horodatage"
+
+#~ msgid ""
+#~ "Cool WordPress plugins from woobewoo.com developers. I tried %s - and "
+#~ "this was what I need! #woobewoo.com"
+#~ msgstr ""
+#~ "Des plugins WordPress sympas réalisés par les développeurs de woobewoo."
+#~ "com. J’ai essayé %s - et c’était ce dont j’avais besoin! #woobewoo.com"
+
+#~ msgid "Settings"
+#~ msgstr "Réglages"
+
+#~ msgid "More plugins for your WordPress site here!"
+#~ msgstr "Plus d’extensions pour votre site WordPress ici !"
+
+#~ msgid "Spread the word!"
+#~ msgstr "Passer le mot !"
+
+#~ msgid "Now check your email inbox / spam folders for test mail."
+#~ msgstr ""
+#~ "Vous pouvez à présent vérifier votre boite mail (ainsi que le dossier "
+#~ "spam) pour l’email de test."
+
+#~ msgid "Cannot send email - problem with send server"
+#~ msgstr "Impossible d’envoyer l’email - Le serveur d’envoi a un problème"
+
+#~ msgid "Mail"
+#~ msgstr "Mail"
+
+#~ msgid "Mail function tested and work"
+#~ msgstr "La fonction Mail est testée et fonctionne"
+
+#~ msgid "Notify Email"
+#~ msgstr "Email de notification"
+
+#~ msgid "Email address used for all email notifications from plugin"
+#~ msgstr ""
+#~ "Adresse email utilisée pour tous les messages de notification de "
+#~ "l’extension"
+
+#~ msgid "Test email functionality"
+#~ msgstr "Test des paramètres de messagerie"
+
+#~ msgid ""
+#~ "This is a test email for testing email functionality on your site, %s."
+#~ msgstr ""
+#~ "Il s’agit d’un e-mail de test pour tester la fonctionnalité de la "
+#~ "messagerie sur votre site, %s."
+
+#~ msgid "Empty email address"
+#~ msgstr "Adresse email vide"
+
+#~ msgid "Send test email to"
+#~ msgstr "Envoyer l’email de test à"
+
+#~ msgid "Send test"
+#~ msgstr "Envoyer le test"
+
+#~ msgid "This option allows you to check your server mail functionality"
+#~ msgstr ""
+#~ "Cette option vous permet de tester le fonctionnement de votre serveur de "
+#~ "messagerie"
+
+#~ msgid "Did you receive test email?"
+#~ msgstr "Avez-vous reçu cet email de test ?"
+
+#~ msgid "Yes! It works!"
+#~ msgstr "Oui ! ça fonctionne !"
+
+#~ msgid "No, I need to contact my hosting provider with mail function issue."
+#~ msgstr ""
+#~ "Non, j’ai besoin de contacter mon hébergeur avec un problème de fonction "
+#~ "de messagerie."
+
+#~ msgid "Great! Mail function was tested and is working fine."
+#~ msgstr "Super ! La fonction mail a été testée et fonctionne bien."
+
+#~ msgid ""
+#~ "Bad, please contact your hosting provider and ask them to setup mail "
+#~ "functionality on your server."
+#~ msgstr ""
+#~ "Zut, veuillez contacter votre hébergeur et lui demander de configurer "
+#~ "l’envoi de mails sur votre serveur."
+
+#~ msgid "General"
+#~ msgstr "Général"
+
+#~ msgid "Send usage statistics"
+#~ msgstr "Envoyer les statistiques d’utilisation"
+
+#~ msgid ""
+#~ "Send information about what plugin options you prefer to use, this will "
+#~ "help us make our solution better for You."
+#~ msgstr ""
+#~ "Envoyez des informations sur les options de plugin que vous préférez "
+#~ "utiliser, cela nous aidera à améliorer notre solution pour vous."
+
+#~ msgid "Set number of displayed products"
+#~ msgstr "Nombre de produits à afficher"
+
+#~ msgid "Set number of displayed products. Leave blank for the default value."
+#~ msgstr ""
+#~ "Renseignez le nombre de produits à afficher. Laissez vide pour garder la "
+#~ "valeur par défaut."
+
+#~ msgid "Move Sidebar To Top For Mobile"
+#~ msgstr "Déplacer la Sidebar en haut pour les smartphones"
+
+#~ msgid ""
+#~ "Turn on if you want the sidebar to appear above content on mobile devices."
+#~ msgstr ""
+#~ "Activez si vous souhaitez que la sidebar apparaisse en haut de l’écran "
+#~ "sur les smartphones."
+
+#~ msgid "Module Updated"
+#~ msgstr "Smartphone mis à jour"
+
+#~ msgid "Module Update Failed"
+#~ msgstr "Erreur lors de la mise à jour smartphone"
+
+#~ msgid "Error module ID"
+#~ msgstr "Erreur sur l’ID du module"
+
+#~ msgid "Empty data to save option"
+#~ msgstr "Option enregistrer les données vides"
+
+#~ msgid "Main page Go here!!!!"
+#~ msgstr "La page principale va ici !!!!"
+
+#~ msgid "Save all options"
+#~ msgstr "Sauvegarder toutes les options"
+
+#~ msgid "PRO option"
+#~ msgstr "Option PRO"
+
+#~ msgid "Delete Plugin Data (options, setup data, database tables, etc.)"
+#~ msgstr ""
+#~ "Supprimer les données de l’extension (options, réglages, tables de la "
+#~ "base de données, etc.)"
+
+#~ msgid "Information was saved. Thank you!"
+#~ msgstr "Information sauvegardée. Merci !"
+
+#~ msgid ""
+#~ "Please don't send contact requests so often - wait for response for your "
+#~ "previous requests."
+#~ msgstr ""
+#~ "Veuillez ne pas envoyer de demandes de contact si souvent - attendez la "
+#~ "réponse à vos demandes précédentes."
+
+#~ msgid "Please enter valid email address"
+#~ msgstr "Veuillez entrer une adresse mail valide"
+
+#~ msgid "Thank you for Feedback!"
+#~ msgstr "Merci pour votre commentaire !"
+
+#~ msgid ""
+#~ "<h3>Hey, I noticed you just use %s over a week – that’s awesome!</"
+#~ "h3><p>Could you please do me a BIG favor and give it a 5-star rating on "
+#~ "WordPress? Just to help us spread the word and boost our motivation.</p>"
+#~ msgstr ""
+#~ "<h3>Hé, j’ai remarqué que vous avez utilisé %s pendant plus d’une semaine "
+#~ "- c’est génial!</h3><p>Pourriez-vous s’il vous plaît me faire une GRANDE "
+#~ "faveur et lui donner une note de 5 étoiles sur WordPress? Juste pour nous "
+#~ "aider à passer le mot et à booster notre motivation.</p>"
+
+#~ msgid "Ok, you deserve it"
+#~ msgstr "Oui, tu le mérites"
+
+#~ msgid "Nope, maybe later"
+#~ msgstr "Peut-être plus tard"
+
+#~ msgid "I already did"
+#~ msgstr "C’est déjà fait"
+
+#~ msgid "<h3>More then eleven days with our %s plugin - Congratulations!</h3>"
+#~ msgstr "<h3>Plus de onze jours avec notre plugin %s - Félicitations!</h3>"
+
+#~ msgid ""
+#~ "<p>On behalf of the entire <a href=\"https://woobewoo.com/\" target="
+#~ "\"_blank\">woobewoo.com</a> company I would like to thank you for been "
+#~ "with us, and I really hope that our software helped you.</p>"
+#~ msgstr ""
+#~ "<p>Au nom de l’ensemble de <a href=\"https://woobewoo.com/\" target="
+#~ "\"_blank\">woobewoo.com</a>, je tiens à vous remercier d’avoir été avec "
+#~ "nous et j’espère vraiment que notre le logiciel vous a aidé.</p>"
+
+#~ msgid ""
+#~ "<p>And today, if you want, - you can help us. This is really simple - you "
+#~ "can just add small promo link to our site under your PopUps. This is "
+#~ "small step for you, but a big help for us! Sure, if you don't want - just "
+#~ "skip this and continue enjoy our software!</p>"
+#~ msgstr ""
+#~ "<p>Et aujourd’hui, si vous le souhaitez, - vous pouvez nous aider. C’est "
+#~ "vraiment simple - vous pouvez simplement ajouter un petit lien "
+#~ "promotionnel à notre site sous vos PopUps. C’est un petit pas pour vous, "
+#~ "mais une grande aide pour nous ! Bien sûr, si vous ne le souhaitez pas - "
+#~ "passer ce message et continuez à profiter de notre logiciel !</p>"
+
+#~ msgid "Skip"
+#~ msgstr "Passer"
+
+#~ msgid ""
+#~ "You can help us improve our plugin - by <a href=\"%s\" data-statistic-"
+#~ "code=\"hide\" class=\"button button-primary wpfEnbStatsAdBtn\">enabling "
+#~ "Usage Statistics</a>. We will collect only our plugin usage statistic "
+#~ "data - to understand Your needs and make our solution better for You."
+#~ msgstr ""
+#~ "Vous pouvez nous aider à améliorer notre plugin - en <a href=\"%s\" data-"
+#~ "statistic-code=\"hide\" class=\"button button-primary wpfEnbStatsAdBtn"
+#~ "\">activant les statistiques d’utilisation</a>. Nous ne collecterons que "
+#~ "nos données statistiques d’utilisation des plugins, pour comprendre vos "
+#~ "besoins et améliorer notre solution pour vous."
+
+#~ msgid ""
+#~ "Check out <a href=\"%s\" target=\"_blank\" class=\"button button-primary"
+#~ "\" data-statistic-code=\"hide\">our other Plugins</a>! Years of "
+#~ "experience in WordPress plugins developers made those list unbreakable!"
+#~ msgstr ""
+#~ "Découvrez <a href=\"%s\" target=\"_blank\" class=\"button button-primary"
+#~ "\" data-statistic-code=\"hide\">nos autres extensions</a> ! Des années "
+#~ "d’expérience de nos développeurs de plugins WordPress ont rendu cette "
+#~ "liste incassable !"
+
+#~ msgid "Constant Contact - PRO"
+#~ msgstr "Constant Contact - PRO"
+
+#~ msgid "Campaign Monitor - PRO"
+#~ msgstr "Suivi de campagne - PRO"
+
+#~ msgid "Vertical Response - PRO"
+#~ msgstr "Vertical Response - PRO"
+
+#~ msgid "SendGrid - PRO"
+#~ msgstr "SendGrid - PRO"
+
+#~ msgid "GetResponse - PRO"
+#~ msgstr "GetResponse - PRO"
+
+#~ msgid "iContact - PRO"
+#~ msgstr "iContact - PRO"
+
+#~ msgid "Active Campaign - PRO"
+#~ msgstr "Active Campaign - PRO"
+
+#~ msgid "Mailrelay - PRO"
+#~ msgstr "Mailrelay - PRO"
+
+#~ msgid "arpReach - PRO"
+#~ msgstr "arpReach - PRO"
+
+#~ msgid "SG Autorepondeur - PRO"
+#~ msgstr "SG Autorepondeur - PRO"
+
+#~ msgid "Benchmark - PRO"
+#~ msgstr "Benchmark - PRO"
+
+#~ msgid "InfusionSoft - PRO"
+#~ msgstr "InfusionSoft - PRO"
+
+#~ msgid "SalesForce - Web-to-Lead - PRO"
+#~ msgstr "SalesForce - Web-to-Lead - PRO"
+
+#~ msgid "ConvertKit - PRO"
+#~ msgstr "ConvertKit - PRO"
+
+#~ msgid "Emma - PRO"
+#~ msgstr "Emma - PRO"
+
+#~ msgid "SendinBlue - PRO"
+#~ msgstr "SendinBlue - PRO"
+
+#~ msgid "Vision6 - PRO"
+#~ msgstr "Vision6 - PRO"
+
+#~ msgid "Vtiger - PRO"
+#~ msgstr "Vtiger - PRO"
+
+#~ msgid "Your Mailing List Provider (Ymlp) - PRO"
+#~ msgstr "Your Mailing List Provider (Ymlp) - PRO"
+
+#~ msgid "4Dem.it - PRO"
+#~ msgstr "4Dem.it - PRO"
+
+#~ msgid "Testing"
+#~ msgstr "Test"
+
+#~ msgid "Get PRO"
+#~ msgstr "Obtenir la version PRO"
+
+#~ msgid "Login/Registration"
+#~ msgstr "Connection / Inscription"
+
+#~ msgid "Popup Location"
+#~ msgstr "Position Popup"
+
+#~ msgid "Name"
+#~ msgstr "Nom"
+
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgid "Website"
+#~ msgstr "Site web"
+
+#~ msgid "Subject"
+#~ msgstr "Objet"
+
+#~ msgid "Topic"
+#~ msgstr "Sujet"
+
+#~ msgid "Plugin options"
+#~ msgstr "Options de l’extension"
+
+#~ msgid "Report a bug"
+#~ msgstr "Reporter un bug"
+
+#~ msgid "Require a new functionality"
+#~ msgstr "Demander une nouvelle fonctionnalité"
+
+#~ msgid "Other"
+#~ msgstr "Autre"
+
+#~ msgid "Message"
+#~ msgstr "Message"
+
+#~ msgid "Hello Supsystic Team!"
+#~ msgstr "Bonjour l’équipe Supsystic !"
+
+#~ msgid "Where's my subscribers?"
+#~ msgstr "Où sont mes abonnés ?"
+
+#~ msgid ""
+#~ "By default all subscribers add to the WordPress. \n"
+#~ "\t\t\t\t\tTo find your subscribers go to Users tab on the left navigation "
+#~ "menu of WordPress admin area. \n"
+#~ "\t\t\t\t\tAlso available subscription to the Aweber, MailChimp, MailPoet "
+#~ "<a href='%s' target='_blank'>and other</a>. \n"
+#~ "\t\t\t\t\tIf you want to add another subscription service - just <a "
+#~ "href='%s' target='_blank'>contact us</a> and provide URL of the "
+#~ "subscription service."
+#~ msgstr ""
+#~ "Par défaut, tous les abonnés s’ajoutent à WordPress.\n"
+#~ "\t\t\t\t\tPour trouver vos abonnés, accédez à l’onglet Utilisateurs dans "
+#~ "le menu de navigation de gauche de la zone d’administration de "
+#~ "WordPress.\n"
+#~ "\t\t\t\t\tAbonnement également disponible à l’Aweber, MailChimp, MailPoet "
+#~ "<a href='%s' target='_blank'> et autres </a>.\n"
+#~ "\t\t\t\t\tSi vous souhaitez ajouter un autre service d’abonnement, <a "
+#~ "href='%s' target='_blank'> contactez-nous </a> et fournissez l’URL du "
+#~ "service d’abonnement."
+
+#~ msgid "PopUp doesn't appear on the website"
+#~ msgstr "La Popup n’apparait pas sur le site web"
+
+#~ msgid ""
+#~ "If you setup you're PopUp properly, and it still doesn't show on the page "
+#~ "- there are can be conflict with your WordPress theme or other plugins. "
+#~ "<a href='%s' target='_blank'>Contact us</a> with the URL of the webpage "
+#~ "you add popup and screenshots / text of the error messages, if you have "
+#~ "one - and we will help you resolve your issue."
+#~ msgstr ""
+#~ "Si vous configurez correctement la PopUp, et qu’elle n’apparaît toujours "
+#~ "pas sur la page - il peut y avoir un conflit avec votre thème WordPress "
+#~ "ou d’autres plugins. <a href='%s' target='_blank'>Contactez-nous</a> avec "
+#~ "l’URL de la page Web que vous ajoutez et des captures d’écran / texte des "
+#~ "messages d’erreur, si vous en avez un - et nous vous aiderons à résoudre "
+#~ "votre problème."
+
+#~ msgid ""
+#~ "There were some problems while trying to retrieve our news, but you can "
+#~ "always check all list <a target=\"_blank\" href=\"%s\">here</a>."
+#~ msgstr ""
+#~ "Il y a eu quelques problèmes lors de la tentative de récupération de nos "
+#~ "actualités, mais vous pouvez toujours consulter toutes les listes <a "
+#~ "target=\"_blank\" href=\"%s\">ici</a>."
+
+#~ msgid "Yes"
+#~ msgstr "Oui"
+
+#~ msgid "No"
+#~ msgstr "Non"
+
+#~ msgid "Popup Plugin"
+#~ msgstr "Plugin Popup"
+
+#~ msgid ""
+#~ "The Best WordPress PopUp option plugin to help you gain more subscribers, "
+#~ "social followers or advertisement. Responsive pop-ups with friendly "
+#~ "options."
+#~ msgstr ""
+#~ "Le meilleur plugin d’option WordPress PopUp pour vous aider à gagner plus "
+#~ "d’abonnés, d’abonnés sociaux ou de publicité. Pop-ups réactifs avec des "
+#~ "options conviviales."
+
+#~ msgid "Photo Gallery Plugin"
+#~ msgstr "Plugin Photo Gallery"
+
+#~ msgid ""
+#~ "Photo Gallery Plugin with a great number of layouts will help you to "
+#~ "create quality respectable portfolios and image galleries."
+#~ msgstr ""
+#~ "Le Plugin Photo Gallery, avec un grand nombre de mises en page vous "
+#~ "aidera à créer des portfolio et des galeries d’images de qualité."
+
+#~ msgid "Contact Form Plugin"
+#~ msgstr "Plugin Contact Form"
+
+#~ msgid ""
+#~ "One of the best plugin for creating Contact Forms on your WordPress site. "
+#~ "Changeable fonts, backgrounds, an option for adding fields etc."
+#~ msgstr ""
+#~ "L’un des meilleurs plugins pour créer des formulaires de contact sur "
+#~ "votre site WordPress. Polices, arrière-plans modifiables, une option pour "
+#~ "ajouter des champs, etc."
+
+#~ msgid "Newsletter Plugin"
+#~ msgstr "Plugin Newsletter"
+
+#~ msgid ""
+#~ "Supsystic Newsletter plugin for automatic mailing of your letters. You "
+#~ "will have no need to control it or send them manually. No coding, hard "
+#~ "skills or long hours of customizing are required."
+#~ msgstr ""
+#~ "Plugin Supsystic Newsletter pour l’envoi automatique de vos mails. Vous "
+#~ "n’aurez pas besoin de le contrôler ou de les envoyer manuellement. Aucun "
+#~ "codage, compétences pointues ou longues heures de personnalisation ne "
+#~ "sont nécessaires."
+
+#~ msgid "Membership by Supsystic"
+#~ msgstr "Membership by Supsystic"
+
+#~ msgid ""
+#~ "Create online membership community with custom user profiles, roles, "
+#~ "FrontEnd registration and login. Members Directory, activity, groups, "
+#~ "messages."
+#~ msgstr ""
+#~ "Créez une communauté en ligne avec des profils utilisateur, des rôles, "
+#~ "une inscription FrontEnd et une connexion personnalisés. Annuaire des "
+#~ "membres, activité, groupes, messages."
+
+#~ msgid "Google Maps Easy"
+#~ msgstr "Google Maps Easy"
+
+#~ msgid ""
+#~ "Display custom Google Maps. Set markers and locations with text, images, "
+#~ "categories and links. Customize google map in a simple and intuitive way."
+#~ msgstr ""
+#~ "Affichez des cartes Google Maps personnalisées. Définissez des marqueurs "
+#~ "et des emplacements avec du texte, des images, des catégories et des "
+#~ "liens. Personnalisez vos cartes de manière simple et intuitive."
+
+#~ msgid "Data Tables Generator"
+#~ msgstr "Data Tables Generator"
+
+#~ msgid ""
+#~ "Create and manage beautiful data tables with custom design. No HTML "
+#~ "knowledge is required."
+#~ msgstr ""
+#~ "Créez et gérez de magnifiques tableaux de données avec un design "
+#~ "personnalisé. Aucune connaissance HTML n’est requise."
+
+#~ msgid "Slider Plugin"
+#~ msgstr "Slider Plugin"
+
+#~ msgid ""
+#~ "Creating slideshows with Slider plugin is fast and easy. Simply select "
+#~ "images from your WordPress Media Library, Flickr, Instagram or Facebook, "
+#~ "set slide captions, links and SEO fields all from one page."
+#~ msgstr ""
+#~ "Créer des diaporama avec l’extension Slider est rapide et failce. "
+#~ "Choisissez simplement les images dans la bibliothèque WordPress, Flick, "
+#~ "Instagram ou Facebook, définissez leurs légendes, liens et champs SEO, le "
+#~ "tout depuis une seule page."
+
+#~ msgid "Social Share Buttons"
+#~ msgstr "Social Share Buttons"
+
+#~ msgid "Live Chat Plugin"
+#~ msgstr "Live Chat Plugin"
+
+#~ msgid "Pricing Table"
+#~ msgstr "Pricing Table"
+
+#~ msgid "Coming Soon Plugin"
+#~ msgstr "Coming Soon Plugin"
+
+#~ msgid "Backup Plugin"
+#~ msgstr "Extension de sauvegarde"
+
+#~ msgid "Digital Publication Plugin"
+#~ msgstr "Digital Publication Plugin"
+
+#~ msgid ""
+#~ "Show when user tries to exit from your site. <a target=\"_blank\" href="
+#~ "\"%s\">Check example.</a>"
+#~ msgstr ""
+#~ "Montrer lorsqu’un utilisateur quitte le site. <a target=\"_blank\" href="
+#~ "\"%s\">Voir l’exemple.</a>"
+
+#~ msgid "On Exit from Site"
+#~ msgstr "À la sortie du site"
+
+#~ msgid "Available in PRO"
+#~ msgstr "Disponible en PRO"
+
+#~ msgid "Version"
+#~ msgstr "Version"
+
+#~ msgid "Go"
+#~ msgstr "Aller"
+
+#~ msgid "PRO"
+#~ msgstr "PRO"
+
+#~ msgid "Support"
+#~ msgstr "Service Client"
+
+#~ msgid "Welcome to %s plugin!"
+#~ msgstr "Bienvenue sur %s !"
+
+#~ msgid ""
+#~ "Thank you for choosing our %s plugin. Just click here to start using it - "
+#~ "and we will show you it's possibilities and powerfull features."
+#~ msgstr ""
+#~ "Merci d’avoir choisi notre plugin %s. Cliquez ici pour commencer à "
+#~ "l’utiliser - nous allons vous montrer ses possibilités et ses "
+#~ "fantastiques fonctionnalités."
+
+#~ msgid "Close"
+#~ msgstr "Fermer"
+
+#~ msgid "Next"
+#~ msgstr "Suivant"
+
+#~ msgid "Create your firs PopUp"
+#~ msgstr "Créer vos premières Popup"
+
+#~ msgid ""
+#~ "Click on \"Add New PopUp\" button to create your firs PopUp. Just try - "
+#~ "this is really simple!"
+#~ msgstr ""
+#~ "Cliquez sur \"Ajouter une nouvelle Popup\" pour créer votre première "
+#~ "Popup. Essayez, c’est vraiment facile !"
+
+#~ msgid "Enter name for your PopUp"
+#~ msgstr "Nom de la Popup"
+
+#~ msgid "This will be name of your PopUp. You can change it latter."
+#~ msgstr "Ce sera le nom de votre Popup. Vous pourrez le changer plus tard."
+
+#~ msgid "Selecte template for your PopUp"
+#~ msgstr "Template pour votre Popup"
+
+#~ msgid ""
+#~ "Choose any templates from this list. You will be able to customize it "
+#~ "after creation, and also - you will be able to change it latter if you "
+#~ "will need this."
+#~ msgstr ""
+#~ "Choisissez un des modèles dans cette liste. Vous pourrez le personnaliser "
+#~ "après sa création, et aussi - vous pourrez le modifier si vous en avez "
+#~ "besoin."
+
+#~ msgid "Save first PopUp"
+#~ msgstr "Sauvegarde votre première PopUp"
+
+#~ msgid ""
+#~ "After you entered name of your PopUp and selected it's template - just "
+#~ "save it, and you will be redirected to PopUp edit screen - where you will "
+#~ "be able to customize your PopUp."
+#~ msgstr ""
+#~ "Après avoir entré le nom de votre PopUp et sélectionné son modèle - "
+#~ "enregistrez-le simplement, et vous serez redirigé vers l’écran d’édition "
+#~ "de PopUp - où vous pourrez personnaliser votre PopUp."
+
+#~ msgid "Main Settings"
+#~ msgstr "Réglages généraux"
+
+#~ msgid ""
+#~ "Here you can setup main display settings for your PopUp - when it should "
+#~ "be visible for your user, when it need to be closed, if required - select "
+#~ "specific pages/posts where you need to show your PopUp."
+#~ msgstr ""
+#~ "Ici, vous pouvez configurer les principaux paramètres d’affichage de "
+#~ "votre PopUp - quand il doit être visible pour votre utilisateur, quand il "
+#~ "doit être fermé, si nécessaire - sélectionnez des pages / publications "
+#~ "spécifiques où vous devez afficher votre PopUp."
+
+#~ msgid "Design Settings"
+#~ msgstr "Règlages d’affichage"
+
+#~ msgid ""
+#~ "One of our most powerfull features - possibility to <strong>customize</"
+#~ "strong> design for each PopUp window for your needs. In this section you "
+#~ "can select your PopUp colors and images, enter required texts that will "
+#~ "describe your neds for your visitors, setup social settings (if "
+#~ "required), select PopUp location, and in the end - select Animation style "
+#~ "for your PopUp from list of more then 20 different animation styles!"
+#~ msgstr ""
+#~ "L’une de nos fonctionnalités les plus puissantes - possibilité de "
+#~ "<strong> personnaliser </strong> la conception de chaque fenêtre PopUp "
+#~ "selon vos besoins. Dans cette section, vous pouvez sélectionner vos "
+#~ "couleurs et images PopUp, saisir les textes requis qui décriront vos "
+#~ "besoins pour vos visiteurs, configurer les paramètres sociaux (si "
+#~ "nécessaire), sélectionner l’emplacement PopUp, et finalement - "
+#~ "sélectionner le style d’animation pour votre PopUp dans la liste de plus "
+#~ "de 20 styles d’animation différents!"
+
+#~ msgid "Subscribe Settings"
+#~ msgstr "Réglages d’abonnement"
+
+#~ msgid ""
+#~ "Setup your Subscription settings here - select Subscribers destination in "
+#~ "\"Subscribe to\" option - it allow to flow your subscribers not only to "
+#~ "WordPress Users, but to other popular subscribe services. With other "
+#~ "subscription options you will be able to easily customize your subscribe "
+#~ "form in PopUp window."
+#~ msgstr ""
+#~ "Configurez vos paramètres d’abonnement ici - sélectionnez la destination "
+#~ "des abonnés dans l’option \"S’abonner à\" - cela permet de transférer vos "
+#~ "abonnés non seulement vers les utilisateurs de WordPress, mais vers "
+#~ "d’autres services d’abonnement populaires. Avec d’autres options "
+#~ "d’abonnement, vous pourrez facilement personnaliser votre formulaire "
+#~ "d’abonnement dans la fenêtre PopUp."
+
+#~ msgid "PopUp Statistwpf"
+#~ msgstr "PopUp Statistwpf"
+
+#~ msgid ""
+#~ "After you will setup your PopUp - it will start displaying to your site "
+#~ "visitors. And now - you need to check it's displaying statistwpf. Here, "
+#~ "in Statistwpf tab, you will be able to see how many times PopUp was shown "
+#~ "to your visitors, how many times visitors subscribed to it (if "
+#~ "subscription is enabled), how many times visitors shared your site using "
+#~ "Social Share PopUp functionality and what social networks for share is "
+#~ "most popular (if it was enabled). If you will use AB Testing feature to "
+#~ "increase your site popularity - you will see here all your main and "
+#~ "tested PopUps statistwpf - in one graph or diagramm, - and this will "
+#~ "provide you with all required information about your POpUp popularity!"
+#~ msgstr ""
+#~ "Après avoir configuré votre PopUp - il commencera à s’afficher pour les "
+#~ "visiteurs de votre site. Et maintenant - vous devez vérifier qu’il "
+#~ "affiche statistwpf. Ici, dans l’onglet Statistwpf, vous pourrez voir "
+#~ "combien de fois PopUp a été montré à vos visiteurs, combien de fois les "
+#~ "visiteurs s’y sont abonnés (si l’abonnement est activé), combien de fois "
+#~ "les visiteurs ont partagé votre site en utilisant la fonctionnalité PopUp "
+#~ "de partage social et quoi les réseaux sociaux à partager sont les plus "
+#~ "populaires (s’il était activé). Si vous utilisez la fonction AB Testing "
+#~ "pour augmenter la popularité de votre site - vous verrez ici toutes vos "
+#~ "statistiques PopUps principales et testées - dans un graphique ou un "
+#~ "diagramme, - et cela vous fournira toutes les informations requises sur "
+#~ "votre popularité PopUp!"
+
+#~ msgid "PopUp CSS / HTML Code"
+#~ msgstr "PopUp Code CSS / HTML"
+
+#~ msgid ""
+#~ "In case you will need modify source CSS / HTML code of your PopUp - you "
+#~ "can easily do this here. Just make sure that you know what you are doing "
+#~ "- don't break PopUp. You can also find additional information about "
+#~ "editing source code <a href=\"%s\" target=\"_blank\">here</a>."
+#~ msgstr ""
+#~ "Dans le cas où vous auriez besoin de modifier le code CSS / HTML source "
+#~ "de votre PopUp - vous pouvez facilement le faire ici. Assurez-vous "
+#~ "simplement de savoir ce que vous faites - ne cassez pas PopUp. Vous "
+#~ "pouvez également trouver des informations supplémentaires sur la "
+#~ "modification du code source <a href=\"%s\" target=\"_blank\">ici</a>."
+
+#~ msgid "Well Done!"
+#~ msgstr "Terminé !"
+
+#~ msgid ""
+#~ "<b>Upgrading</b> <br>Once you have purchased Premium version of plugin  - "
+#~ "you’ll have to enter license key (you can find it in your personal "
+#~ "account on our site). Go to the License tab and enter your email and "
+#~ "license key. Once you have activated your PRO license - you can use all "
+#~ "its advanced options. <br><br>That's it! Now you know how to use our %s. "
+#~ "Just save your PopUp after you will setup it - and you will see results. "
+#~ "You can also check our site - <a href=\"%s\" target=\"_blank\">woobewoo."
+#~ "com</a> to find out more about our %s plugin. If you will have any "
+#~ "questions - you can always contact us on <a href=\"%s\" target=\"_blank"
+#~ "\">WordPress plugin forum</a> or in <a href=\"%s\" target=\"_blank\">our "
+#~ "support system</a>. Besides you can always describe your questions on <a "
+#~ "href=\"%s\" target=\"_blank\">Supsystic Forum.</a> <br><br><b>Enjoy this "
+#~ "plugin?</b> <br>It will be nice if you`ll help us and boost plugin with "
+#~ "<a href=\"%s\" target=\"_blank\">Five Stars rating on WordPress.org.</a>  "
+#~ "<br><br>We really hope that our solution will be helpful for you. Good "
+#~ "luck!"
+#~ msgstr ""
+#~ "<b>Mise à niveau</b> <br>Une fois que vous avez acheté la version Premium "
+#~ "du plugin - vous devrez entrer la clé de licence (vous pouvez la trouver "
+#~ "dans votre compte personnel sur notre site). Accédez à l’onglet Licence "
+#~ "et entrez votre e-mail et votre clé de licence. Une fois que vous avez "
+#~ "activé votre licence PRO, vous pouvez utiliser toutes ses options "
+#~ "avancées.<br> <br>C’est ça ! Vous savez maintenant comment utiliser notre "
+#~ "%s. Enregistrez simplement votre PopUp après l’avoir configuré - et vous "
+#~ "verrez les résultats. Vous pouvez également consulter notre site - <a "
+#~ "href=\"%s\" target=\"_blank\">woobewoo.com</a> pour en savoir plus sur "
+#~ "notre plugin %s. Si vous avez des questions - vous pouvez toujours nous "
+#~ "contacter sur le <a href=\"%s\" target=\"_blank\">forum des plugins "
+#~ "WordPress</a> ou sur <a href=\"%s\" target=\"_blank\">notre système "
+#~ "d’assistance</a>. De plus, vous pouvez toujours décrire vos questions sur "
+#~ "le <a href=\"%s\" target=\"_blank\">Forum Supsystic.</a> <br> <br> "
+#~ "<b>Vous appréciez ce plugin ?</b> <br>Ce serait bien si vous nous aidiez "
+#~ "et souteniez le plugin avec une <a href=\"%s\" target=\"_blank\">note de "
+#~ "cinq étoiles sur WordPress.org.</a> <br> <br>Nous espérons vraiment que "
+#~ "notre solution vous sera utile. Bonne chance !"
+
+#~ msgid "Finish"
+#~ msgstr "Terminer"
+
+#~ msgid "Get plugins bundle today and save over 80%"
+#~ msgstr "Obtenez le pack de plugins aujourd’hui et économisez plus de 80%"
+
+#~ msgid "Check It out"
+#~ msgstr "Vérifier-le"
+
+#~ msgid "More info"
+#~ msgstr "Plus d’infos"
+
+#~ msgid "Download"
+#~ msgstr "Télécharger"
+
+#~ msgid "Enable Layered PopUp Style"
+#~ msgstr "Activer Layered PopUp Style"
+
+#~ msgid ""
+#~ "By default all PopUps have modal style: it appears on user screen over "
+#~ "the whole site. Layered style allows you to show your PopUp - on selected "
+#~ "position: top, bottom, etc. and not over your site - but right near your "
+#~ "content."
+#~ msgstr ""
+#~ "Par défaut, tous les PopUps ont un style modal : il apparaît sur l’écran "
+#~ "de l’utilisateur sur l’ensemble du site. Le style en couches vous permet "
+#~ "d’afficher votre PopUp - sur la position sélectionnée: en haut, en bas, "
+#~ "etc. et non sur votre site - mais juste à côté de votre contenu."
+
+#~ msgid "Select position for your PopUp"
+#~ msgstr "Sélectionner la position de votre PopUp"
+
+#~ msgid "Top Left"
+#~ msgstr "Haut Gauche"
+
+#~ msgid "Top"
+#~ msgstr "Haut"
+
+#~ msgid "Top Right"
+#~ msgstr "Haut Droite"
+
+#~ msgid "Center Left"
+#~ msgstr "Centre Gauche"
+
+#~ msgid "Center"
+#~ msgstr "Centre"
+
+#~ msgid "Center Right"
+#~ msgstr "Centre Droite"
+
+#~ msgid "Bottom Left"
+#~ msgstr "Bas Gauche"
+
+#~ msgid "Bottom"
+#~ msgstr "Bas"
+
+#~ msgid "Bottom Right"
+#~ msgstr "Bas Droite"
+
+#~ msgid "Improve Free version"
+#~ msgstr "Améliorer la version gratuite"
+
+#~ msgid ""
+#~ "This functionality and more - is available in PRO version. <a class="
+#~ "\"button button-primary\" target=\"_blank\" href=\"%s\">Get it</a> today "
+#~ "for 29$"
+#~ msgstr ""
+#~ "Cette fonctionnalité (et d’autres) est disponible en version PRO. <a "
+#~ "class=\"button button-primary\" target=\"_blank\" href=\"%s\">Obtenez-la</"
+#~ "a> aujourd’hui pour 29$"
+
+#~ msgid "FAQ and Documentation"
+#~ msgstr "FAQ et documentation"
+
+#~ msgid "Check all FAQs"
+#~ msgstr "Toutes les FAQs"
+
+#~ msgid "Video Tutorial"
+#~ msgstr "Tutoriels vidéo"
+
+#~ msgid "Server Settings"
+#~ msgstr "Réglages du serveur"
+
+#~ msgid "News"
+#~ msgstr "Actualités"
+
+#~ msgid "All news and info"
+#~ msgstr "Toutes les actualités et infos"
+
+#~ msgid "Contact form"
+#~ msgstr "Formulaire de contact"
+
+#~ msgid "Send email"
+#~ msgstr "Envoyer un email"
+
+#~ msgid ""
+#~ "Your email was sent, we will try to respond to your as soon as possible. "
+#~ "Thank you for support!"
+#~ msgstr ""
+#~ "Votre email a été envoyé, nous essayons de vous répondre le plus "
+#~ "rapidement possible. Merci pour vos encouragements !"
+
+#~ msgid "Your Feedback"
+#~ msgstr "Votre Commentaire"
+
+#~ msgid "Couldn't get the plugin to work"
+#~ msgstr "Je n’arrive pas à faire fonctionner le plugin"
+
+#~ msgid ""
+#~ "If you have a question, <a href=\"%s\" target=\"_blank\">contact us</a> "
+#~ "and will do our best to help you"
+#~ msgstr ""
+#~ "Si vous avez une question, <a href=\"%s\" target=\"_blank\">contactez-"
+#~ "nous</a>, nous ferons notre possible pour vous aider"
+
+#~ msgid "I found a better plugin"
+#~ msgstr "J’ai trouvé un meilleur plugin"
+
+#~ msgid "If it's possible, specify plugin name"
+#~ msgstr "Si c’est possible, indiquez le nom du plugin"
+
+#~ msgid "I no longer need the plugin"
+#~ msgstr "Je n’ai plus besoin du plugin"
+
+#~ msgid "It's a temporary deactivation"
+#~ msgstr "C’est une désactivation temporaire"
+
+#~ msgid "What is the reason?"
+#~ msgstr "Pour quelle raison ?"
+
+#~ msgid "Skip & Deactivate"
+#~ msgstr "Passer et désactiver"
+
+#~ msgid "Welcome to the %s v %s"
+#~ msgstr "Bienvenue sur le %s v %s"
+
+#~ msgid "Skip tutorial"
+#~ msgstr "Passer le tutoriel"
+
+#~ msgid ""
+#~ "The best way to collect subscribers and show notifications.<br />We are "
+#~ "trying to make our plugin work in most comfortable way for you. Here is "
+#~ "some base information about it."
+#~ msgstr ""
+#~ "La meilleure façon de collecter des abonnés et d’afficher des "
+#~ "notifications.<br />Nous essayons de faire fonctionner notre plugin de la "
+#~ "manière la plus confortable pour vous. Voici quelques informations de "
+#~ "base à ce sujet."
+
+#~ msgid "Step-by-step tutorial"
+#~ msgstr "Tutoriel Pas-à-pas"
+
+#~ msgid ""
+#~ "There're really many options of popup customization. So as soon as you "
+#~ "close that page, I'll show you step-by-step tutorial of how to use "
+#~ "plugin. Hope it will be usefull for you :)"
+#~ msgstr ""
+#~ "Il existe vraiment de nombreuses options de personnalisation "
+#~ "contextuelle. Donc, dès que vous fermerez cette page, je vous montrerai "
+#~ "un tutoriel étape par étape sur la façon d’utiliser le plugin. J’espère "
+#~ "que cela vous sera utile :)"
+
+#~ msgid "As an option we can install and setup plugin for you."
+#~ msgstr ""
+#~ "Nous proposons aussi l’option d’installer et configurer l’extension pour "
+#~ "vous."
+
+#~ msgid ""
+#~ "We love our plugin and do the best to improve all features for You. But "
+#~ "sometimes issues happened, or you can't find required feature that you "
+#~ "need. Don't worry, just <a href='%s' target='_blank'>contact us</a> and "
+#~ "we will help you!"
+#~ msgstr ""
+#~ "Nous aimons notre plugin et faisons de notre mieux pour améliorer toutes "
+#~ "les fonctionnalités pour vous. Mais parfois, des problèmes surviennent ou "
+#~ "vous ne trouvez pas la fonctionnalité dont vous avez besoin. Ne vous "
+#~ "inquiétez pas, <a href='%s' target='_blank'>contactez-nous</a> et nous "
+#~ "vous aiderons !"
+
+#~ msgid "Frequently Asked Questions"
+#~ msgstr "FAQ"
+
+#~ msgid "Let's Start!"
+#~ msgstr "Commencer !"
+
+#~ msgid "Prewiew"
+#~ msgstr "Prévisualisation"
+
+#~ msgid "Duplicate filter"
+#~ msgstr "Dupliquer le filtre"
+
+#~ msgid "Add New Filter"
+#~ msgstr "Ajouter un nouveau filtre"
+
+#~ msgid "Edit"
+#~ msgstr "Modifier"
+
+#~ msgid "Show All Filters"
+#~ msgstr "Montrer tous les filtres"
+
+#~ msgid "Delete selected"
+#~ msgstr "Supprimer la sélection"
+
+#~ msgid "Search"
+#~ msgstr "Rechercher"
+
+#~ msgid ""
+#~ "You have no Filters for now. <a href=\"%s\" style=\"font-style: italic;"
+#~ "\">Create</a> your Filter!"
+#~ msgstr ""
+#~ "Vous n’avez pas encore de filtre. <a href=\"%s\" style=\"font-style: "
+#~ "italic;\">Créez</a> un filtre !"
+
+#~ msgid "Select..."
+#~ msgstr "Sélectionner…"
+
+#~ msgid "Filter name:"
+#~ msgstr "Nom du filtre :"
+
+#~ msgid "Click to edit"
+#~ msgstr "Cliquer pour modifier"
+
+#~ msgid "Filter Shortcode"
+#~ msgstr "Code court du filtre"
+
+#~ msgid "Filter PHP code"
+#~ msgstr "Code PHP du filtre"
+
+#~ msgid "Product Shortcode"
+#~ msgstr "Code court du produit"
+
+#~ msgid "Product PHP code"
+#~ msgstr "Code PHP du produit"
+
+#~ msgid ""
+#~ "Using short code you can display the filter and products in the desired "
+#~ "place of the template."
+#~ msgstr ""
+#~ "En utilisant un code court, vous pouvez afficher le filtre et les "
+#~ "produits à l’endroit souhaité du template."
+
+#~ msgid "Delete"
+#~ msgstr "Supprimer"
+
+#~ msgid "Filters"
+#~ msgstr "Filtres"
+
+#~ msgid "Options"
+#~ msgstr "Options"
+
+#~ msgid "Advanced"
+#~ msgstr "Avancé"
+
+#~ msgid "Filtering"
+#~ msgstr "Filtrer"
+
+#~ msgid "Enable Cross filtration"
+#~ msgstr "Autoriser la filtration croisée"
+
+#~ msgid ""
+#~ "Enable Cross filtration. For example, if you select the category \"new\" "
+#~ "in the category filter, all filters will hide options in products that do "
+#~ "not have the category \"new\"."
+#~ msgstr ""
+#~ "Activer la filtration croisée. Par exemple, si vous sélectionnez la "
+#~ "catégorie \"nouveau\" dans le filtre de catégorie, tous les filtres "
+#~ "masqueront les options des produits qui n’ont pas la catégorie \"nouveau"
+#~ "\"."
+
+#~ msgid "Cross filter style"
+#~ msgstr "Style de la filtration croisée"
+
+#~ msgid "Select mobile filter location."
+#~ msgstr "Sélectionner la position du filtre pour les mobiles."
+
+#~ msgid "Cross filter Term Products Count Mode"
+#~ msgstr "Mode de comptage des produits par terme pour la filtration croisée"
+
+#~ msgid "Cross filter Term Products Count Mode displayed in frontend."
+#~ msgstr ""
+#~ "Mode de comptage des produits par terme pour la filtration croisée "
+#~ "affiché sur le frontend."
+
+#~ msgid "Reorder Cross filter Terms"
+#~ msgstr "Ré-ordonner les termes de la filtration croisée"
+
+#~ msgid ""
+#~ "After filtering, sort the items in the filters (active / clickable "
+#~ "options move up)."
+#~ msgstr ""
+#~ "Après le filtrage, triez les éléments dans les filtres (les options "
+#~ "actives / cliquables montent)."
+
+#~ msgid "CSS editor"
+#~ msgstr "Éditeur CSS"
+
+#~ msgid "Custom CSS"
+#~ msgstr "CSS personnalisé"
+
+#~ msgid "JS editor"
+#~ msgstr "Éditeur JS"
+
+#~ msgid "Custom JS"
+#~ msgstr "JS personnalisé"
+
+#~ msgid "Display only on page"
+#~ msgstr "Afficher uniquement sur les pages"
+
+#~ msgid "Chose page for filter"
+#~ msgstr "Choisir la page pour le filtre"
+
+#~ msgid "Hide filter by title click"
+#~ msgstr "Masquer le filtre en cliquant sur le titre"
+
+#~ msgid "Hide filter by title click."
+#~ msgstr "Masquer le filtre en cliquant sur le titre."
+
+#~ msgid "Show Term Products Count"
+#~ msgstr "Afficher le nombre de produit par terme"
+
+#~ msgid "Show the number of products next to the title."
+#~ msgstr "Affiche le nombre de produits à côté du titre."
+
+#~ msgid "Show Term Search Fields"
+#~ msgstr "Montrer les champs de recherche des termes"
+
+#~ msgid "show the search field in supported filters."
+#~ msgstr "montrer le champ de recherche dans les filtres pris en charge."
+
+#~ msgid "Stepped Filter Selection"
+#~ msgstr "Sélection de filtre par étapes"
+
+#~ msgid ""
+#~ "After selection filter options, you can confirm filtering in \"Show result"
+#~ "\" popup."
+#~ msgstr ""
+#~ "Après avoir sélectionné les options de filtrage, vous pouvez confirmer le "
+#~ "filtrage dans la fenêtre contextuelle \"Afficher le résultat\"."
+
+#~ msgid "Enable Ajax"
+#~ msgstr "Activer Ajax"
+
+#~ msgid ""
+#~ "This option enables Ajax search. Filtering starts as soon as filter "
+#~ "elements change and the page reloads automatically."
+#~ msgstr ""
+#~ "Cette option active la recherche Ajax. Le filtrage démarre dès que les "
+#~ "éléments du filtre changent et la page se recharge automatiquement."
+
+#~ msgid "Selected Terms Collector"
+#~ msgstr "Collecteur de termes sélectionnés"
+
+#~ msgid ""
+#~ "Show the selected filter elements above the products, with the ability to "
+#~ "remove them from the filter."
+#~ msgstr ""
+#~ "Affichez les éléments de filtre sélectionnés au-dessus des produits, avec "
+#~ "la possibilité de les supprimer du filtre."
+
+#~ msgid "Show Clear all button"
+#~ msgstr "Montrer le bouton Effacer tout"
+
+#~ msgid "Show Clear block"
+#~ msgstr "Montrer le block Effacer"
+
+#~ msgid "Show Filtering button"
+#~ msgstr "Montrer le bouton Filtrer"
+
+#~ msgid ""
+#~ "This button is necessary, when ajax mode is disabled. It allows users to "
+#~ "set all necessary filter parameters before starting the filtering. This "
+#~ "option is not available when Ajax is enabled."
+#~ msgstr ""
+#~ "Ce bouton est nécessaire lorsque le mode ajax est désactivé. Il permet "
+#~ "aux utilisateurs de définir tous les paramètres de filtrage nécessaires "
+#~ "avant de démarrer le filtrage. Cette option n’est pas disponible lorsque "
+#~ "Ajax est activé."
+
+#~ msgid "Display items in a row"
+#~ msgstr "Afficher les éléments sur une ligne"
+
+#~ msgid "Show filter items as row"
+#~ msgstr "Montrer les éléments de filtre sur une ligne"
+
+#~ msgid "Display filter on"
+#~ msgstr "Afficher le filtre sur"
+
+#~ msgid "Chose where display filter"
+#~ msgstr "Choisissez où afficher le filtre"
+
+#~ msgid "Recount products by selected filter"
+#~ msgstr "Recalculer les produits par filtre sélectionné"
+
+#~ msgid "Sort by title after filtering"
+#~ msgstr "Trier par titre après filtration"
+
+#~ msgid "Sort product list by title."
+#~ msgstr "Trier la liste des produits par titre."
+
+#~ msgid "Checked items to the top"
+#~ msgstr "Éléments sélectionnés en haut"
+
+#~ msgid "Lets checked terms will be on the top"
+#~ msgstr "Les éléments sélectionnés seront déplacés en haut"
+
+#~ msgid "Filter Width"
+#~ msgstr "Largeur du filtre"
+
+#~ msgid "Here you can set the filter width in pixels or percent."
+#~ msgstr ""
+#~ "Vous pouvez indiquer la largeur du filtre en pixels ou en pourcentage."
+
+#~ msgid "Filter Block Width"
+#~ msgstr "Largeur d’un bloc filtre"
+
+#~ msgid "Here you can set the filter block width in pixels or percent."
+#~ msgstr ""
+#~ "Vous pouvez indiquer la largeur d’un bloc filtre en pixels ou en "
+#~ "pourcentage."
+
+#~ msgid "Select Filter Buttons Position"
+#~ msgstr "Choisir la position des boutons du filtre"
+
+#~ msgid "Here you may select the position of filter buttons on the page."
+#~ msgstr ""
+#~ "Vous pouvez sélectionner la position des boutons du filtre sur la page."
+
+#~ msgid "Enable filter icon on load"
+#~ msgstr "Activer l’icône de filtre au chargement"
+
+#~ msgid "Enable filter icon while page is loading."
+#~ msgstr "Activer l’icône de filtre lors du chargement de la page."
+
+#~ msgid "Filter Loader Icon"
+#~ msgstr "Icône de chargement du filtre"
+
+#~ msgid ""
+#~ "Here you may select the animated loader, which appears when filtering "
+#~ "results are loading."
+#~ msgstr ""
+#~ "Vous pouvez sélectionner le chargeur animé, qui apparaît lors du "
+#~ "chargement des résultats de filtrage."
+
+#~ msgid "Choose Icon"
+#~ msgstr "Choisir une icône"
+
+#~ msgid "Filter Loader Color"
+#~ msgstr "Couleur de l’animation"
+
+#~ msgid "Here you may select the color of filter loader animation."
+#~ msgstr "Vous pouvez choisir la couleur de l’animation de chargement."
+
+#~ msgid "Enable overlay"
+#~ msgstr "Activer la superposition"
+
+#~ msgid "Enable overlay."
+#~ msgstr "Activer la superposition."
+
+#~ msgid "Overlay background color and opacity"
+#~ msgstr "Superposer la couleur et l’opacité de l’arrière plan"
+
+#~ msgid "Overlay background color and opacity."
+#~ msgstr "Superposer la couleur et l’opacité de l’arrière plan."
+
+#~ msgid "Show Loader Icon on overlay"
+#~ msgstr "Montrer l’icône de chargement à la superposition"
+
+#~ msgid "Enable filter icon while filtering process ongoing."
+#~ msgstr "Activer l’icône de filtre pendant le processus de filtrage."
+
+#~ msgid "Show loading word on overlay"
+#~ msgstr "Afficher le texte de chargement en superposition"
+
+#~ msgid "Show search word on overlay"
+#~ msgstr "Montrer le texte de recherche en superposition"
+
+#~ msgid "Set loading word for overlay"
+#~ msgstr "Définir le texte de chargement en superposition"
+
+#~ msgid "Here you may select overlay word for filter"
+#~ msgstr "Vous pouvez sélectionner un texte de superposition pour le filtre"
+
+#~ msgid "Set no products found text"
+#~ msgstr "Définir le texte \"Aucun produit trouvé\""
+
+#~ msgid "Here you may input \"no products found\" text for category"
+#~ msgstr ""
+#~ "Vous pouvez renseigner le texte pour \"Aucun produit trouvé\" pour les "
+#~ "catégories"
+
+#~ msgid "Filter style"
+#~ msgstr "Style du filtre"
+
+#~ msgid ""
+#~ "Full screen filter - is located over products and occupies the entire "
+#~ "width of the screen, with the ability to collapse / expand."
+#~ msgstr ""
+#~ "Filtre plein écran - est situé sur les produits et occupe toute la "
+#~ "largeur de l’écran, avec la possibilité de se réduire / se développer."
+
+#~ msgid "Max Columns"
+#~ msgstr "Colonnes maximum"
+
+#~ msgid "For Full screen filter mode - how many columns will be displayed"
+#~ msgstr "Pour le mode Plein écran - combien de colonnes seront affichées"
+
+#~ msgid "Max Height in px"
+#~ msgstr "Hauteur max en pixels"
+
+#~ msgid ""
+#~ "The maximum height for each of the filters, if the height is greater than "
+#~ "display scroll "
+#~ msgstr ""
+#~ "La hauteur maximale pour chacun des filtres, si la hauteur est "
+#~ "supérieure, une barre de défilement sera affichée "
+
+#~ msgid "Max Height in px (Full screen mode)"
+#~ msgstr "Hauteur maxi en pixel (mode Plein écran)"
+
+#~ msgid "The maximum height container for Full screen mode filter "
+#~ msgstr ""
+#~ "La hauteur maximum d’un conteneur pour le filtre en mode Plein écran "
+
+#~ msgid "Custom scroll bar"
+#~ msgstr "Personnaliser la barre de défilement"
+
+#~ msgid "Enable beautiful scrollbar."
+#~ msgstr "Activer une belle barre de défilement."
+
+#~ msgid "Select checkbox style"
+#~ msgstr "Sélectionner le style de checkbox"
+
+#~ msgid "Select checkbox style in frontend."
+#~ msgstr "Sélectionner le style de checkbox en fontend."
+
+#~ msgid "Select Hierarchy Style"
+#~ msgstr "Sélectionner le style de hiérarchie"
+
+#~ msgid "Select hierarchy style in frontend."
+#~ msgstr "Sélectionner le style de hiérarchie en frontend."
+
+#~ msgid "Select Mobile Filter Position"
+#~ msgstr "Sélectionner la position du filtre sur mobile"
+
+#~ msgid "Set mobile resolution px"
+#~ msgstr "Sélectionner la résolution mobile en pixels"
+
+#~ msgid "The width of the screen at which the mobile filter is turned on."
+#~ msgstr ""
+#~ "La largeur de l’écran pour laquelle le filtre est activé sur mobile."
+
+#~ msgid "Add Attribute filter"
+#~ msgstr "Ajouter un filtre sur Attribut"
+
+#~ msgid "Brand"
+#~ msgstr "Marque"
+
+#~ msgid "Custom meta"
+#~ msgstr "Custom meta"
+
+#~ msgid "From"
+#~ msgstr "De"
+
+#~ msgid "To"
+#~ msgstr "À"
+
+#~ msgid "Add"
+#~ msgstr "Ajouter"
+
+#~ msgid "Enable"
+#~ msgstr "Activer"
+
+#~ msgid "Show options"
+#~ msgstr "Afficher les options"
+
+#~ msgid "Hide options"
+#~ msgstr "Masquer les options"
+
+#~ msgid "Description"
+#~ msgstr "Description"
+
+#~ msgid "Title"
+#~ msgstr "Titre"
+
+#~ msgid "Show title label"
+#~ msgstr "Afficher l’étiquette de titre"
+
+#~ msgid "Filter skin"
+#~ msgstr "Aspect du filtre"
+
+#~ msgid "Here you may select the price filter skin"
+#~ msgstr "Vous pouvez sélectionner l’aspect du filtre sur le prix"
+
+#~ msgid "Show price input fields"
+#~ msgstr "Montrer les champs d’entrée de prix"
+
+#~ msgid "Symbol position"
+#~ msgstr "Position du symbole"
+
+#~ msgid "Show currency as"
+#~ msgstr "Montrer la devise comme"
+
+#~ msgid "Use text tooltip instead of input fields"
+#~ msgstr "Utiliser l’infobulle de texte au lieu des champs de saisie"
+
+#~ msgid "Price"
+#~ msgstr "Prix"
+
+#~ msgid "Show on frontend as"
+#~ msgstr "Afficher sur le site comme"
+
+#~ msgid "Dropdown label"
+#~ msgstr "Étiquette de liste déroulante"
+
+#~ msgid "Select all"
+#~ msgstr "Tout sélectionner"
+
+#~ msgid "Set range automatically"
+#~ msgstr "Définir automatiquement les intervalles"
+
+#~ msgid ""
+#~ "If this option is enabled, you may set the price range settings "
+#~ "automatically."
+#~ msgstr ""
+#~ "Si cette option est activée, vous pouvez définir automatiquement les "
+#~ "paramètres de la fourchette de prix."
+
+#~ msgid "Set start price"
+#~ msgstr "Définir le prix de départ"
+
+#~ msgid ""
+#~ "Set the minimum price. If field live empty  will be set the price of the "
+#~ "cheapest product from the store."
+#~ msgstr ""
+#~ "Définissez le prix minimum. Laissez vide pour prendre le prix du produit "
+#~ "le moins cher de la boutique."
+
+#~ msgid "Set end price"
+#~ msgstr "Définir le prix maximal"
+
+#~ msgid ""
+#~ "Set the maximum price. If field live empty  will be set the price of the "
+#~ "dearest product from the store."
+#~ msgstr ""
+#~ "Définissez le prix maximum. Laissez vide pour prendre le prix du produit "
+#~ "le plus cher de la boutique."
+
+#~ msgid "Set the range between prices"
+#~ msgstr "Définir l’intervalle entre les prix"
+
+#~ msgid "Set the price range between the filter options."
+#~ msgstr "Définir l’intervalle de prix pour les options de filtre."
+
+#~ msgid "Set maximum range count"
+#~ msgstr "Définir le nombre maximal d’intervalles"
+
+#~ msgid "Evenly calculate the range for a given number of positions."
+#~ msgstr "Calculez uniformément la plage pour un nombre donné de positions."
+
+#~ msgid "Price range step"
+#~ msgstr "Pas de l’intervalle de prix"
+
+#~ msgid ""
+#~ "Here you may set the value of prise increase step. The default value is "
+#~ "set to 20. All the steps are equal. When setting the step, please note "
+#~ "that the number of elements in the list should not exceed 100, otherwise "
+#~ "the step setting will be reset and automatically calculated."
+#~ msgstr ""
+#~ "Vous pouvez définir la valeur du pas d’augmentation du prix. La valeur "
+#~ "par défaut est définie sur 20. Tous les pas sont égaux. Lors du réglage "
+#~ "du pas, veuillez noter que le nombre d’éléments dans la liste ne doit pas "
+#~ "dépasser 100, sinon le réglage du pas sera réinitialisé et calculé "
+#~ "automatiquement."
+
+#~ msgid "Set range manually"
+#~ msgstr "Définir un intervalle manuellement"
+
+#~ msgid ""
+#~ "If this option is enabled, you may press the \"Setup\" button and "
+#~ "customize your price range settings. You may increase or decrease the "
+#~ "number of steps and set different values for each step."
+#~ msgstr ""
+#~ "Si cette option est activée, vous pouvez cliquer sur le bouton "
+#~ "\"Configuration\" et personnaliser vos paramètres d’intervalle de prix. "
+#~ "Vous pouvez augmenter ou diminuer le nombre de pas et définir des valeurs "
+#~ "différentes pour chaque pas."
+
+#~ msgid "Setup"
+#~ msgstr "Configuration"
+
+#~ msgid "Maximum height in frontend"
+#~ msgstr "Hauteur maximale sur le site"
+
+#~ msgid "Price range"
+#~ msgstr "Intervalle de prix"
+
+#~ msgid "Sort options"
+#~ msgstr "Options de tri"
+
+#~ msgid ""
+#~ "Here you may select the sorting options available for your site users "
+#~ "(min two options)."
+#~ msgstr ""
+#~ "Vous pouvez sélectionner les options de tri disponibles pour vos "
+#~ "utilisateurs (au moins deux options)."
+
+#~ msgid "Default"
+#~ msgstr "Par défaut"
+
+#~ msgid "Popularity"
+#~ msgstr "Popularité"
+
+#~ msgid "Rating"
+#~ msgstr "Note"
+
+#~ msgid "Newness"
+#~ msgstr "Nouveauté"
+
+#~ msgid "Price: low to high"
+#~ msgstr "Prix : du moins cher au plus cher"
+
+#~ msgid "Price: high to low"
+#~ msgstr "Prix : du plus cher au moins cher"
+
+#~ msgid "Random"
+#~ msgstr "Aléatoire"
+
+#~ msgid "Sort by"
+#~ msgstr "Trier par"
+
+#~ msgid "Here you may set categories sorting by ascendance or descendance."
+#~ msgstr "Vous pouvez définir le tri des catégories croissant ou décroissant."
+
+#~ msgid "Order by custom"
+#~ msgstr "Tri personnalisé"
+
+#~ msgid "Show search field"
+#~ msgstr "Afficher le champ de recherche"
+
+#~ msgid "Show fast search field."
+#~ msgstr "Afficher le champ de recherche rapide."
+
+#~ msgid "Show hierarchical"
+#~ msgstr "Montrer la hiérarchie"
+
+#~ msgid "Show paternal and subsidiary categories (for checkbox list)."
+#~ msgstr "Montrer les catégories parent et enfants (pour les listes de choix)"
+
+#~ msgid "Hierarchical limit"
+#~ msgstr "Limit de hiérachisation"
+
+#~ msgid "Hierarchical limit ."
+#~ msgstr "Limite de hiérarchisation."
+
+#~ msgid "Show count"
+#~ msgstr "Afficher le nombre"
+
+#~ msgid "Hide categories without products"
+#~ msgstr "Masquer les catégories sans produit"
+
+#~ msgid "Product categories"
+#~ msgstr "Catégories de produit"
+
+#~ msgid ""
+#~ "Here you may select product categories to be displayed on your site from "
+#~ "the list. If you want to select several categories, hold the \"Shift\" "
+#~ "button and click on category names. Or you can hold \"Ctrl\" and click on "
+#~ "category names. Press \"Ctrl\" + \"a\" for checking all categories."
+#~ msgstr ""
+#~ "Vous pouvez sélectionner des catégories de produits à afficher sur votre "
+#~ "site. Si vous souhaitez sélectionner plusieurs catégories, maintenez le "
+#~ "bouton \"Shift\" et cliquez sur les noms des catégories. Ou vous pouvez "
+#~ "maintenir \"Ctrl\" et cliquer sur les noms des catégories. Appuyez sur "
+#~ "\"Ctrl\" + \"a\" pour sélectionner toutes les catégories."
+
+#~ msgid "Make selected categories as default"
+#~ msgstr "Par défaut cocher les catégories choisies"
+
+#~ msgid "Selected categories will be marked as default."
+#~ msgstr "Les catégories choisies seront sélectionnées par défaut."
+
+#~ msgid "Exclude terms ids"
+#~ msgstr "Exclure les éléments par identifiant"
+
+#~ msgid ""
+#~ "Here you may exclude category terms from filter by ids. Example input: "
+#~ "1,2,3 "
+#~ msgstr ""
+#~ "Vous pouvez exclure du filtre des catégories via leurs identifiants. "
+#~ "Exemple d’entrée: 1,2,3 "
+
+#~ msgid "Hide child"
+#~ msgstr "Masquer les enfants"
+
+#~ msgid "Hide child taxonomy."
+#~ msgstr "Masquer les taxonomies enfants."
+
+#~ msgid ""
+#~ "Depending on whether you need one or several tags to be available at the "
+#~ "same time, you may show your tags list as checkbox or dropdown."
+#~ msgstr ""
+#~ "Selon que vous avez besoin d’une ou de plusieurs étiquettes en même "
+#~ "temps, vous pouvez afficher votre liste d’étiquettes sous forme de case à "
+#~ "cocher ou de liste déroulante."
+
+#~ msgid "Here you may set tags sorting by ascendance or descendance."
+#~ msgstr ""
+#~ "Vous pouvez filtrer les étiquettes par ordre croissant ou décroissant."
+
+#~ msgid "Show hierarchical."
+#~ msgstr "Montrer la hiérarchie."
+
+#~ msgid "Hide tags without products"
+#~ msgstr "Masquer les étiquettes sans produit"
+
+#~ msgid "Product tags"
+#~ msgstr "Étiquettes de produit"
+
+#~ msgid ""
+#~ "Here you may select product tags to be displayed on your site from the "
+#~ "list. If you want to select several tags, hold the \"Shift\" button and "
+#~ "click on category names. Or you can hold \"Ctrl\" and click on category "
+#~ "names. Press \"Ctrl\" + \"a\" for checking all tags. "
+#~ msgstr ""
+#~ "Vous pouvez sélectionner des étiquettes de produits à afficher sur votre "
+#~ "site. Si vous souhaitez sélectionner plusieurs étiquettes, maintenez le "
+#~ "bouton \"Shift\" et cliquez sur les noms des étiquettes. Ou vous pouvez "
+#~ "maintenir \"Ctrl\" et cliquer sur les noms des étiquettes. Appuyez sur "
+#~ "\"Ctrl\" + \"a\" pour sélectionner toutes les étiquettes. "
+
+#~ msgid "No tags"
+#~ msgstr "Aucune étiquette"
+
+#~ msgid "Make selected tags as default"
+#~ msgstr "Par défaut cocher les étiquettes choisies"
+
+#~ msgid "Selected tags will be marked as default."
+#~ msgstr "Les étiquettes sélectionnées seront marquées par défaut."
+
+#~ msgid ""
+#~ "Here you may exclude tags terms from filter by ids. Example input: 1,2,3 "
+#~ msgstr ""
+#~ "Vous pouvez exclure du filtre des étiquettes via leurs identifiants. "
+#~ "Exemple d’entrée: 1,2,3 "
+
+#~ msgid "Show search."
+#~ msgstr "Afficher la recherche."
+
+#~ msgid "Select attribute"
+#~ msgstr "Sélectionner l’attribut"
+
+#~ msgid ""
+#~ "Here you may select attribute to be displayed on your site from the list."
+#~ msgstr "Vous pouvez sélectionner un attribut à afficher sur votre site."
+
+#~ msgid "No attribute"
+#~ msgstr "Aucun attribut"
+
+#~ msgid ""
+#~ "Depending on whether you need one or several attributes to be available "
+#~ "at the same time, you may show your attributes list as checkbox or "
+#~ "dropdown."
+#~ msgstr ""
+#~ "Selon que vous avez besoin d’un ou plusieurs attributs en même temps, "
+#~ "vous pouvez afficher votre liste d’attributs sous forme de case à cocher "
+#~ "ou de liste déroulante."
+
+#~ msgid "Hide attributes without products"
+#~ msgstr "Masquer les attributs sans produit"
+
+#~ msgid ""
+#~ "Here you may select attributes to be displayed on your site from the "
+#~ "list. If you want to select several attributes, hold the \"Shift\" button "
+#~ "and click on names. Or you can hold \"Ctrl\" and click on names. Press "
+#~ "\"Ctrl\" + \"a\" for checking all names. "
+#~ msgstr ""
+#~ "Vous pouvez sélectionner des attributs à afficher sur votre site. Si vous "
+#~ "souhaitez sélectionner plusieurs attributs, maintenez le bouton \"Shift\" "
+#~ "et cliquez sur les noms. Ou vous pouvez maintenir \"Ctrl\" et cliquer sur "
+#~ "les noms. Appuyez sur \"Ctrl\" + \"a\" pour sélectionner tous les "
+#~ "attributs. "
+
+#~ msgid "No attributes"
+#~ msgstr "Aucun attribut"
+
+#~ msgid "Make selected attributes as default"
+#~ msgstr "Par défaut cocher les attributs sélectionnées"
+
+#~ msgid "Logic"
+#~ msgstr "Logique"
+
+#~ msgid "Here you may set attributes sorting by ascendance or descendance."
+#~ msgstr "Vous pouvez trier les attributs par ordre croissant ou décroissant."
+
+#~ msgid "Don't sort"
+#~ msgstr "Ne pas trier"
+
+#~ msgid "Attribute"
+#~ msgstr "Attribut"
+
+#~ msgid "You can define which role show users in the drop down"
+#~ msgstr ""
+#~ "Vous pouvez définir quel rôle afficher les utilisateurs dans la liste "
+#~ "déroulante"
+
+#~ msgid "You may show your roles list as checkbox or dropdown."
+#~ msgstr ""
+#~ "Vous pouvez afficher votre liste de rôles sous forme de case à cocher ou "
+#~ "de liste déroulante."
+
+#~ msgid "Author"
+#~ msgstr "Auteur"
+
+#~ msgid "Featured"
+#~ msgstr "Mis en avant"
+
+#~ msgid "On sale"
+#~ msgstr "Promotion"
+
+#~ msgid "Stock status"
+#~ msgstr "État du stock"
+
+#~ msgid "In Stock"
+#~ msgstr "En stock"
+
+#~ msgid "Out of Stock"
+#~ msgstr "Épuisé"
+
+#~ msgid "On Backorder"
+#~ msgstr "En rupture de stock"
+
+#~ msgid "Additional text for 1-4"
+#~ msgstr "Texte additionnel pour 1-4"
+
+#~ msgid "and up"
+#~ msgstr "et plus"
+
+#~ msgid "Additional text for 5"
+#~ msgstr "Texte additionnel pour 5"
+
+#~ msgid "5 only"
+#~ msgstr "5 seulement"
+
+#~ msgid "Search by Text"
+#~ msgstr "Recherche par texte"
+
+#~ msgid "Filter"
+#~ msgstr "Filtrer"
+
+#~ msgid "Clear"
+#~ msgstr "Effacer"
+
+#~ msgid "clear"
+#~ msgstr "effacer"
+
+#~ msgid "price"
+#~ msgstr "prix"
+
+#~ msgid "Price range filter is empty. Please setup filter correctly."
+#~ msgstr ""
+#~ "L’intervalle de prix du filtre est vide. Veuillez remplir correctement le "
+#~ "filtre."
+
+#~ msgid "price range"
+#~ msgstr "intervalle de prix"
+
+#~ msgid "sort by"
+#~ msgstr "trier par"
+
+#~ msgid "category"
+#~ msgstr "catégorie"
+
+#~ msgid "Search ..."
+#~ msgstr "Rechercher…"
+
+#~ msgid "tag"
+#~ msgstr "étiquette"
+
+#~ msgid "author"
+#~ msgstr "auteur"
+
+#~ msgid "featured"
+#~ msgstr "en avant"
+
+#~ msgid "on sale"
+#~ msgstr "promotion"
+
+#~ msgid "stock status"
+#~ msgstr "état du stock"
+
+#~ msgid "rating"
+#~ msgstr "note"
+
+#~ msgid "Displays Filters"
+#~ msgstr "Afficher les filtres"
+
+#~ msgid "Select filter"
+#~ msgstr "Sélectionner le filtre"
+
+#~ msgid "You have no filters"
+#~ msgstr "Vous n’avez aucun filtre"
+
+#~| msgid ""
+#~| "Attributes are displayed according to the order of their selection in "
+#~| "the input fields."
+#~ msgid ""
+#~ " Attributes are displayed according to the order of their selection in "
+#~ "the input fields  ."
+#~ msgstr ""
+#~ "Les attributs sont affichés selon l'ordre de leur sélection dans les "
+#~ "champs de saisie."
+
+#~ msgid ""
+#~ " Categories are displayed according to the order of their selection in "
+#~ "the input fields ."
+#~ msgstr ""
+#~ "Les catégories sont affichées dans l’ordre de leur sélection dans les "
+#~ "champs de saisie."
+
+#~ msgid ""
+#~ " Choose custom styles for filter titles. Any settings you leave blank "
+#~ "will default ."
+#~ msgstr ""
+#~ "Choisissez des styles personnalisés pour les titres de filtre. Toute "
+#~ "valeur vide aura sa valeur par défaut."
+
+#~| msgid ""
+#~| "Depending on whether you need one or several categories to be available "
+#~| "at the same time, you may show your categories list as checkbox or "
+#~| "dropdown."
+#~ msgid ""
+#~ " Depending on whether you need one or several categories to be available "
+#~ "at the same time, you may show your categories list as checkbox or "
+#~ "dropdown . "
+#~ msgstr ""
+#~ "Selon que vous avez besoin d'une ou de plusieurs catégories en même "
+#~ "temps, vous pouvez afficher votre liste de catégories sous forme de case "
+#~ "à cocher ou de liste déroulante."
+
+#~ msgid " directory 755 or 777"
+#~ msgstr "répertoire 755 ou 777"
+
+#~ msgid " Dropdown first option text  ."
+#~ msgstr "Texte de la première entrée de la liste déroulante."
+
+#~ msgid " Dropdown first option text."
+#~ msgstr "Texte de la première entrée de la liste déroulante."
+
+#~ msgid " Dropdown first option text. "
+#~ msgstr "Texte de la première entrée de la liste déroulante."
+
+#~ msgid ""
+#~ " Select a vertical or horizontal layout and set the count of columns  ."
+#~ msgstr ""
+#~ "Choisissez une mise en page verticale ou horizontale et définissez le "
+#~ "nombre de colonnes."
+
+#~| msgid ""
+#~| "Here you may select the sorting options available for your site users "
+#~| "(min two options)."
+#~ msgid ""
+#~ " Select the sorting options available for site users (min two options). "
+#~ msgstr ""
+#~ "Choisissez les options de tri disponibles pour vos utilisateurs (au moins "
+#~ "deux options)."
+
+#~| msgid "Selected attributes will be marked as default."
+#~ msgid " Selected attributes will be marked as default  ."
+#~ msgstr "Les attributs choisis seront sélectionnées par défaut."
+
+#~| msgid "Here you may set categories sorting by ascendance or descendance."
+#~ msgid " Set categories sorting by ascendance or descendance."
+#~ msgstr "Triez les catégories par ordre croissant ou décroissant."
+
+#~ msgid " Set maximum displayed height in frontend  ."
+#~ msgstr "Définissez la hauteur d’affichage maximale sur site."
+
+#~ msgid " Set maximum displayed height in frontend ."
+#~ msgstr "Définissez la hauteur d’affichage maximale sur site."
+
+#~ msgid " Set maximum displayed height in frontend. "
+#~ msgstr "Définissez la hauteur d’affichage maximale sur site."
+
+#~| msgid ""
+#~| "Show count display the number of products that have the appropriate "
+#~| "parameter (attribute, category, tag)."
+#~ msgid ""
+#~ " Show count display the number of products that have the appropriate "
+#~ "parameter (attribute, category, tag)."
+#~ msgstr ""
+#~ "Afficher le nombre affiche le nombre de produits qui ont le paramètre "
+#~ "approprié (attribut, catégorie, étiquette)."
+
+#~ msgid ""
+#~ " Show count display the number of products that have the appropriate "
+#~ "parameter ."
+#~ msgstr ""
+#~ "Afficher le nombre affiche le nombre de produits qui ont le paramètre "
+#~ "approprié."
+
+#~ msgid ""
+#~ " Show paternal and subsidiary categories (for checkbox list). If you "
+#~ "display only some categories, make sure that the parent categories are "
+#~ "selected ."
+#~ msgstr ""
+#~ " Affiche les catégories parents et enfants (pour une liste de case à "
+#~ "cocher). Si vous afficher seulement certaines catégories, assurez-vous "
+#~ "que les catégories parentes sont sélectionnées."
+
+#~| msgid ""
+#~| "Show search display the bar for searching by author name in the filter."
+#~ msgid ""
+#~ " Show search display the bar for searching by author name in the filter ."
+#~ msgstr "Affiche la barre de recherche par nom d'auteur dans le filtre."
+
+#~| msgid "You may show your roles list as checkbox or dropdown."
+#~ msgid " Show your roles list as checkbox or dropdown  ."
+#~ msgstr ""
+#~ "Affichez votre liste de rôle en tant que cases à cocher ou liste "
+#~ "déroulante."
+
+#~ msgid "\" target=\"_blank\">settings</a>."
+#~ msgstr "\" target=\"_blank\">settings</a>."
+
+#~ msgid "1-st level title"
+#~ msgstr "Titre de 1er niveau"
+
+#~ msgid "2-nd level title"
+#~ msgstr "Titre de 2ème niveau"
+
+#~ msgid "3-rd level title"
+#~ msgstr "Titre de 3ème niveau"
+
+#~| msgid "Additional text for 1-4 rating filter."
+#~ msgid "Additional text for 1-4 rating filter. "
+#~ msgstr "Texte additionnel pour filtre sur les notes de 1-4."
+
+#~| msgid "Additional text for 5-star rating filter."
+#~ msgid "Additional text for 5-star rating filter. "
+#~ msgstr "Texte additionnel pour filtre sur les notes à 5 étoiles."
+
+#~ msgid ""
+#~ "After filtration by attributes will be displayed product variation "
+#~ "instead of main variable product"
+#~ msgstr ""
+#~ "Après filtrage sur attributs, les variations de produits seront affichées "
+#~ "à la place du produit à variation principal."
+
+#~ msgid ""
+#~ "After filtration will be display products with variations, what have "
+#~ "filtered attributes"
+#~ msgstr ""
+#~ "Après filtrage seront affichés les produits à variations qui ont des "
+#~ "attributs filtrés."
+
+#~ msgid "Allow only one item from the list to be selected at a time"
+#~ msgstr "Ne permettre la sélection que d’un seul élément à la fois"
+
+#~ msgid "Already in the list"
+#~ msgstr "Déjà dans la liste"
+
+#~ msgid "Always display all attributes"
+#~ msgstr "Toujours afficher tous les attributs"
+
+#~ msgid "Always display all brands"
+#~ msgstr "Toujours afficher toutes les marques"
+
+#~ msgid "Always display all categories"
+#~ msgstr "Toujours afficher toutes les catégories"
+
+#~ msgid "Always display all tags"
+#~ msgstr "Toujours afficher toutes les étiquettes"
+
+#~ msgid "Always filtering by all products"
+#~ msgstr "Toujours filtrer depuis tous les produits"
+
+#~ msgid "And"
+#~ msgstr "Et"
+
+#~ msgid "and other"
+#~ msgstr "et autres"
+
+#~| msgid ""
+#~| "<p>And today, if you want, - you can help us. This is really simple - "
+#~| "you can just add small promo link to our site under your PopUps. This is "
+#~| "small step for you, but a big help for us! Sure, if you don't want - "
+#~| "just skip this and continue enjoy our software!</p>"
+#~ msgid ""
+#~ "And today, if you want, - you can help us. This is really simple - you "
+#~ "can just add small promo link to our site under your PopUps. This is "
+#~ "small step for you, but a big help for us! Sure, if you don't want - just "
+#~ "skip this and continue enjoy our software!"
+#~ msgstr ""
+#~ "<p>Et aujourd'hui, si vous le souhaitez, - vous pouvez nous aider. C'est "
+#~ "vraiment simple - vous pouvez simplement ajouter un petit lien "
+#~ "promotionnel à notre site sous vos PopUps. C'est un petit pas pour vous, "
+#~ "mais une grande aide pour nous ! Bien sûr, si vous ne le souhaitez pas - "
+#~ "passer ce message et continuez à profiter de notre logiciel !</p>"
+
+#~ msgid "Apply loader settings to all filters."
+#~ msgstr "Appliquer les paramètres de préchargement à tous les filtres."
+
+#~ msgid "Apply parameters from the address bar to display filter items"
+#~ msgstr ""
+#~ "Appliquer les paramètres de la barre d’adresse pour filtrer les éléments."
+
+#~| msgid ""
+#~| "Automatically recount product by selected filters (If product category "
+#~| "loading slowly - Disable this function)."
+#~ msgid ""
+#~ "Automatically recount product by selected filters (If product category "
+#~ "loading slowly - Disable this function). "
+#~ msgstr ""
+#~ "Recompter automatiquement les produits selon les filtres sélectionnés (Si "
+#~ "la catégorie de produit se charge lentement, désactivez cette fonction)."
+
+#~ msgid "Blocks"
+#~ msgstr "Blocs"
+
+#~ msgid "Blocks Styling"
+#~ msgstr "Style des blocs"
+
+#~| msgid "Brand"
+#~ msgid "brand"
+#~ msgstr "marque"
+
+#~ msgid "Buttons"
+#~ msgstr "Boutons"
+
+#~ msgid "Buttons Styling"
+#~ msgstr "Style des boutons"
+
+#~ msgid "Change status names"
+#~ msgstr "Changer les noms des états"
+
+#~ msgid "Check example"
+#~ msgstr "Voir l’exemple"
+
+#~ msgid "Checkbox label"
+#~ msgstr "Étiquette de case à cocher"
+
+#~ msgid ""
+#~ "Choose custom styles for filter blocks. Any settings you leave blank will "
+#~ "default ."
+#~ msgstr ""
+#~ "Choisissez des styles personnalisés pour les blocs de filtre. Toute "
+#~ "valeur vide aura sa valeur par défaut."
+
+#~ msgid "Collapse level"
+#~ msgstr "Profondeur de repliage"
+
+#~ msgid "Collapsible"
+#~ msgstr "Repliable"
+
+#~ msgid "Columns"
+#~ msgstr "Colonnes"
+
+#~ msgid "Contact us"
+#~ msgstr "Nous contacter"
+
+#~ msgid "contact us"
+#~ msgstr "contactez nous"
+
+#~ msgid "Content"
+#~ msgstr "Contenu"
+
+#~ msgid "Could be in both, child or parent"
+#~ msgstr "Peut être dans l’un des deux, parent ou enfant "
+
+#~ msgid ""
+#~ "Could you please do me a BIG favor and give it a 5-star rating on "
+#~ "WordPress? Just to help us spread the word and boost our motivation."
+#~ msgstr ""
+#~ "Pourriez-vous me faire une GROSSE faveur et donner 5 étoiles à cette "
+#~ "extension sur WordPress ? Juste pour nous aider à la faire connaître et "
+#~ "booster notre motivation."
+
+#~ msgid "Count parents with children"
+#~ msgstr "Compter les parents avec enfants"
+
+#~ msgid "Custom"
+#~ msgstr "Personnalisé"
+
+#~ msgid "Custom title"
+#~ msgstr "Titre personnalisé"
+
+#~ msgid ""
+#~ "Depending on whether you need one or several brands to be available at "
+#~ "the same time, show your brands list as checkbox or dropdown."
+#~ msgstr ""
+#~ "Selon que vous avez besoin d’une ou de plusieurs marques en même temps, "
+#~ "vous pouvez afficher votre liste de marques sous forme de case à cocher "
+#~ "ou de liste déroulante."
+
+#~ msgid "desktop"
+#~ msgstr "ordinateur"
+
+#~ msgid ""
+#~ "Disable the use of custom plugin styles for filter elements. This option "
+#~ "does not work in admin preview."
+#~ msgstr ""
+#~ "Désactive l’usage des styles personnalisés de l’extension pour les "
+#~ "filtres. Cette option ne fonctionne pas dans la prévisualisation "
+#~ "d'administration."
+
+#~ msgid "Display \"Show more\""
+#~ msgstr "Afficher \"Voir plus\""
+
+#~ msgid "Display brand description"
+#~ msgstr "Afficher la description de la marque"
+
+#~ msgid "Display brand description before product list"
+#~ msgstr "Afficher la description de la marque avant la liste de produit"
+
+#~ msgid "Display Hide Filters button"
+#~ msgstr "Afficher le bouton \"Masquer les filtres\""
+
+#~ msgid "Display on pages"
+#~ msgstr "Afficher sur les pages"
+
+#~ msgid "Display selected parameters of filters"
+#~ msgstr "Afficher les paramètres de filtres sélectionnés"
+
+#~ msgid "Display variations instead of variable product"
+#~ msgstr "Afficher les variations plutôt que le produit à variation"
+
+#~ msgid ""
+#~ "Do not leave empty fields. Enter `i` if you want the value to be "
+#~ "calculated automatically (for From field this will be the minimum price, "
+#~ "for field To - the maximum price"
+#~ msgstr ""
+#~ "Ne laissez aucun champs vie. Entrez ’i’ si vous souhaitez que la valeur "
+#~ "soit calculée automatiquement (pour le champs Depuis ce sera le prix "
+#~ "minimum, pour le champs Jusqu’à le prix maximum)"
+
+#~ msgid "Dropdown first option text. "
+#~ msgstr "Texte de la première entrée de la liste déroulante."
+
+#~ msgid "enabling Usage Statistics"
+#~ msgstr "activer Usage Statistics"
+
+#~ msgid "Exclude brand terms from filter by ids. Example input: 1,2,3 "
+#~ msgstr ""
+#~ "Exclue du filtre des termes de marques via leurs identifiants. Exemple "
+#~ "d'entrée: 1,2,3 "
+
+#~ msgid "Filter activation type"
+#~ msgstr "Mode d’activation du filtre"
+
+#~ msgid "Filter Block Height"
+#~ msgstr "Hauteur d’un bloc filtre"
+
+#~ msgid "Filter buttons"
+#~ msgstr "Boutons de filtre"
+
+#~ msgid "Filter content"
+#~ msgstr "Contenu du filtre"
+
+#~ msgid "Filter header"
+#~ msgstr "En-tête du filtre"
+
+#~ msgid "Filter loader"
+#~ msgstr "Préchargement du filtre"
+
+#~ msgid "Filter products in your store in most efficient way"
+#~ msgstr "Filtre les produits sur votre boutique de la façon la plus efficace"
+
+#~ msgid "Filter with children"
+#~ msgstr "Filtrer avec les enfants"
+
+#~ msgid "Filtering by variations attributes"
+#~ msgstr "Filtrer selon les attributs des variations"
+
+#~ msgid "Filtering of categories list"
+#~ msgstr "Filtrer la liste de catégories"
+
+#~ msgid "For long vertical lists, \"Show more\" will be displayed. "
+#~ msgstr "Pour les longues listes verticales, \"Afficher plus\" sera affiché."
+
+#~ msgid "Force show only current filter on page"
+#~ msgstr "Afficher uniquement ce filtre sur la page"
+
+#~ msgid "Force theme templates"
+#~ msgstr "Forcer les modèles du thème"
+
+#~ msgid "General styles"
+#~ msgstr "Styles généraux"
+
+#~ msgid "Hide attributes without products."
+#~ msgstr ""
+#~ "Masque les attributs pour lesquels il n’y a aucune correspondance produit."
+
+#~ msgid "Hide brands parent"
+#~ msgstr "Masquer les marques parents"
+
+#~ msgid "Hide brands without products"
+#~ msgstr "Masquer les marques sans produit"
+
+#~ msgid "Hide categories parent"
+#~ msgstr "Masquer les catégories parents"
+
+#~| msgid "Hide child taxonomy."
+#~ msgid "Hide child taxonomy"
+#~ msgstr "Masquer les taxonomies enfants."
+
+#~ msgid "Hide filter on shop pages without products"
+#~ msgstr "Masquer le filtre sur les pages boutique sans produits"
+
+#~ msgid "Horizontal"
+#~ msgstr "Horizontal"
+
+#~ msgid ""
+#~ "If checked, the entire list of brands will always be visible, otherwise "
+#~ "only available for filtered items."
+#~ msgstr ""
+#~ "Si sélectionné, la liste entière des marques sera toujours visible, sinon "
+#~ "seul celles disponibles pour les éléments filtrés le seront."
+
+#~ msgid ""
+#~ "If enabled, then show only parent elements, if there are children, they "
+#~ "are minimized."
+#~ msgstr ""
+#~ "Si activé, seuls les éléments parents sont affichés. S’ils ont des "
+#~ "enfants, ils sont minimisés."
+
+#~ msgid "If one filter block is open, other blocks are closed"
+#~ msgstr "Si un block est ouvert, les autres sont refermés"
+
+#~| msgid ""
+#~| "If this option is enabled, the \"< clear\" links appears at the page "
+#~| "next to the filter block titles. The presets of this filter block will "
+#~| "be deleted after clicking on the link."
+#~ msgid ""
+#~ "If this option is enabled, the \"< clear\" links appears at the page next "
+#~ "to the filter block titles. The presets of this filter block will be "
+#~ "deleted after clicking on the link. "
+#~ msgstr ""
+#~ "Si cette option est activée, les liens \"< Effacer\" apparaissent sur la "
+#~ "page à côté des titres des blocs de filtre. Les préréglages de ce bloc de "
+#~ "filtre seront supprimés après avoir cliqué sur le lien."
+
+#~| msgid ""
+#~| "If this option is enabled, the \"Clear\" button appears at the page. All "
+#~| "filter presets will be removed after pressing the button."
+#~ msgid ""
+#~ "If this option is enabled, the \"Clear\" button appears at the page. All "
+#~ "filter presets will be removed after pressing the button. "
+#~ msgstr ""
+#~ "Si cette option est activée, le bouton \"Effacer\" apparaît sur la page. "
+#~ "Tous les préréglages de filtre seront supprimés après avoir appuyé sur le "
+#~ "bouton."
+
+#~ msgid "If you have a question, %s and will do our best to help you"
+#~ msgstr ""
+#~ "Si vous avez une question, %s et nous ferons de notre mieux pour vous "
+#~ "aider."
+
+#~ msgid "Include child categories"
+#~ msgstr "Inclure les catégories enfants"
+
+#~ msgid "Include children"
+#~ msgstr "Inclure les enfants"
+
+#~ msgid "is available"
+#~ msgstr "est possible."
+
+#~ msgid "Layout"
+#~ msgstr "Mise en page"
+
+#~ msgid "Loader"
+#~ msgstr "Préchargement"
+
+#~ msgid "loader icon"
+#~ msgstr "Icône de préchargement"
+
+#~ msgid "loader word"
+#~ msgstr "Texte de préchargement"
+
+#~ msgid "Main"
+#~ msgstr "Principal"
+
+#~| msgid "Main Settings"
+#~ msgid "Main settings"
+#~ msgstr "Réglages généraux"
+
+#~ msgid "Make selected brands as default"
+#~ msgstr "Par défaut cocher les marques choisies "
+
+#~ msgid "mobile"
+#~ msgstr "mobile"
+
+#~ msgid "Multiblock taxonomy logic"
+#~ msgstr "Logique de taxonomie multi-blocs"
+
+#~ msgid "Name A to Z"
+#~ msgstr "Noms de A à Z"
+
+#~ msgid "Name Z to A"
+#~ msgstr "Noms de Z à A"
+
+#~ msgid "On Sale"
+#~ msgstr "En promo"
+
+#~ msgid "Only in child"
+#~ msgstr "Seulement dans les enfants"
+
+#~ msgid "Only in parent"
+#~ msgstr "Seulement dans le parent"
+
+#~| msgid "ON"
+#~ msgid "Or"
+#~ msgstr "Ou"
+
+#~ msgid "Over"
+#~ msgstr "Supérieur à"
+
+#~ msgid "Padding child list"
+#~ msgstr "Marge interne de la liste d’enfants"
+
+#~ msgid "Perfect brands"
+#~ msgstr "Marques parfaites"
+
+#~| msgid "Prewiew"
+#~ msgid "Preview"
+#~ msgstr "Prévisualisation"
+
+#~ msgid "Product brands"
+#~ msgstr "Marques produit"
+
+#~ msgid "Product container selector"
+#~ msgstr "Sélecteur du conteneur produit"
+
+#~ msgid "Product list / loader selector"
+#~ msgstr "Sélecteur de chargement/liste produits"
+
+#~ msgid "Product selection hierarchically"
+#~ msgstr "Sélection hiérarchique de produit"
+
+#~ msgid "Recount min/max price by selected filter"
+#~ msgstr "Recalculer les prix min/max en fonction des filtres définis"
+
+#~ msgid "Redirect to url"
+#~ msgstr "Rediriger vers l’url"
+
+#~ msgid "Remove actions before filtering"
+#~ msgstr "Supprimer les actions avant filtrage"
+
+#~ msgid "Reset all filters on page"
+#~ msgstr "Réinitialiser tous les filtres de la page"
+
+#~ msgid "Restrict filtering results only to selected categories"
+#~ msgstr "Restreindre les résultats aux catégories choisies uniquement"
+
+#~ msgid "Roles"
+#~ msgstr "Rôles"
+
+#~ msgid "Same behavior for active filter"
+#~ msgstr "Comportement identique pour le filtre actif"
+
+#~ msgid "Security check"
+#~ msgstr "Vérification de sécurité"
+
+#~ msgid ""
+#~ "Select a vertical or horizontal layout and set the count of columns. "
+#~ msgstr ""
+#~ "Choisissez une mise en page verticale ou horizontale et définissez le "
+#~ "nombre de colonnes."
+
+#~ msgid "Select Filter Buttons Order"
+#~ msgstr "Choisissez l’ordre des boutons de filtrage"
+
+#~ msgid "Select filters to add"
+#~ msgstr "Choisissez les filtres à ajouter"
+
+#~ msgid ""
+#~ "Select product brands to be displayed on your site from the list. If you "
+#~ "want to select several brands, hold the \"Shift\" button and click on "
+#~ "brand names. Or you can hold \"Ctrl\" and click on brand names. Press "
+#~ "\"Ctrl\" + \"a\" for checking all brands."
+#~ msgstr ""
+#~ "Choisissez dans la liste les marques à afficher sur le site. Si vous "
+#~ "voulez choisir plusieurs marques, maintenez la touche \"Majuscule\" et "
+#~ "cliquez sur les noms des marques. Vous pouvez aussi maintenir la touche "
+#~ "\"Ctrl\" et cliquer sur les noms des marques. Appuyez sur les touches "
+#~ "\"Ctrl\" + \"a\" pour choisir toutes les marques."
+
+#~ msgid ""
+#~ "Select the animated loader, which appears when filtering results are "
+#~ "loading <a href=\"https://woobewoo.com/documentation/loader-options/\" "
+#~ "target=\"_blank\">Learn More</a>."
+#~ msgstr ""
+#~ "Choisissez le préchargement animé, qui apparaît pendant que les résultats "
+#~ "du filtrage sont chargés <a href=\"https://woobewoo.com/documentation/"
+#~ "loader-options/\" target=\"_blank\">En savoir plus</a>."
+
+#~ msgid "Selected brands will be marked as default and hidden on frontend."
+#~ msgstr ""
+#~ "Les attributs choisis seront sélectionnées par défaut et masqués sur le "
+#~ "site."
+
+#~ msgid ""
+#~ "Selected parameters will be displayed in the top/bottom of the filter ."
+#~ msgstr "Les paramètres choisis seront affichés en haut/en bas du filtre."
+
+#~ msgid "Set brands sorting by ascendance or descendance."
+#~ msgstr "Triez les marques par ordre croissant ou décroissant."
+
+#~ msgid "Set maximum displayed height in frontend. "
+#~ msgstr "Définissez la hauteur d’affichage maximale sur site."
+
+#~ msgid "Set mobile/desktop breakpoint"
+#~ msgstr "Définir le point de rupture mobile/ordinateur"
+
+#~ msgid "Set number of products per row"
+#~ msgstr "Définir le nombre de produits par ligne"
+
+#~ msgid "Show category slugs in URL instead of IDs "
+#~ msgstr "Afficher les slugs de catégories dans l’URL au lieu des IDs"
+
+#~ msgid ""
+#~ "Show count display the number of products that have the appropriate "
+#~ "parameter. "
+#~ msgstr ""
+#~ "Afficher le nombre affiche le nombre de produits qui ont le paramètre "
+#~ "approprié."
+
+#~ msgid "Show only brands children."
+#~ msgstr "Affiche uniquement les marques enfants."
+
+#~ msgid "Show only categories children."
+#~ msgstr "Afficher uniquement les catégories enfant."
+
+#~ msgid "Show parameters without products as disabled"
+#~ msgstr "Afficher les paramètres sans produits comme désactivés"
+
+#~ msgid ""
+#~ "Show search display the bar for searching by brand name in the filter"
+#~ msgstr "Affiche la barre de recherche par nom de marque dans le filtre."
+
+#~| msgid ""
+#~| "Show search display the bar for searching by category name in the filter."
+#~ msgid ""
+#~ "Show search display the bar for searching by category name in the "
+#~ "filter . "
+#~ msgstr "Affiche la barre de recherche par nom de catégorie dans le filtre."
+
+#~ msgid "Show search field in multiple dropdown box"
+#~ msgstr ""
+#~ "Affiche un champs de recherche dans la liste déroulante à choix multiple."
+
+#~ msgid "Show search for dropdown"
+#~ msgstr "Afficher la recherche dans la liste déroulante"
+
+#~ msgid "Show when user tries to exit from your site."
+#~ msgstr "S’affiche lorsque l’utilisateur quitte votre site."
+
+#~ msgid "Single select mode"
+#~ msgstr "Mode sélection unique"
+
+#~ msgid "Sort as numbers"
+#~ msgstr "Trier en tant que nombres"
+
+#~ msgid "Step"
+#~ msgstr "Pas"
+
+#~| msgid ""
+#~| "Tags are displayed according to the order of their selection in the "
+#~| "input fields."
+#~ msgid ""
+#~ "Tags are displayed according to the order of their selection in the input "
+#~ "fields. "
+#~ msgstr ""
+#~ "Les étiquettes sont affichées selon l'ordre de leur sélection dans les "
+#~ "champs de saisie."
+
+#~| msgid "Next"
+#~ msgid "text"
+#~ msgstr "texte"
+
+#~ msgid "This sets the number of decimal points shown in displayed prices. "
+#~ msgstr ""
+#~ "Ceci définit le nombre de décimales montrées à l’affichage des prix."
+
+#~ msgid "Titles"
+#~ msgstr "Titres"
+
+#~ msgid "Titles Styling"
+#~ msgstr "Style des titres"
+
+#~ msgid ""
+#~ "Turn on if you want the sidebar to appear above content on mobile "
+#~ "devices. Some themes do not have blocks required for this option"
+#~ msgstr ""
+#~ "Activez si vous souhaitez que la sidebar apparaisse en haut du contenu "
+#~ "sur les smartphones. Certains thèmes ne proposent pas les éléments requis "
+#~ "pour cette option."
+
+#~ msgid "Under"
+#~ msgstr "Inférieur à"
+
+#~ msgid "Use custom number of decimals"
+#~ msgstr "Nombre personnalisé de décimales"
+
+#~ msgid "Use Custom Styles"
+#~ msgstr "Utiliser des styles personnalisés"
+
+#~ msgid "Use Custom tags"
+#~ msgstr "Utiliser des balises personnalisées"
+
+#~ msgid "Use filter titles as slugs for the filter clear buttons"
+#~ msgstr ""
+#~ "Utiliser les titres de filtres en tant que slugs pour les boutons "
+#~ "d’effacement de filtre"
+
+#~ msgid "Use theme styles"
+#~ msgstr "Utiliser les styles du thème"
+
+#~ msgid "Use Under/Over label instead of minimum and maximum values. "
+#~ msgstr ""
+#~ "Affiche un libellé \"Inférieur à/Supérieur à\" au lieu des valeurs "
+#~ "minimales et maximales."
+
+#~ msgid "Use Under/Over values"
+#~ msgstr "Utiliser des valeurs \"Inférieur à/Supérieur à\""
+
+#~ msgid "Vendors"
+#~ msgstr "Vendeurs"
+
+#~ msgid "vendors"
+#~ msgstr "vendeurs"
+
+#~ msgid "Vertical"
+#~ msgstr "Vertical"
+
+#~ msgid ""
+#~ "We will collect only our plugin usage statistic data - to understand Your "
+#~ "needs and make our solution better for You."
+#~ msgstr ""
+#~ "Nous ne collecterons que les données statistiques d’usage de notre "
+#~ "extension - pour mieux comprendre Vos besoins et rendre notre solution "
+#~ "meilleure pour Vous."
+
+#~ msgid "You can help us improve our plugin - by"
+#~ msgstr "Vous pouvez nous aider à améliorer cette extension - aussi "
+
+#~ msgid "You have no Filters for now."
+#~ msgstr "Vous n’avez aucun filtre pour l’instant."
+
+#~ msgid "your Filter"
+#~ msgstr "votre filtre"
+
+#~ msgid "Оnly one of"
+#~ msgstr "Seul un choix parmi"
+
+#~ msgid " filters have been changed"
+#~ msgstr "les filtres ont été changés"
+
+#~ msgid "Activate"
+#~ msgstr "Activer"
+
+#~ msgid "Add fields for manually entering a price range."
+#~ msgstr "Ajoute des champs pour enrter manuellement un intervalle de prix."
+
+#~ msgid "After"
+#~ msgstr "Après"
+
+#~ msgid "After / Right"
+#~ msgstr "Après / Droite"
+
+#~ msgid "After filtration will be scroll to products block"
+#~ msgstr "Après filtrage, la page défilera jusqu’au bloc des produits."
+
+#~ msgid "Alphabetical index"
+#~ msgstr "Index alphabétique"
+
+#~ msgid "animation"
+#~ msgstr "animation"
+
+#~ msgid "Animation speed"
+#~ msgstr "Vitesse d’animation"
+
+#~ msgid "Appearance on a frontend"
+#~ msgstr "Apparence sur le site"
+
+#~ msgid "Autocomplete"
+#~ msgstr "Autocomplétion"
+
+#~ msgid "Autoscroll to products after filtering"
+#~ msgstr "Défiler automatiquement jusqu’aux produits après filtrage"
+
+#~ msgid "Background"
+#~ msgstr "Fond"
+
+#~ msgid "Background bicolor"
+#~ msgstr "Fond bicolore"
+
+#~ msgid "Background color"
+#~ msgstr "Couleur du fond"
+
+#~ msgid "Background icon"
+#~ msgstr "Icône comme fond"
+
+#~ msgid "Before"
+#~ msgstr "Avant"
+
+#~ msgid "Before / Left"
+#~ msgstr "Avant / Gauche"
+
+#~ msgid "bicolored"
+#~ msgstr "bicolore"
+
+#~ msgid "Big skin"
+#~ msgstr "Aspect gros"
+
+#~ msgid "Block align"
+#~ msgstr "Alignement du bloc"
+
+#~ msgid "Block float"
+#~ msgstr "Bloc flottant"
+
+#~ msgid "Bold icon categories"
+#~ msgstr "Icônes de catégories en gras"
+
+#~ msgid "border"
+#~ msgstr "bordure"
+
+#~ msgid "Border color"
+#~ msgstr "Couleur de bordure"
+
+#~ msgid "Border width"
+#~ msgstr "Largeur de bordure"
+
+#~ msgid "Borders"
+#~ msgstr "Bordures"
+
+#~ msgid "Borders size"
+#~ msgstr "Taille de bordure"
+
+#~ msgid "bottom position"
+#~ msgstr "position en bas"
+
+#~ msgid ""
+#~ "Brands are displayed according to the order of their selection in the "
+#~ "input fields."
+#~ msgstr ""
+#~ "Les marques sont affichées suivant leur ordre de sélection dans le champs "
+#~ "de saisie."
+
+#~ msgid "Button height"
+#~ msgstr "Hauteur du bouton"
+
+#~ msgid "Button shadow"
+#~ msgstr "Ombre du bouton"
+
+#~ msgid "Button Type"
+#~ msgstr "Type du bouton"
+
+#~ msgid "Button width"
+#~ msgstr "Largeur du bouton"
+
+#~ msgid "Buttons Settings"
+#~ msgstr "Paramètres des boutons"
+
+#~ msgid "center"
+#~ msgstr "centre"
+
+#~ msgid "Check page category"
+#~ msgstr "Cocher la catégorie de la page"
+
+#~ msgid "Check parents"
+#~ msgstr "Cocher les parents"
+
+#~ msgid "Checkboxes"
+#~ msgstr "Cases à cocher"
+
+#~ msgid "checked"
+#~ msgstr "coché"
+
+#~ msgid "checkmark"
+#~ msgstr "coche"
+
+#~ msgid ""
+#~ "Choose custom styles for filter buttons. Any settings you leave blank "
+#~ "will default . "
+#~ msgstr ""
+#~ "Choisissez des styles personnalisés pour les boutons de filtre. Toute "
+#~ "valeur vide aura sa valeur par défaut."
+
+#~ msgid "Choose the color for unselected star's."
+#~ msgstr "Choisissez la couleur des étoiles désélectionnées."
+
+#~ msgid "Choose the color of the star's borders."
+#~ msgstr "Choisissez la couleur de borudre des étoiles."
+
+#~ msgid "Circle"
+#~ msgstr "Cercle"
+
+#~ msgid "Circle skin"
+#~ msgstr "Aspect cercle"
+
+#~ msgid "Clear All"
+#~ msgstr "Tout effacer"
+
+#~ msgid "Color"
+#~ msgstr "Couleur"
+
+#~ msgid "Color group"
+#~ msgstr "Groupes de couleurs"
+
+#~ msgid "Color of the selected item"
+#~ msgstr "Couleur de l'élément sélectionné"
+
+#~ msgid "Colors in row"
+#~ msgstr "Couleurs par ligne"
+
+#~ msgid "Colors Settings"
+#~ msgstr "Paramètres de couleurs"
+
+#~ msgid "Compact skin"
+#~ msgstr "Aspect compact"
+
+#~ msgid ""
+#~ "Congratulations! PRO version of %s plugin is activated and working fine!"
+#~ msgstr ""
+#~ "Félicitations! La version PRO de l’extension %s est active et "
+#~ "fonctionnelle!"
+
+#~ msgid ""
+#~ "Congratulations! You have successfully installed PRO version of %s plugin."
+#~ msgstr ""
+#~ "Félicitations! Vous avez installé avec succès la version PRO de "
+#~ "l’extension %s."
+
+#~ msgid "Copy normal styles"
+#~ msgstr "Copier les styles normaux"
+
+#~ msgid "Corners radius"
+#~ msgstr "Rayon des angles"
+
+#~ msgid "Count columns"
+#~ msgstr "Nombre de colonnes"
+
+#~ msgid "Custom meta-field"
+#~ msgstr "Champs personnalisé"
+
+#~ msgid "Disable number formatting"
+#~ msgstr "Désactiver le formatage du nombre"
+
+#~ msgid "Display \"Clear All\""
+#~ msgstr "Affiche le bouton \"Effacer tout\""
+
+#~ msgid "Display both of child and parent categories."
+#~ msgstr "Afficher les catégories enfants et parents"
+
+#~ msgid "Display child categories"
+#~ msgstr "Afficher les catégories enfants"
+
+#~ msgid ""
+#~ "Do not display products without prices in the filter and in the list of "
+#~ "products"
+#~ msgstr ""
+#~ "N’affiche pas les produits sans prix dans le filtre et la liste de "
+#~ "produits"
+
+#~ msgid "Excerpt"
+#~ msgstr "Extrait"
+
+#~ msgid "Exclude from search results"
+#~ msgstr "Exclure des résultats de recherche"
+
+#~ msgid "Extend parent select"
+#~ msgstr "Étendre la sélection du parent"
+
+#~ msgid "Filter products by different categories using and/or logic."
+#~ msgstr ""
+#~ "Filtrez les produits sur plusieurs catégories en utilisant une logique et/"
+#~ "ou. "
+
+#~ msgid ""
+#~ "Final step to finish Your PRO version setup - is to enter your Email and "
+#~ "License Key on this page. This will activate Your copy of software on "
+#~ "this site."
+#~ msgstr ""
+#~ "L’étape finale pour terminer le paramétrage de votre version PRO est "
+#~ "d’entrer votre e-mail et votre clé de licence sur cette page. Ceci "
+#~ "activera votre copie de l’extension sur ce site."
+
+#~ msgid ""
+#~ "Final step to finish Your PRO version setup - is to enter your Username "
+#~ "for codecanyon.net and Purchase code on this page. This will activate "
+#~ "Your copy of software on this site."
+#~ msgstr ""
+#~ "L’utime étape pour finaliser le paramétrage de votre version PRO est "
+#~ "d’entrer votre nom d’utilisateur codecanyon.net et le Code d’achat sur "
+#~ "cette page. Ceci activera votre copie du logiciel sur ce site."
+
+#~ msgid "Flat skin"
+#~ msgstr "Aspect plat"
+
+#~ msgid "flip"
+#~ msgstr "retournement"
+
+#~ msgid "Floating button on mobile"
+#~ msgstr "Bouton flottant sur mobile"
+
+#~ msgid "Font"
+#~ msgstr "Police"
+
+#~ msgid "Font color"
+#~ msgstr "Couleur de la police"
+
+#~ msgid "Font size"
+#~ msgstr "Taille de la police"
+
+#~ msgid "Force numeric values"
+#~ msgstr "Forcer des valeurs numériques"
+
+#~ msgid "Full opening"
+#~ msgstr "Tout ouvert"
+
+#~ msgid "Height"
+#~ msgstr "Hauteur"
+
+#~ msgid ""
+#~ "Here you may select the animated loader, which appears when filter is "
+#~ "loading."
+#~ msgstr ""
+#~ "Vous pouvez sélectionner le chargeur animé, qui apparaît lors du "
+#~ "chargement des résultats de filtrage."
+
+#~ msgid "hide"
+#~ msgstr "masquer"
+
+#~ msgid "Hide brands without products."
+#~ msgstr "Masque les marques sans produit."
+
+#~ msgid "Hide filter"
+#~ msgstr "Masquer le filtre"
+
+#~ msgid "HIDE FILTERS"
+#~ msgstr "Masquer les filtres"
+
+#~ msgid "Hide products without price"
+#~ msgstr "Masquer les produits sans prix"
+
+#~ msgid "hover"
+#~ msgstr "survol"
+
+#~ msgid "Icon color"
+#~ msgstr "Couleur d’icône"
+
+#~ msgid "Icon colors"
+#~ msgstr "Couleurs d'icône"
+
+#~ msgid "Icon size"
+#~ msgstr "Taille d'icône"
+
+#~ msgid "Icon Type"
+#~ msgstr "Type d'icône"
+
+#~ msgid "Icons spacing"
+#~ msgstr "Espacement des icônes"
+
+#~ msgid ""
+#~ "If parent filter category was selected then extend selection to child "
+#~ "categories."
+#~ msgstr ""
+#~ "Si la catégorie parent a été choisie comme critère de filtre, étend la "
+#~ "sélection aux catégories enfants."
+
+#~ msgid ""
+#~ "If the value is set, all buttons will have the same height and text that "
+#~ "does not fit will be hidden. Otherwise the height will depend on the "
+#~ "contents of each button."
+#~ msgstr ""
+#~ "Si cette valeur est définie, tous les boutons auront la même hauteur et "
+#~ "tout texte plus grand sera masqué. Sinon la hauteur dépendra du contenu "
+#~ "de chaque bouton."
+
+#~ msgid ""
+#~ "If the value is set, all buttons will have the same width and text that "
+#~ "does not fit will be hidden. Otherwise the width will depend on the "
+#~ "contents of each button."
+#~ msgstr ""
+#~ "Si cette valeur est définie, tous les boutons auront la même largeur et "
+#~ "tout texte plus grand sera masqué. Sinon la hauteur dépendra du contenu "
+#~ "de chaque bouton."
+
+#~ msgid ""
+#~ "If you do not add field names, search by meta fields will not be (List "
+#~ "separated by commas)"
+#~ msgstr ""
+#~ "Si vous n’ajoutez pas de noms de champs, la recherche par champs meta ne "
+#~ "se fera pas (Liste séparée par des virgules)"
+
+#~ msgid "Images size"
+#~ msgstr "Taille des images"
+
+#~ msgid "Inner spacing"
+#~ msgstr "Espacement interne"
+
+#~ msgid "jump"
+#~ msgstr "rebond"
+
+#~ msgid "left"
+#~ msgstr "gauche"
+
+#~ msgid "left position"
+#~ msgstr "position gauche"
+
+#~ msgid "License"
+#~ msgstr "Licence"
+
+#~ msgid "License Key"
+#~ msgstr "Clé de licence"
+
+#~ msgid "List meta fields to search only in them"
+#~ msgstr "Liste de champs meta sur lesquels rechercher uniquement"
+
+#~ msgid "Margin"
+#~ msgstr "Marge"
+
+#~ msgid "Max price"
+#~ msgstr "Prix max"
+
+#~ msgid "Max terms show"
+#~ msgstr "Maximum de termes affichés"
+
+#~ msgid "Meta fields"
+#~ msgstr "Champs meta"
+
+#~ msgid "Min price"
+#~ msgstr "Prix min"
+
+#~ msgid "Modern skin"
+#~ msgstr "Aspect moderne"
+
+#~ msgid "Multi selection"
+#~ msgstr "Sélection multiple"
+
+#~ msgid "Multiple Dropdown selected title"
+#~ msgstr "Titre de liste déroulante à sélection multiple"
+
+#~ msgid "none"
+#~ msgstr "aucune"
+
+#~ msgid "normal"
+#~ msgstr "normal"
+
+#~ msgid "Open / Close icon"
+#~ msgstr "Icône d'ouverture/fermeture"
+
+#~ msgid "Open / Close icon categories"
+#~ msgstr "Choix de l'icône d'ouverture/fermeture"
+
+#~ msgid "Open / Close icon position"
+#~ msgstr "Position de l'icône d'ouverture/fermeture"
+
+#~ msgid "Outer spacing"
+#~ msgstr "Espacement externe"
+
+#~ msgid "Padding"
+#~ msgstr "Marge interne"
+
+#~ msgid "per button"
+#~ msgstr "par bouton"
+
+#~ msgid "Please enter your Email address"
+#~ msgstr "Veuillez entrer votre adresse e-mail"
+
+#~ msgid "Please enter your License Key"
+#~ msgstr "Veuillez entrer votre clé de licence"
+
+#~ msgid "Position"
+#~ msgstr "Position"
+
+#~ msgid "Product"
+#~ msgstr "Produit"
+
+#~ msgid "Product selection"
+#~ msgstr "Sélection de produit"
+
+#~ msgid "Purchase code"
+#~ msgstr "Code d’achat"
+
+#~ msgid "pyramid gradient"
+#~ msgstr "gradient pyramidal"
+
+#~ msgid "Rail skin"
+#~ msgstr "Aspect rail"
+
+#~ msgid "Re-activate"
+#~ msgstr "Réactiver"
+
+#~ msgid "Redirect after filter selection"
+#~ msgstr "Rediriger après sélection d'un filtre"
+
+#~ msgid "Redirect only if click button"
+#~ msgstr "Rediriger seulement sur clic du bouton"
+
+#~ msgid "Remove icon"
+#~ msgstr "Supprimer l’icône"
+
+#~ msgid "Retreat from products block (in px)"
+#~ msgstr "Retrait du bloc produits (en px)"
+
+#~ msgid "right"
+#~ msgstr "droite"
+
+#~ msgid "rotate"
+#~ msgstr "rotation"
+
+#~ msgid "Round skin"
+#~ msgstr "Aspect rond"
+
+#~ msgid "Rounded"
+#~ msgstr "Arrondi"
+
+#~ msgid "Search button"
+#~ msgstr "Bouton de recherche"
+
+#~ msgid "Search by"
+#~ msgstr "Rechercher par"
+
+#~ msgid "Search by full word only"
+#~ msgstr "Rechercher par mot entier uniquement"
+
+#~ msgid "Search text"
+#~ msgstr "Texte de recherche"
+
+#~ msgid "Select default id"
+#~ msgstr "Définir l'identifiant par défaut"
+
+#~ msgid "Select icon"
+#~ msgstr "Choisir une icône"
+
+#~ msgid "Select On Sale status as default."
+#~ msgstr "Choisir un statut promo par défaut"
+
+#~ msgid ""
+#~ "Select product brands to be displayed on your site from the list. If you "
+#~ "want to select several brands, hold the \"Shift\" button and click on "
+#~ "category names. Or you can hold \"Ctrl\" and click on brand names. Press "
+#~ "\"Ctrl\" + \"a\" for checking all brands."
+#~ msgstr ""
+#~ "Choisissez dans la liste les marques à afficher sur le site. Si vous "
+#~ "voulez choisir plusieurs marques, maintenez la touche \"Majuscule\" et "
+#~ "cliquez sur les noms des marques. Vous pouvez aussi maintenir la touche "
+#~ "\"Ctrl\" et cliquer sur les noms des marques. Appuyez sur les touches "
+#~ "\"Ctrl\" + \"a\" pour choisir toutes les marques."
+
+#~ msgid "Select some stock status as default."
+#~ msgstr "Choisissez le status de stock par défaut."
+
+#~ msgid "Select the color of rating stars."
+#~ msgstr "Choisissez la couleur des étoiles des notes."
+
+#~ msgid "Selected brands will be marked as default."
+#~ msgstr "Les marques choisies seront sélectionnées par défaut."
+
+#~ msgid "Selects the default filter value by id"
+#~ msgstr "Définissez la valeur de filtre par défaut par son identifiant"
+
+#~ msgid "Set borders width in this order: color, top, right, bottom, left."
+#~ msgstr ""
+#~ "Définissez les largeurs de bordures dans cet ordre: haut, droite, bas, "
+#~ "gauche."
+
+#~ msgid "Set button shadow in this order: color, X, Y, blur, spread (px)."
+#~ msgstr ""
+#~ "Définissez l’ombre du bouton dans cet ordre: couleur, X, Y, flou, portée "
+#~ "(px)."
+
+#~ msgid "Set images width and height."
+#~ msgstr "Définir largeur et hauteur des images"
+
+#~ msgid "Set min/max prices"
+#~ msgstr "Définir les prix min/max"
+
+#~ msgid "Set tax rates"
+#~ msgstr "Définir le taux de taxe"
+
+#~ msgid "Set text shadow in this order: color, X, Y, blur."
+#~ msgstr "Définissez l’ombre du text dans cet ordre: couleur, X, Y, flou."
+
+#~ msgid ""
+#~ "Set the price min/max value. Doesn't working with recount prices option!"
+#~ msgstr ""
+#~ "Définissez la valeur min/max du prix. Ne fonctionne pas avec l’option de "
+#~ "recomptage des prix!"
+
+#~ msgid "Sharp skin"
+#~ msgstr "Aspect précis"
+
+#~ msgid "Should be at least in one"
+#~ msgstr "Doit être au moins dans une"
+
+#~ msgid "Should be in all selected"
+#~ msgstr "Doit être dans toutes celles choisies"
+
+#~ msgid "show"
+#~ msgstr "afficher"
+
+#~ msgid "Show Alphabetical index."
+#~ msgstr "Montrer l’index alphabétique"
+
+#~ msgid "Show Alphabetical index. Works only for parent elements."
+#~ msgstr ""
+#~ "Affiche un index alphabétique. Fonctionne uniquement sur les éléments "
+#~ "parents."
+
+#~ msgid "Show attribute input fields"
+#~ msgstr "Afficher les attributs bornes"
+
+#~ msgid ""
+#~ "Show count display the number of products that have the appropriate "
+#~ "parameter (attribute, category, tag, brand)."
+#~ msgstr ""
+#~ "Afficher le nombre affiche le nombre de produits qui ont le paramètre "
+#~ "approprié (attribut, catégorie, étiquette, marque)."
+
+#~ msgid "Show element image. Not working with dropdown."
+#~ msgstr ""
+#~ "Affiche l’image de l’élément. Ne fonctionne pas sur les listes "
+#~ "déroulantes."
+
+#~ msgid "Show filter icon while page is loading."
+#~ msgstr "Montrer l’icône du filtre au chargement de la page."
+
+#~ msgid "SHOW FILTERS"
+#~ msgstr "Afficher les filtres"
+
+#~ msgid "Show from and to labels"
+#~ msgstr "Afficher les étiquettes depuis et jusqu’à"
+
+#~ msgid "Show grid"
+#~ msgstr "Afficher la graduation"
+
+#~ msgid "Show images"
+#~ msgstr "Afficher les images"
+
+#~ msgid "Show labels"
+#~ msgstr "Afficher les étiquettes"
+
+#~ msgid "Show min and max labels"
+#~ msgstr "Afficher les étiquettes min et max"
+
+#~ msgid "simple gradient"
+#~ msgstr "gradient simple"
+
+#~ msgid "Size icon categories"
+#~ msgstr "Tailles de l’icône des catégories"
+
+#~ msgid "Size of stars in pixels."
+#~ msgstr "Tailles des étoiles en pixels."
+
+#~ msgid "Skin Settings"
+#~ msgstr "Paramètres d’aspect"
+
+#~ msgid "SKU"
+#~ msgstr "SKU"
+
+#~ msgid "Slider skin"
+#~ msgstr "Aspect de la glissière"
+
+#~ msgid "Square"
+#~ msgstr "Carré"
+
+#~ msgid "Square round edges"
+#~ msgstr "Carré aux coins arrondis"
+
+#~ msgid "Square rounded corners"
+#~ msgstr "Carré aux coins arrondis"
+
+#~ msgid "Square skin"
+#~ msgstr "Aspect carré"
+
+#~ msgid "Stars Settings"
+#~ msgstr "Paramètres des étoiles"
+
+#~ msgid "Switch Settings"
+#~ msgstr "Paramètres de l’interrupteur"
+
+#~ msgid "Switch Type"
+#~ msgstr "Aspect"
+
+#~ msgid "Tags"
+#~ msgstr "Étiquettes"
+
+#~ msgid "Text shadow"
+#~ msgstr "Ombre de texte"
+
+#~ msgid "The maximum number of terms to be shown before Show more button"
+#~ msgstr ""
+#~ "Définissez le nombre maximal de termes à afficher avant le bouton "
+#~ "\"Afficher plus\""
+
+#~ msgid "The values will be changed by the specified percentage"
+#~ msgstr "Les valeurs seront modifiées du pourcentage défini"
+
+#~ msgid ""
+#~ "There was a problem with sending request to our autentification server. "
+#~ "Please try latter."
+#~ msgstr ""
+#~ "Un problème est survenu lors de l’envoi de la requête à notre serveur "
+#~ "d’authentification. Veuillez réessayer plus tard."
+
+#~ msgid "this link"
+#~ msgstr "ce lien"
+
+#~ msgid ""
+#~ "Title that is displayed in the Multiple Dropdown when multiple list items "
+#~ "are selected"
+#~ msgstr ""
+#~ "Titre qui est affiché dans la liste déroulante à sélection multiple quand "
+#~ "plusieurs entrées sont choisies."
+
+#~ msgid "To extend PRO version license - follow %s."
+#~ msgstr "Pour prolonger la licence de la version PRO - suivez %s."
+
+#~ msgid "Transform attribute values to numeric"
+#~ msgstr "Transforme les valeurs des attributs en valeurs numériques."
+
+#~ msgid "Trolley skin"
+#~ msgstr "Aspect chariot"
+
+#~ msgid "Turn this on if you want to sort the values as numbers."
+#~ msgstr "Activez pour trier les valeurs en tant que nombres."
+
+#~ msgid "unchecked"
+#~ msgstr "décoché"
+
+#~ msgid "Unfolding children"
+#~ msgstr "Déplier les catégories enfants"
+
+#~ msgid "unicolored"
+#~ msgstr "monochrome"
+
+#~ msgid "Unselected icon color"
+#~ msgstr "Couleur d'icône désélectionnée"
+
+#~ msgid "Use as default"
+#~ msgstr "Utiliser par défaut"
+
+#~ msgid "Use exact values"
+#~ msgstr "Utiliser des valeurs exactes"
+
+#~ msgid "Use exact values instead of range"
+#~ msgstr "Utilise les valeurs exactes plutôt qu’un intervalle."
+
+#~ msgid "Use title as placeholder"
+#~ msgstr "Utiliser le titre comme texte d’indication"
+
+#~ msgid "Username"
+#~ msgstr "Nom utilisateur"
+
+#~ msgid "Username for codecanyon.net"
+#~ msgstr "Nom utilisateur pour codecanyon.net"
+
+#~ msgid ""
+#~ "We recommend use these option in tandem with \"Filter Block Width\" and "
+#~ "\"Select Filter Buttons Position\" options tryin to align block button on "
+#~ "left or right side of filter block."
+#~ msgstr ""
+#~ "Nous recommandons d’utiliser cette option en combinaison avec \"Largeur "
+#~ "du bloc filtre\" et \"Choisir la position des boutons du filtre\" afin "
+#~ "d’aligner les boutons du filtre sur le côté gauche ou droit du bloc "
+#~ "filtre."
+
+#~ msgid ""
+#~ "When you select a parent filter category, all child nodes will be "
+#~ "automatically opened."
+#~ msgstr ""
+#~ "Quand vous sélectionnez une catégorie parent, tous les nœuds enfants sont "
+#~ "automatiquement ouverts. "
+
+#~ msgid ""
+#~ "WooCommerce Product Filter by WooBeWoo PRO. Best plugins from Woobewoo!"
+#~ msgstr ""
+#~ "WooCommerce Product Filter by WooBeWoo PRO. Les meilleurs extension de "
+#~ "Woobewoo !"
+
+#~ msgid ""
+#~ "You can %s to extend your license, then - click on \"Re-activate\" button "
+#~ "to re-activate your PRO version."
+#~ msgstr ""
+#~ "Vous pouvez %s pour prolonger votre license, puis cliquez sur le bouton "
+#~ "\"Ré-activer\" pour réactiver votre version PRO."
+
+#~ msgid ""
+#~ "You can combine attributes into attribute groups. Only parent attributes "
+#~ "on the front will be displayed, but at the same time, all products that "
+#~ "have child attributes assigned will be selected"
+#~ msgstr ""
+#~ "Vous pouvez combiner les attributs en groupes d'attributs. Seuls les "
+#~ "attributs parents seront affichés, mais tous les produits qui ont des "
+#~ "attributs enfants seront affichés également."
+
+#~ msgid "You can enter a custom name for the meta field"
+#~ msgstr "Vous pouvez entrer un nom personnalisé pour le champs personnalisé"
+
+#~ msgid ""
+#~ "You need to activate your copy of PRO version %1$s plugin. Go to %2$s tab "
+#~ "and finish your software activation process."
+#~ msgstr ""
+#~ "Vous devez activer votre copie de la version PRO de l’extension %1$s. "
+#~ "Allez à l’onglet %1$s et finalisez le processus d’activation du logiciel."
+
+#~ msgid "Your license for PRO version of %s plugin - expired."
+#~ msgstr "La licence de la version PRO de l’extension %S a expiré."
+
+#~ msgid ""
+#~ "Your license is expired. Once you extend your license - you will be able "
+#~ "to Update PRO version. To extend PRO version license - follow %1$s, then "
+#~ "- go to %2$s tab and click on \"Re-activate\" button to re-activate your "
+#~ "PRO version."
+#~ msgstr ""
+#~ "Votre licence a expiré. Une fois votre licence prolongée, vous serez "
+#~ "capable de mettre à jour la version PRO. Pour prolonger votre licence PRO "
+#~ "- suivez %1$s, puis allez à l’onglet %2$s et cliquez sur le bouton "
+#~ "\"Réactiver\" pour réactiver votre version PRO."
+
+#~ msgid "Your License Key from your WooCommerce.com Subscriptions"
+#~ msgstr "Votre clé de licence selon votre abonnement WooCommerce.com"
+
+#~ msgid ""
+#~ "Your plugin %s PRO license is expired. It means your PRO version will "
+#~ "work as usual - with all features and options, but you will not be able "
+#~ "to update the PRO version and use PRO support."
+#~ msgstr ""
+#~ "Votre licence de l’extension PRO de %s est expirée. Cela signifie que "
+#~ "votre version PRO fonctionnera comme avant, avec toutes les fonctions et "
+#~ "options, mais vous ne serez plus capable de mettre à jour la version PRO "
+#~ "ou d’accéder à l’assistance PRO."
+
+#~ msgid "Your Purchase code from"
+#~ msgstr "Votre code d’achat de"
+
+#~ msgid "All Woocommerce Pages"
+#~ msgstr "Toutes les pages Woocommerce"
+
+#~ msgid "Auto filtering"
+#~ msgstr "Filtrage automatique"
+
+#~ msgid "Both"
+#~ msgstr "Haut et bas"
+
+#~ msgid "Checkbox list (multiple select)"
+#~ msgstr "Liste de cases à cocher (choix multiple)"
+
+#~ msgid "Clear-Filter"
+#~ msgstr "Effacer-Filtrer"
+
+#~ msgid "Colors"
+#~ msgstr "Couleurs"
+
+#~ msgid "Dropdown"
+#~ msgstr "Liste déroulante"
+
+#~ msgid "Filter-Clear"
+#~ msgstr "Filtrer-Effacer"
+
+#~| msgid "Show Filtering button"
+#~ msgid "Filtering button"
+#~ msgstr "Bouton de filtrage"
+
+#~ msgid "Multiple Dropdown"
+#~ msgstr "Liste déroulante (choix multiple)"
+
+#~ msgid "No products found"
+#~ msgstr "Aucun produit trouvé"
+
+#~ msgid "Only for desktop"
+#~ msgstr "Ordinateur uniquement"
+
+#~ msgid "Only for mobile"
+#~ msgstr "Mobile uniquement"
+
+#~| msgid "product category"
+#~ msgid "Product Category"
+#~ msgstr "Catégorie de produits"
+
+#~ msgid "Product Page"
+#~ msgstr "Page produit"
+
+#~| msgid "product tag"
+#~ msgid "Product Tag"
+#~ msgstr "Étiquette produit"
+
+#~ msgid "Radiobuttons list (single select)"
+#~ msgstr "Liste de boutons radio (choix unique)"
+
+#~| msgid "show"
+#~ msgid "Shop"
+#~ msgstr "Boutique"
+
+#~ msgid "Slider"
+#~ msgstr "Glissière"
+
+#~ msgid "Specific"
+#~ msgstr "Spécifiques"
+
+#~ msgid "Specific category"
+#~ msgstr "Catégories spécifiques"
+
+#~ msgid "Switch"
+#~ msgstr "Interrupteur"
+
+#~| msgid "Next"
+#~ msgid "Text"
+#~ msgstr "Texte"
+
+#~ msgid "Yes, show as close"
+#~ msgstr "Oui, afficher fermé"
+
+#~ msgid "Yes, show as opened"
+#~ msgstr "Oui, afficher ouvert"
+
+#~ msgid "Dropdown (single select)"
+#~ msgstr "Liste déroulante (choix unique)"
+
+#~ msgid "Symbol"
+#~ msgstr "Symbole"
+
+#~ msgid "Checkbox list"
+#~ msgstr "Liste de cases à cocher"
+
+#~ msgid "For all device"
+#~ msgstr "Tous les appareils"
+
+#~ msgid "Checkbox"
+#~ msgstr "Case à cocher"
+
+#~ msgid "Toggle Switch"
+#~ msgstr "Interrupteur"
+
+#~ msgid "ASC"
+#~ msgstr "Ordre croissant"
+
+#~ msgid "DESC"
+#~ msgstr "Ordre décroissant"
+
+#~ msgid "Multiline star rating"
+#~ msgstr "Note multi-ligne en étoiles"
+
+#~ msgid "Radiobuttons list"
+#~ msgstr "Liste de boutons radio"
+
+#~ msgid "Single line star rating"
+#~ msgstr "Note en étoiles en ligne"
