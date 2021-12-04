@@ -232,8 +232,9 @@
 	background: url('../../../img/tick.png') !important;
 	background-size: 100% 100% !important;
 }
+/* Custom checkbox by An */
 .wpfFilterWrapper[data-radio="1"] .wpfCheckbox label:before {
-	border-radius: 50% !important;
+	border-radius: 0% !important;
 	width: 16px;
 	height:16px;
 }

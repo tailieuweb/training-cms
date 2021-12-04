@@ -138,3 +138,7 @@
   color: #c7c3c3;
   font-size: 11px;
 }
+
+.shop-page-title.is-xlarge{
+  display: none;
+}
