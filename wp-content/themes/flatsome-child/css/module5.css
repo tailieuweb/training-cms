@@ -1,0 +1,140 @@
+/* 
+?Custom Color 
+*/
+.wfpDescription {
+  color: #2c313c;
+  letter-spacing: 1px;
+}
+.wpfValue {
+  color: #65605e;
+}
+.wpfDisplay bdi {
+  color: #65605e !important;
+}
+.wpfFilterVerScroll label {
+  border-bottom: 1px solid #f3f3f3;
+  padding-bottom: 5px;
+}
+.wpfFilterVerScroll .wpfCheckbox label {
+  border: none;
+}
+.shop-container .product-small .badge-container {
+  display: none;
+}
+.shop-container .product-small .title-wrapper .category {
+  display: none !important;
+}
+.shop-container .product-small .price-wrapper .star-rating {
+  display: none !important;
+}
+.shop-container .product-small .price-wrapper .price bdi {
+  color: #d00047 !important;
+}
+.shop-container .product-small .image-fade_in_back {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f3f3f3;
+}
+.shop-page-title .flex-col .medium-text-center {
+  display: flex;
+  align-items: center;
+}
+#main {
+  background: #f3f3f3 !important;
+}
+#main .row {
+  /* width: calc(100%); */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1080px;
+}
+#main .row.category-page-row {
+  padding-top: 10px !important;
+}
+#main .row.category-page-row .col {
+  background: white;
+}
+#main .row.category-page-row .col + .col {
+  /* margin-left: 30px;
+  background: yellow; */
+}
+.large-3 {
+  margin-top: 20px !important;
+  max-width: 25% !important;
+  height: -webkit-fill-available;
+}
+.col.large-9 {
+  background: #f3f3f3 !important;
+  margin-left: 0;
+  max-width: 75% !important;
+  flex-basis: 78% !important;
+  padding: 0;
+}
+.col.large-9 .shop-container .products.row {
+  width: 100% !important;
+  margin: 0;
+  padding-bottom: 10px;
+}
+.col.large-9 .shop-container .products .product-small {
+  padding: 5px;
+  margin: 20px 0 0 20px;
+}
+.col.large-9 .shop-container .products .product-small.box {
+  margin: 0;
+  height: 100%;
+}
+.gallery-columns-4 .gallery-item,
+.large-columns-4 > .col,
+.large-columns-4 .flickity-slider > .col {
+  max-width: calc(25% - 20px) !important;
+}
+.page-title-inner {
+  padding: 0 !important;
+}
+.flex-col {
+  display: flex;
+  align-items: center;
+}
+/*
+? Flex box Card 
+ */
+.col.large-9 .shop-container .products .product-small {
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+}
+.col.large-9 .shop-container .products .product-small .box-image {
+  margin: 0;
+}
+.col.large-9 .shop-container .products .product-small .box-image img {
+  height: 136px;
+  /* object-fit: contain; */
+  /*
+? flex-shrink: 0; co dinh kich thuoc 
+ */
+  flex-shrink: 0;
+}
+.col.large-9 .shop-container .products .product-small .box-text {
+  /*
+? flex-1:; lay tat ca kich thuoc con lai
+ */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.price-wrapper {
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+/* Custom count product */
+.wpfCheckboxHier.price label {
+  position: relative;
+}
+.wpfCheckboxHier.price label::after {
+  content: "(8)";
+  position: absolute;
+  right: 0;
+  color: #c7c3c3;
+  font-size: 11px;
+}
