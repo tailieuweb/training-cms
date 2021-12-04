@@ -322,12 +322,14 @@ class WP_Widget_Text extends WP_Widget {
 		// Undo suspension of legacy plugin-supplied shortcode handling.
 		if ( $should_suspend_legacy_shortcode_support ) {
 			add_filter( 'widget_text', 'do_shortcode', $widget_text_do_shortcode_priority );
-			?>
+
+		?>
 			<div class="text_footer">
-				<Row>
-					<col-md-8>
-					<span>
+				<span>
 				CÔNG TY TNHH ABC XYZ
+		        </span>
+				<span class="connect">
+				KẾT NỐI VỚI CHÚNG TÔI
 		        </span>
 				<br>
 				<span>
@@ -337,11 +339,9 @@ class WP_Widget_Text extends WP_Widget {
 				<span>
 				Website design by: <a href="muathem">MuaTheme.com</a>
 		        </span>
-		            </col>
-					<col-md-2>
-					jhasdjhsadjh
-					</col>
-		        </Row>
+				<span class="icon">
+					facebook
+		        </span>
 			</div>
 		<?php
 		echo $args['after_widget'];
