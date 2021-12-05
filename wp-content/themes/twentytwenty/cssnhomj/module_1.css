@@ -63,7 +63,7 @@ body:not(.overlay-header) .header-inner .toggle-wrapper::before {
   display: none;
   position: absolute;
   background-color: rgb(244 244 244);
-  min-width: 106px;
+  min-width: 96px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 5px;
