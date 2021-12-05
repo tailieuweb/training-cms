@@ -106,7 +106,7 @@ function twentytwenty_site_description( $echo = true ) {
 		return;
 	}
 
-	$wrapper = '<div class="site-description">%s</div><!-- .site-description -->';
+	$wrapper = '<a href="http://wordpress.local" class="site-description">%s</a><!-- .site-description -->';
 
 	$html = sprintf( $wrapper, esc_html( $description ) );
 
