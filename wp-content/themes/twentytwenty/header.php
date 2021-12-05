@@ -19,7 +19,13 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
     <link rel="profile" href="https://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_1.css" type="text/css"
+        media="screen" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_2.css" type="text/css"
         media="screen" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_4.css" type="text/css"
@@ -30,7 +36,7 @@
         media="screen" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_9.css" type="text/css"
         media="screen" />
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_7.css" type="text/css"
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_7.css" type="text/css"
         media="screen" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_10.css" type="text/css"
         media="screen" />
@@ -192,14 +198,21 @@
                         </button><!-- .search-toggle -->
 
                     </div>
-                    <div class="toggle-wrapper admin-toggle-wrapper">
-                        <a class="toggle admin-toggle desktop-admin-toggle" href="http://wordpress.local/wp-admin">
-                            <span class="toggle-inner">
-                                <?php twentytwenty_the_theme_svg( 'admin' ); ?>
-                                <span
-                                    class="toggle-text"><?php _ex( 'Account', 'toggle text', 'twentytwenty' ); ?></span>
-                            </span>
-                        </a><!-- .search-toggle -->
+                    
+                    <div class="dropdown">
+                        <div class="dropbtn">
+                            <div class="icon">
+                                <i class="fa fa-user-circle-o"></i>
+                            </div>
+                            <div class="text">
+                                <p>Account <span class="caret"></span></p>
+                            </div>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="http://wordpress.local/admin">Admin</a>
+                            <a href="http://wordpress.local/">Home</a>
+                            <a href="http://wordpress.local/wp-login.php?action=logout&amp;_wpnonce=30b03db75e">Logout</a>
+                        </div>
                     </div>
 
                     <?php
