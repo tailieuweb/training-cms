@@ -20,24 +20,13 @@
 .header-footer-group .header-inner {
   height: 80px;
 }
-.header-inner
-  .header-navigation-wrapper
-  .header-toggles
-  .toggle-wrapper
-  .toggle {
-  height: 40px;
-  background: rgb(246 246 246);
-}
-.header-inner .header-navigation-wrapper {
-  margin-right: 10px;
+
+.header-inner .primary-menu-wrapper + .header-toggles .toggle-wrapper:first-child::before {
+  display: none;
 }
 
-.admin-toggle-wrapper .dropdown{
-  list-style: none;
-}
-
-.dropdown-toggle::after{
-  display: none !important;
+body:not(.overlay-header) .header-inner .toggle-wrapper::before {
+  display: none;
 }
 
 .dropbtn {

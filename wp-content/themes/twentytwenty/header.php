@@ -196,27 +196,7 @@
                         </button><!-- .search-toggle -->
 
                     </div>
-                    <!-- <div class="toggle-wrapper admin-toggle-wrapper">
-                        
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                <div class="wrapper">
-                                    <div class="icon">
-                                        <i class="fa fa-user-circle-o"></i>
-                                    </div>
-                                    <div class="text">
-                                        <p>Account <span class="caret"></span></p>
-                                    </div>
-                                </div>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="http://wordpress.local/admin">Admin</a></li>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Logout</a></li>
-                            </ul>
-                        </li>
-                    </div> -->
-
+                    
                     <div class="dropdown">
                         <div class="dropbtn">
                             <div class="icon">
