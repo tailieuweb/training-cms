@@ -48,7 +48,7 @@ body:not(.overlay-header) .header-inner .toggle-wrapper::before {
 }
 
 .dropdown .dropbtn .text{
-  margin-top: 3px;
+  margin-top: 6px;
   color: #717477;
   font-weight: 600;
   font-size: 11px;
