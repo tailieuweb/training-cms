@@ -1060,7 +1060,7 @@ class WoofiltersViewWpf extends ViewWpf {
 
 		$html .= $this->generateFilterHeaderHtml($filter, $filterSettings, $noActive);
 		$html .= $this->generateDescriptionHtml($filter);
-		$html .= '<div class="wpfCheckboxHier">';
+		$html .= '<div class="wpfCheckboxHier price">';
 		if ('list' === $type) {
 			$maxHeight = $this->getFilterSetting($settings, 'f_max_height', 0, true);
 			if ($maxHeight > 0) {

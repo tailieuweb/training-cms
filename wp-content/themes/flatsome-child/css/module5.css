@@ -1,15 +1,42 @@
 /* 
+?Custom Header 
+*/
+.featured-title .woocommerce-result-count {
+  display: block !important;
+}
+.title-overlay {
+  /* background-color: #f3f3f3 !important; */
+}
+.form-flat select{
+  border-radius: 0px !important;
+}
+/* 
 ?Custom Color 
 */
 .wfpDescription {
   color: #2c313c;
   letter-spacing: 1px;
+  padding-bottom: 10px !important;
+  position: relative;
+}
+.wfpDescription:before {
+  background: linear-gradient(to right, green, blue);
+  bottom: 0;
+  content: "";
+  height: 1px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
 }
 .wpfValue {
   color: #65605e;
 }
 .wpfDisplay bdi {
   color: #65605e !important;
+}
+.wpfFilterVerScroll {
+  padding-top: 30px !important;
 }
 .wpfFilterVerScroll label {
   border-bottom: 1px solid #f3f3f3;
@@ -139,6 +166,6 @@
   font-size: 11px;
 }
 
-.shop-page-title.is-xlarge{
+.shop-page-title.is-xlarge {
   display: none;
 }
