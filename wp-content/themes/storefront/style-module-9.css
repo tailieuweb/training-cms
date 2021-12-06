@@ -6,6 +6,7 @@
 
 .site-header-custom {
     margin: 0 0 !important;
+    position: relative;
     /* padding: 0 60px; */
 }
 
@@ -92,6 +93,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    overflow: hidden;
 }
 
 #back-header .container .row {
@@ -155,6 +157,22 @@
     transition: transform .5s;
 }
 
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 17px;
+    min-width: 150px;
+    background-color: #272727;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+nav>ul>li:hover>ul {
+    display: block;
+}
+
 .nav-logo li>a:hover::after {
     transform: scaleX(1);
     transform-origin: left center;
@@ -205,4 +223,13 @@
     border-radius: 50px;
     text-align: center;
     margin-left: 4px;
+}
+
+.cart-section .cart-list {
+    display: none;
+}
+
+.cart-section a:hover .cart-list {
+    display: block;
+    position: absolute;
 }

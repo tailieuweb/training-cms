@@ -6,6 +6,18 @@
  *
  * @package storefront
  */
+$orderby = 'name';
+$order = 'asc';
+$hide_empty = false ;
+$cat_args = array(
+    'orderby'    => $orderby,
+    'order'      => $order,
+    'hide_empty' => $hide_empty,
+);
+ 
+$product_categories = get_terms( 'product_cat', $cat_args );
+ 
+
 
 ?>
 <!doctype html>
@@ -101,7 +113,21 @@
 								<nav class="menu-site">
 									<ul class="menu-list">
 										<li class="menu-item active"><a href="#">Home</a></li>
-										<li class="menu-item"> <a href="#">Categories</a></li>
+										<li class="menu-item cate"> <a href="#">Categories</a>
+										<!-- <ul class="cate-list dropdown-menu">
+										<?php 
+										// if( !empty($product_categories) ){
+										// 	foreach ($product_categories as $key => $category) {
+										// 		echo '<li>';
+										// 		echo '<a href="'.get_term_link($category).'" >';
+										// 		echo $category->name;
+										// 		echo '</a>';
+										// 		echo '</li>';
+										// 	}
+										// }
+										?>
+										</ul> -->
+									</li>
 									</ul>
 								</nav>
 								<div class="logo">
@@ -139,6 +165,9 @@
 										</span>
 										<span class="cart-number">0</span>
 									</a>
+									<!-- <div class="cart-list">
+										<p>No Product in cart</p>
+									</div> -->
 								</div>
 							</div>
 
