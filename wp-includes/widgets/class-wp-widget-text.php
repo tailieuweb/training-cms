@@ -340,7 +340,7 @@ class WP_Widget_Text extends WP_Widget {
 				Website design by: <a href="muathem">MuaTheme.com</a>
 		        </span>
 				<span class="icon">
-					facebook
+					<a href="#" class="fa fa-facebook"></a>
 		        </span>
 			</div>
 		<?php

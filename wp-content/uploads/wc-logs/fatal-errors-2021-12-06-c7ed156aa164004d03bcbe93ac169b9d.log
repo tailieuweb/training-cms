@@ -1,0 +1,17 @@
+2021-12-06T06:47:15+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\training-cms\wp-includes\functions.php on line 4451
+
+2021-12-06T14:08:30+00:00 CRITICAL Uncaught Error: Class "WP_Widget_Text" not found in C:\xampp\htdocs\training-cms\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\training-cms\wp-includes\widgets.php(115): WP_Widget_Factory->register('WP_Widget_Text')
+#1 C:\xampp\htdocs\training-cms\wp-includes\widgets.php(1831): register_widget('WP_Widget_Text')
+#2 C:\xampp\htdocs\training-cms\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#3 C:\xampp\htdocs\training-cms\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\training-cms\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\training-cms\wp-settings.php(587): do_action('init')
+#6 C:\xampp\htdocs\training-cms\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\training-cms\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\training-cms\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\training-cms\index.php(17): require('C:\\xampp\\htdocs...')
+#10 {main}
+  thrown in C:\xampp\htdocs\training-cms\wp-includes\class-wp-widget-factory.php on line 61
+
