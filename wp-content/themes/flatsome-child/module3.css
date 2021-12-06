@@ -1,8 +1,73 @@
 .text_footer {
-    margin-left: 16px;
-    margin-bottom: 100px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+    color: #1291f8;
+    background: #004383;
     
 }
+.text_footer .linkmua{
+    color: #4d9f7a;
+}
 .text_footer .connect{
-    margin-left: 680px;
+    margin-left: 760px;
+}
+div#text-15 {
+    margin-bottom: 0 !important;
+}
+.text_footer .icon{
+    margin-left: 730px;
+    font-size: 20px;
+    padding-right: 30px;
+}
+.text_footer .icon .icon-facebook{
+    background: #3a589d;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: default;
+    position: relative;
+    padding-left: 5px;
+    padding-top: 5px;
+    color: white;
+}
+.text_footer .icon .icon-instagram{
+    background: #3b6994;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: default;
+    position: relative;
+    padding-left: 5px;
+    padding-top: 3px;
+    color: white;
+}
+.text_footer .icon .icon-pinterest{
+    background: #cb2320;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: default;
+    position: relative;
+    padding-left: 5px;
+    padding-top: 3px;
+    color: white;
+}
+.text_footer .icon .icon-youtube{
+    background:#c33223;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: default;
+    position: relative;
+    padding-left: 5px;
+    padding-top: 3px;
+    color: white;
+}
+.absolute-footer.dark.medium-text-center.small-text-center {
+    background: #004383;
+    color: #1291f8;
+}
+.footer-widgets.footer.footer-2.dark{
+    background: #004383;
+    color: #1291f8;
 }

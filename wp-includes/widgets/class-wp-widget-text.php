@@ -320,31 +320,9 @@ class WP_Widget_Text extends WP_Widget {
 		remove_filter( 'shortcode_atts_gallery', array( $this, '_filter_gallery_shortcode_attrs' ) );
 
 		// Undo suspension of legacy plugin-supplied shortcode handling.
+		
 		if ( $should_suspend_legacy_shortcode_support ) {
 			add_filter( 'widget_text', 'do_shortcode', $widget_text_do_shortcode_priority );
-
-		?>
-			<div class="text_footer">
-				<span>
-				CÔNG TY TNHH ABC XYZ
-		        </span>
-				<span class="connect">
-				KẾT NỐI VỚI CHÚNG TÔI
-		        </span>
-				<br>
-				<span>
-				GPKD số: 010222XXXX do Sở KH & ĐT Thành phố Hà Nội cấp ngày 09 tháng 12 năm 2001.
-		        </span>
-				<br>
-				<span>
-				Website design by: <a href="muathem">MuaTheme.com</a>
-		        </span>
-				<span class="icon">
-					<a href="#" class="fa fa-facebook"></a>
-		        </span>
-			</div>
-		<?php
-		echo $args['after_widget'];
 		}
 
 		echo $args['before_widget'];
