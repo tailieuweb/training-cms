@@ -1,14 +1,32 @@
 /* 
 ?Custom Header 
 */
+.page-title-inner{
+  text-shadow: none !important;
+}
 .featured-title .woocommerce-result-count {
   display: block !important;
+  color: #65605e;
 }
 .title-overlay {
-  /* background-color: #f3f3f3 !important; */
+  background-color: #fff !important;
 }
-.form-flat select{
-  border-radius: 0px !important;
+.form-flat select {
+  border-radius: 0px !important;  
+}
+.orderby {
+  background-image: url("../tải\ xuống.svg") !important;
+  border-color: #c9c9c9 !important;
+  background-color: none !important;
+}
+.breadcrumbs {
+  color: #222 !important;
+}
+.dark .breadcrumbs a {
+  color: #c2c2c2 !important;
+}
+.woocommerce-ordering {
+  color: #65605e;
 }
 /* 
 ?Custom Color 
