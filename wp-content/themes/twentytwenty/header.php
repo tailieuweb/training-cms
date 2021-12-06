@@ -93,7 +93,7 @@
                         action="http://wordpress.local/">
                         <label for="search-form-1">
                             <span class="screen-reader-text">Search for:</span>
-                            <input type="search" id="search-form-1" class="search-field" placeholder="Search …" value=""
+                            <input type="search" id="search-form-1" class="search-field" placeholder="Search" value=""
                                 name="s">
                         </label>
                         <input type="submit" class="search-submit" value="Submit">
