@@ -311,7 +311,7 @@ if ( ! function_exists( 'storefront_homepage_header' ) ) {
 		?>
 		<header class="entry-header">
 			<?php
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			// the_title( '<h1 class="entry-title">', '</h1>' );
 			?>
 		</header><!-- .entry-header -->
 		<?php
@@ -348,15 +348,125 @@ if ( ! function_exists( 'storefront_page_content' ) ) {
 	 */
 	function storefront_page_content() {
 		?>
+		<div class="module-home-top">
+			<div class="home-top-wrapper">
+				<div class="home-categoryMenu-wrapper">
+					<!-- <div>#module-home-categoryMenu is here!</div> -->
+					<?php
+						$args = array(
+							'taxonomy'   => "product_cat",
+						);
+						$product_categories = get_terms($args);
+						// var_dump(($product_categories));
+					?>
+					<div class="categoryMenu">
+						<input type="checkbox" id="input_isMenuOpened" checked >
+						<label class="categoryMenu__top-section" for="input_isMenuOpened">
+							<div class="categoryMenu-title">
+								<span class="menu-icon">
+									<span class="bar-1"></span>
+									<span class="bar-2"></span>
+									<span class="bar-3"></span>
+									<span class="bar-4"></span>
+								</span>
+								<span>Categories</span>
+							</div>
+						</label>
+						<div class="categoryMenu__bottom-section">
+							<ul class="categoryMenu__list">
+								<?php
+									foreach ($product_categories as $key => $value) {
+										if ($value->parent == 0) {
+								?>
+								<li class="categoryMenu__list__item">
+									<div class="category-wrapper">
+										<span class="category">
+											<span class="category-icon"><i class="fas fa-tag"></i></span>
+											<span><?php echo $value->name; ?></span>
+										</span>
+										<span class="arrow_r-icon">></span>
+									</div>
+									<div class="sub-category">
+									<?php
+										$countSubCate = 0;
+										foreach ($product_categories as $key2 => $value2) {
+											if ($value2->parent == $value->term_id) {
+												$countSubCate++;
+												echo ('<div class="sub-item">' . $value2->name . '</div>');
+											}
+										}
+										if ($countSubCate == 0) {
+											echo ('
+												<div class="sub-item">
+													<span class="category-icon"><i class="fas fa-times"></i></span>
+													<span>No subcategories</span>
+												</div>
+											');
+										}
+									?>
+									</div>
+								</li>
+								<?php
+										}
+									}
+								?>
+								<li class="categoryMenu__list__item"><span class="category"><span class="category-icon">x</span><span>Item 1</span></span><span class="arrow_r-icon">></span></li>
+								<li class="categoryMenu__list__item"><span class="category"><span class="category-icon">x</span><span>Item 2</span></span><span class="arrow_r-icon">></span></li>
+								<li class="categoryMenu__list__item"><span class="category"><span class="category-icon">x</span><span>Item 3</span></span><span class="arrow_r-icon">></span></li>
+								<li class="categoryMenu__list__item"><span class="category"><span class="category-icon">x</span><span>Item 4</span></span><span class="arrow_r-icon">></span></li>
+								<li class="categoryMenu__list__item"><span class="category"><span class="category-icon">x</span><span>Item 5</span></span><span class="arrow_r-icon">></span></li>
+								<li class="categoryMenu__list__item"><span class="category"><span class="category-icon">x</span><span>Item 6</span></span><span class="arrow_r-icon">></span></li>
+								<li class="categoryMenu__list__item"><span class="category"><span class="category-icon">x</span><span>Item 7</span></span><span class="arrow_r-icon">></span></li>
+								<li class="categoryMenu__list__item"><span class="category"><span class="category-icon">x</span><span>Item 8</span></span><span class="arrow_r-icon">></span></li>
+								<li class="categoryMenu__list__item"><span class="category"><span class="category-icon">x</span><span>Item 9</span></span><span class="arrow_r-icon">></span></li>
+								<li class="categoryMenu__list__item"><span class="category"><span class="category-icon">x</span><span>Item 10</span></span><span class="arrow_r-icon">></span></li>
+								<li class="categoryMenu__list__item"><span class="category"><span class="category-icon">x</span><span>Item 11</span></span><span class="arrow_r-icon">></span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="home-banner-wrapper">
+					<!-- <div>#module-home-banner is here!</div> -->
+					<?php
+						// $args = array(
+						// 	'category' => array( 'smartphone' ),
+						// 	'orderby'  => 'name',
+						// );
+						// $products = wc_get_products( $args );
+						// var_dump($products);
+
+						// $post = get_post();
+						// var_dump($post->post_content);
+
+						$args = array(
+							'post_type' => 'page',
+						);
+						$posts = get_posts($args);
+						$banner = '';
+						foreach ($posts as $key => $value) {
+							if ($value->post_name == 'homepage') {
+								// echo( $value->post_content );
+								// NOT WORKS: preg_match('/<div class="wp-block-cover">(.*?)<\/div>/msU', $value->post_content, $match);
+								$banner = preg_replace('/<!-- \/wp:cover -->(.*?)/msU', '', $value->post_content);
+							}
+						}
+						$banner = preg_replace('/\saligncenter/', '', $banner);
+						echo( $banner );
+					?>
+				</div>
+			</div>
+		</div>
 		<div class="entry-content">
-			<?php the_content(); ?>
 			<?php
-				wp_link_pages(
-					array(
-						'before' => '<div class="page-links">' . __( 'Pages:', 'storefront' ),
-						'after'  => '</div>',
-					)
-				);
+				// the_content();
+			?>
+			<?php
+				// wp_link_pages(
+				// 	array(
+				// 		'before' => '<div class="page-links">' . __( 'Pages:', 'storefront' ),
+				// 		'after'  => '</div>',
+				// 	)
+				// );
 			?>
 		</div><!-- .entry-content -->
 		<?php
