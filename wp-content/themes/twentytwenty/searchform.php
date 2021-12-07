@@ -30,4 +30,4 @@ if ( empty( $twentytwenty_aria_label ) && ! empty( $args['label'] ) ) {
 		<input type="search" id="<?php echo esc_attr( $twentytwenty_unique_id ); ?>" class="search-field search-cont" placeholder="Search topics or keywwords" value="" name="s" />
 	</label>
 	<input type="submit" class="search-submit module-4-searchSub" value="<?php echo esc_attr_x( 'Search', 'submit button', 'twentytwenty' ); ?>" />
-</form>
+	page</form>

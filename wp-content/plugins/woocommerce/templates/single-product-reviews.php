@@ -61,7 +61,7 @@ if ( ! comments_open() ) {
 			endif;
 			?>
 		<?php else : ?>
-			<p class="woocommerce-noreviews"><?php esc_html_e( 'There are no reviews yet.', 'woocommerce' ); ?></p>
+			<p class="woocommerce-noreviews cmtNone"><?php esc_html_e( 'There are no reviews yet.', 'woocommerce' ); ?></p>
 		<?php endif; ?>
 	</div>
 
@@ -131,7 +131,7 @@ if ( ! comments_open() ) {
 					</select></div>';
 				}
 
-				$comment_form['comment_field'] .= '<p class="comment-form-comment"><label for="comment">' . esc_html__( 'Your review', 'woocommerce' ) . '&nbsp;<span class="required">*</span></label><textarea id="comment" name="comment" cols="45" rows="8" required></textarea></p>';
+				$comment_form['comment_field'] .= '<p class="comment-form-comment cmtYR"><label for="comment">' . esc_html__( 'Your review', 'woocommerce' ) . '&nbsp;<span class="required">*</span></label><textarea class="cmtKhung" id="comment" name="comment" cols="45" rows="8" placeholder="Add new comment..." required></textarea></p>';
 
 				comment_form( apply_filters( 'woocommerce_product_review_comment_form_args', $comment_form ) );
 				?>
