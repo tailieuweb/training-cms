@@ -30,6 +30,7 @@ if ( $max_value && $min_value === $max_value ) {
 	<div class="quantity">
 		<?php do_action( 'woocommerce_before_quantity_input_field' ); ?>
 		<label class="screen-reader-text" for="<?php echo esc_attr( $input_id ); ?>"><?php echo esc_attr( $label ); ?></label>
+		<label class="quantity-module8" for="">Quantity: </label>
 		<input
 			type="number"
 			id="<?php echo esc_attr( $input_id ); ?>"
@@ -43,6 +44,8 @@ if ( $max_value && $min_value === $max_value ) {
 			size="4"
 			placeholder="<?php echo esc_attr( $placeholder ); ?>"
 			inputmode="<?php echo esc_attr( $inputmode ); ?>" />
+
+
 		<?php do_action( 'woocommerce_after_quantity_input_field' ); ?>
 	</div>
 	<?php

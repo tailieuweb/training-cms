@@ -1,1 +1,17 @@
 /* Css for Module 8 project */
+label.quantity-module8 {
+    color: #6d6b67;
+    font-weight: 700;
+}
+
+button.single_add_to_cart_button.button.alt {
+    background: #4a8eff;
+    color: #333333;
+}
+.quantity .qty {
+    width: 3.235801em;
+    text-align: end;
+    background: white;
+    border: 1px solid;
+    margin-left: 20px;
+}
