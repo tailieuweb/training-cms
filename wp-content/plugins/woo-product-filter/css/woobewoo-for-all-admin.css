@@ -1,0 +1,24 @@
+/*remove duplicated WP menu item*/
+#toplevel_page_wpf-filters li.wp-first-item{
+	display: none;
+}
+/*Admin tour styles*/
+#woobewoo-admin-tour {
+	display: none;
+}
+.woobewoo-tour-btns .close {
+	float: left;
+	margin-left: 10px;
+}
+.wp-pointer.woobewoo-pointer {
+	z-index: 999999 !important;
+}
+.woobewoo-error {
+	color: #ff0000;
+}
+.error strong {
+    font-size: 15px;
+}
+.wpfHidden {
+	display: none;
+}
