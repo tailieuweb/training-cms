@@ -6,16 +6,21 @@
  *
  * @package storefront
  */
-$orderby = 'name';
-$order = 'asc';
-$hide_empty = false ;
-$cat_args = array(
-    'orderby'    => $orderby,
-    'order'      => $order,
-    'hide_empty' => $hide_empty,
-);
+$args = array(
+    'type'                     => 'post',
+    'child_of'                 => 0,
+    'parent'                   => '',
+    'orderby'                  => 'name',
+    'order'                    => 'ASC',
+    'hide_empty'               => 1,
+    'hierarchical'             => 1,
+    'exclude'                  => '',
+    'include'                  => '',
+    'number'                   => '',
+    'taxonomy'                 => 'category',
+    'pad_counts'               => false );
  
-$product_categories = get_terms( 'product_cat', $cat_args );
+$product_categories = get_categories( $args );
  
 
 
@@ -66,6 +71,7 @@ $product_categories = get_terms( 'product_cat', $cat_args );
          */
         // do_action( 'storefront_header' );
         ?>
+		
 			<section id="pre-header" class="pre-header">
 				<div class="container">
 					<div class="row">
@@ -114,8 +120,8 @@ $product_categories = get_terms( 'product_cat', $cat_args );
 									<ul class="menu-list">
 										<li class="menu-item active"><a href="#">Home</a></li>
 										<li class="menu-item cate"> <a href="#">Categories</a>
-										<!-- <ul class="cate-list dropdown-menu">
-										<?php 
+										<ul class="cate-list">
+										<!-- <?php 
 										// if( !empty($product_categories) ){
 										// 	foreach ($product_categories as $key => $category) {
 										// 		echo '<li>';
@@ -125,8 +131,8 @@ $product_categories = get_terms( 'product_cat', $cat_args );
 										// 		echo '</li>';
 										// 	}
 										// }
-										?>
-										</ul> -->
+										?> -->
+										</ul>
 									</li>
 									</ul>
 								</nav>
@@ -137,7 +143,7 @@ $product_categories = get_terms( 'product_cat', $cat_args );
 								</div>
 								<nav class="menu-site">
 									<ul class="menu-list">
-										<li class="menu-item"> <a href="#">Shop</a></li>
+										<li class="menu-item"> <a href="<?= get_permalink( wc_get_page_id( 'shop' ) );?>">Shop</a></li>
 										<li class="menu-item"> <a href="#">Contact</a></li>
 									</ul>
 								</nav>
