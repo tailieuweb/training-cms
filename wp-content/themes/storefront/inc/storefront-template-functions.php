@@ -382,7 +382,7 @@ if ( ! function_exists( 'storefront_page_content' ) ) {
 									<div class="category-wrapper">
 										<span class="category">
 											<span class="category-icon"><i class="fas fa-tag"></i></span>
-											<span><?php echo $value->name; ?></span>
+											<span><?php echo ('<a href="' . get_term_link( (int)$value->term_id, 'product_cat' ) . '" class="menu-item">' . $value->name . '</a>'); ?></span>
 										</span>
 										<span class="arrow_r-icon">></span>
 									</div>
@@ -392,7 +392,7 @@ if ( ! function_exists( 'storefront_page_content' ) ) {
 										foreach ($product_categories as $key2 => $value2) {
 											if ($value2->parent == $value->term_id) {
 												$countSubCate++;
-												echo ('<div class="sub-item">' . $value2->name . '</div>');
+												echo ('<a href="' . get_term_link( (int)$value2->term_id, 'product_cat' ) . '" class="sub-item">' . $value2->name . '</a>');
 											}
 										}
 										if ($countSubCate == 0) {
