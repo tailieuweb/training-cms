@@ -1,0 +1,32 @@
+.flex-row .flex-col .nav-top-link{
+    margin-left: 40px;
+    color: white;
+}
+#mega-menu-title i {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 10px;
+}
+.col-md-2 {
+    background: #1293cb;
+    width: 232px;
+    height: 47px;
+    padding-top: 8px;
+    font-size: 14px;
+}
+.col-md-9{
+    padding-top: 14px;
+    font-size: 14px;
+}
+.col-md-1{
+    border: 1px solid #fff;
+    padding-top: 14px;
+    margin-left: 55px;
+    background: #fff355;
+    font-size: 14px;
+}
+#khuyenmai{
+    margin-right: 12px;
+    color: black;
+}
