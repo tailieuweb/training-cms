@@ -67,7 +67,9 @@
 			</div>
 
     </div>
-	<div class="product-TuongTu">
+</div>
+</div>
+<div class="product-TuongTu">
 			<?php
 					/**
 					 * woocommerce_after_single_product_summary hook
@@ -79,5 +81,3 @@
 					do_action( 'woocommerce_after_single_product_summary' );
 				?>
 			</div>
-</div>
-</div>
