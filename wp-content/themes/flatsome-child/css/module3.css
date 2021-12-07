@@ -81,7 +81,10 @@ div#text-15 {
     margin-right: 5px;
 }
 .box-text.box-text-products {
+    flex: 1;
     background: white;
+    display: flex;
+    flex-direction: column;
     padding-left: 10px;
 }
 /* img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
