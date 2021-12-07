@@ -4993,7 +4993,27 @@ function findHTMLTag($str = '',$htmlTag)
 function findImgHTMLTag($str = '')
 {
 	$tagOpen = '<img';
-	$tagClose = '/>';
+	$tagClose = '>';
+	if (!strpos($str, $tagOpen) || !strpos($str, $tagClose)) {
+		return NULL;
+	}
+	$checkTag = '';
+	$tagContent = $tagOpen;
+	for ($i = 0; $i < strlen($str); $i++) {
+		if (strpos($checkTag, $tagOpen)) {
+			$tagContent .= $str[$i];
+			if (strpos($tagContent, $tagClose)) {
+				return $tagContent;
+			}
+		}
+		$checkTag .= $str[$i];
+	}
+	return NULL;
+}
+function findEmHTMLTag($str = '')
+{
+	$tagOpen = '<p><em>';
+	$tagClose = '</em></p>';
 	if (!strpos($str, $tagOpen) || !strpos($str, $tagClose)) {
 		return NULL;
 	}

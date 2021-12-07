@@ -1,1 +1,66 @@
 /* Css for Module 5 project */
+.post-home {
+  background: #d6d6d6;
+  border-radius: 40px;
+  height: 14.5rem;
+  border: 2px solid;
+}
+
+.post-home .col-md-8 .row h1 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.post-home .col-md-8 .row h2 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 0%;
+  margin-bottom:0%;
+}
+header.entry-header.header-module5 {
+  border: none;
+  margin: 0;
+}
+
+.post-home .col-md-8 {
+    margin-left: -2.5%;
+}
+
+.post-home .img-module5 img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  border-radius: 50%;
+}
+
+.post-home .img-module5 {
+  width: 190px;
+  margin: 20px 20px 20px 10px;
+}
+
+.hentry .entry-content a {
+  text-decoration: none;
+  color: black;
+}
+
+p.post-title {
+    margin-top: 7%;
+    margin-bottom: 0%;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
+.content-module5 {
+  margin-right: 25px;
+  margin-top: -7px;
+  margin-bottom: 20px;
+  text-align: justify;
+  color: #df7c09;
+}
+
+.post-home dfn, cite, em, i {
+display: none;
+}
+.hentry {
+    margin: 0px 0 1.235801em;
+}
