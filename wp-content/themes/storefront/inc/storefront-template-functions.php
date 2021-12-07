@@ -410,17 +410,6 @@ if ( ! function_exists( 'storefront_page_content' ) ) {
 										}
 									}
 								?>
-								<li class="categoryMenu__list__item"><span class="category"><span class="category-icon">x</span><span>Item 1</span></span><span class="arrow_r-icon">></span></li>
-								<li class="categoryMenu__list__item"><span class="category"><span class="category-icon">x</span><span>Item 2</span></span><span class="arrow_r-icon">></span></li>
-								<li class="categoryMenu__list__item"><span class="category"><span class="category-icon">x</span><span>Item 3</span></span><span class="arrow_r-icon">></span></li>
-								<li class="categoryMenu__list__item"><span class="category"><span class="category-icon">x</span><span>Item 4</span></span><span class="arrow_r-icon">></span></li>
-								<li class="categoryMenu__list__item"><span class="category"><span class="category-icon">x</span><span>Item 5</span></span><span class="arrow_r-icon">></span></li>
-								<li class="categoryMenu__list__item"><span class="category"><span class="category-icon">x</span><span>Item 6</span></span><span class="arrow_r-icon">></span></li>
-								<li class="categoryMenu__list__item"><span class="category"><span class="category-icon">x</span><span>Item 7</span></span><span class="arrow_r-icon">></span></li>
-								<li class="categoryMenu__list__item"><span class="category"><span class="category-icon">x</span><span>Item 8</span></span><span class="arrow_r-icon">></span></li>
-								<li class="categoryMenu__list__item"><span class="category"><span class="category-icon">x</span><span>Item 9</span></span><span class="arrow_r-icon">></span></li>
-								<li class="categoryMenu__list__item"><span class="category"><span class="category-icon">x</span><span>Item 10</span></span><span class="arrow_r-icon">></span></li>
-								<li class="categoryMenu__list__item"><span class="category"><span class="category-icon">x</span><span>Item 11</span></span><span class="arrow_r-icon">></span></li>
 							</ul>
 						</div>
 					</div>
