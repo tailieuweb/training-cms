@@ -113,7 +113,7 @@ add_action( 'widgets_init', 'flatsome_shop_widgets_init' );
 /* Modify define(name, value)ault Shop Breadcrumbs */
 function flatsome_woocommerce_breadcrumbs() {
 
-    $home = (get_theme_mod('breadcrumb_home',1)) ? _x( 'Home', 'breadcrumb', 'woocommerce' ) : false;
+    $home = (get_theme_mod('breadcrumb_home',1)) ? _x( 'Trang chủ', 'breadcrumb', 'woocommerce' ) : false;
 
     return array(
         'delimiter'   => '&#47;',
