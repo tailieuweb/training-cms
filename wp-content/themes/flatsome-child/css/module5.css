@@ -1,7 +1,7 @@
 /* 
 ?Custom Header 
 */
-.page-title-inner{
+.page-title-inner {
   text-shadow: none !important;
 }
 .featured-title .woocommerce-result-count {
@@ -12,7 +12,7 @@
   background-color: #fff !important;
 }
 .form-flat select {
-  border-radius: 0px !important;  
+  border-radius: 0px !important;
 }
 .orderby {
   background-image: url("../down.svg") !important;
@@ -51,7 +51,8 @@
   color: #65605e;
 }
 .wpfDisplay bdi {
-  color: #65605e !important;
+  color: #777270 !important;
+  font-weight: normal;
 }
 .wpfFilterVerScroll {
   padding-top: 30px !important;
