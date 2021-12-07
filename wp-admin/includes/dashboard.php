@@ -242,7 +242,7 @@ function _wp_dashboard_control_callback( $dashboard, $meta_box ) {
 	wp_dashboard_trigger_widget_control( $meta_box['id'] );
 	wp_nonce_field( 'edit-dashboard-widget_' . $meta_box['id'], 'dashboard-widget-nonce' );
 	echo '<input type="hidden" name="widget_id" value="' . esc_attr( $meta_box['id'] ) . '" />';
-	submit_button( __( 'Submit' ) );
+	submit_button( __( 'Save Changes' ) );
 	echo '</form>';
 }
 
@@ -1350,8 +1350,9 @@ function wp_print_community_events_markup() {
 			<p>
 				<span id="community-events-location-message"></span>
 
-				<button class="button-link community-events-toggle-location" aria-label="<?php esc_attr_e( 'Edit city' ); ?>" aria-expanded="false">
-					<span class="dashicons dashicons-edit"></span>
+				<button class="button-link community-events-toggle-location" aria-expanded="false">
+					<span class="dashicons dashicons-location" aria-hidden="true"></span>
+					<span class="community-events-location-edit"><?php _e( 'Select location' ); ?></span>
 				</button>
 			</p>
 
@@ -1726,8 +1727,9 @@ function wp_dashboard_browser_nag() {
 	 *
 	 * @since 3.2.0
 	 *
-	 * @param string $notice   The notice content.
-	 * @param array  $response An array containing web browser information. See `wp_check_browser_version()`.
+	 * @param string      $notice   The notice content.
+	 * @param array|false $response An array containing web browser information, or
+	 *                              false on failure. See `wp_check_browser_version()`.
 	 */
 	echo apply_filters( 'browse-happy-notice', $notice, $response ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
 }
@@ -1985,21 +1987,32 @@ function wp_dashboard_empty() {}
  * Displays a welcome panel to introduce users to WordPress.
  *
  * @since 3.3.0
+ * @since 5.9.0 Send users to the Site Editor if the current theme is block-based.
  */
 function wp_welcome_panel() {
+	$customize_url          = null;
+	$can_edit_theme_options = current_user_can( 'edit_theme_options' );
+	$can_customize          = current_user_can( 'customize' );
+	$is_block_based_theme   = wp_is_block_template_theme();
+
+	if ( $is_block_based_theme && $can_edit_theme_options ) {
+		$customize_url = esc_url( admin_url( 'site-editor.php' ) );
+	} elseif ( ! $is_block_based_theme && $can_customize ) {
+		$customize_url = wp_customize_url();
+	}
 	?>
 	<div class="welcome-panel-content">
 	<h2><?php _e( 'Welcome to WordPress!' ); ?></h2>
 	<p class="about-description"><?php _e( 'We&#8217;ve assembled some links to get you started:' ); ?></p>
 	<div class="welcome-panel-column-container">
 	<div class="welcome-panel-column">
-		<?php if ( current_user_can( 'customize' ) ) : ?>
+		<?php if ( $customize_url ) : ?>
 			<h3><?php _e( 'Get Started' ); ?></h3>
-			<a class="button button-primary button-hero load-customize hide-if-no-customize" href="<?php echo wp_customize_url(); ?>"><?php _e( 'Customize Your Site' ); ?></a>
+			<a class="button button-primary button-hero load-customize hide-if-no-customize" href="<?php echo $customize_url; ?>"><?php _e( 'Customize Your Site' ); ?></a>
 		<?php endif; ?>
 		<a class="button button-primary button-hero hide-if-customize" href="<?php echo esc_url( admin_url( 'themes.php' ) ); ?>"><?php _e( 'Customize Your Site' ); ?></a>
 		<?php if ( current_user_can( 'install_themes' ) || ( current_user_can( 'switch_themes' ) && count( wp_get_themes( array( 'allowed' => true ) ) ) > 1 ) ) : ?>
-			<?php $themes_link = current_user_can( 'customize' ) ? add_query_arg( 'autofocus[panel]', 'themes', admin_url( 'customize.php' ) ) : admin_url( 'themes.php' ); ?>
+			<?php $themes_link = $can_customize && ! $is_block_based_theme ? add_query_arg( 'autofocus[panel]', 'themes', admin_url( 'customize.php' ) ) : admin_url( 'themes.php' ); ?>
 			<p class="hide-if-no-customize">
 				<?php
 					/* translators: %s: URL to Themes panel in Customizer or Themes screen. */

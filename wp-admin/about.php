@@ -9,6 +9,7 @@
 /** WordPress Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
+// Used in the HTML title tag.
 /* translators: Page title of the About WordPress page in the admin. */
 $title = _x( 'About', 'page title' );
 
@@ -39,39 +40,6 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 		</div>
 
 		<hr />
-
-		<div class="about__section changelog">
-			<div class="column">
-				<h2><?php _e( 'Maintenance and Security Releases' ); ?></h2>
-				<p>
-					<?php
-					printf(
-						/* translators: 1: WordPress version number, 2: plural number of bugs. */
-						_n(
-							'<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug.',
-							'<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs.',
-							60
-						),
-						'5.8.1',
-						number_format_i18n( 60 )
-					);
-					?>
-					<?php
-					printf(
-						/* translators: %s: HelpHub URL */
-						__( 'For more information, see <a href="%s">the release notes</a>.' ),
-						sprintf(
-							/* translators: %s: WordPress version */
-							esc_url( __( 'https://wordpress.org/support/wordpress-version/version-%s/' ) ),
-							sanitize_title( '5.8.1' )
-						)
-					);
-					?>
-				</p>
-			</div>
-		</div>
-
-		<hr class="is-large" />
 
 		<div class="about__section">
 			<h2 class="aligncenter">
