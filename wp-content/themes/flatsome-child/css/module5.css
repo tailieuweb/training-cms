@@ -1,15 +1,61 @@
 /* 
+?Custom Header 
+*/
+.page-title-inner {
+  text-shadow: none !important;
+}
+.featured-title .woocommerce-result-count {
+  display: block !important;
+  color: #65605e;
+}
+.title-overlay {
+  background-color: #fff !important;
+}
+.form-flat select {
+  border-radius: 0px !important;
+}
+.orderby {
+  background-image: url("../down.svg") !important;
+  border-color: #c9c9c9 !important;
+  background-color: none !important;
+}
+.breadcrumbs {
+  color: #222 !important;
+}
+.dark .breadcrumbs a {
+  color: #c2c2c2 !important;
+}
+.woocommerce-ordering {
+  color: #65605e;
+}
+/* 
 ?Custom Color 
 */
 .wfpDescription {
   color: #2c313c;
   letter-spacing: 1px;
+  padding-bottom: 10px !important;
+  position: relative;
+}
+.wfpDescription:before {
+  background: linear-gradient(to right, green, blue);
+  bottom: 0;
+  content: "";
+  height: 1px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
 }
 .wpfValue {
   color: #65605e;
 }
 .wpfDisplay bdi {
-  color: #65605e !important;
+  color: #777270 !important;
+  font-weight: normal;
+}
+.wpfFilterVerScroll {
+  padding-top: 30px !important;
 }
 .wpfFilterVerScroll label {
   border-bottom: 1px solid #f3f3f3;
@@ -137,4 +183,8 @@
   right: 0;
   color: #c7c3c3;
   font-size: 11px;
+}
+
+.shop-page-title.is-xlarge {
+  display: none;
 }
