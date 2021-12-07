@@ -77,7 +77,7 @@
   color: #d00047 !important;
 }
 .shop-container .product-small .image-fade_in_back {
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   border-bottom: 1px solid #f3f3f3;
 }
 .shop-page-title .flex-col .medium-text-center {

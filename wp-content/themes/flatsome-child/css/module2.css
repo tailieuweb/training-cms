@@ -1,0 +1,8 @@
+/* Custom module 2 here */
+.contact-icon{
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 20%);
+    border-radius: 4px;
+    padding: 15px 10px !important;
+    overflow: hidden;
+    background-color: #fff;
+}
