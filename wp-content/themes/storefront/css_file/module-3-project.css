@@ -9,7 +9,7 @@
 .wp-block-latest-posts__list li a:hover, .wp-block-latest-comments__comment-author:hover, 
 .wp-block-latest-comments__comment-link:hover, .wp-block-group__inner-container li a:hover,
 .wp-block-categories-list li a:hover{
-    border-bottom: 1px #727272 solid;
+    text-decoration: underline #727272 !important;
 }
 
 .wp-block-latest-posts__list li a, .wp-block-latest-comments__comment-author, 
