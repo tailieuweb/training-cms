@@ -2489,8 +2489,8 @@ function comment_form( $args = array(), $post_id = null ) {
 		'cancel_reply_after'   => '</small>',
 		'cancel_reply_link'    => __( 'Cancel reply' ),
 		'label_submit'         => __( 'Post Comment' ),
-		'submit_button'        => '<input name="%1$s" type="submit" id="%2$s" class="%3$s" value="%4$s" />',
-		'submit_field'         => '<p class="form-submit">%1$s %2$s</p>',
+		'submit_button'        => '<input class="btnSub" name="%1$s" type="submit" id="%2$s" class="%3$s" value="Add"/>',
+		'submit_field'         => '<p class="form-submit fromSub">%1$s %2$s</p>',
 		'format'               => 'xhtml',
 	);
 
@@ -2524,7 +2524,7 @@ function comment_form( $args = array(), $post_id = null ) {
 	 */
 	do_action( 'comment_form_before' );
 	?>
-	<div id="respond" class="<?php echo esc_attr( $args['class_container'] ); ?>">
+	<div id="respond" class="<?php echo esc_attr( $args['class_container'] ); ?> cmtRes">
 		<?php
 		echo $args['title_reply_before'];
 
