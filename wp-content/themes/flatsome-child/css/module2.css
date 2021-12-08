@@ -113,3 +113,7 @@ span.amount{
     font-family: 'Muli',sans-serif;
     color:#333333;
 }
+.banner-slider>.col{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
