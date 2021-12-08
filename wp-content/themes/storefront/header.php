@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-home-top.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-home-categoryMenu.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-home-banner.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-footer.css" type="text/css" media="screen" />
 
 </head>
 
