@@ -1,0 +1,53 @@
+.module-home-banner .home-top-wrapper .home-banner-wrapper {
+    width: 100%;
+}
+
+.module-home-banner .home-top-wrapper .home-banner-wrapper .wp-block-cover__image-background {
+    width: 100%;
+}
+
+.home-banner-wrapper .wp-block-cover .wp-block-cover__inner-container {
+    padding: 0 50px;
+}
+
+.home-banner-wrapper .wp-block-cover .wp-block-cover__inner-container p {
+    margin: 0 0 20px 0;
+    text-align: left;
+    line-height: 1;
+}
+
+.home-banner-wrapper .wp-block-cover .wp-block-cover__inner-container p:nth-child(2),
+.home-banner-wrapper .wp-block-cover .wp-block-cover__inner-container p.has-large-font-size {
+    margin-bottom: 0px;
+    text-align: left;
+    line-height: 1;
+    font-size: 50px;
+}
+
+.wp-block-button {
+    text-align: left;
+}
+
+.wp-block-button a.wp-block-button__link {
+    border-radius: 5px;
+    padding: 10px 20px;
+    line-height: 1;
+    display: inline-block;
+    background-color: #108bea;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.wp-block-button a.wp-block-button__link:hover {
+    text-shadow: 0px 0px 0px #000;
+    background-color: #ddd;
+}
+
+@media screen and (max-width: 480px) {
+    .home-banner-wrapper .wp-block-cover .wp-block-cover__inner-container p:nth-child(2),
+    .home-banner-wrapper .wp-block-cover .wp-block-cover__inner-container p.has-large-font-size {
+        font-size: 30px;
+    }
+}
