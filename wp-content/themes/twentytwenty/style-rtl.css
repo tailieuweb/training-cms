@@ -125,7 +125,7 @@ html {
 }
 
 body {
-	background: f5efe0;
+	background: #f5efe0;
 	box-sizing: border-box;
 	color: #000;
 	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
@@ -3143,6 +3143,7 @@ figure.wp-block-gallery.alignfull {
 
 .wp-block-group__inner-container {
 	margin: 0 auto;
+	
 }
 
 .wp-block-group__inner-container,
@@ -4490,7 +4491,6 @@ a.to-the-top > * {
 .to-the-top-long {
 	display: none;
 }
-
 
 
 /* -------------------------------------------------------------------------- */
@@ -6364,4 +6364,3 @@ a.to-the-top > * {
 		top: 0;
 	}
 }
-

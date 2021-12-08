@@ -19,11 +19,11 @@ get_header();
 
 <main id="site-content" role="main">
 
-	<?php
+    <?php
 
 	$archive_title    = '';
 	$archive_subtitle = '';
-
+	// var_dump(is_search()); die;
 	if ( is_search() ) {
 		global $wp_query;
 
@@ -57,23 +57,24 @@ get_header();
 	if ( $archive_title || $archive_subtitle ) {
 		?>
 
-		<header class="archive-header has-text-align-center header-footer-group">
+    <header class="archive-header has-text-align-center header-footer-group">
 
-			<div class="archive-header-inner section-inner medium">
+        <div class="archive-header-inner section-inner medium">
 
-				<?php if ( $archive_title ) { ?>
-					<h1 class="archive-title"><?php echo wp_kses_post( $archive_title ); ?></h1>
-				<?php } ?>
+            <?php if ( $archive_title ) { ?>
+            <h1 class="archive-title"><?php echo wp_kses_post( $archive_title ); ?></h1>
+            <?php } ?>
 
-				<?php if ( $archive_subtitle ) { ?>
-					<div class="archive-subtitle section-inner thin max-percentage intro-text"><?php echo wp_kses_post( wpautop( $archive_subtitle ) ); ?></div>
-				<?php } ?>
+            <?php if ( $archive_subtitle ) { ?>
+            <div class="archive-subtitle section-inner thin max-percentage intro-text">
+                <?php echo wp_kses_post( wpautop( $archive_subtitle ) ); ?></div>
+            <?php } ?>
 
-			</div><!-- .archive-header-inner -->
+        </div><!-- .archive-header-inner -->
 
-		</header><!-- .archive-header -->
+    </header><!-- .archive-header -->
 
-		<?php
+    <?php
 	}
 
 	if ( have_posts() ) {
@@ -93,9 +94,9 @@ get_header();
 	} elseif ( is_search() ) {
 		?>
 
-		<div class="no-search-results-form section-inner thin">
+    <div class="no-search-results-form section-inner thin">
 
-			<?php
+        <?php
 			get_search_form(
 				array(
 					'aria_label' => __( 'search again', 'twentytwenty' ),
@@ -103,13 +104,13 @@ get_header();
 			);
 			?>
 
-		</div><!-- .no-search-results -->
+    </div><!-- .no-search-results -->
 
-		<?php
+    <?php
 	}
 	?>
 
-	<?php get_template_part( 'template-parts/pagination' ); ?>
+    <?php get_template_part( 'template-parts/pagination' ); ?>
 
 </main><!-- #site-content -->
 
