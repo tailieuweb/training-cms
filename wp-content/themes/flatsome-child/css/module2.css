@@ -2,7 +2,40 @@
 .contact-icon{
     box-shadow: 0 0 3px 0 rgb(0 0 0 / 20%);
     border-radius: 4px;
-    padding: 15px 10px !important;
+    padding:0px 10px 10px 10px !important;
     overflow: hidden;
     background-color: #fff;
+    font-family: 'Muli',sans-serif;
+}
+.contact-icon-text>h3{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0;
+    font-family: 'Muli',sans-serif;
+}
+.contact-icon-text>p{
+    font-size:14px;
+    font-family: 'Muli',sans-serif;
+}
+.slide-image{
+    padding: 0 !important;
+}
+.titleH2{
+    font-size: 18px;
+    float: left;
+    width: unset;
+    background: #1293cb;
+    padding: 5px 22px;
+    border-radius: 5px;
+    font-weight: 400;
+}
+.titleH2>h2{
+    margin: 0 !important;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Muli',sans-serif;
+}
+.col{
+    padding: 0 0.9px 19.6px;
 }
