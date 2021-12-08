@@ -152,7 +152,7 @@ if (is_search()) {
 					</div>
 				</div>
 				<div class="cate">
-					<h2>Post</h2>
+					<h2>Post Effect</h2>
 					<div class="crossedbg-categories"></div>
 					<div class="widget html" style="margin-right: 40px; margin-top: -80px; margin-left: -10px;">					
 							<div class="holder">
