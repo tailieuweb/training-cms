@@ -105,9 +105,8 @@ function twentytwenty_site_description( $echo = true ) {
 	if ( ! $description ) {
 		return;
 	}
-	$link_home = esc_url( get_home_url( null, '/' ));
-	
-	$wrapper = '<a  href="'. $link_home .'" class="site-description">%s</a><!-- .site-description -->';
+
+	$wrapper = '<div class="site-description">%s</div><!-- .site-description -->';
 
 	$html = sprintf( $wrapper, esc_html( $description ) );
 
@@ -231,7 +230,7 @@ function twentytwenty_edit_post_link( $link, $post_id, $text ) {
 		get_the_title( $post_id )
 	);
 
-	// return '<div class="post-meta-wrapper post-meta-edit-link-wrapper"><ul class="post-meta"><li class="post-edit meta-wrapper"><span class="meta-icon">' . twentytwenty_get_theme_svg( 'edit' ) . '</span><span class="meta-text"><a href="' . esc_url( $edit_url ) . '">' . $text . '</a></span></li></ul><!-- .post-meta --></div><!-- .post-meta-wrapper -->';
+	return '<div class="post-meta-wrapper post-meta-edit-link-wrapper"><ul class="post-meta"><li class="post-edit meta-wrapper"><span class="meta-icon">' . twentytwenty_get_theme_svg( 'edit' ) . '</span><span class="meta-text"><a href="' . esc_url( $edit_url ) . '">' . $text . '</a></span></li></ul><!-- .post-meta --></div><!-- .post-meta-wrapper -->';
 
 }
 
@@ -338,11 +337,11 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 
 		?>
 
-<div class="post-meta-wrapper<?php echo esc_attr( $post_meta_wrapper_classes ); ?>">
+		<div class="post-meta-wrapper<?php echo esc_attr( $post_meta_wrapper_classes ); ?>">
 
-    <ul class="post-meta<?php echo esc_attr( $post_meta_classes ); ?>">
+			<ul class="post-meta<?php echo esc_attr( $post_meta_classes ); ?>">
 
-        <?php
+				<?php
 
 				/**
 				 * Fires before post meta HTML display.
@@ -371,66 +370,34 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 						</span>
 						<span class="meta-text">
 							<?php
-										printf(
-											/* translators: %s: Author name. */
-											__( 'By %s', 'twentytwenty' ),
-											'<a href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author_meta( 'display_name' ) ) . '</a>'
-										);
-										?>
+							printf(
+								/* translators: %s: Author name. */
+								__( 'By %s', 'twentytwenty' ),
+								'<a href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author_meta( 'display_name' ) ) . '</a>'
+							);
+							?>
 						</span>
 					</li>
-        <?php
+					<?php
 
 				}
 
 				// Post date.
-				if (in_array('post-date', $post_meta, true)) {
+				if ( in_array( 'post-date', $post_meta, true ) ) {
 
 					$has_meta = true;
-				?>
+					?>
 					<li class="post-date meta-wrapper">
 						<span class="meta-icon">
-							<span class="screen-reader-text"><?php _e('Post date', 'twentytwenty'); ?></span>
-							<?php if (!is_singular()) { ?>
-								<?php twentytwenty_the_theme_svg('calendar'); ?>
-							<?php } ?>
+							<span class="screen-reader-text"><?php _e( 'Post date', 'twentytwenty' ); ?></span>
+							<?php twentytwenty_the_theme_svg( 'calendar' ); ?>
 						</span>
 						<span class="meta-text">
-							<?php if (!is_singular()) { ?>
-								<a href="<?php the_permalink(); ?>"><?php the_time(get_option('date_format')); ?></a>
-							<?php } ?>
-
-							<?php if (is_singular()) { ?>
-								<div class="headlinesdates">
-									<div class="headlinesdms">
-										<div class="headlinesdays">
-											<a href="<?php the_permalink(); ?>"><?php the_time(substr(get_option('date_format'), 0, 1)); ?></a>
-										</div>
-										<div class="headlinesmonths">
-											<a href="<?php the_permalink(); ?>"><?php the_time(substr(get_option('date_format'), 2, 1)); ?></a>
-										</div>
-									</div>
-									<div class="headlinesyears">
-										<a href="<?php the_permalink(); ?>"><?php the_time(substr(get_option('date_format'), 4, 6)); ?></a>
-									</div>
-								</div>
-								<div class="headlinesdate">
-									<div class="headlinesdm">
-										<div class="headlinesday">
-											<a href="<?php the_permalink(); ?>"><?php the_time(substr(get_option('date_format'), 0, 1)); ?></a>
-										</div>
-										<div class="headlinesmonth">
-											<a href="<?php the_permalink(); ?>"><?php the_time(substr(get_option('date_format'), 2, 1)); ?></a>
-										</div>
-									</div>
-									<div class="headlinesyear">
-										<a href="<?php the_permalink(); ?>"><?php the_time(substr(get_option('date_format'), 4, 6)); ?></a>
-									</div>
-								</div>
-							<?php } ?>
+							<a href="<?php the_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
 						</span>
 					</li>
-				<?php
+					<?php
+
 				}
 
 				// Categories.
@@ -438,17 +405,16 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 
 					$has_meta = true;
 					?>
-        <li class="post-categories meta-wrapper">
-            <span class="meta-icon">
-                <span class="screen-reader-text"><?php _e( 'Categories', 'twentytwenty' ); ?></span>
-                <?php twentytwenty_the_theme_svg( 'folder' ); ?>
-            </span>
-            <span class="meta-text">
-                <?php _ex( 'In', 'A string that is output before one or more categories', 'twentytwenty' ); ?>
-                <?php the_category( ', ' ); ?>
-            </span>
-        </li>
-        <?php
+					<li class="post-categories meta-wrapper">
+						<span class="meta-icon">
+							<span class="screen-reader-text"><?php _e( 'Categories', 'twentytwenty' ); ?></span>
+							<?php twentytwenty_the_theme_svg( 'folder' ); ?>
+						</span>
+						<span class="meta-text">
+							<?php _ex( 'In', 'A string that is output before one or more categories', 'twentytwenty' ); ?> <?php the_category( ', ' ); ?>
+						</span>
+					</li>
+					<?php
 
 				}
 
@@ -457,37 +423,34 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 
 					$has_meta = true;
 					?>
-        <li class="post-tags meta-wrapper">
-            <span class="meta-icon">
-                <span class="screen-reader-text"><?php _e( 'Tags', 'twentytwenty' ); ?></span>
-                <?php twentytwenty_the_theme_svg( 'tag' ); ?>
-            </span>
-            <span class="meta-text">
-                <?php the_tags( '', ', ', '' ); ?>
-            </span>
-        </li>
-        <?php
+					<li class="post-tags meta-wrapper">
+						<span class="meta-icon">
+							<span class="screen-reader-text"><?php _e( 'Tags', 'twentytwenty' ); ?></span>
+							<?php twentytwenty_the_theme_svg( 'tag' ); ?>
+						</span>
+						<span class="meta-text">
+							<?php the_tags( '', ', ', '' ); ?>
+						</span>
+					</li>
+					<?php
 
 				}
 
 				// Comments link.
-				if (in_array('comments', $post_meta, true) && !post_password_required() && (comments_open() || get_comments_number())) {
+				if ( in_array( 'comments', $post_meta, true ) && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 
 					$has_meta = true;
-				?>
+					?>
 					<li class="post-comment-link meta-wrapper">
 						<span class="meta-icon">
-							<?php if (!is_singular()) { ?>
-								<?php twentytwenty_the_theme_svg('comment'); ?>
-							<?php } ?>
+							<?php twentytwenty_the_theme_svg( 'comment' ); ?>
 						</span>
 						<span class="meta-text">
-							<?php if (!is_singular()) { ?>
-								<?php comments_popup_link(); ?>
-							<?php } ?>
+							<?php comments_popup_link(); ?>
 						</span>
 					</li>
-				<?php
+					<?php
+
 				}
 
 				// Sticky.
@@ -495,15 +458,15 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 
 					$has_meta = true;
 					?>
-        <li class="post-sticky meta-wrapper">
-            <span class="meta-icon">
-                <?php twentytwenty_the_theme_svg( 'bookmark' ); ?>
-            </span>
-            <span class="meta-text">
-                <?php _e( 'Sticky post', 'twentytwenty' ); ?>
-            </span>
-        </li>
-        <?php
+					<li class="post-sticky meta-wrapper">
+						<span class="meta-icon">
+							<?php twentytwenty_the_theme_svg( 'bookmark' ); ?>
+						</span>
+						<span class="meta-text">
+							<?php _e( 'Sticky post', 'twentytwenty' ); ?>
+						</span>
+					</li>
+					<?php
 
 				}
 
@@ -524,11 +487,11 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 
 				?>
 
-    </ul><!-- .post-meta -->
+			</ul><!-- .post-meta -->
 
-</div><!-- .post-meta-wrapper -->
+		</div><!-- .post-meta-wrapper -->
 
-<?php
+		<?php
 
 		wp_reset_postdata();
 
@@ -676,10 +639,8 @@ add_filter( 'walker_nav_menu_start_el', 'twentytwenty_nav_menu_social_icons', 10
 function twentytwenty_no_js_class() {
 
 	?>
-<script>
-document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-</script>
-<?php
+	<script>document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );</script>
+	<?php
 
 }
 
