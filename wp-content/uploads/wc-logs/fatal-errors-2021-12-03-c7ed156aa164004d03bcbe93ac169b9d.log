@@ -1,0 +1,2 @@
+2021-12-03T15:41:04+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\training-cms\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\StoreApi\Routes\ProductAttributes.php on line 56
+

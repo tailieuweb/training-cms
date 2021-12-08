@@ -1,1 +1,102 @@
-/* Custom module 3 here */
+.text_footer {
+    padding-left: 148px;
+    color: #1291f8;
+    background: #004689;
+    padding-bottom: 10px;
+    font-size: 14px;
+    padding-top: 10px;
+    
+}
+.text_footer .linkmua{
+    color: #4d9f7a;
+}
+.text_footer .connect{
+    padding-left: 780px;
+}
+div#text-15 {
+    margin-bottom: 0 !important;
+}
+.text_footer .icon{
+    margin-left: 740px;
+    font-size: 20px;
+}
+.text_footer .icon .icon-facebook{
+    background: #3a589d;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: default;
+    position: relative;
+    padding-left: 5px;
+    padding-top: 5px;
+    color: white;
+}
+.text_footer .icon .icon-instagram{
+    background: #3b6994;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: default;
+    position: relative;
+    padding-left: 6px;
+    padding-top: 3px;
+    color: white;
+}
+.text_footer .icon .icon-pinterest{
+    background: #cb2320;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: default;
+    position: relative;
+    padding-left: 5px;
+    padding-top: 3px;
+    color: white;
+}
+.text_footer .icon .icon-youtube{
+    background:#c33223;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: default;
+    position: relative;
+    padding-left: 5px;
+    padding-top: 3px;
+    color: white;
+}
+.absolute-footer.dark.medium-text-center.small-text-center {
+    background: #004383;
+    color: #1291f8;
+}
+.footer-widgets.footer.footer-2.dark{
+    background: #004383;
+    color: #1291f8;
+}
+.product-section{   
+    background: #f0f0f0;
+}
+.product-TuongTu{
+    background: #f0f0f0;
+    padding-bottom: 50px;
+    padding-left: 8px;
+}
+.box-text.box-text-products {
+    flex: 1;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+/* img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+    border-bottom-style:solid;
+} */
+bdi {
+    color: red;
+}
+/* .dark a,
+.dark .widget a{
+    color: none !important;
+} */
+/* .dark, .dark p, .dark td {
+    color: #1291f8;
+} */

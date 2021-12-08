@@ -1,6 +1,5 @@
 <?php
 // Add custom Theme Functions here
-// ? Add file css
 function simplexml_basic_theme_load_scripts()
 {
   wp_enqueue_style('module5', get_stylesheet_directory_uri() . "/css/module5.css", array(), '1.0', 'all');
