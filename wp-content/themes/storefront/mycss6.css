@@ -5,3 +5,12 @@
     font-weight: 400;
 }
 
+.widget-area .widget .wp-block-group div{
+    height: 580px;
+    width: 212px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: left;
+    padding-right: 35px;
+    display: block;
+}
