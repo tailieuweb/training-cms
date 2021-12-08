@@ -16,6 +16,10 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
+
+    <!-- Module 3 & 4 - Vũ: -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module3_module4.css" type="text/css" media="screen" />
+
 </head>
 
 <body <?php body_class(); ?>>
