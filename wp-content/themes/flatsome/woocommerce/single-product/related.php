@@ -43,7 +43,7 @@ if ( $related_products ) : ?>
 	<div class="related related-products-wrapper product-section">
 
 		<?php
-		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Related products', 'woocommerce' ) );
+		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Sản Phẩm Tương Tự', 'woocommerce' ) );
 
 		if ( $heading ) :
 			?>
