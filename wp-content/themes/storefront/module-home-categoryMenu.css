@@ -53,7 +53,6 @@
 }
 
 .categoryMenu__bottom-section .categoryMenu__list .categoryMenu__list__item {
-    padding: 10px 15px;
     border-bottom: 1px solid #eee;
     cursor: pointer;
 }
@@ -63,6 +62,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 15px;
 }
 
 .categoryMenu__bottom-section .categoryMenu__list .categoryMenu__list__item:last-child {
