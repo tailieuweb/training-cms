@@ -1,0 +1,19 @@
+2021-12-08T03:23:57+00:00 CRITICAL Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\CMS\training-cms\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\Marketing.php:270
+Stack trace:
+#0 D:\CMS\training-cms\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\Marketing.php(270): count(NULL)
+#1 D:\CMS\training-cms\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\Marketing.php(118): Automattic\WooCommerce\Admin\Features\Marketing->get_knowledge_base_posts('marketing')
+#2 D:\CMS\training-cms\wp-includes\rest-api\class-wp-rest-server.php(1140): Automattic\WooCommerce\Admin\API\Marketing->get_knowledge_base_posts(Object(WP_REST_Request))
+#3 D:\CMS\training-cms\wp-includes\rest-api\class-wp-rest-server.php(987): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wc-admin/marke...', Array, NULL)
+#4 D:\CMS\training-cms\wp-includes\rest-api\class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#5 D:\CMS\training-cms\wp-includes\rest-api.php(370): WP_REST_Server->serve_request('/wc-admin/marke...')
+#6 D:\CMS\training-cms\wp-includes\class-wp-hook.php(303): rest_api_loaded(Object(WP))
+#7 D:\CMS\training-cms\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#8 D:\CMS\training-cms\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#9 D:\CMS\training-cms\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#10 D:\CMS\training-cms\wp-includes\class-wp.php(750): WP->parse_request('')
+#11 D:\CMS\training-cms\wp-includes\functions.php(1291): WP->main('')
+#12 D:\CMS\training-cms\wp-blog-header.php(16): wp()
+#13 D:\CMS\training-cms\index.php(17): require('D:\\CMS\\training...')
+#14 {main}
+  thrown in D:\CMS\training-cms\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\Marketing.php on line 270
+
