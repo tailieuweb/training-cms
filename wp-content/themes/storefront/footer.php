@@ -14,8 +14,11 @@
 
 	<?php do_action( 'storefront_before_footer' ); ?>
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="col-full">
+	<!-- <div>#module-footer is here!</div> -->
+	<footer id="colophon" class="site-footer module-footer" role="contentinfo">
+		<!-- Not use col-full any more! -->
+		<!-- <div class="col-full"> -->
+		<div class="footer-wrapper">
 
 			<?php
 			/**
@@ -24,10 +27,12 @@
 			 * @hooked storefront_footer_widgets - 10
 			 * @hooked storefront_credit         - 20
 			 */
-			do_action( 'storefront_footer' );
+			// do_action( 'storefront_footer' );
+			storefront_footer_widgets();
+			storefront_credit();
 			?>
 
-		</div><!-- .col-full -->
+		</div><!-- .footer-wrapper -->
 	</footer><!-- #colophon -->
 
 	<?php do_action( 'storefront_after_footer' ); ?>

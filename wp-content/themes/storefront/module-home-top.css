@@ -1,0 +1,29 @@
+body {
+    background-color: #f2f3f7;
+}
+
+.module-home-top-top {
+    max-width: 100%;
+}
+
+.module-home-top .home-top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.module-home-top .home-top-wrapper .home-categoryMenu-wrapper {
+    min-width: 250px;
+}
+
+.module-home-top .home-top-wrapper .home-banner-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 992px) {
+    .module-home-top .home-top-wrapper {
+        flex-direction: column;
+    }
+}
