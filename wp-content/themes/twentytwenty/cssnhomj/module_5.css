@@ -1,0 +1,63 @@
+.search-results .ct .container{
+    box-shadow: 0px 0px 16px -9px;
+}
+
+.search-results .ct .topnewstime{
+    margin-top:14px;
+}
+
+.search-results .ct .topnewsdate{
+    font-size: 60px;
+    margin: 0;
+}
+.search-results .ct .topnewsmonth{
+    font-size: 10px;
+    margin: 0;
+}
+
+.search-results .ct .ct-img{
+    padding: 0;
+}
+
+.search-results .ct .ct-img img{
+    width: 100%;
+    height: 90%;
+}
+
+.search-results .ct .section-inner.medium{
+    margin:0;
+}
+
+.search-results .ct .tim-kiem .post-inner{
+    border-left: 1px solid #000;
+}
+
+.search-results .ct .content{
+    padding:0;
+}
+
+.search-results .ct .tim-kiem .entry-title{
+    text-align: left;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.search-results .ct .tim-kiem .entry-title a{
+    color:rgb(0, 0, 255);
+    text-transform: uppercase;
+}
+
+.search-results .ct .tim-kiem .post-inner{
+    padding-top: 70px;
+}
+
+.search-results .ct .tim-kiem .post-inner .entry-content p{
+    margin-left: 20px;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+
+.home .featured-media, .featured-media-inner{
+    display: none;
+}

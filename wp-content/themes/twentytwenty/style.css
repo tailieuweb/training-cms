@@ -3231,20 +3231,7 @@ figure.wp-block-gallery.alignfull {
 .header-titles .search-form-header {
   margin-left: 10px;
 }
-.search-form-header .search-field {
-  width: 100%;
-  height: 30px;
-  border-radius: 3px;
-}
-.search-form-header .search-submit {
-  font-size: 9px;
-  background: #fff;
-  color: #6d6d6d;
-  border: 1px solid #dadada;
-  border-radius: 3px;
-  margin-left: 3px;
-  margin: 0;
-}
+
 /* Block: Image ------------------------------ */
 
 /* Block: Media And Text --------------------- */
