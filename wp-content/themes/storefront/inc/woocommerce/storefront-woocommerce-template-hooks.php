@@ -15,12 +15,15 @@
  * @see  storefront_on_sale_products()
  * @see  storefront_best_selling_products()
  */
-add_action( 'homepage', 'storefront_product_categories', 20 );
-add_action( 'homepage', 'storefront_recent_products', 30 );
-add_action( 'homepage', 'storefront_featured_products', 40 );
-add_action( 'homepage', 'storefront_popular_products', 50 );
-add_action( 'homepage', 'storefront_on_sale_products', 60 );
-add_action( 'homepage', 'storefront_best_selling_products', 70 );
+
+//  ######## Chặn hiển thị không cần thiết. ########  //
+
+//add_action( 'homepage', 'storefront_product_categories', 20 );
+//add_action( 'homepage', 'storefront_recent_products', 30 );
+//add_action( 'homepage', 'storefront_featured_products', 40 );
+//add_action( 'homepage', 'storefront_popular_products', 50 );
+//add_action( 'homepage', 'storefront_on_sale_products', 60 );
+//add_action( 'homepage', 'storefront_best_selling_products', 70 );
 
 /**
  * Layout
