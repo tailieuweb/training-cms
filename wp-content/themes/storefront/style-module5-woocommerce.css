@@ -3,9 +3,8 @@
     background: yellow;
 } */
 button.alt, input[type="button"].alt, input[type="reset"].alt, input[type="submit"].alt, .button.alt, .widget-area .widget a.button.alt {
-    background-color: pink !important;
-    border-color: #333333 !important;
-    color: black !important;
+    color: #fff !important;
+    background: #ee4d2d !important;
 }
 .danh .site-main{
     margin-bottom: 2.617924em;
@@ -37,4 +36,7 @@ div#page {
     overflow: hidden;
     position: relative;
     top: 15px;
+}
+.product_meta .span.posted_in {
+    font-weight: bold;
 }
