@@ -62,7 +62,7 @@
 	?>
 
 	<div id="content" class="site-content danh" tabindex="-1">
-		<div class="col-full">
+		<div class="col-full module5">
 
 		<?php
 		do_action( 'storefront_content_top' );

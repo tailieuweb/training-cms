@@ -6,19 +6,19 @@ button.alt, input[type="button"].alt, input[type="reset"].alt, input[type="submi
     color: #fff !important;
     background: #ee4d2d !important;
 }
-.danh .site-main{
+.danh .module5 .site-main{
     margin-bottom: 2.617924em;
     background: white;
 }
-.danh .onsale{
-    color: red;
-    background: yellow;
+.danh .module5 .onsale::before{
+    color: red !important;
+    background: yellow !important;
 }
-.danh .flex-control-thumbs{
+.danh .module5 .flex-control-thumbs{
     position: relative;
     left: 85px;
 }
-.danh .quantity .qty {
+.danh .module5 .quantity .qty {
     width: 4.235801032em;
     text-align: center;
     position: relative;
@@ -31,7 +31,7 @@ button.alt, input[type="button"].alt, input[type="reset"].alt, input[type="submi
 div#page {
     background: gainsboro;
 }
-.danh .product  {
+.danh .module5 .product  {
     position: relative;
     overflow: hidden;
     position: relative;
