@@ -20,7 +20,7 @@ if (!defined('ABSPATH')) {
 	exit;
 }
 $isSearch = is_search() ?
-	'module-6-list-product-search' :
-	'module-7-list-product-not-search';
+	'module-7-list-product-search' :
+	'module-6-list-product-not-search';
 ?>
 <div class="container row <?= $isSearch ?>">

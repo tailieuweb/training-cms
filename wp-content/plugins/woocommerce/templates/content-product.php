@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying product content within loops
  *
@@ -15,24 +16,50 @@
  * @version 3.6.0
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 global $product;
 
 // Ensure visibility.
-if ( empty( $product ) || ! $product->is_visible() ) {
+if (empty($product) || !$product->is_visible()) {
 	return;
 }
 $productImage = $product->get_image();
 $productName = mb_strtoupper($product->name);
-// var_dump($product);
+$isSale = $product->regular_price != $product->price;
 ?>
-<div class="col-md-4">
-	<div class="module-6-product-image">
-		<?= $productImage?>
-	</div>
-	<div class="module-6-product-name">
-		<h2><?= $productName?></h2>
+<div class="col-md-4 module-6">
+	<div class="col-md-12 module-6-item">
+		<!-- Product Image -->
+		<div class="product-image">
+			<?= $productImage ?>
+		</div>
+		<!-- Product Name -->
+		<div class="product-name">
+			<h2><?= $productName ?></h2>
+		</div>
+		<!-- Product Sale (Show only for product sale) -->
+		<div class="product-sale">
+			<?php if ($isSale) { ?>
+				<h5>Sale</h5>
+			<?php } ?>
+		</div>
+		<!-- Product Price -->
+		<div class="product-price">
+			<h5>
+				<?php if ($isSale) { ?>
+					<span class="regular_price"><?= number_format($product->regular_price) ?> <u>đ</u></span> ->
+				<?php } ?>
+				<span class="actual_price"><?= number_format($product->price) ?></span>
+				<u>đ</u>
+			</h5>
+		</div>
+		<!-- Add to cart btn -->
+		<div class="module-6-product-add-to-cart-btn">
+			<a href="?add-to-cart=<?= $product->id ?>" data-quantity="1" 
+			class="button product_type_simple add_to_cart_button ajax_add_to_cart" 
+			data-product_id="<?= $product->id ?>" data-product_sku="" 
+			aria-label="Add “<?= $product->name ?>” to your cart" rel="nofollow">ĐẶT MUA</a>
+		</div>
 	</div>
 </div>
-
