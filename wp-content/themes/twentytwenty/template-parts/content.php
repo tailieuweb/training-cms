@@ -319,6 +319,33 @@ if (is_search()) {
 						</ul>
 					</div>
 				</div>
+				<div class="cate">
+					<h2>Related Post</h2>
+					<div class="crossedbg-categories"></div>
+					<div class="ul-cate">
+						<ul>
+							<?php 
+							$cate = get_term($catID->ID);
+							$args = array(
+								'post_type' => 'post',
+								'orderby' => 'rand',
+								'post__not_in' => array($catID->ID),
+								'posts_per_page' => '3',
+							);
+							$other_post = new WP_Query($args);
+							if($other_post->have_posts()):
+								while ($other_post->have_posts()):$other_post->the_post();
+								?>
+								<li class="cate-name">
+								<a href="<?php the_permalink() ?>"><?php the_title() ?></a>
+							</li>
+								<?php
+								endwhile;
+							endif;							
+							?>
+						</ul>
+					</div>
+				</div>
 			</div>
 	</article><!-- .post -->
 	<div class="next">
