@@ -310,11 +310,11 @@ function ux_products($atts, $content = null, $tag = '' ) {
 								<?php if($out_of_stock) { ?><div class="out-of-stock-label"><?php _e( 'Out of stock', 'woocommerce' ); ?></div><?php }?>
 							</div>
 
-							<div class="box-text <?php echo implode(' ', $classes_text); ?>" <?php echo get_shortcode_inline_css($css_args); ?>>
+							<div class="box-text box-product-home <?php echo implode(' ', $classes_text); ?>" <?php echo get_shortcode_inline_css($css_args); ?>>
 								<?php
 									do_action( 'woocommerce_before_shop_loop_item_title' );
 
-									echo '<div class="title-wrapper">';
+									echo '<div class="title-wrappe box-title-home">';
 									do_action( 'woocommerce_shop_loop_item_title' );
 									echo '</div>';
 
