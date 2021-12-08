@@ -1,0 +1,40 @@
+/* .wc-block-grid__product-onsale, .onsale, .woocommerce-pagination .page-numbers li .page-numbers:not(.current) {
+    color: red;
+    background: yellow;
+} */
+button.alt, input[type="button"].alt, input[type="reset"].alt, input[type="submit"].alt, .button.alt, .widget-area .widget a.button.alt {
+    background-color: pink !important;
+    border-color: #333333 !important;
+    color: black !important;
+}
+.danh .site-main{
+    margin-bottom: 2.617924em;
+    background: white;
+}
+.danh .onsale{
+    color: red;
+    background: yellow;
+}
+.danh .flex-control-thumbs{
+    position: relative;
+    left: 85px;
+}
+.danh .quantity .qty {
+    width: 4.235801032em;
+    text-align: center;
+    position: relative;
+    left: 0px;
+}
+.single-product div.product .product_meta a {
+    font-weight: 600;
+    text-decoration: none !important;
+}
+div#page {
+    background: gainsboro;
+}
+.danh .product  {
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    top: 15px;
+}
