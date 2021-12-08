@@ -13,7 +13,7 @@ add_action( 'widgets_init', 'flatsome_remove_recent_comments_style' );
  * Apply custom post excerpt suffix based on user setting.
  */
 function flatsome_excerpt_suffix() {
-	return get_theme_mod( 'blog_excerpt_suffix', ' [...]' );
+	return get_theme_mod( 'blog_excerpt_suffix', '...' );
 }
 add_filter( 'excerpt_more', 'flatsome_excerpt_suffix' );
 

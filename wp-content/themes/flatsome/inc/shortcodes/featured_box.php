@@ -82,10 +82,10 @@ function featured_box( $atts, $content = null ) {
 				</div>
 			</div>
 		<?php } ?>
-		<div class="icon-box-text last-reset">
-			<?php if ( $title ) { ?><h5 class="uppercase"><?php echo $title; ?></h5><?php } ?>
-			<?php if ( $title_small ) { ?><h6><?php echo $title_small; ?></h6><?php } ?>
-			<?php echo do_shortcode( $content ); ?>
+		<div class="icon-box-text last-reset contact-icon-text">
+			<?php if ( $title ) { ?><h3 class="uppercase"><?php echo $title; ?></h3><?php } ?>
+			<?php if ( $title_small ) { ?><p><?php echo $title_small; ?></p><?php } ?>
+        <?php echo do_shortcode( $content ); ?>
 		</div>
 	</div>
 	<?php if ( $link ) echo '</a>'; ?>

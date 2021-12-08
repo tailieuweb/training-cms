@@ -250,7 +250,7 @@ while ( $recentPosts->have_posts() ) : $recentPosts->the_post();
   					</div>
           <?php } ?>
 					<div class="box-text <?php echo $classes_text; ?>" <?php echo get_shortcode_inline_css($css_args); ?>>
-					<div class="box-text-inner blog-post-inner">
+					<div class="box-text-inner box-title-blog blog-post-inner">
 
 					<?php do_action('flatsome_blog_post_before'); ?>
 
@@ -265,7 +265,7 @@ while ( $recentPosts->have_posts() ) : $recentPosts->the_post();
 					<?php } ?>
 					<h5 class="post-title is-<?php echo $title_size; ?> <?php echo $title_style;?>"><?php the_title(); ?></h5>
 					<?php if((!has_post_thumbnail() && $show_date !== 'false') || $show_date == 'text') {?><div class="post-meta is-small op-8"><?php echo get_the_date(); ?></div><?php } ?>
-					<div class="is-divider"></div>
+					<div class="is-divider line-blog"></div>
 					<?php if($show_excerpt !== 'false') { ?>
 					<p class="from_the_blog_excerpt <?php if($show_excerpt !== 'visible'){ echo 'show-on-hover hover-'.$show_excerpt; } ?>"><?php
 					  $the_excerpt  = get_the_excerpt();
