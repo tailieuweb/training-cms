@@ -41,6 +41,7 @@ if ( is_singular() ) {
 
 			<?php
 		}
+
 		if ( is_singular() ) {
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		} else {
