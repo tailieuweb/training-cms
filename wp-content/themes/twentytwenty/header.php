@@ -25,15 +25,26 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
     <link rel="profile" href="https://gmpg.org/xfn/11">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_1.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_2.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_4.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_5.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_6.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_8.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_9.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_7.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_10.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_1.css" type="text/css"
+        media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_2.css" type="text/css"
+        media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_4.css" type="text/css"
+        media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_5.css" type="text/css"
+        media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_6.css" type="text/css"
+        media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_8.css" type="text/css"
+        media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_9.css" type="text/css"
+        media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_7.css" type="text/css"
+        media="screen" />
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_10.css" type="text/css"
+        media="screen" />
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_post.css" type="text/css"
+        media="screen" />
     <?php wp_head(); ?>
 
 </head>

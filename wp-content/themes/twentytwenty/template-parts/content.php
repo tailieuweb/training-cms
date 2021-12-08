@@ -151,6 +151,68 @@ if (is_search()) {
 						</ul>
 					</div>
 				</div>
+				<div class="cate">
+					<h2>Post Effect</h2>
+					<div class="crossedbg-categories"></div>
+					<div class="widget html" style="margin-right: 40px; margin-top: -80px; margin-left: -10px;">					
+							<div class="holder">
+								<div class="cube">
+									<div class="face front" style="transform: translateZ(120px);">
+									<a href="http://wordpress.local/2021/09/30/pin-co-the-uon-va-co-gian-nhu-ran/">
+										<img src="http://wordpress.local/wp-content/uploads/2021/09/Pin-ran-7204-1632994229-150x150.jpg" alt="" class="cube-img">
+									</a>
+										<div class="txt" style="text-align: center; margin-top: 30px;">
+											
+											<div style="font-size: 20px; font-weight: bold; background-color: #0a5697; background-size: 100%; -webkit-background-clip: text; -moz-background-clip: text; -webkit-text-fill-color: transparent; -moz-text-fill-color: transparent; backface-visibility: hidden; transform: translateZ(30px)">
+												PIN CÓ THỂ UỐN VÀ CO GIÃN NHƯ RẮN
+											</div>
+										</div>
+									</div>
+									<div class="face back" style="transform: rotateY(180deg) translateZ(120px);">
+									<a href="http://wordpress.local/2021/09/30/tim-nguoi-gioi-cho-nhung-nghien-cuu-hang-dau-tai-vkist/">
+										<img src="http://wordpress.local/wp-content/uploads/2021/09/BT-Dat-2430-1632996417-150x150.jpg" alt="" class="cube-img">
+									</a>
+										<div class="txt" style="text-align: center; margin-top: 30px;">
+											
+											<div style="font-size: 20px; font-weight: bold; background-color: #0a5697; background-size: 100%; -webkit-background-clip: text; -moz-background-clip: text; -webkit-text-fill-color: transparent; -moz-text-fill-color: transparent; backface-visibility: hidden; transform: translateZ(30px)">
+											TÌM NGƯỜI GIỎI CHO NHỮNG NGHIÊN CỨU HÀNG ĐẦU TẠI VKIST
+											</div>
+										</div>
+									</div>
+									<div class="face left" style="transform: rotateY(-90deg) translateZ(120px);">
+									<a href="http://wordpress.local/2021/09/30/usyk-khong-muon-knock-out-joshua/">
+										<img src="http://wordpress.local/wp-content/uploads/2021/09/AP-jpeg-8023-1633017280-150x150.jpg" alt="" class="cube-img">
+									</a>
+										<div class="txt" style="text-align: center; margin-top: 30px;">
+											
+											<div style="font-size: 20px; font-weight: bold; background-color: #0a5697;  background-size: 100%; -webkit-background-clip: text; -moz-background-clip: text; -webkit-text-fill-color: transparent; -moz-text-fill-color: transparent; backface-visibility: hidden; transform: translateZ(30px)">
+											USYK KHÔNG MUỐN KNOCK-OUT JOSHUA
+											</div>
+										</div>
+									</div>
+									<div class="face right" style="transform: rotateY(90deg) translateZ(120px);">
+									<a href="http://wordpress.local/2021/09/30/bo-dao-nha-vao-chung-ket-futsal-world-cup/">
+										<img src="http://wordpress.local/wp-content/uploads/2021/09/gettyimages-1344118969-2048x20-7575-9489-1633032281-150x150.jpg" alt="" class="cube-img">
+									</a>
+										<div class="txt" style="text-align: center; margin-top: 30px;">
+											
+											<div style="font-size: 20px; font-weight: bold; background-color: #0a5697; background-size: 100%; -webkit-background-clip: text; -moz-background-clip: text; -webkit-text-fill-color: transparent; -moz-text-fill-color: transparent; backface-visibility: hidden; transform: translateZ(30px)">
+											BỒ ĐÀO NHA VÀO CHUNG KẾT FUTSAL WORLD CUP
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							</a>
+							<script>
+								w = document.querySelector('.holder').offsetWidth / 2;
+								document.querySelector('.front').style.transform = `translateZ(${w}px)`;
+								document.querySelector('.back').style.transform = `rotateY(180deg) translateZ(${w}px)`;
+								document.querySelector('.left').style.transform = `rotateY(-90deg) translateZ(${w}px)`;
+								document.querySelector('.right').style.transform = `rotateY(90deg) translateZ(${w}px)`;
+							</script>	<div class="divider"></div>
+					</div>
+				</div>
 			</div>
 			<div class="col-md-6">
 				<div class="header">
@@ -254,6 +316,33 @@ if (is_search()) {
 							<li class="cate-name">
 								<a href="http://wordpress.local/2021/09/30/mourinho-cham-moc-200-tran-tai-cup-chau-au/">Mourinho chạm mốc 200 trận tại Cup châu Âu</a>
 							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="cate">
+					<h2>Related Post</h2>
+					<div class="crossedbg-categories"></div>
+					<div class="ul-cate">
+						<ul>
+							<?php 
+							$cate = get_term($catID->ID);
+							$args = array(
+								'post_type' => 'post',
+								'orderby' => 'rand',
+								'post__not_in' => array($catID->ID),
+								'posts_per_page' => '3',
+							);
+							$other_post = new WP_Query($args);
+							if($other_post->have_posts()):
+								while ($other_post->have_posts()):$other_post->the_post();
+								?>
+								<li class="cate-name">
+								<a href="<?php the_permalink() ?>"><?php the_title() ?></a>
+							</li>
+								<?php
+								endwhile;
+							endif;							
+							?>
 						</ul>
 					</div>
 				</div>
