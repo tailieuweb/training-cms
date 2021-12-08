@@ -118,20 +118,20 @@ $product_categories = get_categories( $args );
 							<div class="nav-logo">
 								<nav class="menu-site">
 									<ul class="menu-list">
-										<li class="menu-item active"><a href="#">Home</a></li>
-										<li class="menu-item cate"> <a href="#">Categories</a>
-										<ul class="cate-list">
-										<!-- <?php 
-										// if( !empty($product_categories) ){
-										// 	foreach ($product_categories as $key => $category) {
-										// 		echo '<li>';
-										// 		echo '<a href="'.get_term_link($category).'" >';
-										// 		echo $category->name;
-										// 		echo '</a>';
-										// 		echo '</li>';
-										// 	}
-										// }
-										?> -->
+										<li class="menu-item active"><a href="<?php echo get_home_url(); ?>">Home</a></li>
+										<li class="menu-item  cate"> <a href="#">Categories</a>
+										<ul class="cate-list dropdown-menu">
+										<?php 
+										if( !empty($product_categories) ){
+											foreach ($product_categories as $key => $category) {
+												echo '<li>';
+												echo '<a href="'.get_term_link($category).'" >';
+												echo $category->name;
+												echo '</a>';
+												echo '</li>';
+											}
+										}
+										?>
 										</ul>
 									</li>
 									</ul>
@@ -159,7 +159,7 @@ $product_categories = get_categories( $args );
 									</a>
 								</div>
 								<div class="cart-section">
-									<a href="#">
+									<a href="<?= get_permalink( wc_get_page_id( 'cart' ) );?>">
 										<span class="cart-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24"
 												height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 												stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
