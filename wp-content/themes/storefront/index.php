@@ -38,6 +38,17 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
+		<?php
+		if ( have_posts() ) :
+
+			get_template_part( 'loop' );
+
+		else :
+
+			get_template_part( 'content', 'none' );
+
+		endif;
+		?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
