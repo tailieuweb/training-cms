@@ -1,6 +1,7 @@
 .widget-area .widget{
-    height: 579px;
+    height: 580px;
     width: 212px;
-    font-size: 30px;
+    font-size: 1.1em;
+    font-weight: 400;
 }
 
