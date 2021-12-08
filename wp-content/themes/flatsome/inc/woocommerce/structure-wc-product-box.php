@@ -310,7 +310,7 @@ if ( ! function_exists( 'flatsome_product_box_text_class' ) ) {
 	 * @return string
 	 */
 	function flatsome_product_box_text_class() {
-		$classes = array( 'box-text-products' );
+		$classes = array( 'box-text-products box-prducts' );
 
 		$grid_style = flatsome_option( 'grid_style' );
 

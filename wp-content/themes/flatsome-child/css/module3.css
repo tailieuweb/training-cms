@@ -75,21 +75,34 @@ div#text-15 {
 .product-section{   
     background: #f0f0f0;
 }
+/* .related{
+    padding-left: 10px;
+} */
 .product-TuongTu{
     background: #f0f0f0;
     padding-bottom: 50px;
     padding-left: 8px;
 }
-.box-text.box-text-products {
+.box-prducts {
     flex: 1;
     background: white;
     display: flex;
     flex-direction: column;
+    border-top: 1px solid #ddd;
+    min-height: 95px;
+    padding-right: 10px;
     padding-left: 10px;
+    height: 140px;
 }
-/* img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
-    border-bottom-style:solid;
-} */
+.type-product>.col-inner:hover{
+    border: 2px solid #1e428a;
+}
+a.quick-view.quick-view-added {
+    display: none;
+}
+h3.product-section-title.container-width.product-section-title-related.pt-half.pb-half.uppercase {
+    padding-left: 80px;
+}
 bdi {
     color: red;
 }
