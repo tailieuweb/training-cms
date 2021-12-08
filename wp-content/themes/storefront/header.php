@@ -23,6 +23,10 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-home-banner.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-footer.css" type="text/css" media="screen" />
 
+
+<!-- HUNG's Module -->
+<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-Hung-productList.css" type="text/css" media="screen" />
+
 </head>
 
 <body <?php body_class(); ?>>
