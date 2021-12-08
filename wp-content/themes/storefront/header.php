@@ -17,24 +17,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" href="{{WP_CONTENT_URL}}/themes/storefront/moduleLam.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/owl.carousel.min.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/modulelam.css" type="text/css" media="screen" />
 	<?php wp_head(); ?>
-	<style>
-		#banner {
-			width: 100%;
-			display: none;
-			margin-top: -90px;
-		}
-
-		.trang-chu #banner {
-			display: block !important;
-		}
-
-		#banner img {
-			width: 100%;
-		}
-	</style>
 </head>
 
 <body <?php body_class(); ?>>
@@ -43,7 +28,13 @@
 
 	<?php do_action('storefront_before_site'); ?>
 
-	<div id="page" class="hfeed site">
+	<?php
+		$home = '';
+		if (is_front_page()) {
+			$home = 'trang-chu';
+		}
+		?>
+	<div id="page" <?php post_class($home); ?> class="hfeed site">
 		<?php do_action('storefront_before_header'); ?>
 
 		<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
@@ -79,25 +70,23 @@
 		do_action('storefront_before_content');
 		?>
 
-		<?php
-		$home = '';
-		if (is_front_page()) {
-			$home = 'trang-chu';
-		}
-		?>
-
+		<!-- Banner start -->
+		<div id="banner">
+			<img src="https://i2.wp.com/d9n64ieh9hz8y.cloudfront.net/wp-content/uploads/20191106225001/asus-zenbook-seminar-trai-nghiem-laptop-hai-man-hinh-3-1140x760.jpg?resize=1140%2C760&ssl=1" alt="img-fluid">
+			<div class="container">
+				<div class="title-banner">Welcome to shop by group C</div>
+				<div class="des-banner">Read more</div>
+			</div>
+		</div>
+		<!-- Banner end -->
 		<div id="content" <?php post_class($home); ?> class="site-content" tabindex="-1">
 
 			<div class="col-full">
-				<!-- Banner start -->
-				<div id="banner">
-					<img src="https://i2.wp.com/d9n64ieh9hz8y.cloudfront.net/wp-content/uploads/20191106225001/asus-zenbook-seminar-trai-nghiem-laptop-hai-man-hinh-3-1140x760.jpg?resize=1140%2C760&ssl=1" alt="">
-				</div>
-				<!-- Banner end -->
+				
 
 				<!-- Terminal start -->
 				<!-- Feature Start -->
-				<!-- <section class="ftco-section testimony-section bg-light">
+				<section class="ftco-section testimony-section bg-light">
 					<div class="container">
 						<div class="row justify-content-center mb-5">
 							<div class="col-md-7 text-center heading-section ftco-animate">
@@ -132,7 +121,8 @@
 							</div>
 						</div>
 					</div>
-				</section> -->
+				</section>
+				
 				<!-- Feature End -->
 				<!-- Terminal start -->
 				<?php
