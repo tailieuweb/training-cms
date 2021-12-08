@@ -19,6 +19,7 @@
 	$class="";
 	if(!is_single()){
 		$class = "trang-chu";
+		
 	}
 	else{
 		$class = "chi-tiet";
@@ -28,13 +29,17 @@
 if(!is_single())
 {
 ?>
+
 <div class="ct">
+
 <div class="container">
+	
     <div class="row">
 		<div class="col-md-3 col-xs-3 topnewstime">
 			<span class="topnewsdate">30</span><br>
 			<span class="topnewsmonth">Tháng 9</span><br>
 		</div>
+	
         <div class="col-md-9">
             <article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
 

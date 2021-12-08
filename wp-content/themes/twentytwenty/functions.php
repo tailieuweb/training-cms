@@ -431,6 +431,17 @@ function twentytwenty_sidebar_registration() {
 			)
 		)
 	);
+	// Archive #9.
+	register_sidebar(
+		array_merge(
+			$shared_args,
+			array(
+				'name'        => __( 'Archive #9', 'twentytwenty' ),
+				'id'          => 'sidebar-11',
+				'description' => __( 'Widgets in this area will be displayed in the second column in the footer.', 'twentytwenty' ),
+			)
+		)
+	);
 }
 
 add_action( 'widgets_init', 'twentytwenty_sidebar_registration' );
