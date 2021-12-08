@@ -40,7 +40,7 @@ function flatsome_banner_grid($atts, $content = null) {
     ob_start();
   ?>
   <div class="banner-grid-wrapper">
-  <div id="<?php echo $_id; ?>" class="banner-grid <?php echo implode(' ', $classes); ?>" data-packery-options="">
+  <div id="<?php echo $_id; ?>" class="banner-grid banner-slider <?php echo implode(' ', $classes); ?>" data-packery-options="">
           <?php if(has_shortcode( $content, 'col_grid' ) || has_shortcode( $content, 'col' )) { ?>
             <?php echo do_shortcode( $content ) ?>
           <?php } else {
