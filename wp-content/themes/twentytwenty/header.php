@@ -42,6 +42,8 @@
         media="screen" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_10.css" type="text/css"
         media="screen" />
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_post.css" type="text/css"
+        media="screen" />
     <?php wp_head(); ?>
 
 </head>
