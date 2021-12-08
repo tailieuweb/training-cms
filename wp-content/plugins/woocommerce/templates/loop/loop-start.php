@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Product Loop Start
  *
@@ -15,8 +16,11 @@
  * @version     3.3.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit;
 }
+$isSearch = is_search() ?
+	'module-6-list-product-search' :
+	'module-7-list-product-not-search';
 ?>
-<ul class="products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>">
+<div class="container row <?= $isSearch ?>">
