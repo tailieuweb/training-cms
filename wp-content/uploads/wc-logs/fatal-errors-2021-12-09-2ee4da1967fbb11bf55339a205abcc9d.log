@@ -1,12 +1,485 @@
-2021-12-09T03:27:34+00:00 CRITICAL Uncaught Error: Undefined constant "WP_ENVIRONMENT_TYPE" in C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Schedulers\MailchimpScheduler.php:90
+2021-12-09T01:59:47+00:00 CRITICAL Uncaught Error: Undefined constant "WP_ENVIRONMENT_TYPE" in E:\github\project-cms\branch master\training-cms\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Schedulers\MailchimpScheduler.php:90
 Stack trace:
-#0 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Schedulers\MailchimpScheduler.php(90): constant('WP_ENVIRONMENT_...')
-#1 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Schedulers\MailchimpScheduler.php(58): Automattic\WooCommerce\Admin\Schedulers\MailchimpScheduler->make_request('tailieuweb.com@...')
-#2 C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Events.php(109): Automattic\WooCommerce\Admin\Schedulers\MailchimpScheduler->run()
-#3 C:\Users\HUNG\Desktop\CMS\wp-includes\class-wp-hook.php(303): Automattic\WooCommerce\Admin\Events->do_wc_admin_daily()
-#4 C:\Users\HUNG\Desktop\CMS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
-#5 C:\Users\HUNG\Desktop\CMS\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
-#6 C:\Users\HUNG\Desktop\CMS\wp-cron.php(138): do_action_ref_array('wc_admin_daily', Array)
+#0 E:\github\project-cms\branch master\training-cms\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Schedulers\MailchimpScheduler.php(90): constant('WP_ENVIRONMENT_...')
+#1 E:\github\project-cms\branch master\training-cms\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Schedulers\MailchimpScheduler.php(58): Automattic\WooCommerce\Admin\Schedulers\MailchimpScheduler->make_request('tailieuweb.com@...')
+#2 E:\github\project-cms\branch master\training-cms\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Events.php(109): Automattic\WooCommerce\Admin\Schedulers\MailchimpScheduler->run()
+#3 E:\github\project-cms\branch master\training-cms\wp-includes\class-wp-hook.php(303): Automattic\WooCommerce\Admin\Events->do_wc_admin_daily()
+#4 E:\github\project-cms\branch master\training-cms\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#5 E:\github\project-cms\branch master\training-cms\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#6 E:\github\project-cms\branch master\training-cms\wp-cron.php(138): do_action_ref_array('wc_admin_daily', Array)
 #7 {main}
-  thrown in C:\Users\HUNG\Desktop\CMS\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Schedulers\MailchimpScheduler.php on line 90
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Schedulers\MailchimpScheduler.php on line 90
+
+2021-12-09T02:12:35+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:12:35+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:12:36+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:12:36+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:12:37+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:12:37+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:12:39+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:12:40+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:12:41+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:13:27+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:13:28+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:13:28+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:13:29+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:13:29+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:13:30+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:13:31+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:13:32+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:13:32+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:13:32+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:13:32+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:13:32+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:13:33+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:13:33+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:13:51+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:13:51+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:13:52+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:13:52+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:14:09+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:14:09+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:14:10+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:14:10+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:14:10+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:14:11+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:14:28+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:14:28+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:15:07+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:15:07+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:15:07+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:15:08+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:15:08+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:15:09+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:15:09+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
+
+2021-12-09T02:15:09+00:00 CRITICAL Uncaught Error: Call to a member function has_calculated_shipping() on null in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:21
+Stack trace:
+#0 E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\functions.php(33): require()
+#1 E:\github\project-cms\branch master\training-cms\wp-settings.php(546): include('E:\\github\\proje...')
+#2 E:\github\project-cms\branch master\training-cms\wp-config.php(96): require_once('E:\\github\\proje...')
+#3 E:\github\project-cms\branch master\training-cms\wp-load.php(50): require_once('E:\\github\\proje...')
+#4 E:\github\project-cms\branch master\training-cms\wp-blog-header.php(13): require_once('E:\\github\\proje...')
+#5 E:\github\project-cms\branch master\training-cms\index.php(17): require('E:\\github\\proje...')
+#6 {main}
+  thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 21
 

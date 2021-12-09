@@ -17,19 +17,7 @@
 
 <?php wp_head(); ?>
 
-<!-- Module module-home-categoryMenu: -->
-<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-home-top.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-home-categoryMenu.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-home-banner.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-footer.css" type="text/css" media="screen" />
-
-
-<!-- HUNG's Module -->
-<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-Hung-productList.css" type="text/css" media="screen" />
-<!--    FONT AWESOME-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css"
-          integrity="sha512-p++g4gkFY8DBqLItjIfuKJPFvTPqcg2FzOns2BNaltwoCOrXMqRIOqgWqWEvuqsj/3aVdgoEo2Y7X6SomTfUPA=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module6.css" type="text/css" media="screen" />
 </head>
 
 <body <?php body_class(); ?>>
@@ -64,6 +52,13 @@
 
 	</header><!-- #masthead -->
 
+
+	<?php if(basename(get_permalink()) === 'cart') { ?>
+		<div class="module6-page-header text-center">
+			<h1 class="module6-page-title">Shopping Cart<span>Shop</span></h1>
+		</div><!-- End .page-header -->
+		<?php } ?>
+		
 	<?php
 	/**
 	 * Functions hooked in to storefront_before_content
