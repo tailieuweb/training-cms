@@ -18,8 +18,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.css" type="text/css" media="screen" />
 
-
-
 <?php wp_head(); ?>
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module6.css" type="text/css" media="screen" />
@@ -34,6 +32,28 @@
 
 <div id="page" class="hfeed site">
 	<?php do_action( 'storefront_before_header' ); ?>
+    <header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
+
+        <?php
+        /**
+         * Functions hooked into storefront_header action
+         *
+         * @hooked storefront_header_container                 - 0
+         * @hooked storefront_skip_links                       - 5
+         * @hooked storefront_social_icons                     - 10
+         * @hooked storefront_site_branding                    - 20
+         * @hooked storefront_secondary_navigation             - 30
+         * @hooked storefront_product_search                   - 40
+         * @hooked storefront_header_container_close           - 41
+         * @hooked storefront_primary_navigation_wrapper       - 42
+         * @hooked storefront_primary_navigation               - 50
+         * @hooked storefront_header_cart                      - 60
+         * @hooked storefront_primary_navigation_wrapper_close - 68
+         */
+//        do_action( 'storefront_header' );
+        ?>
+
+    </header><!-- #masthead -->
 
 	<!-- ============================================== HEADER ============================================== -->
 <header class="header-style-1" > 
