@@ -153,9 +153,9 @@ function hoangweb_readmore_flatsome(){
         })(jQuery)
     </script>
     <?php
-}
-?>
-/**
+    /**
  * Note: Do not add any custom code here. Please use a custom plugin so that your customizations aren't lost during updates.
  * https://github.com/woocommerce/theme-customisations
  */
+}
+?>
