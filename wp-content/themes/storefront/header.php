@@ -197,8 +197,7 @@ $product_categories = get_categories($args);
 	do_action('storefront_before_content');
 	?>
 
-	<div id="content" class="site-content danh" tabindex="-1">
-		<div class="col-full">
-
-			<?php
-			do_action('storefront_content_top');
+        <div id="content" class="site-content danh" tabindex="-1">
+            <div class="col-full module5">
+                <?	do_action( 'storefront_content_top' ); ?>
+				
