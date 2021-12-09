@@ -121,8 +121,19 @@ bdi {
 ul.menu>li, .widget>ul>li{
     border-top: none !important;
 }
-ul.menu>li>a, ul.menu>li>span:first-child, .widget>ul>li>a, .widget>ul>li>span:first-child {
-    border-bottom: 1px solid black;
+aside ul>li{
+    position: relative;
+}
+aside ul>li:before{
+  background: linear-gradient(to right, green, blue);
+  bottom: 0;
+  content: "";
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-left: 10px;
 }
 
 /* } */
