@@ -5,7 +5,7 @@
 
 #lav-mdl3-mdl4 {
     display: grid;
-    grid-template-columns: 30% 68%;
+    grid-template-columns: 30.5% 67.5%;
     margin-top: 3em;
     column-gap: 2%;
 }
@@ -94,4 +94,8 @@
 
 #lav-mdl3-mdl4 .lav-new-products div.wp-block-cover {
     display: none;
+}
+
+#lav-mdl3-mdl4 .lav-new-products li.wc-block-grid__product div.wc-block-grid__product-rating {
+    display: none !important;
 }
