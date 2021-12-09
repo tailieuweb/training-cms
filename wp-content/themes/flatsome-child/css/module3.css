@@ -75,6 +75,9 @@ div#text-15 {
 .product-section{   
     background: #f0f0f0;
 }
+.product-main{
+    background: white;
+}
 /* .related{
     padding-left: 10px;
 } */
