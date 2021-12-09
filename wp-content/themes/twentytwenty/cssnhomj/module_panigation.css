@@ -1,0 +1,52 @@
+.pagination-wrapper .pagination .nav-links{
+    margin-top: 50px;
+}
+
+.pagination-wrapper .pagination .nav-links .page-numbers-pan{
+    border:1px solid rgb(167 167 167);
+    font-size: 17px;
+    padding: 5px 14px 8px 15px;
+    margin:0 5px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: 400;
+    color: rgb(121, 121, 121);
+    background-color:#fff;
+}
+
+.pagination-wrapper .pagination .nav-links .page-numbers-pan:hover{
+    color: #fff;
+    background-color: #3498db;
+    border:1px solid #3498db;
+}
+
+.pagination-wrapper .pagination .nav-links .current{
+    color: #fff;
+    background-color: #3498db;
+    border:1px solid #3498db;
+}
+
+.pagination-wrapper .pagination .nav-links .page-numbers{
+    border:1px solid rgb(167 167 167);
+    font-size: 17px;
+    padding: 0px 14px 3px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    color: rgb(121, 121, 121);
+    background-color:#fff;
+}
+
+.pagination-wrapper .pagination .nav-links .page-numbers:hover{
+    color: #fff;
+    background-color: #3498db;
+    border:1px solid #3498db;
+}
+
+.pagination-wrapper .pagination .nav-links .prev{
+    margin: 0 100px 0 auto;
+}
+
+.pagination-wrapper .pagination .nav-links .next{
+    margin: 0 auto 0 100px;
+}
