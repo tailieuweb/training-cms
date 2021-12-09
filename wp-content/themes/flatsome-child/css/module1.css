@@ -32,3 +32,11 @@
 }
 .row .col-md-9 a:hover{
     color: #e37a7d;
+}
+
+/*Css PRODUCT SIDEBAR*/
+.widget-title{
+    color: #ed1c24;
+    text-transform: uppercase;
+    font-size: 14px;
+}
