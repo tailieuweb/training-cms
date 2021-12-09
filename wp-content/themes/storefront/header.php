@@ -67,5 +67,6 @@
 
         <div id="content" class="site-content danh" tabindex="-1">
             <div class="col-full module5">
-                do_action( 'storefront_content_top' );
+                <?	do_action( 'storefront_content_top' ); ?>
+				
                
