@@ -1,7 +1,18 @@
-/* .wc-block-grid__product-onsale, .onsale, .woocommerce-pagination .page-numbers li .page-numbers:not(.current) {
+
+@keyframes my { 
+    0% { color: red; } 
+    50% { color: #fff; } 
+    100% { color: red; }
+     }
+span.onsale.module5{ 
     color: red;
-    background: yellow;
-} */
+    background: yellow; 
+        font-size:20px; 
+        -webkit-animation: my 700ms infinite; 
+        -moz-animation: my 700ms infinite; 
+        -o-animation: my 700ms infinite; 
+        animation: my 700ms infinite; 
+    }
 button.alt, input[type="button"].alt, input[type="reset"].alt, input[type="submit"].alt, .button.alt, .widget-area .widget a.button.alt {
     color: #fff !important;
     background: #ee4d2d !important;
@@ -10,10 +21,7 @@ button.alt, input[type="button"].alt, input[type="reset"].alt, input[type="submi
     margin-bottom: 2.617924em;
     background: white;
 }
-.danh .module5 .onsale::before{
-    color: red !important;
-    background: yellow !important;
-}
+
 .danh .module5 .flex-control-thumbs{
     position: relative;
     left: 85px;
