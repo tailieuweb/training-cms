@@ -82,45 +82,7 @@
 				
 
 				<!-- Terminal start -->
-				<!-- Feature Start -->
-				<section class="ftco-section testimony-section bg-light">
-					<div class="container">
-						<div class="row justify-content-center mb-5">
-							<div class="col-md-7 text-center heading-section ftco-animate">
-								<h2 class="mb-3">Testimonial</h2>
-							</div>
-						</div>
-						<div class="row ftco-animate">
-							<div class="col-md-12">
-								<div class="carousel-testimony owl-carousel ftco-owl">
-									<div class="item">
-										<div class="text-center">
-											<div class="text pt-4">
-												<img src="https://toplap.vn/storage/img/FYWJoqkuYl5rUdhcJGmEnSFgme6vMWPpzKMOy02E.jpeg" class="img-fluid" style="border-radius: 10px;" alt="">
-											</div>
-										</div>
-									</div>
-									<div class="item">
-										<div class="rounded text-center">
-											<div class="text pt-4">
-												<img src="https://toplap.vn/storage/img/FYWJoqkuYl5rUdhcJGmEnSFgme6vMWPpzKMOy02E.jpeg" class="img-fluid" style="border-radius: 10px;" alt="">
-											</div>
-										</div>
-									</div>
-									<div class="item">
-										<div class="rounded text-center">
-											<div class="text pt-4">
-												<img src="https://toplap.vn/storage/img/FYWJoqkuYl5rUdhcJGmEnSFgme6vMWPpzKMOy02E.jpeg" class="img-fluid" style="border-radius: 10px;" alt="">
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				
-				<!-- Feature End -->
+
 				<!-- Terminal start -->
 				<?php
 				do_action('storefront_content_top');
