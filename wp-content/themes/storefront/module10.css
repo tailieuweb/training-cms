@@ -6,6 +6,7 @@
     display: none;
 }
 
+
 .lav-custom-product p.price {
     display: flex;
     flex-direction: row-reverse;
@@ -44,5 +45,9 @@
 }
 
 .lav-custom-product div.product_meta span.posted_in {
+    display: none !important;
+}
+
+.lav-custom-product div.product_meta span.tagged_as {
     display: none !important;
 }
