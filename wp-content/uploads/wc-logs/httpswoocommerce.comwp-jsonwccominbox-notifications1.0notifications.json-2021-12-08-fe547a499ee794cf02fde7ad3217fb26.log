@@ -1,0 +1,22 @@
+2021-12-08T02:56:32+00:00 ERROR Error getting remote inbox notification data feed
+2021-12-08T02:56:32+00:00 ERROR WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 28: Operation timed out after 5011 milliseconds with 708 out of 6207 bytes received
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+    [additional_data:protected] => Array
+        (
+        )
+
+)
+

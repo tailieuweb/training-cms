@@ -1,0 +1,51 @@
+
+@keyframes my { 
+    0% { color: red; } 
+    50% { color: #fff; } 
+    100% { color: red; }
+     }
+span.onsale.module5{ 
+    color: red;
+    background: yellow; 
+        font-size:20px; 
+        -webkit-animation: my 700ms infinite; 
+        -moz-animation: my 700ms infinite; 
+        -o-animation: my 700ms infinite; 
+        animation: my 700ms infinite; 
+    }
+.danh button.alt, .widget-area .widget a.button.alt {
+    color: #fff !important;
+    background: #ee4d2d !important;
+}
+.danh .module5 .site-main{
+    margin-bottom: 2.617924em;
+    background: white;
+}
+
+.danh .module5 .flex-control-thumbs{
+    position: relative;
+    left: 85px;
+}
+.danh .module5 .quantity .qty {
+    width: 4.235801032em;
+    text-align: center;
+    position: relative;
+    left: 0px;
+}
+.danh .product_meta a {
+    font-weight: 600;
+    text-decoration: none !important;
+}
+.danh .module5 .product  {
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    top: 15px;
+}
+
+ .danh .single-product div.product .woocommerce-product-gallery .flex-control-thumbs { 
+     margin: 0;
+      padding: 0;
+       position: relative;
+        left: 85px;
+     }
