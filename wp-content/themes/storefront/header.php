@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module6.css" type="text/css" media="screen" />
 <!--  <link rel="stylesheet" href="--><?php //echo get_template_directory_uri() ?><!--/module7.css" type="text/css" media="screen" />-->
 
+
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-home-top.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-home-categoryMenu.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-home-banner.css" type="text/css" media="screen" />
@@ -37,6 +38,11 @@
   <!--    FONT AWESOME-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css"
         integrity="sha512-p++g4gkFY8DBqLItjIfuKJPFvTPqcg2FzOns2BNaltwoCOrXMqRIOqgWqWEvuqsj/3aVdgoEo2Y7X6SomTfUPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Module 3 & 4 - Vũ: -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module3_module4.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module10.css" type="text/css" media="screen" />
+
 </head>
 
 <body <?php body_class(); ?>>

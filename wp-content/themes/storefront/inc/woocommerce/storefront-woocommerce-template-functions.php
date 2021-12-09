@@ -9,8 +9,8 @@ if ( ! function_exists( 'storefront_woo_cart_available' ) ) {
 	/**
 	 * Validates whether the Woo Cart instance is available in the request
 	 *
-	 * @since 2.6.0
 	 * @return bool
+	 *@since 2.6.0
 	 */
 	function storefront_woo_cart_available() {
 		$woo = WC();
@@ -23,16 +23,32 @@ if ( ! function_exists( 'storefront_before_content' ) ) {
 	 * Before Content
 	 * Wraps all WooCommerce content in wrappers which match the theme markup
 	 *
-	 * @since   1.0.0
 	 * @return  void
+	 *@since   1.0.0
 	 */
 	function storefront_before_content() {
+        $lav_array_check = explode("/", get_permalink());
+        $lav_check = in_array("product", $lav_array_check) && count($lav_array_check) >= 3 && $lav_array_check[3] === "product";
 		?>
+
 <!--            HO si Hung-->
 <!--        Added custom id-->
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main Hung-custom-wrapper" role="main">
+
+        <?php
+        if ($lav_check) {
+            ?>
+            <div id="primary" class="content-area lav-custom-product" style='width: 100%;'>
+    			<main id="main" class="site-main" role="main">
+            <?php
+        } else {
+        ?>
+            <div id="primary" class="content-area">
+			    <main id="main" class="site-main" role="main">
+
 		<?php
+		 }
 	}
 }
 
@@ -41,8 +57,8 @@ if ( ! function_exists( 'storefront_after_content' ) ) {
 	 * After Content
 	 * Closes the wrapping divs
 	 *
-	 * @since   1.0.0
 	 * @return  void
+	 *@since   1.0.0
 	 */
 	function storefront_after_content() {
 		?>
@@ -102,9 +118,9 @@ if ( ! function_exists( 'storefront_product_search' ) ) {
 	/**
 	 * Display Product Search
 	 *
-	 * @since  1.0.0
-	 * @uses  storefront_is_woocommerce_activated() check if WooCommerce is activated
 	 * @return void
+	 *@uses  storefront_is_woocommerce_activated() check if WooCommerce is activated
+	 * @since  1.0.0
 	 */
 	function storefront_product_search() {
 		if ( storefront_is_woocommerce_activated() ) {
@@ -121,9 +137,9 @@ if ( ! function_exists( 'storefront_header_cart' ) ) {
 	/**
 	 * Display Header Cart
 	 *
-	 * @since  1.0.0
-	 * @uses  storefront_is_woocommerce_activated() check if WooCommerce is activated
 	 * @return void
+	 *@uses  storefront_is_woocommerce_activated() check if WooCommerce is activated
+	 * @since  1.0.0
 	 */
 	function storefront_header_cart() {
 		if ( storefront_is_woocommerce_activated() ) {
@@ -151,8 +167,8 @@ if ( ! function_exists( 'storefront_upsell_display' ) ) {
 	 * Upsells
 	 * Replace the default upsell function with our own which displays the correct number product columns
 	 *
-	 * @since   1.0.0
 	 * @return  void
+	 * @since   1.0.0
 	 * @uses    woocommerce_upsell_display()
 	 */
 	function storefront_upsell_display() {
@@ -165,8 +181,8 @@ if ( ! function_exists( 'storefront_sorting_wrapper' ) ) {
 	/**
 	 * Sorting wrapper
 	 *
-	 * @since   1.4.3
 	 * @return  void
+	 *@since   1.4.3
 	 */
 	function storefront_sorting_wrapper() {
 		echo '<div class="storefront-sorting">';
@@ -177,8 +193,8 @@ if ( ! function_exists( 'storefront_sorting_wrapper_close' ) ) {
 	/**
 	 * Sorting wrapper close
 	 *
-	 * @since   1.4.3
 	 * @return  void
+	 *@since   1.4.3
 	 */
 	function storefront_sorting_wrapper_close() {
 		echo '</div>';
@@ -189,8 +205,8 @@ if ( ! function_exists( 'storefront_product_columns_wrapper' ) ) {
 	/**
 	 * Product columns wrapper
 	 *
-	 * @since   2.2.0
 	 * @return  void
+	 *@since   2.2.0
 	 */
 	function storefront_product_columns_wrapper() {
 		$columns = storefront_loop_columns();
@@ -220,8 +236,8 @@ if ( ! function_exists( 'storefront_product_columns_wrapper_close' ) ) {
 	/**
 	 * Product columns wrapper close
 	 *
-	 * @since   2.2.0
 	 * @return  void
+	 *@since   2.2.0
 	 */
 	function storefront_product_columns_wrapper_close() {
 		echo '</div>';
@@ -263,9 +279,9 @@ if ( ! function_exists( 'storefront_product_categories' ) ) {
 	 * Display Product Categories
 	 * Hooked into the `homepage` action in the homepage template
 	 *
-	 * @since  1.0.0
 	 * @param array $args the product section args.
 	 * @return void
+	 *@since  1.0.0
 	 */
 	function storefront_product_categories( $args ) {
 		$args = apply_filters(
@@ -318,9 +334,9 @@ if ( ! function_exists( 'storefront_recent_products' ) ) {
 	 * Display Recent Products
 	 * Hooked into the `homepage` action in the homepage template
 	 *
-	 * @since  1.0.0
 	 * @param array $args the product section args.
 	 * @return void
+	 *@since  1.0.0
 	 */
 	function storefront_recent_products( $args ) {
 		$args = apply_filters(
@@ -373,9 +389,9 @@ if ( ! function_exists( 'storefront_featured_products' ) ) {
 	 * Display Featured Products
 	 * Hooked into the `homepage` action in the homepage template
 	 *
-	 * @since  1.0.0
 	 * @param array $args the product section args.
 	 * @return void
+	 *@since  1.0.0
 	 */
 	function storefront_featured_products( $args ) {
 		$args = apply_filters(
@@ -430,9 +446,9 @@ if ( ! function_exists( 'storefront_popular_products' ) ) {
 	 * Display Popular Products
 	 * Hooked into the `homepage` action in the homepage template
 	 *
-	 * @since  1.0.0
 	 * @param array $args the product section args.
 	 * @return void
+	 *@since  1.0.0
 	 */
 	function storefront_popular_products( $args ) {
 		$args = apply_filters(
@@ -486,8 +502,8 @@ if ( ! function_exists( 'storefront_on_sale_products' ) ) {
 	 * Hooked into the `homepage` action in the homepage template
 	 *
 	 * @param array $args the product section args.
-	 * @since  1.0.0
 	 * @return void
+	 *@since  1.0.0
 	 */
 	function storefront_on_sale_products( $args ) {
 		$args = apply_filters(
@@ -542,9 +558,9 @@ if ( ! function_exists( 'storefront_best_selling_products' ) ) {
 	 * Display Best Selling Products
 	 * Hooked into the `homepage` action in the homepage template
 	 *
-	 * @since 2.0.0
 	 * @param array $args the product section args.
 	 * @return void
+	 *@since 2.0.0
 	 */
 	function storefront_best_selling_products( $args ) {
 		$args = apply_filters(
@@ -598,15 +614,15 @@ if ( ! function_exists( 'storefront_promoted_products' ) ) {
 	 * Check for featured products then on-sale products and use the appropiate shortcode.
 	 * If neither exist, it can fallback to show recently added products.
 	 *
-	 * @since  1.5.1
 	 * @param integer $per_page total products to display.
 	 * @param integer $columns columns to arrange products in to.
 	 * @param boolean $recent_fallback Should the function display recent products as a fallback when there are no featured or on-sale products?.
-	 * @uses  storefront_is_woocommerce_activated()
+	 * @return void
+	 *@uses  storefront_is_woocommerce_activated()
 	 * @uses  wc_get_featured_product_ids()
 	 * @uses  wc_get_product_ids_on_sale()
 	 * @uses  storefront_do_shortcode()
-	 * @return void
+	 * @since  1.5.1
 	 */
 	function storefront_promoted_products( $per_page = '2', $columns = '2', $recent_fallback = true ) {
 		if ( storefront_is_woocommerce_activated() ) {
@@ -857,13 +873,13 @@ if ( ! function_exists( 'storefront_woocommerce_brands_homepage_section' ) ) {
 	 * Hooked into the `homepage` action in the homepage template.
 	 * Requires WooCommerce Brands.
 	 *
-	 * @since  2.3.0
-	 * @link   https://woocommerce.com/products/brands/
+	 * @return void
+	 *@link   https://woocommerce.com/products/brands/
 	 * @uses   apply_filters()
 	 * @uses   storefront_do_shortcode()
 	 * @uses   wp_kses_post()
 	 * @uses   do_action()
-	 * @return void
+	 * @since  2.3.0
 	 */
 	function storefront_woocommerce_brands_homepage_section() {
 		$args = apply_filters(
@@ -911,13 +927,13 @@ if ( ! function_exists( 'storefront_woocommerce_brands_archive' ) ) {
 	 * Display brand image on brand archives
 	 * Requires WooCommerce Brands.
 	 *
-	 * @since  2.3.0
-	 * @link   https://woocommerce.com/products/brands/
+	 * @return void
+	 *@link   https://woocommerce.com/products/brands/
 	 * @uses   is_tax()
 	 * @uses   wp_kses_post()
 	 * @uses   get_brand_thumbnail_image()
 	 * @uses   get_queried_object()
-	 * @return void
+	 * @since  2.3.0
 	 */
 	function storefront_woocommerce_brands_archive() {
 		if ( is_tax( 'product_brand' ) ) {
@@ -931,11 +947,11 @@ if ( ! function_exists( 'storefront_woocommerce_brands_single' ) ) {
 	 * Output product brand image for use on single product pages
 	 * Requires WooCommerce Brands.
 	 *
-	 * @since  2.3.0
-	 * @link   https://woocommerce.com/products/brands/
+	 * @return void
+	 *@link   https://woocommerce.com/products/brands/
 	 * @uses   storefront_do_shortcode()
 	 * @uses   wp_kses_post()
-	 * @return void
+	 * @since  2.3.0
 	 */
 	function storefront_woocommerce_brands_single() {
 		$brand = storefront_do_shortcode(

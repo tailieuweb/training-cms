@@ -1,0 +1,53 @@
+.lav-custom-product h1.product_title.entry-title {
+    font-weight: 600;
+}
+
+.lav-custom-product .onsale {
+    display: none;
+}
+
+
+.lav-custom-product p.price {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    font-size: 1.7rem !important;
+    align-items: center;
+    margin: 1em 0 !important;
+}
+
+.lav-custom-product ins span.woocommerce-Price-amount.amount {
+    color: #ff7878;
+    font-weight: 600;
+    font-size: 2.2rem !important;
+    margin-right: 1rem;
+}
+
+.lav-custom-product a.woocommerce-product-gallery__trigger {
+    display: none !important;
+}
+
+.lav-custom-product input.input-text.qty.text {
+    border-radius: 5px;
+    background-color: #fff;
+    padding-left: 1.6rem;
+    border: 1px solid #e5e5e5;
+}
+
+.lav-custom-product button.single_add_to_cart_button.button.alt {
+    border-radius: 6px !important;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: unset;
+    background-color: #fdd922;
+    color: #000;
+    margin-left: 2rem;
+}
+
+.lav-custom-product div.product_meta span.posted_in {
+    display: none !important;
+}
+
+.lav-custom-product div.product_meta span.tagged_as {
+    display: none !important;
+}
