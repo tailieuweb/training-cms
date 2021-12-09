@@ -82,10 +82,6 @@ ul.products li.product .button:hover{
   border: 2px solid #FFC107;
  
 }
-ul.products{
-  overflow: hidden;
-  background: #FFC107;
-}
 .site-main ul.products li.product:hover{
   box-shadow:
   0 0 30px 10px #fff,  /* inner white */
