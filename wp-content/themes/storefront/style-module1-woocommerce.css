@@ -21,6 +21,7 @@
 }
 
 .product-module1-woocommerce:hover {
+  text-decoration: red !important;
   background-color: #fff;
   transform: translateY(-30px);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
@@ -70,4 +71,7 @@
     #65beb3,
     #70db96
   );
+}
+.product-module1-woocommerce .woocommerce-LoopProduct-link:hover {
+  text-decoration: none;
 }
