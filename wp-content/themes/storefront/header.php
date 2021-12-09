@@ -13,18 +13,19 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module10.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module6-woocommerce.css"
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module10.css" type="text/css"
+        media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module6-woocommerce.css"
         type="text/css" media="screen" />
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module5-woocommerce.css"
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module5-woocommerce.css"
         type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module3-woocommerce.css"
         type="text/css" media="screen" />
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module1-woocommerce.css"
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module1-woocommerce.css"
         type="text/css" media="screen" />
 
     <?php wp_head(); ?>
@@ -62,6 +63,8 @@
 
         </header><!-- #masthead -->
 
+
+
         <?php
 		/**
 		 * Functions hooked in to storefront_before_content
@@ -72,20 +75,7 @@
 		do_action('storefront_before_content');
 		?>
 
-        </header><!-- #masthead -->
-
-        <?php
-	/**
-	 * Functions hooked in to storefront_before_content
-	 *
-	 * @hooked storefront_header_widget_region - 10
-	 * @hooked woocommerce_breadcrumb - 10
-	 */
-	do_action( 'storefront_before_content' );
-	?>
-
         <div id="content" class="site-content danh" tabindex="-1">
             <div class="col-full module5">
-                 <?php
+                <?php
 				do_action('storefront_content_top');
-               
