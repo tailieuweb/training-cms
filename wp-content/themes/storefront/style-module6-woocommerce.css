@@ -12,4 +12,6 @@
 }
 .woocommerce-tabs .panel{
     width: 100% !important;
+}.woocommerce-Tabs-panel h4{
+    text-align: justify !important;
 }
