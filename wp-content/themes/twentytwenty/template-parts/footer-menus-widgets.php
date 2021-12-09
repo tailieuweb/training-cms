@@ -20,7 +20,7 @@ $has_sidebar_4 = is_active_sidebar('sidebar-4');
 // Only output the container if there are elements to display.
 if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3 || $has_sidebar_4 ) {
 	?>
-
+<?php echo do_shortcode("[pt_view id=bcde189x4d]"); ?>
 <div class="footer-nav-widgets-wrapper header-footer-group">
 
     <div class="footer-inner section-inner">

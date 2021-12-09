@@ -33,7 +33,6 @@ if(!is_single())
 <div class="ct">
 
 <div class="container">
-	
     <div class="row">
 		<div class="col-md-3 col-xs-3 topnewstime">
 			<span class="topnewsdate">30</span><br>
@@ -131,11 +130,11 @@ if(!is_single())
     </div>
 </div>
 </div>
+
 <hr class="hr">
 <?php }
 else{
 ?>
-
 <article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
 <div class="row">
 	<div class="col-md-2">
