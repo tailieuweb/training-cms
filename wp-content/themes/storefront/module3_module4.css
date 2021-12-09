@@ -5,8 +5,8 @@
 
 #lav-mdl3-mdl4 {
     display: grid;
-    grid-template-columns: 3fr 8fr;
-    grid-gap: 2rem;
+    grid-template-columns: 31.9% 68.1%;
+    margin-top: 3em;
 }
 
 @media (max-width: 767px) {
@@ -52,7 +52,7 @@
 }
 
 #lav-mdl3-mdl4 .lav-new-products ul li div.wp-block-button.wc-block-grid__product-add-to-cart {
-    /*display: none;*/
+    display: none;
 }
 
 #lav-mdl3-mdl4 .lav-new-products ul li.wc-block-grid__product {
@@ -78,4 +78,8 @@
 
 #lav-mdl3-mdl4 .lav-new-products ul li .wc-block-grid__product-price.price ins {
     font-weight: 700 !important;
+}
+
+#lav-mdl3-mdl4 .lav-new-products div.wp-block-cover {
+    display: none;
 }
