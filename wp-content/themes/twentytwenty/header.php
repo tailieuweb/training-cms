@@ -25,26 +25,17 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
     <link rel="profile" href="https://gmpg.org/xfn/11">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_1.css" type="text/css"
-        media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_2.css" type="text/css"
-        media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_4.css" type="text/css"
-        media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_5.css" type="text/css"
-        media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_6.css" type="text/css"
-        media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_8.css" type="text/css"
-        media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_9.css" type="text/css"
-        media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_7.css" type="text/css"
-        media="screen" />
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_10.css" type="text/css"
-        media="screen" />
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_post.css" type="text/css"
-        media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_1.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_2.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_4.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_5.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_6.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_8.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_9.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_7.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_10.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_post.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/cssnhomj/module_banner.css" type="text/css" media="screen" />
     <?php wp_head(); ?>
 
 </head>
@@ -226,7 +217,8 @@
         }
         ?>
         <!--Image slider start-->
-            <div class="container">
+        <div class="container">
+            <div class="banner">
                 <div class="slider">
                     <div class="sliders">
                         <!--Radio button start-->
@@ -236,12 +228,54 @@
                         <input type="radio" name="radio-btn" id="radio4">
                         <!--Radio button end-->
                         <!--Image slide start-->
-                        
+                        <div class="slide first">
+                            <img src="http://wordpress.local/wp-content/uploads/2021/09/Pin-ran-7204-1632994229-150x150.jpg" alt="">
+                            <a href="http://wordpress.local/2021/09/30/pin-co-the-uon-va-co-gian-nhu-ran/" class="link">Pin có thể uốn và co giãn như rắn</a>
+                        </div>
+                        <div class="slide">
+                            <img src="http://wordpress.local/wp-content/uploads/2021/09/BT-Dat-2430-1632996417-150x150.jpg" alt="">
+                            <a href="http://wordpress.local/2021/09/30/tim-nguoi-gioi-cho-nhung-nghien-cuu-hang-dau-tai-vkist/" class="link">Tìm người giỏi cho những nghiên cứu hàng đầu tại VKIST</a>
+                        </div>
+                        <div class="slide">
+                            <img src="http://wordpress.local/wp-content/uploads/2021/09/AP-jpeg-8023-1633017280-150x150.jpg" alt="">
+                            <a href="http://wordpress.local/2021/09/30/usyk-khong-muon-knock-out-joshua/" class="link">Usyk không muốn knock-out Joshua</a>
+                        </div>
+                        <div class="slide">
+                            <img src="http://wordpress.local/wp-content/uploads/2021/09/gettyimages-1344118969-2048x20-7575-9489-1633032281-150x150.jpg" alt="">
+                            <a href="http://wordpress.local/2021/09/30/bo-dao-nha-vao-chung-ket-futsal-world-cup/" class="link">Bồ Đào Nha vào chung kết futsal World Cup</a>
+                        </div>
                         <!--Image slide end-->
+                        <!--Automatic navigation start-->
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                        <!--Automatic navigation end-->
                     </div>
+                    <!--Manual navigation start-->
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                    <!--Manual navigation end-->
                 </div>
             </div>
+        </div>
         <!--Image slider end-->
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function() {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 4) {
+                    counter = 1;
+                }
+            }, 4000);
+        </script>
     </header><!-- #site-header -->
 
     <?php
