@@ -1,0 +1,17 @@
+.woocommerce-tabs ul.tabs{
+    display: flex;
+}
+.woocommerce-tabs ul.tabs a:hover{
+    border-bottom: 2px solid black;
+}
+.woocommerce-tabs ul.tabs{
+    border-top:1px solid rgba(0,0,0,0) !important;
+}
+.woocommerce-tabs ul.tabs li{
+    padding-right: 35px;
+}
+.woocommerce-tabs .panel{
+    width: 100% !important;
+}.woocommerce-Tabs-panel h3, h4, p{
+    text-align: justify !important;
+}

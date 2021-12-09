@@ -1,4 +1,4 @@
-2021-11-25T06:32:51+00:00 ERROR Incorrect response from Mailchimp API with: stdClass Object
+2021-11-25T06:50:50+00:00 ERROR Incorrect response from Mailchimp API with: stdClass Object
 (
     [code] => mailchimp-error
     [message] => A MailChimp error has occurred.
@@ -8,7 +8,7 @@
             [title] => Invalid Resource
             [status] => 400
             [detail] => Your merge fields were invalid.
-            [instance] => c87f410d-5cea-86a7-72ac-d6b9b17b54fa
+            [instance] => 28e52899-2338-9099-bda0-55fac06668b7
             [errors] => Array
                 (
                     [0] => stdClass Object
