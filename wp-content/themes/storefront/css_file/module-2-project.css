@@ -1,1 +1,128 @@
 /* Css for Module 2 project */
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body, .newsfeed_carousel.owl-carousel .owl-nav div, .jeg_filter_button, .owl-carousel .owl-nav div, .jeg_readmore, .jeg_hero_style_7 .jeg_post_meta a, .widget_calendar thead th, .widget_calendar tfoot a, .jeg_socialcounter a, .entry-header .jeg_meta_like a, .entry-header .jeg_meta_comment a, .entry-content tbody tr:hover, .entry-content th, .jeg_splitpost_nav li:hover a, #breadcrumbs a, .jeg_author_socials a:hover, .jeg_footer_content a, .jeg_footer_bottom a, .jeg_cartcontent, .woocommerce .woocommerce-breadcrumb a {
+    color: #39434d;
+}
+.jeg_container, .jeg_container_full {
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+.jeg_content {
+    padding: 0px !important;
+}
+.jeg_vc_content .vc_row[data-vc-full-width=true] {
+    left: 0 !important;
+    width: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.jeg_vc_content .vc_row, .jeg_vc_content .vc_row[data-vc-full-width=true]>.jeg-vc-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+}
+.vc_row[data-vc-full-width] {
+    transition: opacity .5s ease;
+    overflow: hidden;
+}
+.vc_custom_1584292039669 {
+    margin-top: 10px !important;
+    border-top-width: 1px !important;
+    padding-top: 30px !important;
+    padding-bottom: 20px !important;
+    background-color: #4A8EFF !important;
+    border-top-color: #e2e2e2 !important;
+}
+.container, .vc_column_container {
+
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.wpb_wrapper{
+    width: 555px;
+}
+.wpb_wrapper span{
+    display: flex;
+    margin: 0px;
+}
+.vc_col-sm-6 {
+    width: 50%;
+}
+.vc_col-sm-1, .vc_col-sm-2, .vc_col-sm-3, .vc_col-sm-4, .vc_col-sm-5, .vc_col-sm-6, .vc_col-sm-7, .vc_col-sm-8, .vc_col-sm-9, .vc_col-sm-10, .vc_col-sm-11, .vc_col-sm-12 {
+    float: left;
+}
+.wpb_content_element {
+    margin-bottom: 14px !important;
+}
+#content .wpb_alert p:last-child, #content .wpb_text_column :last-child, #content .wpb_text_column p:last-child, .wpb_alert p:last-child, .wpb_text_column :last-child, .wpb_text_column p:last-child {
+    margin-bottom: 0%;
+}
+p, pre {
+    margin: 0 0 1.75em;
+    text-rendering: optimizeLegibility;
+}
+p {
+    font-size: 14px;
+    width: 555px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.wpb_gmaps_widget .wpb_wrapper {
+    background-color: #f7f7f7;
+    padding: 5px;
+}
+.wpb_gmaps_widget .wpb_map_wraper iframe {
+    margin-bottom: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    border: 0;
+}
+img {
+    max-width: 100%;
+    -ms-interpolation-mode: bicubic;
+    height: auto;
+}
+audio, canvas, img, video {
+    vertical-align: middle;
+}
+a {
+    text-decoration: none;
+}
+.vc_col-sm-12 {
+    width: 100%;
+}
+.jnews_61b200c94773e {
+    color: #ffffff;
+}
+.vc_col-lg-1, .vc_col-lg-10, .vc_col-lg-11, .vc_col-lg-12, .vc_col-lg-2, .vc_col-lg-3, .vc_col-lg-4, .vc_col-lg-5, .vc_col-lg-6, .vc_col-lg-7, .vc_col-lg-8, .vc_col-lg-9, .vc_col-md-1, .vc_col-md-10, .vc_col-md-11, .vc_col-md-12, .vc_col-md-2, .vc_col-md-3, .vc_col-md-4, .vc_col-md-5, .vc_col-md-6, .vc_col-md-7, .vc_col-md-8, .vc_col-md-9, .vc_col-sm-1, .vc_col-sm-10, .vc_col-sm-11, .vc_col-sm-12, .vc_col-sm-2, .vc_col-sm-3, .vc_col-sm-4, .vc_col-sm-5, .vc_col-sm-6, .vc_col-sm-7, .vc_col-sm-8, .vc_col-sm-9, .vc_col-xs-1, .vc_col-xs-10, .vc_col-xs-11, .vc_col-xs-12, .vc_col-xs-2, .vc_col-xs-3, .vc_col-xs-4, .vc_col-xs-5, .vc_col-xs-6, .vc_col-xs-7, .vc_col-xs-8, .vc_col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    box-sizing: border-box;
+}
+.jnews_61b200c947e6f {
+    color: #ffffff;
+}
+.vc_custom_1584291621248{
+    background-color: #4A8EFF !important;
+}
