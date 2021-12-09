@@ -18,7 +18,7 @@
 defined( 'ABSPATH' ) || exit;
 
 ?>
-<div class="cart_totals <?php echo ( WC()->customer->has_calculated_shipping() ) ? 'calculated_shipping' : ''; ?>">
+<div class="cart_totals module6-total-cart <?php echo ( WC()->customer->has_calculated_shipping() ) ? 'calculated_shipping' : ''; ?>">
 
 	<?php do_action( 'woocommerce_before_cart_totals' ); ?>
 
@@ -94,6 +94,31 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php do_action( 'woocommerce_cart_totals_before_order_total' ); ?>
 
+		<tr class="order-total module6-total-cart-shipping">
+			<th>Shipping:</th>
+			<tr class="module6-total-cart-shipping-tr">
+				<th>
+					<input value="Free Shipping" type="radio" name="shipping" id="free-shipping">
+					<span>Free Shipping</span>
+				</th>
+				<td>0₫</td>
+			</tr>
+			<tr class="module6-total-cart-shipping-tr">	
+				<th>
+					<input value="Standart" type="radio" name="shipping" id="standart">
+					<span>Standart</span>
+				</th>
+				<td>50.000₫</td>
+			</tr>
+			<tr class="module6-total-cart-shipping-tr">
+				<th>
+					<input value="Express" type="radio" name="shipping" id="express">
+					<span>Express</span>
+				</th>
+				<td>75.000₫</td>
+			</tr>
+		</tr>
+
 		<tr class="order-total">
 			<th><?php esc_html_e( 'Total', 'woocommerce' ); ?></th>
 			<td data-title="<?php esc_attr_e( 'Total', 'woocommerce' ); ?>"><?php wc_cart_totals_order_total_html(); ?></td>
@@ -103,7 +128,7 @@ defined( 'ABSPATH' ) || exit;
 
 	</table>
 
-	<div class="wc-proceed-to-checkout">
+	<div class="wc-proceed-to-checkout module6-cart-btn-checkout">
 		<?php do_action( 'woocommerce_proceed_to_checkout' ); ?>
 	</div>
 
