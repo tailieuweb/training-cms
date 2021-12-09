@@ -28,8 +28,10 @@ if ( ! function_exists( 'storefront_before_content' ) ) {
 	 */
 	function storefront_before_content() {
 		?>
+<!--            HO si Hung-->
+<!--        Added custom id-->
 		<div id="primary" class="content-area">
-			<main id="main" class="site-main" role="main">
+			<main id="main" class="site-main Hung-custom-wrapper" role="main">
 		<?php
 	}
 }

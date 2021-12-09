@@ -29,7 +29,11 @@ echo apply_filters(
 		esc_attr( isset( $args['quantity'] ) ? $args['quantity'] : 1 ),
 		esc_attr( isset( $args['class'] ) ? $args['class'] : 'button' ),
 		isset( $args['attributes'] ) ? wc_implode_html_attributes( $args['attributes'] ) : '',
-		esc_html( $product->add_to_cart_text() )
+//		esc_html( $product->add_to_cart_text() )
+
+        //        HO SI HUNG
+//        CHANGE CONTENT OF BUTTON ADD TO CART
+        '<i class="fas fa-shopping-cart"></i>'
 	),
 	$product,
 	$args
