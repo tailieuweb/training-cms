@@ -75,6 +75,9 @@ div#text-15 {
 .product-section{   
     background: #f0f0f0;
 }
+.product-main{
+    background: white;
+}
 /* .related{
     padding-left: 10px;
 } */
@@ -106,6 +109,37 @@ h3.product-section-title.container-width.product-section-title-related.pt-half.p
 bdi {
     color: red;
 }
+.menu-row1-container,
+.menu-row2-container,
+.menu-row3-container,
+.menu-row4-container{
+    color: #1291f8;
+}
+.is-divider.small{
+    background: linear-gradient(to right, green, blue);
+    /* width: 100%; */
+    max-width: 100% !important;
+    height: 1px;
+}
+ul.menu>li, .widget>ul>li{
+    border-top: none !important;
+}
+aside ul>li{
+    position: relative;
+}
+aside ul>li:before{
+  background: linear-gradient(to right, green, blue);
+  bottom: 0;
+  content: "";
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-left: 10px;
+}
+
+/* } */
 /* .dark a,
 .dark .widget a{
     color: none !important;
