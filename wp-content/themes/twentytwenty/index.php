@@ -19,7 +19,7 @@ get_header();
 
 <main id="site-content" role="main">
 
-	<?php
+<?php
 
 	$archive_title    = '';
 	$archive_subtitle = '';
@@ -83,7 +83,7 @@ get_header();
 		while ( have_posts() ) {
 			$i++;
 			if ( $i > 1 ) {
-				echo '<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
+				// echo '<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
 			}
 			the_post();
 
@@ -114,6 +114,7 @@ get_header();
 </main><!-- #site-content -->
 
 <?php get_template_part( 'template-parts/footer-menus-widgets' ); ?>
+
 
 <?php
 get_footer();

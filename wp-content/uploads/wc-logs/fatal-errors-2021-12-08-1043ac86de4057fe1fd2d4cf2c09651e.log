@@ -1,0 +1,50 @@
+2021-12-08T10:53:46+00:00 CRITICAL Uncaught Error: Function name must be a string in D:\Chuyen-De-CMS\training-cms\wp-includes\widgets.php:871
+Stack trace:
+#0 D:\Chuyen-De-CMS\training-cms\wp-content\themes\storefront\sidebar.php(14): dynamic_sidebar('sidebar-1')
+#1 D:\Chuyen-De-CMS\training-cms\wp-includes\template.php(770): require_once('D:\\Chuyen-De-CM...')
+#2 D:\Chuyen-De-CMS\training-cms\wp-includes\template.php(716): load_template('D:\\Chuyen-De-CM...', true, Array)
+#3 D:\Chuyen-De-CMS\training-cms\wp-includes\general-template.php(136): locate_template(Array, true, true, Array)
+#4 D:\Chuyen-De-CMS\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php(643): get_sidebar()
+#5 D:\Chuyen-De-CMS\training-cms\wp-includes\class-wp-hook.php(303): storefront_get_sidebar('')
+#6 D:\Chuyen-De-CMS\training-cms\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#7 D:\Chuyen-De-CMS\training-cms\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#8 D:\Chuyen-De-CMS\training-cms\wp-content\themes\storefron in D:\Chuyen-De-CMS\training-cms\wp-includes\widgets.php on line 871
+
+2021-12-08T15:57:22+00:00 CRITICAL Uncaught Error: Call to undefined function wc_get_default_products_per_row() in D:\Chuyen-De-CMS\training-cms\wp-content\plugins\woocommerce\includes\class-wc-query.php:502
+Stack trace:
+#0 D:\Chuyen-De-CMS\training-cms\wp-content\plugins\woocommerce\includes\class-wc-query.php(388): WC_Query->product_query(Object(WP_Query))
+#1 D:\Chuyen-De-CMS\training-cms\wp-includes\class-wp-hook.php(303): WC_Query->pre_get_posts(Object(WP_Query))
+#2 D:\Chuyen-De-CMS\training-cms\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#3 D:\Chuyen-De-CMS\training-cms\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#4 D:\Chuyen-De-CMS\training-cms\wp-includes\class-wp-query.php(1784): do_action_ref_array('pre_get_posts', Array)
+#5 D:\Chuyen-De-CMS\training-cms\wp-includes\class-wp-query.php(3465): WP_Query->get_posts()
+#6 D:\Chuyen-De-CMS\training-cms\wp-includes\class-wp.php(629): WP_Query->query(Array)
+#7 D:\Chuyen-De-CMS\training-cms\wp-includes\class-wp.php(752): WP->query_posts()
+#8 D:\Chuyen-De-CMS in D:\Chuyen-De-CMS\training-cms\wp-content\plugins\woocommerce\includes\class-wc-query.php on line 502
+
+2021-12-08T15:59:09+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in D:\Chuyen-De-CMS\training-cms\wp-content\plugins\woocommerce\includes\wc-template-functions.php on line 1498
+
+2021-12-08T15:59:18+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_pagination() in D:\Chuyen-De-CMS\training-cms\wp-content\themes\storefront\inc\woocommerce\storefront-woocommerce-template-functions.php:254
+Stack trace:
+#0 D:\Chuyen-De-CMS\training-cms\wp-includes\class-wp-hook.php(303): storefront_woocommerce_pagination('')
+#1 D:\Chuyen-De-CMS\training-cms\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#2 D:\Chuyen-De-CMS\training-cms\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#3 D:\Chuyen-De-CMS\training-cms\wp-content\plugins\woocommerce\templates\archive-product.php(58): do_action('woocommerce_bef...')
+#4 D:\Chuyen-De-CMS\training-cms\wp-includes\template-loader.php(106): include('D:\\Chuyen-De-CM...')
+#5 D:\Chuyen-De-CMS\training-cms\wp-blog-header.php(19): require_once('D:\\Chuyen-De-CM...')
+#6 D:\Chuyen-De-CMS\training-cms\index.php(17): require('D:\\Chuyen-De-CM...')
+#7 {main}
+  thrown in D:\Chuyen-De-CMS\training-cms\wp-content\themes\storefront\inc\woocommerce\storefront-woocommerce-template-functions.php on line 254
+
+2021-12-08T15:59:26+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_pagination() in D:\Chuyen-De-CMS\training-cms\wp-content\themes\storefront\inc\woocommerce\storefront-woocommerce-template-functions.php:254
+Stack trace:
+#0 D:\Chuyen-De-CMS\training-cms\wp-includes\class-wp-hook.php(303): storefront_woocommerce_pagination('')
+#1 D:\Chuyen-De-CMS\training-cms\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#2 D:\Chuyen-De-CMS\training-cms\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#3 D:\Chuyen-De-CMS\training-cms\wp-content\plugins\woocommerce\templates\archive-product.php(58): do_action('woocommerce_bef...')
+#4 D:\Chuyen-De-CMS\training-cms\wp-includes\template-loader.php(106): include('D:\\Chuyen-De-CM...')
+#5 D:\Chuyen-De-CMS\training-cms\wp-blog-header.php(19): require_once('D:\\Chuyen-De-CM...')
+#6 D:\Chuyen-De-CMS\training-cms\index.php(17): require('D:\\Chuyen-De-CM...')
+#7 {main}
+  thrown in D:\Chuyen-De-CMS\training-cms\wp-content\themes\storefront\inc\woocommerce\storefront-woocommerce-template-functions.php on line 254
+

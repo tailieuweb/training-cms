@@ -1,0 +1,59 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Add your CSS code here.
+
+For example:
+.example {
+    color: red;
+}
+
+For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
+
+End of comment */ 
+.site-info{
+  text-align:center;
+  
+}
+.entry-content{
+  font-size:7px;
+  text-align:center;
+}
+.alpha entry-title{
+  color:black;
+}
+.main-navigation{
+  width:150px;
+text-align:center;
+}
+.site-header-cart menu{
+  padding:10px;
+}
+.deli-primary-navigation{
+  
+  background-color: white;
+  text-align:center;
+  
+}
+.cart-contents{
+  font-size:20px;
+}
+.menu ul li{
+  padding:10px;
+  padding-left:2px;
+}
+.menu a:hover{
+  background-color:#6699FF;
+  border-radius:15px;
+}
+.beta site-title{
+  color:white;
+  
+}
+.woocommerce-product-search{
+  background-color:black;
+  color:white;
+}
+
+
+</style>
+<!-- end Simple Custom CSS and JS -->
