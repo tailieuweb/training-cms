@@ -716,10 +716,10 @@ End of comment */ ',
 						'<!-- Add HTML code to the header or the footer.
 
 For example, you can use the following code for loading the jQuery library from Google CDN:
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-or the following one for loading the Bootstrap library from MaxCDN:
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+or the following one for loading the Bootstrap library from jsDelivr:
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 -- End of the comment --> ',
 						'custom-css-js'
@@ -774,7 +774,7 @@ End of comment */ ',
 				</div>
 
 				<div class="code-mirror-before"><div><?php echo htmlentities( $code_mirror_before ); ?></div></div>
-				<textarea class="wp-editor-area" id="ccj_content" mode="<?php echo htmlentities( $code_mirror_mode ); ?>" name="content"><?php echo $post->post_content; ?></textarea>
+				<textarea class="wp-editor-area" id="ccj_content" mode="<?php echo htmlentities( $code_mirror_mode ); ?>" name="content" autofocus><?php echo $post->post_content; ?></textarea>
 				<div class="code-mirror-after"><div><?php echo htmlentities( $code_mirror_after ); ?></div></div>
 
 				<table id="post-status-info"><tbody><tr>
@@ -845,7 +845,7 @@ End of comment */ ',
 					continue;
 				}
 
-				$output .= '<h3>' . $a['title'] . '</h3>' . PHP_EOL;
+				$output .= '<h3>' . esc_attr( $a['title'] ) . '</h3>' . PHP_EOL;
 
 				$output .= $this->render_input( $_key, $a, $options );
 
@@ -1282,7 +1282,6 @@ endif;
 		$this->build_search_tree();
 	}
 
-
 	/**
 	 * Render the checkboxes, radios, selects and inputs
 	 */
@@ -1302,7 +1301,7 @@ endif;
 				}
 				$selected .= ( $__key == $options[ $_key ] ) ? ' checked="checked" ' : '';
 				$output   .= '<input type="radio" ' . $selected . 'value="' . $__key . '" name="' . $name . '" id="' . $id . '">' . PHP_EOL;
-				$output   .= '<label class="' . $dashicons . '" for="' . $id . '"> ' . $__value['title'] . '</label><br />' . PHP_EOL;
+				$output   .= '<label class="' . $dashicons . '" for="' . $id . '"> ' . esc_attr( $__value['title'] ) . '</label><br />' . PHP_EOL;
 			}
 			$output .= '</div>' . PHP_EOL;
 		}
@@ -1316,7 +1315,7 @@ endif;
 			}
 			$output .= '<div class="radio-group">' . PHP_EOL;
 			$output .= '<input type="checkbox" ' . $selected . ' value="1" name="' . $name . '" id="' . $name . '">' . PHP_EOL;
-			$output .= '<label class="' . $dashicons . '" for="' . $name . '"> ' . $a['title'] . '</label>';
+			$output .= '<label class="' . $dashicons . '" for="' . $name . '"> ' . esc_attr( $a['title'] ) . '</label>';
 			$output .= '</div>' . PHP_EOL;
 		}
 
@@ -1326,7 +1325,7 @@ endif;
 			$output .= '<select name="' . $name . '" id="' . $name . '">' . PHP_EOL;
 			foreach ( $a['values'] as $__key => $__value ) {
 				$selected = ( isset( $options[ $_key ] ) && $options[ $_key ] == $__key ) ? ' selected="selected"' : '';
-				$output  .= '<option value="' . $__key . '"' . $selected . '>' . $__value . '</option>' . PHP_EOL;
+				$output  .= '<option value="' . $__key . '"' . $selected . '>' . esc_attr( $__value ) . '</option>' . PHP_EOL;
 			}
 			$output .= '</select>' . PHP_EOL;
 			$output .= '</div>' . PHP_EOL;

@@ -3,7 +3,7 @@
  * Plugin Name: Simple Custom CSS and JS
  * Plugin URI: https://wordpress.org/plugins/custom-css-js/
  * Description: Easily add Custom CSS or JS to your website with an awesome editor.
- * Version: 3.37
+ * Version: 3.38.1
  * Author: SilkyPress.com
  * Author URI: https://www.silkypress.com
  * License: GPL2
@@ -12,7 +12,7 @@
  * Domain Path: /languages/
  *
  * WC requires at least: 3.0.0
- * WC tested up to: 5.5
+ * WC tested up to: 6.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -95,7 +95,7 @@ if ( ! class_exists( 'CustomCSSandJS' ) ) :
 
 			if ( is_null( self::$_instance ) ) {
 				$this->print_code_actions();
-				if ( isset ( $this->search_tree['jquery'] ) && $this->search_tree['jquery'] === true ) {
+				if ( isset ( $this->search_tree['jquery'] ) && true === $this->search_tree['jquery'] ) {
 					add_action( 'wp_enqueue_scripts', 'CustomCSSandJS::wp_enqueue_scripts' );
 				}
 			}
@@ -104,7 +104,7 @@ if ( ! class_exists( 'CustomCSSandJS' ) ) :
 		/**
 		 * Add the appropriate wp actions
 		 */
-		function print_code_actions() {
+		public function print_code_actions() {
 			foreach ( $this->search_tree as $_key => $_value ) {
 				$action = 'wp_';
 				if ( strpos( $_key, 'admin' ) !== false ) {
@@ -121,7 +121,7 @@ if ( ! class_exists( 'CustomCSSandJS' ) ) :
 					$action .= 'footer';
 				}
 
-				$priority = ( $action == 'wp_footer' ) ? 40 : 10;
+				$priority = ( 'wp_footer' === $action ) ? 40 : 10;
 
 				add_action( $action, array( $this, 'print_' . $_key ), $priority );
 			}
@@ -154,17 +154,17 @@ if ( ! class_exists( 'CustomCSSandJS' ) ) :
 			$type  = strpos( $function, 'html' ) !== false ? 'html' : $type;
 			$tag   = array( 'css' => 'style', 'js' => 'script' );
 
-			$type_attr = ( $type === 'js' && ! current_theme_supports( 'html5', 'script' ) ) ? ' type="text/javascript"' : '';
-			$type_attr = ( $type === 'css' && ! current_theme_supports( 'html5', 'style' ) ) ? ' type="text/css"' : $type_attr;
+			$type_attr = ( 'js' === $type && ! current_theme_supports( 'html5', 'script' ) ) ? ' type="text/javascript"' : '';
+			$type_attr = ( 'css' === $type && ! current_theme_supports( 'html5', 'style' ) ) ? ' type="text/css"' : $type_attr;
 
 			$upload_url = str_replace( array( 'https://', 'http://' ), '//', CCJ_UPLOAD_URL ) . '/';
 
-			if ( $where === 'internal' ) {
+			if ( 'internal' === $where ) {
 
 				$before = $this->settings['remove_comments'] ? '' : '<!-- start Simple Custom CSS and JS -->' . PHP_EOL;
 				$after  = $this->settings['remove_comments'] ? '' : '<!-- end Simple Custom CSS and JS -->' . PHP_EOL;
 
-				if ( $type === 'css' || $type === 'js' ) {
+				if ( 'css' === $type || 'js' === $type ) {
 					$before .= '<' . $tag[ $type ] . ' ' . $type_attr . '>' . PHP_EOL;
 					$after   = '</' . $tag[ $type ] . '>' . PHP_EOL . $after;
 				}
@@ -173,7 +173,7 @@ if ( ! class_exists( 'CustomCSSandJS' ) ) :
 
 			foreach ( $args as $_filename ) {
 
-				if ( $where === 'internal' && ( strstr( $_filename, 'css' ) || strstr( $_filename, 'js' ) ) ) {
+				if ( 'internal' ===  $where && ( strstr( $_filename, 'css' ) || strstr( $_filename, 'js' ) ) ) {
 					if ( $this->settings['remove_comments'] || empty( $type_attr ) ) {
 						$custom_code = @file_get_contents( CCJ_UPLOAD_DIR . '/' . $_filename );
 						if ( $this->settings['remove_comments'] ) {
@@ -191,21 +191,21 @@ if ( ! class_exists( 'CustomCSSandJS' ) ) :
 					}
 				}
 
-				if ( $where === 'internal' && ! strstr( $_filename, 'css' ) && ! strstr( $_filename, 'js' ) ) {
+				if ( 'internal' === $where && ! strstr( $_filename, 'css' ) && ! strstr( $_filename, 'js' ) ) {
 					$post = get_post( $_filename );
 					echo $before . $post->post_content . $after;
 				}
 
-				if ( $where === 'external' && $type === 'js' ) {
+				if ( 'external' === $where && 'js' === $type ) {
 					echo PHP_EOL . "<script{$type_attr} src='{$upload_url}{$_filename}'></script>" . PHP_EOL;
 				}
 
-				if ( $where === 'external' && $type === 'css' ) {
+				if ( 'external' === $where && 'css' === $type ) {
 					$shortfilename = preg_replace( '@\.css\?v=.*$@', '', $_filename );
 					echo PHP_EOL . "<link rel='stylesheet' id='{$shortfilename}-css' href='{$upload_url}{$_filename}'{$type_attr} media='all' />" . PHP_EOL;
 				}
 
-				if ( $where === 'external' && $type === 'html' ) {
+				if ( 'external' === $where && 'html' === $type ) {
 					$_filename = str_replace( '.html', '', $_filename );
 					$post      = get_post( $_filename );
 					echo $post->post_content . PHP_EOL;
@@ -225,10 +225,10 @@ if ( ! class_exists( 'CustomCSSandJS' ) ) :
 		/**
 		 * Set constants for later use
 		 */
-		function set_constants() {
+		public function set_constants() {
 			$dir       = wp_upload_dir();
 			$constants = array(
-				'CCJ_VERSION'     => '3.37',
+				'CCJ_VERSION'     => '3.38.1',
 				'CCJ_UPLOAD_DIR'  => $dir['basedir'] . '/custom-css-js',
 				'CCJ_UPLOAD_URL'  => $dir['baseurl'] . '/custom-css-js',
 				'CCJ_PLUGIN_FILE' => __FILE__,
@@ -240,21 +240,22 @@ if ( ! class_exists( 'CustomCSSandJS' ) ) :
 			}
 		}
 
-
+		/**
+		 * Loads a plugin’s translated strings.
+		 */
 		public function load_plugin_textdomain() {
 			load_plugin_textdomain( 'custom-css-js', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
 		}
-
 	}
 
 endif;
 
-/**
- * Returns the main instance of CustomCSSandJS
- *
- * @return CustomCSSandJS
- */
 if ( ! function_exists( 'CustomCSSandJS' ) ) {
+	/**
+	 * Returns the main instance of CustomCSSandJS
+	 *
+	 * @return CustomCSSandJS
+	 */
 	function CustomCSSandJS() {
 		return CustomCSSandJS::instance();
 	}
@@ -262,11 +263,14 @@ if ( ! function_exists( 'CustomCSSandJS' ) ) {
 	CustomCSSandJS();
 }
 
-
-/**
- * Plugin action link to Settings page
-*/
 if ( ! function_exists( 'custom_css_js_plugin_action_links' ) ) {
+	/**
+	 * Plugin action link to Settings page.
+	 *
+	 * @param array $links The settings links.
+	 *
+	 * @return array The settings links.
+	 */
 	function custom_css_js_plugin_action_links( $links ) {
 
 		$settings_link = '<a href="edit.php?post_type=custom-css-js">' .
@@ -278,16 +282,17 @@ if ( ! function_exists( 'custom_css_js_plugin_action_links' ) ) {
 	add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'custom_css_js_plugin_action_links' );
 }
 
-
-
-/**
- * Compatibility with the WP Quads Pro plugin,
- * otherwise on a Custom Code save there is a
- * "The link you followed has expired." page shown.
- */
 if ( ! function_exists( 'custom_css_js_quads_pro_compat' ) ) {
+	/**
+	 * Compatibility with the WP Quads Pro plugin,
+	 * otherwise on a Custom Code save there is a
+	 * "The link you followed has expired." page shown.
+	 *
+	 * @param array $post_types The Post types.
+	 * @return array The Post types.
+	 */
 	function custom_css_js_quads_pro_compat( $post_types ) {
-		$match = array_search( 'custom-css-js', $post_types );
+		$match = array_search( 'custom-css-js', $post_types, true );
 		if ( $match ) {
 			unset( $post_types[ $match ] );
 		}

@@ -21,10 +21,39 @@ End of comment */
 .alpha entry-title{
   color:black;
 }
+.main-navigation{
+  width:150px;
+text-align:center;
+}
+.site-header-cart menu{
+  padding:10px;
+}
 .deli-primary-navigation{
   
-  background-color:black;
+  background-color: white;
+  text-align:center;
   
 }
+.cart-contents{
+  font-size:20px;
+}
+.menu ul li{
+  padding:10px;
+  padding-left:2px;
+}
+.menu a:hover{
+  background-color:#6699FF;
+  border-radius:15px;
+}
+.beta site-title{
+  color:white;
+  
+}
+.woocommerce-product-search{
+  background-color:black;
+  color:white;
+}
+
+
 </style>
 <!-- end Simple Custom CSS and JS -->

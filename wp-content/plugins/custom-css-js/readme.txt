@@ -4,8 +4,8 @@ Contributors: diana_burduja
 Email: diana@burduja.eu
 Tags: CSS, JS, javascript, custom CSS, custom JS, custom style, site css, add style, customize theme, custom code, external css, css3, style, styles, stylesheet, theme, editor, design, admin
 Requires at least: 3.0.1
-Tested up to: 5.8 
-Stable tag: 3.37
+Tested up to: 5.9 
+Stable tag: 3.38.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Requires PHP: 5.2.4
@@ -105,6 +105,15 @@ $. Add/Edit HTML
 
 == Changelog ==
 
+= 3.38.1 =
+* 12/02/2021
+* Fix: revert the code related to the compatibility with the `HTML Editor Syntax Highlighter` plugin
+
+= 3.38 =
+* 11/09/2021
+* Fix: escape labels on the "Add new custom code" page
+* Feature: Keep the last cursor position in the editor and let the editor get focus when the page loads 
+
 = 3.37 =
 * 07/12/2021
 * Fix: allow the TablePress plugin to load its JS files on the "Add custom code" page in admin
@@ -121,11 +130,6 @@ $. Add/Edit HTML
 * Fix: replace the deprecated postL10n JS object with wp.i18n
 * Fix: add "tipsy-no-html" to the tooltips on the settings page
 
-
-= 3.34.1 =
-* 11/24/2020
-* Fix: PHP error when filtering the custom codes
-
 = 3.34 =
 * 11/01/2020
 * Feature: enqueue the jQuery library if one of the JS custom codes requires it
@@ -139,27 +143,18 @@ $. Add/Edit HTML
 * Feature: fullscreen editor
 * Feature: button for beautifying the code
 
-= 3.32.3 =
-* 08/02/2020
-* Fix: add "Cmd + " editor shortcuts for MacOS computers
-
-= 3.32.2  =
-* 07/14/2020
-* Fix: use file_get_contents instead of include_once to load the custom codes
-
 = 3.32  =
 * 07/08/2020
+* Fix: add "Cmd + " editor shortcuts for MacOS computers
+* Fix: use file_get_contents instead of include_once to load the custom codes
 * Fix: compatibility issue with the Product Slider for WooCommerce by ShapedPlugin
 * Feature: "Ctrl + /" in the editor will comment out the code
 * Feature: order custom codes table by "type" and "active" state
 * Feature: autocomplete in the editor
 
-= 3.31.1 =
-* 05/05/2020
-* Declare compatibility WooCommerce 4.1
-
 = 3.31 =
 * 03/21/2020
+* Declare compatibility WooCommerce 4.1
 * Feature: add "After <body> tag" option for HTML codes, if the theme allows it 
 * Feature: don't show type attribute for script and style tags if the theme adds html5 support for it
 * Code refactory
