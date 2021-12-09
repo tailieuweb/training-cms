@@ -1,0 +1,203 @@
+main#main h1.woocommerce-products-header__title.page-title{
+    display: none;
+}
+
+main.site-main.Hung-custom-wrapper{
+    border-radius: 6px 10px;
+    padding: 10px;
+    background: #fff;
+}
+
+li.Hung-custom-product{
+    margin-bottom: 0 !important;
+}
+
+/*NAVIGATION CUSTOM*/
+nav.woocommerce-pagination.Hung-custom-pagination ul li{
+    font-size: 14px;
+}
+
+nav.woocommerce-pagination.Hung-custom-pagination ul li a{
+    color: #666666;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0 2px;
+    background-color: transparent !important;
+}
+
+nav.woocommerce-pagination.Hung-custom-pagination ul li a.next,
+nav.woocommerce-pagination.Hung-custom-pagination ul li a.prev{
+    color: #ffffff !important;
+    background-color: #dddddd !important;
+    border-radius: 5px;
+}
+
+nav.woocommerce-pagination.Hung-custom-pagination ul li span.current{
+    color: #0f6cb2 !important;
+    border-left-width: 0;
+    display: inline-block;
+    padding: 0.3342343017em 0.875em;
+    background-color: transparent !important;
+    font-size: 12px;
+    line-height: 16px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+nav.woocommerce-pagination.Hung-custom-pagination ul li a:hover{
+    color: #0f6cb2;
+}
+
+nav.woocommerce-pagination.Hung-custom-pagination ul li a.next:hover,
+nav.woocommerce-pagination.Hung-custom-pagination ul li a.prev:hover{
+    background-color: #0f6cb2 !important;
+}
+
+nav.woocommerce-pagination.Hung-custom-pagination prev::after{
+    content: "\f104" !important;
+}
+
+.woocommerce-result-count{
+    display: none;
+}
+
+/*SORT BAR*/
+form.woocommerce-ordering.Hung-custom-sortbar label.sortby{
+    margin-right: 12px;
+}
+
+select.orderby.Hung-custom-select-orderby{
+    border: 1px solid #e5e5e5;
+    border-radius: 0;
+    padding: 4px 12px;
+    background: #fff;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    width: 150px;
+}
+
+/*CSS FOR PRODUCT SHORT DETAIL*/
+li.Hung-custom-product h2.woocommerce-loop-product__title{
+    text-align: left;
+    color: #555;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+
+/*    css for cutting content*/
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
+
+/*Rating star*/
+li.Hung-custom-product .star-rating{
+    margin: 0 0 0.7em 0 !important;
+}
+
+li.Hung-custom-product .star-rating span::before{
+    color: #ffc808 !important;
+}
+
+/*CSS FOR CUSTOM SALE ICON*/
+li.Hung-custom-product .woocommerce-LoopProduct-link{
+    position: relative;
+}
+
+li.Hung-custom-product .woocommerce-LoopProduct-link span.onsale{
+    position: absolute;
+    z-index: 100;
+    background: #fdd922;
+    color: #333;
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 35px;
+    width: 35px;
+    height: 35px;
+    text-transform: uppercase;
+    top: 5px;
+    border-radius: 50px;
+    right: 5px;
+    text-align: center;
+    letter-spacing: 1px;
+
+    margin: 0 !important;
+    padding: 0 !important;
+    border-color: transparent !important;
+}
+
+/*CUSTOM PRICE BAR*/
+li.Hung-custom-product span.price{
+    display: flex !important;
+    width: 100%;
+    flex-flow: row;
+}
+
+li.Hung-custom-product span.price .amount{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    color: #333;
+}
+
+li.Hung-custom-product span.price del .amount{
+    font-size: 12px;
+    color: #6d6d6d;
+    opacity: 0.7;
+}
+
+li.Hung-custom-product span.price del,
+li.Hung-custom-product span.price ins{
+    display: block;
+    width: 50%;
+    text-align: left;
+    line-height: 30px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+li.Hung-custom-product span.price del{
+    order: 2;
+    padding-left: 5px;
+}
+
+li.Hung-custom-product span.price ins{
+    margin-left: 0 !important;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: #333;
+    order: 1;
+}
+
+/*Add to cart button*/
+li.Hung-custom-product{
+    overflow: hidden;
+}
+
+li.Hung-custom-product a.button{
+    background: #fdd922;
+    border-radius: 999px;
+    padding: 8px 11px;
+    font-size: 0.8rem;
+    color: #fff;
+    transform: translateY(-400px);
+    box-shadow: 1px 2px 5px #aaa;
+}
+
+li.Hung-custom-product:hover a.woocommerce-LoopProduct-link.woocommerce-loop-product__link{
+    opacity: 0.8;
+}
+
+li.Hung-custom-product:hover a.button{
+    transition: 0.4s all ease;
+    transform: translateY(-200px);
+}
+
+li.Hung-custom-product:hover a.button:hover{
+    transition: 0.4s all ease-in-out;
+    background: #0f6cb2;
+    box-shadow: 1px 2px 5px #fdd922;
+}
