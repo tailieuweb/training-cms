@@ -13,7 +13,7 @@ span.onsale.module5{
         -o-animation: my 700ms infinite; 
         animation: my 700ms infinite; 
     }
-button.alt, input[type="button"].alt, input[type="reset"].alt, input[type="submit"].alt, .button.alt, .widget-area .widget a.button.alt {
+.danh button.alt, .widget-area .widget a.button.alt {
     color: #fff !important;
     background: #ee4d2d !important;
 }
@@ -32,19 +32,13 @@ button.alt, input[type="button"].alt, input[type="reset"].alt, input[type="submi
     position: relative;
     left: 0px;
 }
-.single-product div.product .product_meta a {
+.danh .product_meta a {
     font-weight: 600;
     text-decoration: none !important;
-}
-div#page {
-    background: gainsboro;
 }
 .danh .module5 .product  {
     position: relative;
     overflow: hidden;
     position: relative;
     top: 15px;
-}
-.product_meta .span.posted_in {
-    font-weight: bold;
 }
