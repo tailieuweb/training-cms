@@ -7,7 +7,8 @@
  * @package storefront
  */
 
-?><!doctype html>
+?>
+<!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -17,22 +18,26 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module10.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module6-woocommerce.css"
         type="text/css" media="screen" />
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module5-woocommerce.css"
+        type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module3-woocommerce.css"
+        type="text/css" media="screen" />
 
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 
-<?php wp_body_open(); ?>
+    <?php wp_body_open(); ?>
 
-<?php do_action( 'storefront_before_site' ); ?>
+    <?php do_action( 'storefront_before_site' ); ?>
 
-<div id="page" class="hfeed site">
-	<?php do_action( 'storefront_before_header' ); ?>
+    <div id="page" class="hfeed site">
+        <?php do_action( 'storefront_before_header' ); ?>
 
-	<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
+        <header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
 
-		<?php
+            <?php
 		/**
 		 * Functions hooked into storefront_header action
 		 *
@@ -51,9 +56,9 @@
 		do_action( 'storefront_header' );
 		?>
 
-	</header><!-- #masthead -->
+        </header><!-- #masthead -->
 
-	<?php
+        <?php
 	/**
 	 * Functions hooked in to storefront_before_content
 	 *
@@ -63,8 +68,7 @@
 	do_action( 'storefront_before_content' );
 	?>
 
-	<div id="content" class="site-content" tabindex="-1">
-		<div class="col-full">
-
-		<?php
-		do_action( 'storefront_content_top' );
+        <div id="content" class="site-content danh" tabindex="-1">
+            <div class="col-full module5">
+                do_action( 'storefront_content_top' );
+               
