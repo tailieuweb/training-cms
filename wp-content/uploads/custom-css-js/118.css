@@ -1,0 +1,25 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Add your CSS code here.
+
+For example:
+.example {
+    color: red;
+}
+
+For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
+
+End of comment */ 
+div.wc-block-grid__product-image 
+{
+   border: 1px solid black;
+}
+table.shop_table.shop_table_responsive.cart.woocommerce-cart-form__contents{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+tr{
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}</style>
+<!-- end Simple Custom CSS and JS -->
