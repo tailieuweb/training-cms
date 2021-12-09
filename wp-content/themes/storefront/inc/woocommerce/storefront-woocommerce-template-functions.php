@@ -27,8 +27,16 @@ if ( ! function_exists( 'storefront_before_content' ) ) {
 	 * @return  void
 	 */
 	function storefront_before_content() {
+        $lav_array_check = explode("/", get_permalink());
+        $lav_check = in_array("product", $lav_array_check) && count($lav_array_check) >= 3 && $lav_array_check[3] === "product";
 		?>
-		<div id="primary" class="content-area">
+		<div id="primary" class="content-area"
+        <?php
+        if ($lav_check) {
+            echo "style='width: 100%;'";
+        }
+        ?>
+        >
 			<main id="main" class="site-main" role="main">
 		<?php
 	}
