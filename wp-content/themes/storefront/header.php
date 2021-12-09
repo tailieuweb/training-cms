@@ -72,11 +72,8 @@
 
 		<!-- Banner start -->
 		<div id="banner">
-			<img src="https://i2.wp.com/d9n64ieh9hz8y.cloudfront.net/wp-content/uploads/20191106225001/asus-zenbook-seminar-trai-nghiem-laptop-hai-man-hinh-3-1140x760.jpg?resize=1140%2C760&ssl=1" alt="img-fluid">
-			<div class="container">
 				<div class="title-banner">Welcome to shop by group C</div>
 				<div class="des-banner">Read more</div>
-			</div>
 		</div>
 		<!-- Banner end -->
 		<div id="content" <?php post_class($home); ?> class="site-content" tabindex="-1">
