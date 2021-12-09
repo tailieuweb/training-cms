@@ -27,8 +27,10 @@ End of comment */
 }
 .woocommerce-mini-cart__empty-message{
 background-color:white; color:black;}
-.site-info{
-text-align:center;}
+.storefront-sorting ul li img{
+  width:200px;
+  height:100px;
+}
 
 </style>
 <!-- end Simple Custom CSS and JS -->
