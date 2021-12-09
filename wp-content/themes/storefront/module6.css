@@ -36,6 +36,12 @@
 
 }
 
+@media (min-width: 768px) {    
+   .module6-table-cart th, .module6-table-cart td {
+    padding: 0.875em 0.875em 0 !important;
+}
+}
+
 .module6-table-cart-tbody .cart_item .product-thumbnail a {
     display: inline-block !important;
     margin: 0 !important;
@@ -85,7 +91,6 @@
     border: .1rem dashed #d7d7d7;
     background-color: #f9f9f9;
     padding: 3rem 3rem 3rem;
-    margin: .4rem 0;
 }
 
 .module6-total-cart h2 {
@@ -144,6 +149,7 @@
 }
 
 .module6-btn-update {
+    color: #000 !important;
     text-transform: uppercase;
     border: #d7d7d7 1px solid !important;
     background: #fff !important;
