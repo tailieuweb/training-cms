@@ -1,0 +1,8 @@
+#banner{
+    width: 100%;
+}
+#banner img{
+    width: 100%;
+    background-image: center center;
+    background-position: center center;
+}

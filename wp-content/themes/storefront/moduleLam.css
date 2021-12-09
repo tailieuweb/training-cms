@@ -1,0 +1,207 @@
+#banner {
+    width: 100%;
+    display: none;
+    
+}
+
+.trang-chu #banner {
+    width: 100%;
+    max-width: 1540px;
+    margin: 0 auto;
+    display: block !important;
+    background: url('https://i2.wp.com/d9n64ieh9hz8y.cloudfront.net/wp-content/uploads/20191106225001/asus-zenbook-seminar-trai-nghiem-laptop-hai-man-hinh-3-1140x760.jpg?resize=1140%2C760&ssl=1') center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    max-height: 100vh;
+    margin-top: -90px;
+    padding-top: 10px;
+}
+
+#banner .title-banner{
+    display: block;
+    font-size: 64px;
+    color: rgb(228, 150, 5);
+    font-weight: bold;
+    text-shadow:
+    0 0 7px rgb(250, 219, 162),
+    0 0 10px rgb(250, 219, 162),
+    0 0 21px rgb(250, 219, 162),
+    0 0 42px rgb(204, 133, 2),
+    0 0 82px rgb(204, 133, 2),
+    0 0 92px rgb(204, 133, 2),
+    0 0 102px rgb(204, 133, 2),
+    0 0 151px rgb(204, 133, 2);
+    padding: 0 15px;
+    text-align: center;
+    /* margin-bottom: 150px; */
+    max-width: 1140px;
+    margin: 120px auto;
+    border-radius: 100px;
+    animation: moveTitle 4s ease-in infinite alternate;
+}
+@keyframes moveTitle {
+  0%{
+    transform: translateX(-100px);
+  }
+  100%{
+    transform: translateX(100px);
+  }
+}
+#banner .des-banner{
+    display: block;
+    width: 270px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 42px;
+    color: #fff;
+    background: #FFC107;
+
+    border-radius: 5px;
+    padding: 0 20px;
+    box-shadow: 2px 0 15px black;
+    transition: .5s;
+}
+#banner .des-banner:hover{
+    color: orange;
+    background: #fff;
+}
+.woocommerce-products-header__title.page-title{
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+ul.products li.product .button:hover{
+  background: #fff;
+  border: 1px solid #FABB4A;
+  border-style: hidden;
+  color: #FABB4A;
+}
+.site-main ul.products li.product {
+  background: rgb(248, 252, 229);
+  border: 2px solid #FFC107;
+ 
+}
+ul.products{
+  overflow: hidden;
+  background: #FFC107;
+}
+.site-main ul.products li.product:hover{
+  box-shadow:
+  0 0 30px 10px #fff,  /* inner white */
+  0 0 500px 30px rgb(255, 196, 255), /* middle magenta */
+  0 0 60px 50px rgb(178, 255, 255); /* outer cyan */
+}
+.woocommerce-Price-amount.amount{
+  font-weight: bold;
+}
+.widget.widget_block{
+  border: 1px solid #FFC107;
+  padding: 10px;
+}
+.wp-block-group__inner-container h2{
+  color: #f69d3c;
+  font-weight: 500;
+  border-bottom: 1px solid #f69d3c;
+}
+.wp-block-latest-posts__list.wp-block-latest-posts li,.wp-block-categories-list.wp-block-categories li{
+  border-bottom: 1px solid #FFC107;
+}
+.wp-block-latest-posts__list.wp-block-latest-posts li a,.wp-block-categories-list.wp-block-categories li a{
+  text-decoration: none;
+}
+.wp-block-latest-posts__list.wp-block-latest-posts li::before,.wp-block-categories-list.wp-block-categories li::before{
+  content: '> ';
+}
+
+.testimony-section {
+    position: relative; }
+    .testimony-section .owl-carousel {
+      margin: 0; }
+    .testimony-section .owl-carousel .owl-stage-outer {
+      padding: 1em 0 2em 0;
+      position: relative; }
+    .testimony-section .owl-nav {
+      position: absolute;
+      top: 100%;
+      width: 100%; }
+      .testimony-section .owl-nav .owl-prev,
+      .testimony-section .owl-nav .owl-next {
+        position: absolute;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        margin-top: -10px;
+        outline: none !important;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        opacity: 0; }
+        .testimony-section .owl-nav .owl-prev span:before,
+        .testimony-section .owl-nav .owl-next span:before {
+          font-size: 30px;
+          color: rgba(0, 0, 0, 0.5);
+          -moz-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          -webkit-transition: all 0.3s ease;
+          -ms-transition: all 0.3s ease;
+          transition: all 0.3s ease; }
+        .testimony-section .owl-nav .owl-prev:hover span:before, .testimony-section .owl-nav .owl-prev:focus span:before,
+        .testimony-section .owl-nav .owl-next:hover span:before,
+        .testimony-section .owl-nav .owl-next:focus span:before {
+          color: #fff; }
+      .testimony-section .owl-nav .owl-prev {
+        left: 50%;
+        margin-left: -80px; }
+      .testimony-section .owl-nav .owl-next {
+        right: 50%;
+        margin-right: -80px; }
+    .testimony-section:hover .owl-nav .owl-prev,
+    .testimony-section:hover .owl-nav .owl-next {
+      opacity: 1; }
+    .testimony-section:hover .owl-nav .owl-prev {
+      left: 50%;
+      margin-left: -80px; }
+    .testimony-section:hover .owl-nav .owl-next {
+      right: 50%;
+      margin-right: -80px; }
+    .testimony-section .owl-dots {
+      text-align: center; }
+      .testimony-section .owl-dots .owl-dot {
+        width: 10px;
+        height: 10px;
+        margin: 5px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.1); }
+        .testimony-section .owl-dots .owl-dot.active {
+          background: #FBBB4A; }
+  
+  .testimony-wrap {
+    display: block;
+    position: relative;
+    background: white;
+    padding: 0 20px; }
+    .testimony-wrap .user-img {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      margin: 0 auto;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%; }
+    .testimony-wrap .name {
+      font-weight: 500;
+      font-size: 20px;
+      margin-bottom: 0;
+      color: #000000; }
+    .testimony-wrap .position {
+      font-size: 16px;
+      color: #FFC107; }
+      .justify-content-center {
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+    }
