@@ -9,9 +9,9 @@ if (!is_active_sidebar('sidebar-1')) {
     return;
 }
 
-$lav_array_check = explode("/",  $_SERVER['REQUEST_URI']);
+$array_check = explode("/",  $_SERVER['REQUEST_URI']);
 
-if ((in_array("shop", $lav_array_check) && $lav_array_check[1] === "shop")) {
+if ((in_array("shop", $array_check) && $array_check[1] === "shop")) {
     ?>
 
     <div id="secondary" class="widget-area" role="complementary">
