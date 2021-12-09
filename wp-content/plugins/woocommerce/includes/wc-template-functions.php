@@ -673,6 +673,7 @@ function wc_get_product_class($class = '', $product = null)
 		array(
 			'product',
 			'type-product',
+			'product-hover',
 			'post-' . $product->get_id(),
 			'status-' . $product->get_status(),
 			wc_get_loop_class(),
