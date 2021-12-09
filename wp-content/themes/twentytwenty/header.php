@@ -225,7 +225,23 @@
             get_template_part('template-parts/modal-search');
         }
         ?>
-
+        <!--Image slider start-->
+            <div class="container">
+                <div class="slider">
+                    <div class="sliders">
+                        <!--Radio button start-->
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <!--Radio button end-->
+                        <!--Image slide start-->
+                        
+                        <!--Image slide end-->
+                    </div>
+                </div>
+            </div>
+        <!--Image slider end-->
     </header><!-- #site-header -->
 
     <?php
