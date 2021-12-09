@@ -1,6 +1,36 @@
-2021-12-07T07:28:36+00:00 CRITICAL Cannot redeclare enqueue_my_styles() (previously declared in D:\2-tdc\2021-2022-HK1\1-cms\training-cms2\wp-content\themes\flatsome-child\functions.php:4) in D:\2-tdc\2021-2022-HK1\1-cms\training-cms2\wp-content\themes\flatsome-child\functions.php on line 15
+2021-12-07T02:49:18+00:00 CRITICAL syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\training-cms\wp-content\themes\flatsome\woocommerce\global\wrapper-end.php on line 13
 
-2021-12-07T07:30:29+00:00 CRITICAL Cannot redeclare enqueue_my_styles() (previously declared in D:\2-tdc\2021-2022-HK1\1-cms\training-cms2\wp-content\themes\flatsome-child\functions.php:4) in D:\2-tdc\2021-2022-HK1\1-cms\training-cms2\wp-content\themes\flatsome-child\functions.php on line 15
+2021-12-07T02:53:29+00:00 CRITICAL syntax error, unexpected token "*", expecting end of file in C:\xampp\htdocs\training-cms\wp-content\themes\flatsome\woocommerce\single-product\layouts\product-left-sidebar-full.php on line 58
 
-2021-12-07T07:30:37+00:00 CRITICAL Cannot redeclare enqueue_my_styles() (previously declared in D:\2-tdc\2021-2022-HK1\1-cms\training-cms2\wp-content\themes\flatsome-child\functions.php:4) in D:\2-tdc\2021-2022-HK1\1-cms\training-cms2\wp-content\themes\flatsome-child\functions.php on line 15
+2021-12-07T02:54:23+00:00 CRITICAL syntax error, unexpected token "*", expecting end of file in C:\xampp\htdocs\training-cms\wp-content\themes\flatsome\woocommerce\single-product\layouts\product-left-sidebar-full.php on line 58
+
+2021-12-07T03:19:14+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\training-cms\wp-includes\functions.php on line 4451
+
+2021-12-07T03:40:21+00:00 CRITICAL syntax error, unexpected token "<<" in C:\xampp\htdocs\training-cms\wp-content\themes\flatsome-child\functions.php on line 6
+
+2021-12-07T03:42:41+00:00 CRITICAL Unmatched '}' in C:\xampp\htdocs\training-cms\wp-content\themes\flatsome-child\functions.php on line 10
+
+2021-12-07T03:44:03+00:00 CRITICAL Unmatched '}' in C:\xampp\htdocs\training-cms\wp-content\themes\flatsome-child\functions.php on line 10
+
+2021-12-07T03:55:14+00:00 CRITICAL Uncaught RuntimeException: Error saving action: Error saving action: Database error. in C:\xampp\htdocs\training-cms\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php:44
+Stack trace:
+#0 C:\xampp\htdocs\training-cms\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(242): ActionScheduler_DBStoreMigrator->save_action(Object(ActionScheduler_Action), NULL)
+#1 C:\xampp\htdocs\training-cms\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(177): ActionScheduler_HybridStore->save_action(Object(ActionScheduler_Action))
+#2 C:\xampp\htdocs\training-cms\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#3 C:\xampp\htdocs\training-cms\wp-content\plugins\woocommerce\packages\action-scheduler\functions.php(36): ActionScheduler_ActionFactory->single('action_schedule...', Array, 1638849374, 'action-schedule...')
+#4 C:\xampp\htdocs\training-cms\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\Scheduler.php(89): as_schedule_single_action(1638849374, 'action_schedule...', Array, 'action-schedule...')
+#5 C:\xampp\htdocs\training-cms\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\Controller.php(119): Action_Scheduler\Migration\Scheduler->schedule_migration()
+#6 C:\xampp\htdocs\training-cms\wp-includes\class-wp-hook.php(307): Action_Scheduler\Migration\Controller->schedule_migration('')
+#7 C:\xampp\htdocs\training-cms\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\training-cms\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\training-cms\wp-settings.php(609): do_action('wp_loaded')
+#10 C:\xampp\htdocs\training-cms\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\training-cms\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\training-cms\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\training-cms\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php on line 44
+
+2021-12-07T04:43:14+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\training-cms\wp-includes\wp-db.php on line 2144
+
+2021-12-07T04:43:24+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\training-cms\wp-includes\functions.php on line 4712
 

@@ -17,6 +17,30 @@
 		</div>
 </div>
 <?php endif; ?>
+<!-- FOOTER 3-->
+<div class="text_footer">
+				<span>
+				CÔNG TY TNHH ABC XYZ
+		        </span>
+				<span class="connect">
+				KẾT NỐI VỚI CHÚNG TÔI
+		        </span>
+				<br>
+				<span>
+				GPKD số: 010222XXXX do Sở KH & ĐT Thành phố Hà Nội cấp ngày 09 tháng 12 năm 2001.
+		        </span>
+				<br>
+				<span>
+				Website design by: <a class="linkmua" href="muathem">MuaTheme.com</a>
+				<span class="icon">
+					<i class="icon-facebook"></i>
+					<i class="icon-instagram""></i>
+					<i class="icon-pinterest"></i>
+					<i class="icon-youtube"></i>
+				</span>
+		        </span>
+			</div>
+
 
 <?php do_action('flatsome_after_footer'); ?>
 
