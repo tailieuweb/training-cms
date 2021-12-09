@@ -38,6 +38,7 @@
 .product-module1-woocommerce .add_to_cart_button:hover {
   background-color: #d14456;
   color: #fff;
+  text-decoration: none;
 }
 
 .product-module1-woocommerce h2 {
