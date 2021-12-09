@@ -106,6 +106,26 @@ h3.product-section-title.container-width.product-section-title-related.pt-half.p
 bdi {
     color: red;
 }
+.menu-row1-container,
+.menu-row2-container,
+.menu-row3-container,
+.menu-row4-container{
+    color: #1291f8;
+}
+.is-divider.small{
+    background: linear-gradient(to right, green, blue);
+    /* width: 100%; */
+    max-width: 100% !important;
+    height: 1px;
+}
+ul.menu>li, .widget>ul>li{
+    border-top: none !important;
+}
+ul.menu>li>a, ul.menu>li>span:first-child, .widget>ul>li>a, .widget>ul>li>span:first-child {
+    border-bottom: 1px solid black;
+}
+
+/* } */
 /* .dark a,
 .dark .widget a{
     color: none !important;
