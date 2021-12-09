@@ -277,7 +277,13 @@ if ( ! class_exists( 'Storefront' ) ) :
 						$footer_region_description = sprintf( __( 'Widgets added here will appear in column %1$d of footer row %2$d.', 'storefront' ), $region, $row );
 					}
 
-					$sidebar_args[ $footer ] = array(
+                    $sidebar_args[ 'footer-topsection' ] = array(
+                        'name'        => __( 'Footer - Top section', 'storefront' ),
+                        'id'          => 'footer-top',
+                        'description' => '',
+                    );
+
+                    $sidebar_args[ $footer ] = array(
 						'name'        => $footer_region_name,
 						'id'          => sprintf( 'footer-%d', $footer_n ),
 						'description' => $footer_region_description,
