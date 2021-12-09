@@ -208,7 +208,7 @@ li.Hung-custom-product:hover a.button:hover{
     color: #000;
     font-weight: 600;
     font-size: 18px;
-    padding: 10px 15px 10px 40px;
+    padding: 15px 20px 15px 50px;
     border-radius: 10px 10px 0 0;
     display: block;
     width: 100%;
@@ -220,20 +220,31 @@ li.Hung-custom-product:hover a.button:hover{
 .widget-area.Hung-custom-sidebar h2::before{
     content: "\2630";
     position: absolute;
-    left: 10px;
+    left: 20px;
 }
 
 .widget-area.Hung-custom-sidebar ul li{
-    padding: 10px 15px 10px 40px;
+    padding: 10px 15px 10px 50px;
     position: relative;
-    border-bottom: 1px solid #666666;
+    border-bottom: 0.5px solid #e1e1e1;
     background: #fff;
+}
+
+.widget-area.Hung-custom-sidebar ul li:last-child{
+    border-radius: 0 0 10px 10px;
+    border-bottom: none;
 }
 
 .widget-area.Hung-custom-sidebar ul li a{
     text-decoration: none;
-    color: #666666;
+    color: #666;
+    font-weight: 500;
     letter-spacing: 0.2px;
+}
+
+.widget-area.Hung-custom-sidebar ul li a:hover{
+    color: #0f6cb2;
+    transition: 0.3s ease;
 }
 
 .widget-area.Hung-custom-sidebar ul li:before{
@@ -241,5 +252,16 @@ li.Hung-custom-product:hover a.button:hover{
     font-weight: 900;
     content: "\f02c";
     position: absolute;
-    left: 10px;
+    left: 20px;
+}
+
+.widget-area.Hung-custom-sidebar ul li:after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 100;
+    content: "\f054";
+    position: absolute;
+    color: #969696;
+    right: 15px;
+    line-height: 20px;
+    font-size: 8px !important;
 }
