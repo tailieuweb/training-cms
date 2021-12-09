@@ -8,22 +8,6 @@
                 <ul class="nav header-nav header-bottom-nav nav-left <?php flatsome_nav_classes('bottom'); ?>">
                     <?php flatsome_header_elements('header_elements_bottom_left','nav_position_text'); ?>
                 </ul>
-                <!-- <div class="row">
-                    <div class="col-md-2">
-                        <a href="" style = "color: white"> <div id="mega-menu-title"> <i class="icon-menu" style = "margin-right : 10px"></i>DANH MỤC SẢN PHẨM</div></a>
-                    </div>
-                    <div class="col-md-9">
-                        <a href="" aria-current="page" class="nav-top-link">Trang chủ</a>
-                        <a href="" aria-current="page" class="nav-top-link">Giới thiệu</a>
-                        <a href="" aria-current="page" class="nav-top-link">Cửa hàng</a>
-                        <a href="" aria-current="page" class="nav-top-link">Bảo hành</a>
-                        <a href="" aria-current="page" class="nav-top-link">Tin tức</a>
-                        <a href="" aria-current="page" class="nav-top-link">Liên hệ</a>
-                    </div>
-                    <div class="col-md-1">
-                    <a href="" aria-current="page" class="nav-top-link" id= "khuyenmai">Khuyến mãi giờ vàng</a>
-                    </div>
-                </div> -->
             </div>
             <?php } ?>
 

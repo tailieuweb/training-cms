@@ -39,6 +39,17 @@
     color: #ed1c24;
     text-transform: uppercase;
     font-size: 16px;
+    padding-left: 20px;
+    display: inline-block;
+    padding-top: 20px;
+}
+#custom_html-2{
+    border: 1px solid #ebebeb;
+    width: 249px;
+    border-radius: 5px;
+}
+.textwidget{
+    margin-top: -15px;
 }
 .product-container .product-main{
     background: #ffffff;
@@ -46,6 +57,7 @@
 .text-diachi{
     font-size: 14px;
     color: black;
+    padding-left: 20px;
 }
 .product-sidebar #custom_html-2{
     border-radius: 5px;
@@ -54,24 +66,42 @@
     color: #ed1c24;
     text-transform: uppercase;
     font-size: 16px;
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+#custom_html-3{
+    border: 1px solid #ebebeb;
+    width: 249px;
+    border-radius: 5px;
 }
 .text-muasam{
     font-size: 14px;
     color: black;
+    padding-left: 20px;
+    padding-right: 10px;
 }
 .text-muasam .fas {
-    border-radius: 10px;
+    border-radius: 50%;
     background: #233e92;
     color: #ffffff;
     font-size: 14px;
     display: inline-block;
     background-repeat: no-repeat;
     vertical-align: middle;
-    width: 31px;
-    height: 31px;
-    float: left;
+    width: 30px;
+    height: 28px;
     background-position: -144px -1px;
     margin-right: 5px;
     position: relative;
+    padding-left: 8px;
+    padding-top: 6px;
 }
+.is-divider{
+    background-color: #ffffff !important;
+}
+.dollar{
+    padding-left: 11px !important;
+}
+
 
