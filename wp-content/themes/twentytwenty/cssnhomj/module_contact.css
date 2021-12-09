@@ -1,0 +1,11 @@
+#footer .contact{
+    font-size:17px;
+}
+#footer .title{
+    color:#FF0;
+    font-weight:bold;
+    font-size:17px;
+}
+#footer .map iframe{
+    border-radius: 5px;
+}
