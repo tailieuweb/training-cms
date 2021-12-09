@@ -325,11 +325,11 @@ if (is_search()) {
 					<div class="ul-cate">
 						<ul>
 							<?php 
-							$cate = get_term($catID->ID);
+							$cate = get_term($post->ID);
 							$args = array(
-								'post_type' => 'post',
+ 								'post_type' => 'post',
 								'orderby' => 'rand',
-								'post__not_in' => array($catID->ID),
+								'post__not_in' => array($post->ID),
 								'posts_per_page' => '3',
 							);
 							$other_post = new WP_Query($args);
