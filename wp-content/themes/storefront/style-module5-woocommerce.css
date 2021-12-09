@@ -42,3 +42,10 @@ span.onsale.module5{
     position: relative;
     top: 15px;
 }
+
+ .danh .single-product div.product .woocommerce-product-gallery .flex-control-thumbs { 
+     margin: 0;
+      padding: 0;
+       position: relative;
+        left: 85px;
+     }
