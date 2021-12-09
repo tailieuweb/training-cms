@@ -85,250 +85,235 @@ if (!function_exists('storefront_comment')) {
     }
 }
 
-if ( ! function_exists( 'storefront_footer_widgets' ) ) {
-	/**
-	 * Display the footer widget regions.
-	 *
-	 * @since  1.0.0
-	 * @return void
-	 */
-	function storefront_footer_widgets() {
-		$rows    = intval( apply_filters( 'storefront_footer_widget_rows', 1 ) );
-		$regions = intval( apply_filters( 'storefront_footer_widget_columns', 4 ) );
-
-		for ( $row = 1; $row <= $rows; $row++ ) :
-
-			// Defines the number of active columns in this footer row.
-			for ( $region = $regions; 0 < $region; $region-- ) {
-				if ( is_active_sidebar( 'footer-' . esc_attr( $region + $regions * ( $row - 1 ) ) ) ) {
-					$columns = $region;
-					break;
-				}
-			}
-
-			if ( isset( $columns ) ) :
-				?>
-				<div class=<?php echo '"footer-widgets row-' . esc_attr( $row ) . ' col-' . esc_attr( $columns ) . ' fix"'; ?>>
-				<?php
-
-				if ( is_active_sidebar( 'footer-top' ) ) :
-					?>
-				<div class="block footer-widget-topsection" style="width: 100%;">
-					<div class="col-full">
-						<?php dynamic_sidebar( 'footer-top' ); ?>
-					</div>
-				</div>
-					<?php
-				endif;
-
-				echo '<div class="block footer-widget-midsection" style="width: 100%;">';
-				echo '<div class="col-full">';
-				for ( $column = 1; $column <= $columns; $column++ ) :
-					$footer_n = $column + $regions * ( $row - 1 );
-
-					if ( is_active_sidebar( 'footer-' . esc_attr( $footer_n ) ) ) :
-						?>
-					<div class="block footer-widget-<?php echo esc_attr( $column ); ?>">
-						<?php dynamic_sidebar( 'footer-' . esc_attr( $footer_n ) ); ?>
-					</div>
-						<?php
-					endif;
-				endfor;
-				echo '</div>';
-				echo '</div>';
-				?>
-			</div><!-- .footer-widgets.row-<?php echo esc_attr( $row ); ?> -->
-				<?php
-				unset( $columns );
-			endif;
-		endfor;
-	}
-}
-
-if ( ! function_exists( 'storefront_credit' ) ) {
-	/**
-	 * Display the theme credit
-	 *
-	 * @since  1.0.0
-	 * @return void
-	 */
-	function storefront_credit() {
-		$links_output = '';
-
-		if ( apply_filters( 'storefront_credit_link', true ) ) {
-			if ( storefront_is_woocommerce_activated() ) {
-				$links_output .= '<a href="https://woocommerce.com" target="_blank" title="' . esc_attr__( 'WooCommerce - The Best eCommerce Platform for WordPress', 'storefront' ) . '" rel="noreferrer">' . esc_html__( 'Built with Storefront &amp; WooCommerce', 'storefront' ) . '</a>.';
-			} else {
-				$links_output .= '<a href="https://woocommerce.com/storefront/" target="_blank" title="' . esc_attr__( 'Storefront -  The perfect platform for your next WooCommerce project.', 'storefront' ) . '" rel="noreferrer">' . esc_html__( 'Built with Storefront', 'storefront' ) . '</a>.';
-			}
-		}
-
-		if ( apply_filters( 'storefront_privacy_policy_link', true ) && function_exists( 'the_privacy_policy_link' ) ) {
-			$separator    = '<span role="separator" aria-hidden="true"></span>';
-			$links_output = get_the_privacy_policy_link( '', ( ! empty( $links_output ) ? $separator : '' ) ) . $links_output;
-		}
-
-		$links_output = apply_filters( 'storefront_credit_links_output', $links_output );
-		?>
-		<div class="site-info">
-			<div class="col-full">
-				<div class="info-wrapper">
-
-				<div class="links-wrapper social">
-    			    <ul class="social-links">
-    			      	<li class="fb"><a target="_blank" rel="nofollow" href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-    			      	<li class="tw"><a target="_blank" rel="nofollow" href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-    			      	<li class="linkedin"><a target="_blank" rel="nofollow" href="#" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-    			      	<li class="youtube"><a target="_blank" rel="nofollow" href="#" title="Youtube"><i class="fab fa-youtube"></i></a></li>
-    			    </ul>
-    			</div>
-
-				<div class="info">
-				<?php echo esc_html( apply_filters( 'storefront_copyright_text', $content = '&copy; ' . get_bloginfo( 'name' ) . ' ' . gmdate( 'Y' ) ) ); ?>
-
-				<?php if ( ! empty( $links_output ) ) { ?>
-					<br />
-					<?php echo wp_kses_post( $links_output ); ?>
-				<?php } ?>
-				</div>
-
-				<div class="payment-methods">
-        		  	<ul class="payment-method-imgs">
-        		  	  	<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/payments/1.png" alt=""></li>
-        		  	  	<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/payments/2.png" alt=""></li>
-        		  	  	<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/payments/3.png" alt=""></li>
-        		  	  	<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/payments/4.png" alt=""></li>
-        		  	  	<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/payments/5.png" alt=""></li>
-        		  	</ul>
-        		</div>
-
-				</div>
-			</div>
-		</div><!-- .site-info -->
-		<?php
-}
-
-if (!function_exists('storefront_header_widget_region')) {
+if (!function_exists('storefront_footer_widgets')) {
     /**
-     * Display header widget region
+     * Display the footer widget regions.
      *
+     * @return void
      * @since  1.0.0
      */
-    function storefront_header_widget_region()
+    function storefront_footer_widgets()
     {
-        if (is_active_sidebar('header-1')) {
-            ?>
-            <div class="header-widget-region" role="complementary">
-                <div class="col-full">
-                    <?php dynamic_sidebar('header-1'); ?>
+        $rows = intval(apply_filters('storefront_footer_widget_rows', 1));
+        $regions = intval(apply_filters('storefront_footer_widget_columns', 4));
+
+        for ($row = 1; $row <= $rows; $row++) :
+
+            // Defines the number of active columns in this footer row.
+            for ($region = $regions; 0 < $region; $region--) {
+                if (is_active_sidebar('footer-' . esc_attr($region + $regions * ($row - 1)))) {
+                    $columns = $region;
+                    break;
+                }
+            }
+
+            if (isset($columns)) :
+                ?>
+                <div class=<?php echo '"footer-widgets row-' . esc_attr($row) . ' col-' . esc_attr($columns) . ' fix"'; ?>>
+                    <?php
+
+                    if (is_active_sidebar('footer-top')) :
+                        ?>
+                        <div class="block footer-widget-topsection" style="width: 100%;">
+                            <div class="col-full">
+                                <?php dynamic_sidebar('footer-top'); ?>
+                            </div>
+                        </div>
+                    <?php
+                    endif;
+
+                    echo '<div class="block footer-widget-midsection" style="width: 100%;">';
+                    echo '<div class="col-full">';
+                    for ($column = 1; $column <= $columns; $column++) :
+                        $footer_n = $column + $regions * ($row - 1);
+
+                        if (is_active_sidebar('footer-' . esc_attr($footer_n))) :
+                            ?>
+                            <div class="block footer-widget-<?php echo esc_attr($column); ?>">
+                                <?php dynamic_sidebar('footer-' . esc_attr($footer_n)); ?>
+                            </div>
+                        <?php
+                        endif;
+                    endfor;
+                    echo '</div>';
+                    echo '</div>';
+                    ?>
+                </div><!-- .footer-widgets.row-<?php echo esc_attr($row); ?> -->
+                <?php
+                unset($columns);
+            endif;
+        endfor;
+    }
+}
+
+if (!function_exists('storefront_credit')) {
+    /**
+     * Display the theme credit
+     *
+     * @return void
+     * @since  1.0.0
+     */
+    function storefront_credit()
+    {
+        $links_output = '';
+
+        if (apply_filters('storefront_credit_link', true)) {
+            if (storefront_is_woocommerce_activated()) {
+                $links_output .= '<a href="https://woocommerce.com" target="_blank" title="' . esc_attr__('WooCommerce - The Best eCommerce Platform for WordPress', 'storefront') . '" rel="noreferrer">' . esc_html__('Built with Storefront &amp; WooCommerce', 'storefront') . '</a>.';
+            } else {
+                $links_output .= '<a href="https://woocommerce.com/storefront/" target="_blank" title="' . esc_attr__('Storefront -  The perfect platform for your next WooCommerce project.', 'storefront') . '" rel="noreferrer">' . esc_html__('Built with Storefront', 'storefront') . '</a>.';
+            }
+        }
+
+        if (apply_filters('storefront_privacy_policy_link', true) && function_exists('the_privacy_policy_link')) {
+            $separator = '<span role="separator" aria-hidden="true"></span>';
+            $links_output = get_the_privacy_policy_link('', (!empty($links_output) ? $separator : '')) . $links_output;
+        }
+
+        $links_output = apply_filters('storefront_credit_links_output', $links_output);
+        ?>
+        <div class="site-info">
+            <div class="col-full">
+                <div class="info-wrapper">
+
+                    <div class="links-wrapper social">
+                        <ul class="social-links">
+                            <li class="fb"><a target="_blank" rel="nofollow" href="#" title="Facebook"><i
+                                            class="fab fa-facebook-f"></i></a></li>
+                            <li class="tw"><a target="_blank" rel="nofollow" href="#" title="Twitter"><i
+                                            class="fab fa-twitter"></i></a></li>
+                            <li class="linkedin"><a target="_blank" rel="nofollow" href="#" title="Linkedin"><i
+                                            class="fab fa-linkedin-in"></i></a></li>
+                            <li class="youtube"><a target="_blank" rel="nofollow" href="#" title="Youtube"><i
+                                            class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="info">
+                        <?php echo esc_html(apply_filters('storefront_copyright_text', $content = '&copy; ' . get_bloginfo('name') . ' ' . gmdate('Y'))); ?>
+
+                        <?php if (!empty($links_output)) { ?>
+                            <br/>
+                            <?php echo wp_kses_post($links_output); ?>
+                        <?php } ?>
+                    </div>
+
+                    <div class="payment-methods">
+                        <ul class="payment-method-imgs">
+                            <li><img src="<?php echo get_template_directory_uri() ?>/assets/images/payments/1.png"
+                                     alt=""></li>
+                            <li><img src="<?php echo get_template_directory_uri() ?>/assets/images/payments/2.png"
+                                     alt=""></li>
+                            <li><img src="<?php echo get_template_directory_uri() ?>/assets/images/payments/3.png"
+                                     alt=""></li>
+                            <li><img src="<?php echo get_template_directory_uri() ?>/assets/images/payments/4.png"
+                                     alt=""></li>
+                            <li><img src="<?php echo get_template_directory_uri() ?>/assets/images/payments/5.png"
+                                     alt=""></li>
+                        </ul>
+                    </div>
+
                 </div>
+            </div>
+        </div><!-- .site-info -->
+        <?php
+    }
+
+    if (!function_exists('storefront_header_widget_region')) {
+        /**
+         * Display header widget region
+         *
+         * @since  1.0.0
+         */
+        function storefront_header_widget_region()
+        {
+            if (is_active_sidebar('header-1')) {
+                ?>
+                <div class="header-widget-region" role="complementary">
+                    <div class="col-full">
+                        <?php dynamic_sidebar('header-1'); ?>
+                    </div>
+                </div>
+                <?php
+            }
+        }
+    }
+
+    if (!function_exists('storefront_site_branding')) {
+        /**
+         * Site branding wrapper and display
+         *
+         * @return void
+         * @since  1.0.0
+         */
+        function storefront_site_branding()
+        {
+            ?>
+            <div class="site-branding">
+                <?php storefront_site_title_or_logo(); ?>
             </div>
             <?php
         }
     }
-}
 
-if (!function_exists('storefront_site_branding')) {
-    /**
-     * Site branding wrapper and display
-     *
-     * @return void
-     * @since  1.0.0
-     */
-    function storefront_site_branding()
-    {
-        ?>
-        <div class="site-branding">
-            <?php storefront_site_title_or_logo(); ?>
-        </div>
-        <?php
-    }
-}
+    if (!function_exists('storefront_site_title_or_logo')) {
+        /**
+         * Display the site title or logo
+         *
+         * @param bool $echo Echo the string or return it.
+         * @return string
+         * @since 2.1.0
+         */
+        function storefront_site_title_or_logo($echo = true)
+        {
+            if (function_exists('the_custom_logo') && has_custom_logo()) {
+                $logo = get_custom_logo();
+                $html = is_home() ? '<h1 class="logo">' . $logo . '</h1>' : $logo;
+            } else {
+                $tag = is_home() ? 'h1' : 'div';
 
-if (!function_exists('storefront_site_title_or_logo')) {
-    /**
-     * Display the site title or logo
-     *
-     * @param bool $echo Echo the string or return it.
-     * @return string
-     * @since 2.1.0
-     */
-    function storefront_site_title_or_logo($echo = true)
-    {
-        if (function_exists('the_custom_logo') && has_custom_logo()) {
-            $logo = get_custom_logo();
-            $html = is_home() ? '<h1 class="logo">' . $logo . '</h1>' : $logo;
-        } else {
-            $tag = is_home() ? 'h1' : 'div';
+                $html = '<' . esc_attr($tag) . ' class="beta site-title"><a href="' . esc_url(home_url('/')) . '" rel="home">' . esc_html(get_bloginfo('name')) . '</a></' . esc_attr($tag) . '>';
 
-            $html = '<' . esc_attr($tag) . ' class="beta site-title"><a href="' . esc_url(home_url('/')) . '" rel="home">' . esc_html(get_bloginfo('name')) . '</a></' . esc_attr($tag) . '>';
-
-            if ('' !== get_bloginfo('description')) {
-                $html .= '<p class="site-description">' . esc_html(get_bloginfo('description', 'display')) . '</p>';
+                if ('' !== get_bloginfo('description')) {
+                    $html .= '<p class="site-description">' . esc_html(get_bloginfo('description', 'display')) . '</p>';
+                }
             }
+
+            if (!$echo) {
+                return $html;
+            }
+
+            echo $html; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
         }
-
-        if (!$echo) {
-            return $html;
-        }
-
-        echo $html; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
     }
-}
 
-if (!function_exists('storefront_primary_navigation')) {
-    /**
-     * Display Primary Navigation
-     *
-     * @return void
-     * @since  1.0.0
-     */
-    function storefront_primary_navigation()
-    {
-        ?>
-        <nav id="site-navigation" class="main-navigation" role="navigation"
-             aria-label="<?php esc_attr_e('Primary Navigation', 'storefront'); ?>">
-            <button class="menu-toggle" aria-controls="site-navigation" aria-expanded="false">
-                <span><?php echo esc_html(apply_filters('storefront_menu_toggle_text', __('Menu', 'storefront'))); ?></span>
-            </button>
-            <?php
-            wp_nav_menu(
-                array(
-                    'theme_location' => 'primary',
-                    'container_class' => 'primary-navigation',
-                )
-            );
-
-            wp_nav_menu(
-                array(
-                    'theme_location' => 'handheld',
-                    'container_class' => 'handheld-navigation',
-                )
-            );
+    if (!function_exists('storefront_primary_navigation')) {
+        /**
+         * Display Primary Navigation
+         *
+         * @return void
+         * @since  1.0.0
+         */
+        function storefront_primary_navigation()
+        {
             ?>
-        </nav><!-- #site-navigation -->
-        <?php
-    }
-}
-
-if (!function_exists('storefront_secondary_navigation')) {
-    /**
-     * Display Secondary Navigation
-     *
-     * @return void
-     * @since  1.0.0
-     */
-    function storefront_secondary_navigation()
-    {
-        if (has_nav_menu('secondary')) {
-            ?>
-            <nav class="secondary-navigation" role="navigation"
-                 aria-label="<?php esc_attr_e('Secondary Navigation', 'storefront'); ?>">
+            <nav id="site-navigation" class="main-navigation" role="navigation"
+                 aria-label="<?php esc_attr_e('Primary Navigation', 'storefront'); ?>">
+                <button class="menu-toggle" aria-controls="site-navigation" aria-expanded="false">
+                    <span><?php echo esc_html(apply_filters('storefront_menu_toggle_text', __('Menu', 'storefront'))); ?></span>
+                </button>
                 <?php
                 wp_nav_menu(
                     array(
-                        'theme_location' => 'secondary',
-                        'fallback_cb' => '',
+                        'theme_location' => 'primary',
+                        'container_class' => 'primary-navigation',
+                    )
+                );
+
+                wp_nav_menu(
+                    array(
+                        'theme_location' => 'handheld',
+                        'container_class' => 'handheld-navigation',
                     )
                 );
                 ?>
@@ -336,532 +321,603 @@ if (!function_exists('storefront_secondary_navigation')) {
             <?php
         }
     }
-}
 
-if (!function_exists('storefront_skip_links')) {
-    /**
-     * Skip links
-     *
-     * @return void
-     * @since  1.4.1
-     */
-    function storefront_skip_links()
-    {
-        ?>
-        <a class="skip-link screen-reader-text"
-           href="#site-navigation"><?php esc_html_e('Skip to navigation', 'storefront'); ?></a>
-        <a class="skip-link screen-reader-text"
-           href="#content"><?php esc_html_e('Skip to content', 'storefront'); ?></a>
-        <?php
+    if (!function_exists('storefront_secondary_navigation')) {
+        /**
+         * Display Secondary Navigation
+         *
+         * @return void
+         * @since  1.0.0
+         */
+        function storefront_secondary_navigation()
+        {
+            if (has_nav_menu('secondary')) {
+                ?>
+                <nav class="secondary-navigation" role="navigation"
+                     aria-label="<?php esc_attr_e('Secondary Navigation', 'storefront'); ?>">
+                    <?php
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'secondary',
+                            'fallback_cb' => '',
+                        )
+                    );
+                    ?>
+                </nav><!-- #site-navigation -->
+                <?php
+            }
+        }
     }
-}
 
-if ( ! function_exists( 'storefront_homepage_header' ) ) {
-	/**
-	 * Display the page header without the featured image
-	 *
-	 * @since 1.0.0
-	 */
-	function storefront_homepage_header() {
-		edit_post_link( __( 'Edit this section', 'storefront' ), '', '', '', 'button storefront-hero__button-edit' );
-		?>
-		<header class="entry-header">
-			<?php
-			// the_title( '<h1 class="entry-title">', '</h1>' );
-			?>
-		</header><!-- .entry-header -->
-		<?php
-}
+    if (!function_exists('storefront_skip_links')) {
+        /**
+         * Skip links
+         *
+         * @return void
+         * @since  1.4.1
+         */
+        function storefront_skip_links()
+        {
+            ?>
+            <a class="skip-link screen-reader-text"
+               href="#site-navigation"><?php esc_html_e('Skip to navigation', 'storefront'); ?></a>
+            <a class="skip-link screen-reader-text"
+               href="#content"><?php esc_html_e('Skip to content', 'storefront'); ?></a>
+            <?php
+        }
+    }
 
-if (!function_exists('storefront_page_header')) {
-    /**
-     * Display the page header
-     *
-     * @since 1.0.0
-     */
-    function storefront_page_header()
-    {
-        if (is_front_page() && is_page_template('template-fullwidth.php')) {
-            return;
+    if (!function_exists('storefront_homepage_header')) {
+        /**
+         * Display the page header without the featured image
+         *
+         * @since 1.0.0
+         */
+        function storefront_homepage_header()
+        {
+            edit_post_link(__('Edit this section', 'storefront'), '', '', '', 'button storefront-hero__button-edit');
+            ?>
+            <header class="entry-header">
+                <?php
+                // the_title( '<h1 class="entry-title">', '</h1>' );
+                ?>
+            </header><!-- .entry-header -->
+            <?php
         }
 
-        ?>
-        <header class="entry-header">
-            <?php
-            storefront_post_thumbnail('full');
-            the_title('<h1 class="entry-title">', '</h1>');
-            ?>
-        </header><!-- .entry-header -->
-        <?php
-    }
-}
+        if (!function_exists('storefront_page_header')) {
+            /**
+             * Display the page header
+             *
+             * @since 1.0.0
+             */
+            function storefront_page_header()
+            {
+                if (is_front_page() && is_page_template('template-fullwidth.php')) {
+                    return;
+                }
 
-if ( ! function_exists( 'storefront_page_content' ) ) {
-	/**
-	 * Display the post content
-	 *
-	 * @since 1.0.0
-	 */
-	function storefront_page_content() {
-		?>
-		<div class="module-home-top">
-			<div class="home-top-wrapper">
-				<div class="home-categoryMenu-wrapper">
-					<!-- <div>#module-home-categoryMenu is here!</div> -->
-					<?php
-						$args = array(
-							'taxonomy'   => "product_cat",
-						);
-						$product_categories = get_terms($args);
-						// var_dump(($product_categories));
-					?>
-					<div class="categoryMenu">
-						<input type="checkbox" id="input_isMenuOpened" checked >
-						<label class="categoryMenu__top-section" for="input_isMenuOpened">
-							<div class="categoryMenu-title">
+                ?>
+                <header class="entry-header">
+                    <?php
+                    storefront_post_thumbnail('full');
+                    the_title('<h1 class="entry-title">', '</h1>');
+                    ?>
+                </header><!-- .entry-header -->
+                <?php
+            }
+        }
+
+        if (!function_exists('storefront_page_content')) {
+            /**
+             * Display the post content
+             *
+             * @since 1.0.0
+             */
+            function storefront_page_content()
+            {
+                ?>
+
+
+                <!--                    TODO: Le Anh Vu-->
+                <?php
+                // chỉ trang home thì sở hữu các class và id của Lê Anh Vũ đề ra =)).
+                if (get_permalink() === get_home_url() . "/") {
+                    ?>
+                    <div class="module-home-top">
+                        <div class="home-top-wrapper">
+                            <div class="home-categoryMenu-wrapper">
+                                <!-- <div>#module-home-categoryMenu is here!</div> -->
+                                <?php
+                                $args = array(
+                                    'taxonomy' => "product_cat",
+                                );
+                                $product_categories = get_terms($args);
+                                // var_dump(($product_categories));
+                                ?>
+                                <div class="categoryMenu">
+                                    <input type="checkbox" id="input_isMenuOpened" checked>
+                                    <label class="categoryMenu__top-section" for="input_isMenuOpened">
+                                        <div class="categoryMenu-title">
 								<span class="menu-icon">
 									<span class="bar-1"></span>
 									<span class="bar-2"></span>
 									<span class="bar-3"></span>
 									<span class="bar-4"></span>
 								</span>
-								<span>Categories</span>
-							</div>
-						</label>
-						<div class="categoryMenu__bottom-section">
-							<ul class="categoryMenu__list">
-								<?php
-									foreach ($product_categories as $key => $value) {
-										if ($value->parent == 0) {
-								?>
-								<li class="categoryMenu__list__item">
-									<div class="category-wrapper">
+                                            <span>Categories</span>
+                                        </div>
+                                    </label>
+                                    <div class="categoryMenu__bottom-section">
+                                        <ul class="categoryMenu__list">
+                                            <?php
+                                            foreach ($product_categories as $key => $value) {
+                                                if ($value->parent == 0) {
+                                                    ?>
+                                                    <li class="categoryMenu__list__item">
+                                                        <div class="category-wrapper">
 										<span class="category">
 											<span class="category-icon"><i class="fas fa-tag"></i></span>
-											<span><?php echo ('<a href="' . get_term_link( (int)$value->term_id, 'product_cat' ) . '" class="menu-item">' . $value->name . '</a>'); ?></span>
+											<span><?php echo('<a href="' . get_term_link((int)$value->term_id, 'product_cat') . '" class="menu-item">' . $value->name . '</a>'); ?></span>
 										</span>
-										<span class="arrow_r-icon">></span>
-									</div>
-									<div class="sub-category">
-									<?php
-										$countSubCate = 0;
-										foreach ($product_categories as $key2 => $value2) {
-											if ($value2->parent == $value->term_id) {
-												$countSubCate++;
-												echo ('<a href="' . get_term_link( (int)$value2->term_id, 'product_cat' ) . '" class="sub-item">' . $value2->name . '</a>');
-											}
-										}
-										if ($countSubCate == 0) {
-											echo ('
+                                                            <span class="arrow_r-icon">></span>
+                                                        </div>
+                                                        <div class="sub-category">
+                                                            <?php
+                                                            $countSubCate = 0;
+                                                            foreach ($product_categories as $key2 => $value2) {
+                                                                if ($value2->parent == $value->term_id) {
+                                                                    $countSubCate++;
+                                                                    echo('<a href="' . get_term_link((int)$value2->term_id, 'product_cat') . '" class="sub-item">' . $value2->name . '</a>');
+                                                                }
+                                                            }
+                                                            if ($countSubCate == 0) {
+                                                                echo('
 												<div class="sub-item">
 													<span class="category-icon"><i class="fas fa-times"></i></span>
 													<span>No subcategories</span>
 												</div>
 											');
-										}
-									?>
-									</div>
-								</li>
-								<?php
-										}
-									}
-								?>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="home-banner-wrapper">
-					<!-- <div>#module-home-banner is here!</div> -->
-					<?php
-						// $args = array(
-						// 	'category' => array( 'smartphone' ),
-						// 	'orderby'  => 'name',
-						// );
-						// $products = wc_get_products( $args );
-						// var_dump($products);
+                                                            }
+                                                            ?>
+                                                        </div>
+                                                    </li>
+                                                    <?php
+                                                }
+                                            }
+                                            ?>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-banner-wrapper">
+                                <!-- <div>#module-home-banner is here!</div> -->
+                                <?php
+                                // $args = array(
+                                // 	'category' => array( 'smartphone' ),
+                                // 	'orderby'  => 'name',
+                                // );
+                                // $products = wc_get_products( $args );
+                                // var_dump($products);
 
-						// $post = get_post();
-						// var_dump($post->post_content);
+                                // $post = get_post();
+                                // var_dump($post->post_content);
 
-						$args = array(
-							'post_type' => 'page',
-						);
-						$posts = get_posts($args);
-						$banner = '';
-						foreach ($posts as $key => $value) {
-							if ($value->post_name == 'homepage') {
-								// echo( $value->post_content );
-								// NOT WORKS: preg_match('/<div class="wp-block-cover">(.*?)<\/div>/msU', $value->post_content, $match);
-								$banner = preg_replace('/<!-- \/wp:cover -->(.*?)/msU', '', $value->post_content);
-							}
-						}
-						$banner = preg_replace('/\saligncenter/', '', $banner);
-						echo( $banner );
-					?>
-				</div>
-			</div>
-		</div>
-		<div class="entry-content">
-			<?php
-				// the_content();
-			?>
-			<?php
-				// wp_link_pages(
-				// 	array(
-				// 		'before' => '<div class="page-links">' . __( 'Pages:', 'storefront' ),
-				// 		'after'  => '</div>',
-				// 	)
-				// );
-			?>
-		</div><!-- .entry-content -->
-		<?php
-}
+                                $args = array(
+                                    'post_type' => 'page',
+                                );
+                                $posts = get_posts($args);
+                                $banner = '';
+                                foreach ($posts as $key => $value) {
+                                    if ($value->post_name == 'homepage') {
+                                        // echo( $value->post_content );
+                                        // NOT WORKS: preg_match('/<div class="wp-block-cover">(.*?)<\/div>/msU', $value->post_content, $match);
+                                        $banner = preg_replace('/<!-- \/wp:cover -->(.*?)/msU', '', $value->post_content);
+                                    }
+                                }
+                                $banner = preg_replace('/\saligncenter/', '', $banner);
+                                echo($banner);
+                                ?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="entry-content" id="id-mdl34">
+                        <!-- ## Content New Products của lê anh vũ tại đây ##  -->
+                        <div id="lav-mdl3-mdl4">
+                            <div class="lav-tag-search">
 
-if (!function_exists('storefront_post_header')) {
-    /**
-     * Display the post header with a link to the single post
-     *
-     * @since 1.0.0
-     */
-    function storefront_post_header()
-    {
-        ?>
-        <header class="entry-header">
-            <?php
+                                <?php
+                                // dynamic_sidebar( 'category-search' );
+                                dynamic_sidebar('tag-search');
+                                ?>
+                            </div>
 
-            /**
-             * Functions hooked in to storefront_post_header_before action.
-             *
-             * @hooked storefront_post_meta - 10
-             */
-            do_action('storefront_post_header_before');
+                            <div class="lav-new-products">
+                                <?php the_content(); ?>
+                            </div>
+                        </div>
+                        <!-- ## Kết thúc Content New Products của lê anh vũ tại đây ## -->
 
-            if (is_single()) {
-                the_title('<h1 class="entry-title">', '</h1>');
-            } else {
-                the_title(sprintf('<h2 class="alpha entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>');
+                        <?php
+                        wp_link_pages(
+                            array(
+                                'before' => '<div class="page-links">' . __('Pages:', 'storefront'),
+                                'after' => '</div>',
+                            )
+                        );
+                        ?>
+                    </div><!-- .entry-content -->
+                    <?php
+                    // Trường hợp không thuộc trang Home thì hiện như cũ.
+                    // Thành viên nhóm sẽ chỉnh tiếp theo code dưới (code dưới là code nguồn chưa chỉnh sửa!).
+                } else {
+                    ?>
+                    <div class="entry-content">
+                        <?php the_content(); ?>
+                        <?php
+                        wp_link_pages(
+                            array(
+                                'before' => '<div class="page-links">' . __('Pages:', 'storefront'),
+                                'after' => '</div>',
+                            )
+                        );
+                        ?>
+                    </div><!-- .entry-content -->
+                    <?php
+                }
+                ?>
+                <?php
             }
 
-            do_action('storefront_post_header_after');
-            ?>
-        </header><!-- .entry-header -->
-        <?php
-    }
-}
+            if (!function_exists('storefront_post_header')) {
+                /**
+                 * Display the post header with a link to the single post
+                 *
+                 * @since 1.0.0
+                 */
+                function storefront_post_header()
+                {
+                    ?>
+                    <header class="entry-header">
+                        <?php
 
-if (!function_exists('storefront_post_content')) {
-    /**
-     * Display the post content with a link to the single post
-     *
-     * @since 1.0.0
-     */
-    function storefront_post_content()
-    {
-        ?>
-        <div class="entry-content">
-            <?php
+                        /**
+                         * Functions hooked in to storefront_post_header_before action.
+                         *
+                         * @hooked storefront_post_meta - 10
+                         */
+                        do_action('storefront_post_header_before');
 
-            /**
-             * Functions hooked in to storefront_post_content_before action.
-             *
-             * @hooked storefront_post_thumbnail - 10
-             */
-            do_action('storefront_post_content_before');
+                        if (is_single()) {
+                            the_title('<h1 class="entry-title">', '</h1>');
+                        } else {
+                            the_title(sprintf('<h2 class="alpha entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>');
+                        }
 
-            the_content(
-                sprintf(
-                /* translators: %s: post title */
-                    __('Continue reading %s', 'storefront'),
-                    '<span class="screen-reader-text">' . get_the_title() . '</span>'
-                )
-            );
+                        do_action('storefront_post_header_after');
+                        ?>
+                    </header><!-- .entry-header -->
+                    <?php
+                }
+            }
 
-            do_action('storefront_post_content_after');
+            if (!function_exists('storefront_post_content')) {
+                /**
+                 * Display the post content with a link to the single post
+                 *
+                 * @since 1.0.0
+                 */
+                function storefront_post_content()
+                {
+                    ?>
+                    <div class="entry-content">
+                        <?php
 
-            wp_link_pages(
-                array(
-                    'before' => '<div class="page-links">' . __('Pages:', 'storefront'),
-                    'after' => '</div>',
-                )
-            );
-            ?>
-        </div><!-- .entry-content -->
-        <?php
-    }
-}
+                        /**
+                         * Functions hooked in to storefront_post_content_before action.
+                         *
+                         * @hooked storefront_post_thumbnail - 10
+                         */
+                        do_action('storefront_post_content_before');
 
-if (!function_exists('storefront_post_meta')) {
-    /**
-     * Display the post meta
-     *
-     * @since 1.0.0
-     */
-    function storefront_post_meta()
-    {
-        if ('post' !== get_post_type()) {
-            return;
-        }
+                        the_content(
+                            sprintf(
+                            /* translators: %s: post title */
+                                __('Continue reading %s', 'storefront'),
+                                '<span class="screen-reader-text">' . get_the_title() . '</span>'
+                            )
+                        );
 
-        // Posted on.
-        $time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+                        do_action('storefront_post_content_after');
 
-        if (get_the_time('U') !== get_the_modified_time('U')) {
-            $time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
-        }
+                        wp_link_pages(
+                            array(
+                                'before' => '<div class="page-links">' . __('Pages:', 'storefront'),
+                                'after' => '</div>',
+                            )
+                        );
+                        ?>
+                    </div><!-- .entry-content -->
+                    <?php
+                }
+            }
 
-        $time_string = sprintf(
-            $time_string,
-            esc_attr(get_the_date('c')),
-            esc_html(get_the_date()),
-            esc_attr(get_the_modified_date('c')),
-            esc_html(get_the_modified_date())
-        );
+            if (!function_exists('storefront_post_meta')) {
+                /**
+                 * Display the post meta
+                 *
+                 * @since 1.0.0
+                 */
+                function storefront_post_meta()
+                {
+                    if ('post' !== get_post_type()) {
+                        return;
+                    }
 
-        $output_time_string = sprintf('<a href="%1$s" rel="bookmark">%2$s</a>', esc_url(get_permalink()), $time_string);
+                    // Posted on.
+                    $time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 
-        $posted_on = '
+                    if (get_the_time('U') !== get_the_modified_time('U')) {
+                        $time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
+                    }
+
+                    $time_string = sprintf(
+                        $time_string,
+                        esc_attr(get_the_date('c')),
+                        esc_html(get_the_date()),
+                        esc_attr(get_the_modified_date('c')),
+                        esc_html(get_the_modified_date())
+                    );
+
+                    $output_time_string = sprintf('<a href="%1$s" rel="bookmark">%2$s</a>', esc_url(get_permalink()), $time_string);
+
+                    $posted_on = '
 			<span class="posted-on">' .
-            /* translators: %s: post date */
-            sprintf(__('Posted on %s', 'storefront'), $output_time_string) .
-            '</span>';
+                        /* translators: %s: post date */
+                        sprintf(__('Posted on %s', 'storefront'), $output_time_string) .
+                        '</span>';
 
-        // Author.
-        $author = sprintf(
-            '<span class="post-author">%1$s <a href="%2$s" class="url fn" rel="author">%3$s</a></span>',
-            __('by', 'storefront'),
-            esc_url(get_author_posts_url(get_the_author_meta('ID'))),
-            esc_html(get_the_author())
-        );
+                    // Author.
+                    $author = sprintf(
+                        '<span class="post-author">%1$s <a href="%2$s" class="url fn" rel="author">%3$s</a></span>',
+                        __('by', 'storefront'),
+                        esc_url(get_author_posts_url(get_the_author_meta('ID'))),
+                        esc_html(get_the_author())
+                    );
 
-        // Comments.
-        $comments = '';
+                    // Comments.
+                    $comments = '';
 
-        if (!post_password_required() && (comments_open() || 0 !== intval(get_comments_number()))) {
-            $comments_number = get_comments_number_text(__('Leave a comment', 'storefront'), __('1 Comment', 'storefront'), __('% Comments', 'storefront'));
+                    if (!post_password_required() && (comments_open() || 0 !== intval(get_comments_number()))) {
+                        $comments_number = get_comments_number_text(__('Leave a comment', 'storefront'), __('1 Comment', 'storefront'), __('% Comments', 'storefront'));
 
-            $comments = sprintf(
-                '<span class="post-comments">&mdash; <a href="%1$s">%2$s</a></span>',
-                esc_url(get_comments_link()),
-                $comments_number
-            );
-        }
+                        $comments = sprintf(
+                            '<span class="post-comments">&mdash; <a href="%1$s">%2$s</a></span>',
+                            esc_url(get_comments_link()),
+                            $comments_number
+                        );
+                    }
 
-        echo wp_kses(
-            sprintf('%1$s %2$s %3$s', $posted_on, $author, $comments),
-            array(
-                'span' => array(
-                    'class' => array(),
-                ),
-                'a' => array(
-                    'href' => array(),
-                    'title' => array(),
-                    'rel' => array(),
-                ),
-                'time' => array(
-                    'datetime' => array(),
-                    'class' => array(),
-                ),
-            )
-        );
-    }
-}
+                    echo wp_kses(
+                        sprintf('%1$s %2$s %3$s', $posted_on, $author, $comments),
+                        array(
+                            'span' => array(
+                                'class' => array(),
+                            ),
+                            'a' => array(
+                                'href' => array(),
+                                'title' => array(),
+                                'rel' => array(),
+                            ),
+                            'time' => array(
+                                'datetime' => array(),
+                                'class' => array(),
+                            ),
+                        )
+                    );
+                }
+            }
 
-if (!function_exists('storefront_edit_post_link')) {
-    /**
-     * Display the edit link
-     *
-     * @since 2.5.0
-     */
-    function storefront_edit_post_link()
-    {
-        edit_post_link(
-            sprintf(
-                wp_kses(
-                /* translators: %s: Name of current post. Only visible to screen readers */
-                    __('Edit <span class="screen-reader-text">%s</span>', 'storefront'),
-                    array(
-                        'span' => array(
-                            'class' => array(),
+            if (!function_exists('storefront_edit_post_link')) {
+                /**
+                 * Display the edit link
+                 *
+                 * @since 2.5.0
+                 */
+                function storefront_edit_post_link()
+                {
+                    edit_post_link(
+                        sprintf(
+                            wp_kses(
+                            /* translators: %s: Name of current post. Only visible to screen readers */
+                                __('Edit <span class="screen-reader-text">%s</span>', 'storefront'),
+                                array(
+                                    'span' => array(
+                                        'class' => array(),
+                                    ),
+                                )
+                            ),
+                            get_the_title()
                         ),
-                    )
-                ),
-                get_the_title()
-            ),
-            '<div class="edit-link">',
-            '</div>'
-        );
-    }
-}
+                        '<div class="edit-link">',
+                        '</div>'
+                    );
+                }
+            }
 
-if (!function_exists('storefront_post_taxonomy')) {
-    /**
-     * Display the post taxonomies
-     *
-     * @since 2.4.0
-     */
-    function storefront_post_taxonomy()
-    {
-        /* translators: used between list items, there is a space after the comma */
-        $categories_list = get_the_category_list(__(', ', 'storefront'));
+            if (!function_exists('storefront_post_taxonomy')) {
+                /**
+                 * Display the post taxonomies
+                 *
+                 * @since 2.4.0
+                 */
+                function storefront_post_taxonomy()
+                {
+                    /* translators: used between list items, there is a space after the comma */
+                    $categories_list = get_the_category_list(__(', ', 'storefront'));
 
-        /* translators: used between list items, there is a space after the comma */
-        $tags_list = get_the_tag_list('', __(', ', 'storefront'));
-        ?>
+                    /* translators: used between list items, there is a space after the comma */
+                    $tags_list = get_the_tag_list('', __(', ', 'storefront'));
+                    ?>
 
-        <aside class="entry-taxonomy">
-            <?php if ($categories_list) : ?>
-                <div class="cat-links">
-                    <?php echo esc_html(_n('Category:', 'Categories:', count(get_the_category()), 'storefront')); ?><?php echo wp_kses_post($categories_list); ?>
-                </div>
-            <?php endif; ?>
+                    <aside class="entry-taxonomy">
+                        <?php if ($categories_list) : ?>
+                            <div class="cat-links">
+                                <?php echo esc_html(_n('Category:', 'Categories:', count(get_the_category()), 'storefront')); ?><?php echo wp_kses_post($categories_list); ?>
+                            </div>
+                        <?php endif; ?>
 
-            <?php if ($tags_list) : ?>
-                <div class="tags-links">
-                    <?php echo esc_html(_n('Tag:', 'Tags:', count(get_the_tags()), 'storefront')); ?><?php echo wp_kses_post($tags_list); ?>
-                </div>
-            <?php endif; ?>
-        </aside>
+                        <?php if ($tags_list) : ?>
+                            <div class="tags-links">
+                                <?php echo esc_html(_n('Tag:', 'Tags:', count(get_the_tags()), 'storefront')); ?><?php echo wp_kses_post($tags_list); ?>
+                            </div>
+                        <?php endif; ?>
+                    </aside>
 
-        <?php
-    }
-}
+                    <?php
+                }
+            }
 
-if (!function_exists('storefront_paging_nav')) {
-    /**
-     * Display navigation to next/previous set of posts when applicable.
-     */
-    function storefront_paging_nav()
-    {
-        global $wp_query;
+            if (!function_exists('storefront_paging_nav')) {
+                /**
+                 * Display navigation to next/previous set of posts when applicable.
+                 */
+                function storefront_paging_nav()
+                {
+                    global $wp_query;
 
-        $args = array(
-            'type' => 'list',
-            'next_text' => _x('Next', 'Next post', 'storefront'),
-            'prev_text' => _x('Previous', 'Previous post', 'storefront'),
-        );
+                    $args = array(
+                        'type' => 'list',
+                        'next_text' => _x('Next', 'Next post', 'storefront'),
+                        'prev_text' => _x('Previous', 'Previous post', 'storefront'),
+                    );
 
-        the_posts_pagination($args);
-    }
-}
+                    the_posts_pagination($args);
+                }
+            }
 
-if (!function_exists('storefront_post_nav')) {
-    /**
-     * Display navigation to next/previous post when applicable.
-     */
-    function storefront_post_nav()
-    {
-        $args = array(
-            'next_text' => '<span class="screen-reader-text">' . esc_html__('Next post:', 'storefront') . ' </span>%title',
-            'prev_text' => '<span class="screen-reader-text">' . esc_html__('Previous post:', 'storefront') . ' </span>%title',
-        );
-        the_post_navigation($args);
-    }
-}
+            if (!function_exists('storefront_post_nav')) {
+                /**
+                 * Display navigation to next/previous post when applicable.
+                 */
+                function storefront_post_nav()
+                {
+                    $args = array(
+                        'next_text' => '<span class="screen-reader-text">' . esc_html__('Next post:', 'storefront') . ' </span>%title',
+                        'prev_text' => '<span class="screen-reader-text">' . esc_html__('Previous post:', 'storefront') . ' </span>%title',
+                    );
+                    the_post_navigation($args);
+                }
+            }
 
-if (!function_exists('storefront_homepage_content')) {
-    /**
-     * Display homepage content
-     * Hooked into the `homepage` action in the homepage template
-     *
-     * @return  void
-     * @since  1.0.0
-     */
-    function storefront_homepage_content()
-    {
-        while (have_posts()) {
-            the_post();
+            if (!function_exists('storefront_homepage_content')) {
+                /**
+                 * Display homepage content
+                 * Hooked into the `homepage` action in the homepage template
+                 *
+                 * @return  void
+                 * @since  1.0.0
+                 */
+                function storefront_homepage_content()
+                {
+                    while (have_posts()) {
+                        the_post();
 
-            get_template_part('content', 'homepage');
+                        get_template_part('content', 'homepage');
 
-        } // end of the loop.
-    }
-}
+                    } // end of the loop.
+                }
+            }
 
-if (!function_exists('storefront_social_icons')) {
-    /**
-     * Display social icons
-     * If the subscribe and connect plugin is active, display the icons.
-     *
-     * @link http://wordpress.org/plugins/subscribe-and-connect/
-     * @since 1.0.0
-     */
-    function storefront_social_icons()
-    {
-        if (class_exists('Subscribe_And_Connect')) {
-            echo '<div class="subscribe-and-connect-connect">';
-            subscribe_and_connect_connect();
-            echo '</div>';
+            if (!function_exists('storefront_social_icons')) {
+                /**
+                 * Display social icons
+                 * If the subscribe and connect plugin is active, display the icons.
+                 *
+                 * @link http://wordpress.org/plugins/subscribe-and-connect/
+                 * @since 1.0.0
+                 */
+                function storefront_social_icons()
+                {
+                    if (class_exists('Subscribe_And_Connect')) {
+                        echo '<div class="subscribe-and-connect-connect">';
+                        subscribe_and_connect_connect();
+                        echo '</div>';
+                    }
+                }
+            }
+
+            if (!function_exists('storefront_get_sidebar')) {
+                /**
+                 * Display storefront sidebar
+                 *
+                 * @uses get_sidebar()
+                 * @since 1.0.0
+                 */
+                function storefront_get_sidebar()
+                {
+                    get_sidebar();
+                }
+            }
+
+            if (!function_exists('storefront_post_thumbnail')) {
+                /**
+                 * Display post thumbnail
+                 *
+                 * @param string $size the post thumbnail size.
+                 * @uses has_post_thumbnail()
+                 * @uses the_post_thumbnail
+                 * @var $size thumbnail size. thumbnail|medium|large|full|$custom
+                 * @since 1.5.0
+                 */
+                function storefront_post_thumbnail($size = 'full')
+                {
+                    if (has_post_thumbnail()) {
+                        the_post_thumbnail($size);
+                    }
+                }
+            }
+
+            if (!function_exists('storefront_primary_navigation_wrapper')) {
+                /**
+                 * The primary navigation wrapper
+                 */
+                function storefront_primary_navigation_wrapper()
+                {
+                    echo '<div class="storefront-primary-navigation"><div class="col-full">';
+                }
+            }
+
+            if (!function_exists('storefront_primary_navigation_wrapper_close')) {
+                /**
+                 * The primary navigation wrapper close
+                 */
+                function storefront_primary_navigation_wrapper_close()
+                {
+                    echo '</div></div>';
+                }
+            }
+
+            if (!function_exists('storefront_header_container')) {
+                /**
+                 * The header container
+                 */
+                function storefront_header_container()
+                {
+                    echo '<div class="col-full">';
+                }
+            }
+
+            if (!function_exists('storefront_header_container_close')) {
+                /**
+                 * The header container close
+                 */
+                function storefront_header_container_close()
+                {
+                    echo '</div>';
+                }
+            }
         }
     }
 }
 
-if (!function_exists('storefront_get_sidebar')) {
-    /**
-     * Display storefront sidebar
-     *
-     * @uses get_sidebar()
-     * @since 1.0.0
-     */
-    function storefront_get_sidebar()
-    {
-        get_sidebar();
-    }
-}
-
-if (!function_exists('storefront_post_thumbnail')) {
-    /**
-     * Display post thumbnail
-     *
-     * @param string $size the post thumbnail size.
-     * @uses has_post_thumbnail()
-     * @uses the_post_thumbnail
-     * @var $size thumbnail size. thumbnail|medium|large|full|$custom
-     * @since 1.5.0
-     */
-    function storefront_post_thumbnail($size = 'full')
-    {
-        if (has_post_thumbnail()) {
-            the_post_thumbnail($size);
-        }
-    }
-}
-
-if (!function_exists('storefront_primary_navigation_wrapper')) {
-    /**
-     * The primary navigation wrapper
-     */
-    function storefront_primary_navigation_wrapper()
-    {
-        echo '<div class="storefront-primary-navigation"><div class="col-full">';
-    }
-}
-
-if (!function_exists('storefront_primary_navigation_wrapper_close')) {
-    /**
-     * The primary navigation wrapper close
-     */
-    function storefront_primary_navigation_wrapper_close()
-    {
-        echo '</div></div>';
-    }
-}
-
-if (!function_exists('storefront_header_container')) {
-    /**
-     * The header container
-     */
-    function storefront_header_container()
-    {
-        echo '<div class="col-full">';
-    }
-}
-
-if (!function_exists('storefront_header_container_close')) {
-    /**
-     * The header container close
-     */
-    function storefront_header_container_close()
-    {
-        echo '</div>';
-    }
-}

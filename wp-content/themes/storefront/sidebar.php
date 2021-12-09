@@ -9,8 +9,9 @@ if (!is_active_sidebar('sidebar-1')) {
     return;
 }
 
-$lav_array_check = explode("/", get_permalink());
-if (!(in_array("product", $lav_array_check) && count($lav_array_check) >= 3 && $lav_array_check[3] === "product")) {
+$lav_array_check = explode("/",  $_SERVER['REQUEST_URI']);
+
+if ((in_array("shop", $lav_array_check) && $lav_array_check[1] === "shop")) {
     ?>
 
     <div id="secondary" class="widget-area" role="complementary">
@@ -20,4 +21,7 @@ if (!(in_array("product", $lav_array_check) && count($lav_array_check) >= 3 && $
 
         ?>
     </div><!-- #secondary -->
-<?php } ?>
+<?php } else {
+    ?>
+    <?php
+} ?>

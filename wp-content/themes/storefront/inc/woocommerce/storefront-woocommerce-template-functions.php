@@ -27,14 +27,10 @@ if ( ! function_exists( 'storefront_before_content' ) ) {
 	 *@since   1.0.0
 	 */
 	function storefront_before_content() {
-        $lav_array_check = explode("/", get_permalink());
-        $lav_check = in_array("product", $lav_array_check) && count($lav_array_check) >= 3 && $lav_array_check[3] === "product";
+        $lav_array_check = explode("/",  $_SERVER['REQUEST_URI']);
+        $lav_check = in_array("product", $lav_array_check) && $lav_array_check[1] === "product";
+        $hsh_check = in_array("shop", $lav_array_check) && $lav_array_check[1] === "shop";
 		?>
-
-<!--            HO si Hung-->
-<!--        Added custom id-->
-		<div id="primary" class="content-area">
-			<main id="main" class="site-main Hung-custom-wrapper" role="main">
 
         <?php
         if ($lav_check) {
@@ -42,12 +38,18 @@ if ( ! function_exists( 'storefront_before_content' ) ) {
             <div id="primary" class="content-area lav-custom-product" style='width: 100%;'>
     			<main id="main" class="site-main" role="main">
             <?php
-        } else {
+        } else if($hsh_check){
         ?>
-            <div id="primary" class="content-area">
-			    <main id="main" class="site-main" role="main">
-
+        <!--            HO si Hung-->
+<!--        Added custom id-->
+           		<div id="primary" class="content-area">
+			<main id="main" class="site-main Hung-custom-wrapper" role="main">
 		<?php
+		 } else {
+            ?>
+            <div id="primary" class="content-area">
+			<main id="main" class="site-main" role="main">
+            <?php
 		 }
 	}
 }

@@ -521,3 +521,7 @@ Stack trace:
 #8 {main}
   thrown in E:\github\project-cms\branch master\training-cms\wp-content\themes\storefront\inc\woocommerce\storefront-woocommerce-template-functions.php on line 268
 
+2021-12-09T13:08:09+00:00 CRITICAL Unclosed '{' on line 399 in C:\Users\HUNG\Desktop\CMS\wp-content\themes\storefront\inc\storefront-template-functions.php on line 868
+
+2021-12-09T13:08:10+00:00 CRITICAL Unclosed '{' on line 399 in C:\Users\HUNG\Desktop\CMS\wp-content\themes\storefront\inc\storefront-template-functions.php on line 868
+
