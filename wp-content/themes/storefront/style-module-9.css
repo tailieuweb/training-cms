@@ -7,7 +7,7 @@
 .site-header-custom {
     margin: 0 0 !important;
     position: relative;
-    /* padding: 0 60px; */
+    box-shadow: 0 1px 5px 1px #181818;
 }
 
 #pre-header {
@@ -87,13 +87,12 @@
 }
 
 #back-header .container {
-    min-height: 100px;
+    min-height: 80px;
     line-height: 28px;
-    padding: 0;
+    padding: 25px 0 0 0;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* overflow: hidden;s */
 }
 
 #back-header .container .row {
