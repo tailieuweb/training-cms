@@ -37,7 +37,7 @@ $isSale = $product->regular_price != $product->price;
 			</div>
 			<!-- Product Name -->
 			<div class="product-name">
-				<h2><?= $productName ?></h2>
+				<b><?= $productName ?></b>
 			</div>
 			<!-- Product Sale (Show only for product sale) -->
 			<div class="product-sale">
