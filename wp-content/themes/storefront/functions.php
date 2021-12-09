@@ -163,4 +163,3 @@ function hoangweb_readmore_flatsome()
 </script>
 <?php
 }
-?>

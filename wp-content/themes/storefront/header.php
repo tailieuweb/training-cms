@@ -45,6 +45,7 @@ $product_categories = get_categories($args);
         type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module1-woocommerce.css"
         type="text/css" media="screen" />
+       <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module4-woocommerce.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module-9.css" type="text/css" media="screen" />
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
