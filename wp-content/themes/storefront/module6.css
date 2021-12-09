@@ -1,0 +1,188 @@
+.module6-page-header {
+    padding: 4.6rem 0 5rem;
+    background-color: #ebebeb;
+    background-image: url(../../plugins/woocommerce/assets/images/page-header-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.text-center { 
+    text-align: center;
+}
+
+.module6-page-header h1 {
+    color: #333 !important;
+    font: normal 400 3.2rem/1.1 "Poppins",sans-serif !important;
+    letter-spacing: -.025em !important;
+    margin-bottom: 0 !important;
+}
+
+.module6-page-header h1 span {
+    display: block !important;
+    color: #c96 !important;
+    font-size: 1.6rem !important;
+    margin-top: 0.8rem !important;
+}
+
+.module6-row {
+    margin-top: -100px;
+    margin-top: -100px;
+    display: inline-flex !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    flex-wrap: nowrap !important;
+    flex-direction: row !important;
+
+}
+
+.module6-table-cart-tbody .cart_item .product-thumbnail a {
+    display: inline-block !important;
+    margin: 0 !important;
+    text-decoration: none !important;
+}
+
+.module6-table-cart-tbody .cart_item .product-thumbnail {
+    width: 100%;
+    display: inline-flex !important;
+}
+
+.module6-table-cart-tbody .cart_item .product-thumbnail .product-media a {
+    margin-right: 2.8rem !important;
+    flex-shrink: 0 !important;
+    max-width: 60px !important;
+    position: relative !important;
+    background-color: #d7d7d7 !important;
+    overflow: hidden !important;
+}
+
+.module6-table-cart-tbody .cart_item .product-thumbnail .product-title a {
+    color: #333 !important;
+    font-weight: 400 !important;
+    font-size: 1rem !important;
+    line-height: 1.25 !important;
+    letter-spacing: -.01em !important;
+}
+
+
+.module6-cart-btn-checkout a {
+    color: #c96 !important;
+    border: #c96 1px solid !important;
+    background: white !important;
+    font-size: 16px !important;
+}
+
+.module6-cart-btn-checkout a::after {
+    display: none;
+}
+
+.module6-cart-btn-checkout a:hover {
+    background: #c96 !important;
+    color: white !important;
+}
+
+.module6-total-cart {
+    border: .1rem dashed #d7d7d7;
+    background-color: #f9f9f9;
+    padding: 3rem 3rem 3rem;
+    margin: .4rem 0;
+}
+
+.module6-total-cart h2 {
+    font-weight: 500 !important;
+    font-size: 1.6rem !important;
+    letter-spacing: 0 !important;
+    padding-bottom: 1.7rem !important;
+    border-bottom: 0.1rem solid #cccccc !important;
+    margin-bottom: 2.1rem !important;
+}
+
+.module6-table-cart {
+    padding-right: 1.5em;
+}
+
+.module6-table-cart:not(.has-background) th {
+    background: #fff !important;
+}
+
+.module6-table-cart th {
+    font-weight: 400 !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    color: #999 !important;
+}
+
+.module6-table-cart th {
+    border-top: none;
+    border-bottom: 0.1rem solid #ebebeb !important;
+}
+
+.module6-total-cart-shipping-tr th {
+    font-weight: 100 !important;
+    min-width: 10rem;
+}
+
+.module6-total-cart-shipping-tr td {
+    background-color: #f9f9f9 !important;
+}
+
+
+.module6-coupon input[type='text']:focus {
+    outline-color: #c96 !important;
+}
+
+.module6-coupon .button {
+    border: #c96 1px solid;
+    color: #c96;
+    background: #fff;
+}
+
+.module6-coupon .button:hover {
+    border: #c96 1px solid;
+    color: #fff;
+    background: #c96;
+}
+
+.module6-btn-update {
+    text-transform: uppercase;
+    border: #d7d7d7 1px solid !important;
+    background: #fff !important;
+}
+
+.module6-btn-update i {
+    margin-left: 1em;
+}
+
+.module6-btn-update:hover {
+    color: #c96;
+}
+
+@media screen and (min-width: 992px) {
+    .module6-page-header h1 {
+        font-size: 4rem;
+    }
+    .module6-page-header h1 span {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1038px) {
+    .module6-table-cart-tbody .cart_item .product-thumbnail {
+        display: block !important;
+    }
+    .module6-row {
+        display: block !important;
+    }
+    .module6-page-header h1 {
+        font-size: 3.6rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .module6-content-area {
+        width: 100% !important;
+    }
+}
+
+
+

@@ -724,9 +724,7 @@ function wc_get_product_class( $class = '', $product = null ) {
  * @param int|WP_Post|WC_Product $product_id Product ID or product object.
  */
 function wc_product_class( $class = '', $product_id = null ) {
-//    Ho Si Hung
-//    Hung added class for custom product info
-	echo 'class="Hung-custom-product ' . esc_attr( implode( ' ', wc_get_product_class( $class, $product_id ) ) ) . '"';
+	echo 'class="' . esc_attr( implode( ' ', wc_get_product_class( $class, $product_id ) ) ) . '"';
 }
 
 /**
@@ -3547,9 +3545,7 @@ function wc_get_stock_html( $product ) {
 function wc_get_rating_html( $rating, $count = 0 ) {
 	$html = '';
 
-//    Ho Si Hung
-//    Update logic for showing product rating if it's 0
-	if ( 0 <= $rating ) {
+	if ( 0 < $rating ) {
 		/* translators: %s: rating */
 		$label = sprintf( __( 'Rated %s out of 5', 'woocommerce' ), $rating );
 		$html  = '<div class="star-rating" role="img" aria-label="' . esc_attr( $label ) . '">' . wc_get_star_rating_html( $rating, $count ) . '</div>';
