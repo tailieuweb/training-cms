@@ -18,6 +18,8 @@
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module5-woocommerce.css"
         type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module3-woocommerce.css"
+        type="text/css" media="screen" />
     <?php wp_head(); ?>
 </head>
 
