@@ -65,12 +65,8 @@ if (version_compare(get_bloginfo('version'), '4.7.3', '>=') && (is_admin() || is
     require 'inc/nux/class-storefront-nux-guided-tour.php';
     require 'inc/nux/class-storefront-nux-starter-content.php';
 }
-/*
-* Author: Hoangweb - https://hoangweb.com
-* Đoạn code thu gọn nội dung bao gồm cả nút xem thêm và thu gọn lại sau khi đã click vào xem thêm
-*/
-add_action('wp_footer', 'hoangweb_readmore_flatsome');
-function hoangweb_readmore_flatsome()
+add_action('wp_footer', 'vinh_readmore_flatsome');
+function vinh_readmore_flatsome()
 {
 ?>
 <style>
@@ -84,7 +80,7 @@ function hoangweb_readmore_flatsome()
     height: 0 !important;
 }
 
-.hoangweb_readmore_flatsome {
+.vinh_readmore_flatsome {
     text-align: center;
     cursor: pointer;
     position: absolute;
@@ -94,19 +90,19 @@ function hoangweb_readmore_flatsome()
     background: #fff;
 }
 
-.hoangweb_readmore_flatsome:before {
+.vinh_readmore_flatsome:before {
     height: 55px;
     margin-top: -45px;
     content: -webkit-gradient(linear, 0% 100%, 0% 0%, from(#fff), color-stop(.2, #fff), to(rgba(255, 255, 255, 0)));
     display: block;
 }
 
-.hoangweb_readmore_flatsome a {
+.vinh_readmore_flatsome a {
     color: #318A00;
     display: block;
 }
 
-.hoangweb_readmore_flatsome a:after {
+.vinh_readmore_flatsome a:after {
     content: '';
     width: 0;
     right: 0;
@@ -118,14 +114,14 @@ function hoangweb_readmore_flatsome()
     margin: -2px 0 0 5px;
 }
 
-.hoangweb_readmore_flatsome_less a:after {
+.vinh_readmore_flatsome_less a:after {
     border-top: 0;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
     border-bottom: 6px solid #318A00;
 }
 
-.hoangweb_readmore_flatsome_less:before {
+.vinh_readmore_flatsome_less:before {
     display: none;
 }
 </style>
@@ -140,20 +136,20 @@ function hoangweb_readmore_flatsome()
                 if (current_height > your_height) {
                     wrap.css('height', your_height + 'px');
                     wrap.append(function() {
-                        return '<div class="hoangweb_readmore_flatsome hoangweb_readmore_flatsome_more"><a title="Xem thêm" href="javascript:void(0);">Xem thêm</a></div>';
+                        return '<div class="vinh_readmore_flatsome vinh_readmore_flatsome_more"><a title="Xem thêm" href="javascript:void(0);">Xem thêm</a></div>';
                     });
                     wrap.append(function() {
-                        return '<div class="hoangweb_readmore_flatsome hoangweb_readmore_flatsome_less" style="display: none;"><a title="Xem thêm" href="javascript:void(0);">Thu gọn</a></div>';
+                        return '<div class="vinh_readmore_flatsome vinh_readmore_flatsome_less" style="display: none;"><a title="Xem thêm" href="javascript:void(0);">Thu gọn</a></div>';
                     });
-                    $('body').on('click', '.hoangweb_readmore_flatsome_more', function() {
+                    $('body').on('click', '.vinh_readmore_flatsome_more', function() {
                         wrap.removeAttr('style');
-                        $('body .hoangweb_readmore_flatsome_more').hide();
-                        $('body .hoangweb_readmore_flatsome_less').show();
+                        $('body .vinh_readmore_flatsome_more').hide();
+                        $('body .vinh_readmore_flatsome_less').show();
                     });
-                    $('body').on('click', '.hoangweb_readmore_flatsome_less', function() {
+                    $('body').on('click', '.vinh_readmore_flatsome_less', function() {
                         wrap.css('height', your_height + 'px');
-                        $('body .hoangweb_readmore_flatsome_less').hide();
-                        $('body .hoangweb_readmore_flatsome_more').show();
+                        $('body .vinh_readmore_flatsome_less').hide();
+                        $('body .vinh_readmore_flatsome_more').show();
                     });
                 }
             }
