@@ -1,0 +1,110 @@
+2021-12-08T11:05:24+00:00 CRITICAL Uncaught Error: Undefined constant "WP_ENVIRONMENT_TYPE" in D:\HK5\chuyen-de-cms\training-cms\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Schedulers\MailchimpScheduler.php:90
+Stack trace:
+#0 D:\HK5\chuyen-de-cms\training-cms\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Schedulers\MailchimpScheduler.php(90): constant('WP_ENVIRONMENT_...')
+#1 D:\HK5\chuyen-de-cms\training-cms\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Schedulers\MailchimpScheduler.php(58): Automattic\WooCommerce\Admin\Schedulers\MailchimpScheduler->make_request('tailieuweb.com@...')
+#2 D:\HK5\chuyen-de-cms\training-cms\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Events.php(109): Automattic\WooCommerce\Admin\Schedulers\MailchimpScheduler->run()
+#3 D:\HK5\chuyen-de-cms\training-cms\wp-includes\class-wp-hook.php(303): Automattic\WooCommerce\Admin\Events->do_wc_admin_daily()
+#4 D:\HK5\chuyen-de-cms\training-cms\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#5 D:\HK5\chuyen-de-cms\training-cms\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#6 D:\HK5\chuyen-de-cms\training-cms\wp-cron.php(138): do_action_ref_array('wc_admin_daily', Array)
+#7 {main}
+  thrown in D:\HK5\chuyen-de-cms\training-cms\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Schedulers\MailchimpScheduler.php on line 90
+
+2021-12-08T11:33:03+00:00 CRITICAL Uncaught Error: Call to undefined function wc_get_default_products_per_row() in D:\HK5\chuyen-de-cms\training-cms\wp-content\plugins\woocommerce\includes\class-wc-query.php:502
+Stack trace:
+#0 D:\HK5\chuyen-de-cms\training-cms\wp-content\plugins\woocommerce\includes\class-wc-query.php(388): WC_Query->product_query(Object(WP_Query))
+#1 D:\HK5\chuyen-de-cms\training-cms\wp-includes\class-wp-hook.php(303): WC_Query->pre_get_posts(Object(WP_Query))
+#2 D:\HK5\chuyen-de-cms\training-cms\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#3 D:\HK5\chuyen-de-cms\training-cms\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#4 D:\HK5\chuyen-de-cms\training-cms\wp-includes\class-wp-query.php(1784): do_action_ref_array('pre_get_posts', Array)
+#5 D:\HK5\chuyen-de-cms\training-cms\wp-includes\class-wp-query.php(3465): WP_Query->get_posts()
+#6 D:\HK5\chuyen-de-cms\training-cms\wp-includes\class-wp.php(629): WP_Query->query(Array)
+#7 D:\HK5\chuyen-de-cms\training-cms\wp-includes\class-wp.php(752): WP->query_posts()
+#8 D:\HK5\chuyen-de-cms\training-cms\wp-includes\functions.php(1291): WP->main('')
+#9 D:\HK5\chuyen-de-cms\training-cms\wp-blog-header.php(16): wp()
+#10 D:\HK5\chuyen-de-cms\training-cms\index.php(17): require('D:\\HK5\\chuyen-d...')
+#11 {main}
+  thrown in D:\HK5\chuyen-de-cms\training-cms\wp-content\plugins\woocommerce\includes\class-wc-query.php on line 502
+
+2021-12-08T11:35:49+00:00 CRITICAL Uncaught Error: Class "WC_AJAX" not found in D:\HK5\chuyen-de-cms\training-cms\wp-content\plugins\woocommerce\includes\class-wc-frontend-scripts.php:551
+Stack trace:
+#0 D:\HK5\chuyen-de-cms\training-cms\wp-content\plugins\woocommerce\includes\class-wc-frontend-scripts.php(449): WC_Frontend_Scripts::get_script_data('wc-cart-fragmen...')
+#1 D:\HK5\chuyen-de-cms\training-cms\wp-content\plugins\woocommerce\includes\class-wc-frontend-scripts.php(616): WC_Frontend_Scripts::localize_script('wc-cart-fragmen...')
+#2 D:\HK5\chuyen-de-cms\training-cms\wp-includes\class-wp-hook.php(303): WC_Frontend_Scripts::localize_printed_scripts('')
+#3 D:\HK5\chuyen-de-cms\training-cms\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#4 D:\HK5\chuyen-de-cms\training-cms\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#5 D:\HK5\chuyen-de-cms\training-cms\wp-includes\script-loader.php(2034): do_action('wp_print_script...')
+#6 D:\HK5\chuyen-de-cms\training-cms\wp-includes\class-wp-hook.php(303): wp_print_head_scripts('')
+#7 D:\HK5\chuyen-de-cms\training-cms\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(Array, Array)
+#8 D:\HK5\chuyen-de-cms\training-cms\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#9 D:\HK5\chuyen-de-cms\training-cms\wp-includes\general-template.php(3074): do_action('wp_head')
+#10 D:\HK5\chuyen-de-cms\training-cms\wp-content\themes\storefront\header.php(19): wp_head()
+#11 D:\HK5\chuyen-de-cms\training-cms\wp-includes\template.php(770): require_once('D:\\HK5\\chuyen-d...')
+#12 D:\HK5\chuyen-de-cms\training-cms\wp-includes\template.php(716): load_template('D:\\HK5\\chuyen-d...', true, Array)
+#13 D:\HK5\chuyen-de-cms\training-cms\wp-includes\general-template.php(50): locate_template(Array, true, true, Array)
+#14 D:\HK5\chuyen-de-cms\training-cms\wp-content\plugins\woocommerce\templates\archive-product.php(20): get_header('shop')
+#15 D:\HK5\chuyen-de-cms\training-cms\wp-includes\template-loader.php(106): include('D:\\HK5\\chuyen-d...')
+#16 D:\HK5\chuyen-de-cms\training-cms\wp-blog-header.php(19): require_once('D:\\HK5\\chuyen-d...')
+#17 D:\HK5\chuyen-de-cms\training-cms\index.php(17): require('D:\\HK5\\chuyen-d...')
+#18 {main}
+  thrown in D:\HK5\chuyen-de-cms\training-cms\wp-content\plugins\woocommerce\includes\class-wc-frontend-scripts.php on line 551
+
+2021-12-08T11:56:02+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "storefront_product_search" not found or invalid function name in D:\HK5\chuyen-de-cms\training-cms\wp-includes\class-wp-hook.php:303
+Stack trace:
+#0 D:\HK5\chuyen-de-cms\training-cms\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#1 D:\HK5\chuyen-de-cms\training-cms\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#2 D:\HK5\chuyen-de-cms\training-cms\wp-content\themes\storefront\header.php(49): do_action('storefront_head...')
+#3 D:\HK5\chuyen-de-cms\training-cms\wp-includes\template.php(770): require_once('D:\\HK5\\chuyen-d...')
+#4 D:\HK5\chuyen-de-cms\training-cms\wp-includes\template.php(716): load_template('D:\\HK5\\chuyen-d...', true, Array)
+#5 D:\HK5\chuyen-de-cms\training-cms\wp-includes\general-template.php(50): locate_template(Array, true, true, Array)
+#6 D:\HK5\chuyen-de-cms\training-cms\wp-content\plugins\woocommerce\templates\archive-product.php(20): get_header('shop')
+#7 D:\HK5\chuyen-de-cms\training-cms\wp-includes\template-loader.php(106): include('D:\\HK5\\chuyen-d...')
+#8 D:\HK5\chuyen-de-cms\training-cms\wp-blog-header.php(19): require_once('D:\\HK5\\chuyen-d...')
+#9 D:\HK5\chuyen-de-cms\training-cms\index.php(17): require('D:\\HK5\\chuyen-d...')
+#10 {main}
+  thrown in D:\HK5\chuyen-de-cms\training-cms\wp-includes\class-wp-hook.php on line 303
+
+2021-12-08T12:17:23+00:00 CRITICAL Uncaught Error: Call to undefined function storefront_recent_products() in D:\HK5\chuyen-de-cms\training-cms\wp-content\themes\storefront\inc\woocommerce\storefront-woocommerce-template-hooks.php:2
+Stack trace:
+#0 D:\HK5\chuyen-de-cms\training-cms\wp-content\themes\storefront\functions.php(46): require()
+#1 D:\HK5\chuyen-de-cms\training-cms\wp-settings.php(546): include('D:\\HK5\\chuyen-d...')
+#2 D:\HK5\chuyen-de-cms\training-cms\wp-config.php(96): require_once('D:\\HK5\\chuyen-d...')
+#3 D:\HK5\chuyen-de-cms\training-cms\wp-load.php(50): require_once('D:\\HK5\\chuyen-d...')
+#4 D:\HK5\chuyen-de-cms\training-cms\wp-blog-header.php(13): require_once('D:\\HK5\\chuyen-d...')
+#5 D:\HK5\chuyen-de-cms\training-cms\index.php(17): require('D:\\HK5\\chuyen-d...')
+#6 {main}
+  thrown in D:\HK5\chuyen-de-cms\training-cms\wp-content\themes\storefront\inc\woocommerce\storefront-woocommerce-template-hooks.php on line 2
+
+2021-12-08T12:17:23+00:00 CRITICAL Uncaught Error: Call to undefined function storefront_recent_products() in D:\HK5\chuyen-de-cms\training-cms\wp-content\themes\storefront\inc\woocommerce\storefront-woocommerce-template-hooks.php:2
+Stack trace:
+#0 D:\HK5\chuyen-de-cms\training-cms\wp-content\themes\storefront\functions.php(46): require()
+#1 D:\HK5\chuyen-de-cms\training-cms\wp-settings.php(546): include('D:\\HK5\\chuyen-d...')
+#2 D:\HK5\chuyen-de-cms\training-cms\wp-config.php(96): require_once('D:\\HK5\\chuyen-d...')
+#3 D:\HK5\chuyen-de-cms\training-cms\wp-load.php(50): require_once('D:\\HK5\\chuyen-d...')
+#4 D:\HK5\chuyen-de-cms\training-cms\wp-blog-header.php(13): require_once('D:\\HK5\\chuyen-d...')
+#5 D:\HK5\chuyen-de-cms\training-cms\index.php(17): require('D:\\HK5\\chuyen-d...')
+#6 {main}
+  thrown in D:\HK5\chuyen-de-cms\training-cms\wp-content\themes\storefront\inc\woocommerce\storefront-woocommerce-template-hooks.php on line 2
+
+2021-12-08T14:28:50+00:00 CRITICAL Uncaught Error: Object of type WC_Product_Simple is not callable in D:\HK5\chuyen-de-cms\training-cms\wp-content\plugins\woocommerce\templates\content-product.php:26
+Stack trace:
+#0 D:\HK5\chuyen-de-cms\training-cms\wp-includes\template.php(772): require()
+#1 D:\HK5\chuyen-de-cms\training-cms\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('D:\\HK5\\chuyen-d...', false)
+#2 D:\HK5\chuyen-de-cms\training-cms\wp-content\plugins\woocommerce\templates\archive-product.php(70): wc_get_template_part('content', 'product')
+#3 D:\HK5\chuyen-de-cms\training-cms\wp-includes\template-loader.php(106): include('D:\\HK5\\chuyen-d...')
+#4 D:\HK5\chuyen-de-cms\training-cms\wp-blog-header.php(19): require_once('D:\\HK5\\chuyen-d...')
+#5 D:\HK5\chuyen-de-cms\training-cms\index.php(17): require('D:\\HK5\\chuyen-d...')
+#6 {main}
+  thrown in D:\HK5\chuyen-de-cms\training-cms\wp-content\plugins\woocommerce\templates\content-product.php on line 26
+
+2021-12-08T14:34:24+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Simple as array in D:\HK5\chuyen-de-cms\training-cms\wp-content\plugins\woocommerce\templates\content-product.php:26
+Stack trace:
+#0 D:\HK5\chuyen-de-cms\training-cms\wp-includes\template.php(772): require()
+#1 D:\HK5\chuyen-de-cms\training-cms\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('D:\\HK5\\chuyen-d...', false)
+#2 D:\HK5\chuyen-de-cms\training-cms\wp-content\plugins\woocommerce\templates\archive-product.php(70): wc_get_template_part('content', 'product')
+#3 D:\HK5\chuyen-de-cms\training-cms\wp-includes\template-loader.php(106): include('D:\\HK5\\chuyen-d...')
+#4 D:\HK5\chuyen-de-cms\training-cms\wp-blog-header.php(19): require_once('D:\\HK5\\chuyen-d...')
+#5 D:\HK5\chuyen-de-cms\training-cms\index.php(17): require('D:\\HK5\\chuyen-d...')
+#6 {main}
+  thrown in D:\HK5\chuyen-de-cms\training-cms\wp-content\plugins\woocommerce\templates\content-product.php on line 26
+
