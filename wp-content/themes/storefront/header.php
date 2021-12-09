@@ -66,7 +66,6 @@
 	?>
 
         <div id="content" class="site-content danh" tabindex="-1">
-            <?php if (is_single()) { ?>
             <div class="col-full module5">
-                <?	do_action( 'storefront_content_top' ); ?>
-                <?php } ?>
+                do_action( 'storefront_content_top' );
+               
