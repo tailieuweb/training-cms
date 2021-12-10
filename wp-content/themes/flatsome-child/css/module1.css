@@ -96,9 +96,6 @@ span.text-kythuat{
 span.text-giohang {
     font-weight: 600;
 }
-.icon-box{
-    margin-top: 20px;
-}
 .fa-bars{
     margin-right: 10px;
     border: 1px solid white;
@@ -112,9 +109,10 @@ span.text-giohang {
     position: relative;
     top: 25px;
 }
-.icon-box {
+.list-icon-text .icon-box {
     position: absolute;
     bottom: 4px;
+    margin-top: 20px;
 }
 
 
@@ -181,8 +179,9 @@ span.text-giohang {
     padding-left: 8px;
     padding-top: 6px;
 }
-.is-divider{
-    background-color: #ffffff !important;
+.widget_text .is-divider.small{
+    border-bottom: none !important;
+    background: white;
 }
 .dollar{
     padding-left: 11px !important;
