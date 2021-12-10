@@ -11,12 +11,12 @@
 
 $prev_text = sprintf(
 	'%s <span class="nav-prev-text">%s</span>',
-	'<span aria-hidden="true">&larr;</span>',
+	'<span aria-hidden="true"></span>',
 	/*
 	 * Translators: This text contains HTML to allow the text to be shorter on small screens.
 	 * The text inside the span with the class nav-short will be hidden on small screens.
 	 */
-	__( 'Newer <span class="nav-short">Posts</span>', 'twentytwenty' )
+	__( 'Prev <span class="nav-short">Page</span>', 'twentytwenty' )
 );
 $next_text = sprintf(
 	'<span class="nav-next-text">%s</span> %s',
@@ -24,8 +24,8 @@ $next_text = sprintf(
 	 * Translators: This text contains HTML to allow the text to be shorter on small screens.
 	 * The text inside the span with the class nav-short will be hidden on small screens.
 	 */
-	__( 'Older <span class="nav-short">Posts</span>', 'twentytwenty' ),
-	'<span aria-hidden="true">&rarr;</span>'
+	__( 'Next <span class="nav-short">Page</span>', 'twentytwenty' ),
+	'<span aria-hidden="true"></span>'
 );
 
 $posts_pagination = get_the_posts_pagination(

@@ -1,0 +1,121 @@
+.banner{
+    margin: 0;
+    padding: 20px 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.slider{
+    width: 700px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sliders{
+    width:500%;
+    height:350px;
+    display:flex;
+}
+
+.sliders input{
+    display: none;
+}
+
+.slide{
+    width:20%;
+    transition:1s;
+    position: relative;
+}
+
+.slide img{
+    width: 700px;
+    height: 350px;
+    opacity: 95%;
+}
+
+.slide .link{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-weight: 700;
+    font-size: 30px;
+    width: 600px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Css for manual slide navigation */
+
+.navigation-manual{
+    position: absolute;
+    width: 700px;
+    margin-top: -30px;
+    display:flex;
+    justify-content:center;
+}
+
+.manual-btn{
+    border:1px solid rgb(128, 128, 128);
+    padding: 5px;
+    border-radius:10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 30px;
+}
+
+.manual-btn:hover{
+    background: rgb(128, 128, 128);
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/* Css for automatic manual */
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width:700px;
+    justify-content:center;
+    margin-top: 320px;
+}
+
+.navigation-auto div{
+    border:1px solid rgb(128, 128, 128);
+    padding:5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right:30px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: rgb(128, 128, 128);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: rgb(128, 128, 128);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: rgb(128, 128, 128);
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: rgb(128, 128, 128);
+}

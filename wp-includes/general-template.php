@@ -4279,7 +4279,7 @@ function paginate_links( $args = '' ) {
 	for ( $n = 1; $n <= $total; $n++ ) :
 		if ( $n == $current ) :
 			$page_links[] = sprintf(
-				'<span aria-current="%s" class="page-numbers current">%s</span>',
+				'<span aria-current="%s" class="page-numbers-pan current">%s</span>',
 				esc_attr( $args['aria_current'] ),
 				$args['before_page_number'] . number_format_i18n( $n ) . $args['after_page_number']
 			);
@@ -4295,7 +4295,7 @@ function paginate_links( $args = '' ) {
 				$link .= $args['add_fragment'];
 
 				$page_links[] = sprintf(
-					'<a class="page-numbers" href="%s">%s</a>',
+					'<a class="page-numbers-pan" href="%s">%s</a>',
 					/** This filter is documented in wp-includes/general-template.php */
 					esc_url( apply_filters( 'paginate_links', $link ) ),
 					$args['before_page_number'] . number_format_i18n( $n ) . $args['after_page_number']

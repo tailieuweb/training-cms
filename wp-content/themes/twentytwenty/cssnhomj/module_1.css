@@ -13,6 +13,8 @@
   border: 1px solid #dadada;
   border-radius: 4px;
   padding: 9px;
+  padding-left: 12px;
+  padding-right: 12px;
   font-size: 9px;
   text-transform: capitalize;
 }
