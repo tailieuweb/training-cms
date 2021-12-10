@@ -1,3 +1,9 @@
+.lav-custom-product {
+    padding: 2rem !important;
+    background-color: #fff !important;
+    border-radius: 6px;
+}
+
 .lav-custom-product h1.product_title.entry-title {
     font-weight: 600;
 }

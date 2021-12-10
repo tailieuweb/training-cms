@@ -5,8 +5,9 @@
 
 #lav-mdl3-mdl4 {
     display: grid;
-    grid-template-columns: 31.9% 68.1%;
+    grid-template-columns: 30.5% 67.5%;
     margin-top: 3em;
+    column-gap: 2%;
 }
 
 @media (max-width: 767px) {
@@ -21,6 +22,12 @@
 
 }
 
+#lav-mdl3-mdl4 .lav-tag-search .widget.woocommerce.widget_product_tag_cloud {
+    padding: 1.6rem !important;
+    background-color: #fff !important;
+    border-radius: 6px;
+}
+
 #lav-mdl3-mdl4 .lav-tag-search span.widget-title {
     font-weight: 600 !important;
     color: #000;
@@ -28,6 +35,7 @@
 
 #lav-mdl3-mdl4 .lav-tag-search div.tagcloud a {
     font-size: 1rem !important;
+    background-color: #dddddd !important;
     color: #555;
     transition: all .5s;
 }
@@ -40,6 +48,9 @@
 
 /* Phần css dành cho new products*/
 #lav-mdl3-mdl4 .lav-new-products {
+    padding: 2rem !important;
+    background-color: #fff !important;
+    border-radius: 6px;
 }
 
 #lav-mdl3-mdl4 .lav-new-products h2.has-text-align-left {
@@ -66,10 +77,11 @@
 #lav-mdl3-mdl4 .lav-new-products ul li a.wc-block-grid__product-link div.wc-block-grid__product-title {
     text-align: left;
     font-weight: 600;
+    font-size: 1.2rem;
 }
 
 #lav-mdl3-mdl4 .lav-new-products ul li .wc-block-grid__product-price.price {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 #lav-mdl3-mdl4 .lav-new-products ul li .wc-block-grid__product-price.price del {
@@ -82,4 +94,8 @@
 
 #lav-mdl3-mdl4 .lav-new-products div.wp-block-cover {
     display: none;
+}
+
+#lav-mdl3-mdl4 .lav-new-products li.wc-block-grid__product div.wc-block-grid__product-rating {
+    display: none !important;
 }
