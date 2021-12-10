@@ -1,0 +1,48 @@
+2021-12-09T16:33:26+00:00 CRITICAL Uncaught Error: Call to undefined function catch_that_image() in C:\wamp64\www\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:440
+Stack trace:
+#0 C:\wamp64\www\training-cms\wp-includes\class-wp-hook.php(303): storefront_post_content('')
+#1 C:\wamp64\www\training-cms\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#2 C:\wamp64\www\training-cms\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\training-cms\wp-content\themes\storefront\content.php(20): do_action('storefront_loop...')
+#4 C:\wamp64\www\training-cms\wp-includes\template.php(772): require('C:\\wamp64\\www\\t...')
+#5 C:\wamp64\www\training-cms\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\t...', false, Array)
+#6 C:\wamp64\www\training-cms\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#7 C:\wamp64\www\training-cms\wp-content\themes\storefront\loop.php(21): get_template_part('content', '')
+#8 C:\wamp64\www\training-cms\wp- in C:\wamp64\www\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 440
+
+2021-12-09T16:33:59+00:00 CRITICAL Uncaught Error: Call to undefined function catch_that_image() in C:\wamp64\www\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:439
+Stack trace:
+#0 C:\wamp64\www\training-cms\wp-includes\class-wp-hook.php(303): storefront_post_content('')
+#1 C:\wamp64\www\training-cms\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#2 C:\wamp64\www\training-cms\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\training-cms\wp-content\themes\storefront\content.php(20): do_action('storefront_loop...')
+#4 C:\wamp64\www\training-cms\wp-includes\template.php(772): require('C:\\wamp64\\www\\t...')
+#5 C:\wamp64\www\training-cms\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\t...', false, Array)
+#6 C:\wamp64\www\training-cms\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#7 C:\wamp64\www\training-cms\wp-content\themes\storefront\loop.php(21): get_template_part('content', '')
+#8 C:\wamp64\www\training-cms\wp- in C:\wamp64\www\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 439
+
+2021-12-09T16:34:24+00:00 CRITICAL Uncaught Error: Call to undefined function catch_that_image() in C:\wamp64\www\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:439
+Stack trace:
+#0 C:\wamp64\www\training-cms\wp-includes\class-wp-hook.php(303): storefront_post_content('')
+#1 C:\wamp64\www\training-cms\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#2 C:\wamp64\www\training-cms\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\training-cms\wp-content\themes\storefront\content.php(20): do_action('storefront_loop...')
+#4 C:\wamp64\www\training-cms\wp-includes\template.php(772): require('C:\\wamp64\\www\\t...')
+#5 C:\wamp64\www\training-cms\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\t...', false, Array)
+#6 C:\wamp64\www\training-cms\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#7 C:\wamp64\www\training-cms\wp-content\themes\storefront\loop.php(21): get_template_part('content', '')
+#8 C:\wamp64\www\training-cms\wp- in C:\wamp64\www\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 439
+
+2021-12-09T16:34:28+00:00 CRITICAL Uncaught Error: Call to undefined function catch_that_image() in C:\wamp64\www\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php:439
+Stack trace:
+#0 C:\wamp64\www\training-cms\wp-includes\class-wp-hook.php(303): storefront_post_content('')
+#1 C:\wamp64\www\training-cms\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#2 C:\wamp64\www\training-cms\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\training-cms\wp-content\themes\storefront\content.php(20): do_action('storefront_loop...')
+#4 C:\wamp64\www\training-cms\wp-includes\template.php(772): require('C:\\wamp64\\www\\t...')
+#5 C:\wamp64\www\training-cms\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\t...', false, Array)
+#6 C:\wamp64\www\training-cms\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#7 C:\wamp64\www\training-cms\wp-content\themes\storefront\loop.php(21): get_template_part('content', '')
+#8 C:\wamp64\www\training-cms\wp- in C:\wamp64\www\training-cms\wp-content\themes\storefront\inc\storefront-template-functions.php on line 439
+
