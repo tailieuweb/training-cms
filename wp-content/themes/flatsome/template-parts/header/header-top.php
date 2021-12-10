@@ -34,9 +34,36 @@
 				</ul>
             </li>
             <li class="html header-social-icons ml-0">
-                <div class="social-icons follow-icons"><a href="http://url" target="_blank" data-label="Facebook" rel="noopener noreferrer nofollow" class="icon plain facebook tooltip tooltipstered" aria-label="Follow on Facebook"><i class="icon-facebook"></i></a><a href="http://url" target="_blank" rel="noopener noreferrer nofollow" data-label="Instagram" class="icon plain instagram tooltip tooltipstered" aria-label="Follow on Instagram"><i class="icon-instagram"></i></a><a href="http://url" target="_blank" data-label="Twitter" rel="noopener noreferrer nofollow" class="icon plain twitter tooltip tooltipstered" aria-label="Follow on Twitter"><i class="icon-twitter"></i></a><a href="mailto:your@email" data-label="E-mail" rel="nofollow" class="icon plain email tooltip tooltipstered" aria-label="Send us an email"><i class="icon-envelop"></i></a></div></li>
+                <div class="social-icons follow-icons">
+                    <a href="http://url" target="_blank" data-label="Facebook" rel="noopener noreferrer nofollow" class="icon plain facebook tooltip tooltipstered" aria-label="Follow on Facebook">
+                        <i class="icon-facebook"></i>
+                    </a>
+                    <a href="http://url" target="_blank" rel="noopener noreferrer nofollow" data-label="Instagram" class="icon plain instagram tooltip tooltipstered" aria-label="Follow on Instagram">
+                        <i class="icon-instagram"></i>
+                    </a>
+                    <a href="http://url" target="_blank" data-label="Twitter" rel="noopener noreferrer nofollow" class="icon plain twitter tooltip tooltipstered" aria-label="Follow on Twitter">
+                        <i class="icon-twitter"></i></a>
+                    <a href="mailto:your@email" data-label="E-mail" rel="nofollow" class="icon plain email tooltip tooltipstered" aria-label="Send us an email">
+                        <i class="icon-envelop"></i>
+                    </a>
+                </div>
+            </li>
             <li class="html header-social-icons ml-0">
-                <div class="social-icons follow-icons"><a href="http://url" target="_blank" data-label="Facebook" rel="noopener noreferrer nofollow" class="icon plain facebook tooltip tooltipstered" aria-label="Follow on Facebook"><i class="icon-facebook"></i></a><a href="http://url" target="_blank" rel="noopener noreferrer nofollow" data-label="Instagram" class="icon plain instagram tooltip tooltipstered" aria-label="Follow on Instagram"><i class="icon-instagram"></i></a><a href="http://url" target="_blank" data-label="Twitter" rel="noopener noreferrer nofollow" class="icon plain twitter tooltip tooltipstered" aria-label="Follow on Twitter"><i class="icon-twitter"></i></a><a href="mailto:your@email" data-label="E-mail" rel="nofollow" class="icon plain email tooltip tooltipstered" aria-label="Send us an email"><i class="icon-envelop"></i></a></div></li>          
+                <div class="social-icons follow-icons">
+                    <a href="http://url" target="_blank" data-label="Facebook" rel="noopener noreferrer nofollow" class="icon plain facebook tooltip tooltipstered" aria-label="Follow on Facebook">
+                        <i class="icon-facebook"></i>
+                    </a>
+                    <a href="http://url" target="_blank" rel="noopener noreferrer nofollow" data-label="Instagram" class="icon plain instagram tooltip tooltipstered" aria-label="Follow on Instagram">
+                        <i class="icon-instagram"></i>
+                    </a>
+                    <a href="http://url" target="_blank" data-label="Twitter" rel="noopener noreferrer nofollow" class="icon plain twitter tooltip tooltipstered" aria-label="Follow on Twitter">
+                        <i class="icon-twitter"></i>
+                    </a>
+                    <a href="mailto:your@email" data-label="E-mail" rel="nofollow" class="icon plain email tooltip tooltipstered" aria-label="Send us an email">
+                        <i class="icon-envelop"></i>
+                    </a>
+                </div>
+            </li>          
         </ul>
       </div>
 
