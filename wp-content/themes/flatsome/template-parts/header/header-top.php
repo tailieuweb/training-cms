@@ -17,8 +17,6 @@
          <ul class="nav top-bar-nav nav-right nav-small <?php flatsome_nav_classes('top'); ?>">
               <?php flatsome_header_elements('topbar_elements_right'); ?>
           </ul>
-          <!-- <a href="">Tài khoản|</a>
-          <a href="">Liên hệ</a> -->
       </div>
 
       <?php if(get_theme_mod('header_mobile_elements_top')) { ?>
