@@ -14,12 +14,14 @@ div.wc-block-grid__product-image
 {
    border: 1px solid black;
 }
-table.shop_table.shop_table_responsive.cart.woocommerce-cart-form__contents{
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-tr{
-  border-bottom: 1px solid black;
+/* table.shop_table.shop_table_responsive.cart.woocommerce-cart-form__contents{
   border-top: 1px solid black;
-}</style>
+  border-collapse: collapse;
+  
+}
+tr:is(.cart_item){
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+} */</style>
 <!-- end Simple Custom CSS and JS -->
