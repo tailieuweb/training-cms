@@ -117,3 +117,6 @@ ul.products li.product .button:hover{
 .wp-block-latest-posts__list.wp-block-latest-posts li::before,.wp-block-categories-list.wp-block-categories li::before{
   content: '> ';
 }
+.trang-chu .storefront-sorting{
+  display: none;
+}
