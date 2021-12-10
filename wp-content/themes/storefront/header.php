@@ -17,7 +17,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/owl.carousel.min.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/modulelam.css" type="text/css" media="screen" />
 	<?php wp_head(); ?>
 </head>
@@ -76,7 +75,9 @@
 				<div class="des-banner">Read more</div>
 		</div>
 		<!-- Banner end -->
-		<div id="content" <?php post_class($home); ?> class="site-content" tabindex="-1">
+
+
+		<div id="content" <?php post_class($home); ?> class="site-content" tabindex="-1" style="margin-top: 50px;">
 
 			<div class="col-full">
 				
