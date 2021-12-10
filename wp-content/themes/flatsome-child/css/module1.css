@@ -1,3 +1,4 @@
+/*Css HEADER*/
 .flex-row .flex-col .nav-top-link{
     margin-left: 40px;
     color: white;
@@ -32,6 +33,68 @@
 }
 .row .col-md-9 a:hover{
     color: #e37a7d;
+}
+#menu-item-255 .nav-top-link{
+    color: gray;
+}
+#menu-item-232 .nav-top-link{
+    color: gray;
+}
+.top-bar-nav>li:last-child{
+    display: none;
+}
+#menu-item-327{
+display: none;
+}
+#menu-item-330{
+display: none;
+}
+#menu-item-329{
+    display: none;
+}
+#menu-item-442{
+    display: none;
+}
+#menu-item-443{
+    display: none;
+}
+#menu-item-328{
+    display: none;
+}
+#menu-item-453{
+    display: none;
+}
+/* .nav-uppercase>li:last-child{
+    display: none;
+} */
+.search_categories{
+    display: none;
+}
+.flex-center ul li{
+    font-size: 14px;
+}
+.flex-center {
+    margin-right: 85px !important;
+}
+.fa-phone{
+    border-radius: 50%;
+    background: #233e92;
+    color: #ffffff;
+    font-size: 22px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    width: 42px;
+    height: 40px;
+    background-position: -144px -1px;
+    margin-right: 5px;
+    position: relative;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.form-flat input:not([type=submit]), .form-flat textarea, .form-flat select{
+    border-radius: 5px !important;
+    height: 40px;
 }
 
 /*Css PRODUCT SIDEBAR*/
