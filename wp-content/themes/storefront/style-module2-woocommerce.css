@@ -1,0 +1,68 @@
+.list_post .entry-header {
+  display: none;
+}
+.list_post .list_new_view {
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.list_post {
+  padding: 0rem 0 0 !important;
+  margin-bottom: -90px !important;
+}
+
+.list_post .entry-taxonomy {
+  display: none !important;
+}
+.list_post {
+  padding-top: 2rem !important;
+}
+.list_post .list_new_view {
+  box-shadow: 5px 5px 9px rgb(18 17 17 / 21%);
+}
+.list_post .shortdesc {
+  border-left: 1px solid #666;
+  margin-left: -2px;
+}
+.list_post .top_news_block_desc {
+  font-size: 0.9em;
+  padding: 15px;
+}
+.list_post .topnewstime > .topnewsdate {
+  font-family: "Prata", serif;
+  font-size: 4.5em;
+  line-height: 1em;
+  margin-left: 0px;
+}
+.list_post .topnewstime > .topnewsmonth {
+  text-transform: uppercase;
+  font-size: 1.8em;
+  margin-left: -24px;
+  color: #4e4d4d;
+}
+.list_post .topnewstime > .topnewsmonth::before {
+  content: "THÁNG ";
+}
+
+.list_post .top_news_block_desc h4 {
+  text-transform: uppercase;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 19px;
+}
+.list_post .top_news_block_desc h4 a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.list_post .top_news_block_desc .shortdesc p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px !important;
+  color: #707070;
+}
+
+.list_post .top_news_block_thumb img {
+  width: 300px;
+  height: 205px;
+  margin-top: 16px;
+}

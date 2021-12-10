@@ -16,5 +16,7 @@
 .module3.widget-area .widget {
     font-size: .875em;
     font-weight: 400;
+    position: relative;
+    top: 26px;
     background: #fafafa;
 }

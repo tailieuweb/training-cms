@@ -8,18 +8,18 @@
  * @package storefront
  */
 $args = array(
-	'type'                     => 'post',
-	'child_of'                 => 0,
-	'parent'                   => '',
-	'orderby'                  => 'name',
-	'order'                    => 'ASC',
-	'hide_empty'               => 1,
-	'hierarchical'             => 1,
-	'exclude'                  => '',
-	'include'                  => '',
-	'number'                   => '',
-	'taxonomy'                 => 'category',
-	'pad_counts'               => false
+    'type'                     => 'post',
+    'child_of'                 => 0,
+    'parent'                   => '',
+    'orderby'                  => 'name',
+    'order'                    => 'ASC',
+    'hide_empty'               => 1,
+    'hierarchical'             => 1,
+    'exclude'                  => '',
+    'include'                  => '',
+    'number'                   => '',
+    'taxonomy'                 => 'category',
+    'pad_counts'               => false
 );
 
 $product_categories = get_categories($args);
@@ -31,29 +31,22 @@ $product_categories = get_categories($args);
 <html <?php language_attributes(); ?>>
 
 <head>
-    <meta charset="<?php bloginfo('charset'); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module10.css" type="text/css"
-        media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module8-woocommerce.css"
-        type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module6-woocommerce.css"
-        type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module5-woocommerce.css"
-        type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module3-woocommerce.css"
-        type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module1-woocommerce.css"
-        type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module4-woocommerce.css"
-        type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module-9.css" type="text/css"
-        media="screen" />
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<meta charset="<?php bloginfo('charset'); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module10.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module6-woocommerce.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module5-woocommerce.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module3-woocommerce.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module1-woocommerce.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module7-woocommerce.css" type="text/css" media="screen" />
+ <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module2-woocommerce.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module4-woocommerce.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module-9.css" type="text/css" media="screen" />
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
-    <?php wp_head(); ?>
+	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -66,23 +59,23 @@ $product_categories = get_categories($args);
         <div id="page" class="hfeed site">
             <?php do_action('storefront_before_header'); ?>
             <?php
-			/**
-			 * Functions hooked into storefront_header action
-			 *
-			 * @hooked storefront_header_container                 - 0
-			 * @hooked storefront_skip_links                       - 5
-			 * @hooked storefront_social_icons                     - 10
-			 * @hooked storefront_site_branding                    - 20
-			 * @hooked storefront_secondary_navigation             - 30
-			 * @hooked storefront_product_search                   - 40
-			 * @hooked storefront_header_container_close           - 41
-			 * @hooked storefront_primary_navigation_wrapper       - 42
-			 * @hooked storefront_primary_navigation               - 50
-			 * @hooked storefront_header_cart                      - 60
-			 * @hooked storefront_primary_navigation_wrapper_close - 68
-			 */
-			// do_action( 'storefront_header' );
-			?>
+            /**
+             * Functions hooked into storefront_header action
+             *
+             * @hooked storefront_header_container                 - 0
+             * @hooked storefront_skip_links                       - 5
+             * @hooked storefront_social_icons                     - 10
+             * @hooked storefront_site_branding                    - 20
+             * @hooked storefront_secondary_navigation             - 30
+             * @hooked storefront_product_search                   - 40
+             * @hooked storefront_header_container_close           - 41
+             * @hooked storefront_primary_navigation_wrapper       - 42
+             * @hooked storefront_primary_navigation               - 50
+             * @hooked storefront_header_cart                      - 60
+             * @hooked storefront_primary_navigation_wrapper_close - 68
+             */
+            // do_action( 'storefront_header' );
+            ?>
 
             <section id="pre-header" class="pre-header">
                 <div class="container">
@@ -136,28 +129,26 @@ $product_categories = get_categories($args);
                                     <li class="menu-item  dropdown cate"> <a href="#">Categories</a>
                                         <ul class="cate-list dropdown-menu">
                                             <?php
-											if (!empty($product_categories)) {
-												foreach ($product_categories as $key => $category) {
-													echo '<li>';
-													echo '<a href="' . get_term_link($category) . '" >';
-													echo $category->name;
-													echo '</a>';
-													echo '</li>';
-												}
-											}
-											?>
+                                            if (!empty($product_categories)) {
+                                                foreach ($product_categories as $key => $category) {
+                                                    echo '<li>';
+                                                    echo '<a href="' . get_term_link($category) . '" >';
+                                                    echo $category->name;
+                                                    echo '</a>';
+                                                    echo '</li>';
+                                                }
+                                            }
+                                            ?>
                                         </ul>
                                     </li>
                                 </ul>
                             </nav>
                             <div class="logo">
-                                <a href="<?php echo get_home_url(); ?>"><span
-                                        class="logo-title"><?php echo get_bloginfo('name'); ?></span></a>
+                                <a href="<?php echo get_home_url(); ?>"><span class="logo-title"><?php echo get_bloginfo('name'); ?></span></a>
                             </div>
                             <nav class="menu-site">
                                 <ul class="menu-list">
-                                    <li class="menu-item"> <a
-                                            href="<?= get_permalink(wc_get_page_id('shop')); ?>">Shop</a></li>
+                                    <li class="menu-item"> <a href="<?= get_permalink(wc_get_page_id('shop')); ?>">Shop</a></li>
                                     <li class="menu-item"> <a href="#">Contact</a></li>
                                 </ul>
                             </nav>
@@ -174,10 +165,7 @@ $product_categories = get_categories($args);
                             </div>
                             <div class="cart-section">
                                 <a href="<?= get_permalink(wc_get_page_id('cart')); ?>">
-                                    <span class="cart-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-shopping-bag">
+                                    <span class="cart-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag">
                                             <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
                                             <line x1="3" y1="6" x2="21" y2="6"></line>
                                             <path d="M16 10a4 4 0 0 1-8 0"></path>
@@ -188,16 +176,16 @@ $product_categories = get_categories($args);
                                 <!-- <div class="cart-list">
 										<p>No Product in cart</p>
 									</div> -->
-                            </div>
-                        </div>
+							</div>
+						</div>
 
-                    </div>
-                </div>
-            </div>
-        </section>
-    </header><!-- #masthead -->
+					</div>
+				</div>
+			</div>
+		</section>
+	</header><!-- #masthead -->
 
-    <?php
+	<?php
 	/**
 	 * Functions hooked in to storefront_before_content
 	 *
@@ -207,6 +195,6 @@ $product_categories = get_categories($args);
 	do_action('storefront_before_content');
 	?>
 
-    <div id="content" class="site-content danh" tabindex="-1">
-        <div class="col-full module5">
-            <? do_action('storefront_content_top'); ?>
+	<div id="content" class="site-content danh" tabindex="-1">
+		<div class="col-full module5">
+			<? do_action('storefront_content_top'); ?>

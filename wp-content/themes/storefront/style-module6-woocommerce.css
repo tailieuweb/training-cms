@@ -1,9 +1,6 @@
 .woocommerce-tabs ul.tabs{
     display: flex;
 }
-.woocommerce-tabs ul.tabs a:hover{
-    border-bottom: 2px solid black;
-}
 .woocommerce-tabs ul.tabs{
     border-top:1px solid rgba(0,0,0,0) !important;
 }
@@ -15,3 +12,27 @@
 }.woocommerce-Tabs-panel h3, h4, p{
     text-align: justify !important;
 }
+  .woocommerce-tabs ul.tabs .vinh_link {
+    position: relative;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;}
+    
+    .woocommerce-tabs ul.tabs a::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 2px;
+      background: currentcolor;
+      transform: translateX(-110%);
+      transition: transform 1s ease;
+    }
+    
+    .woocommerce-tabs ul.tabs a:hover::before {
+      transform: translateX(110%);
+    }
