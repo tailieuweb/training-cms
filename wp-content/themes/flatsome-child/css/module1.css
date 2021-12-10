@@ -91,6 +91,7 @@ display: none;
     position: relative;
     padding-left: 10px;
     padding-top: 10px;
+    margin-top: 14px;
 }
 .form-flat input:not([type=submit]), .form-flat textarea, .form-flat select{
     border-radius: 5px !important;
