@@ -11,7 +11,7 @@
  * @since Twenty Twenty 1.0
  */
 $home = '';
-
+//Check page
 if(!is_single()){
     $home = 'danh-sach';
 }
