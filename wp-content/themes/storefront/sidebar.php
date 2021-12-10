@@ -19,6 +19,9 @@ if ((in_array("shop", $array_check) && $array_check[1] === "shop")) {
 
         dynamic_sidebar('sidebar-1');
 
+//        Ho Si Hung
+//        Add Tags sidebar
+        dynamic_sidebar('tags');
         ?>
     </div><!-- #secondary -->
 <?php } else {
