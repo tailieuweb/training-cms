@@ -125,7 +125,7 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ||
                 <?php if ( $has_sidebar_4 ) { ?>
 
                 <div class="footer-widgets column-four grid-item">
-                    <?php dynamic_sidebar( 'sidebar-4' ); ?>
+                    <?php dynamic_sidebar( 'sidebar-3' ); ?>
                 </div>
                 <?php } ?>
 

@@ -1,0 +1,39 @@
+.crossedbg {
+    width: 270px;
+    background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
+    height: 15px;
+}
+
+.cate {
+    padding-bottom: 1px;
+    margin-left: 20px;
+    width: 321px;
+    margin-top: 90px;
+    height: auto;
+}
+
+.cate h2 {
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.cate p {
+    font-size: 16px;
+}
+
+.ul-cate {
+    width: 270px;
+    background: white;
+}
+
+li.cate-name::before {
+    margin-right: 15px;
+    color: #F5CE31;
+    content: "\f111";
+    font: normal normal normal 10px/1 FontAwesome;
+    top: 3px;
+    left: -18px;
+    width: 5px;
+    padding-right: 10px;
+    height: 5px;
+}
