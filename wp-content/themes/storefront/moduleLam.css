@@ -74,10 +74,15 @@
 ul.products{
   overflow: hidden;
 }
+ul.products li.product .button{
+  background: #FABB4A;
+  border: 1px solid transparent;
+  color: #fff;
+}
 ul.products li.product .button:hover{
   background: #fff;
   border: 1px solid #FABB4A;
-  border-style: hidden;
+  /* border-style: hidden; */
   color: #FABB4A;
 }
 .site-main ul.products li.product {
