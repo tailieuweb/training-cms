@@ -53,6 +53,7 @@
 			 integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 			 <!-- Font Awesome 4.7 -->
 			 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			 <link rel="stylesheet" href="/css_file/module-1-project.css">
 			<!-- Import files custom css here -->
 			<?php for ($i = 1; $i <= 11; $i++) { ?>
 				<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css_file/module-' . $i . '-project.css' ?>" type="text/css" media="screen" />
