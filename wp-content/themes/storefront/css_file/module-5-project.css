@@ -9,6 +9,7 @@
 .post-home .col-md-8 .row h1 {
   font-size: 16px;
   font-weight: normal;
+  display: none;
 }
 
 .post-home .col-md-8 .row h2 {
@@ -44,7 +45,7 @@ header.entry-header.header-module5 {
 }
 
 p.post-title {
-    margin-top: 7%;
+    margin-top: 11%;
     margin-bottom: 0%;
     color: black;
     font-size: 17px;
@@ -56,6 +57,15 @@ p.post-title {
   margin-bottom: 20px;
   text-align: justify;
   color: #df7c09;
+}
+.content-module5 p {
+  font-size: 16px;
+  width: 100%;
+  margin-inline-end: 0;
+  display: inherit;
+  margin-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: revert;
 }
 
 .post-home dfn, cite, em, i {
