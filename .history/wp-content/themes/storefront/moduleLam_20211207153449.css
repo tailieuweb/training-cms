@@ -1,0 +1,13 @@
+#banner {
+    width: 100%;
+    display: none;
+    margin-top: -90px;
+}
+
+.trang-chu #banner {
+    display: block !important;
+}
+
+#banner img {
+    width: 100%;
+}

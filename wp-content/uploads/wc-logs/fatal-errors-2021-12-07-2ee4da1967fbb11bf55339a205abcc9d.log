@@ -1,0 +1,96 @@
+2021-12-07T07:28:19+00:00 CRITICAL Uncaught Error: Undefined constant "WP_ENVIRONMENT_TYPE" in F:\training-cms\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Schedulers\MailchimpScheduler.php:90
+Stack trace:
+#0 F:\training-cms\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Schedulers\MailchimpScheduler.php(90): constant('WP_ENVIRONMENT_...')
+#1 F:\training-cms\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Schedulers\MailchimpScheduler.php(58): Automattic\WooCommerce\Admin\Schedulers\MailchimpScheduler->make_request('levanlam3447@gm...')
+#2 F:\training-cms\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Events.php(109): Automattic\WooCommerce\Admin\Schedulers\MailchimpScheduler->run()
+#3 F:\training-cms\wp-includes\class-wp-hook.php(303): Automattic\WooCommerce\Admin\Events->do_wc_admin_daily()
+#4 F:\training-cms\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#5 F:\training-cms\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#6 F:\training-cms\wp-cron.php(138): do_action_ref_array('wc_admin_daily', Array)
+#7 {main}
+  thrown in F:\training-cms\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Schedulers\MailchimpScheduler.php on line 90
+
+2021-12-07T08:17:09+00:00 CRITICAL Uncaught Error: Call to undefined function is_myaccount() in F:\training-cms\wp-content\themes\storefront\header.php:74
+Stack trace:
+#0 F:\training-cms\wp-includes\template.php(770): require_once()
+#1 F:\training-cms\wp-includes\template.php(716): load_template('F:\\training-cms...', true, Array)
+#2 F:\training-cms\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 F:\training-cms\wp-content\themes\storefront\page.php(13): get_header()
+#4 F:\training-cms\wp-includes\template-loader.php(106): include('F:\\training-cms...')
+#5 F:\training-cms\wp-blog-header.php(19): require_once('F:\\training-cms...')
+#6 F:\training-cms\index.php(17): require('F:\\training-cms...')
+#7 {main}
+  thrown in F:\training-cms\wp-content\themes\storefront\header.php on line 74
+
+2021-12-07T08:17:09+00:00 CRITICAL Uncaught Error: Call to undefined function is_myaccount() in F:\training-cms\wp-content\themes\storefront\header.php:74
+Stack trace:
+#0 F:\training-cms\wp-includes\template.php(770): require_once()
+#1 F:\training-cms\wp-includes\template.php(716): load_template('F:\\training-cms...', true, Array)
+#2 F:\training-cms\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 F:\training-cms\wp-content\themes\storefront\404.php(8): get_header()
+#4 F:\training-cms\wp-includes\template-loader.php(106): include('F:\\training-cms...')
+#5 F:\training-cms\wp-blog-header.php(19): require_once('F:\\training-cms...')
+#6 F:\training-cms\index.php(17): require('F:\\training-cms...')
+#7 {main}
+  thrown in F:\training-cms\wp-content\themes\storefront\header.php on line 74
+
+2021-12-07T08:17:33+00:00 CRITICAL Uncaught Error: Call to undefined function is_account() in F:\training-cms\wp-content\themes\storefront\header.php:74
+Stack trace:
+#0 F:\training-cms\wp-includes\template.php(770): require_once()
+#1 F:\training-cms\wp-includes\template.php(716): load_template('F:\\training-cms...', true, Array)
+#2 F:\training-cms\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 F:\training-cms\wp-content\themes\storefront\page.php(13): get_header()
+#4 F:\training-cms\wp-includes\template-loader.php(106): include('F:\\training-cms...')
+#5 F:\training-cms\wp-blog-header.php(19): require_once('F:\\training-cms...')
+#6 F:\training-cms\index.php(17): require('F:\\training-cms...')
+#7 {main}
+  thrown in F:\training-cms\wp-content\themes\storefront\header.php on line 74
+
+2021-12-07T08:17:33+00:00 CRITICAL Uncaught Error: Call to undefined function is_account() in F:\training-cms\wp-content\themes\storefront\header.php:74
+Stack trace:
+#0 F:\training-cms\wp-includes\template.php(770): require_once()
+#1 F:\training-cms\wp-includes\template.php(716): load_template('F:\\training-cms...', true, Array)
+#2 F:\training-cms\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 F:\training-cms\wp-content\themes\storefront\404.php(8): get_header()
+#4 F:\training-cms\wp-includes\template-loader.php(106): include('F:\\training-cms...')
+#5 F:\training-cms\wp-blog-header.php(19): require_once('F:\\training-cms...')
+#6 F:\training-cms\index.php(17): require('F:\\training-cms...')
+#7 {main}
+  thrown in F:\training-cms\wp-content\themes\storefront\header.php on line 74
+
+2021-12-07T08:17:34+00:00 CRITICAL Uncaught Error: Call to undefined function is_account() in F:\training-cms\wp-content\themes\storefront\header.php:74
+Stack trace:
+#0 F:\training-cms\wp-includes\template.php(770): require_once()
+#1 F:\training-cms\wp-includes\template.php(716): load_template('F:\\training-cms...', true, Array)
+#2 F:\training-cms\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 F:\training-cms\wp-content\themes\storefront\page.php(13): get_header()
+#4 F:\training-cms\wp-includes\template-loader.php(106): include('F:\\training-cms...')
+#5 F:\training-cms\wp-blog-header.php(19): require_once('F:\\training-cms...')
+#6 F:\training-cms\index.php(17): require('F:\\training-cms...')
+#7 {main}
+  thrown in F:\training-cms\wp-content\themes\storefront\header.php on line 74
+
+2021-12-07T08:17:34+00:00 CRITICAL Uncaught Error: Call to undefined function is_account() in F:\training-cms\wp-content\themes\storefront\header.php:74
+Stack trace:
+#0 F:\training-cms\wp-includes\template.php(770): require_once()
+#1 F:\training-cms\wp-includes\template.php(716): load_template('F:\\training-cms...', true, Array)
+#2 F:\training-cms\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 F:\training-cms\wp-content\themes\storefront\404.php(8): get_header()
+#4 F:\training-cms\wp-includes\template-loader.php(106): include('F:\\training-cms...')
+#5 F:\training-cms\wp-blog-header.php(19): require_once('F:\\training-cms...')
+#6 F:\training-cms\index.php(17): require('F:\\training-cms...')
+#7 {main}
+  thrown in F:\training-cms\wp-content\themes\storefront\header.php on line 74
+
+2021-12-07T08:17:37+00:00 CRITICAL Uncaught Error: Call to undefined function is_account() in F:\training-cms\wp-content\themes\storefront\header.php:74
+Stack trace:
+#0 F:\training-cms\wp-includes\template.php(770): require_once()
+#1 F:\training-cms\wp-includes\template.php(716): load_template('F:\\training-cms...', true, Array)
+#2 F:\training-cms\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 F:\training-cms\wp-content\themes\storefront\404.php(8): get_header()
+#4 F:\training-cms\wp-includes\template-loader.php(106): include('F:\\training-cms...')
+#5 F:\training-cms\wp-blog-header.php(19): require_once('F:\\training-cms...')
+#6 F:\training-cms\index.php(17): require('F:\\training-cms...')
+#7 {main}
+  thrown in F:\training-cms\wp-content\themes\storefront\header.php on line 74
+

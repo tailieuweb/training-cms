@@ -1,0 +1,911 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCustomizer\n"
+"POT-Creation-Date: 2020-05-06 10:50+0000\n"
+"PO-Revision-Date: 2020-05-13 12:35+0200\n"
+"Language-Team: Kaira\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_n:2,1;__ngettext:1,2;"
+"__ngettext_noop:1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
+"esc_html_e;esc_html_x:1,2c\n"
+"Last-Translator: Mikael Grönholm <mikael@gronholm.nu>\n"
+"Language: sv_SE\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: woocustomizer.php:126
+msgid "WooCustomizer requires the WooCommerce plugin to be active to work"
+msgstr "WooCustomizer kräver att WooCommerce är aktivt för att fungera"
+
+#: includes/class-wcz-settings.php:85
+msgid "Settings"
+msgstr "Inställningar"
+
+#: includes/class-wcz-settings.php:137 includes/class-wcz-settings.php:138
+#: includes/class-wcz-settings.php:567
+msgid "WooCustomizer"
+msgstr "WooCustomizer"
+
+#: includes/class-wcz-settings.php:190 includes/class-wcz-settings.php:306
+msgid "General Settings"
+msgstr "Allmänna inställningar"
+
+#: includes/class-wcz-settings.php:195 includes/class-wcz-settings.php:311
+msgid "Turn off the Customizer Tour"
+msgstr "Stäng av Customizer-guiden"
+
+#: includes/class-wcz-settings.php:202 includes/class-wcz-settings.php:318
+msgid "Delete all plugin data when WooCustomizer is deleted"
+msgstr "Radera alla plugin-data när WooCustomizer tas bort"
+
+#: includes/class-wcz-settings.php:211 includes/class-wcz-settings.php:216
+#: includes/class-wcz-settings.php:327
+msgid "Catalogue Mode"
+msgstr "Katalog-läge"
+
+#: includes/class-wcz-settings.php:212 includes/class-wcz-settings.php:328
+msgid ""
+"These are settings to turn your online store into Catalogue Mode so users "
+"can only browse products and not purchase them for the time period set."
+msgstr ""
+"Det här är inställningarna för att omvandla din onlinebutik till Katalogläge "
+"så att användare bara kan visa produkter, men inte köpa dem under den valda "
+"tidsperioden."
+
+#: includes/class-wcz-settings.php:217 includes/class-wcz-settings.php:232
+#: includes/class-wcz-settings.php:247 includes/class-wcz-settings.php:262
+#: includes/class-wcz-settings.php:277
+msgid "Upgrade from only <b>$29</b> to unlock these extra Pro features"
+msgstr "Uppgradera från endast <b>$29</b> för att låsa upp Pro-funktionerna"
+
+#: includes/class-wcz-settings.php:220
+msgid ""
+"Easily remove the purchase functionality from your shop, turning your online "
+"store into a beautiful online catalogue. Apply these settings to all "
+"products, selected products, or only to logged out users, prompting users to "
+"create an account and log in to purchase your products."
+msgstr ""
+"Ta enkelt bort köpfunktionaliteten från din butik och förvandla din "
+"onlinebutik till en vacker onlinekatalog. Tillämpa dessa inställningar på "
+"alla produkter, utvalda produkter eller endast för utloggade kunder, och "
+"ombe kunder att skapa ett konto och logga in för att köpa dina produkter."
+
+#: includes/class-wcz-settings.php:226 includes/class-wcz-settings.php:231
+#: includes/class-wcz-settings.php:352
+msgid "Menu Cart"
+msgstr "Meny-varukorg"
+
+#: includes/class-wcz-settings.php:227 includes/class-wcz-settings.php:353
+msgid "Easily add a WooCommerce Menu Cart to your site navigation."
+msgstr ""
+"Lägg enkelt till en WooCommerce Meny-varukorg i din befintliga meny på "
+"webbplatsen."
+
+#: includes/class-wcz-settings.php:235
+msgid ""
+"Simply turn on Menu Cart and select which menu you’d like to display a "
+"WooCommerce cart in. Add a drop down mini cart basket so your users can add "
+"or remove products, view their cart or go straight to checkout."
+msgstr ""
+"Slå bara på Meny-varukorgen och välj i vilken meny du vill visa en "
+"WooCommerce-vagn i. Lägg till en Minvarukorg som fälls ned så att dina "
+"användare kan lägga till eller ta bort produkter, se varukorgen eller gå "
+"direkt till kassan."
+
+#: includes/class-wcz-settings.php:241 includes/class-wcz-settings.php:246
+#: includes/class-wcz-settings.php:374
+msgid "Product Quick View"
+msgstr "Snabbvy för produkter"
+
+#: includes/class-wcz-settings.php:242 includes/class-wcz-settings.php:375
+msgid "Add a Quick View Popup to your WooCommerce Products."
+msgstr "Lägg till en Snabbvy pop-up till dina WooCommerce-produkter."
+
+#: includes/class-wcz-settings.php:250
+msgid ""
+"Give your users the option to preview your products and easily 'add to cart' "
+"or browse the images from within a popup on your shop page, or click through "
+"to the product page after they've seen it all."
+msgstr ""
+"Ge dina användare möjlighet att förhandsvisa produkter och enkelt använda "
+"\"Lägg i varukorg\" eller bläddra bland bilderna via en pop-up på din "
+"butiksida eller klicka igenom till produktsidan när de sett "
+"förhandsvisningen."
+
+#: includes/class-wcz-settings.php:256 includes/class-wcz-settings.php:388
+msgid "Ajax Search"
+msgstr "Ajax-sök"
+
+#: includes/class-wcz-settings.php:257 includes/class-wcz-settings.php:389
+msgid ""
+"Add Ajax Search functionlaity to make finding your products quicker and "
+"easier."
+msgstr ""
+"Lägg till funktionen Ajax-sök för att göra det snabbare och enklare att "
+"hitta dina produkter."
+
+#: includes/class-wcz-settings.php:261
+msgid "Ajax Product Search"
+msgstr "Ajax produktsök"
+
+#: includes/class-wcz-settings.php:265
+msgid ""
+"Want to speed up users finding your products? Add simple ajax product search "
+"to your search bar and configure a bunch of settings to display a prediction "
+"of products when your users start typing to search through your products."
+msgstr ""
+"Vill du hjälpa dina kunder att hitta produkter? Lägg till enkel Ajax "
+"produktsökning i ditt sökfält och konfigurera ett gäng inställningar för att "
+"visa en förhandsvisning av produkter när dina kunder börjar skriva i "
+"sökfältet."
+
+#: includes/class-wcz-settings.php:271 includes/class-wcz-settings.php:423
+msgid "Thank You Page(s)"
+msgstr "Tack-sida (or)"
+
+#: includes/class-wcz-settings.php:272
+msgid ""
+"The after purchase Thank You page is a very powerful place to get your users "
+"to sign up to your newsletter, show how to use the products, or to advertise "
+"other products that they might like<br /><br />They have just purchased "
+"something from you so they already trust you and want your products."
+msgstr ""
+"Tack-sidan efter köpet är en mycket betydelsefull plats att få dina "
+"användare att registrera sig för nyhetsbrev, visa hur man använder "
+"produkterna eller att marknadsföra andra produkter som de kanske gillar<br /"
+"><br />De har precis köpt något från din butik, så de litar redan på dig och "
+"vill ha dina produkter."
+
+#: includes/class-wcz-settings.php:276
+msgid "Custom Thank You Pages"
+msgstr "Anpassade Tack-sidor"
+
+#: includes/class-wcz-settings.php:280
+msgid ""
+"WooCustomizer offers the ability to build your own custom Thank You pages "
+"for WooCommerce, using default WordPress or any page builder you like, and "
+"to redirect the customer to your new default Thank You page, redirect them "
+"to different pages depending on the products they've just bought, or to "
+"pages depending how they purchased the products on your store."
+msgstr ""
+"WooCustomizer erbjuder möjligheten att bygga egna anpassade tacksidor för "
+"WooCommerce, genom att använda WordPress standardsidbyggare eller valfri "
+"sidbyggare som du gillar. Omdirigera kunden till din nya standard tacksida, "
+"omdirigera dem till olika sidor beroende på vilka produkter de just har köpt "
+"eller beroende på hur de köpte produkterna i din butik."
+
+#: includes/class-wcz-settings.php:286 includes/class-wcz-settings.php:464
+msgid "Handheld Footer Bar"
+msgstr "Mobilanpassad sidfotsmeny"
+
+#: includes/class-wcz-settings.php:287
+msgid ""
+"Make navigating your products and proceeding to the cart or checkout pages "
+"on your store even quicker and easier for all users on handheld devices."
+msgstr ""
+"Gör det ännu enklare och snabbare att navigera bland dina produkter och "
+"fortsätta till kundvagnen eller kassasidorna i din butik."
+
+#: includes/class-wcz-settings.php:291 includes/class-wcz-settings.php:469
+msgid "Enable Handheld Footer Bar"
+msgstr "Aktivera Mobilanpassad sidfotsmeny"
+
+#: includes/class-wcz-settings.php:295
+msgid ""
+"Your users can easily search for products, proceed to checkout, or view "
+"their account pages from anywhere within your store when on mobile or tablet "
+"devices. WooCustomizer Pro gives you a neat footer navigation bar for "
+"handheld devices. Plus you are able to further customize the footer "
+"navigation bar to suit your website design."
+msgstr ""
+"Dina kunder kan enkelt söka efter produkter, gå vidare till kassan eller se "
+"sina kontosidor var som helst i din butik på mobila enheter eller "
+"surfplattor. WooCustomizer Pro ger dig en fin mobilanpassad sidfotsmeny för "
+"handhållna enheter. Dessutom kan du ytterligare anpassa den mobilanpassade "
+"sidfotsmenyn så att det passar din webbplatsdesign."
+
+#: includes/class-wcz-settings.php:332
+msgid "Enable Catalogue Mode"
+msgstr "Aktivera Katalog-läge"
+
+#: includes/class-wcz-settings.php:357
+msgid "Enable Menu Cart"
+msgstr "Aktivera Meny-varukorg"
+
+#: includes/class-wcz-settings.php:364
+msgid "Select which Menu to add a Menu Cart to"
+msgstr "Välj vilken meny för att lägga till en Meny-varukorg"
+
+#: includes/class-wcz-settings.php:379
+msgid "Enable Product Quick View"
+msgstr "Aktivera Snabbvy för produkter"
+
+#: includes/class-wcz-settings.php:393
+msgid "Enable Ajax Search"
+msgstr "Aktivera Ajax-sök"
+
+#: includes/class-wcz-settings.php:424
+msgid "Set an after purchase Custom Thank You Page."
+msgstr "Ställ in en Tack-sida som visas efter genomfört köp."
+
+#: includes/class-wcz-settings.php:428
+msgid "Enable Custom Thank You Pages"
+msgstr "Aktivera anpassade Tack-sidor"
+
+#: includes/class-wcz-settings.php:435
+msgid "Select a default Purchase Thank You Page"
+msgstr "Välj en standard Tack-sida"
+
+#: includes/class-wcz-settings.php:443
+msgid "Select How You Want To Create Thank You Pages"
+msgstr "Välj hur du vill skapa tacksidor"
+
+#: includes/class-wcz-settings.php:447
+msgid "Use Only The One Custom Page Above"
+msgstr "Använd endast den anpassade sidan ovan"
+
+#: includes/class-wcz-settings.php:448
+msgid "Create Thank You Pages Per Product"
+msgstr "Skapa tacksidor för varje produkt"
+
+#: includes/class-wcz-settings.php:449
+msgid "Create Thank You Pages Per Payment Type"
+msgstr "Skapa tacksidor för varje betalningsmetod"
+
+#: includes/class-wcz-settings.php:455
+msgid "See WooCustomizer Documentation"
+msgstr "Visa WooCustomizer-dokumentationen"
+
+#: includes/class-wcz-settings.php:465
+msgid "Turn on a neat Footer Bar Navigation for handheld (mobile) devices."
+msgstr ""
+"Slå på en fin Mobilanpassad sidfotsmeny för handhållna (mobila) enheter."
+
+#: includes/class-wcz-settings.php:568
+msgid "WooCustomizer will soon be changing it's name to "
+msgstr "WooCustomizer kommer inom kort byta namn till "
+
+#: includes/class-wcz-settings.php:568
+msgid "StoreCustomizer"
+msgstr "StoreCustomizer"
+
+#: includes/class-wcz-settings.php:620 includes/class-wcz-settings.php:652
+msgid "Upgrade"
+msgstr "Uppgradera"
+
+#: includes/class-wcz-settings.php:640
+msgid "Save Settings"
+msgstr "Spara inställningar"
+
+#: includes/class-wcz-settings.php:649
+msgid "Account"
+msgstr "Konto"
+
+#: includes/class-wcz-settings.php:654
+msgid "Become an Affiliate"
+msgstr "Bli en samarbetspartner"
+
+#: includes/class-wcz-settings.php:657
+msgid "Contact Us"
+msgstr "Kontakta oss"
+
+#: includes/class-wcz-settings.php:660
+msgid ""
+"Click here to open the WordPress Customizer and navigate to the -> "
+"WooCustomizer panel."
+msgstr ""
+"Klicka här för att öppna WordPress-anpassaren och navigera till panelen -> "
+"WooCustomizer."
+
+#: includes/class-wcz-settings.php:661
+msgid "Customize Your Settings"
+msgstr "Anpassa dina inställningar"
+
+#: includes/class-wcz-settings.php:662
+msgid "Vote for"
+msgstr "Rösta för"
+
+#: includes/class-wcz-settings.php:662
+msgid "features you want added to WooCustomizer Pro"
+msgstr "funktioner du vill lägga till i WooCustomizer Pro"
+
+#: includes/class-wcz.php:340
+msgid "Welcome to WooCustomizer!"
+msgstr "Välkommen till WooCustomizer!"
+
+#: includes/class-wcz.php:341
+msgid ""
+"We hope you enjoy using the plugin to further customize your WooCommerce "
+"pages. - PLEASE NOTE... Some settings might not display perfectly, depending "
+"on which theme you're using. - You can always contact us for help on this."
+msgstr ""
+"Vi hoppas att du gillar att använda vårt plugin för att ytterligare anpassa "
+"dina WooCommerce-sidor. - OBS! Vissa inställningar visas kanske inte perfekt "
+"beroende på vilket tema du använder. - Du kan alltid kontakta oss för hjälp "
+"med detta."
+
+#: includes/class-wcz.php:346
+msgid "Customize the WooCommerce Pages"
+msgstr "Anpassa WooCommerce-sidor"
+
+#: includes/class-wcz.php:347
+msgid ""
+"In this group of Customizer panels you can customize the each of the "
+"WooCommerce pages by editing the settings within each section."
+msgstr ""
+"I denna grupp av Customizer-paneler kan du anpassa var och en av WooCommerce-"
+"sidorna genom att redigera inställningarna i varje avsnitt."
+
+#: includes/class-wcz.php:352
+msgid "Plus Account, Cart & Checkout Pages"
+msgstr "Plus konto, kundvagn & kassasidor"
+
+#: includes/class-wcz.php:353
+msgid ""
+"After editing the Shop & Product pages, you may want to edit your user "
+"account, cart or checkout pages too."
+msgstr ""
+"Efter redigering av butiks- och produktsidorna kanske du också vill redigera "
+"användarkonto, kundvagn eller kassasidor."
+
+#: includes/class-wcz.php:366
+msgid "Edit your WooCustomizer Pro Settings!"
+msgstr "Redigera dina WooCustomizer Pro-inställningar!"
+
+#: includes/class-wcz.php:367
+msgid ""
+"These panels appear as you turn on the pro features you want... The settings "
+"for Catalogue Mode, Product Quick View, Menu Cart and / or Ajax Search are "
+"all found within these panels. - Start Customizing!"
+msgstr ""
+"Dessa paneler visas när du aktiverar de PRO-funktionerna du vill använda... "
+"Inställningarna för Katalogläge, Snabbvy för produkter, Meny-varukorg och "
+"Ajax-sökning finns i dessa paneler. - Börja anpassa!"
+
+#: includes/class-wcz.php:372 includes/class-wcz.php:398
+#: includes/class-wcz.php:423
+msgid "Turn on the Pro Settings"
+msgstr "Aktivera Pro-inställningar"
+
+#: includes/class-wcz.php:373 includes/class-wcz.php:399
+#: includes/class-wcz.php:424
+msgid ""
+"Follow this link to turn on the pro settings. - Or Navigate to WooCommerce -"
+"> WooCustomizer in your Dashboard."
+msgstr ""
+"Följ den här länken för att aktivera PRO-inställningarna. - Eller navigera "
+"till WooCommerce -> WooCustomizer i Adminpanelen."
+
+#: includes/class-wcz.php:378 includes/class-wcz.php:404
+#: includes/class-wcz.php:429
+msgid "Need Help?"
+msgstr "Behöver du hjälp?"
+
+#: includes/class-wcz.php:379 includes/class-wcz.php:405
+#: includes/class-wcz.php:430
+msgid "Get in Contact here - Premium users get prioritized support."
+msgstr "Kontakta oss här - Premiumanvändare får prioriterad support."
+
+#: includes/class-wcz.php:384 includes/class-wcz.php:437
+msgid "Don't forget to save!"
+msgstr "Glöm inte att spara!"
+
+#: includes/class-wcz.php:385 includes/class-wcz.php:438
+msgid ""
+"Once you've  finished configuring your WooCustomizer settings, make sure you "
+"Publish the new settings."
+msgstr ""
+"När du är klar med att konfigurera dina WooCustomizer-inställningar, så se "
+"till att du publicerar de nya inställningarna."
+
+#: includes/class-wcz.php:392 includes/class-wcz.php:417
+msgid "Premium Settings get added here"
+msgstr "Premiuminställningar läggs till här"
+
+#: includes/class-wcz.php:393 includes/class-wcz.php:418
+msgid ""
+"Once you've turned on the pro settings that you want, you'll then see the "
+"new panels appear here for Catalogue Mode, Product Quick View, Menu Cart "
+"and / or Ajax Search"
+msgstr ""
+"När du har aktiverat de PRO-inställningar du vill använda, så är det här du "
+"hittar panelerna för Katalogläge, Produkt-snabbvy, Meny-varukorg och Ajax-sök"
+
+#: includes/class-wcz.php:455
+msgid "Thank you for trying out WooCustomizer !"
+msgstr "Tack för att du testar WooCustomizer!"
+
+#: includes/class-wcz.php:459
+#, php-format
+msgid "(Soon changing to \"%1$s\")"
+msgstr "(Ändras snart till \"%1$s\")"
+
+#: includes/class-wcz.php:465
+msgid "We're still in the early days of release."
+msgstr "Vi befinner oss fortfarande i ett tidigt skede efter utgivningen."
+
+#: includes/class-wcz.php:467
+msgid ""
+"This means you're one of the early users to find and use the WooCustomizer "
+"plugin... If WooCustomizer doesn't work perfectly with your theme right "
+"away, I'll sure try make it work for you!"
+msgstr ""
+"Detta betyder att du är en av de tidiga användarna som hittat och använder "
+"WooCustomizer-plugin... Om WooCustomizer inte fungerar med ditt tema, så "
+"hjälper jag dig gärna med att försöka fixa det!"
+
+#: includes/class-wcz.php:470
+msgid "Go To WooCustomizer Settings"
+msgstr "Gå till WooCustomizer-inställningar"
+
+#: includes/class-wcz.php:473
+msgid "Try out WooCustomizer PRO Settings"
+msgstr "Testa WooCustomizer PRO-inställningar"
+
+#: includes/class-wcz.php:477
+msgid "Have you found a bug? Or something not working?"
+msgstr "Har du hittat ett fel? Eller är det något som inte fungerar?"
+
+#: includes/class-wcz.php:479
+msgid ""
+"Please take it easy on us if something isn't working, get in contact and "
+"I'll try to fix it right away for you."
+msgstr ""
+"Vänligen berätta för oss om något inte fungerar. Kontakta oss och vi kommer "
+"göra allt för att fixa problemet så snart vi kan."
+
+#: includes/class-wcz.php:483
+#, php-format
+msgid ""
+"%1$s, am here to help, and fix any bugs that come up, manage support & "
+"development, and also adding the new features you want."
+msgstr ""
+"%1$s är här för att hjälpa till och fixa eventuella buggar som dyker upp, "
+"hantera support och utveckling och lägga till nya funktioner som du vill ha."
+
+#: includes/class-wcz.php:483
+msgid "I, Zack"
+msgstr "Jag, Zack,"
+
+#: includes/class-wcz.php:488
+msgid "Report a Bug / Request a Feature"
+msgstr "Rapportera ett fel / Önska en funktion"
+
+#: includes/class-wcz.php:492
+msgid "Like WooCustomizer? Give it 5 stars :)"
+msgstr "Gillar du WooCustomizer? Ge det 5 stjärnor :)"
+
+#: includes/class-wcz.php:494
+msgid ""
+"If the plugin works well for you or our support was good... giving "
+"WooCustomizer a nice review would really help with motivation & giving other "
+"users trust in my work."
+msgstr ""
+"Om du är nöjd med detta plugin och vår support... Ge då gärna WooCustomizer "
+"en positiv recension, vilket hjälper oss mycket att locka till oss fler "
+"användare."
+
+#: includes/class-wcz.php:497
+msgid "Ok, you deserve it"
+msgstr "Okej, ni förtjänar det"
+
+#: includes/class-wcz.php:503
+msgid "Dismiss Notice"
+msgstr "Avvisa meddelandet"
+
+#: includes/inc/woocommerce.php:457 includes/inc/woocommerce.php:458
+msgid "Full Name"
+msgstr "Fullständigt namn"
+
+#: includes/inc/woocommerce.php:528
+msgid "View Product Statistics"
+msgstr "Visa produktstatistik"
+
+#: includes/inc/woocommerce.php:545
+msgid "product"
+msgstr "produkt"
+
+#: includes/inc/woocommerce.php:549
+msgid "Total Sales"
+msgstr "Total försäljning"
+
+#: includes/inc/woocommerce.php:573
+msgid "Recent Sales"
+msgstr "Nyligen sålt"
+
+#: includes/inc/woocommerce.php:588
+msgid "View Order"
+msgstr "Visa order"
+
+#: includes/inc/woocommerce.php:601
+msgid "Edit Product"
+msgstr "Redigera produkt"
+
+#: includes/inc/woocommerce.php:771
+msgid "Please Upload an Image"
+msgstr "Vänligen ladda upp en bild"
+
+#: includes/inc/woocommerce.php:831
+msgid "Dashboard"
+msgstr "Panel"
+
+#: includes/inc/woocommerce.php:864
+msgid "Orders"
+msgstr "Ordrar"
+
+#: includes/inc/woocommerce.php:871
+msgid "Downloads"
+msgstr "Nerladdningar"
+
+#: includes/inc/woocommerce.php:878
+msgid "Addresses"
+msgstr "Adresser"
+
+#: includes/inc/woocommerce.php:885
+msgid "Account details"
+msgstr "Kontouppgifter"
+
+#: includes/inc/woocommerce.php:1047 includes/inc/woocommerce.php:1071
+#: includes/inc/woocommerce.php:1095 includes/inc/woocommerce.php:1119
+msgid "Please select the page you'd like to display here."
+msgstr "Vänligen välj sida som du vill visa här."
+
+#: includes/inc/woocommerce.php:1140
+msgid "Account Tab 1"
+msgstr "Mitt Konto-flik 1"
+
+#: includes/inc/woocommerce.php:1144
+msgid "Account Tab 2"
+msgstr "Mitt Konto-flik 2"
+
+#: includes/inc/woocommerce.php:1148
+msgid "Account Tab 3"
+msgstr "Mitt Konto-flik 3"
+
+#: includes/inc/woocommerce.php:1152
+msgid "Account Tab 4"
+msgstr "Mitt Konto-flik 4"
+
+#: includes/lib/class-wcz-admin-api.php:169
+msgid "Upload an image"
+msgstr "Ladda upp en bild"
+
+#: includes/lib/class-wcz-admin-api.php:169
+msgid "Use image"
+msgstr "Använd bild"
+
+#: includes/lib/class-wcz-admin-api.php:169
+msgid "Upload new image"
+msgstr "Ladda upp ny bild"
+
+#: includes/lib/class-wcz-admin-api.php:170
+msgid "Remove image"
+msgstr "Ta bort bilden"
+
+#: includes/lib/class-wcz-admin-api.php:191
+msgid "View Documentation"
+msgstr "Visa dokumentation"
+
+#: includes/lib/class-wcz-post-type.php:103
+msgid "Add New"
+msgstr "Lägg till ny"
+
+#: includes/lib/class-wcz-post-type.php:104
+#: includes/lib/class-wcz-taxonomy.php:106
+#, php-format
+msgid "Add New %s"
+msgstr "Lägg till ny %s"
+
+#: includes/lib/class-wcz-post-type.php:105
+#: includes/lib/class-wcz-taxonomy.php:103
+#, php-format
+msgid "Edit %s"
+msgstr "Redigera %s"
+
+#: includes/lib/class-wcz-post-type.php:106
+#, php-format
+msgid "New %s"
+msgstr "Ny %s"
+
+#: includes/lib/class-wcz-post-type.php:107
+#: includes/lib/class-wcz-taxonomy.php:102
+#, php-format
+msgid "All %s"
+msgstr "Alla %s"
+
+#: includes/lib/class-wcz-post-type.php:108
+#: includes/lib/class-wcz-taxonomy.php:104
+#, php-format
+msgid "View %s"
+msgstr "Visa %s"
+
+#: includes/lib/class-wcz-post-type.php:109
+#: includes/lib/class-wcz-taxonomy.php:110
+#, php-format
+msgid "Search %s"
+msgstr "Sök %s"
+
+#: includes/lib/class-wcz-post-type.php:110
+#, php-format
+msgid "No %s Found"
+msgstr "Inga %s funna"
+
+#: includes/lib/class-wcz-post-type.php:111
+#, php-format
+msgid "No %s Found In Trash"
+msgstr "Inga %s funna i Papperskorgen"
+
+#: includes/lib/class-wcz-post-type.php:156
+#, php-format
+msgid "%1$s updated. %2$sView %3$s%4$s."
+msgstr "%1$s uppdaterat. %2$sVisa %3$s%4$s."
+
+#: includes/lib/class-wcz-post-type.php:157
+msgid "Custom field updated."
+msgstr "Anpassat fält uppdaterat."
+
+#: includes/lib/class-wcz-post-type.php:158
+msgid "Custom field deleted."
+msgstr "Anpassat fält raderades."
+
+#: includes/lib/class-wcz-post-type.php:159
+#, php-format
+msgid "%1$s updated."
+msgstr "%1$s uppdaterad."
+
+#: includes/lib/class-wcz-post-type.php:160
+#, php-format
+msgid "%1$s restored to revision from %2$s."
+msgstr "%1$s återställ till revision från %2$s."
+
+#: includes/lib/class-wcz-post-type.php:161
+#, php-format
+msgid "%1$s published. %2$sView %3$s%4s."
+msgstr "%1$s publicerad. %2$sVisa %3$s%4s."
+
+#: includes/lib/class-wcz-post-type.php:162
+#, php-format
+msgid "%1$s saved."
+msgstr "%1$s sparad."
+
+#: includes/lib/class-wcz-post-type.php:163
+#, php-format
+msgid "%1$s submitted. %2$sPreview post%3$s%4$s."
+msgstr "%1$s publicerat. %2$sFörhandsgranska inlägg%3$s%4$s."
+
+#: includes/lib/class-wcz-post-type.php:164
+#, php-format
+msgid "%1$s scheduled for: %2$s. %3$sPreview %4$s%5$s."
+msgstr "%1$s schemalagt för: %2$s. %3$sFörhandsvisa %4$s%5$s."
+
+#: includes/lib/class-wcz-post-type.php:164
+msgid "M j, Y @ G:i"
+msgstr "M j, Y @ G:i"
+
+#: includes/lib/class-wcz-post-type.php:165
+#, php-format
+msgid "%1$s draft updated. %2$sPreview %3$s%4$s."
+msgstr "%1$s utkast uppdaterat. %2$sFörhandsvisa%3$s%4$s."
+
+#: includes/lib/class-wcz-post-type.php:183
+#, php-format
+msgid "%1$s %2$s updated."
+msgid_plural "%1$s %3$s updated."
+msgstr[0] "%1$s %2$s uppdaterad."
+msgstr[1] "%1$s %3$s uppdaterades."
+
+#: includes/lib/class-wcz-post-type.php:184
+#, php-format
+msgid "%1$s %2$s not updated, somebody is editing it."
+msgid_plural "%1$s %3$s not updated, somebody is editing them."
+msgstr[0] "%1$s %2$s uppdaterades inte pga pågående redigering."
+msgstr[1] "%1$s %3$s uppdaterades inte pga pågående redigering."
+
+#: includes/lib/class-wcz-post-type.php:185
+#, php-format
+msgid "%1$s %2$s permanently deleted."
+msgid_plural "%1$s %3$s permanently deleted."
+msgstr[0] "%1$s %2$s raderades permanent."
+msgstr[1] "%1$s %3$s raderades permanent."
+
+#: includes/lib/class-wcz-post-type.php:186
+#, php-format
+msgid "%1$s %2$s moved to the Trash."
+msgid_plural "%1$s %3$s moved to the Trash."
+msgstr[0] "%1$s %2$s flyttades till papperskorgen."
+msgstr[1] "%1$s %3$s flyttades till papperskorgen."
+
+#: includes/lib/class-wcz-post-type.php:187
+#, php-format
+msgid "%1$s %2$s restored from the Trash."
+msgid_plural "%1$s %3$s restored from the Trash."
+msgstr[0] "%1$s %2$s återställdes från papperskorgen."
+msgstr[1] "%1$s %3$s återställdes från papperskorgen."
+
+#: includes/lib/class-wcz-taxonomy.php:105
+#, php-format
+msgid "Update %s"
+msgstr "Uppdatera %s"
+
+#: includes/lib/class-wcz-taxonomy.php:107
+#, php-format
+msgid "New %s Name"
+msgstr "Nytt %s Namn"
+
+#: includes/lib/class-wcz-taxonomy.php:108
+#, php-format
+msgid "Parent %s"
+msgstr "Överordnad %s"
+
+#: includes/lib/class-wcz-taxonomy.php:109
+#, php-format
+msgid "Parent %s:"
+msgstr "Överordnad %s:"
+
+#: includes/lib/class-wcz-taxonomy.php:111
+#, php-format
+msgid "Popular %s"
+msgstr "Populär %s"
+
+#: includes/lib/class-wcz-taxonomy.php:112
+#, php-format
+msgid "Separate %s with commas"
+msgstr "Separera %s med kommatecken"
+
+#: includes/lib/class-wcz-taxonomy.php:113
+#, php-format
+msgid "Add or remove %s"
+msgstr "Lägg till eller ta bort %s"
+
+#: includes/lib/class-wcz-taxonomy.php:114
+#, php-format
+msgid "Choose from the most used %s"
+msgstr "Välj från mest använda %s"
+
+#: includes/lib/class-wcz-taxonomy.php:115
+#, php-format
+msgid "No %s found"
+msgstr "Inget %s funnet"
+
+#: includes/inc/premium/wcz-catalogue-mode.php:231
+msgid "Product ID: "
+msgstr "Produkt-ID: "
+
+#: includes/inc/premium/wcz-menu-cart.php:63
+#: includes/inc/premium/wcz-menu-cart.php:163
+msgid "View your shopping cart"
+msgstr "Visa varukorg"
+
+#. number of items in the mini cart.
+#: includes/inc/premium/wcz-menu-cart.php:93
+#: includes/inc/premium/wcz-menu-cart.php:104
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d artikel"
+msgstr[1] "%d artiklar"
+
+#: includes/inc/premium/wcz-thank-you-pages.php:174
+msgid "WooCustomizer Custom Thank You Pages"
+msgstr "WooCustomizer anpassade Tack-sidor"
+
+#: includes/inc/premium/wcz-thank-you-pages.php:313
+msgid ""
+"Unfortunately your order cannot be processed as the originating bank/"
+"merchant has declined your transaction. Please attempt your purchase again."
+msgstr ""
+"Tyvärr kan din beställning inte behandlas eftersom din bank har nekat "
+"transaktionen. Vänligen försök igen."
+
+#: includes/inc/premium/wcz-thank-you-pages.php:316
+msgid "Pay"
+msgstr "Betala"
+
+#: includes/inc/premium/wcz-thank-you-pages.php:318
+msgid "My account"
+msgstr "Mitt konto"
+
+#: includes/inc/premium/wcz-thank-you-pages.php:324
+msgid "Thank you. Your order has been received."
+msgstr "Tack. Din order är nu mottagen."
+
+#: includes/inc/premium/wcz-thank-you-pages.php:329
+msgid "Order number:"
+msgstr "Ordernummer:"
+
+#: includes/inc/premium/wcz-thank-you-pages.php:334
+msgid "Date:"
+msgstr "Datum:"
+
+#: includes/inc/premium/wcz-thank-you-pages.php:340
+msgid "Email:"
+msgstr "E-post:"
+
+#: includes/inc/premium/wcz-thank-you-pages.php:346
+msgid "Total:"
+msgstr "Summa:"
+
+#: includes/inc/premium/wcz-thank-you-pages.php:352
+msgid "Payment method:"
+msgstr "Betalningsmetod:"
+
+#: includes/inc/premium/wcz-thank-you-pages.php:384
+msgid "Bank"
+msgstr "Bank"
+
+#: includes/inc/premium/wcz-thank-you-pages.php:388
+msgid "Account number"
+msgstr "Kontonummer"
+
+#: includes/inc/premium/wcz-thank-you-pages.php:396
+msgid "IBAN"
+msgstr "IBAN"
+
+#: includes/inc/premium/wcz-thank-you-pages.php:400
+msgid "BIC"
+msgstr "BIC"
+
+#: includes/inc/premium/wcz-thank-you-pages.php:418
+msgid "Our bank details"
+msgstr "Våra bankuppgifter"
+
+#: includes/inc/premium/wcz-thank-you-pages.php:433
+#: includes/inc/premium/wcz-thank-you-pages.php:549
+#: includes/inc/premium/wcz-thank-you-pages.php:590
+#, php-format
+msgid ""
+"For some reason your order key does not match your order number. Please %1$s "
+"and check again."
+msgstr ""
+"Av någon anledning stämmer inte din ordernyckel med ditt beställningsnummer. "
+"Vänligen %1$s och kontrollera igen."
+
+#: includes/inc/premium/wcz-thank-you-pages.php:433
+#: includes/inc/premium/wcz-thank-you-pages.php:549
+#: includes/inc/premium/wcz-thank-you-pages.php:590
+msgid "/orders/\">view your account orders</a>"
+msgstr "/orders/\">visa dina ordrar</a>"
+
+#: includes/inc/premium/wcz-thank-you-pages.php:483
+msgid "Order details"
+msgstr "Orderdetaljer"
+
+#: includes/inc/premium/wcz-thank-you-pages.php:489
+msgid "Product"
+msgstr "Produkt"
+
+#: includes/inc/premium/wcz-thank-you-pages.php:490
+msgid "Total"
+msgstr "Summa"
+
+#: includes/inc/premium/wcz-thank-you-pages.php:531
+msgid "Note:"
+msgstr "Notering:"
+
+#. Description of the plugin
+msgid ""
+"Customize WooCommerce without code... WooCustomizer has all the WooCommerce "
+"hooks & lots more features built into one plugin, to further edit your "
+"WooCommerce Shop and Product pages, Cart, Checkout and User Account pages."
+msgstr ""
+"Anpassa WooCommerce utan kodning... WooCustomizer har alla WooCommerce "
+"krokar och många fler funktioner inbyggda i ett och samma plugin för att "
+"ytterligare anpassa din WooCommerce-butik och produktsidor, kundvagn, kassa "
+"och användarkontosidor."
+
+#. URI of the plugin
+msgid "https://kairaweb.com/wordpress-plugins/woocustomizer/"
+msgstr "https://kairaweb.com/wordpress-plugins/woocustomizer/"
+
+#. Author of the plugin
+msgid "Kaira"
+msgstr "Kaira"
+
+#. Author URI of the plugin
+msgid "https://kairaweb.com/"
+msgstr "https://kairaweb.com/"
