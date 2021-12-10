@@ -36,8 +36,8 @@
   <div class="col-sm-8">
 	  <h2>Liên hệ</h2>
  <div class="face">
-	 <a href="facebook.com"><i class="fab fa-facebook-square" style="color:3399FF;">facebook</i></a><br>
- <a href=""><messenger class="com" ></messenger><i class="fab fa-facebook-messenger">messenger</i></a><br>
+	 <a href="facebook.com"><i class="fab fa-facebook-square" style="color:3399FF;">facebook</i></a><br> <br>
+ <a href=""><messenger class="com" ></messenger><i class="fab fa-facebook-messenger" style="color:3399FF;">messenger</i></a><br><br>
 
  <a href="google.com"> <i class="fab fa-google-plus">google</i></a>
 
@@ -52,7 +52,7 @@
 </div>
 <div class"footer1" style="text-align:center;" >
 	<h3>ShopSale</h3>
-	<p>&copy; 2021 Công ty cổ phần sale  </p>
+	<p>&copy; 2021 Công ty cổ phần sale Entertainment </p>
 </div>
 
 		
