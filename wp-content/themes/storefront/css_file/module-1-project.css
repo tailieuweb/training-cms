@@ -1,1 +1,44 @@
 /* Css for Module 1 project */
+.storefront-primary-navigation{
+    background-color: #4A8EFF;
+}
+.site-header{
+    padding-top: 0;
+}
+.storefront-primary-navigation .col-full{
+    max-width: 100%;
+}
+.site-search{
+    margin: auto;
+}
+.woocommerce-active .site-header .main-navigation{
+    width: 40%;
+}
+.woocommerce-active .site-header .site-search{
+    width: 30%;
+    margin-right: 20%;
+    margin-top: 1%;
+}
+.widget_search form:not(.wp-block-search) input[type=text], .widget_search form:not(.wp-block-search) input[type=search], .widget_product_search form:not(.wp-block-search) input[type=text], .widget_product_search form:not(.wp-block-search) input[type=search] {
+    width: 80%;
+    border-radius: 5px;
+    height: 40px;
+}
+.btn-outline-primary {
+    color: #ffffff;
+    background-color: transparent;
+    background-image: none;
+    border-color: #ffffff;
+    height: 40px;
+}
+.woocommerce-active .site-header .site-header-cart {
+    width: 13%;
+    height: 20px;
+    float: right;
+    margin-right: 0;
+    margin-bottom: 0;
+    bottom: 31px;
+}
+.fa {
+    font-size: 31px;
+}
