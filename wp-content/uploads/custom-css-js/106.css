@@ -26,9 +26,20 @@ End of comment */
   border-radius:20px;
 }
 .woocommerce-mini-cart__empty-message{
-background-color:white; color:black;}
+  background-color:white; color:black;}
 .site-info{
-text-align:center;}
+  text-align:center;
+  
+  
+}
 
-</style>
+.footer1{
+  text-align:center;
+}
+.h3index{
+  border:1px solid black;
+}
+.face{
+  font-size:20px;
+}</style>
 <!-- end Simple Custom CSS and JS -->
