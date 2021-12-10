@@ -132,8 +132,8 @@ if ( ! function_exists( 'storefront_header_cart' ) ) {
 			}
 			?>
 		<ul id="site-header-cart" class="site-header-cart menu">
-			<li class="<?php echo esc_attr( $class ); ?>">
-				<?php storefront_cart_link(); ?>
+			<li class="fa fa-shopping-cart" aria-hidden="true">
+				
 			</li>
 			<li>
 				<?php the_widget( 'WC_Widget_Cart', 'title=' ); ?>
