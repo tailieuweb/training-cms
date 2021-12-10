@@ -85,6 +85,16 @@
 .text-box{
     margin-left: 50px;
     margin-bottom: 50px;
+
+}
+span.text-banhang {
+    font-weight: 600;
+}
+span.text-kythuat{
+    font-weight: 600;
+}
+span.text-giohang {
+    font-weight: 600;
 }
 .icon-box{
     margin-top: 20px;
