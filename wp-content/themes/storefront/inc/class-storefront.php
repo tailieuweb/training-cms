@@ -266,6 +266,14 @@ if (!class_exists('Storefront')) :
                 'description' => '',
             );
 
+//            Ho Si Hung
+//            Added sidebar for tags
+            $sidebar_args['tags'] = array(
+                'name' => __('Tags', 'storefront'),
+                'id' => 'tags',
+                'description' => '',
+            );
+
 
             $sidebar_args['header'] = array(
                 'name' => __('Below Header', 'storefront'),
