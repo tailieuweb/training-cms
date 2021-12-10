@@ -1,1 +1,116 @@
 /* Css for Module 9 project */
+
+.tabDAC1 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    border-top: 0px;
+}
+
+.tabDAC2 {
+    display: flex;
+    width: 100% !important;
+    border-top: 0 !important;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+    margin-bottom: 0 !important;
+}
+
+.tabDAC1 .tabDAC2.tabs li {
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #6d6d6d;
+}
+
+.tabDAC1 .tabDAC2.tabs li a {
+    color: #6d6d6d;
+    text-decoration: none;
+}
+
+.tabDAC1 .tabDAC2.tabs li.des::after {
+    opacity: 0;
+}
+
+.tabDAC1 .tabDAC2.tabs .active {
+    border: 1px solid rgba(0, 0, 0, .05);
+    border-bottom: none;
+}
+
+.tabDAC1 .tabDAC2.tabs li.des a:focus {
+    outline: 0 !important;
+}
+
+
+/* Module-11 */
+
+.tabDAC1 .tabDAC3 {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, .05);
+    height: 300px;
+    padding-top: 20px;
+}
+
+.tabDAC1 .tabDAC3 h2 {
+    display: none;
+}
+
+.tabDAC1 .tabDAC3 p {
+    font-size: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabDAC1 .tabDAC3 p img {
+    position: relative;
+    top: 20px;
+    left: calc(50% - 137.5px);
+}
+
+
+/* Module-10 */
+
+.cmtNone {
+    display: none !important;
+}
+
+.cmtRes {
+    padding: 0 !important;
+    padding-left: 25px !important;
+}
+
+.tabDAC1 .tabDAC3 .stars {
+    padding: 0;
+}
+
+.cmtYR {
+    padding: 0 !important;
+    padding-top: 10px !important;
+    margin-bottom: 0;
+}
+
+.cmtKhung {
+    width: 97%;
+    height: 100px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, .05);
+}
+
+.fromSub {
+    width: 736.61px;
+    border: 1px solid rgba(0, 0, 0, .05);
+    background-color: rgba(5, 0, 0, 0.07);
+    padding: 10px !important;
+}
+
+.btnSub {
+    width: 70px;
+    background-color: #9cb4d8!important;
+    color: white !important;
+    font-weight: 700 !important;
+    font-size: 15px;
+    border-radius: 5px !important;
+    position: relative;
+    top: 0;
+    left: 90%;
+}
