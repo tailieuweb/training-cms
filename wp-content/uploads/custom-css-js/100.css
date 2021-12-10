@@ -10,13 +10,14 @@ For example:
 For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
 
 End of comment */ 
+.site-info{
+  text-align:center;
+}
 .deli-primary-navigation{
   background-color:white;
-    
 }
 .main-navigation ul li{
   padding:10px;
-  
 }
 .cart-contents{
   font-size:20px;
@@ -25,22 +26,5 @@ End of comment */
   background-color:#99CCFF;
   border-radius:20px;
 }
-.woocommerce-mini-cart__empty-message{
-  background-color:white; color:black;}
-.site-info{
-  text-align:center;
-  
-  
-}
-
-.footer1{
-  text-align:center;
-}
-.h3index{
-  border:1px solid black;
-}
-.face{
-  padding:10px;
-  font-size:20px;
-}</style>
+</style>
 <!-- end Simple Custom CSS and JS -->
