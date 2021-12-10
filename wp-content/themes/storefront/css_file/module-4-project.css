@@ -29,6 +29,7 @@
     font-weight: 400;
     color: #686868;
     padding-top: 10px;
+    width: 100%;
 }
 .footbest, .footnew, .footall{
     box-shadow: 5px 4px 6px -5px;
