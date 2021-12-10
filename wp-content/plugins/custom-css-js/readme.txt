@@ -4,8 +4,8 @@ Contributors: diana_burduja
 Email: diana@burduja.eu
 Tags: CSS, JS, javascript, custom CSS, custom JS, custom style, site css, add style, customize theme, custom code, external css, css3, style, styles, stylesheet, theme, editor, design, admin
 Requires at least: 3.0.1
-Tested up to: 5.8 
-Stable tag: 3.37
+Tested up to: 5.9 
+Stable tag: 3.38
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Requires PHP: 5.2.4
@@ -104,6 +104,11 @@ The URL for the linked Codes is built just like the URL for other media (from Me
 $. Add/Edit HTML 
 
 == Changelog ==
+
+= 3.38 =
+* Fix: compatibility with the `HTML Editor Syntax Highlighter` plugin
+* Fix: escape labels on the "Add new custom code" page
+* Feature: Keep the last cursor position in the editor and let the editor get focus when the page loads 
 
 = 3.37 =
 * 07/12/2021

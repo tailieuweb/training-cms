@@ -5632,25 +5632,6 @@ section .section-title {
 	}
 }
 
-<<<<<<< HEAD
-.footer-inner.section-inner .widget.widget_block .widget-content ul li a {
-	color: #fff;
-}
-
-.footer-inner.section-inner .widget.widget_block .widget-content ul li a::before {
-	content: '»';
-	font-size: 28px;
-	font-weight: 300;
-	margin-right: 10px;
-}
-
-.footer-inner.section-inner .widget.widget_block .widget-content h2 {
-	padding-left: 10px;
-	border-left: 3px solid #fff;
-	color: #fff;
-}
-<<<<<<< HEAD
-
 /* Css comment */
 
 section.card {
@@ -5715,6 +5696,7 @@ p.comment-form-comment {
 	padding-top: 70px;
 	padding-bottom: 70px;
 	position: relative;
+}
 /* ---------------------------------------------- */
 /* content post CSS  */
 /* contain-main //-> in modul 2 */
