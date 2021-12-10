@@ -401,7 +401,7 @@ if (!function_exists('storefront_credit')) {
                 <header class="entry-header">
                     <?php
                     storefront_post_thumbnail('full');
-                    the_title('<h1 class="entry-title">', '</h1>');
+                    if(basename(get_permalink()) != 'cart') the_title('<h1 class="entry-title">', '</h1>');
                     ?>
                 </header><!-- .entry-header -->
                 <?php
