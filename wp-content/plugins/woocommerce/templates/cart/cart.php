@@ -169,7 +169,7 @@ do_action('woocommerce_before_cart'); ?>
                  * @hooked woocommerce_cross_sell_display
                  * @hooked woocommerce_cart_totals - 10
                  */
-                do_action('woocommerce_cart_collaterals' );
+                do_action('woocommerce_cart_collaterals');
                 ?>
                 <?php do_action('woocommerce_after_cart'); ?>
             </div>
@@ -177,7 +177,10 @@ do_action('woocommerce_before_cart'); ?>
     </div>
 </div>
 <div class="our-products">
-   <h2 class="title-ourproduct" style="text-align: center;font-weight: 500" ">OUR PRODUCTS</h2>
+    <h2 class="title-ourproduct" style="text-align: center;font-weight: 500" ">OUR PRODUCTS</h2>
+    <?php
+    echo get_post_meta(get_the_ID(), '_regular_price', true);
+    ?>
 </div>
 
 
