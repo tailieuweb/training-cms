@@ -81,9 +81,10 @@ if ( $upsells ) : ?>
 
 			if ( $heading ) :
 				?>
-				<h3 class="widget-title shop-sidebar">
+				<h3 class="widget-title shop-sidebar tintuc">
 					<?php echo esc_html( $heading ); ?>
 					<div class="is-divider small"></div>
+					
 				</h3>
 			<?php endif; ?>
 			<!-- Upsell List style -->

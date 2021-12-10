@@ -91,7 +91,7 @@ function flatsome_shop_widgets_init() {
     'id'            => 'shop-sidebar',
     'before_widget' => '<aside id="%1$s" class="widget %2$s">',
     'after_widget'  => '</aside>',
-    'before_title'  => '<span class="widget-title shop-sidebar">',
+    'before_title'  => '<span class="widget-title shop-sidebar tintuc">',
     'after_title'   => '</span><div class="is-divider small"></div>',
   ) );
 
