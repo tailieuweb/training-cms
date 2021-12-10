@@ -31,29 +31,21 @@ $product_categories = get_categories($args);
 <html <?php language_attributes(); ?>>
 
 <head>
-    <meta charset="<?php bloginfo('charset'); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module10.css" type="text/css"
-        media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module8-woocommerce.css"
-        type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module6-woocommerce.css"
-        type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module5-woocommerce.css"
-        type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module3-woocommerce.css"
-        type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module1-woocommerce.css"
-        type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module4-woocommerce.css"
-        type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module-9.css" type="text/css"
-        media="screen" />
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<meta charset="<?php bloginfo('charset'); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module10.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module6-woocommerce.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module5-woocommerce.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module3-woocommerce.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module1-woocommerce.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module4-woocommerce.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module2-woocommerce.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-module-9.css" type="text/css" media="screen" />
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
-    <?php wp_head(); ?>
+	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -207,6 +199,12 @@ $product_categories = get_categories($args);
 	do_action('storefront_before_content');
 	?>
 
+<<<<<<< HEAD
     <div id="content" class="site-content danh" tabindex="-1">
         <div class="col-full module5">
             <? do_action('storefront_content_top'); ?>
+=======
+	<div id="content" class="site-content danh" tabindex="-1">
+		<div class="col-full module5">
+			<? do_action('storefront_content_top'); ?>
+>>>>>>> d42d8889 (done module-2)
