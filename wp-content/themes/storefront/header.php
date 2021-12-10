@@ -23,7 +23,7 @@
   <?php wp_head(); ?>
 
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module6.css" type="text/css" media="screen" />
- <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module7.css" type="text/css" media="screen" />-->
+ <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module7.css" type="text/css" media="screen" />
 
 
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module-home-top.css" type="text/css" media="screen" />
