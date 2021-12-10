@@ -14,6 +14,7 @@
     margin: 0 0 20px 0;
     text-align: left;
     line-height: 1;
+    color: #000;
 }
 
 .home-banner-wrapper .wp-block-cover .wp-block-cover__inner-container p:nth-child(2),
@@ -30,7 +31,7 @@
 
 .wp-block-button a.wp-block-button__link {
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 15px 20px;
     line-height: 1;
     display: inline-block;
     background-color: #108bea;
