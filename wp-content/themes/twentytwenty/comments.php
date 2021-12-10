@@ -186,7 +186,7 @@ if (comments_open() || pings_open()) {
 
 	?>
 
-	<div class="comment-respond" id="respond">
+	<div class="comment-respond " id="respond">
 
 		<p class="comments-closed"><?php _e('Comments are closed.', 'twentytwenty'); ?></p>
 

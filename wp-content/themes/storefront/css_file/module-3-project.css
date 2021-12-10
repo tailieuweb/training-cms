@@ -1,1 +1,37 @@
 /* Css for Module 3 project */
+.wp-block-group .wp-block-group__inner-container h2{
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: 3px underline;
+    text-decoration-color: #0fd186;
+}
+
+.wp-block-latest-posts__list li a:hover, .wp-block-latest-comments__comment-author:hover, 
+.wp-block-latest-comments__comment-link:hover, .wp-block-group__inner-container li a:hover,
+.wp-block-categories-list li a:hover{
+    text-decoration: underline #727272 !important;
+}
+
+.wp-block-latest-posts__list li a, .wp-block-latest-comments__comment-author, 
+.wp-block-latest-comments__comment-link, .wp-block-group__inner-container li a,
+.wp-block-categories-list li a{
+    text-decoration: none !important; 
+}
+
+.wp-block-latest-posts__list li a::before, .wp-block-latest-comments__comment-author::before,
+.wp-block-group__inner-container li a::before, .wp-block-categories-list li a::before{
+    font-family: "FontAwesome";
+    content: "\f111";
+    padding-right: 10px;
+    font-size: 6px;
+    color: #0fd186;
+}
+
+.widget.widget_block{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    margin-right: -35px;
+    box-shadow: 6px 11px 17px -8px;
+    border-radius: 5px;
+}
