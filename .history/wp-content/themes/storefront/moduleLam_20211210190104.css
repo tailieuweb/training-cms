@@ -1,0 +1,271 @@
+#banner {
+    width: 100%;
+    display: none;
+    
+}
+
+.trang-chu #banner {
+    width: 100%;
+    max-width: 1540px;
+    margin: 0 auto;
+    display: block !important;
+    background: url('https://i2.wp.com/d9n64ieh9hz8y.cloudfront.net/wp-content/uploads/20191106225001/asus-zenbook-seminar-trai-nghiem-laptop-hai-man-hinh-3-1140x760.jpg?resize=1140%2C760&ssl=1') center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    max-height: 100vh;
+    margin-top: -90px;
+    padding-top: 10px;
+}
+
+#banner .title-banner{
+    display: block;
+    font-size: 64px;
+    color: rgb(228, 150, 5);
+    font-weight: bold;
+    text-shadow:
+    0 0 7px rgb(250, 219, 162),
+    0 0 10px rgb(250, 219, 162),
+    0 0 21px rgb(250, 219, 162),
+    0 0 42px rgb(204, 133, 2),
+    0 0 82px rgb(204, 133, 2),
+    0 0 92px rgb(204, 133, 2),
+    0 0 102px rgb(204, 133, 2),
+    0 0 151px rgb(204, 133, 2);
+    padding: 0 15px;
+    text-align: center;
+    /* margin-bottom: 150px; */
+    max-width: 1140px;
+    margin: 120px auto;
+    border-radius: 100px;
+    animation: moveTitle 4s ease-in infinite alternate;
+}
+@keyframes moveTitle {
+  0%{
+    transform: translateX(-100px);
+  }
+  100%{
+    transform: translateX(100px);
+  }
+}
+#banner .des-banner{
+    display: block;
+    width: 270px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 42px;
+    color: #fff;
+    background: #FFC107;
+
+    border-radius: 5px;
+    padding: 0 20px;
+    box-shadow: 2px 0 15px black;
+    transition: .5s;
+}
+#banner .des-banner:hover{
+    color: orange;
+    background: #fff;
+}
+.woocommerce-products-header__title.page-title{
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+ul.products li.product .button:hover{
+  background: #fff;
+  border: 1px solid #FABB4A;
+  border-style: hidden;
+  color: #FABB4A;
+}
+.site-main ul.products li.product {
+  background: rgb(248, 252, 229);
+  border: 2px solid #FFC107;
+ 
+}
+.site-main ul.products li.product:hover{
+  box-shadow:
+  0 0 30px 10px #fff,  /* inner white */
+  0 0 500px 30px rgb(255, 196, 255), /* middle magenta */
+  0 0 60px 50px rgb(178, 255, 255); /* outer cyan */
+}
+.woocommerce-Price-amount.amount{
+  font-weight: bold;
+}
+.widget.widget_block{
+  border: 1px solid #FFC107;
+  padding: 10px;
+}
+.wp-block-group__inner-container h2{
+  color: #f69d3c;
+  font-weight: 500;
+  border-bottom: 1px solid #f69d3c;
+}
+.wp-block-latest-posts__list.wp-block-latest-posts li,.wp-block-categories-list.wp-block-categories li{
+  border-bottom: 1px solid #FFC107;
+}
+.wp-block-latest-posts__list.wp-block-latest-posts li a,.wp-block-categories-list.wp-block-categories li a{
+  text-decoration: none;
+}
+.wp-block-latest-posts__list.wp-block-latest-posts li::before,.wp-block-categories-list.wp-block-categories li::before{
+  content: '> ';
+}
+
+#carouselExampleControls{
+  width: 50%;
+  height: 400px;
+}
+.splide__slide{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.car-details .splide .splide__track .splide__slide{
+  box-shadow: 2px 2px 5px gray!important;
+}
+.car-details .splide .splide__track .splide__slide a{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.car-details .splide .splide__track .splide__slide a:hover{
+  transform: translateY(-10px);
+}
+.snip0019 {
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  min-width: 400px;
+  max-width: 1110px;
+  max-height: 475px;
+  width: 100%;
+  background: #000000;
+  text-align: center;
+}
+
+.snip0019 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.snip0019 figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+
+.snip0019 figcaption>div {
+  float: left;
+  height: 100%;
+  overflow: hidden;
+  width: 50%;
+  position: relative;
+}
+
+.snip0019 figcaption::before {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
+  width: 2px;
+  content: '';
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+.snip0019 h2,
+.snip0019 p {
+  margin: 0;
+  padding: 20px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  -webkit-transition: opacity 0.45s, -webkit-transform 0.45s;
+  transition: opacity 0.45s, -webkit-transform 0.45s, -moz-transform 0.45s, -o-transform 0.45s, transform 0.45s;
+}
+
+.snip0019 h2 {
+  text-align: right;
+  display: inline-block;
+  word-spacing: -0.1em;
+  font-weight: 300;
+  text-transform: uppercase;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transform: translate3d(50%, 0%, 0);
+  transform: translate3d(50%, 0%, 0);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.snip0019 p {
+  display: block;
+  bottom: 0;
+  text-align: left;
+  font-weight: 500;
+  top: 70%;
+  color: #fff;
+  background: #000000;
+  -webkit-transform: translate3d(-50%, 0%, 0);
+  transform: translate3d(-50%, 0%, 0);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.snip0019 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  color: #ffffff;
+}
+
+.snip0019:hover img {
+  opacity: 0.7;
+}
+
+.snip0019:hover figcaption h2,
+.snip0019:hover figcaption p {
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.snip0019:hover figcaption h2 {
+  opacity: 1;
+}
+
+.snip0019:hover figcaption p {
+  opacity: 1;
+}
+
+.snip0019:hover figcaption::before {
+  background: #ffffff;
+  top: 0px;
+  bottom: 0px;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+@media (max-width: 991.98px){
+  .snip0019{
+    max-height: 300px;
+  }
+  .car-details .img{
+    margin-bottom: -70px !important;
+  }
+}
