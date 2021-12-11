@@ -1,0 +1,12 @@
+.widget-area .widget{
+    height: 620px;
+    width: 260px;
+}
+.widget-area .widget .wp-block-group div{
+    height: 580px;
+    width: 250px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: left;
+    padding-right: 35px;
+}
