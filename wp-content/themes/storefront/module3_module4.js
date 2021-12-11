@@ -8,7 +8,6 @@ window.addEventListener('DOMContentLoaded', function () {
             element.style.display = "inline-block";
             element.style.padding = "3px 5px";
             element.style.backgroundColor = "#cbcbcb";
-            // element.style.color = "#555";
             element.style.borderRadius = "3px";
             element.style.margin = "3px";
         });
