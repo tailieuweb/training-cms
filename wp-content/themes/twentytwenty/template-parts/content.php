@@ -330,7 +330,7 @@ if (is_search()) {
 							array_push($post_not_in_id, get_the_ID());
 							$categories = get_terms() ? get_terms() : array();
 
-							$cat_id_list = array($catID->term_id);
+							$cat_id_list = array();
 							foreach($categories as $cat)
 							{
 								array_push($cat_id_list, $cat->term_id);
@@ -344,7 +344,7 @@ if (is_search()) {
 									'relation' => 'OR',
 									array(
 										'taxonomy' => 'category',
-										'field' => 'term_id',
+										'field' => 'id',
 										'terms' => $cat_id_list,
 										'include_children' => true,
 										'operator' => 'IN'
