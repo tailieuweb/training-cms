@@ -50,8 +50,8 @@
 </div>
 
 </div>
-<div class"footer1" style="text-align:center;" >
-	<h3>ShopSale</h3>
+<div class"footer1" style="text-align:center; font-size: 14px;color:#999999;" >
+	<h3 style="color:#999999;">ShopSale</h3>
 	<p>&copy; 2021 Công ty cổ phần sale Entertainment </p>
 </div>
 
