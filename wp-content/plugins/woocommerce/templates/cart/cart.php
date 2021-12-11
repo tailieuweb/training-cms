@@ -177,10 +177,7 @@ do_action('woocommerce_before_cart'); ?>
     </div>
 </div>
 <div class="our-products">
-    <h2 class="title-ourproduct" style="text-align: center;font-weight: 500" ">OUR PRODUCTS</h2>
-    <?php
-    echo get_post_meta(get_the_ID(), '_regular_price', true);
-    ?>
+<!--    <h2 class="title-ourproduct" style="text-align: center;font-weight: 500" ">OUR PRODUCTS</h2>-->
 </div>
 
 
