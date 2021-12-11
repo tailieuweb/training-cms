@@ -47,7 +47,7 @@
         <div class="header-inner section-inner">
 
             <div class="header-titles-wrapper">
-            <?php echo do_shortcode("[transitionslider id=1]"); ?>
+            
                 <?php
 
 					// Check whether the header search is activated in the customizer.
@@ -221,7 +221,6 @@
 			?>
 
     </header><!-- #site-header -->
-
     <?php
 		// Output the menu modal.
 		get_template_part( 'template-parts/modal-menu' );
