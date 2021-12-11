@@ -15,67 +15,58 @@ if (is_singular()) {
 
 ?>
 
-<header class="entry-header has-text-align-center<?php echo esc_attr($entry_header_classes); ?>">
-    <?php if (is_single()) {
+<header class="entry-header has-text-align-center<?php echo esc_attr( $entry_header_classes ); ?>">
+
+	<div class="entry-header-inner section-inner medium">
+
+		<?php
+		/**
+		 * Allow child themes and plugins to filter the display of the categories in the entry header.
+		 *
+		 * @since Twenty Twenty 1.0
+		 *
+		 * @param bool Whether to show the categories in header. Default true.
+		 */
+		$show_categories = apply_filters( 'twentytwenty_show_categories_in_entry_header', true );
 
 
-        $class_dislay = "dislay-title";
-    }
-    ?>
+		if ( is_singular() ) {
+			the_title( '<h1 class="entry-title">', '</h1>' );
+		} else {
+//			the_title( '<h2 class="entry-title heading-size-1"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
+			//Get image of articles
+			//
+            $value = get_post();
+            $posta = $value->post_content;
+            $temp_start = strpos($posta,'<figure');
+            $temp_end = strpos($posta,'</figure>');
+            $temp2 = substr($posta, $temp_start, $temp_end);
+            echo $temp2;
 
-    <div class="entry-header-inner section-inner medium <?= $class_dislay ?>">
+		}
 
-        <?php
-        /**
-         * Allow child themes and plugins to filter the display of the categories in the entry header.
-         *
-         * @param  bool Whether to show the categories in header. Default true.
-         *
-         * @since Twenty Twenty 1.0
-         *
-         */
-        $show_categories = apply_filters('twentytwenty_show_categories_in_entry_header', true);
-        if ( ! is_single()) {
-            if (true === $show_categories && has_category()) {
-                ?>
+		$intro_text_width = '';
 
-                <div class="entry-categories">
-                    <span class="screen-reader-text"><?php _e('Categories', 'twentytwenty'); ?></span>
-                    <div class="entry-categories-inner">
-                        <?php the_category(' '); ?>
-                    </div><!-- .entry-categories-inner -->
-                </div><!-- .entry-categories -->
+		if ( is_singular() ) {
+			$intro_text_width = ' small';
+		} else {
+			$intro_text_width = ' thin';
+		}
 
-                <?php
-            }
-        }
-        $class_title = "title-detail";
-        if (is_singular()) {
-            the_title('<h1 class="entry-title '.$class_title.'">', '</h1>');
-        } else {
-            the_title('<h2 class="entry-title heading-size-1"><a href="'.esc_url(get_permalink()).'">', '</a></h2>');
-        }
+		if ( has_excerpt() && is_singular() ) {
+			?>
 
-        $intro_text_width = '';
+			<div class="intro-text section-inner max-percentage<?php echo $intro_text_width; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output ?>">
+				<?php the_excerpt(); ?>
+			</div>
 
-        if (is_singular()) {
-            $intro_text_width = ' small';
-        } else {
-            $intro_text_width = ' thin';
-        }
+			<?php
+		}
 
-        if (has_excerpt() && is_singular()) {
-            ?>
+		// Default to displaying the post meta.
+		twentytwenty_the_post_meta( get_the_ID(), 'single-top' );
+		?>
 
-            <div class="intro-text section-inner max-percentage<?php echo $intro_text_width; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output ?>">
-                <?php the_excerpt(); ?>
-            </div>
+	</div><!-- .entry-header-inner -->
 
-            <?php
-        }
-        // Default to displaying the post meta.
-        twentytwenty_the_post_meta(get_the_ID(), 'single-top');
-        ?>
-
-    </div><!-- .entry-header-inner -->
 </header><!-- .entry-header -->

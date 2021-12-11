@@ -82,7 +82,8 @@ get_header();
 		while ( have_posts() ) {
 			$i++;
 			if ( $i > 1 ) {
-				echo '<br class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
+				//get clean post <hr> cmt
+				#echo '<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
 			}
 			the_post();
 
