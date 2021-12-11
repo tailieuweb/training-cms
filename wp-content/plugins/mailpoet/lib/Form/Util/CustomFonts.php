@@ -95,6 +95,16 @@ class CustomFonts {
     }
   }
 
+  public function generateHtmlCustomFontLink() {
+    $output = '';
+
+    foreach (array_chunk(self::FONTS, self::FONT_CHUNK_SIZE) as $key => $fonts) {
+      $output .= sprintf('<link href="%s" rel="stylesheet">', $this->generateLink($fonts));
+    }
+
+    return $output;
+  }
+
   private function generateLink(array $fonts): string {
     $fonts = array_map(function ($fontName) {
       return urlencode($fontName) . ':400,400i,700,700i';

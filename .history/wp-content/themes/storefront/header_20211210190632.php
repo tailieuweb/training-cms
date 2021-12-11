@@ -1,0 +1,128 @@
+<?php
+
+/**
+ * The header for our theme.
+ *
+ * Displays all of the <head> section and everything up till <div id="content">
+ *
+ * @package storefront
+ */
+
+?>
+<!doctype html>
+<html <?php language_attributes(); ?>>
+
+<head>
+	<meta charset="<?php bloginfo('charset'); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/modulelam.css" type="text/css" media="screen" />
+	<?php wp_head(); ?>
+</head>
+
+<body <?php body_class(); ?>>
+
+	<?php wp_body_open(); ?>
+
+	<?php do_action('storefront_before_site'); ?>
+
+	<?php
+		$home = '';
+		if (is_front_page()) {
+			$home = 'trang-chu';
+		}
+		?>
+	<div id="page" <?php post_class($home); ?> class="hfeed site">
+		<?php do_action('storefront_before_header'); ?>
+
+		<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
+
+			<?php
+			/**
+			 * Functions hooked into storefront_header action
+			 *
+			 * @hooked storefront_header_container                 - 0
+			 * @hooked storefront_skip_links                       - 5
+			 * @hooked storefront_social_icons                     - 10
+			 * @hooked storefront_site_branding                    - 20
+			 * @hooked storefront_secondary_navigation             - 30
+			 * @hooked storefront_product_search                   - 40
+			 * @hooked storefront_header_container_close           - 41
+			 * @hooked storefront_primary_navigation_wrapper       - 42
+			 * @hooked storefront_primary_navigation               - 50
+			 * @hooked storefront_header_cart                      - 60
+			 * @hooked storefront_primary_navigation_wrapper_close - 68
+			 */
+			do_action('storefront_header');
+			?>
+
+		</header><!-- #masthead -->
+
+		<?php
+		/**
+		 * Functions hooked in to storefront_before_content
+		 *
+		 * @hooked storefront_header_widget_region - 10
+		 * @hooked woocommerce_breadcrumb - 10
+		 */
+		do_action('storefront_before_content');
+		?>
+
+		<!-- Banner start -->
+		<div id="banner">
+				<div class="title-banner">Welcome to shop by group C</div>
+				<div class="des-banner">Read more</div>
+		</div>
+		<!-- Banner end -->
+
+		<section id="partner" class="ftco-section">
+    <div class="container">
+      <h3>Our Partners/ Our Clients</h3>
+        <section class="customer-logos slider">
+            <div class="slide"><img src="https://images02.nicepage.com/a1389d7bc73adea1e1c1fb7e/f152870f5c9d5ab28268fb89/2.png"></div>
+            <div class="slide"><img src="https://images02.nicepage.com/a1389d7bc73adea1e1c1fb7e/b26eaa96084b5d63a1b8d98d/5.png"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+        </section>
+    <h2>
+    </div>
+  </section>
+<script>
+	$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+</script>
+		<div id="content" <?php post_class($home); ?> class="site-content" tabindex="-1">
+
+			<div class="col-full">
+				
+
+				<!-- Terminal start -->
+
+				<!-- Terminal start -->
+				<?php
+				do_action('storefront_content_top');

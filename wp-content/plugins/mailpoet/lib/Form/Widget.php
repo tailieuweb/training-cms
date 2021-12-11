@@ -10,6 +10,7 @@ use MailPoet\Config\Renderer as ConfigRenderer;
 use MailPoet\DI\ContainerWrapper;
 use MailPoet\Entities\FormEntity;
 use MailPoet\Form\Renderer as FormRenderer;
+use MailPoet\Form\Util\CustomFonts;
 use MailPoet\Settings\SettingsController;
 use MailPoet\Util\Security;
 use MailPoet\WP\Functions as WPFunctions;
@@ -27,6 +28,9 @@ class Widget extends \WP_Widget {
   /** @var FormsRepository */
   private $formsRepository;
 
+  /** @var CustomFonts */
+  private $customFonts;
+
   public function __construct() {
     parent::__construct(
       'mailpoet_form',
@@ -38,6 +42,8 @@ class Widget extends \WP_Widget {
     $this->assetsController = new AssetsController($this->wp, $this->renderer, SettingsController::getInstance());
     $this->formRenderer = ContainerWrapper::getInstance()->get(FormRenderer::class);
     $this->formsRepository = ContainerWrapper::getInstance()->get(FormsRepository::class);
+    $this->customFonts = ContainerWrapper::getInstance()->get(CustomFonts::class);
+
     if (!is_admin()) {
       $this->setupIframe();
     } else {
@@ -85,6 +91,7 @@ class Widget extends \WP_Widget {
         'ajax_url' => WPFunctions::get()->adminUrl('admin-ajax.php', 'absolute'),
         'is_rtl' => $isRtl,
       ],
+      'fonts_link' => $this->customFonts->generateHtmlCustomFontLink(),
     ];
 
     try {
@@ -144,7 +151,8 @@ class Widget extends \WP_Widget {
         if ($selectedForm === 0 && !empty($forms)) $selectedForm = $forms[0]->getId();
         foreach ($forms as $form) {
           $isSelected = ($selectedForm === $form->getId()) ? 'selected="selected"' : '';
-          $formName = $form->getName() ? $this->wp->escHtml($form->getName()) : "({$this->wp->_x('no name', 'fallback for forms without a name in a form list')})"
+          $formName = $form->getName() ? $this->wp->escHtml($form->getName()) : "({$this->wp->_x('no name', 'fallback for forms without a name in a form list')})";
+          $formName .= $form->getStatus() === FormEntity::STATUS_DISABLED ? ' (' . __('inactive', 'mailpoet') . ')' : '';
           ?>
         <option value="<?php echo $form->getId(); ?>" <?php echo $isSelected; ?>><?php echo $formName; ?></option>
         <?php }  ?>
