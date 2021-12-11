@@ -1,0 +1,124 @@
+2021-12-10T07:21:31+00:00 CRITICAL syntax error, unexpected end of file, expecting '(' in D:\1-training-cms\wp-content\themes\storefront\functions.php on line 73
+
+2021-12-10T07:21:33+00:00 CRITICAL syntax error, unexpected end of file, expecting '(' in D:\1-training-cms\wp-content\themes\storefront\functions.php on line 73
+
+2021-12-10T07:21:41+00:00 CRITICAL syntax error, unexpected end of file, expecting '(' in D:\1-training-cms\wp-content\themes\storefront\functions.php on line 73
+
+2021-12-10T07:21:43+00:00 CRITICAL syntax error, unexpected end of file, expecting '(' in D:\1-training-cms\wp-content\themes\storefront\functions.php on line 73
+
+2021-12-10T07:21:46+00:00 CRITICAL syntax error, unexpected end of file, expecting '(' in D:\1-training-cms\wp-content\themes\storefront\functions.php on line 73
+
+2021-12-10T07:21:47+00:00 CRITICAL syntax error, unexpected end of file, expecting '(' in D:\1-training-cms\wp-content\themes\storefront\functions.php on line 73
+
+2021-12-10T11:54:10+00:00 CRITICAL syntax error, unexpected end of file in D:\1-training-cms\wp-content\themes\storefront\page.php on line 73
+
+2021-12-10T14:20:45+00:00 CRITICAL Uncaught Error: Call to a member function get_gallery_attachment_ids() on null in D:\1-training-cms\wp-content\plugins\woocommerce\templates\cart\cart.php:183
+Stack trace:
+#0 D:\1-training-cms\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 D:\1-training-cms\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 D:\1-training-cms\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 D:\1-training-cms\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 D:\1-training-cms\wp-includes\shortcodes.php(356): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 D:\1-training-cms\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 D:\1-training-cms\wp-includes\class-wp-hook.php(303): do_shortc in D:\1-training-cms\wp-content\plugins\woocommerce\templates\cart\cart.php on line 183
+
+2021-12-10T14:21:14+00:00 CRITICAL Uncaught Error: Call to a member function get_attributes() on null in D:\1-training-cms\wp-content\plugins\woocommerce\templates\cart\cart.php:183
+Stack trace:
+#0 D:\1-training-cms\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 D:\1-training-cms\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 D:\1-training-cms\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 D:\1-training-cms\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 D:\1-training-cms\wp-includes\shortcodes.php(356): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 D:\1-training-cms\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 D:\1-training-cms\wp-includes\class-wp-hook.php(303): do_shortcode('[woocom in D:\1-training-cms\wp-content\plugins\woocommerce\templates\cart\cart.php on line 183
+
+2021-12-10T15:20:19+00:00 CRITICAL Uncaught Error: Call to a member function get_attributes() on null in D:\1-training-cms\wp-content\plugins\woocommerce\templates\cart\cart.php:183
+Stack trace:
+#0 D:\1-training-cms\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 D:\1-training-cms\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 D:\1-training-cms\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 D:\1-training-cms\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 D:\1-training-cms\wp-includes\shortcodes.php(356): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 D:\1-training-cms\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 D:\1-training-cms\wp-includes\class-wp-hook.php(303): do_shortcode('[woocom in D:\1-training-cms\wp-content\plugins\woocommerce\templates\cart\cart.php on line 183
+
+2021-12-10T15:48:20+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in D:\1-training-cms\wp-content\plugins\woocommerce\templates\cart\cart.php:185
+Stack trace:
+#0 D:\1-training-cms\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 D:\1-training-cms\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 D:\1-training-cms\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 D:\1-training-cms\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 D:\1-training-cms\wp-includes\shortcodes.php(356): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 D:\1-training-cms\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 D:\1-training-cms\wp-includes\class-wp-hook.php(303): do_shortcode('[woocommerc in D:\1-training-cms\wp-content\plugins\woocommerce\templates\cart\cart.php on line 185
+
+2021-12-10T15:49:44+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in D:\1-training-cms\wp-content\plugins\woocommerce\templates\cart\cart.php:185
+Stack trace:
+#0 D:\1-training-cms\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 D:\1-training-cms\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 D:\1-training-cms\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 D:\1-training-cms\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 D:\1-training-cms\wp-includes\shortcodes.php(356): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 D:\1-training-cms\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 D:\1-training-cms\wp-includes\class-wp-hook.php(303): do_shortcode('[woocommerc in D:\1-training-cms\wp-content\plugins\woocommerce\templates\cart\cart.php on line 185
+
+2021-12-10T15:49:46+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in D:\1-training-cms\wp-content\plugins\woocommerce\templates\cart\cart.php:185
+Stack trace:
+#0 D:\1-training-cms\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 D:\1-training-cms\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 D:\1-training-cms\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 D:\1-training-cms\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 D:\1-training-cms\wp-includes\shortcodes.php(356): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 D:\1-training-cms\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 D:\1-training-cms\wp-includes\class-wp-hook.php(303): do_shortcode('[woocommerc in D:\1-training-cms\wp-content\plugins\woocommerce\templates\cart\cart.php on line 185
+
+2021-12-10T15:49:55+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in D:\1-training-cms\wp-content\plugins\woocommerce\templates\cart\cart.php:185
+Stack trace:
+#0 D:\1-training-cms\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 D:\1-training-cms\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 D:\1-training-cms\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 D:\1-training-cms\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 D:\1-training-cms\wp-includes\shortcodes.php(356): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 D:\1-training-cms\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 D:\1-training-cms\wp-includes\class-wp-hook.php(303): do_shortcode('[woocommerc in D:\1-training-cms\wp-content\plugins\woocommerce\templates\cart\cart.php on line 185
+
+2021-12-10T15:49:57+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in D:\1-training-cms\wp-content\plugins\woocommerce\templates\cart\cart.php:185
+Stack trace:
+#0 D:\1-training-cms\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 D:\1-training-cms\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 D:\1-training-cms\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 D:\1-training-cms\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 D:\1-training-cms\wp-includes\shortcodes.php(356): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 D:\1-training-cms\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 D:\1-training-cms\wp-includes\class-wp-hook.php(303): do_shortcode('[woocommerc in D:\1-training-cms\wp-content\plugins\woocommerce\templates\cart\cart.php on line 185
+
+2021-12-10T15:50:40+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in D:\1-training-cms\wp-content\plugins\woocommerce\templates\cart\cart.php:185
+Stack trace:
+#0 D:\1-training-cms\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 D:\1-training-cms\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 D:\1-training-cms\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 D:\1-training-cms\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 D:\1-training-cms\wp-includes\shortcodes.php(356): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 D:\1-training-cms\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 D:\1-training-cms\wp-includes\class-wp-hook.php(303): do_shortcode('[woocommerc in D:\1-training-cms\wp-content\plugins\woocommerce\templates\cart\cart.php on line 185
+
+2021-12-10T16:04:26+00:00 CRITICAL Uncaught Error: Call to a member function get_default_attributes() on null in D:\1-training-cms\wp-content\plugins\woocommerce\templates\cart\cart.php:185
+Stack trace:
+#0 D:\1-training-cms\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 D:\1-training-cms\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 D:\1-training-cms\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 D:\1-training-cms\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 D:\1-training-cms\wp-includes\shortcodes.php(356): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 D:\1-training-cms\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 D:\1-training-cms\wp-includes\class-wp-hook.php(303): do_shortcode( in D:\1-training-cms\wp-content\plugins\woocommerce\templates\cart\cart.php on line 185
+

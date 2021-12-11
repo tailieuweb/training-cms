@@ -2,15 +2,15 @@
 /**
  * Displays the post header
  *
- * @package WordPress
+ * @package    WordPress
  * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
+ * @since      Twenty Twenty 1.0
  */
 
 $entry_header_classes = '';
 
-if ( is_singular() ) {
-	$entry_header_classes .= ' header-footer-group';
+if (is_singular()) {
+    $entry_header_classes .= ' header-footer-group';
 }
 
 ?>
@@ -29,24 +29,13 @@ if ( is_singular() ) {
 		 */
 		$show_categories = apply_filters( 'twentytwenty_show_categories_in_entry_header', true );
 
-//		if ( true === $show_categories && has_category() ) {
-//			?>
-<!---->
-<!--			<div class="entry-categories">-->
-<!--				<span class="screen-reader-text">--><?php //_e( 'Categories', 'twentytwenty' ); ?><!--</span>-->
-<!--				<div class="entry-categories-inner">-->
-<!--					--><?php //the_category( ' ' ); ?>
-<!--				</div>-->
-<!--			</div>-->
-<!---->
-<!--			--><?php
-//		}
 
 		if ( is_singular() ) {
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		} else {
 //			the_title( '<h2 class="entry-title heading-size-1"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
-			//Get url image of post
+			//Get image of articles
+			//
             $value = get_post();
             $posta = $value->post_content;
             $temp_start = strpos($posta,'<figure');

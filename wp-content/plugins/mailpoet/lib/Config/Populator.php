@@ -157,6 +157,8 @@ class Populator {
       'LifestyleBlogB',
       'Painter',
       'FarmersMarket',
+      'ConfirmInterestBeforeDeactivation',
+      'ConfirmInterestOrUnsubscribe',
     ];
     $this->formsRepository = $formsRepository;
     $this->entityManager = $entityManager;
