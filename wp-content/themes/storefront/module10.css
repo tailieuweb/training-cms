@@ -22,11 +22,17 @@
     margin: 1em 0 !important;
 }
 
-.lav-custom-product ins span.woocommerce-Price-amount.amount {
+.lav-custom-product span.woocommerce-Price-amount.amount {
     color: #ff7878;
     font-weight: 600;
     font-size: 2.2rem !important;
     margin-right: 1rem;
+}
+
+.lav-custom-product del span.woocommerce-Price-amount.amount {
+    color: #6d6d6d;
+    font-weight: 400;
+    font-size: 1.9rem !important;
 }
 
 .lav-custom-product a.woocommerce-product-gallery__trigger {
@@ -39,7 +45,9 @@
     padding-left: 1.6rem;
     border: 1px solid #e5e5e5;
 }
-
+.lav-custom-product .woocommerce-product-rating {
+    display: none;
+}
 .lav-custom-product button.single_add_to_cart_button.button.alt {
     border-radius: 6px !important;
     outline: none;
