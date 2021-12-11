@@ -1,10 +1,10 @@
 /* display SALE! */
-.onsale {
-    background-color: #FFFFFF;
-    border-color: #FF0000;
-    color: #FF0000;
-		font-size:15px;
-		box-shadow: 3px #000;
+.wc-block-grid__product-onsale, .onsale, .woocommerce-pagination .page-numbers li .page-numbers:not(.current) {
+    background-color: #FFFFFF !important;
+    border-color: #FF0000 !important;
+    color: #FF0000 !important;
+		font-size:15px !important;
+		box-shadow: 3px #000 !important;
 }
 /* btn add to cart, buy now pro */
 .woocommerce div.product .product_title {
