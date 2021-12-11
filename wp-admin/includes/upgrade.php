@@ -426,10 +426,6 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.'
 					0 => 'block-5',
 					1 => 'block-6',
 				),
-				'sidebar-3'           => array(
-					0 => 'block-5',
-					1 => 'block-6',
-				),
 				'array_version'       => 3,
 			)
 		);
@@ -1919,8 +1915,8 @@ function upgrade_400() {
 
 	if ( $wp_current_db_version < 29630 ) {
 		if ( ! is_multisite() && false === get_option( 'WPLANG' ) ) {
-			if ( defined( 'WPLANG' ) && ( '' !== 'WPLANG' ) && in_array( 'WPLANG', get_available_languages(), true ) ) {
-				update_option( 'WPLANG', 'WPLANG' );
+			if ( defined( 'WPLANG' ) && ( '' !== WPLANG ) && in_array( WPLANG, get_available_languages(), true ) ) {
+				update_option( 'WPLANG', WPLANG );
 			} else {
 				update_option( 'WPLANG', '' );
 			}
@@ -2608,11 +2604,11 @@ function __get_option( $setting ) { // phpcs:ignore WordPress.NamingConventions.
 	global $wpdb;
 
 	if ( 'home' === $setting && defined( 'WP_HOME' ) ) {
-		return untrailingslashit( 'WP_HOME' );
+		return untrailingslashit( WP_HOME );
 	}
 
 	if ( 'siteurl' === $setting && defined( 'WP_SITEURL' ) ) {
-		return untrailingslashit( 'WP_SITEURL' );
+		return untrailingslashit( WP_SITEURL );
 	}
 
 	$option = $wpdb->get_var( $wpdb->prepare( "SELECT option_value FROM $wpdb->options WHERE option_name = %s", $setting ) );
