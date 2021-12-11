@@ -1,0 +1,375 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Envo Shopper\n"
+"POT-Creation-Date: 2021-10-12 08:38+0200\n"
+"PO-Revision-Date: 2015-12-08 20:48+0100\n"
+"Last-Translator: Envo Shopper <info@envothemes.com>\n"
+"Language-Team: Envo Shopper <info@envothemes.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:8
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:10
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: comments.php:19
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr ""
+
+#: comments.php:22
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:47
+msgid "Comments are closed."
+msgstr ""
+
+#: content-none.php:3
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:9
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: content-none.php:14
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: content-none.php:19
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: functions.php:22
+msgid "Main Menu"
+msgstr ""
+
+#: functions.php:25
+msgid "Menu Right"
+msgstr ""
+
+#: functions.php:26
+msgid "Categories Menu"
+msgstr ""
+
+#: functions.php:90
+msgid ""
+"Save time by importing our demo data: your website will be set up and ready "
+"to be customized in minutes."
+msgstr ""
+
+#: functions.php:96
+#, php-format
+msgid "To enable shop features, please install and activate the %s plugin."
+msgstr ""
+
+#: functions.php:102
+msgid "The most advanced frontend drag & drop page builder."
+msgstr ""
+
+#: functions.php:200
+msgctxt "Roboto Condensed font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:284
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:294
+msgid "Top Bar Section"
+msgstr ""
+
+#: functions.php:304
+msgid "Header Section"
+msgstr ""
+
+#: functions.php:314
+msgid "Footer Section"
+msgstr ""
+
+#: functions.php:469
+msgid "Skip to the content"
+msgstr ""
+
+#: inc/customizer/demo.php:15 inc/dashboard.php:307 inc/dashboard.php:309
+msgid "One Click Demo Import"
+msgstr ""
+
+#: inc/customizer/demo.php:27 inc/dashboard.php:452
+#, php-format
+msgid ""
+"You can import the demo content with just one click. For step-by-step video "
+"tutorial, see %1$s"
+msgstr ""
+
+#: inc/customizer/demo.php:27 inc/customizer/info.php:30 inc/dashboard.php:452
+msgid "documentation"
+msgstr ""
+
+#: inc/customizer/demo.php:42 inc/customizer/demo.php:44 inc/dashboard.php:443
+msgid "Import demo data"
+msgstr ""
+
+#: inc/customizer/info.php:11
+msgid "Video Documentation & Demo"
+msgstr ""
+
+#: inc/customizer/info.php:26
+#, php-format
+msgid "You can use this theme to create a website like these %1$s"
+msgstr ""
+
+#: inc/customizer/info.php:26
+msgid "demos"
+msgstr ""
+
+#: inc/customizer/info.php:30
+#, php-format
+msgid "For step-by-step videos and text tutorials, see %1$s"
+msgstr ""
+
+#: inc/customizer/info.php:145
+msgid "PRO version"
+msgstr ""
+
+#: inc/customizer/info.php:147
+msgid "View PRO version"
+msgstr ""
+
+#: inc/dashboard.php:118
+#, php-format
+msgid "%1$s action required"
+msgid_plural "%1$s actions required"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/dashboard.php:121
+#, php-format
+msgid "Envo Shopper theme %s"
+msgstr ""
+
+#: inc/dashboard.php:123
+msgid "Envo Shopper theme"
+msgstr ""
+
+#: inc/dashboard.php:126
+msgid "Envo Shopper dashboard"
+msgstr ""
+
+#: inc/dashboard.php:147 inc/dashboard.php:352
+#, php-format
+msgid "Welcome to %1$s - Version %2$s"
+msgstr ""
+
+#: inc/dashboard.php:154
+#, php-format
+msgid ""
+"Welcome! Thank you for choosing %1$s! To fully take advantage of the best "
+"our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome "
+"page</a>"
+msgstr ""
+
+#: inc/dashboard.php:162
+#, php-format
+msgid "Get started with %s"
+msgstr ""
+
+#: inc/dashboard.php:201
+msgid "Install Now"
+msgstr ""
+
+#: inc/dashboard.php:220
+msgid "Activate"
+msgstr ""
+
+#: inc/dashboard.php:241
+msgid "Details"
+msgstr ""
+
+#: inc/dashboard.php:288
+msgid "Recommended Actions"
+msgstr ""
+
+#: inc/dashboard.php:369
+msgid "Theme Customizer"
+msgstr ""
+
+#: inc/dashboard.php:373
+#, php-format
+msgid ""
+"%s supports the Theme Customizer for all theme settings. Click \"Customize"
+"\" to personalize your site."
+msgstr ""
+
+#: inc/dashboard.php:377
+msgid "Start customizing"
+msgstr ""
+
+#: inc/dashboard.php:381
+msgid "Theme documentation"
+msgstr ""
+
+#: inc/dashboard.php:385
+#, php-format
+msgid ""
+"Need help in setting up and configuring %s? Please take a look at our "
+"documentation page."
+msgstr ""
+
+#: inc/dashboard.php:392
+#, php-format
+msgid "%s Documentation"
+msgstr ""
+
+#: inc/dashboard.php:398
+msgid "Having trouble? Need support?"
+msgstr ""
+
+#: inc/dashboard.php:400
+msgid "Contact us"
+msgstr ""
+
+#: inc/dashboard.php:425
+msgid "Recommended plugins"
+msgstr ""
+
+#: inc/dashboard.php:434
+msgid "Hooray! There are no required actions for you right now."
+msgstr ""
+
+#: inc/extras.php:30
+msgid "Category"
+msgstr ""
+
+#: inc/extras.php:34
+msgid "Tags"
+msgstr ""
+
+#: inc/extras.php:80
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: inc/extras.php:80
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: inc/extras.php:80
+msgid "WordPress"
+msgstr ""
+
+#: inc/extras.php:85
+#, php-format
+msgid "Theme: %1$s"
+msgstr ""
+
+#: inc/extras.php:85
+msgctxt "Theme name, do not translate"
+msgid "Envo Shopper"
+msgstr ""
+
+#: inc/extras.php:122
+msgid "By"
+msgstr ""
+
+#: inc/extras.php:144
+msgid "Off"
+msgstr ""
+
+#: inc/extras.php:147
+msgid "Comment on "
+msgstr ""
+
+#: inc/extras.php:170
+msgid "About The Author"
+msgstr ""
+
+#: inc/extras.php:300
+msgid "Previous Post"
+msgstr ""
+
+#: inc/extras.php:300
+msgid "Previous"
+msgstr ""
+
+#: inc/extras.php:301
+msgid "Next Post"
+msgstr ""
+
+#: inc/extras.php:301
+msgid "Next"
+msgstr ""
+
+#: inc/woocommerce.php:6
+msgid "Cart"
+msgstr ""
+
+#: inc/woocommerce.php:64
+msgid "My Account"
+msgstr ""
+
+#: inc/woocommerce.php:83
+msgid "Wishlist"
+msgstr ""
+
+#: inc/woocommerce.php:102
+msgid "Compare"
+msgstr ""
+
+#: inc/woocommerce.php:125 inc/woocommerce.php:147
+msgid "Categories"
+msgstr ""
+
+#: inc/woocommerce.php:180
+msgid "Search products..."
+msgstr ""
+
+#: inc/woocommerce.php:182
+msgid "All Categories"
+msgstr ""
+
+#: inc/wp_bootstrap_navwalker.php:362
+msgid "Add a menu"
+msgstr ""
+
+#: search.php:10
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template-parts/template-part-topnav.php:28
+msgid "Menu"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Select"
+#~ msgstr ""
+#~ "Vyberte stránku, která zobrazí podmínky používání pro registraci partnerů"

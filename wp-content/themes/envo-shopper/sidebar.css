@@ -1,0 +1,19 @@
+#sidebar{
+    background-color: #eef2f5;
+}
+.custom-sidebar ul:not(.product_list_widget) li a{
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 7px 7px 3px #aaaaaa;
+    font-size: 1.5rem !important;
+    font-weight: 500;
+    margin-right: 5px;
+    padding: 5px 10px;
+    color: #000;
+    background-color: #fff
+}
+.custom-sidebar ul li a:hover {
+    color: #000 !important;
+}
