@@ -1367,7 +1367,7 @@ position: relative;
 
 .module7-logo a {
   color: #fff;
-  padding: 0 20px;
+  padding: 0 20px 0 0;
   font-size: 3em !important;
 }
 
@@ -1375,4 +1375,9 @@ position: relative;
   text-decoration: none;
 
 
+}
+
+/* ADDED BY hUNG */
+ul.module7-nav.module7-navbar-nav li:first-child a{
+  padding: 18px 18px 18px 0 !important;
 }
