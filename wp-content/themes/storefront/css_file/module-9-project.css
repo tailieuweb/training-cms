@@ -45,6 +45,7 @@
         border: 1px solid rgba(0, 0, 0, .05);
         height: 300px;
         padding-top: 20px;
+        overflow-y: auto;
     }
     
     .tabDAC1 .tabDAC3 h2 {
