@@ -57,7 +57,7 @@
     <header class="module7-header-style-1 module7" > 
   
   <!-- ============================================== TOP MENU ============================================== -->
-  <div class="module7-top-bar module7-animate-dropdown">
+  <div class="module7-navigation module7-top-bar module7-animate-dropdown">
     <div class="col-full">
       <div class="module7-header-top-inner">
         <div class="module7-cnt-account">
