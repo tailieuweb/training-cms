@@ -266,6 +266,14 @@ if (!class_exists('Storefront')) :
                 'description' => '',
             );
 
+//            Ho Si Hung
+//            Added sidebar for tags
+            $sidebar_args['tags'] = array(
+                'name' => __('Tags', 'storefront'),
+                'id' => 'tags',
+                'description' => '',
+            );
+
 
             $sidebar_args['header'] = array(
                 'name' => __('Below Header', 'storefront'),
@@ -294,6 +302,12 @@ if (!class_exists('Storefront')) :
                         /* translators: 1: column number, 2: row number */
                         $footer_region_description = sprintf(__('Widgets added here will appear in column %1$d of footer row %2$d.', 'storefront'), $region, $row);
                     }
+
+                    $sidebar_args[ 'footer-topsection' ] = array(
+						'name'        => __( 'Footer - Top section', 'storefront' ),
+						'id'          => 'footer-top',
+						'description' => '',
+					);
 
                     $sidebar_args[$footer] = array(
                         'name' => $footer_region_name,

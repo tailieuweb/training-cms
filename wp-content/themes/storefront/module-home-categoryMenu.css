@@ -65,6 +65,17 @@
     padding: 10px 15px;
 }
 
+.categoryMenu__bottom-section .categoryMenu__list .categoryMenu__list__item .category-wrapper a {
+    color: #000;
+    text-decoration: none;
+}
+
+.categoryMenu__bottom-section .categoryMenu__list .categoryMenu__list__item .category-wrapper a:hover,
+.categoryMenu__bottom-section .categoryMenu__list .categoryMenu__list__item .category-wrapper a:active,
+.categoryMenu__bottom-section .categoryMenu__list .categoryMenu__list__item .category-wrapper a:focus {
+    outline: none;
+}
+
 .categoryMenu__bottom-section .categoryMenu__list .categoryMenu__list__item:last-child {
     border-bottom: 0;
 }

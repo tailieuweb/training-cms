@@ -5,9 +5,9 @@
 
 #lav-mdl3-mdl4 {
     display: grid;
-    grid-template-columns: 30.5% 67.5%;
+    grid-template-columns: 25.5% 71.5%;
     margin-top: 3em;
-    column-gap: 2%;
+    column-gap: 3%;
 }
 
 @media (max-width: 767px) {
@@ -23,7 +23,7 @@
 }
 
 #lav-mdl3-mdl4 .lav-tag-search .widget.woocommerce.widget_product_tag_cloud {
-    padding: 1.6rem !important;
+    padding: 10px 15px !important;
     background-color: #fff !important;
     border-radius: 6px;
 }
@@ -31,10 +31,11 @@
 #lav-mdl3-mdl4 .lav-tag-search span.widget-title {
     font-weight: 600 !important;
     color: #000;
+    font-size: 1.125rem;
 }
 
 #lav-mdl3-mdl4 .lav-tag-search div.tagcloud a {
-    font-size: 1rem !important;
+    font-size: .7rem !important;
     background-color: #dddddd !important;
     color: #555;
     transition: all .5s;
@@ -48,7 +49,7 @@
 
 /* Phần css dành cho new products*/
 #lav-mdl3-mdl4 .lav-new-products {
-    padding: 2rem !important;
+    padding: 10px 15px !important;
     background-color: #fff !important;
     border-radius: 6px;
 }
@@ -60,6 +61,7 @@
     border-bottom: 1px solid rgba(0, 0, 0, .05);
     padding: 0 0 1em;
     margin-bottom: 1em;
+    font-size: 1.9rem !important;
 }
 
 #lav-mdl3-mdl4 .lav-new-products ul li div.wp-block-button.wc-block-grid__product-add-to-cart {
@@ -68,6 +70,9 @@
 
 #lav-mdl3-mdl4 .lav-new-products ul li.wc-block-grid__product {
     margin-bottom: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #lav-mdl3-mdl4 .lav-new-products ul li div.wc-block-grid__product-onsale {
@@ -76,15 +81,21 @@
 
 #lav-mdl3-mdl4 .lav-new-products ul li a.wc-block-grid__product-link div.wc-block-grid__product-title {
     text-align: left;
-    font-weight: 600;
-    font-size: 1.2rem;
+    font-weight: 700;
+    font-size: 0.8rem;
 }
 
 #lav-mdl3-mdl4 .lav-new-products ul li .wc-block-grid__product-price.price {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
 
 #lav-mdl3-mdl4 .lav-new-products ul li .wc-block-grid__product-price.price del {
+    margin-left: 6px;
     font-weight: 700 !important;
 }
 

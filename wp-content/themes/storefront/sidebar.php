@@ -14,11 +14,14 @@ $array_check = explode("/",  $_SERVER['REQUEST_URI']);
 if ((in_array("shop", $array_check) && $array_check[1] === "shop")) {
     ?>
 
-    <div id="secondary" class="widget-area" role="complementary">
+    <div id="secondary" class="widget-area Hung-custom-sidebar" role="complementary">
         <?php
 
         dynamic_sidebar('sidebar-1');
 
+//        Ho Si Hung
+//        Add Tags sidebar
+        dynamic_sidebar('tags');
         ?>
     </div><!-- #secondary -->
 <?php } else {
