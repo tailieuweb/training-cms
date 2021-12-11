@@ -17,6 +17,7 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/modulelam.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/modulehuy.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/anhmodle_page.css" type="text/css" media="screen" />
 
 	
 
