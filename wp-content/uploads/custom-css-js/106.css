@@ -12,10 +12,12 @@ For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/cs
 End of comment */ 
 .deli-primary-navigation{
   background-color:white;
+  
     
 }
 .main-navigation ul li{
-  padding:10px;
+  padding:10px
+   
   
 }
 .cart-contents{
@@ -24,6 +26,9 @@ End of comment */
 .deli-primary-navigation a:hover{
   background-color:#99CCFF;
   border-radius:20px;
+  text-decoration:none;
+  font-style:italic;
+  
 }
 .woocommerce-mini-cart__empty-message{
   background-color:white; color:black;}
@@ -35,6 +40,7 @@ End of comment */
 
 .footer1{
   text-align:center;
+  font-size: 14px;
 }
 .h3index{
   border:1px solid black;
@@ -42,5 +48,7 @@ End of comment */
 .face{
   padding:10px;
   font-size:20px;
-}</style>
+}
+
+</style>
 <!-- end Simple Custom CSS and JS -->
