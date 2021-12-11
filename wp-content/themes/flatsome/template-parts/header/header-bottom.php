@@ -70,7 +70,7 @@
                       <?php flatsome_header_elements('header_mobile_elements_bottom'); ?>
                   </ul>
               </div>
-            <?php } ?> -->
+            <?php } ?>
 
     </div>
 </div>
