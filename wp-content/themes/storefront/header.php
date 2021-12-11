@@ -122,7 +122,7 @@
           
           <div class="module7-dropdown module7-dropdown-cart"> <a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="dropdown-toggle lnk-cart" data-toggle="dropdown">
             <div class="module7-items-cart-inner">
-              <div class="module7-basket">
+              <div class="module7-basket" style="padding-right: 1.5em;">
               <div class="module7-basket-item-count"><span class="module7-count"><?php echo wp_kses_data( sprintf( _n( '%d', '%d', WC()->cart->get_cart_contents_count(), 'storefront' ), WC()->cart->get_cart_contents_count() ) ); ?></span></div>
               <div class="module7-total-price-basket"> <span class="module7-lbl">Shopping Cart</span> <span class="module7-value"><?php echo wp_kses_post( WC()->cart->get_cart_subtotal() ); ?></span> </div>
               </div>
