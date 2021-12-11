@@ -1,0 +1,27 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Add your CSS code here.
+
+For example:
+.example {
+    color: red;
+}
+
+For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
+
+End of comment */ 
+.wp-block-search .wp-block-search__button {
+    background: #fd1192;
+    border: 1px solid #ccc;
+    padding: 0.375em0.625em;
+    color: #c6488d
+    margin-left: 0.625em;
+    word-break: normal;
+
+}
+.wp-block-search__label{
+  text-align:left;
+  display: flex;
+}
+</style>
+<!-- end Simple Custom CSS and JS -->

@@ -365,7 +365,7 @@ function twenty_twenty_one_widgets_init() {
 		)
 	);
 }
-
+add_action( 'widgets_init', 'twenty_twenty_one_widgets_init' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.

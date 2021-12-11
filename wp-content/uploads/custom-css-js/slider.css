@@ -1,0 +1,24 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Add your CSS code here.
+
+For example:
+.example {
+    color: red;
+}
+
+For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
+
+End of comment */ 
+div#n2-ss-2 .n2-style-ef34b6c6f6f834cfdfcd9b498cee8650-heading{
+  padding: 10px! important;
+  margin-left: -60px;
+}
+
+div#n2-ss-2 .n2-font-176464dee0eea5b1ac11b21dab9b24d2-link a{
+  margin-left: -60px;
+    margin-top: -10px;
+}
+
+</style>
+<!-- end Simple Custom CSS and JS -->
