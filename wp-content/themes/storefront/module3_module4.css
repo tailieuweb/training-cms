@@ -93,7 +93,9 @@
     flex-direction: row-reverse;
     justify-content: flex-end;
 }
-
+#lav-mdl3-mdl4 .lav-new-products ul li .wc-block-grid__product-price.price {
+    font-weight: 700 !important;
+}
 #lav-mdl3-mdl4 .lav-new-products ul li .wc-block-grid__product-price.price del {
     margin-left: 6px;
     font-weight: 700 !important;
