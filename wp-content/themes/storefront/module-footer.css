@@ -66,6 +66,8 @@
 
 .module-footer .footer-widgets .footer-widget-midsection .widget ul:first-child {
     list-style-type: disc;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
 }
 
 .module-footer .footer-widgets .footer-widget-midsection .widget li a {
@@ -211,11 +213,6 @@
 @media screen and (max-width: 992px) {
     .module-footer .site-info .info-wrapper div {
         margin-bottom: 15px;
-    }
-
-    .module-footer .footer-widgets .footer-widget-midsection .widget ul:first-child {
-        padding-left: 1.41575em;
-        padding-right: 1.41575em;
     }
 
     .module-footer .footer-widgets .block.footer-widget-topsection ul {
