@@ -460,7 +460,7 @@ if (!function_exists('storefront_credit')) {
 											<span class="category-icon"><i class="fas fa-tag"></i></span>
 											<span><?php echo('<a href="' . get_term_link((int)$value->term_id, 'product_cat') . '" class="menu-item">' . $value->name . '</a>'); ?></span>
 										</span>
-                                                            <span class="arrow_r-icon">></span>
+                                                            <span class="arrow_r-icon"><i class="fas fa-chevron-right"></i></span>
                                                         </div>
                                                         <div class="sub-category">
                                                             <?php
