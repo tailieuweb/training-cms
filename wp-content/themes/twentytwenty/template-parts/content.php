@@ -326,16 +326,33 @@ if (is_search()) {
 					<div class="ul-cate">
 						<ul>
 							<?php
-							$cate = get_term($post->ID);
-							$args = array(
+							$post_not_in_id = array($post->ID);
+							array_push($post_not_in_id, get_the_ID());
+							$categories = get_terms() ? get_terms() : array();
+
+							$cat_id_list = array($catID->term_id);
+							foreach($categories as $cat)
+							{
+								array_push($cat_id_list, $cat->term_id);
+							}
+							$rl_posts_query = new WP_Query(array(
 								'post_type' => 'post',
 								'orderby' => 'rand',
-								'post__not_in' => array($post->ID),
-								'posts_per_page' => '3',
-							);
-							$other_post = new WP_Query($args);
-							if ($other_post->have_posts()) :
-								while ($other_post->have_posts()) : $other_post->the_post();
+								'posts_per_page' => 3,
+								'post__not_in' => $post_not_in_id,
+								'tax_query' => array(
+									'relation' => 'OR',
+									array(
+										'taxonomy' => 'category',
+										'field' => 'term_id',
+										'terms' => $cat_id_list,
+										'include_children' => true,
+										'operator' => 'IN'
+									)
+								)
+							));
+							if ($rl_posts_query->have_posts()) :
+								while ($rl_posts_query->have_posts()) : $rl_posts_query->the_post();
 							?>
 									<li class="cate-name">
 										<a href="<?php the_permalink() ?>"><?php the_title() ?></a>
