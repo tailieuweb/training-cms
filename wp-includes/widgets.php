@@ -1376,7 +1376,6 @@ function wp_map_sidebars_widgets( $existing_sidebars_widgets ) {
 			array( 'sidebar-2', 'footer', 'bottom' ),
 			array( 'header', 'top' ),
 		);
-		
 
 		// Go through each group...
 		foreach ( $common_slug_groups as $slug_group ) {
