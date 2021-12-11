@@ -1,0 +1,13 @@
+2021-11-18T01:21:16+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function do_action(), 0 passed in F:\training-cms\wp-content\themes\storefront\header.php on line 48 and exactly 1 expected in F:\training-cms\wp-includes\plugin.php:435
+Stack trace:
+#0 F:\training-cms\wp-content\themes\storefront\header.php(48): do_action()
+#1 F:\training-cms\wp-includes\template.php(770): require_once('F:\\training-cms...')
+#2 F:\training-cms\wp-includes\template.php(716): load_template('F:\\training-cms...', true, Array)
+#3 F:\training-cms\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 F:\training-cms\wp-content\plugins\woocommerce\templates\archive-product.php(20): get_header('shop')
+#5 F:\training-cms\wp-includes\template-loader.php(106): include('F:\\training-cms...')
+#6 F:\training-cms\wp-blog-header.php(19): require_once('F:\\training-cms...')
+#7 F:\training-cms\index.php(17): require('F:\\training-cms...')
+#8 {main}
+  thrown in F:\training-cms\wp-includes\plugin.php on line 435
+

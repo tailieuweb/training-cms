@@ -1,0 +1,115 @@
+/**
+ * StoreCustomizer Customizer Tour CSS
+ */
+.wcz-tour-wrap {
+    font-size: 11px;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+.wcz-tour-wrap > a {
+    color: #b9b9b9;
+    text-decoration: none;
+}
+.wcz-tour-wrap > a:hover {
+    color: #8a8a8a;
+    text-decoration: underline;
+}
+.wcz-tour-btn {
+    background-color: #f5f5f5;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+    width: fit-content;
+    margin: 10px auto 20px;
+    padding: 5px 12px;
+    font-size: 12px;
+    text-align: center;
+    color: #585858;
+    cursor: pointer;
+
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.wcz-tour-btn:hover,
+.wcz-tour-btn.wcz-tour-on {
+    background-color: #68a5ea;
+    box-shadow: 0 0 0 1px #1392d0, 0 0 6px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+}
+
+.wcz-tour-block {
+    background-color: #565656;
+    border-radius: 6px;
+    box-shadow: inset 0 0 0 1px #060606, 0 0 8px rgba(0, 0, 0, 0.3);
+    width: 380px;
+    position: fixed;
+    left: 320px;
+    top: 98px;
+    z-index: 999;;
+    color: #FFF;
+    margin: 0;
+    padding: 20px;
+    display: none;
+    opacity: 0;
+
+    -webkit-transition: all 0.3s ease 0.1s;
+    -moz-transition: all 0.3s ease 0.1s;
+    -ms-transition: all 0.3s ease 0.1s;
+    -o-transition: all 0.3s ease 0.1s;
+    transition: all 0.3s ease 0.1s;
+}
+.wcz-tour-block::before {
+    display: block;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid #060606;
+    position: absolute;
+    top: 45px;
+    left: -12px;
+
+    -webkit-transition: top 0.3s ease 0.1s;
+    -moz-transition: top 0.3s ease 0.1s;
+    -ms-transition: top 0.3s ease 0.1s;
+    -o-transition: top 0.3s ease 0.1s;
+    transition: top 0.3s ease 0.1s;
+}
+.wp-full-overlay.wcz-show-tour .wcz-tour-block {
+    display: block;
+    opacity: 1;
+}
+.wcz-tour-block h3 {
+    margin: 0 0 12px;
+    padding: 0;
+    font-size: 16px;
+    color: #a2d2ff;
+}
+
+.wcz-tour-nav {
+    display: flex;
+    font-size: 11px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 12px 0 0;
+}
+.wcz-tour-nav a {
+    display: inline-block;
+    color: #999;
+    text-decoration: none;
+    padding: 4px;
+    cursor: pointer;
+}
+.wcz-tour-prev {
+    flex: 1;
+}
+.wcz-tour-next {
+    flex: 1;
+    text-align: right;
+}
+.wcz-tour-nav.wcz-tour-start .wcz-tour-prev,
+.wcz-tour-nav.wcz-tour-end .wcz-tour-next {
+    display: none;
+}

@@ -1,0 +1,570 @@
+/**
+ * StoreCustomizer Customizer CSS
+ */
+#sub-accordion-panel-wcz-panel-settings > li.panel-meta.customize-info.accordion-section .accordion-section-title {
+    background-image: url(../../../../assets/images/woocustomizer-logo.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 60px;
+}
+#sub-accordion-section-wcz-panel-shop .description.customize-section-description {
+    background-color: #e2f1ff;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    margin: 0 -12px 0 -10px;
+    padding: 10px;
+    font-size: 11px;
+    color: #444;
+}
+#customize-control-wcz-login-logout-menu .customize-control-description,
+#customize-control-wcz-add-price-prefix .customize-control-description,
+#customize-control-wcz-add-price-suffix .customize-control-description,
+#customize-control-wcz-wc-notice-text .customize-control-description,
+#customize-control-wcz-handheld-footerbar-on .customize-control-description,
+#customize-control-wcz-heading-wcc-btn .description.customize-control-description,
+#customize-control-wcz-heading-wcc-prod .description.customize-control-description,
+#customize-control-wcz-heading-emptycart .description.customize-control-description,
+#customize-control-wcz-heading-remove-checkout-fields .description.customize-control-description,
+#customize-control-wcz-heading-cart-design .description.customize-control-description,
+#customize-control-wcz-heading-checkout-design .description.customize-control-description,
+#customize-control-wcz-product-instock-txt .customize-control-description,
+#customize-control-wcz-product-instock-deaf-txt .customize-control-description,
+#customize-control-wcz-add-shop-button-txt .customize-control-description,
+#customize-control-wcz-add-shop-button-url .customize-control-description,
+#customize-control-wcz-add-price-prefix-shop .description.customize-control-description,
+#customize-control-wcz-add-price-suffix-shop .description.customize-control-description,
+#customize-control-wcz-heading-direct-checkout .description.customize-control-description,
+#customize-control-wcz-account-dont-note .description.customize-control-description,
+#customize-control-wcz-account-dont-note-two .description.customize-control-description,
+#customize-control-wcz-directcheckout-disabled-redirect .description.customize-control-description,
+#customize-control-wcz-stickcart-free-note .description.customize-control-description,
+#customize-control-wcz-checkout-careful-note .description.customize-control-description,
+#customize-control-wcz-directcheckout-free-note .description.customize-control-description {
+    font-size: 12px;
+    margin: 5px 0 12px;
+    text-transform: none;
+    font-weight: 400;
+    font-style: normal;
+}
+#customize-control-wcz-add-price-prefix .customize-control-description,
+#customize-control-wcz-add-price-suffix .customize-control-description {
+    margin: 0;
+}
+
+#sub-accordion-section-wcz-panel-woocustomizer .customize-control.customize-control-url label.customize-control-title,
+#sub-accordion-section-wcz-panel-shop .customize-control.customize-control-url label.customize-control-title,
+#sub-accordion-section-wcz-panel-product .customize-control.customize-control-url label.customize-control-title,
+#sub-accordion-section-wcz-panel-account .customize-control.customize-control-url label.customize-control-title,
+#sub-accordion-section-wcz-panel-cart .customize-control.customize-control-url label.customize-control-title,
+#sub-accordion-section-wcz-panel-checkout .customize-control.customize-control-url label.customize-control-title,
+#sub-accordion-section-wcz-panel-wcz-catalogue-mode .customize-control.customize-control-url label.customize-control-title,
+#sub-accordion-section-wcz-panel-wcz-menu-cart .customize-control.customize-control-url label.customize-control-title,
+#sub-accordion-section-wcz-panel-wcz-product-quickview .customize-control.customize-control-url label.customize-control-title,
+#sub-accordion-section-wcz-panel-wcz-ajax-search .customize-control.customize-control-url label.customize-control-title,
+#sub-accordion-section-wcz-panel-wcz-handheld-fb .customize-control.customize-control-url label.customize-control-title {
+    background-color: #989898;
+    color: #FFF;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    margin: 30px -12px 12px;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    width: 100%;
+    pointer-events: none;
+}
+#sub-accordion-section-wcz-panel-woocustomizer .customize-control.customize-control-url input[type="url"],
+#sub-accordion-section-wcz-panel-shop .customize-control.customize-control-url input[type="url"],
+#sub-accordion-section-wcz-panel-product .customize-control.customize-control-url input[type="url"],
+#sub-accordion-section-wcz-panel-account .customize-control.customize-control-url input[type="url"],
+#sub-accordion-section-wcz-panel-cart .customize-control.customize-control-url input[type="url"],
+#sub-accordion-section-wcz-panel-checkout .customize-control.customize-control-url input[type="url"],
+#sub-accordion-section-wcz-panel-wcz-catalogue-mode .customize-control.customize-control-url input[type="url"],
+#sub-accordion-section-wcz-panel-wcz-menu-cart .customize-control.customize-control-url input[type="url"],
+#sub-accordion-section-wcz-panel-wcz-product-quickview .customize-control.customize-control-url input[type="url"],
+#sub-accordion-section-wcz-panel-wcz-ajax-search .customize-control.customize-control-url input[type="url"],
+#sub-accordion-section-wcz-panel-wcz-handheld-fb .customize-control.customize-control-url input[type="url"] {
+    display: none !important;
+}
+
+#sub-accordion-section-wcz-panel-product #customize-control-wcz-add-shop-button-url.customize-control-url label.customize-control-title {
+    background: none;
+    box-shadow: none;
+    color: #555d66;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-weight: 600;
+    text-shadow: none;
+}
+#sub-accordion-section-wcz-panel-product #customize-control-wcz-add-shop-button-url.customize-control-url input[type="url"] {
+    display: block !important;
+}
+
+/* ---- Input - [type="range"] styling ---- */
+#sub-accordion-section-wcz-panel-woocustomizer .customize-control.customize-control-range input[type="range"],
+#sub-accordion-section-wcz-panel-shop .customize-control.customize-control-range input[type="range"],
+#sub-accordion-section-wcz-panel-product .customize-control.customize-control-range input[type="range"],
+#sub-accordion-section-wcz-panel-account .customize-control.customize-control-range input[type="range"],
+#sub-accordion-section-wcz-panel-cart .customize-control.customize-control-range input[type="range"],
+#sub-accordion-section-wcz-panel-checkout .customize-control.customize-control-range input[type="range"],
+#sub-accordion-section-wcz-panel-wcz-catalogue-mode .customize-control.customize-control-range input[type="range"],
+#sub-accordion-section-wcz-panel-wcz-menu-cart .customize-control.customize-control-range input[type="range"],
+#sub-accordion-section-wcz-panel-wcz-product-quickview .customize-control.customize-control-range input[type="range"],
+#sub-accordion-section-wcz-panel-wcz-ajax-search .customize-control.customize-control-range input[type="range"] {
+    width: 100%;
+}
+
+#sub-accordion-section-wcz-panel-woocustomizer .customize-control.customize-control-range .description,
+#sub-accordion-section-wcz-panel-shop .customize-control.customize-control-range .description,
+#sub-accordion-section-wcz-panel-product .customize-control.customize-control-range .description,
+#sub-accordion-section-wcz-panel-account .customize-control.customize-control-range .description,
+#sub-accordion-section-wcz-panel-cart .customize-control.customize-control-range .description,
+#sub-accordion-section-wcz-panel-checkout .customize-control.customize-control-range .description,
+#sub-accordion-section-wcz-panel-wcz-catalogue-mode .customize-control.customize-control-range .description,
+#sub-accordion-section-wcz-panel-wcz-menu-cart .customize-control.customize-control-range .description,
+#sub-accordion-section-wcz-panel-wcz-product-quickview .customize-control.customize-control-range .description,
+#sub-accordion-section-wcz-panel-wcz-ajax-search .customize-control.customize-control-range .description {
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #6f6f6f;
+    display: flex;
+}
+#sub-accordion-section-wcz-panel-woocustomizer .customize-control.customize-control-range .description i,
+#sub-accordion-section-wcz-panel-shop .customize-control.customize-control-range .description i,
+#sub-accordion-section-wcz-panel-product .customize-control.customize-control-range .description i,
+#sub-accordion-section-wcz-panel-account .customize-control.customize-control-range .description i,
+#sub-accordion-section-wcz-panel-cart .customize-control.customize-control-range .description i,
+#sub-accordion-section-wcz-panel-checkout .customize-control.customize-control-range .description i,
+#sub-accordion-section-wcz-panel-wcz-catalogue-mode .customize-control.customize-control-range .description i,
+#sub-accordion-section-wcz-panel-wcz-menu-cart .customize-control.customize-control-range .description i,
+#sub-accordion-section-wcz-panel-wcz-product-quickview .customize-control.customize-control-range .description i,
+#sub-accordion-section-wcz-panel-wcz-ajax-search .customize-control.customize-control-range .description i {
+    width: 40px;
+    font-style: normal;
+}
+#sub-accordion-section-wcz-panel-woocustomizer .customize-control.customize-control-range .description i:last-child,
+#sub-accordion-section-wcz-panel-shop .customize-control.customize-control-range .description i:last-child,
+#sub-accordion-section-wcz-panel-product .customize-control.customize-control-range .description i:last-child,
+#sub-accordion-section-wcz-panel-account .customize-control.customize-control-range .description i:last-child,
+#sub-accordion-section-wcz-panel-cart .customize-control.customize-control-range .description i:last-child,
+#sub-accordion-section-wcz-panel-checkout .customize-control.customize-control-range .description i:last-child,
+#sub-accordion-section-wcz-panel-wcz-catalogue-mode .customize-control.customize-control-range .description i:last-child,
+#sub-accordion-section-wcz-panel-wcz-menu-cart .customize-control.customize-control-range .description i:last-child,
+#sub-accordion-section-wcz-panel-wcz-product-quickview .customize-control.customize-control-range .description i:last-child,
+#sub-accordion-section-wcz-panel-wcz-ajax-search .customize-control.customize-control-range .description i:last-child {
+    text-align: right;
+}
+#sub-accordion-section-wcz-panel-woocustomizer .customize-control.customize-control-range .description span,
+#sub-accordion-section-wcz-panel-shop .customize-control.customize-control-range .description span,
+#sub-accordion-section-wcz-panel-product .customize-control.customize-control-range .description span,
+#sub-accordion-section-wcz-panel-account .customize-control.customize-control-range .description span,
+#sub-accordion-section-wcz-panel-cart .customize-control.customize-control-range .description span,
+#sub-accordion-section-wcz-panel-checkout .customize-control.customize-control-range .description span,
+#sub-accordion-section-wcz-panel-wcz-catalogue-mode .customize-control.customize-control-range .description span,
+#sub-accordion-section-wcz-panel-wcz-menu-cart .customize-control.customize-control-range .description span,
+#sub-accordion-section-wcz-panel-wcz-product-quickview .customize-control.customize-control-range .description span,
+#sub-accordion-section-wcz-panel-wcz-ajax-search .customize-control.customize-control-range .description span {
+    flex: 1;
+    text-align: center;
+}
+#customize-control-wcz-shop-pprow .description i,
+#customize-control-wcz-cart-crosssells-ppr .description i,
+#customize-control-wcz-product-imggal-ppr .description i,
+#customize-control-wcz-product-related-ppr .description i,
+#customize-control-wcz-product-recomm-ppr .description i  {
+    width: auto;
+}
+#customize-control-wcz-shop-pprow .description b {
+    margin: 0 28px;
+    color: #cacaca;
+}
+#customize-control-wcz-product-imggal-ppr .description b,
+#customize-control-wcz-product-related-ppr .description b,
+#customize-control-wcz-product-recomm-ppr .description b,
+#customize-control-wcz-cart-crosssells-ppr .description b {
+    margin: 0 38px;
+    color: #cacaca;
+}
+
+/* ---- Dashboard Tabs Settings ---- */
+#customize-control-wcz-admin-product-stats .customize-control-description,
+#customize-control-wcz-wc-notice-banner .customize-control-description,
+#customize-control-wcz-accendpoint-one .customize-control-description,
+#customize-control-wcz-accendpoint-two .customize-control-description,
+#customize-control-wcz-accendpoint-three .customize-control-description,
+#customize-control-wcz-accendpoint-four .customize-control-description,
+#customize-control-wcz-shop-show-stock .customize-control-description,
+#customize-control-wcz-cm-apply-notlogged .customize-control-description,
+#customize-control-wcz-checkout-remove-order-notes .customize-control-description,
+#customize-control-wcz-useracc-remove-adminbar .customize-control-description,
+#customize-control-wcz-useracc-restrict-dashaccess .customize-control-description,
+#customize-control-wcz-cart-disable-cart-quantity .customize-control-description,
+#customize-control-wcz-cart-remove-links .customize-control-description,
+#customize-control-wcz-cart-ajax-update .customize-control-description,
+#customize-control-wcz-cart-return-btn .customize-control-description,
+#customize-control-wcz-cart-bts-btn .customize-control-description,
+#customize-control-wcz-cart-show-discamount .customize-control-description,
+#customize-control-wcz-cart-add-productinfo-atts .customize-control-description,
+#customize-control-wcz-direct-checkout .customize-control-description,
+#customize-control-wcz-checkout-add-img .customize-control-description,
+#customize-control-wcz-checkout-show-discamount .customize-control-description,
+#customize-control-wcz-directcheckout-notice .customize-control-description,
+#customize-control-wcz-edit-stockstatus .customize-control-description,
+#customize-control-wcz-add-quickview-toblocks .customize-control-description {
+    font-style: normal;
+    font-size: 12px;
+    margin: 14px 2px 0 -22px;
+}
+#customize-control-wcz-cm-apply-notlogged .customize-control-description {
+    color: #0090c6;
+}
+
+#sub-accordion-section-wcz-panel-woocustomizer .customize-control.customize-control-radio .customize-control-title,
+#sub-accordion-section-wcz-panel-shop .customize-control.customize-control-radio .customize-control-title,
+#sub-accordion-section-wcz-panel-product .customize-control.customize-control-radio .customize-control-title,
+#sub-accordion-section-wcz-panel-account .customize-control.customize-control-radio .customize-control-title,
+#sub-accordion-section-wcz-panel-cart .customize-control.customize-control-radio .customize-control-title,
+#sub-accordion-section-wcz-panel-checkout .customize-control.customize-control-radio .customize-control-title,
+#sub-accordion-section-wcz-panel-wcz-catalogue-mode .customize-control.customize-control-radio .customize-control-title,
+#sub-accordion-section-wcz-panel-wcz-menu-cart .customize-control.customize-control-radio .customize-control-title,
+#sub-accordion-section-wcz-panel-wcz-product-quickview .customize-control.customize-control-radio .customize-control-title,
+#sub-accordion-section-wcz-panel-wcz-ajax-search .customize-control.customize-control-radio .customize-control-title {
+    display: block;
+}
+#sub-accordion-section-wcz-panel-woocustomizer .customize-control.customize-control-radio .customize-inside-control-row,
+#sub-accordion-section-wcz-panel-shop .customize-control.customize-control-radio .customize-inside-control-row,
+#sub-accordion-section-wcz-panel-product .customize-control.customize-control-radio .customize-inside-control-row,
+#sub-accordion-section-wcz-panel-account .customize-control.customize-control-radio .customize-inside-control-row,
+#sub-accordion-section-wcz-panel-cart .customize-control.customize-control-radio .customize-inside-control-row,
+#sub-accordion-section-wcz-panel-checkout .customize-control.customize-control-radio .customize-inside-control-row,
+#sub-accordion-section-wcz-panel-wcz-catalogue-mode .customize-control.customize-control-radio .customize-inside-control-row,
+#sub-accordion-section-wcz-panel-wcz-menu-cart .customize-control.customize-control-radio .customize-inside-control-row,
+#sub-accordion-section-wcz-panel-wcz-product-quickview .customize-control.customize-control-radio .customize-inside-control-row,
+#sub-accordion-section-wcz-panel-wcz-ajax-search .customize-control.customize-control-radio .customize-inside-control-row {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18), 0 0 3px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    padding: 2px 8px 5px 5px;
+    font-size: 11px;
+    margin: 5px 2px 0 0;
+    height: 18px;
+    text-align: center;
+}
+#sub-accordion-section-wcz-panel-woocustomizer .customize-control.customize-control-radio .customize-inside-control-row input,
+#sub-accordion-section-wcz-panel-shop .customize-control.customize-control-radio .customize-inside-control-row input,
+#sub-accordion-section-wcz-panel-product .customize-control.customize-control-radio .customize-inside-control-row input,
+#sub-accordion-section-wcz-panel-account .customize-control.customize-control-radio .customize-inside-control-row input,
+#sub-accordion-section-wcz-panel-cart .customize-control.customize-control-radio .customize-inside-control-row input,
+#sub-accordion-section-wcz-panel-checkout .customize-control.customize-control-radio .customize-inside-control-row input,
+#sub-accordion-section-wcz-panel-wcz-catalogue-mode .customize-control.customize-control-radio .customize-inside-control-row input,
+#sub-accordion-section-wcz-panel-wcz-menu-cart .customize-control.customize-control-radio .customize-inside-control-row input,
+#sub-accordion-section-wcz-panel-wcz-product-quickview .customize-control.customize-control-radio .customize-inside-control-row input,
+#sub-accordion-section-wcz-panel-wcz-ajax-search .customize-control.customize-control-radio .customize-inside-control-row input {
+    margin: 0;
+}
+#sub-accordion-section-wcz-panel-woocustomizer .customize-control.customize-control-radio .customize-inside-control-row label,
+#sub-accordion-section-wcz-panel-shop .customize-control.customize-control-radio .customize-inside-control-row label,
+#sub-accordion-section-wcz-panel-product .customize-control.customize-control-radio .customize-inside-control-row label,
+#sub-accordion-section-wcz-panel-account .customize-control.customize-control-radio .customize-inside-control-row label,
+#sub-accordion-section-wcz-panel-cart .customize-control.customize-control-radio .customize-inside-control-row label,
+#sub-accordion-section-wcz-panel-checkout .customize-control.customize-control-radio .customize-inside-control-row label,
+#sub-accordion-section-wcz-panel-wcz-catalogue-mode .customize-control.customize-control-radio .customize-inside-control-row label,
+#sub-accordion-section-wcz-panel-wcz-menu-cart .customize-control.customize-control-radio .customize-inside-control-row label,
+#sub-accordion-section-wcz-panel-wcz-product-quickview .customize-control.customize-control-radio .customize-inside-control-row label,
+#sub-accordion-section-wcz-panel-wcz-ajax-search .customize-control.customize-control-radio .customize-inside-control-row label {
+    margin: 0 0 0 3px;
+    position: relative;
+    top: 1px;
+}
+
+/* ---- Radio Input Reset ---- */
+#sub-accordion-section-wcz-panel-woocustomizer .customize-control.customize-control-radio div + span,
+#sub-accordion-section-wcz-panel-shop .customize-control.customize-control-radio div + span,
+#sub-accordion-section-wcz-panel-product .customize-control.customize-control-radio div + span,
+#sub-accordion-section-wcz-panel-account .customize-control.customize-control-radio div + span,
+#sub-accordion-section-wcz-panel-cart .customize-control.customize-control-radio div + span,
+#sub-accordion-section-wcz-panel-checkout .customize-control.customize-control-radio div + span,
+#sub-accordion-section-wcz-panel-wcz-catalogue-mode .customize-control.customize-control-radio div + span,
+#sub-accordion-section-wcz-panel-wcz-menu-cart .customize-control.customize-control-radio div + span,
+#sub-accordion-section-wcz-panel-wcz-product-quickview .customize-control.customize-control-radio div + span,
+#sub-accordion-section-wcz-panel-wcz-ajax-search .customize-control.customize-control-radio div + span {
+    font-size: 13px !important;
+    padding: 3px 5px 4px 5px !important;
+    color: #999;
+    position: relative;
+}
+#sub-accordion-section-wcz-panel-woocustomizer .customize-control.customize-control-radio div + span:before,
+#sub-accordion-section-wcz-panel-shop .customize-control.customize-control-radio div + span:before,
+#sub-accordion-section-wcz-panel-product .customize-control.customize-control-radio div + span:before,
+#sub-accordion-section-wcz-panel-account .customize-control.customize-control-radio div + span:before,
+#sub-accordion-section-wcz-panel-cart .customize-control.customize-control-radio div + span:before,
+#sub-accordion-section-wcz-panel-checkout .customize-control.customize-control-radio div + span:before,
+#sub-accordion-section-wcz-panel-wcz-catalogue-mode .customize-control.customize-control-radio div + span:before,
+#sub-accordion-section-wcz-panel-wcz-menu-cart .customize-control.customize-control-radio div + span:before,
+#sub-accordion-section-wcz-panel-wcz-product-quickview .customize-control.customize-control-radio div + span:before,
+#sub-accordion-section-wcz-panel-wcz-ajax-search .customize-control.customize-control-radio div + span:before {
+    font-family: 'Dashicons';
+    content: "\f531";
+    position: relative;
+}
+#sub-accordion-section-wcz-panel-woocustomizer .customize-control.customize-control-radio div + span input,
+#sub-accordion-section-wcz-panel-shop .customize-control.customize-control-radio div + span input,
+#sub-accordion-section-wcz-panel-product .customize-control.customize-control-radio div + span input,
+#sub-accordion-section-wcz-panel-account .customize-control.customize-control-radio div + span input,
+#sub-accordion-section-wcz-panel-cart .customize-control.customize-control-radio div + span input,
+#sub-accordion-section-wcz-panel-checkout .customize-control.customize-control-radio div + span input,
+#sub-accordion-section-wcz-panel-wcz-catalogue-mode .customize-control.customize-control-radio div + span input,
+#sub-accordion-section-wcz-panel-wcz-menu-cart .customize-control.customize-control-radio div + span input,
+#sub-accordion-section-wcz-panel-wcz-product-quickview .customize-control.customize-control-radio div + span input,
+#sub-accordion-section-wcz-panel-wcz-ajax-search .customize-control.customize-control-radio div + span input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#sub-accordion-section-wcz-panel-woocustomizer .customize-control.customize-control-radio div + span:hover,
+#sub-accordion-section-wcz-panel-shop .customize-control.customize-control-radio div + span:hover,
+#sub-accordion-section-wcz-panel-product .customize-control.customize-control-radio div + span:hover,
+#sub-accordion-section-wcz-panel-account .customize-control.customize-control-radio div + span:hover,
+#sub-accordion-section-wcz-panel-cart .customize-control.customize-control-radio div + span:hover,
+#sub-accordion-section-wcz-panel-checkout .customize-control.customize-control-radio div + span:hover,
+#sub-accordion-section-wcz-panel-wcz-catalogue-mode .customize-control.customize-control-radio div + span:hover,
+#sub-accordion-section-wcz-panel-wcz-menu-cart .customize-control.customize-control-radio div + span:hover,
+#sub-accordion-section-wcz-panel-wcz-product-quickview .customize-control.customize-control-radio div + span:hover,
+#sub-accordion-section-wcz-panel-wcz-ajax-search .customize-control.customize-control-radio div + span:hover {
+    color: #222;
+}
+
+#customize-control-wcz-login-at-custom-url,
+#customize-control-wcz-shop-remove-breadcrumbs,
+#customize-control-wcz-shop-remove-result,
+#customize-control-wcz-remove-product-breadcrumbs,
+#customize-control-wcz-remove-product-slider,
+#customize-control-wcz-remove-product-title,
+#customize-control-wcz-product-imggal-ppr,
+#customize-control-wcz-product-sale-txt,
+#customize-control-wcz-remove-product-tags,
+#customize-control-wcz-remove-related,
+#customize-control-wcz-qv-btn-topmargin,
+#customize-control-wcz-enable-ajax-search,
+#customize-control-wcz-search-thro,
+#customize-control-wcz-as-results-amount,
+#customize-control-wcz-as-and-tags,
+#customize-control-wcz-as-min-chars,
+#customize-control-wcz-handheld-add-titles,
+#customize-control-wcz-handheld-footerbar-on {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
+    padding: 0 0 18px !important;
+    margin-bottom: 15px !important;
+}
+#customize-control-wcz-login-logout-page,
+#customize-control-wcz-login-text,
+#customize-control-wcz-logout-text,
+#customize-control-wcz-wc-notice-title,
+#customize-control-wcz-wc-notice-banner-shop,
+#customize-control-wcz-wc-notice-design,
+#customize-control-wcz-wc-notice-color,
+#customize-control-wcz-btn-fsize,
+#customize-control-wcz-btn-bgcolor,
+#customize-control-wcz-btn-br,
+#customize-control-wcz-btn-padding,
+#customize-control-wcz-sale-fsize,
+#customize-control-wcz-sale-bgcolor,
+#customize-control-wcz-sale-br,
+#customize-control-wcz-sale-padding,
+#customize-control-wcz-shoplist-button-txt-simple,
+#customize-control-wcz-shop-new-badge,
+#customize-control-wcz-shop-edit-btns,
+#customize-control-wcz-btn-hovercolor,
+#customize-control-wcz-wc-edit-sale,
+#customize-control-wcz-wc-edit-shop-title,
+#customize-control-wcz-wc-edit-shop-price,
+#customize-control-wcz-product-edit-btn,
+#customize-control-wcz-cart-proceed-btn-fsize,
+#customize-control-wcz-cart-show-discamount,
+#customize-control-wcz-checkout-placeorder-btn-fsize,
+#customize-control-wcz-checkout-edit-headings,
+#customize-control-wcz-checkout-sechead-fsize,
+#customize-control-wcz-checkout-show-discamount,
+#customize-control-wcz-edit-stockstatus,
+#customize-control-wcz-add-price-suffix,
+#customize-control-wcz-add-shop-button,
+#customize-control-wcz-shop-add-soldout,
+#customize-control-wcz-shop-sale-txt,
+#customize-control-wcz-shop-show-stock,
+#customize-control-wcz-shop-new-badge-pos,
+#customize-control-wcz-product-variable-ddo,
+#customize-control-wcz-wcproduct-addinfo-tab,
+#customize-control-wcz-wcproduct-reviews-tab,
+#customize-control-wcz-wcproduct-related,
+#customize-control-wcz-stickcart-edit,
+#customize-control-wcz-stickcart-title-size,
+#customize-control-wcz-stickcart-bgcolor,
+#customize-control-wcz-stickcart-fullwidth,
+#customize-control-wcz-stickcart-remove-onmobile,
+#customize-control-wcz-wc-edit-product-price,
+#customize-control-wcz-wc-edit-prodbtn-color,
+#customize-control-wcz-add-plus-minus-btns,
+#customize-control-wcz-wc-edit-contshop-btn,
+#customize-control-wcz-set-cart-increment-vals,
+#customize-control-wcz-account-orders-tab,
+#customize-control-wcz-account-downloads-tab,
+#customize-control-wcz-account-address-tab,
+#customize-control-wcz-account-details-tab,
+#customize-control-wcz-account-logout-tab,
+#customize-control-wcz-accdash-remdefault,
+#customize-control-wcz-accendpoint-two,
+#customize-control-wcz-accendpoint-three,
+#customize-control-wcz-accendpoint-four,
+#customize-control-wcz-cm-product-btn,
+#customize-control-wcz-cm-apply-notlogged,
+#customize-control-wcz-cm-edit-selected,
+#customize-control-wcz-cm-applyto-loggedout,
+#customize-control-wcz-cm-shop-price,
+#customize-control-wcz-cm-selected-shop-btn,
+#customize-control-wcz-cm-selected-shop-price,
+#customize-control-wcz-cm-selected-product-btn,
+#customize-control-wcz-cm-selected-product-price,
+#customize-control-wcz-cm-product-price,
+#customize-control-wcz-cm-notice-txt,
+#customize-control-wcz-cm-notice-style,
+#customize-control-wcz-cm-notice-color,
+#customize-control-wcz-cm-notice-fsize,
+#customize-control-wcz-remove-product-sku,
+#customize-control-wcz-add-product-long-desc,
+#customize-control-wcz-add-product-reviews,
+#customize-control-wcz-add-product-addinfo,
+#customize-control-wcz-checkout-edit-ordernotes-txt,
+#customize-control-wcz-checkout-add-img,
+#customize-control-wcz-checkout-add-po-txt,
+#customize-control-wcz-cart-ajax-update,
+#customize-control-wcz-cart-proceed-btn,
+#customize-control-wcz-cart-bts-btn,
+#customize-control-wcz-cart-return-btn,
+#customize-control-wcz-cart-return-btn-color,
+#customize-control-wcz-cart-return-btn-hcolor,
+#customize-control-wcz-cart-return-btn-pad,
+#customize-control-wcz-cart-proceed-btn-hcolor,
+#customize-control-wcz-cart-bts-color,
+#customize-control-wcz-wccart-recomm,
+#customize-control-wcz-wccart-totals,
+#customize-control-wcz-cart-disable-cart-quantity,
+#customize-control-wcz-cart-remove-links,
+#customize-control-wcz-cart-add-product-info,
+#customize-control-wcz-cart-edit-rts,
+#customize-control-wcz-cart-crosssells-ppr,
+#customize-control-wcz-directcheckout-disable-cartout,
+#customize-control-wcz-directcheckout-notice-color,
+#customize-control-wcz-checkout-edit-createaccount,
+#customize-control-wcz-useracc-restrict-dashaccess,
+#customize-control-wcz-mc-only-shop-cart,
+#customize-control-wcz-mc-enable-minicart,
+#customize-control-wcz-mc-icon,
+#customize-control-wcz-mc-align,
+#customize-control-wcz-mc-icon-color,
+#customize-control-wcz-mc-font-color,
+#customize-control-wcz-mc-drop-bg-color,
+#customize-control-wcz-mc-drop-btn-color,
+#customize-control-wcz-qv-apply-catmode,
+#customize-control-wcz-add-quickview-toblocks,
+#customize-control-wcz-quickview-anim,
+#customize-control-wcz-qv-stay-on-shop,
+#customize-control-wcz-qv-remove-excerpt,
+#customize-control-wcz-qv-remove-addtocart,
+#customize-control-wcz-qv-popup-width,
+#customize-control-wcz-qv-center-align,
+#customize-control-wcz-qv-remove-sale,
+#customize-control-wcz-qv-add-btn,
+#customize-control-wcz-qv-edit-overlaycolor,
+#customize-control-wcz-qv-edit-bgcolor,
+#customize-control-wcz-qv-remove-border,
+#customize-control-wcz-search-btn,
+#customize-control-wcz-ajaxsearch-width,
+#customize-control-wcz-ajaxsearch-color,
+#customize-control-wcz-ajaxsearch-bg-color,
+#customize-control-wcz-ajaxsearch-toppad,
+#customize-control-wcz-search-orderby,
+#customize-control-wcz-add-handheld-link-one,
+#customize-control-wcz-add-handheld-link-two,
+#customize-control-wcz-add-handheld-link-three,
+#customize-control-wcz-add-handheld-link-four,
+#customize-control-wcz-handheld-search-placeholder,
+#customize-control-wcz-handheld-remove-btn,
+#customize-control-wcz-handheld-title-size,
+#customize-control-wcz-handheld-bar-bgcolor,
+#customize-control-wcz-handheld-bar-fontcolor,
+#customize-control-wcz-handheld-icon-size {
+	border-top: 1px solid rgba(0, 0, 0, 0.15) !important;
+	padding: 18px 0 0 !important;
+    margin-top: 15px !important;
+}
+#customize-control-wcz-checkout-remove-company,
+#customize-control-wcz-checkout-remove-address,
+#customize-control-wcz-checkout-remove-phone,
+#customize-control-wcz-checkout-remove-order-notes {
+    border-top: 1px solid rgba(0, 0, 0, 0.15) !important;
+    padding: 12px 0 0 !important;
+    margin-top: 2px !important;
+}
+
+#customize-control-wcz-cm-apply-notlogged {
+    margin: 15px 0 -5px !important;
+    padding: 15px 0 0 !important;
+}
+
+#accordion-section-wcz-panel-woocustomizer,
+#accordion-section-wcz-panel-checkout {
+    margin-bottom: 10px !important;
+}
+#accordion-section-wcz-panel-wczextra,
+#accordion-section-wcz-panel-wcz-handheld-fb {
+    margin-top: 10px !important;
+}
+#customize-control-wcz-wc-edit-applyto-blocks {
+    border-top: 1px solid rgba(0, 0, 0, 0.15) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
+    padding: 5px 11px 6px !important;
+    margin: 15px -11px !important;
+    background-color: #f9f9f9;
+}
+#customize-control-wcz-heading-direct-checkout {
+    margin-top: -45px;
+}
+
+/* ---- Fix for Other themes ---- */
+#sub-accordion-section-wcz-panel-woocustomizer .ast-control-tooltip,
+#sub-accordion-section-wcz-panel-shop .ast-control-tooltip,
+#sub-accordion-section-wcz-panel-product .ast-control-tooltip,
+#sub-accordion-section-wcz-panel-account .ast-control-tooltip,
+#sub-accordion-section-wcz-panel-cart .ast-control-tooltip,
+#sub-accordion-section-wcz-panel-checkout .ast-control-tooltip,
+#sub-accordion-section-wcz-panel-wcz-catalogue-mode .ast-control-tooltip,
+#sub-accordion-section-wcz-panel-wcz-menu-cart .ast-control-tooltip,
+#sub-accordion-section-wcz-panel-wcz-product-quickview .ast-control-tooltip,
+#sub-accordion-section-wcz-panel-wcz-ajax-search .ast-control-tooltip {
+    display: none !important;
+}
+/* ---- OceanWP ---- */
+#sub-accordion-section-wcz-panel-woocustomizer .customize-control-checkbox,
+#sub-accordion-section-wcz-panel-shop .customize-control-checkbox,
+#sub-accordion-section-wcz-panel-product .customize-control-checkbox,
+#sub-accordion-section-wcz-panel-account .customize-control-checkbox,
+#sub-accordion-section-wcz-panel-cart .customize-control-checkbox,
+#sub-accordion-section-wcz-panel-checkout .customize-control-checkbox,
+#sub-accordion-section-wcz-panel-wcz-catalogue-mode .customize-control-checkbox,
+#sub-accordion-section-wcz-panel-wcz-menu-cart .customize-control-checkbox,
+#sub-accordion-section-wcz-panel-wcz-product-quickview .customize-control-checkbox,
+#sub-accordion-section-wcz-panel-wcz-ajax-search .customize-control-checkbox {
+    border: 0;
+    margin: 0 0 15px;
+    padding: 0;
+}

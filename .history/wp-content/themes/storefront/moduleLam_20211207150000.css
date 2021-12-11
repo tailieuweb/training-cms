@@ -1,0 +1,8 @@
+#banner{
+    display: block;
+    width: 100%;
+}
+#banner{
+    width: 100%;
+    background-size: cover;
+}
