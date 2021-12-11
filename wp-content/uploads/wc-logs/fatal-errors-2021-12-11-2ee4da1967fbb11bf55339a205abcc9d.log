@@ -1,0 +1,2 @@
+2021-12-11T01:29:07+00:00 CRITICAL Cannot redeclare wp_enqueue_woocommerce_style() (previously declared in D:\ChuyenDe_CMS\Week2\wp-content\plugins\theme-customisations-master\custom\functions.php:16) in D:\ChuyenDe_CMS\Week2\wp-content\themes\storefront\functions.php on line 75
+
