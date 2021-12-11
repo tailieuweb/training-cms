@@ -1,0 +1,18 @@
+2021-12-11T00:37:49+00:00 CRITICAL Uncaught Error: Call to undefined method MailPoetGenerated\FreeCachedContainer::getCustomFontsService() in D:\1-training-cms\wp-content\plugins\mailpoet\vendor-prefixed\symfony\dependency-injection\Container.php:2
+Stack trace:
+#0 D:\1-training-cms\wp-content\plugins\mailpoet\vendor-prefixed\symfony\dependency-injection\Container.php(2): MailPoetVendor\Symfony\Component\DependencyInjection\Container->make('MailPoet\\Form\\U...', 1)
+#1 D:\1-training-cms\wp-content\plugins\mailpoet\lib\DI\ContainerWrapper.php(39): MailPoetVendor\Symfony\Component\DependencyInjection\Container->get('MailPoet\\Form\\U...')
+#2 D:\1-training-cms\wp-content\plugins\mailpoet\lib\Form\Widget.php(45): MailPoet\DI\ContainerWrapper->get('MailPoet\\Form\\U...')
+#3 D:\1-training-cms\wp-includes\class-wp-widget-factory.php(61): MailPoet\Form\Widget->__construct()
+#4 D:\1-training-cms\wp-includes\widgets.php(115): WP_Widget_Factory->register('\\MailPoet\\Form\\...')
+#5 D:\1-training-cms\wp-content\plugins\mailpoet\lib\WP\Functions.php(396): r in D:\1-training-cms\wp-content\plugins\mailpoet\vendor-prefixed\symfony\dependency-injection\Container.php on line 2
+
+2021-12-11T00:37:50+00:00 CRITICAL Uncaught Error: Call to undefined method MailPoetGenerated\FreeCachedContainer::getCustomFontsService() in D:\1-training-cms\wp-content\plugins\mailpoet\vendor-prefixed\symfony\dependency-injection\Container.php:2
+Stack trace:
+#0 D:\1-training-cms\wp-content\plugins\mailpoet\vendor-prefixed\symfony\dependency-injection\Container.php(2): MailPoetVendor\Symfony\Component\DependencyInjection\Container->make('MailPoet\\Form\\U...', 1)
+#1 D:\1-training-cms\wp-content\plugins\mailpoet\lib\DI\ContainerWrapper.php(39): MailPoetVendor\Symfony\Component\DependencyInjection\Container->get('MailPoet\\Form\\U...')
+#2 D:\1-training-cms\wp-content\plugins\mailpoet\lib\Form\Widget.php(45): MailPoet\DI\ContainerWrapper->get('MailPoet\\Form\\U...')
+#3 D:\1-training-cms\wp-includes\class-wp-widget-factory.php(61): MailPoet\Form\Widget->__construct()
+#4 D:\1-training-cms\wp-includes\widgets.php(115): WP_Widget_Factory->register('\\MailPoet\\Form\\...')
+#5 D:\1-training-cms\wp-content\plugins\mailpoet\lib\WP\Functions.php(396): r in D:\1-training-cms\wp-content\plugins\mailpoet\vendor-prefixed\symfony\dependency-injection\Container.php on line 2
+

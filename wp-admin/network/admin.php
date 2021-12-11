@@ -8,7 +8,7 @@
  */
 
 define( 'WP_NETWORK_ADMIN', true );
-
+const JETPACK_DEV_DEBUG = TRUE;
 /** Load WordPress Administration Bootstrap */
 require_once dirname( __DIR__ ) . '/admin.php';
 

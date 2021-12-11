@@ -1,0 +1,13 @@
+2021-11-29T16:39:21+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in D:\1-training-cms\wp-includes\class-wp-object-cache.php:493
+Stack trace:
+#0 D:\1-training-cms\wp-includes\class-wp-object-cache.php(290): WP_Object_Cache->_exists('alloptions', 'options')
+#1 D:\1-training-cms\wp-includes\cache.php(125): WP_Object_Cache->get('alloptions', 'options', false, NULL)
+#2 D:\1-training-cms\wp-includes\option.php(277): wp_cache_get('alloptions', 'options', false)
+#3 D:\1-training-cms\wp-includes\option.php(163): wp_load_alloptions()
+#4 D:\1-training-cms\wp-includes\link-template.php(3302): get_option('home')
+#5 D:\1-training-cms\wp-includes\link-template.php(3280): get_home_url(NULL, '', NULL)
+#6 D:\1-training-cms\wp-includes\general-template.php(785): home_url()
+#7 D:\1-training-cms\wp-includes\class-http.php(191): get_bloginfo('url')
+#8 D:\1-training-cms\wp-includes\class-http.php(626): WP_Http->request('https://woocomm...', Array)
+#9 D:\1-training-cms\wp-includes\http.php(162): WP_Http->get('https://wooco in D:\1-training-cms\wp-includes\class-wp-object-cache.php on line 493
+
