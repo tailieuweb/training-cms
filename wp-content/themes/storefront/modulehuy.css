@@ -1,0 +1,37 @@
+/* HEADER */
+
+.elementor-60 .elementor-element.elementor-element-71d95eb.elementor-column.elementor-element[data-element_type="column"] > .elementor-widget-wrap.elementor-element-populated{
+    display: contents !important;
+}
+#header-logout{
+    margin-left: -30px;
+}
+.elementor-60 .elementor-element.elementor-element-ad8cba1{
+    margin-top: 18px;
+}
+.elementor-60 .elementor-element.elementor-element-71d95eb{
+    margin-top: 31px;
+}
+.elementor-60 .elementor-element.elementor-element-2201331{
+    margin-top: -5px;
+}
+
+/* FOOTER */
+
+.elementor-76 .elementor-element .elementor-heading-title{
+    font-size: 20px;
+
+}
+.elementor-76 .elementor-element.elementor-element-32b582e > .elementor-widget-container{
+    font-size: 14px;
+}
+.hfe-nav-menu__align-left .hfe-nav-menu{
+    font-size: 14px;
+}
+#left-area ul.elementor-icon-list-items, .elementor-edit-area .elementor-element ul.elementor-icon-list-items, .elementor .elementor-element ul.elementor-icon-list-items{
+    font-size: 14px;
+}
+
+.elementor-element.elementor-element-4dfa3c7 > .elementor-column-gap-default{
+    padding: 32px 0;
+}
