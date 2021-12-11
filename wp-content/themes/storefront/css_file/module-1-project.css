@@ -5,6 +5,9 @@
 .site-header{
     padding-top: 0;
 }
+.site-header .col-full{
+    margin-top: -4.2%;
+}
 .storefront-primary-navigation .col-full{
     max-width: 100%;
 }
