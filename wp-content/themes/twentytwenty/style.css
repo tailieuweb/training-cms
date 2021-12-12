@@ -52,11 +52,10 @@ with others.
 
 /*	0. CSS Reset
 /* -------------------------------------------------------------------------- */
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
 
 html,
 body {
-	
 	border: none;
 	margin: 0;
 	padding: 0;
@@ -134,166 +133,6 @@ body {
 	letter-spacing: -0.015em;
 	text-align: left;
 }
-/* Menu */
-input#exampleInputPassword1 {
-    border-radius: 5px;
-    height: 36px;
-}
-.form-group {
-    margin-left: 15px;
-}
-button.btn.btn-outline-secondary {
-    position: absolute;
-	top: 41px;
-    color: black;
-    width: 90px;
-	font-size: 15px;
-    border-radius: 5px;
-    height: 36px;
-    left: 500px;
-}
-button#dropdownMenuButton {
-    background: white;
-    color: black;
-	border: 0;
-}
-ul li a {
-    color: #888A9B !important;
-    text-decoration: none !important;
-}
-svg.svg-inline--fa.fa-user-circle.fa-w-16 {
-    font-size: 25px;
-}
-.icon-account {
-	text-align: center;
-    margin-left: 50px;
-	margin-top: 20px;
-}
-/* categories */
-li.cate-name {
-	line-height: 80px !important;
-	color: #7FB1DB;
-    line-height: 5rem;
-    width: 200px;
-    list-style: none;
-    border-bottom: 0.25px solid gray;
-}
-ul li.cate-name a {
-    text-decoration: none;
-    color: #90BBE0;
-}
-li.cate-name:last-child{
-	border-bottom: 0px solid gray;
-}
-.crossedbg {
-	width: 360px;
-    background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
-    height: 15px;
-}
-.cate {
-
-	padding-left: 20px;
-	padding-bottom: 1px;
-	margin-left: 60px;
-    width: 400px;
-    background: #F3F3F3;
-    height: auto;
-}
-.ul-cate {
-    width: 360px;
-    background: white;
-}
-li.cate-name::before {
-	margin-right: 15px;
-	color: #F5CE31;
-    content: "\f111";
-    font: normal normal normal 14px/1 FontAwesome;
-    top: 3px;
-    left: -18px;
-    width: 5px;
-    padding-right: 10px;
-    height: 5px;
-}
-/* Footer */
-.widget li a {
-    position: relative;
-    font-size: 10px;
-}
-ul.wp-block-latest-posts__list.wp-block-latest-posts li a {
-    color: white !important;
-}
-.footer-nav-widgets-wrapper.header-footer-group {
-    background: #007b5e !important;
-}
-h2.border-rg {
-    color: white;
-}
-@media (min-width: 700px){
-	.footer-widgets .widget {
-    border-top: none;
-    margin-top: 0rem;
-    padding-top: 0;
-	}
-}
-
-.wp-block-group__inner-container li a {
-    text-decoration: none !important;
-}
-
-.wp-block-group__inner-container li:hover {
-    margin-left: 5px;
-	transition: .5s all ease;
-}
-
-/* .wp-block-group__inner-container li:hover a{
-    color: #e51000;
-} */
-
-
-.wp-block-group__inner-container li a:nth-child(1):before {
-    content: "\f101";
-    font: normal normal normal 14px/1 FontAwesome;
-    top: 3px;
-    left: -18px;
-    width: 5px;
-    padding-right: 10px;
-    height: 5px;
-}
-
-.footer-widgets.column-one.grid-item {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-.footer-widgets.column-two.grid-item {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-.widget.widget_block {
-    padding-right: 20px;
-}
-.wp-block-group__inner-container {
-    font-size: 10px !important;
-}
-.wp-block-group__inner-container h2 {
-    font-size: 25px;
-}
-/* Very busy */
-h2.border-rg {
-    border-left: 5px solid white;
-    padding-left: 5px;
-}
-ul.wp-block-archives-list.wp-block-archives li a {
-    color: white;
-}
-ul.wp-block-categories-list.wp-block-categories li a {
-    color: white;
-}
-
-footer.wp-block-latest-comments__comment-meta a{
-    color: white;
-}
-
-
 
 @supports ( font-variation-settings: normal ) {
 
@@ -1152,8 +991,7 @@ section {
 .section-inner {
 	margin-left: auto;
 	margin-right: auto;
-	/* Trang sua */
-	/* max-width: 120rem; */
+	max-width: 120rem;
 	width: calc(100% - 4rem);
 }
 
@@ -3162,6 +3000,7 @@ h2.entry-title {
 	margin-top: 0.15em;
 }
 
+
 /* Block: Shared Media Styles ---------------- */
 
 .wp-block-embed figcaption,
@@ -4537,7 +4376,7 @@ div.comment:first-of-type {
 
 .footer-nav-widgets-wrapper,
 #site-footer {
-	/* background-color: #007b5e; */
+	background-color: #fff;
 	border-color: #dedfdf;
 	border-style: solid;
 	border-width: 0;
@@ -5755,7 +5594,7 @@ a.to-the-top > * {
 	/* FOOTER WIDGETS */
 
 	.footer-widgets-outer-wrapper {
-		/* padding: 8rem 0; */
+		padding: 8rem 0;
 	}
 
 	.footer-widgets-wrapper {
@@ -5776,6 +5615,7 @@ a.to-the-top > * {
 
 	.footer-widgets .widget {
 		border-top: none;
+		margin-top: 5rem;
 		padding-top: 0;
 	}
 
@@ -6636,86 +6476,4 @@ a.to-the-top > * {
 	.wp-block-pullquote.is-style-solid-color.alignright::before {
 		top: 0;
 	}
-}
-
-/* footer update */
-/* Footer */
-
-section {
-    padding: 60px 0;
-}
-.wp-block-group__inner-container h2{
-	color: white;
-	border-left: 4px solid;
-    padding-left: 10px;
-}
-footer.wp-block-latest-comments__comment-meta {
-    color: white;
-}
-section .section-title {
-    text-align: center;
-    color: #007b5e;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-}
-#site-footer {
-    background: #007b5e !important;
-}
-#site-footer .text{
-	text-align: center;
-	color: #fff;
-}
-#site-footer .text a{
-	color: #fff;
-}
-#site-footer ul.social li{
-	padding: 3px 0;
-}
-#site-footer ul.social li a i {
-    margin-right: 5px;
-	font-size:25px;
-	-webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
-}
-#site-footer ul.social li:hover a i {
-	font-size:30px;
-	margin-top:-10px;
-}
-#site-footer ul.social li a,
-#site-footer ul.quick-links li a{
-	color:#ffffff;
-}
-#site-footer ul.social li a:hover{
-	color:#eeeeee;
-}
-#site-footer ul.quick-links li{
-	padding: 3px 0;
-	-webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
-}
-#site-footer ul.quick-links li:hover{
-	padding: 3px 0;
-	margin-left:5px;
-	font-weight:700;
-}
-#site-footer ul.quick-links li a i{
-	margin-right: 5px;
-}
-#site-footer ul.quick-links li:hover a i {
-    font-weight: 700;
-}
-#site-footer .list-unstyled{
-	text-align: center;
-	list-style: none;
-}
-
-@media (max-width:767px){
-	#site-footer h5 {
-    padding-left: 0;
-    border-left: transparent;
-    padding-bottom: 0px;
-    margin-bottom: 10px;
-}
 }

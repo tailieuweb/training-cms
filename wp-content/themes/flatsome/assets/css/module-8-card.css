@@ -1,0 +1,117 @@
+.body{
+    background: red !important;
+}
+th.product-delete {
+    padding: 10px;
+}
+tr.bg-menu-product {
+    background: #e1e1e1;
+}
+.cart-wrapper table thead tr th {
+    border-bottom: 3px solid #79a206;
+    padding-left: 20px;
+    text-align: center;
+}
+.shop_table tbody tr td {
+    text-align: center;
+}
+th.product-subtotal {
+    padding-right: 30px !important;
+}
+td.product-remove {
+    width: 20px;
+    padding: 30px !important;
+}
+td.product-remove ,td.actions.clear
+{
+    border-left: 1px solid #ececec;
+}
+td.product-thumbnail {
+    min-width: 60px !important;
+    max-width: 200px !important;
+    width: 170px !important;
+    padding: 0 53px;
+}
+td.product-name,td.product-price,td.product-quantity,td.product-remove,td.product-subtotal,td.actions.clear,td.product-thumbnail  {
+    border-right: 1px solid #ececec;
+}
+td.product-total, .shop_table tfoot tr td, .cart_totals tbody tr td, .shop_table thead tr th:last-of-type, .shop_table tr td:last-of-type {
+    text-align: center !important;
+}
+button.button.primary.mt-0.pull-left.small {
+    float: right;
+}
+td.actions.clear {
+    border-bottom: 1px solid #ececec;
+}
+
+button.button.primary.mt-0.pull-left.small {
+    background: #222222;
+}
+.button.disabled, button.disabled, .button[disabled], button[disabled] {
+    opacity: 1 !important;
+}
+button.button.primary.mt-0.pull-left.small:hover{
+    background: #79a206;
+}
+h3.widget-title{
+    text-transform: uppercase;
+    background: black ; 
+    color: #fff;
+    padding: 5px 15px ;
+}
+input#coupon_code {
+    margin-right: 25px;
+    width: 180px;
+}
+input.is-form.expand {
+    width: 120px !important;
+}
+.coupon {
+    margin-top: -10px;
+    padding: 25px;
+    border: 1px solid #ececec;
+}
+.mb-coupon{
+    margin-bottom: 25px;
+}
+i.far.fa-trash-alt {
+    font-size: 18px;
+}
+h3.cart-total-custom {
+    text-transform: uppercase;
+    color: #fff;
+    background: black;
+    padding: 5px 15px;
+}
+.cart_totals {
+    padding: 0 25px;
+}
+.border-custom {
+    border: 0;
+}
+.wc-proceed-to-checkout {
+    width: 190px;
+    font-size: 13px;
+    float: right;
+}
+.secondary, .checkout-button, .button.checkout, .button.alt {
+    background-color: #79a206 !important;
+}
+td.border-custom.align-right-custom {
+    float: right;
+}
+td.border-custom {
+    float: right;
+}
+.col-md-6.border-cart {
+    padding: 0;
+    border: 1px solid #ececec;
+}
+.row.row-large {
+    max-width: 1300px !important; 
+}
+
+.woocommerce .row .col-md-6 {
+    max-width: 49.5% !important;
+}

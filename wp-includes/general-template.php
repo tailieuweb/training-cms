@@ -3123,13 +3123,13 @@ function feed_links_extra( $args = array() ) {
 	$args = wp_parse_args( $args, $defaults );
 
 	if ( is_singular() ) {
-		$id   = 0;
-		$post = get_post( $id );
+		// $id   = 0;
+		// $post = get_post( $id );
 
-		if ( comments_open() || pings_open() || $post->comment_count > 0 ) {
-			$title = sprintf( $args['singletitle'], get_bloginfo( 'name' ), $args['separator'], the_title_attribute( array( 'echo' => false ) ) );
-			$href  = get_post_comments_feed_link( $post->ID );
-		}
+		// if ( comments_open() || pings_open() || $post->comment_count > 0 ) {
+		// 	$title = sprintf( $args['singletitle'], get_bloginfo( 'name' ), $args['separator'], the_title_attribute( array( 'echo' => false ) ) );
+		// 	$href  = get_post_comments_feed_link( $post->ID );
+		// }
 	} elseif ( is_post_type_archive() ) {
 		$post_type = get_query_var( 'post_type' );
 		if ( is_array( $post_type ) ) {

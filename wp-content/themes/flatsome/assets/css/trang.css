@@ -1,0 +1,177 @@
+/* header */
+.header-inner #logo {
+    margin-left: 0px;
+}
+
+.header-inner .icon-shopping-cart {
+    font-size: 17px !important;
+    color: #000;
+}
+
+.header-inner .icon-search {
+    color: #000;
+    margin-right: 15px !important;
+}
+
+.header-inner .icon-user {
+    color: #000;
+}
+
+.header-inner .nav>li.header-divider {
+    border: none;
+}
+
+.header-inner .flex-grow .header-nav-main li {
+    margin: 0 25px !important;
+}
+
+.header-inner .header-nav-main li a {
+    color: #000 !important;
+}
+
+.header-main {
+    background-image: url('/wp-content/themes/flatsome/assets/img/2021-12-04_14-37-37.png');
+    background-size: cover;
+}
+
+/* selling cart */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://pro.fontawesome.com/releases/v5.15.0/css/all.css');
+
+.footer-selling .wp-block-group__inner-container h2 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding: 16px 25px 22px 25px;
+    position: relative;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background: #88be4c;
+    ;
+    margin-top: 0px;
+    width: 184px;
+    height: 50px;
+    left: -10px;
+}
+
+.footer-selling .wp-block-group__inner-container h2::after {
+    content: "";
+    height: 1px;
+    width: 1px;
+    border-style: solid;
+    border-width: 5px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    border-color: #6a9c32 #6a9c32 transparent transparent;
+}
+
+.footer-selling .wp-block-group .wp-block-group__inner-container {
+    border-bottom: 1px #e5e5e5 solid;
+}
+
+.footer-selling .wc-block-grid__product-image {
+    border: 2px #eaeaea solid;
+}
+
+.footer-selling .wc-block-grid__product-rating .star-rating span:before, .wc-block-grid__product-rating .wc-block-grid__product-rating__stars span:before {
+    content: "\e005\e005\e005\e005\e005" !important;
+    color: yellow !important;
+}
+
+.footer-selling .wc-block-grid__product-title {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-weight: bold !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* .footer-selling .wc-block-grid__product-add-to-cart::before {
+    content: "\f07a";
+    font-family: "Font Awesome 5 Pro";
+    background: #88be4c;
+    color: #88be4c;
+    font-size: 16px;
+    padding: 6px 15.9px;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-right: 17px;
+    margin-top: 1px;
+} */
+
+/* .footer-selling .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link {
+    padding: 0.9em 4em;
+    border-radius: 0 !important;
+    background-color: transparent;
+    color: black;
+    padding-left: 8px;
+} */
+
+.footer-selling .wp-block-button.wc-block-grid__product-add-to-cart {
+    border: 2px #88be4c solid !important;
+    width: 72%;
+    display: flex;
+    align-items: center;
+    height: 38px;
+}
+
+.footer-selling .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link.added:after {
+    content: none !important;
+}
+
+.list_selling {
+    border-top: 1px #e5e5e5 solid;
+    border-right: 1px #e5e5e5 solid;
+}
+
+.list_selling ul.wc-block-grid__products {
+    margin-left: 8px;
+    margin-top: 10px;
+}
+
+.list_selling .wc-block-grid.wp-block-product-best-sellers.wc-block-product-best-sellers.has-4-columns {
+    border-left: 1px #e5e5e5 solid;
+}
+
+.list_selling .wc-block-grid__product {
+    margin-top: 5px;
+}
+
+.footer-selling .wc-block-grid__product-onsale {
+    display: none;
+}
+
+
+
+.footer-selling .wc-block-grid__product-add-to-cart::before {
+    content: "\f07a";
+    font-family: "Font Awesome 5 Pro";
+    background: #88be4c;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 14px 3px 11px;
+    /* margin-right: 2px; */
+}
+
+.footer-selling .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link {
+    border-radius: 0 !important;
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 36px;
+}
+.footer-selling .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link:hover{
+    -webkit-transition: all 0.4s cubic-bezier(0.8, 0, 0, 1);
+    -o-transition: all 0.4s cubic-bezier(0.8, 0, 0, 1);
+    transition: all 0.4s cubic-bezier(0.8, 0, 0, 1);
+    box-shadow: inset 0 -45px 0 0 #ed6663;
+    color: #fff;
+}

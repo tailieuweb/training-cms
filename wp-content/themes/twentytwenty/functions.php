@@ -33,7 +33,6 @@
  *
  * @since Twenty Twenty 1.0
  */
-
 function twentytwenty_theme_support() {
 
 	// Add default posts and comments RSS feed links to head.

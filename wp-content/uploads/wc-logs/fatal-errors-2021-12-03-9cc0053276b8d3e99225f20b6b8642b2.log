@@ -1,0 +1,33 @@
+2021-12-03T05:47:32+00:00 CRITICAL Uncaught Error: Call to undefined function get_primary_category() in C:\wamp64\www\CMS-project-E\wp-content\themes\flatsome\inc\shortcodes\blog_posts.php:308
+Stack trace:
+#0 C:\wamp64\www\CMS-project-E\wp-includes\shortcodes.php(356): shortcode_latest_from_blog(Array, '', 'blog_posts')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\wamp64\www\CMS-project-E\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(col|ro...', 'do_shortcode_ta...', '[ux_slider]\n[ux...')
+#3 C:\wamp64\www\CMS-project-E\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('[ux_slider]\n[ux...')
+#4 C:\wamp64\www\CMS-project-E\wp-includes\class-wp-hook.php(303): flatsome_contentfix('[ux_slider]\n[ux...')
+#5 C:\wamp64\www\CMS-project-E\wp-includes\plugin.php(189): WP_Hook->apply_filters('[ux_slider]\n[ux...', Array)
+#6 C:\wamp64\www\CMS-project-E\wp-includes\post-template.php(253): apply_filters('the_content', '[ux_slider]\r\n\r\n...')
+#7 C:\wamp64\www\CMS-project-E\wp-content\themes\flatso in C:\wamp64\www\CMS-project-E\wp-content\themes\flatsome\inc\shortcodes\blog_posts.php on line 308
+
+2021-12-03T05:47:41+00:00 CRITICAL Uncaught Error: Call to undefined function get_primary_category() in C:\wamp64\www\CMS-project-E\wp-content\themes\flatsome\inc\shortcodes\blog_posts.php:308
+Stack trace:
+#0 C:\wamp64\www\CMS-project-E\wp-includes\shortcodes.php(356): shortcode_latest_from_blog(Array, '', 'blog_posts')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\wamp64\www\CMS-project-E\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(col|ro...', 'do_shortcode_ta...', '[ux_slider]\n[ux...')
+#3 C:\wamp64\www\CMS-project-E\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('[ux_slider]\n[ux...')
+#4 C:\wamp64\www\CMS-project-E\wp-includes\class-wp-hook.php(303): flatsome_contentfix('[ux_slider]\n[ux...')
+#5 C:\wamp64\www\CMS-project-E\wp-includes\plugin.php(189): WP_Hook->apply_filters('[ux_slider]\n[ux...', Array)
+#6 C:\wamp64\www\CMS-project-E\wp-includes\post-template.php(253): apply_filters('the_content', '[ux_slider]\r\n\r\n...')
+#7 C:\wamp64\www\CMS-project-E\wp-content\themes\flatso in C:\wamp64\www\CMS-project-E\wp-content\themes\flatsome\inc\shortcodes\blog_posts.php on line 308
+
+2021-12-03T05:47:44+00:00 CRITICAL Uncaught Error: Call to undefined function get_primary_category() in C:\wamp64\www\CMS-project-E\wp-content\themes\flatsome\inc\shortcodes\blog_posts.php:308
+Stack trace:
+#0 C:\wamp64\www\CMS-project-E\wp-includes\shortcodes.php(356): shortcode_latest_from_blog(Array, '', 'blog_posts')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\wamp64\www\CMS-project-E\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(col|ro...', 'do_shortcode_ta...', '[ux_slider]\n[ux...')
+#3 C:\wamp64\www\CMS-project-E\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('[ux_slider]\n[ux...')
+#4 C:\wamp64\www\CMS-project-E\wp-includes\class-wp-hook.php(303): flatsome_contentfix('[ux_slider]\n[ux...')
+#5 C:\wamp64\www\CMS-project-E\wp-includes\plugin.php(189): WP_Hook->apply_filters('[ux_slider]\n[ux...', Array)
+#6 C:\wamp64\www\CMS-project-E\wp-includes\post-template.php(253): apply_filters('the_content', '[ux_slider]\r\n\r\n...')
+#7 C:\wamp64\www\CMS-project-E\wp-content\themes\flatso in C:\wamp64\www\CMS-project-E\wp-content\themes\flatsome\inc\shortcodes\blog_posts.php on line 308
+

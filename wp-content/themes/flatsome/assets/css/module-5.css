@@ -1,0 +1,86 @@
+/* Categories */
+.widget_product_categories{
+    box-shadow: 0 5px 0 rgb(200 200 200 / 20%);
+    padding-bottom: 30px;
+}
+.widget_product_categories .shop-sidebar{
+    position: absolute;
+    top: -10px;
+    font-weight: bold;
+    background: #ed6663;
+    padding: 12px 25px 10px 25px;
+    margin-left: -10px;
+    color: white;
+    font-size: 16px;
+
+}
+.widget_product_categories .shop-sidebar::before{
+    padding-right: 5px;
+    content: '\f0c9';
+    font-family: 'Font Awesome 5 Pro';
+}
+.widget_product_categories .shop-sidebar::after{
+    content: "";
+    height: 1px;
+    width: 1px;
+    border-style: solid;
+    border-width: 5px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    border-color: #d95451 #d95451 transparent transparent;
+}
+
+.toggle .icon-angle-down{
+    background-image: url(http://themesground.com/flavours/version1/images/plus-blue.png);
+    top: 12px;
+    right: 18px;
+    position: absolute;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    padding: 2px;
+}
+.product-categories > .cat-item a{
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 15px 18px;
+}
+.product-categories > .cat-item:last-child{
+    border-bottom: 1px solid #ececec;
+}
+#main .category-page-row .hide-for-medium{
+    padding-left: 0px !important;
+}
+.children{
+    border-left: none !important;
+    padding-left: 18px !important;
+}
+.children li a{
+    border-bottom: 0 solid #EAEAEA;
+    font-size: 11px !important;
+    margin: 0 !important;
+    padding: 3px 3px !important;
+    text-decoration: none;
+    padding-left: 0px !important;
+    color: #666 !important;
+}
+.children li a::before{
+    content: '\f10c';
+    font-family: FontAwesome;
+    font-size: 5px;
+    padding-right: 6px;
+    color: #999;
+    vertical-align: middle;
+}
+.icon-angle-down:before{
+    content: '' !important;
+}
+.widget .is-divider {
+    margin-top: 0.66em;
+    padding-bottom: 20px;
+}
+/* module 6    */

@@ -1,0 +1,73 @@
+.color-date{
+    background: #e05c0b !important;
+    color : #ffff !important;
+    border: 2px solid #e05c0b !important;
+}
+.badge.top {
+    width: 62px;
+    left: 30px !important;
+    height: 67px;
+}
+.color-date{
+    font-size: 20px;
+    border-radius: 4px;
+}
+.text-center {
+    text-align: left !important;
+}
+.row.large-columns-4.medium-columns-3.small-columns-1.slider.row-slider.slider-nav-reveal.slider-nav-push.flickity-enabled {
+    width: 1225px !important;
+}
+.readmore {
+    transition: .6s;
+    margin-top: 8px;
+    float: left;
+    font-weight: bold;
+    background: #ffd800;
+    border-radius: 4px;
+    text-align: left;
+    padding: 4px 12px 4px 12px !important;
+}
+.box-shadow-readmore {
+    box-shadow: inset 0 0 0 1px #e0e0e0;
+    height: 150px !important;
+    margin-top: -2px;
+    padding: 15px;
+}
+.box-text.text-center {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 27px;
+}
+.post-categories li{
+    margin-bottom: -15px;
+    list-style: none;
+    padding: 0;
+}
+.post-categories li a {
+    font-size: 1.15rem;
+    color: #e05c0b;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: -20px;
+}
+.readmore a {
+    color: #000;
+    text-decoration: none;
+}
+.image-tools.grid-tools.text-center.hide-for-small.bottom.hover-slide-in.show-on-hover {
+    text-align: center !important;
+}
+.readmore:hover {
+    background: black;
+}
+.readmore:hover a {
+    transition: .6s;
+    color: #fff;
+}
+.box-shadow-readmore {
+    box-shadow: inset 0 0 0 1px #e0e0e0;
+    height: 165px;
+    margin-top: -2px;
+    padding: 15px;
+}

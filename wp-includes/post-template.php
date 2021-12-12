@@ -1486,7 +1486,7 @@ function wp_page_menu( $args = array() ) {
 		$attrs .= ' class="' . esc_attr( $args['menu_class'] ) . '"';
 	}
 
-	$menu = "<{$container}{$attrs}>" . $menu . "</{$container}>{$n}";
+	// $menu = "<{$container}{$attrs}>" . $menu . "</{$container}>{$n}";
 
 	/**
 	 * Filters the HTML output of a page-based menu.
