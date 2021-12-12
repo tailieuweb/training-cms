@@ -1,0 +1,152 @@
+/* VC Editors */
+.vc_navbar { background: #32373c; min-height: 3rem }
+#wpb_visual_composer .vc_navbar { border-bottom: none }
+.vc_ui-panel-header-container { background: #32373c; padding: 12px 18px; border-radius: 4px 4px 0 0 }
+.vc_navbar .vc_navbar-brand { display: none }
+.vc_navbar .vc_navbar-nav > li { height: 3rem; border-right: 1px solid #3f444a }
+.vc_navbar .vc_navbar-nav > .vc_pull-right { border-right: none; border-left: 1px solid #3f444a }
+.vc_navbar .vc_icon-btn { width: 3rem; height: 3rem; box-shadow: none; padding: 1.5rem; font-size: 18px }
+.vc_navbar .vc_pull-right .vc_icon-btn,
+.vc_navbar .vc_dropdown { font-size: 1rem }
+.vc_navbar .vc_pull-right .vc_back-button { font-size: 1.375rem }
+.vc_navbar .vc_icon-btn:not([disabled]):hover,
+.vc_navbar .vc_dropdown:hover .vc_dropdown-toggle,
+.vc_navbar .vc_dropdown .vc_dropdown-list a.active,
+.vc_navbar .vc_dropdown .vc_dropdown-list a:hover { background-color: #3f444a }
+.vc_navbar .vc_dropdown .vc_dropdown-toggle { width: 3.75rem; height: 3rem; line-height: 1; padding: 1rem 1.0625rem; text-align: center }
+.vc_navbar .vc_dropdown .vc_dropdown-list { top: 3rem; padding-top: 0; background: #32373c }
+.vc_navbar .vc_dropdown .vc_dropdown-list a { width: 3.75rem; height: 2.25rem }
+.vc_btn-primary, a.vc_btn-primary, button.vc_btn-primary, .vc_ui-button.vc_ui-button-info { background-color: #08c }
+.vc_navbar .vc_btn-default, .vc_navbar .vc_btn-grey { background: none; color: #fff !important }
+.vc_navbar .vc_btn-default:hover, .vc_navbar .vc_btn-default:focus, .vc_navbar .vc_btn-grey:hover, .vc_navbar .vc_btn-grey:focus { background-color: #3f444a; color: #fff !important; border: none }
+.vc_navbar .vc_navbar-btn { font-family: 'Poppins'; margin: 0; height: 100%; border-radius: 0; outline: none; font-weight: 600; text-transform: uppercase; letter-spacing: -.025em; padding: .75rem 1.75rem; float: left; line-height: 1.5rem; border: none }
+.vc_navbar .vc_navbar-btn:hover, .vc_navbar .vc_navbar-btn:focus { border: none }
+.vc_navbar .vc_navbar-btn:after { font-family: "Font Awesome 5 Free"; font-weight: 900; font-size: 1.1666em; margin-left: .6em; position: relative; top: 1px; line-height: 1 }
+.vc_ui-font-open-sans { font-family: "Poppins", "Open Sans", Helvetica, sans-serif!important }
+.vc_navbar .vc_save-backend .vc_control-save { margin: 0 }
+#vc_button-update:after, .vc_navbar .vc_save-backend .vc_control-save:after { content: "\f054" }
+.vc_btn-backend-editor:after { content: "\f2d0"; font-weight: 400 !important }
+.vc_btn-save-draft:after { content: "\f0c7" }
+.vc_navbar .vc_btn-save-draft { border-left: 1px solid #3f444a !important }
+.vc_message { top: 3rem }
+.vc_add-element-container .wpb-content-layouts a { font-weight: 500 }
+.composer-switch .logo-icon { display: none }
+.composer-inner-switch { border-radius: 4px; overflow: hidden }
+.composer-switch a, .composer-switch a:visited { background: #08c; font-family: 'Poppins', 'Open Sans', sans-serif; font-weight: 600; letter-spacing: -.025em; text-transform: uppercase; font-size: 12px; padding: .5rem 1.25rem; border-radius: 0 !important }
+.composer-switch a.wpb_switch-to-front-composer, .composer-switch a:visited.wpb_switch-to-front-composer { background: #08c }
+.composer-switch a.wpb_switch-to-composer:hover, .composer-switch a:visited.wpb_switch-to-composer:hover,
+.composer-switch a.wpb_switch-to-front-composer:hover, .composer-switch a:visited.wpb_switch-to-front-composer:hover { background: #00a3df }
+
+.vc_ui-panel-window-inner { background: none }
+.vc_ui-panel-header-header > .vc_ui-panel-header-actions { margin-bottom: 12px }
+.vc_ui-panel-header .vc_ui-panel-header-heading { font-size: .8125rem; font-weight: 700; text-transform: uppercase; letter-spacing: -.05em; margin: 0 1rem 12px 2px; line-height: 1.5; padding: 7px 0; }
+#vc_ui-panel-add-element .vc_ui-panel-header .vc_ui-panel-header-heading { margin-left: 1rem; }
+.vc_ui-search-box { width: 17.5rem }
+.vc_ui-search-box input[type=search] { height: 38px; border-radius: 20px; font-weight: 300; box-shadow: none; padding: 8px 32px 8px 16px; }
+.vc_ui-search-box .vc_ui-search-box-input label { left: auto; right: 10px; font-size: 18px; line-height: 26px; color: #777; }
+.vc_ui-panel-header .vc_ui-panel-header-content { background-color: #08c; margin-left: -18px; margin-right: -18px; padding-left: 4px; padding-right: 4px }
+#vc_ui-panel-add-element .vc_ui-panel-header .vc_ui-panel-header-content { padding-left: 18px; padding-right: 18px; }
+.vc_general.vc_ui-tabs-line .vc_ui-tabs-line-trigger { font-size: .8125rem; font-weight: 600; letter-spacing: -.05em; line-height: 1rem; padding: 1rem; border-radius: 0 }
+.vc_general.vc_ui-tabs-line>.vc_active>.vc_ui-tabs-line-trigger { color: #fff; background: none; }
+.vc_general.vc_ui-tabs-line>li { position: relative; }
+.vc_general.vc_ui-tabs-line>.vc_active:after { content: ''; border-bottom: 8px solid #fff; border-left: 10px solid transparent; border-right: 10px solid transparent; position: absolute; bottom: -1px; left: 50%; margin-left: -10px; }
+.vc_ui-panel-header .vc_ui-control-button .vc-composer-icon { font-size: 18px; line-height: 30px }
+#vc_ui-panel-add-element .vc_ui-panel-content-container { background-color: #f7f7f7 }
+.vc_add-element-container .wpb-elements-list { padding: 32px 17px 0; }
+.vc_add-element-container .wpb-content-layouts { display: flex; flex-wrap: wrap; padding: 0; }
+.vc_add-element-container .wpb-content-layouts li { background: none; padding: 0 10px 1px; margin-bottom: 30px; float: none; height: auto; border: none; }
+.vc_add-element-container .wpb-content-layouts li .vc_el-container { display: block; background: #fff linear-gradient(135deg, #0088cc 0%, #383f48 100%); position: relative; box-shadow: 0 1px 0 0 rgba(0, 0, 0, .1); height: 100%; }
+.vc_add-element-container .wpb-content-layouts li .vc_el-container:before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #fff; transition: cubic-bezier(0.39, 0.66, 0.42, 0.99) all .2s; }
+.vc_add-element-container .wpb-content-layouts li:hover .vc_el-container:before { top: 8px; left: 8px; right: 8px; bottom: 8px; }
+.vc_add-element-container .wpb-content-layouts a { display: block; position: relative; text-align: center; padding: 22px 12px; font-size: 11.2px; font-weight: 700; text-transform: uppercase; letter-spacing: -.05em; color: #222529; overflow: hidden; }
+.vc_add-element-container .wpb-content-layouts a > * { display: block; }
+.vc_element-icon.fas, .vc_element-icon.fab, .vc_element-icon.far, .vc_element-icon.fa, .vc_element-icon.dashicons, .vc_element-icon.porto-sc, .vc_element-icon.porto-icon-compare-link { background: none; text-align: center; line-height: 32px; color: #08c; font-size: 1.25rem }
+.vc_add-element-container .vc_element-icon { position: static; margin: 0 auto 1rem; font-size: 2rem; color: #08c }
+.vc_add-element-container .vc_element-icon + .vc_element-icon { position: absolute; font-size: 4rem; width: 4rem; height: 4rem; line-height: 1; margin: 0; opacity: .08; top: -18px; right: -18px; left: auto; color: #777; background-position: center; background-size: 3rem; filter: grayscale(1); }
+.vc_add-element-container .wpb-content-layouts a .vc_element-description { text-transform: none }
+.wpb_edit_form_elements .porto-wpb-typography-container { max-width: 400px; border: 1px solid #e1e1e1; border-radius: 5px; overflow: hidden }
+.wpb_edit_form_elements .porto-wpb-typography-container.show .porto-wpb-typography-toggle:after { transform: translateY(-50%) rotateZ(540deg) }
+.wpb_edit_form_elements .porto-wpb-typography-controls { display: flex; flex-wrap: wrap; max-width: 410px; padding: 10px; margin-left: -5px; margin-right: -5px; box-sizing: border-box }
+.wpb_edit_form_elements .porto-wpb-typography-controls .porto-wpb-typoraphy-form { margin-bottom: 10px; padding-left: 5px; padding-right: 5px; flex: 0 0 100%; max-width: 100%; box-sizing: border-box }
+.wpb_edit_form_elements .porto-wpb-typography-controls .porto-wpb-typoraphy-form input { min-height: 46px; border: 1px solid #ccc; border-radius: 3px }
+.wpb_edit_form_elements .porto-wpb-typography-controls .porto-wpb-typoraphy-form.cols-2 { flex: 0 0 50%; max-width: 50% }
+.wpb_edit_form_elements .porto-wpb-typography-toggle { display: flex; position: relative; padding: 0 10px; color: #0473aa; font-weight: 500; cursor: pointer }
+.wpb_edit_form_elements .porto-wpb-typography-toggle:after { content: '\f107'; position: absolute; top: 50%; transform: translateY(-50%); transition: transform 0.4s; right: 15px; font-family: "Font Awesome 5 Free"; font-weight: 900; font-size: 14px }
+.wpb_edit_form_elements .vc_checkbox-label:only-child { color: rgba(0,0,0,0) }
+.wpb_edit_form_elements .wpb_vc_param_value.checkbox { display: inline-block; position: relative; margin-right: 10px; width: 50px; height: 30px; border-radius: 15px; background: #ccc; box-shadow: none; border: none; margin-left: 0; transition: background 0.3s }
+.wpb_edit_form_elements .wpb_vc_param_value.checkbox:checked { background: #0473aa }
+.wpb_edit_form_elements .wpb_vc_param_value.checkbox:checked:before { content: ""; margin: 0; height: 26px; width: 26px; transform: translateX(20px) }
+.wpb_edit_form_elements .wpb_vc_param_value.checkbox:before { content: ""; display: block; position: absolute; width: 26px; height: 26px; background: #fff; border-radius: 50%; left: 2px; top: 2px; transition: transform 0.3s,background 0.3s }
+.wpb_edit_form_elements .porto-wpb-button-group .options-wrapper { display: flex; margin: 0; flex-wrap: wrap }
+.wpb_edit_form_elements .porto-wpb-button-group .options-wrapper li { display: flex; align-items: center; justify-content: center; margin: 1px; padding: 0 15px; min-width: 50px; height: 40px; background-color: #eee; font-weight: 600; font-size: 16px; cursor: pointer; transition: color 0.3s,background-color 0.3s }
+.wpb_edit_form_elements .porto-wpb-button-group .options-wrapper li:first-child { border-radius: 6px 0 0 6px }
+.wpb_edit_form_elements .porto-wpb-button-group .options-wrapper li:last-child { border-radius: 0 6px 6px 0 }
+.wpb_edit_form_elements .porto-wpb-button-group .options-wrapper li.active { background-color: #0473aa; color: #fff }
+.wpb_edit_form_elements .porto-wpb-button-group.icon-button .options-wrapper li { min-width: 40px; padding: 0 }
+.wpb_edit_form_elements .porto-wpb-button-group.color-button .options-wrapper li { min-width: 24px; height: 24px; margin: 3px; padding: 0; border: 2px solid #eee; border-radius: 4px!important; transition: border-color 0.3s }
+.wpb_edit_form_elements .porto-wpb-button-group.color-button .options-wrapper li.active { border-color: #666 }
+.wpb_edit_form_elements .porto-wpb-button-group.image-button .options-wrapper li { width: 600px; height: auto; border-radius: 3px; background: none; border: 1px solid #e1e1e1; padding: 8px; margin: 5px }
+.wpb_edit_form_elements .porto-wpb-button-group.image-button .options-wrapper li img { display: block; width: 100% }
+.wpb_edit_form_elements .porto-wpb-button-group.image-button .options-wrapper li.active { background: #0473aa }
+.wpb_edit_form_elements .porto-wpb-dimension-container { display: flex; align-items: center; max-width: 400px }
+.wpb_edit_form_elements .porto-wpb-dimension-container .porto-wpb-dimension-wrap { flex: 1; text-align: center }
+.wpb_edit_form_elements .porto-wpb-dimension-container .porto-wpb-dimension-wrap:not(:first-child) { margin-left: 10px }
+.vc_properties-list input,.vc_properties-list select { max-width: 400px; border-color: #ccc }
+.vc_properties-list select { padding-left: 15px }
+.vc_properties-list textarea { padding-left: 15px; border-color: #ccc }
+.wpb_edit_form_elements .porto-wpb-number-container { display: flex; align-items: center; max-width: 400px }
+.wpb_edit_form_elements .porto-wpb-number { flex: 1; max-width: 100% }
+.wpb_edit_form_elements .porto-wpb-units { max-width: 80px; margin-left: 10px; padding-left: 10px; background-position-y: 54% }
+.wpb_edit_form_elements .porto-responsive-control { position: relative; display: inline-flex; align-items: center; margin-top: 7px }
+.wpb_edit_form_elements .porto-responsive-control .porto-wpb-number { max-width: 400px; min-width: 250px }
+.wpb_edit_form_elements .porto-responsive-control .porto-responsive-dropdown { position: absolute; margin: 0; right: 0; top: -28px }
+.wpb_edit_form_elements .porto-responsive-control .porto-responsive-dropdown.show .porto-responsive-span { top: calc(100% + 5px); opacity: 1; transform: translateY(0) }
+.wpb_edit_form_elements .porto-responsive-control .porto-responsive-dropdown .porto-responsive-toggle { cursor: pointer; font-size: 16px }
+.wpb_edit_form_elements .porto-responsive-control .porto-responsive-span { display: flex; align-items: center; position: absolute; right: -10px; top: -9999px; opacity: 0; transition: opacity 0.3s,transform 0.3s; transform: translateY(-5px); margin: 0; padding: 5px; background: #222; color: #fff; border-radius: 3px; font-size: 14px }
+.wpb_edit_form_elements .porto-responsive-control .porto-responsive-span li { padding: 0 7px; margin-bottom: 0; cursor: pointer; transition: color 0.3s }
+.wpb_edit_form_elements .porto-responsive-control .porto-responsive-span li:hover { color: #0473aa }
+.wpb_edit_form_elements .porto-responsive-control .porto-responsive-span li:first-child { font-size: 16px }
+.wpb_edit_form_elements .porto-responsive-control .porto-responsive-span li:nth-child(2) { font-size: 15px }
+.wpb_edit_form_elements .porto-responsive-control .porto-responsive-span li:nth-child(3) { font-size: 15px }
+.wpb_edit_form_elements .porto-responsive-control .porto-responsive-span li:nth-child(4) { font-size: 12px }
+.wpb_edit_form_elements .porto-responsive-control .porto-responsive-span li:nth-child(5) { font-size: 12px }
+.wpb_edit_form_elements .porto-responsive-control .porto-responsive-span:before { content: ""; position: absolute; right: 13px; top: -4px; border-bottom: 5px solid #222; border-left: 5px solid transparent; border-right: 5px solid transparent }
+
+@media (max-width: 575px) {
+	.vc_navbar .vc_navbar-btn { padding-left: 1rem; padding-right: 1rem }
+	.vc_navbar .vc_navbar-btn:after, #vc_button-update:after, .vc_navbar .vc_save-backend .vc_control-save:after { content: none }
+	.vc_navbar .vc_navbar-nav > .vc_show-mobile { border-left: none }
+}
+
+/* Backend Header Builder */
+.metabox-composer-content .vc_row { display: flex; flex-wrap: wrap }
+.wpb_vc_column[data-width="flex-1"] { width: auto; flex: 1; }
+.wpb_vc_column[data-width="flex-auto"] { width: auto; flex: none; }
+.vc-c-icon-flex-1_flex-auto { display: inline-block; width: 30px; height: 14px; background-image: url(./1-auto.svg); }
+.vc-c-icon-flex-1_flex-auto_flex-1 { display: inline-block; width: 30px; height: 14px; background-image: url(./1-auto-1.svg); }
+.vc-c-icon-flex-auto_flex-1_flex-auto { display: inline-block; width: 30px; height: 14px; background-image: url(./auto-1-auto.svg); }
+/* VC deprecated message */
+.vc_ui-panel-window[data-vc-shortcode="vc_tabs"] .vc_shortcode-edit-form-deprecated-message,
+.vc_ui-panel-window[data-vc-shortcode="vc_tab"] .vc_shortcode-edit-form-deprecated-message,
+.vc_ui-panel-window[data-vc-shortcode="vc_tour"] .vc_shortcode-edit-form-deprecated-message,
+.vc_ui-panel-window[data-vc-shortcode="vc_accordion"] .vc_shortcode-edit-form-deprecated-message,
+.vc_ui-panel-window[data-vc-shortcode="vc_accordion_tab"] .vc_shortcode-edit-form-deprecated-message {
+	display: none
+}
+.vc_add-element-container .wpb-elements-list.vc_filter-all .wpb-layout-element-button.vc_element-deprecated[data-element="vc_tabs"],
+.vc_add-element-container .wpb-elements-list.vc_filter-all .wpb-layout-element-button.vc_element-deprecated[data-element="vc_tab"],
+.vc_add-element-container .wpb-elements-list.vc_filter-all .wpb-layout-element-button.vc_element-deprecated[data-element="vc_tour"],
+.vc_add-element-container .wpb-elements-list.vc_filter-all .wpb-layout-element-button.vc_element-deprecated[data-element="vc_accordion"],
+.vc_add-element-container .wpb-elements-list.vc_filter-all .wpb-layout-element-button.vc_element-deprecated[data-element="vc_accordion_tab"] {
+	display: block
+}
+
+.rtl .vc_navbar .vc_navbar-btn:after { float: left; top: -1.5px; margin-right: .6em; margin-left: 0 }
+.rtl #vc_button-update:after { content: "\f053" }
+.rtl .vc_ui-search-box .vc_ui-search-box-input label { left: auto; right: 6px }
+.rtl .vc_ui-search-box input[type=search] { padding: 7px 32px 7px 12px }
+.rtl .vc_add-element-container .vc_element-icon { left: auto; right: 8px }
+.rtl .vc_add-element-container .wpb-content-layouts a { padding: 2px 50px 2px 4px }
+.rtl .vc_general.vc_ui-tabs-line > li { float: right }
+.rtl .vc_ui-panel-header .vc_ui-panel-header-controls { float: left; margin: 2px 12px 0 0 }
+.rtl.vc_editor #wpcontent { margin-right: 0 !important; padding-right: 0 !important }

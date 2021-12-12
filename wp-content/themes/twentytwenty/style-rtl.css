@@ -127,7 +127,7 @@ html {
 body {
 	background: #f5efe0;
 	box-sizing: border-box;
-	color: #21759b;
+	color: #000;
 	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 1.8rem;
 	letter-spacing: -0.015em;
@@ -2423,12 +2423,6 @@ h2.entry-title {
 }
 
 .entry-title a {
-
-	color: inherit;
-	text-decoration: none;
-	/* color: inherit; */
-	text-decoration: none;
-	color: #21759b;
 	color: inherit;
 	text-decoration: none;
 }

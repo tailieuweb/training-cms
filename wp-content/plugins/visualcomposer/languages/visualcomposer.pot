@@ -1,0 +1,5160 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-02 11:44+0300\n"
+"PO-Revision-Date: 2021-03-02 11:46+0300\n"
+"Last-Translator: \n"
+"Language-Team: Visual Composer <hello@visualcomposer.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.4\n"
+"X-Poedit-KeywordsList: esc_html__;esc_html_e;esc_attr__;esc_attr_e;"
+"esc_html_x;_x;__;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: visualcomposer\n"
+"X-Poedit-SearchPath-1: devAddons\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: ci\n"
+"X-Poedit-SearchPathExcluded-2: cache\n"
+"X-Poedit-SearchPathExcluded-3: devElements\n"
+"X-Poedit-SearchPathExcluded-4: devCategories\n"
+"X-Poedit-SearchPathExcluded-5: tools\n"
+"X-Poedit-SearchPathExcluded-6: tests\n"
+
+#: devAddons/dynamicFields/dynamicFields/DynamicFieldAutocomplete.php:65
+msgid "Id"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/DynamicFieldAutocomplete.php:65
+#: visualcomposer/Helpers/Localizations.php:239
+msgid "Title"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/AdvancedCustomFields.php:139
+msgid "Advance Custom Fields"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Images.php:62
+#: visualcomposer/Helpers/Localizations.php:1459
+msgid "Featured Image"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Images.php:90
+msgid "Author's Profile Picture"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Images.php:112
+msgid "Logo"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Meta.php:107
+#: devAddons/dynamicFields/dynamicFields/Fields/Meta.php:111
+#: devAddons/dynamicFields/dynamicFields/Fields/Meta.php:115
+#: devAddons/dynamicFields/dynamicFields/Fields/Meta.php:119
+#: visualcomposer/Helpers/Localizations.php:762
+#: visualcomposer/Helpers/LoginCategory.php:37
+msgid "Other"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:87
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:92
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:97
+msgid "Author's Name"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:126
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:130
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:134
+msgid "Author's Bio"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:163
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:167
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:171
+msgid "Post Comment Count"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:200
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:204
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:208
+msgid "Post Title"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:235
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:239
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:243
+msgid "Post Type"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:272
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:276
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:280
+msgid "Post Excerpt"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:305
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:309
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:313
+msgid "Post ID"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:338
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:342
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:346
+msgid "Post Date"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:371
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:375
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:379
+msgid "Post Modify Date"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:404
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:408
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:412
+msgid "Post Parent's Name"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:437
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:441
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:445
+msgid "Post Categories"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:470
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:474
+msgid "Post Tags"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:499
+msgid "Post/Page"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Post.php:524
+msgid "Comment"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Site.php:57
+#: devAddons/dynamicFields/dynamicFields/Fields/Site.php:62
+#: devAddons/dynamicFields/dynamicFields/Fields/Site.php:67
+msgid "Site Title"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Site.php:86
+#: devAddons/dynamicFields/dynamicFields/Fields/Site.php:91
+#: devAddons/dynamicFields/dynamicFields/Fields/Site.php:96
+msgid "Site Tagline"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Site.php:115
+#: devAddons/dynamicFields/dynamicFields/Fields/Site.php:120
+#: devAddons/dynamicFields/dynamicFields/Fields/Site.php:125
+msgid "Site URL"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Site.php:130
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:71
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:91
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:111
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:131
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:157
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:183
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:209
+msgid "Site"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Site.php:148
+#: devAddons/dynamicFields/dynamicFields/Fields/Site.php:153
+#: devAddons/dynamicFields/dynamicFields/Fields/Site.php:158
+msgid "Current Year"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/Toolset.php:131
+msgid "Toolset Custom Fields"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:69
+msgid "Price"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:76
+msgid "Regular Price"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:83
+msgid "Sale Price"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:90
+msgid "Short Description"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:97
+msgid "Purchase Note"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:104
+#: devAddons/themeEditor/themeEditor/SettingsController.php:402
+#: visualcomposer/Helpers/Localizations.php:1509
+msgid "Categories"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:111
+msgid "Weight"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:118
+msgid "Dimensions"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:125
+msgid "Availability"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:132
+msgid "Total Sales"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:139
+msgid "Average Rating"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:146
+msgid "Rating Count"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:153
+msgid "Date On Sale To"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:160
+msgid "Date On Sale From"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:167
+msgid "Files to Download"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:174
+msgid "Download Expiry"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:181
+msgid "Download Limit"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:188
+msgid "Stock Quantity"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:195
+msgid "SKU"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:202
+msgid "Product"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:209
+msgid "Add To Cart"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:220
+msgid "Shop"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:227
+msgid "Checkout"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:234
+msgid "Cart"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:241
+#: visualcomposer/resources/views/settings/pages/system-status.php:297
+msgid "Account"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:264
+msgid "WooCommerce"
+msgstr ""
+
+#: devAddons/dynamicFields/dynamicFields/Fields/WooCommerce.php:271
+msgid "WooCommerce URLs"
+msgstr ""
+
+#: devAddons/elementPresets/elementPresets/PostTypeController.php:47
+msgid "Element Presets"
+msgstr ""
+
+#: devAddons/exportImport/exportImport/ExportController.php:379
+#: devAddons/exportImport/exportImport/ExportController.php:407
+msgid "Export"
+msgstr ""
+
+#: devAddons/exportImport/exportImport/ImportController.php:155
+#: devAddons/exportImport/exportImport/ImportController.php:966
+msgid "Failed to validate nonce."
+msgstr ""
+
+#: devAddons/exportImport/exportImport/ImportController.php:171
+msgid ""
+"Import <strong>templates, headers, footers, and sidebars</strong> from an "
+"export file (exported with Visual Composer)."
+msgstr ""
+
+#: devAddons/exportImport/exportImport/ImportController.php:187
+msgid ""
+"Upload the Visual Composer template. The template will be added to the "
+"Global Templates section. All graphic assets will be added to the Media "
+"Library."
+msgstr ""
+
+#: devAddons/exportImport/exportImport/ImportController.php:191
+msgid "Choose a .zip file to upload and click \"Upload file and import\"."
+msgstr ""
+
+#: devAddons/exportImport/exportImport/ImportController.php:203
+msgid "Visual Composer Website Builder"
+msgstr ""
+
+#: devAddons/exportImport/exportImport/ImportController.php:236
+#, php-format
+msgid ""
+"The export file could not be found at <code>%s</code>. Check your site "
+"permissions and try again."
+msgstr ""
+
+#: devAddons/exportImport/exportImport/ImportController.php:286
+#, php-format
+msgid "Uploaded file <code>%s</code> is invalid."
+msgstr ""
+
+#: devAddons/exportImport/exportImport/ImportController.php:324
+msgid "Uploaded .zip file is invalid."
+msgstr ""
+
+#: devAddons/exportImport/exportImport/ImportController.php:353
+msgid "Validating the license..."
+msgstr ""
+
+#: devAddons/exportImport/exportImport/ImportController.php:360
+msgid ""
+"Token generation failed. This was likely caused by a timeout, check your "
+"server configuration, and try again."
+msgstr ""
+
+#: devAddons/exportImport/exportImport/ImportController.php:389
+#, php-format
+msgid ""
+"It seems you don't have Visual Composer premium license to download elements "
+"from the Visual Composer Hub. Make sure to activate the premium license "
+"before importing or purchase it at %svisualcomposer.com/premium%s"
+msgstr ""
+
+#: devAddons/exportImport/exportImport/ImportController.php:422
+msgid ""
+"It seems you are missing some elements included in the template. The "
+"elements will be downloaded automatically on the editor load."
+msgstr ""
+
+#: devAddons/exportImport/exportImport/ImportController.php:431
+msgid ""
+"Failed to read JSON from the account. Check your connection and try again."
+msgstr ""
+
+#: devAddons/exportImport/exportImport/ImportController.php:488
+msgid ""
+"Your export file contains custom elements. We have imported these elements "
+"but they will not appear until they are created."
+msgstr ""
+
+#: devAddons/exportImport/exportImport/ImportController.php:603
+#, php-format
+msgid "Template - %s was successfully imported."
+msgstr ""
+
+#: devAddons/exportImport/exportImport/ImportController.php:814
+msgid "Processing design options..."
+msgstr ""
+
+#: devAddons/exportImport/exportImport/ImportController.php:871
+msgid "An error has occurred."
+msgstr ""
+
+#: devAddons/exportImport/exportImport/ImportController.php:909
+msgid "Processing media..."
+msgstr ""
+
+#: devAddons/exportImport/exportImport/ImportController.php:1032
+msgid "Do you want to proceed with the import?"
+msgstr ""
+
+#: devAddons/exportImport/exportImport/ImportPage.php:56
+msgid "Import"
+msgstr ""
+
+#: devAddons/globalTemplate/globalTemplate/PostTypeController.php:162
+msgid ""
+"You're about to edit downloaded template. The template will be converted to "
+"your personal template. You can download a new copy of this predefined "
+"template from the Hub."
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/chrome-remote-interface/chrome-remote-interface.js:2
+#: devAddons/popupBuilder/node_modules/chrome-remote-interface/chrome-remote-interface.js:2
+#: devAddons/themeBuilder/node_modules/chrome-remote-interface/chrome-remote-interface.js:2
+#: devAddons/themeEditor/node_modules/chrome-remote-interface/chrome-remote-interface.js:2
+msgid "Wrong offset!"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/moment/min/locales.min.js:1
+#: devAddons/maintenanceMode/node_modules/moment/min/locales.min.js:1
+#: devAddons/popupBuilder/node_modules/moment/min/locales.min.js:1
+#: devAddons/themeBuilder/node_modules/moment/min/locales.min.js:1
+msgid "s"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/moment/min/locales.min.js:1
+#: devAddons/maintenanceMode/node_modules/moment/min/locales.min.js:1
+#: devAddons/popupBuilder/node_modules/moment/min/locales.min.js:1
+#: devAddons/themeBuilder/node_modules/moment/min/locales.min.js:1
+msgid "m"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/moment/min/locales.min.js:1
+#: devAddons/maintenanceMode/node_modules/moment/min/locales.min.js:1
+#: devAddons/popupBuilder/node_modules/moment/min/locales.min.js:1
+#: devAddons/themeBuilder/node_modules/moment/min/locales.min.js:1
+msgid "h"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/moment/min/locales.min.js:1
+#: devAddons/maintenanceMode/node_modules/moment/min/locales.min.js:1
+#: devAddons/popupBuilder/node_modules/moment/min/locales.min.js:1
+#: devAddons/themeBuilder/node_modules/moment/min/locales.min.js:1
+msgid "d"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/moment/min/locales.min.js:1
+#: devAddons/maintenanceMode/node_modules/moment/min/locales.min.js:1
+#: devAddons/popupBuilder/node_modules/moment/min/locales.min.js:1
+#: devAddons/themeBuilder/node_modules/moment/min/locales.min.js:1
+msgid "M"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/moment/min/locales.min.js:1
+#: devAddons/maintenanceMode/node_modules/moment/min/locales.min.js:1
+#: devAddons/popupBuilder/node_modules/moment/min/locales.min.js:1
+#: devAddons/themeBuilder/node_modules/moment/min/locales.min.js:1
+msgid "y"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/moment/min/moment.min.js:1
+#: devAddons/maintenanceMode/node_modules/moment/min/moment.min.js:1
+#: devAddons/popupBuilder/node_modules/moment/min/moment.min.js:1
+#: devAddons/themeBuilder/node_modules/moment/min/moment.min.js:1
+msgid ": "
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/maintenanceMode/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/popupBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeEditor/node_modules/terser/dist/bundle.min.js:1
+msgid "big_int"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/maintenanceMode/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/popupBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeEditor/node_modules/terser/dist/bundle.min.js:1
+msgid "num"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:290
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:291
+#: devAddons/globalTemplate/node_modules/yargs/lib/usage.js:290
+#: devAddons/globalTemplate/node_modules/yargs/lib/usage.js:291
+#: devAddons/maintenanceMode/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:290
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:291
+#: devAddons/maintenanceMode/node_modules/yargs/lib/usage.js:290
+#: devAddons/maintenanceMode/node_modules/yargs/lib/usage.js:291
+#: devAddons/popupBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:290
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:291
+#: devAddons/popupBuilder/node_modules/yargs/lib/usage.js:290
+#: devAddons/popupBuilder/node_modules/yargs/lib/usage.js:291
+#: devAddons/themeBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:290
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:291
+#: devAddons/themeBuilder/node_modules/yargs/lib/usage.js:290
+#: devAddons/themeBuilder/node_modules/yargs/lib/usage.js:291
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/usage.js:294
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/usage.js:296
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/usage.js:284
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/usage.js:286
+#: devAddons/themeEditor/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeEditor/node_modules/yargs/lib/usage.js:290
+#: devAddons/themeEditor/node_modules/yargs/lib/usage.js:291
+msgid "string"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/maintenanceMode/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/popupBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeEditor/node_modules/terser/dist/bundle.min.js:1
+msgid "template_head"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/maintenanceMode/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/popupBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeEditor/node_modules/terser/dist/bundle.min.js:1
+msgid "comment2"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/maintenanceMode/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/popupBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeEditor/node_modules/terser/dist/bundle.min.js:1
+msgid "regexp"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/maintenanceMode/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/popupBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeEditor/node_modules/terser/dist/bundle.min.js:1
+msgid "operator"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/maintenanceMode/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/popupBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeEditor/node_modules/terser/dist/bundle.min.js:1
+msgid "eof"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/maintenanceMode/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/popupBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeEditor/node_modules/terser/dist/bundle.min.js:1
+msgid "expand"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/maintenanceMode/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/popupBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeEditor/node_modules/terser/dist/bundle.min.js:1
+msgid "punc"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/maintenanceMode/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/popupBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeEditor/node_modules/terser/dist/bundle.min.js:1
+msgid "arrow"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/maintenanceMode/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/popupBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeEditor/node_modules/terser/dist/bundle.min.js:1
+msgid "name"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/maintenanceMode/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/popupBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeEditor/node_modules/terser/dist/bundle.min.js:1
+msgid "atom"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/maintenanceMode/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/popupBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeEditor/node_modules/terser/dist/bundle.min.js:1
+msgid "keyword"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/maintenanceMode/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/popupBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeEditor/node_modules/terser/dist/bundle.min.js:1
+msgid "("
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/maintenanceMode/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/popupBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeEditor/node_modules/terser/dist/bundle.min.js:1
+msgid ")"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/maintenanceMode/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/popupBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeEditor/node_modules/terser/dist/bundle.min.js:1
+msgid ":"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/maintenanceMode/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/popupBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeEditor/node_modules/terser/dist/bundle.min.js:1
+msgid ";"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/maintenanceMode/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/popupBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeEditor/node_modules/terser/dist/bundle.min.js:1
+msgid ","
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/maintenanceMode/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/popupBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeEditor/node_modules/terser/dist/bundle.min.js:1
+msgid "]"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/maintenanceMode/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/popupBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeEditor/node_modules/terser/dist/bundle.min.js:1
+msgid "}"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/maintenanceMode/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/popupBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeEditor/node_modules/terser/dist/bundle.min.js:1
+msgid "{"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/maintenanceMode/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/popupBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeBuilder/node_modules/terser/dist/bundle.min.js:1
+#: devAddons/themeEditor/node_modules/terser/dist/bundle.min.js:1
+msgid "["
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webidl-conversions/lib/index.js:105
+#: devAddons/maintenanceMode/node_modules/webidl-conversions/lib/index.js:105
+#: devAddons/popupBuilder/node_modules/webidl-conversions/lib/index.js:105
+#: devAddons/themeBuilder/node_modules/webidl-conversions/lib/index.js:105
+#: devAddons/themeEditor/node_modules/domexception/node_modules/webidl-conversions/lib/index.js:105
+msgid "is not a finite number"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webidl-conversions/lib/index.js:172
+#: devAddons/globalTemplate/node_modules/webidl-conversions/lib/index.js:188
+#: devAddons/maintenanceMode/node_modules/webidl-conversions/lib/index.js:172
+#: devAddons/maintenanceMode/node_modules/webidl-conversions/lib/index.js:188
+#: devAddons/popupBuilder/node_modules/webidl-conversions/lib/index.js:172
+#: devAddons/popupBuilder/node_modules/webidl-conversions/lib/index.js:188
+#: devAddons/themeBuilder/node_modules/webidl-conversions/lib/index.js:172
+#: devAddons/themeBuilder/node_modules/webidl-conversions/lib/index.js:188
+#: devAddons/themeEditor/node_modules/domexception/node_modules/webidl-conversions/lib/index.js:172
+#: devAddons/themeEditor/node_modules/domexception/node_modules/webidl-conversions/lib/index.js:188
+msgid "is not a finite floating-point value"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webidl-conversions/lib/index.js:198
+#: devAddons/maintenanceMode/node_modules/webidl-conversions/lib/index.js:198
+#: devAddons/popupBuilder/node_modules/webidl-conversions/lib/index.js:198
+#: devAddons/themeBuilder/node_modules/webidl-conversions/lib/index.js:198
+#: devAddons/themeEditor/node_modules/domexception/node_modules/webidl-conversions/lib/index.js:198
+msgid "is outside the range of a single-precision floating-point value"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webidl-conversions/lib/index.js:228
+#: devAddons/maintenanceMode/node_modules/webidl-conversions/lib/index.js:228
+#: devAddons/popupBuilder/node_modules/webidl-conversions/lib/index.js:228
+#: devAddons/themeBuilder/node_modules/webidl-conversions/lib/index.js:228
+#: devAddons/themeEditor/node_modules/domexception/node_modules/webidl-conversions/lib/index.js:228
+msgid "is a symbol, which cannot be converted to a string"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webidl-conversions/lib/index.js:239
+#: devAddons/maintenanceMode/node_modules/webidl-conversions/lib/index.js:239
+#: devAddons/popupBuilder/node_modules/webidl-conversions/lib/index.js:239
+#: devAddons/themeBuilder/node_modules/webidl-conversions/lib/index.js:239
+#: devAddons/themeEditor/node_modules/domexception/node_modules/webidl-conversions/lib/index.js:239
+msgid "is not a valid ByteString"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webidl-conversions/lib/index.js:276
+#: devAddons/maintenanceMode/node_modules/webidl-conversions/lib/index.js:276
+#: devAddons/popupBuilder/node_modules/webidl-conversions/lib/index.js:276
+#: devAddons/themeBuilder/node_modules/webidl-conversions/lib/index.js:276
+#: devAddons/themeEditor/node_modules/domexception/node_modules/webidl-conversions/lib/index.js:276
+msgid "is not an object"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webidl-conversions/lib/index.js:288
+#: devAddons/maintenanceMode/node_modules/webidl-conversions/lib/index.js:288
+#: devAddons/popupBuilder/node_modules/webidl-conversions/lib/index.js:288
+#: devAddons/themeBuilder/node_modules/webidl-conversions/lib/index.js:288
+#: devAddons/themeEditor/node_modules/domexception/node_modules/webidl-conversions/lib/index.js:288
+msgid "is not a function"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webidl-conversions/lib/index.js:314
+#: devAddons/maintenanceMode/node_modules/webidl-conversions/lib/index.js:314
+#: devAddons/popupBuilder/node_modules/webidl-conversions/lib/index.js:314
+#: devAddons/themeBuilder/node_modules/webidl-conversions/lib/index.js:314
+#: devAddons/themeEditor/node_modules/domexception/node_modules/webidl-conversions/lib/index.js:308
+#: devAddons/themeEditor/node_modules/domexception/node_modules/webidl-conversions/lib/index.js:343
+msgid "is not a view on an ArrayBuffer object"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webidl-conversions/lib/index.js:322
+#: devAddons/maintenanceMode/node_modules/webidl-conversions/lib/index.js:322
+#: devAddons/popupBuilder/node_modules/webidl-conversions/lib/index.js:322
+#: devAddons/themeBuilder/node_modules/webidl-conversions/lib/index.js:322
+#: devAddons/themeEditor/node_modules/domexception/node_modules/webidl-conversions/lib/index.js:351
+msgid "is not an ArrayBuffer object or a view on one"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:92
+#: devAddons/globalTemplate/node_modules/yargs/lib/usage.js:92
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:92
+#: devAddons/maintenanceMode/node_modules/yargs/lib/usage.js:92
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:92
+#: devAddons/popupBuilder/node_modules/yargs/lib/usage.js:92
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:92
+#: devAddons/themeBuilder/node_modules/yargs/lib/usage.js:92
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/usage.js:90
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/usage.js:79
+#: devAddons/themeEditor/node_modules/yargs/lib/usage.js:92
+msgid "Positionals:"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:192
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:194
+#: devAddons/globalTemplate/node_modules/yargs/lib/usage.js:192
+#: devAddons/globalTemplate/node_modules/yargs/lib/usage.js:194
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:192
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:194
+#: devAddons/maintenanceMode/node_modules/yargs/lib/usage.js:192
+#: devAddons/maintenanceMode/node_modules/yargs/lib/usage.js:194
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:192
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:194
+#: devAddons/popupBuilder/node_modules/yargs/lib/usage.js:192
+#: devAddons/popupBuilder/node_modules/yargs/lib/usage.js:194
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:192
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:194
+#: devAddons/themeBuilder/node_modules/yargs/lib/usage.js:192
+#: devAddons/themeBuilder/node_modules/yargs/lib/usage.js:194
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/usage.js:187
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/usage.js:190
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/usage.js:171
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/usage.js:174
+#: devAddons/themeEditor/node_modules/yargs/lib/usage.js:192
+#: devAddons/themeEditor/node_modules/yargs/lib/usage.js:194
+msgid "command"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:203
+#: devAddons/globalTemplate/node_modules/yargs/lib/usage.js:203
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:203
+#: devAddons/maintenanceMode/node_modules/yargs/lib/usage.js:203
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:203
+#: devAddons/popupBuilder/node_modules/yargs/lib/usage.js:203
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:203
+#: devAddons/themeBuilder/node_modules/yargs/lib/usage.js:203
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/usage.js:198
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/usage.js:180
+#: devAddons/themeEditor/node_modules/yargs/lib/usage.js:203
+msgid "Commands:"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:223
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:458
+#: devAddons/globalTemplate/node_modules/yargs/lib/usage.js:223
+#: devAddons/globalTemplate/node_modules/yargs/lib/usage.js:458
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:223
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:458
+#: devAddons/maintenanceMode/node_modules/yargs/lib/usage.js:223
+#: devAddons/maintenanceMode/node_modules/yargs/lib/usage.js:458
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:223
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:458
+#: devAddons/popupBuilder/node_modules/yargs/lib/usage.js:223
+#: devAddons/popupBuilder/node_modules/yargs/lib/usage.js:458
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:223
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:458
+#: devAddons/themeBuilder/node_modules/yargs/lib/usage.js:223
+#: devAddons/themeBuilder/node_modules/yargs/lib/usage.js:458
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/usage.js:457
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/usage.js:424
+#: devAddons/themeEditor/node_modules/yargs/lib/usage.js:223
+#: devAddons/themeEditor/node_modules/yargs/lib/usage.js:458
+msgid "default:"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:225
+#: devAddons/globalTemplate/node_modules/yargs/lib/usage.js:225
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:225
+#: devAddons/maintenanceMode/node_modules/yargs/lib/usage.js:225
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:225
+#: devAddons/popupBuilder/node_modules/yargs/lib/usage.js:225
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:225
+#: devAddons/themeBuilder/node_modules/yargs/lib/usage.js:225
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/usage.js:215
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/usage.js:197
+#: devAddons/themeEditor/node_modules/yargs/lib/usage.js:225
+msgid "aliases:"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:288
+#: devAddons/globalTemplate/node_modules/yargs/lib/usage.js:288
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:288
+#: devAddons/maintenanceMode/node_modules/yargs/lib/usage.js:288
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:288
+#: devAddons/popupBuilder/node_modules/yargs/lib/usage.js:288
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:288
+#: devAddons/themeBuilder/node_modules/yargs/lib/usage.js:288
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/usage.js:290
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/usage.js:280
+#: devAddons/themeEditor/node_modules/yargs/lib/usage.js:288
+msgid "boolean"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:289
+#: devAddons/globalTemplate/node_modules/yargs/lib/usage.js:289
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:289
+#: devAddons/maintenanceMode/node_modules/yargs/lib/usage.js:289
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:289
+#: devAddons/popupBuilder/node_modules/yargs/lib/usage.js:289
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:289
+#: devAddons/themeBuilder/node_modules/yargs/lib/usage.js:289
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/usage.js:292
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/usage.js:282
+#: devAddons/themeEditor/node_modules/yargs/lib/usage.js:289
+msgid "count"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:292
+#: devAddons/globalTemplate/node_modules/yargs/lib/usage.js:292
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:292
+#: devAddons/maintenanceMode/node_modules/yargs/lib/usage.js:292
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:292
+#: devAddons/popupBuilder/node_modules/yargs/lib/usage.js:292
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:292
+#: devAddons/themeBuilder/node_modules/yargs/lib/usage.js:292
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/usage.js:298
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/usage.js:288
+#: devAddons/themeEditor/node_modules/yargs/lib/usage.js:292
+msgid "array"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:293
+#: devAddons/globalTemplate/node_modules/yargs/lib/usage.js:293
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:293
+#: devAddons/maintenanceMode/node_modules/yargs/lib/usage.js:293
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:293
+#: devAddons/popupBuilder/node_modules/yargs/lib/usage.js:293
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:293
+#: devAddons/themeBuilder/node_modules/yargs/lib/usage.js:293
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/usage.js:300
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/usage.js:290
+#: devAddons/themeEditor/node_modules/yargs/lib/usage.js:293
+msgid "number"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:297
+#: devAddons/globalTemplate/node_modules/yargs/lib/usage.js:297
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:297
+#: devAddons/maintenanceMode/node_modules/yargs/lib/usage.js:297
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:297
+#: devAddons/popupBuilder/node_modules/yargs/lib/usage.js:297
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:297
+#: devAddons/themeBuilder/node_modules/yargs/lib/usage.js:297
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/usage.js:307
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/usage.js:297
+#: devAddons/themeEditor/node_modules/yargs/lib/usage.js:297
+msgid "required"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:298
+#: devAddons/globalTemplate/node_modules/yargs/lib/usage.js:298
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:298
+#: devAddons/maintenanceMode/node_modules/yargs/lib/usage.js:298
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:298
+#: devAddons/popupBuilder/node_modules/yargs/lib/usage.js:298
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:298
+#: devAddons/themeBuilder/node_modules/yargs/lib/usage.js:298
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/usage.js:308
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/usage.js:298
+#: devAddons/themeEditor/node_modules/yargs/lib/usage.js:298
+msgid "choices:"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:317
+#: devAddons/globalTemplate/node_modules/yargs/lib/usage.js:317
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:317
+#: devAddons/maintenanceMode/node_modules/yargs/lib/usage.js:317
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:317
+#: devAddons/popupBuilder/node_modules/yargs/lib/usage.js:317
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:317
+#: devAddons/themeBuilder/node_modules/yargs/lib/usage.js:317
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/usage.js:321
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/usage.js:310
+#: devAddons/themeEditor/node_modules/yargs/lib/usage.js:317
+msgid "Examples:"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:436
+#: devAddons/globalTemplate/node_modules/yargs/lib/usage.js:436
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:436
+#: devAddons/maintenanceMode/node_modules/yargs/lib/usage.js:436
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:436
+#: devAddons/popupBuilder/node_modules/yargs/lib/usage.js:436
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/usage.js:436
+#: devAddons/themeBuilder/node_modules/yargs/lib/usage.js:436
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/usage.js:438
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/usage.js:407
+#: devAddons/themeEditor/node_modules/yargs/lib/usage.js:436
+msgid "generated-value"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:29
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:52
+#: devAddons/globalTemplate/node_modules/yargs/lib/validation.js:29
+#: devAddons/globalTemplate/node_modules/yargs/lib/validation.js:52
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:29
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:52
+#: devAddons/maintenanceMode/node_modules/yargs/lib/validation.js:29
+#: devAddons/maintenanceMode/node_modules/yargs/lib/validation.js:52
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:29
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:52
+#: devAddons/popupBuilder/node_modules/yargs/lib/validation.js:29
+#: devAddons/popupBuilder/node_modules/yargs/lib/validation.js:52
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:29
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:52
+#: devAddons/themeBuilder/node_modules/yargs/lib/validation.js:29
+#: devAddons/themeBuilder/node_modules/yargs/lib/validation.js:52
+#: devAddons/themeEditor/node_modules/yargs/lib/validation.js:29
+#: devAddons/themeEditor/node_modules/yargs/lib/validation.js:52
+#, javascript-format
+msgid "Not enough non-option arguments: got %s, need at least %s"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:40
+#: devAddons/globalTemplate/node_modules/yargs/lib/validation.js:40
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:40
+#: devAddons/maintenanceMode/node_modules/yargs/lib/validation.js:40
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:40
+#: devAddons/popupBuilder/node_modules/yargs/lib/validation.js:40
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:40
+#: devAddons/themeBuilder/node_modules/yargs/lib/validation.js:40
+#: devAddons/themeEditor/node_modules/yargs/lib/validation.js:40
+#, javascript-format
+msgid "Too many non-option arguments: got %s, maximum of %s"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:147
+#: devAddons/globalTemplate/node_modules/yargs/lib/validation.js:147
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:147
+#: devAddons/maintenanceMode/node_modules/yargs/lib/validation.js:147
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:147
+#: devAddons/popupBuilder/node_modules/yargs/lib/validation.js:147
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:147
+#: devAddons/themeBuilder/node_modules/yargs/lib/validation.js:147
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/validation.js:155
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/validation.js:135
+#: devAddons/themeEditor/node_modules/yargs/lib/validation.js:147
+msgid "Invalid values:"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:150
+#: devAddons/globalTemplate/node_modules/yargs/lib/validation.js:150
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:150
+#: devAddons/maintenanceMode/node_modules/yargs/lib/validation.js:150
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:150
+#: devAddons/popupBuilder/node_modules/yargs/lib/validation.js:150
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:150
+#: devAddons/themeBuilder/node_modules/yargs/lib/validation.js:150
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/validation.js:157
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/validation.js:137
+#: devAddons/themeEditor/node_modules/yargs/lib/validation.js:150
+#, javascript-format
+msgid "Argument: %s, Given: %s, Choices: %s"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:180
+#: devAddons/globalTemplate/node_modules/yargs/lib/validation.js:180
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:180
+#: devAddons/maintenanceMode/node_modules/yargs/lib/validation.js:180
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:180
+#: devAddons/popupBuilder/node_modules/yargs/lib/validation.js:180
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:180
+#: devAddons/themeBuilder/node_modules/yargs/lib/validation.js:180
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/validation.js:181
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/validation.js:160
+#: devAddons/themeEditor/node_modules/yargs/lib/validation.js:180
+#, javascript-format
+msgid "Argument check failed: %s"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:256
+#: devAddons/globalTemplate/node_modules/yargs/lib/validation.js:256
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:256
+#: devAddons/maintenanceMode/node_modules/yargs/lib/validation.js:256
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:256
+#: devAddons/popupBuilder/node_modules/yargs/lib/validation.js:256
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:256
+#: devAddons/themeBuilder/node_modules/yargs/lib/validation.js:256
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/validation.js:248
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/validation.js:222
+#: devAddons/themeEditor/node_modules/yargs/lib/validation.js:256
+msgid "Implications failed:"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:295
+#: devAddons/globalTemplate/node_modules/yargs/lib/validation.js:295
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:295
+#: devAddons/maintenanceMode/node_modules/yargs/lib/validation.js:295
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:295
+#: devAddons/popupBuilder/node_modules/yargs/lib/validation.js:295
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:295
+#: devAddons/themeBuilder/node_modules/yargs/lib/validation.js:295
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/validation.js:284
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/validation.js:256
+#: devAddons/themeEditor/node_modules/yargs/lib/validation.js:295
+#, javascript-format
+msgid "Arguments %s and %s are mutually exclusive"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:316
+#: devAddons/globalTemplate/node_modules/yargs/lib/validation.js:316
+#: devAddons/maintenanceMode/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:316
+#: devAddons/maintenanceMode/node_modules/yargs/lib/validation.js:316
+#: devAddons/popupBuilder/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:316
+#: devAddons/popupBuilder/node_modules/yargs/lib/validation.js:316
+#: devAddons/themeBuilder/node_modules/webpack-cli/node_modules/yargs/lib/validation.js:316
+#: devAddons/themeBuilder/node_modules/yargs/lib/validation.js:316
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/validation.js:303
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/validation.js:275
+#: devAddons/themeEditor/node_modules/yargs/lib/validation.js:316
+#, javascript-format
+msgid "Did you mean %s?"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/yargs-parser/index.js:367
+#: devAddons/maintenanceMode/node_modules/yargs-parser/index.js:367
+#: devAddons/popupBuilder/node_modules/yargs-parser/index.js:367
+#: devAddons/themeBuilder/node_modules/yargs-parser/index.js:367
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs-parser/index.js:382
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs-parser/index.js:392
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs-parser/index.js:446
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs-parser/build/lib/yargs-parser.js:415
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs-parser/build/lib/yargs-parser.js:429
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs-parser/build/lib/yargs-parser.js:482
+#: devAddons/themeEditor/node_modules/yargs-parser/index.js:367
+#, javascript-format
+msgid "Not enough arguments following: %s"
+msgstr ""
+
+#: devAddons/globalTemplate/node_modules/yargs-parser/index.js:541
+#: devAddons/maintenanceMode/node_modules/yargs-parser/index.js:541
+#: devAddons/popupBuilder/node_modules/yargs-parser/index.js:541
+#: devAddons/themeBuilder/node_modules/yargs-parser/index.js:541
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs-parser/index.js:591
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs-parser/build/lib/yargs-parser.js:621
+#: devAddons/themeEditor/node_modules/yargs-parser/index.js:541
+#, javascript-format
+msgid "Invalid JSON config file: %s"
+msgstr ""
+
+#: devAddons/maintenanceMode/maintenanceMode/AdminBarMenuController.php:55
+msgid "Maintenance Mode is Active"
+msgstr ""
+
+#: devAddons/maintenanceMode/maintenanceMode/SettingsController.php:120
+msgid ""
+"Enable maintenance mode and select the page that will be displayed to the "
+"website visitors. Users with access to the admin panel will still be able to "
+"preview and edit the website."
+msgstr ""
+
+#: devAddons/maintenanceMode/maintenanceMode/SettingsController.php:139
+#: devAddons/maintenanceMode/maintenanceMode/SettingsController.php:225
+#: visualcomposer/Modules/Hub/Pages/PremiumTeasers.php:65
+msgid "Maintenance Mode"
+msgstr ""
+
+#: devAddons/maintenanceMode/maintenanceMode/SettingsController.php:153
+msgid "Select a maintenance page"
+msgstr ""
+
+#: devAddons/maintenanceMode/maintenanceMode/SettingsController.php:212
+msgid "maintenance mode page"
+msgstr ""
+
+#: devAddons/pluginVersionCheck/pluginVersionCheck/SettingsController.php:67
+#, php-format
+msgid ""
+"An outdated version of the Visual Composer Website Builder plugin does not "
+"support the new activation flow. Update the plugin. <a href=\"%s\">Update</a>"
+msgstr ""
+
+#: devAddons/popupBuilder/popupBuilder/PostTypeController.php:56
+msgid "Popup Builder"
+msgstr ""
+
+#: devAddons/popupBuilder/popupBuilder/SettingsController.php:125
+msgid ""
+"Specify sitewide popups for specific events like first page load, every page "
+"load, or exit-intent."
+msgstr ""
+
+#: devAddons/popupBuilder/popupBuilder/SettingsController.php:139
+msgid "Popup on first page load"
+msgstr ""
+
+#: devAddons/popupBuilder/popupBuilder/SettingsController.php:141
+#: devAddons/popupBuilder/popupBuilder/SettingsController.php:154
+#: visualcomposer/Helpers/Localizations.php:225
+msgid "Delay (seconds)"
+msgstr ""
+
+#: devAddons/popupBuilder/popupBuilder/SettingsController.php:146
+#: devAddons/popupBuilder/popupBuilder/SettingsController.php:159
+#: devAddons/popupBuilder/popupBuilder/SettingsController.php:167
+#: visualcomposer/Helpers/Localizations.php:226
+msgid "Show every (days)"
+msgstr ""
+
+#: devAddons/popupBuilder/popupBuilder/SettingsController.php:152
+#: visualcomposer/Helpers/Localizations.php:222
+msgid "Popup on every page load"
+msgstr ""
+
+#: devAddons/popupBuilder/popupBuilder/SettingsController.php:165
+#: visualcomposer/Helpers/Localizations.php:223
+msgid "Popup on exit-intent"
+msgstr ""
+
+#: devAddons/popupBuilder/popupBuilder/SettingsController.php:213
+#: devAddons/themeEditor/themeEditor/SettingsController.php:195
+#: devAddons/themeEditor/themeEditor/SettingsController.php:229
+#: devAddons/themeEditor/themeEditor/SettingsController.php:322
+#: devAddons/themeEditor/themeEditor/SettingsController.php:357
+#: devAddons/themeEditor/themeEditor/SettingsController.php:476
+#: devAddons/themeEditor/themeEditor/SettingsController.php:509
+#: visualcomposer/Helpers/Localizations.php:260
+#: visualcomposer/Modules/Editors/Settings/WordPressSettings/ParentPageController.php:52
+msgid "None"
+msgstr ""
+
+#: devAddons/popupBuilder/popupBuilder/SettingsController.php:257
+#: visualcomposer/Modules/Hub/Pages/PremiumTeasers.php:76
+msgid "Popup Settings"
+msgstr ""
+
+#: devAddons/popupBuilder/popupBuilder/TemplatesController.php:50
+msgid "My Popup Templates"
+msgstr ""
+
+#: devAddons/popupBuilder/popupBuilder/TemplatesController.php:52
+msgid "Hub Popup Templates"
+msgstr ""
+
+#: devAddons/templateWidget/templateWidget/TemplateWidget.php:21
+msgid "Add Visual Composer templates to a sidebar."
+msgstr ""
+
+#: devAddons/templateWidget/templateWidget/TemplateWidget.php:28
+msgid "Visual Composer Template"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveController.php:36
+msgid "Archive"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveController.php:37
+msgid "Archives"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveController.php:82
+#: devAddons/themeBuilder/themeBuilder/Pages/LayoutPostTypeController.php:205
+#: devAddons/themeEditor/themeEditor/PostTypeController.php:216
+#: devAddons/themeEditor/themeEditor/views/zone-edit-control.php:18
+#: visualcomposer/Modules/Editors/Tutorial/PostType.php:71
+#, php-format
+msgid "Add %s"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveController.php:83
+#: devAddons/themeBuilder/themeBuilder/Pages/LayoutPostTypeController.php:206
+#: devAddons/themeEditor/themeEditor/PostTypeController.php:217
+#: visualcomposer/Modules/Editors/Tutorial/PostType.php:72
+#, php-format
+msgid "Add New %s"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveController.php:84
+#: devAddons/themeBuilder/themeBuilder/Pages/LayoutPostTypeController.php:207
+#: devAddons/themeEditor/themeEditor/PostTypeController.php:218
+#: visualcomposer/Helpers/Localizations.php:150
+#: visualcomposer/Modules/Editors/Tutorial/PostType.php:73
+msgid "Edit"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveController.php:85
+#: devAddons/themeBuilder/themeBuilder/Pages/LayoutPostTypeController.php:208
+#: devAddons/themeEditor/themeEditor/PostTypeController.php:219
+#: devAddons/themeEditor/themeEditor/views/zone-edit-control.php:29
+#: visualcomposer/Modules/Editors/Tutorial/PostType.php:74
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveController.php:86
+#: devAddons/themeBuilder/themeBuilder/Pages/LayoutPostTypeController.php:209
+#: devAddons/themeEditor/themeEditor/PostTypeController.php:220
+#: visualcomposer/Modules/Editors/Tutorial/PostType.php:75
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveController.php:87
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveController.php:88
+#: devAddons/themeBuilder/themeBuilder/Pages/LayoutPostTypeController.php:210
+#: devAddons/themeBuilder/themeBuilder/Pages/LayoutPostTypeController.php:211
+#: devAddons/themeEditor/themeEditor/PostTypeController.php:221
+#: devAddons/themeEditor/themeEditor/PostTypeController.php:222
+#: visualcomposer/Helpers/PostType.php:277
+#: visualcomposer/Modules/Editors/Tutorial/PostType.php:76
+#: visualcomposer/Modules/Editors/Tutorial/PostType.php:77
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveController.php:89
+#: devAddons/themeBuilder/themeBuilder/Pages/LayoutPostTypeController.php:212
+#: devAddons/themeEditor/themeEditor/PostTypeController.php:223
+#: visualcomposer/Modules/Editors/Tutorial/PostType.php:78
+#, php-format
+msgid "Search %s"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveController.php:90
+#: devAddons/themeBuilder/themeBuilder/Pages/LayoutPostTypeController.php:213
+#: devAddons/themeEditor/themeEditor/PostTypeController.php:224
+#: visualcomposer/Modules/Editors/Tutorial/PostType.php:79
+#, php-format
+msgid "No %s Found"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveController.php:92
+#: devAddons/themeBuilder/themeBuilder/Pages/LayoutPostTypeController.php:215
+#: devAddons/themeEditor/themeEditor/PostTypeController.php:226
+#: visualcomposer/Modules/Editors/Tutorial/PostType.php:81
+#, php-format
+msgid "No %s Found in Trash"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveController.php:95
+#: devAddons/themeBuilder/themeBuilder/Pages/LayoutPostTypeController.php:218
+#: devAddons/themeEditor/themeEditor/PostTypeController.php:229
+#: visualcomposer/Modules/Editors/Tutorial/PostType.php:84
+#, php-format
+msgid "Parent %s"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveController.php:96
+#: devAddons/themeBuilder/themeBuilder/Pages/LayoutPostTypeController.php:219
+#: devAddons/themeEditor/themeEditor/PostTypeController.php:230
+#: visualcomposer/Modules/Editors/Tutorial/PostType.php:85
+#, php-format
+msgid "Filter %s"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveController.php:97
+#: devAddons/themeBuilder/themeBuilder/Pages/LayoutPostTypeController.php:220
+#: devAddons/themeEditor/themeEditor/PostTypeController.php:231
+#: visualcomposer/Modules/Editors/Tutorial/PostType.php:86
+#, php-format
+msgid "%s Navigation"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveController.php:98
+#: devAddons/themeBuilder/themeBuilder/Pages/LayoutPostTypeController.php:221
+#: devAddons/themeEditor/themeEditor/PostTypeController.php:232
+#: visualcomposer/Modules/Editors/Tutorial/PostType.php:87
+#, php-format
+msgid "%s List"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveController.php:298
+msgid ""
+"You're about to edit predefined template. The template will be converted to "
+"your personal template. You can download a new copy of this predefined "
+"template from the Hub."
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:63
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:67
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:71
+msgid "Category Title"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:96
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:100
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:104
+msgid "Category Description"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:129
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:133
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:137
+msgid "Search Term"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:162
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:166
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:170
+msgid "Tag Title"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:195
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:199
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:203
+msgid "Tag Description"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:230
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:234
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:238
+msgid "Product Category Title"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:265
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:269
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:273
+msgid "Product Category Description"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:300
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:304
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:308
+msgid "Product Tag Title"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:335
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:339
+#: devAddons/themeBuilder/themeBuilder/Pages/ArchiveDynamicField.php:343
+msgid "Product Tag Description"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/LayoutPostTypeController.php:64
+msgid "Layout"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/LayoutPostTypeController.php:65
+msgid "Layouts"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/LayoutPostTypeController.php:182
+msgid "My Layout Templates"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/Pages/LayoutPostTypeController.php:184
+msgid "Hub Layout Templates"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/SettingsController.php:132
+msgid ""
+"Replace the theme default theme templates like 404 page with your templates "
+"created with Visual Composer."
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/SettingsController.php:154
+#: devAddons/themeBuilder/themeBuilder/SettingsController.php:450
+msgid "404 page"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/SettingsController.php:169
+msgid "Replace the theme default templates for categories and tags"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/SettingsController.php:179
+msgid ""
+"Replace the theme default templates for product categories, product tags"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/SettingsController.php:198
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/SettingsController.php:279
+#, php-format
+msgid "%s archive"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/SettingsController.php:321
+#, php-format
+msgid "%s template"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/SettingsController.php:399
+#: devAddons/themeBuilder/themeBuilder/SettingsController.php:451
+#: devAddons/themeBuilder/themeBuilder/SettingsController.php:503
+#: devAddons/themeEditor/themeEditor/SettingsController.php:151
+msgid "Theme default"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/SettingsController.php:502
+msgid "Custom Layout template"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/SettingsController.php:522
+#: visualcomposer/Modules/Editors/Settings/PageTemplatesVariablesController.php:132
+#: visualcomposer/Modules/Hub/Pages/PremiumTeasers.php:54
+msgid "Theme Templates"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/views/comments.php:76
+#, php-format
+msgid "%1$s %2$s %3$s"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/views/comments.php:87
+#, php-format
+msgid "On %1$s at %2$s"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/views/comments.php:92
+msgid "(Edit)"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/views/comments.php:95
+msgid "The comment is awaiting moderation."
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/views/comments.php:135
+msgid "No Comments"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/views/comments.php:136
+msgid "One Comment"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/views/comments.php:137
+msgid "% Comments"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/views/comments.php:141
+msgid "Join the discussion and tell us your opinion."
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/views/comments.php:151
+msgid "Reply"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/views/comments.php:168
+msgid "Comments are closed."
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/views/comments.php:189
+msgid ""
+"Comment area will not be displayed as comments are disabled for this post. "
+"Make sure to enable comments."
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/views/comments.php:203
+msgid "Leave A Comment"
+msgstr ""
+
+#: devAddons/themeBuilder/themeBuilder/views/comments.php:211
+msgid "Share Your Thoughts"
+msgstr ""
+
+#: devAddons/themeEditor/node_modules/domexception/node_modules/webidl-conversions/lib/index.js:320
+msgid "is not a view on an DataView object"
+msgstr ""
+
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs-parser/index.js:372
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs-parser/build/lib/yargs-parser.js:406
+#, javascript-format
+msgid "Argument unexpected for: %s"
+msgstr ""
+
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs-parser/index.js:941
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs-parser/build/lib/yargs-parser.js:949
+#, javascript-format
+msgid "Invalid configuration: %s, opts.count excludes opts.array."
+msgstr ""
+
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs-parser/index.js:944
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs-parser/build/lib/yargs-parser.js:953
+#, javascript-format
+msgid "Invalid configuration: %s, opts.count excludes opts.narg."
+msgstr ""
+
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/usage.js:213
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/usage.js:195
+msgid "default"
+msgstr ""
+
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/usage.js:219
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/usage.js:302
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/usage.js:201
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/usage.js:292
+#, javascript-format
+msgid "deprecated: %s"
+msgstr ""
+
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/usage.js:222
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/usage.js:303
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/usage.js:204
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/usage.js:293
+msgid "deprecated"
+msgstr ""
+
+#: devAddons/themeEditor/node_modules/jest-cli/node_modules/yargs/build/lib/usage.js:241
+#: devAddons/themeEditor/node_modules/jest-runtime/node_modules/yargs/build/lib/usage.js:219
+msgid "Options:"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/FooterController.php:25
+#: devAddons/themeEditor/themeEditor/FooterController.php:87
+#: devAddons/themeEditor/themeEditor/SettingsController.php:246
+#: devAddons/themeEditor/themeEditor/SettingsController.php:375
+#: devAddons/themeEditor/themeEditor/SettingsController.php:527
+msgid "Footer"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/FooterController.php:26
+msgid "Footers"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/HeaderController.php:25
+#: devAddons/themeEditor/themeEditor/HeaderController.php:87
+#: devAddons/themeEditor/themeEditor/SettingsController.php:212
+#: devAddons/themeEditor/themeEditor/SettingsController.php:340
+#: devAddons/themeEditor/themeEditor/SettingsController.php:494
+msgid "Header"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/HeaderController.php:26
+msgid "Headers"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/PageTemplateLayoutController.php:36
+#: visualcomposer/Modules/Editors/Settings/PageTemplatesVariablesController.php:97
+msgid "Visual Composer Premium"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/PageTemplateLayoutController.php:39
+#: visualcomposer/Modules/Editors/Settings/PageTemplatesVariablesController.php:59
+msgid "Header and Footer"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/PageTemplateLayoutController.php:45
+#: visualcomposer/Modules/Editors/Settings/PageTemplatesVariablesController.php:63
+msgid "Right Sidebar"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/PageTemplateLayoutController.php:52
+#: visualcomposer/Modules/Editors/Settings/PageTemplatesVariablesController.php:67
+msgid "Left Sidebar"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/PostTypeController.php:400
+#, php-format
+msgid "Select a %s"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/SettingsController.php:79
+#: visualcomposer/Modules/Hub/Pages/PremiumTeasers.php:43
+msgid "Headers and Footers"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/SettingsController.php:116
+#, php-format
+msgid ""
+"Replace the theme default header and footer with your header and footer "
+"templates created with Visual Composer. %s %sNote:%s Set custom header and "
+"footer for specific pages in the Page settings in frontend editor."
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/SettingsController.php:138
+msgid "Set your header and footer (sitewide)"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/SettingsController.php:141
+msgid "Set your header and footer (per post type)"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/SettingsController.php:196
+#: devAddons/themeEditor/themeEditor/SettingsController.php:323
+#: devAddons/themeEditor/themeEditor/SettingsController.php:477
+msgid "header template"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/SettingsController.php:230
+#: devAddons/themeEditor/themeEditor/SettingsController.php:358
+#: devAddons/themeEditor/themeEditor/SettingsController.php:510
+msgid "footer template"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/SettingsController.php:292
+#: devAddons/themeEditor/themeEditor/SettingsController.php:447
+msgid "Replace the theme default header and footer"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/SettingsController.php:390
+msgid "Front Page"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/SettingsController.php:394
+msgid "Post Listing Page"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/SettingsController.php:398
+msgid "Post Archive Page"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/SettingsController.php:406
+msgid "Authors"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/SettingsController.php:410
+msgid "Search"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/SettingsController.php:414
+msgid "404 Page"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/SidebarController.php:26
+msgid "Sidebar"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/SidebarController.php:27
+msgid "Sidebars"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/TemplateController.php:47
+msgid "Hub Header Templates"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/TemplateController.php:50
+msgid "Hub Footer Templates"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/TemplateController.php:53
+msgid "Hub Sidebar Templates"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/TemplateController.php:56
+msgid "My Header Templates"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/TemplateController.php:59
+msgid "My Footer Templates"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/TemplateController.php:62
+msgid "My Sidebar Templates"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/TemplateController.php:65
+msgid "Hub Block Templates"
+msgstr ""
+
+#: devAddons/themeEditor/themeEditor/views/zone-edit-control.php:25
+#, php-format
+msgid "Replace %s"
+msgstr ""
+
+#: visualcomposer/Framework/helpers.php:173
+msgid ""
+"An error occurred while retrieving the download URL for Visual Composer "
+"extensions. Deactivate other plugins, re-install Visual Composer and try "
+"again."
+msgstr ""
+
+#: visualcomposer/Framework/helpers.php:179
+msgid ""
+"An error occurred when creating temporary installation files. Verify that "
+"WP_TEMP_DIR exists and is writable."
+msgstr ""
+
+#: visualcomposer/Framework/helpers.php:185
+msgid ""
+"An error occurred during the Visual Composer extension download process.\n"
+"<ul><li>- Check if your server has a connection to the Internet.</li><li>- "
+"Check if your server proxy has proper configuration settings.</li><li>- "
+"Check your server firewall settings and access to https://my.visualcomposer."
+"com</li><li>- Check if your server has access to the <a href=\"https://cdn."
+"hub.visualcomposer.com/vcwb-teasers/youtubePlayer.3307569.1518529200.youtube-"
+"player-preview.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon "
+"AWS</a></li></ul>"
+msgstr ""
+
+#: visualcomposer/Framework/helpers.php:192
+msgid ""
+"An HTTP requests failed during the download process of the plugin.\n"
+"<ul><li>- Check if your server has a connection to the Internet.</li><li>- "
+"Check if your server proxy has proper configuration settings.</li><li>- "
+"Check your server firewall settings and access to <a href=\"https://my."
+"visualcomposer.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://"
+"my.visualcomposer.com</a></li><li>- Check if your server has access to the "
+"<a href=\"https://cdn.hub.visualcomposer.com/vcwb-teasers/"
+"youtubePlayer.3307569.1518529200.youtube-player-preview.jpg\" target=\"_blank"
+"\">Amazon AWS</a></li></ul>"
+msgstr ""
+
+#: visualcomposer/Framework/helpers.php:216
+msgid ""
+"An error occurred when extracting Visual Composer extension files. Visual "
+"Composer requires direct access to the file system of your server. Check if "
+"FS_METHOD is defined in wp-config.php and disable it."
+msgstr ""
+
+#: visualcomposer/Framework/helpers.php:223
+msgid ""
+"A .zip file of Visual Composer is broken - the checksum check failed. Check "
+"your Internet connection, initiate reset under Visual Composer Settings, and "
+"try again."
+msgstr ""
+
+#: visualcomposer/Framework/helpers.php:229
+msgid ""
+"We could not copy files to your server. It seems that you have run out of "
+"the disk space. Increase your server disk space and try again."
+msgstr ""
+
+#: visualcomposer/Framework/helpers.php:236
+msgid ""
+"We could not create a directory for the plugin in wp-content/uploads. Check "
+"if your server has \"write\" permissions for wp-content/uploads."
+msgstr ""
+
+#: visualcomposer/Framework/helpers.php:242
+msgid ""
+"We could not copy a directory for the plugin in wp-content/uploads. Check if "
+"your server has a \"write\" permissions for wp-content/uploads."
+msgstr ""
+
+#: visualcomposer/Framework/helpers.php:248
+msgid ""
+"We could not copy a directory for the plugin in wp-content/uploads. Please "
+"check if your server has write permissions for wp-content/uploads."
+msgstr ""
+
+#: visualcomposer/Framework/helpers.php:261
+#, php-format
+msgid "WordPress Error: %s"
+msgstr ""
+
+#: visualcomposer/Framework/helpers.php:308
+msgid "A wrong response body was received."
+msgstr ""
+
+#: visualcomposer/Framework/helpers.php:322
+msgid "Bad status code was received."
+msgstr ""
+
+#: visualcomposer/Framework/helpers.php:338
+#, php-format
+msgid "A bad response status code %d was received."
+msgstr ""
+
+#: visualcomposer/Framework/helpers.php:354
+msgid "Failed to process the action."
+msgstr ""
+
+#: visualcomposer/Helpers/EditorTemplates.php:76
+msgid "My Templates"
+msgstr ""
+
+#: visualcomposer/Helpers/EditorTemplates.php:80
+msgid "Hub Templates"
+msgstr ""
+
+#: visualcomposer/Helpers/EditorTemplates.php:186
+msgid "Select a template"
+msgstr ""
+
+#: visualcomposer/Helpers/Hub/Bundle.php:165
+#: visualcomposer/Helpers/Hub/Bundle.php:372
+msgid "Failed to read remote bundle JSON."
+msgstr ""
+
+#: visualcomposer/Helpers/Hub/Download.php:27
+msgid "Editor bundle"
+msgstr ""
+
+#: visualcomposer/Helpers/Hub/Download.php:30
+msgid "Categories bundle"
+msgstr ""
+
+#: visualcomposer/Helpers/Hub/Download.php:33
+msgid "Library extensions"
+msgstr ""
+
+#: visualcomposer/Helpers/Hub/Download.php:36
+msgid "Templates library"
+msgstr ""
+
+#: visualcomposer/Helpers/Hub/Update.php:173
+#: visualcomposer/Helpers/Localizations.php:810
+msgid "Create a new page"
+msgstr ""
+
+#: visualcomposer/Helpers/Hub/Update.php:188
+msgid "Create a new post"
+msgstr ""
+
+#: visualcomposer/Helpers/License.php:148
+msgid "Visual Composer Website Builder license has expired."
+msgstr ""
+
+#: visualcomposer/Helpers/License.php:153
+msgid "Couldn't find a valid Visual Composer Website Builder license."
+msgstr ""
+
+#: visualcomposer/Helpers/License.php:160
+msgid "Visual Composer Website Builder license has been deactivated."
+msgstr ""
+
+#: visualcomposer/Helpers/License.php:163
+msgid "The license key is missing, enter a valid license key."
+msgstr ""
+
+#: visualcomposer/Helpers/License.php:166
+msgid "URL is missing, try again."
+msgstr ""
+
+#: visualcomposer/Helpers/License.php:169
+msgid "Visual Composer Website Builder license is already activated."
+msgstr ""
+
+#: visualcomposer/Helpers/License.php:172
+msgid "Activation failed, try again."
+msgstr ""
+
+#: visualcomposer/Helpers/License.php:175
+msgid "The license key has reached the activation limit."
+msgstr ""
+
+#: visualcomposer/Helpers/License.php:179
+msgid ""
+"The purchase code is already used, deactivate the previous site, and try "
+"again."
+msgstr ""
+
+#: visualcomposer/Helpers/License.php:184
+msgid "An error occurred, try again."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:59
+msgid "Add Element"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:60
+msgid "Add Content"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:61
+#: visualcomposer/Modules/Settings/Pages/Hub.php:105
+msgid "Visual Composer Hub"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:62
+msgid "Add Template"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:63
+msgid "Tree View"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:64
+msgid "Undo"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:65
+msgid "Redo"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:66
+msgid "Responsive View"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:67
+msgid "Desktop"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:68
+msgid "Tablet Landscape"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:69
+msgid "Tablet Portrait"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:70
+msgid "Mobile Landscape"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:71
+msgid "Mobile Portrait"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:72
+#: visualcomposer/Modules/Settings/Pages/Settings.php:75
+msgid "Settings"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:73
+#: visualcomposer/Modules/Hub/Pages/UpdateBePage.php:101
+msgid "Update"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:74
+msgid "Menu"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:75
+msgid "View Page"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:76
+msgid "Back to WordPress"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:77
+msgid "WordPress Dashboard"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:78
+msgid "Publish"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:79
+msgid "Submit for Review"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:80
+msgid "Save Draft"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:81
+#: visualcomposer/Modules/Vendors/PluginsController.php:150
+#: visualcomposer/resources/views/license/pages/license.php:38
+#: visualcomposer/resources/views/settings/layouts/dashboard-main-layout.php:268
+#: visualcomposer/resources/views/settings/layouts/dashboard-premium-teaser.php:36
+#: visualcomposer/resources/views/vendors/dashboard.php:68
+msgid "Go Premium"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:82
+msgid "Get Free License"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:83
+msgid "Activated"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:84
+msgid "Close"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:86
+msgid ""
+"There is no content on the page - start by adding an element or template."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:89
+#: visualcomposer/Modules/Settings/Fields/CssEditor.php:59
+msgid "Custom CSS"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:90
+msgid "Local CSS"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:91
+msgid "Global CSS"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:92
+msgid "Custom JavaScript"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:93
+msgid "Local JavaScript"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:94
+msgid "Local JavaScript will be applied to this particular page only."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:95
+msgid "Global JavaScript"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:96
+msgid "Apply custom Global Javascript code sitewide."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:97
+msgid "Save"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:98
+msgid "Enter template name"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:99
+msgid "Enter preset name"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:100
+msgid "Save Template"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:101
+msgid "Remove Template"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:102
+msgid "Failed to save the template."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:103
+msgid "Download More Templates"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:104
+msgid "Get More Elements"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:105
+msgid "Get More Templates"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:108
+msgid ""
+"There are no templates yet. Save the current layout as a template or "
+"download templates from Visual Composer Hub."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:112
+msgid ""
+"Didn't find the right template? Check out Visual Composer Hub for more "
+"templates."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:116
+#: visualcomposer/Helpers/Localizations.php:452
+msgid ""
+"Access the Visual Composer Hub - download additional elements, blocks, "
+"templates, and addons."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:119
+msgid "Do you want to remove this template?"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:120
+msgid "Do you want to remove this element preset?"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:121
+msgid "Failed to remove the template"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:122
+msgid "Name Your Page, Select"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:123
+msgid "Name The Page"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:124
+msgid "Layout and Start Building"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:125
+msgid "Name Your "
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:126
+msgid "and Start Building"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:129
+msgid ""
+"Start by adding an element to the layout or select one of the pre-defined "
+"templates."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:132
+msgid "Page title"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:135
+msgid ""
+"Didn't find a perfect template? Get a premium license to download templates "
+"from the Visual Composer Hub."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:140
+msgid ""
+"Didn't find an element? Get a premium license to download elements from the "
+"Visual Composer Hub."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:145
+msgid ""
+"Get a premium license to access Visual Composer Hub. Download professionally "
+"designed templates, more content elements, extensions, and more."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:148
+msgid "Add"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:149
+msgid "Row Layout"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:151
+msgid "Design Options"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:152
+msgid "Clone"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:153
+msgid "Copy"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:154
+msgid "Paste"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:155
+msgid "Paste After"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:156
+msgid "Remove"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:157
+msgid "Move"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:158
+msgid "Search for content elements"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:159
+msgid "Search for templates"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:160
+msgid "Search within this category"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:162
+msgid ""
+"A template with this name already exists. Choose a different template name."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:165
+msgid "There is no content on the page to be saved."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:166
+msgid "Enter the template name to save this page as a template."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:167
+msgid "Add one column"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:168
+msgid "Add two columns"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:169
+msgid "Add three columns"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:170
+msgid "Add four columns"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:171
+msgid "Add five columns"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:172
+msgid "Add custom row layout"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:173
+msgid "Add a text block"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:174
+#: visualcomposer/Modules/Editors/EditPostLinks/Controller.php:92
+#: visualcomposer/Modules/Editors/EditPostLinks/Controller.php:128
+#: visualcomposer/Modules/Editors/EditPostLinks/Controller.php:129
+#: visualcomposer/Modules/Editors/EditPostLinks/Controller.php:189
+msgid "Edit with Visual Composer"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:175
+msgid "Classic Editor"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:178
+msgid ""
+"You are switching to Visual Composer. Visual Composer will load the latest "
+"version of the content created with the website builder."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:183
+msgid ""
+"You are switching to the Classic Editor. The content created with Visual "
+"Composer will be copied to Classic Editor (style changes may apply). Any "
+"changes made in the Classic Editor will not be synced with the Visual "
+"Composer layout. Do you want to proceed?"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:186
+msgid "Blank Page"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:187
+msgid "Search for templates by name and description"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:188
+msgid "Open Visual Composer Hub"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:190
+msgid ""
+"Didn't find an element? Check the Visual Composer Hub for more elements."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:194
+msgid ""
+"An error occurred during the Visual Composer extension download process.\n"
+"<ul><li>- Check if your server has a connection to the Internet.</li><li>- "
+"Check if your server proxy has proper configuration settings.</li><li>- "
+"Check your server firewall settings and access to https://my.visualcomposer."
+"com</li><li>- Check if your server has access to the <a href=\"https://aws."
+"amazon.com/ru/premiumsupport/knowledge-center/s3-find-ip-address-ranges/\" "
+"target=\"_blank\" rel=\"noopener noreferrer\">Amazon AWS Region: `us-west-2` "
+"IP</a></li></ul>"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:199
+msgid ""
+"Already have a license? Log in to <a href=\"{link}\" class=\"vcv-activation-"
+"input-field-forgot-license-link\" target=\"_blank\" rel=\"noopener noreferrer"
+"\">My Visual Composer</a> to find it."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:203
+msgid "Do more with the Visual Composer Hub"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:206
+#: visualcomposer/Helpers/Localizations.php:234
+msgid "Nothing found"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:207
+msgid "Add an image"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:208
+msgid "Remove the image"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:209
+msgid "Move the image"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:210
+msgid "Edit or replace the image"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:211
+msgid "Add a video"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:212
+msgid "Remove the video"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:213
+msgid "Move the video"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:214
+msgid "Edit or replace the video"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:215
+msgid "Add a link"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:216
+msgid "Select a URL"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:217
+msgid "Insert or edit a link"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:218
+msgid "Or link to an existing content"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:219
+msgid "Search existing content"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:220
+msgid "Popup"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:221
+msgid "Select a popup template"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:224
+msgid "Popup on element ID"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:227
+msgid "The popup will open once the page is loaded."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:228
+msgid "The popup will load if a user tries to exit the page."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:230
+msgid ""
+"The popup will appear when an element with a unique Element ID will be "
+"displayed (scrolled to) on the page."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:233
+msgid "OnClick action"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:235
+msgid "Open the link in a new tab"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:236
+msgid "Add \"nofollow\" option to the link"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:237
+msgid "Enter the destination URL"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:238
+msgid "The title attribute will be displayed on the link hover."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:240
+msgid "Excerpt"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:241
+msgid "Visual Composer Hub update failed, try again."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:242
+#: visualcomposer/Modules/Editors/Settings/ItemPreviewController.php:71
+msgid "Preview"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:243
+msgid "Preview Changes"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:244
+msgid "Saving Results"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:245
+msgid "Hide Element"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:246
+msgid "Show Element"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:247
+msgid "Element is Hidden"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:248
+msgid "Element Settings"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:250
+msgid ""
+"Change the default parameters to create a unique element. The new element "
+"will be added to your library."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:253
+msgid "Save as a Preset"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:254
+msgid "Save as a Template"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:255
+msgid "Downloading initial extensions"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:256
+msgid "Downloading assets {i} of {cnt}: {name}"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:257
+msgid "Downloading"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:258
+msgid "Updating posts {i} in {cnt}: {name}"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:259
+msgid "Failed to load: {file}"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:263
+msgid ""
+"Double-tap on an element to open the edit window. Tap and hold to initiate "
+"drag and drop."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:266
+msgid "Template"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:267
+msgid "Theme Default"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:269
+msgid "To apply a template save changes and reload the page."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:273
+msgid "To apply title, save changes, and reload the page."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:277
+msgid "To apply title changes save changes and reload the page"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:280
+msgid "Disable the page title"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:282
+msgid ""
+"{name} has been successfully downloaded from the Visual Composer Hub and "
+"added to your content library."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:286
+msgid ""
+"{name} has been successfully downloaded from the Visual Composer Hub and "
+"added to your content library. To finish the installation process reload the "
+"page."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:290
+msgid ""
+"The element was copied without a unique Element ID. Adjust the Element ID by "
+"editing the element."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:294
+msgid ""
+"The element was cloned without a unique Element ID. Adjust the Element ID by "
+"editing the element."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:298
+msgid "Failed to download the element (license expired or request timed out)"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:301
+msgid "Failed to download the element"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:304
+msgid ""
+"It seems that something went wrong with loading the content. Make sure you "
+"are loading the correct content and try again."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:307
+#: visualcomposer/Helpers/Localizations.php:315
+#: visualcomposer/Helpers/Localizations.php:329
+msgid "Return to WordPress dashboard"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:308
+msgid "Try Again"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:309
+msgid "Report an Issue"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:312
+msgid ""
+"It seems you are trying to edit the archive page which displays post "
+"archives instead of content. Before the edit, make sure to convert it to a "
+"static page via your WordPress admin."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:317
+msgid ""
+"Replace the {elementLabel} within this element with another {elementLabel} "
+"from the Element Library."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:321
+msgid "Replace the element with a different element from the same category."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:325
+msgid ""
+"We have received your request - the ticket has been created. Our support "
+"representative will contact you shortly."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:333
+msgid "Thank You!"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:338
+#, php-format
+msgid ""
+"There is a new version of Visual Composer Website Builder available. <a href="
+"\"%s\">Update now</a> to version %s."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:346
+#, php-format
+msgid "Select a %s or %screate a new one%s."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:354
+#: visualcomposer/Modules/Editors/Settings/PageTemplatesVariablesController.php:112
+msgid "Default"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:358
+msgid "Global Default"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:362
+msgid "Layout Default"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:366
+msgid ""
+"Update Visual Composer plugin to the most recent version to download this "
+"content element."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:370
+msgid ""
+"Update Visual Composer plugin to the most recent version to download this "
+"template."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:374
+msgid ""
+"Update Visual Composer plugin to the most recent version to download this "
+"addon."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:377
+msgid "Start Building"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:380
+#, php-format
+msgid "%s Name"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:386
+msgid ""
+"WordPress theme defined layout for a specific page, post, or custom post "
+"type."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:390
+msgid ""
+"A blank page layout with a boxed content area in the middle of the page "
+"without header, footer, or sidebar."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:394
+msgid "A full-width blank page without header, footer, or sidebar."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:398
+msgid ""
+"A default layout for the post type created in the Visual Composer Theme "
+"Builder."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:402
+msgid "A default layout with custom header, content, and footer area."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:406
+msgid ""
+"A default layout with custom header, content, footer, and sidebar area on "
+"the right."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:410
+msgid ""
+"A default layout with custom header, content, footer, and sidebar area on "
+"the left."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:414
+msgid "Available in the Premium version."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:418
+msgid "Gutenberg plugin doesn't work properly. Check the Gutenberg plugin."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:421
+msgid "Free"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:422
+#: visualcomposer/Helpers/Localizations.php:442
+msgid "Premium"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:423
+msgid "Remove All"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:424
+msgid "Continue importing"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:425
+msgid "Back to import"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:426
+msgid "Starting import process..."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:427
+msgid "Back to parent"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:428
+msgid "Back"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:429
+msgid "Manage content in your library"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:430
+msgid "This element can’t be deleted"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:431
+msgid "Editor Settings"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:432
+msgid "Click to edit column value"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:433
+msgid "Addon"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:435
+msgid "Don't close this window while the download is in progress."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:438
+msgid "Create Your WordPress Website Today."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:439
+msgid "Start Easy. Build Fast."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:440
+msgid "Skip this post"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:441
+msgid "Do More With Visual Composer"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:443
+msgid ""
+"Get unlimited access to the Visual Composer Hub with 500+ elements, "
+"templates, addons, and integrations."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:444
+msgid "Get Started"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:445
+msgid "Sending Error Report"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:447
+msgid "Don't close this window while sending an error is in the process."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:450
+msgid "Oops ... Something Went Wrong"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:456
+msgid ""
+"Add custom JavaScript code to insert it locally on this page in <footer>. "
+"Insert Google Analytics, Tag Manager, Kissmetrics, or other JavaScript code "
+"snippets."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:460
+msgid ""
+"Add custom JavaScript code to insert it locally on this page in <header> or "
+"<footer>. Insert Google Analytics, Tag Manager, Kissmetrics, or other "
+"JavaScript code snippets."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:464
+msgid ""
+"Add custom JavaScript code to insert it globally on every page in <header> "
+"or <footer>. Insert Google Analytics, Tag Manager, Kissmetrics, or other "
+"JavaScript code snippets."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:467
+msgid "Open the Edit Form"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:469
+msgid "Shortcode"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:473
+msgid ""
+"Paste shortcode with all the parameters. The shortcode must be installed on "
+"your WordPress site via a plugin or theme."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:477
+#: visualcomposer/Modules/License/Pages/GoPremium.php:168
+#: visualcomposer/resources/views/license/pages/license.php:33
+msgid "Activate Premium"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:481
+msgid "Search for free high-resolution photos on Unsplash"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:485
+msgid ""
+"Download and Add Free Beautiful Photos to Your Site With Visual Composer "
+"Premium"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:489
+msgid "Download and Add Free Beautiful Photos to Your Site"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:493
+msgid "No access, check your license."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:497
+msgid "Could not connect to Unsplash Server."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:501
+msgid "The image has been downloaded to the Media Library."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:505
+msgid "Could not parse data from the server."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:509
+msgid "Small"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:513
+msgid "Medium"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:517
+msgid "Large"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:521
+msgid "images"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:525
+msgid "Download images from Unsplash to the Media Library"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:529
+msgid "Permalink"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:533
+msgid ""
+"Enjoying Visual Composer Website Builder? Let your friends know about it - "
+"spread the word."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:537
+msgid "Insert dynamic content"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:541
+msgid "Edit dynamic content"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:545
+msgid "Remove dynamic content"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:549
+msgid "Download Dynamic Content Addon"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:553
+msgid "Select a page, post, or custom post type as the dynamic content source."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:557
+msgid "By default, dynamic content is taken from the current post."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:561
+msgid "Set custom post source"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:565
+msgid "Select a custom field"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:569
+msgid "Dynamic Content"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:573
+msgid "No value set"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:577
+msgid "Activate Premium to Unlock Unsplash"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:581
+msgid "Get Access to the Visual Composer Hub"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:585
+msgid "Free License (Your plan)"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:589
+msgid "A theme builder with Header, Footer, and Sidebar editor"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:593
+msgid "WooCommerce compatibility"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:597
+msgid "Premium support and updates"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:601
+msgid "Premium support"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:605
+msgid "Regular updates"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:609
+msgid "I Want a Free License"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:613
+msgid "Premium License"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:617
+msgid ""
+"Unlimited access to the Visual Composer Hub of elements, templates, and "
+"addons"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:621
+msgid ""
+"Limited access to the Visual Composer Hub of elements, templates, and addons"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:625
+msgid "I want to go premium"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:630
+#, php-format
+msgid "%sEdit%s this %s or %screate%s a new one."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:641
+#, php-format
+msgid "%sCreate%s a new %s."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:649
+msgid "Enter your license key"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:653
+msgid "The element has been successfully saved."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:657
+msgid "The element with such a name already exists!"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:661
+msgid "Enter a preset name to save the element as a preset!"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:665
+msgid "The template has been successfully saved."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:669
+msgid "The template has been successfully removed."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:673
+msgid ""
+"Change the default parameters of the section to save it as a unique block "
+"template. The new block template will be added to your library."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:677
+msgid "Element preset has been removed."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:681
+msgid ""
+"How disappointed would you be if this product no longer existed tomorrow?"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:685
+msgid "Very disappointed"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:689
+msgid "Somewhat disappointed"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:693
+msgid "Not disappointed (it really isn’t that useful)"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:697
+msgid "Submit Your Feedback"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:701
+msgid "How can we become better?"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:705
+msgid ""
+"Thanks for your feedback. Please rate us on WordPress.org and help others to "
+"discover Visual Composer."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:709
+msgid "Your opinion matters. Help us to improve by taking a quick survey."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:713
+msgid "Write Your Review"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:717
+msgid "Leave Your Feedback"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:721
+msgid "Like"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:725
+msgid "Dislike"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:729
+msgid "The current popup will be replaced with the popup template."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:734
+msgid "QUICK FEEDBACK"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:738
+msgid ""
+"If you have a moment, please share why you are deactivating Visual Composer:"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:742
+msgid "I no longer need the plugin"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:746
+msgid "I found a better plugin"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:750
+msgid "Please share which plugin"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:754
+msgid "I couldn't get the plugin to work"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:758
+msgid "It's a temporary deactivation"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:766
+msgid "Please share the reason"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:770
+msgid "Submit &amp; Deactivate"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:774
+msgid "Skip &amp; Deactivate"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:778
+#: visualcomposer/resources/views/settings/layouts/dashboard-premium-teaser.php:34
+msgid "Download Addon"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:782
+msgid "Installed"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:786
+msgid "Available in Premium"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:790
+msgid "Don't forget to tweet about Visual Composer Website Builder. Thanks!"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:794
+msgid "Download"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:798
+msgid "Install"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:802
+msgid "Activate"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:806
+msgid "Try The Tutorial Template"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:814
+msgid ""
+"Build your site with the help of the drag and drop builder and without "
+"coding - it's that easy."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:818
+#, php-format
+msgid "Already have a Premium license? %1s or %2s."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:822
+msgid "Already have a Premium license?"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:826
+msgid "Activate here"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:830
+msgid "go Premium"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:834
+msgid ""
+"It seems that your copy of Visual Composer was bundled in a theme - use your "
+"Envato purchase key to activate Visual Composer Premium. You can also "
+"activate Visual Composer with a free or premium license."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:838
+msgid "Lock Element"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:842
+msgid "URL"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:846
+msgid "Open Popup"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:850
+msgid "Close Popup"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:854
+msgid "Closing the popup option will close the current popup."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:858
+msgid "The element has been locked by your site Administrator."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:862
+msgid "Element lock"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:866
+msgid "Lock All Elements"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:870
+msgid "Unlock All Elements"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:874
+msgid ""
+"Lock or unlock all elements on your page. Your user roles with Administrator "
+"access will be able to edit elements."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:878
+msgid "You can lock/unlock specific elements under the element Edit window."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:882
+msgid ""
+"All elements on the page have been locked. Only the Administrator role can "
+"edit the content."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:886
+msgid ""
+"All elements on the page have been unlocked. All users with the edit option "
+"can edit the content."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:890
+msgid ""
+"The element has been locked and can be edited only by the Administrator role."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:894
+msgid ""
+"The element has been unlocked and can be edited by all roles with the edit "
+"option."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:898
+msgid ""
+"The element and all inner elements have been locked and can be edited only "
+"by the Administrator role."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:902
+msgid ""
+"The element and all inner elements have been unlocked and can be edited by "
+"all roles with the edit option."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:906
+msgid "Changes may not be saved."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:910
+msgid "Visual Composer Insights"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:914
+#: visualcomposer/Helpers/PostsGridSourcePosts.php:38
+msgid "All"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:918
+msgid "Critical"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:922
+msgid "Warnings"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:926
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:239
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:247
+msgid "Success"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:930
+msgid "Image size exceeded"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:934
+msgid "Background Image size exceeded"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:938
+#, php-format
+msgid ""
+"The image size exceeds %s. This may impact the page's performance and SEO "
+"ranking."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:942
+msgid "The image ALT attribute is missing"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:946
+msgid ""
+"Missing the ALT attribute for the image. This may impact the SEO ranking of "
+"the page."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:950
+msgid "H1 title missing on the page"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:954
+msgid ""
+"The page is missing the H1 tag. This may impact the SEO ranking of the page."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:958
+msgid "H1 title exists on the page"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:962
+msgid "The page has an H1 tag. Great job!"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:966
+msgid "More than one H1 tag found"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:970
+msgid ""
+"You have more than one H1 tag on your page which is bad for SEO ranking. "
+"Make sure to keep only one H1 and use lower-level headings (H2, H3, etc.) to "
+"structure your content."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:974
+msgid "All images have ALT attributes"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:978
+msgid "All images have ALT attributes. Great Job!"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:982
+msgid "All images have optimal sizes"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:986
+msgid "All images have optimal sizes. Awesome!"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:990
+msgid "No content found"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:994
+msgid ""
+"It seems this page has no content. Make sure to add elements or templates."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:998
+msgid "No Critical Issues Found"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1002
+msgid ""
+"There are no critical issues on the page. Congratulations and keep up the "
+"good work!"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1006
+msgid "No Warnings Found"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1010
+msgid ""
+"There are no warnings on the page. Congratulations and keep up the good work!"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1014
+msgid "Paragraph length"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1018
+msgid "Paragraph word count is"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1022
+msgid "You set a proper length for the paragraphs. Great job!"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1026
+msgid ""
+"The paragraph contains more than 150 words. This may affect readability."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1030
+msgid ""
+"The paragraph contains more than 200 words. This may affect readability."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1034
+msgid "The page title is too long."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1038
+msgid ""
+"The page title exceeds 60 characters which are considered too long. Make "
+"sure to adjust it between 10 to 60 characters."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1042
+msgid ""
+"The page title contains more than 100 characters and will be cut off by "
+"search engines. Shorten your page title!"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1046
+msgid "The page title is too short."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1050
+msgid ""
+"The page title is too short. Make sure to adjust the title between 10 to 60 "
+"characters."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1054
+msgid "The page title length is optimal."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1058
+msgid "It seems that this page is set to \"noindex\" directive."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1062
+msgid ""
+"Using \"noindex\" will exclude this page from search results. If you have "
+"set \"noindex\" on purpose, ignore this warning."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1066
+msgid "Google Analytics Tag is missing."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1070
+msgid "Google Analytics Tag is added to the page."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1074
+msgid "It seems Google Analytics Tags is not added to the page."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1078
+msgid "Google Analytics Tag is added to the page. Great job!"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1082
+msgid "Text length"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1086
+#, php-format
+msgid ""
+"The text contains %length words. This is far below the recommended minimum "
+"of 300 words."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1090
+#, php-format
+msgid "The text contains %length words. Good job!"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1094
+msgid "No internal links appear on the page."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1098
+msgid "There are no internal links on the page. Add some!"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1102
+msgid "No external links appear on the page."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1106
+msgid "There are no external links to the page. Add some!"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1110
+#, php-format
+msgid "Only one %element element can be added to the page."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1114
+#, php-format
+msgid "Only two %element elements can be added to the page."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1118
+#, php-format
+msgid "Only three %element elements can be added to the page."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1122
+#, php-format
+msgid "Only four %element elements can be added to the page."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1126
+#, php-format
+msgid "Only five %element elements can be added to the page."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1130
+#, php-format
+msgid "Only %count %element elements can be added to the page."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1134
+msgid ""
+"This is a default WordPress content area where the post or page content will "
+"be displayed."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1138
+msgid "Activate Hub"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1142
+msgid "Activate Your Premium License"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1146
+msgid ""
+"Make the final step! Enter your license key to activate Visual Composer "
+"Premium and get full access to the Visual Composer Hub."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1150
+msgid "Define a comments area for a post or page layout."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1154
+msgid ""
+"The content area is missing for your layout. Make sure to add the Content "
+"Area element to specify the place in your layout where the page or post "
+"content will be displayed."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1158
+#, php-format
+msgid ""
+"The template you want to add contains %element element. You already have "
+"%element element added - remove it before adding the template."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1162
+msgid ""
+"Download and Add Free Animated GIFs to Your Site With Visual Composer Premium"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1166
+msgid "Download and Add Free Animated GIFs to Your Site"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1170
+msgid "Could not connect to Giphy Server!"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1174
+msgid "Discover the best GIF animations from Giphy."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1178
+msgid "Download animations from Giphy to your Media Library"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1182
+msgid "Activate Premium to Unlock Giphy Integration"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1186
+msgid "GIF animations"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1190
+msgid "GIF animation has been downloaded to your Media Library."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1194
+msgid "Regular"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1198
+msgid "Full"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1202
+msgid "Powered by"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1206
+msgid "Substitute Element"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1210
+msgid "Manage your site menus"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1214
+msgid "in the WordPress dashboard."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1218
+#: visualcomposer/Modules/Editors/Settings/ItemDataCollectionController.php:57
+msgid "Share Usage Data"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1222
+#: visualcomposer/Modules/Editors/Settings/ItemDataCollectionController.php:50
+msgid ""
+"Help to make Visual Composer better by sharing anonymous usage data. We "
+"appreciate your help."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1226
+msgid "Read more"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1230
+#: visualcomposer/Modules/Editors/Settings/ItemDataCollectionController.php:74
+msgid "Share anonymous data"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1234
+msgid "Submit"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1238
+msgid "New"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1242
+#: visualcomposer/resources/views/settings/fields/dataCollectionTable.php:21
+msgid "Elements"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1246
+#: visualcomposer/resources/views/settings/fields/dataCollectionTable.php:25
+msgid "Templates"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1250
+msgid "Get full access to the Visual Composer Hub"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1254
+msgid ""
+"Download all exclusive elements, templates, and extensions with Visual "
+"Composer Premium."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1258
+msgid ""
+"This page can not be saved, because it is made for the demo purposes only."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1262
+#: visualcomposer/Modules/Settings/Fields/FactoryResetController.php:90
+msgid "Reset"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1266
+msgid "welcome"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1270
+msgid ""
+"Discover visual editor that gives everything to create a website you are "
+"proud of."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1274
+msgid "Done"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1278
+msgid "Next Tip"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1282
+msgid "Click here to skip"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1286
+msgid "Element Controls"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1290
+msgid "Quick Actions"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1294
+msgid "Insights"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1298
+msgid "On-Page Settings"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1302
+msgid "Publishing Options"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1306
+msgid ""
+"This is your content library. <a href=\"https://visualcomposer.com/help/"
+"content-elements-structure/add-content/?utm_source="
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1314
+msgid ""
+"Use <a href=\"https://visualcomposer.com/help/interface/element-controls/?"
+"utm_source="
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1321
+msgid ""
+"Use <a href=\"https://visualcomposer.com/help/content-elements-structure/add-"
+"content/?utm_source="
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1327
+msgid ""
+"<a href=\"https://visualcomposer.com/help/visual-composer-insights-"
+"assistant/?utm_source="
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1332
+msgid ""
+"Check how your page looks on different devices. Select the device type to <a "
+"href=\"https://visualcomposer.com/help/responsive-design/?utm_source="
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1338
+msgid ""
+"Access <a href=\"https://visualcomposer.com/help/visual-composer-hub/?"
+"utm_source="
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1343
+msgid "Change <a href=\"https://visualcomposer.com/help/settings/?utm_source="
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1348
+msgid "Preview, save, and publish your content."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1352
+msgid ""
+"Insights is a content analysis tool that helps to improve the quality, "
+"performance, and SEO ranking of the page."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1356
+msgid ""
+"<a href=\"https://visualcomposer.com/help/visual-composer-hub/?utm_source="
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1361
+msgid ""
+"Use the toggle to switch between light and dark background while editing the "
+"text."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1365
+msgid ""
+"Replace static content with <a href=\"https://visualcomposer.com/help/theme-"
+"builder/dynamic-content/?utm_source="
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1371
+msgid ""
+"Use Reverse stacking toggle to stack columns from right to left on mobile "
+"devices."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1375
+msgid ""
+"Enable custom responsiveness to control column width on different devices."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1379
+msgid ""
+"Use the Show element toggle to hide or show elements on all or custom "
+"devices."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1383
+msgid "Manage if the element appears on a particular device."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1387
+msgid "Choose an event performed when clicking on the image."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1391
+msgid ""
+"Modify the destination link to the page. Make sure to enable the option to "
+"set a custom permalink in WordPress Settings."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1395
+msgid "Select or change the layout of the page, post, or custom post type."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1399
+msgid "Excerpts are optional hand-crafted summaries of your content."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1403
+msgid ""
+"Add custom JavaScript code to insert it locally or globally on every page in "
+"header or footer. Insert Google Analytics, Tag Manager, Kissmetrics, or "
+"other JavaScript code snippets."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1407
+msgid ""
+"Apply custom CSS code to the whole site or to this particular page only."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1411
+msgid "To preview the changes, use the Responsive View in the navigation bar."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1415
+msgid "Parent Page"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1419
+msgid ""
+"A popup container element allows to style the overall look of your popup."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1423
+msgid "Margin top"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1427
+msgid ""
+"Specify space (in pixels) from the screen top where element should stick."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1431
+msgid "Z-index"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1435
+msgid "Relate to parent"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1439
+msgid "Limit stickiness to work only in the parent container."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1443
+msgid "Show on sticky"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1447
+msgid "Show only when it becomes sticky."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1451
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:77
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:97
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:117
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:137
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:163
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:189
+msgid "Author"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1455
+msgid "Page Settings"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1463
+msgid "Discussion"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1467
+msgid "Allow comments"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1471
+msgid "Allow trackbacks and pingbacks on this page"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1475
+msgid "Parallax effect"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1479
+msgid "Featured image is set. Save page and reload editor to see changes."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1483
+msgid "Featured image is removed. Save page and reload editor to see changes."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1487
+msgid "Tags"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1491
+msgid "Manage tags associated with the post."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1495
+#: visualcomposer/Modules/Settings/Pages/Settings.php:76
+msgid "General"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1498
+msgid "Do you want to remove this element?"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1499
+msgid ""
+"The element is in use on current page. Remove all element copies from your "
+"site before deleting it."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1501
+msgid "Element has been removed."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1505
+msgid "Add new"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1513
+msgid "Category"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1517
+msgid "Parent Category"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1521
+msgid "Add New Category"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1525
+msgid "Select categories for the post or "
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1529
+msgid "add a new category"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1533
+msgid "Select Parent Category"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1536
+msgid "Remove `%`"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1537
+msgid "Add `%`"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1539
+msgid "Manage post categories or add a new category."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1543
+msgid "Download Premium Icon Libraries"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1547
+msgid "Download Premium Design Options"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1551
+msgid "Download The Addon"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1555
+msgid "Premium Popup Builder. Do More."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1559
+msgid ""
+"Create engaging popups to boost your conversion rate with Visual Composer "
+"Premium Popup Builder."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1563
+msgid "All layouts are available in the Premium version."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1567
+msgid "Do More With Premium"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1571
+msgid ""
+"Apply a layout with a header, footer, and sidebar with Visual Composer "
+"Premium."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1575
+msgid ""
+"Get access to more than 200 content elements with Visual Composer Premium."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1579
+msgid ""
+"Get access to more than 150 beautiful multipurpose templates and template "
+"blocks with Visual Composer Premium."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1583
+msgid "Access the whole GIPHY library with Visual Composer Premium."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1587
+msgid ""
+"Access the whole Unsplash stock image library with Visual Composer Premium."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1591
+msgid "Unlock All Features"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1595
+msgid "Width"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1599
+msgid "px"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1603
+msgid "You can instantly check your layout on the most popular device types."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1607
+msgid "Dynamic Content is a Premium Feature"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1611
+msgid ""
+"Replace static content with dynamic content from WordPress default and "
+"custom meta fields with Visual Composer Premium."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1615
+msgid ""
+"Replace static content with dynamic content from WordPress default and "
+"custom meta fields with Visual Composer Premium Addon."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1619
+msgid "Dynamic View"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1623
+msgid "Element Lock is a Premium feature"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1627
+msgid ""
+"With Visual Composer Premium, you can lock or unlock elements to manage who "
+"will be able to edit them."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1631
+msgid ""
+"Lock or unlock all elements on your page. Your user roles with Administrator "
+"access will be able to edit elements. <br>You can lock/unlock specific "
+"elements under the element Edit window. <br>To get access to this feature, "
+"download the Role Manager addon from the Visual Composer Hub."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1637
+msgid "Popup Builder is a Premium Feature"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1641
+msgid ""
+"Build custom popups with the Visual Composer Popup Builder that is available "
+"with the premium version of the plugin."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1645
+msgid ""
+"Build custom popups with the Visual Composer Popup Builder. It's available "
+"in the Visual Composer Hub."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1649
+msgid "Download Popup Builder"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1653
+msgid "Element Settings is a Premium Feature"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1657
+msgid ""
+"With Visual Composer Premium, you can change the default parameters to "
+"create a unique element and save it to your Content Library."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1661
+msgid ""
+"With the Element Presets addon, you can change the default parameters to "
+"create a unique element and save it to your Content Library."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1665
+msgid ""
+"To download content from the Visual Composer Hub, read and accept our <a "
+"href=\"https://visualcomposer.com/terms-of-use/\" target=\"_blank\" rel="
+"\"noopener noreferrer\">cloud access terms</a> and <a href=\"https://"
+"visualcomposer.com/privacy-policy/\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">privacy policy</a>."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1669
+msgid "Yes, I agree"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1673
+msgid "Hiding player controls available only for Vimeo PRO users."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1677
+msgid "Vimeo video link"
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1682
+#, php-format
+msgid "%sCreate%s a new %s template."
+msgstr ""
+
+#: visualcomposer/Helpers/Localizations.php:1691
+#, php-format
+msgid "%sEdit%s this %s template or %screate%s a new one."
+msgstr ""
+
+#: visualcomposer/Helpers/LoginCategory.php:21
+msgid "Business"
+msgstr ""
+
+#: visualcomposer/Helpers/LoginCategory.php:22
+#: visualcomposer/resources/views/vendors/dashboard.php:61
+msgid "Blog"
+msgstr ""
+
+#: visualcomposer/Helpers/LoginCategory.php:23
+msgid "Creative Arts"
+msgstr ""
+
+#: visualcomposer/Helpers/LoginCategory.php:24
+msgid "Community & Education"
+msgstr ""
+
+#: visualcomposer/Helpers/LoginCategory.php:25
+msgid "Design"
+msgstr ""
+
+#: visualcomposer/Helpers/LoginCategory.php:26
+msgid "Entertainment & Music"
+msgstr ""
+
+#: visualcomposer/Helpers/LoginCategory.php:27
+msgid "Events"
+msgstr ""
+
+#: visualcomposer/Helpers/LoginCategory.php:28
+msgid "Fashion & Beauty"
+msgstr ""
+
+#: visualcomposer/Helpers/LoginCategory.php:29
+msgid "Health & Wellness"
+msgstr ""
+
+#: visualcomposer/Helpers/LoginCategory.php:30
+msgid "Landing Pages"
+msgstr ""
+
+#: visualcomposer/Helpers/LoginCategory.php:31
+msgid "Online Store"
+msgstr ""
+
+#: visualcomposer/Helpers/LoginCategory.php:32
+msgid "Photography"
+msgstr ""
+
+#: visualcomposer/Helpers/LoginCategory.php:33
+msgid "Portfolio & Personal"
+msgstr ""
+
+#: visualcomposer/Helpers/LoginCategory.php:34
+msgid "Restaurants & Food"
+msgstr ""
+
+#: visualcomposer/Helpers/LoginCategory.php:35
+msgid "Services"
+msgstr ""
+
+#: visualcomposer/Helpers/LoginCategory.php:36
+msgid "Travel & Accommodation"
+msgstr ""
+
+#: visualcomposer/Helpers/Token.php:124
+#, php-format
+msgid "Your Visual Composer Website Builder License will expire soon - %s"
+msgstr ""
+
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:65
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:85
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:105
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:125
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:151
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:177
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:203
+msgid "Post"
+msgstr ""
+
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:143
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:169
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:195
+#: visualcomposer/Modules/Editors/DataAjax/PostFieldsController.php:215
+msgid "Custom Fields"
+msgstr ""
+
+#: visualcomposer/Modules/Editors/EditPostLinks/Controller.php:153
+#: visualcomposer/Modules/Editors/Frontend/MenuController.php:87
+msgid "Add New with Visual Composer"
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Elements/Controller.php:45
+msgid "You are not allowed to delete elements."
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Elements/Controller.php:53
+msgid "The default element cannot be removed"
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Elements/Controller.php:60
+msgid ""
+"The element is in use on one of your pages or templates. Remove all element "
+"copies from your site before deleting it."
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Frontend/Controller.php:98
+msgid "Cheatin&#8217; uh?"
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Frontend/Controller.php:99
+msgid "Sorry, you are not allowed to create posts."
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Frontend/MenuController.php:155
+msgid "Add New with Visual&nbsp;Composer"
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Frontend/MenuController.php:189
+msgid "Select your menu"
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Settings/EditorLayoutController.php:50
+msgid "Specify the default state for the \"Responsive View\" control."
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Settings/EditorLayoutController.php:57
+msgid "Default Responsive View"
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Settings/ItemBadgeController.php:52
+msgid ""
+"Let the world know that you are proudly using Visual Composer on your "
+"website."
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Settings/ItemBadgeController.php:59
+msgid "\"Created with Visual Composer\" Badge"
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Settings/ItemBadgeController.php:73
+msgid "Add badge"
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Settings/ItemInitialHelpersController.php:48
+msgid "Display an interactive help guide when you enter the editor next time."
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Settings/ItemInitialHelpersController.php:55
+msgid "Help Guide"
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Settings/ItemInitialHelpersController.php:69
+msgid "Display Help Guide"
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Settings/ItemPreviewController.php:50
+msgid "Enable element and template preview popup."
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Settings/ItemPreviewController.php:57
+msgid "Enable Preview"
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Settings/PageTemplatesVariablesController.php:49
+msgid "Default Layout or Select Custom"
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Settings/PageTemplatesVariablesController.php:53
+msgid "Blank Layout"
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Settings/PageTemplatesVariablesController.php:79
+#: visualcomposer/Modules/Editors/Settings/PageTemplatesVariablesController.php:92
+#: visualcomposer/Modules/Settings/MenuController.php:62
+msgid "Visual Composer"
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Settings/WordPressSettings/AuthorController.php:63
+#, php-format
+msgid "%1$s (%2$s)"
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Templates/Controller.php:171
+msgid "You are not allowed to delete templates."
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Templates/PostType.php:38
+msgid "Global Templates"
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Tutorial/PostType.php:32
+msgid "Tutorial"
+msgstr ""
+
+#: visualcomposer/Modules/Editors/Tutorial/PostType.php:33
+msgid "Tutorials"
+msgstr ""
+
+#: visualcomposer/Modules/FrontView/PluginsInfoController.php:42
+msgid ""
+"Powered by Visual Composer Website Builder - fast and easy-to-use drag and "
+"drop visual editor for WordPress."
+msgstr ""
+
+#: visualcomposer/Modules/Hub/Assets/AssetDownloadController.php:138
+msgid "Failed to update shared libraries"
+msgstr ""
+
+#: visualcomposer/Modules/Hub/DownloadController.php:86
+#: visualcomposer/Modules/Hub/Traits/Action.php:73
+#, php-format
+msgid ""
+"A .zip file of the Visual Composer is broken - the checksum check failed. "
+"Check your Internet connection, initiate reset under Visual Composer "
+"Settings, and try again.\n"
+"\n"
+"If the problem still occurs, visit %smy.visualcomposer.com/support%s for "
+"technical assistance.\n"
+msgstr ""
+
+#: visualcomposer/Modules/Hub/Pages/PremiumTeasers.php:45
+msgid "HEADERS AND FOOTERS ARE A PREMIUM FEATURE"
+msgstr ""
+
+#: visualcomposer/Modules/Hub/Pages/PremiumTeasers.php:47
+msgid ""
+"Visual Composer Premium allows replacing the theme default header and footer "
+"with your header and footer templates created with Visual Composer."
+msgstr ""
+
+#: visualcomposer/Modules/Hub/Pages/PremiumTeasers.php:56
+msgid "THEME TEMPLATES ARE A PREMIUM FEATURE"
+msgstr ""
+
+#: visualcomposer/Modules/Hub/Pages/PremiumTeasers.php:58
+msgid ""
+"Visual Composer Premium allows replacing the theme default theme templates "
+"like 404 page, search page, author page, post archive with your templates "
+"created with Visual Composer."
+msgstr ""
+
+#: visualcomposer/Modules/Hub/Pages/PremiumTeasers.php:67
+msgid "MAINTENANCE MODE IS A PREMIUM FEATURE"
+msgstr ""
+
+#: visualcomposer/Modules/Hub/Pages/PremiumTeasers.php:69
+msgid ""
+"Visual Composer Premium allows enabling maintenance mode and selecting the "
+"page that will be displayed to the website visitors. Users with access to "
+"the admin panel will still be able to preview and edit the website."
+msgstr ""
+
+#: visualcomposer/Modules/Hub/Pages/PremiumTeasers.php:78
+msgid "POPUP BUILDER IS A PREMIUM FEATURE"
+msgstr ""
+
+#: visualcomposer/Modules/Hub/Pages/PremiumTeasers.php:80
+msgid ""
+"Visual Composer Premium allows specifying site-wide popups for specific "
+"events like First Page Load, Every Page Load, or Exit Intent."
+msgstr ""
+
+#: visualcomposer/Modules/Hub/StockMedia/StockMediaDownloadController.php:85
+msgid "Failed to get the media's item ID, please try again."
+msgstr ""
+
+#: visualcomposer/Modules/Hub/StockMedia/StockMediaDownloadController.php:93
+msgid ""
+"No access to upload files. Check your license options to make sure you are "
+"allowed to upload files."
+msgstr ""
+
+#: visualcomposer/Modules/Hub/StockMedia/StockMediaDownloadController.php:144
+msgid "Wrong image extension."
+msgstr ""
+
+#: visualcomposer/Modules/Hub/StockMedia/StockMediaDownloadController.php:156
+msgid ""
+"Failed to download the image. Make sure the upload folder is writable and "
+"try again."
+msgstr ""
+
+#: visualcomposer/Modules/Hub/StockMedia/StockMediaDownloadController.php:165
+msgid "Unknown image format."
+msgstr ""
+
+#: visualcomposer/Modules/Hub/StockMedia/StockMediaDownloadController.php:169
+msgid "Unknown image provider."
+msgstr ""
+
+#: visualcomposer/Modules/License/LicenseController.php:118
+msgid "Failed to activate the license, try again."
+msgstr ""
+
+#: visualcomposer/Modules/License/Pages/GettingStarted.php:125
+msgid "Getting Started"
+msgstr ""
+
+#: visualcomposer/Modules/License/Pages/GoPremium.php:110
+#, php-format
+msgid ""
+"<strong>Visual Composer:</strong> <a href=\"%s\">Activate Premium</a> "
+"license to get full access to Visual Composer Hub. A place to download more "
+"content elements, templates, and addons."
+msgstr ""
+
+#: visualcomposer/Modules/License/Pages/LicenseStatus.php:69
+#: visualcomposer/Modules/License/Pages/LicenseStatus.php:100
+msgid "License"
+msgstr ""
+
+#: visualcomposer/Modules/License/UpdateVariablesController.php:59
+msgid ""
+"Build your site with the help of the drag and drop builder straight from the "
+"frontend editor - it's that easy."
+msgstr ""
+
+#: visualcomposer/Modules/License/UpdateVariablesController.php:67
+msgid ""
+"Get more elements and templates from the Visual Composer Hub - a free online "
+"marketplace."
+msgstr ""
+
+#: visualcomposer/Modules/License/UpdateVariablesController.php:76
+msgid "Next level website performance to rank higher and deliver faster."
+msgstr ""
+
+#: visualcomposer/Modules/License/UpdateVariablesController.php:85
+msgid ""
+"Control every detail of your website with flexible design options and "
+"customization tools."
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Fields/CssEditor.php:53
+msgid "Global CSS will be applied sitewide."
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Fields/FactoryResetController.php:67
+msgid "Proceed with a reset?"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Fields/FactoryResetController.php:68
+msgid "initiate reset"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Fields/FactoryResetController.php:78
+#, php-format
+msgid ""
+"Restore default plugin state to re-download all installed bundles and auto-"
+"configure path after migration (don’t worry, the content of the site will "
+"not be affected) - %s."
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Fields/FactoryResetController.php:113
+msgid "Incorrect permissions."
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Fields/FactoryResetController.php:118
+msgid "Session expired"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Fields/FactoryResetController.php:128
+msgid "Visual Composer asset reset was successful."
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Fields/JsEditor.php:53
+msgid ""
+"Add custom HTML or JavaScript code to insert it globally on every page in "
+"<header> and <footer>. Insert Google Analytics, Tag Manager, Kissmetrics or "
+"other JavaScript code snippets."
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Fields/JsEditor.php:61
+msgid "Custom HTML and JavaScript"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Fields/PostTypes.php:60
+msgid ""
+"Specify post types where you want to use Visual Composer Website Builder."
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Fields/PostTypes.php:67
+msgid "Post Types"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/NoticeController.php:79
+msgid "Dismiss"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/CssJsSettings.php:94
+msgid "CSS, HTML & JavaScript"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/Settings.php:74
+msgid "Dashboard"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:100
+#, php-format
+msgid "PHP version %s or greater (recommended 7 or greater)"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:108
+#, php-format
+msgid "WordPress version %s or greater"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:117
+msgid "WP_DEBUG, false"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:117
+msgid "WP_DEBUG, true"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:128
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:142
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:156
+msgid "Unlimited"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:131
+#, php-format
+msgid "Post max size should be %sM, currently it is %s"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:145
+#, php-format
+msgid "Memory limit should be %sM, currently it is %s"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:159
+#, php-format
+msgid "post_max_size limit should be %sM, currently it is %s"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:170
+#, php-format
+msgid "max_input_nesting_level should be %s, currently it is %s"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:181
+#, php-format
+msgid "max_input_vars should be %s, currently it is %s"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:190
+#, php-format
+msgid "Max execution time should be %sS, currently it is %sS"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:199
+#, php-format
+msgid "File max upload size should be %sM, currently it is %s"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:207
+msgid "Writable"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:207
+msgid "Uploads directory is not writable"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:215
+msgid "Direct"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:215
+msgid "FS_METHOD should be direct"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:223
+msgid "Enabled"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:223
+msgid "The Zip extension is not installed."
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:231
+msgid "Curl extension is not installed"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:239
+msgid "Connection with AWS was unsuccessful"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:247
+msgid "Connection with Account was unsuccessful"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:255
+#, php-format
+msgid ""
+"Incorrect plugin folder name: %s. Plugin folder name must be ‘visualcomposer’"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:316
+msgid "System Status"
+msgstr ""
+
+#: visualcomposer/Modules/Settings/Pages/SystemStatus.php:345
+#, php-format
+msgid ""
+"It seems that there is a problem with your server configuration that might "
+"affect Visual Composer. For more details, visit <a href=\"%s\">System "
+"Status</a> page."
+msgstr ""
+
+#: visualcomposer/Modules/Settings/SettingsController.php:94
+msgid "Your settings are saved."
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/DashboardController.php:34
+msgid "Visual Composer News"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:86
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:88
+msgid "Gutenberg attrs"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:87
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:89
+msgid "Gutenberg attr"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:90
+msgid "Add New"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:91
+msgid "Add New Gutenberg attr"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:92
+msgid "New Gutenberg attr"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:93
+msgid "Edit Gutenberg attr"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:94
+msgid "View Gutenberg attr"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:95
+msgid "All Gutenberg attrs"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:96
+msgid "Search Gutenberg attrs"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:97
+msgid "Parent Gutenberg attrs:"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:98
+msgid "No Gutenberg attrs found."
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:99
+msgid "No Gutenberg attrs found in Trash."
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:101
+msgid "Gutenberg attr Cover Image"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:106
+msgid "Set cover image"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:111
+msgid "Remove cover image"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:116
+msgid "Use as a cover image"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:121
+msgid "Gutenberg attr archives"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:126
+msgid "Add into Gutenberg attr"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:131
+msgid "Uploaded to this Gutenberg attr"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:136
+msgid "Filter Gutenberg attrs list"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:141
+msgid "Gutenberg attrs list navigation"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/AttributeController.php:146
+msgid "Gutenberg attrs list"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/SettingsController.php:73
+msgid ""
+"Enable/disable the Gutenberg editor for your WordPress site. Disabling "
+"Gutenberg editor will enable classic WordPress editor. In both cases, you "
+"can still use Visual Composer."
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/SettingsController.php:81
+msgid "Gutenberg Editor"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/Gutenberg/SettingsController.php:97
+msgid "Gutenberg"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/PluginsController.php:117
+msgid "Help Center"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/PluginsController.php:122
+msgid "API"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/PluginsController.php:127
+msgid "Premium Support"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/WooCommerceController.php:47
+msgid "Woocommerce Shop"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/WooCommerceController.php:51
+msgid "Woocommerce Cart"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/WooCommerceController.php:55
+msgid "Woocommerce Checkout"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/WooCommerceController.php:59
+msgid "Woocommerce My Account"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/WooCommerceController.php:63
+msgid "Woocommerce Product Category"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/WooCommerceController.php:67
+msgid "Woocommerce Terms"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/WooCommerceController.php:323
+msgid "Length:"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/WooCommerceController.php:327
+msgid "Width:"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/WooCommerceController.php:330
+msgid "Height:"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/WordpressController.php:67
+#: visualcomposer/resources/views/settings/layouts/dashboard-main-layout.php:293
+#, php-format
+msgid ""
+"Thank you for choosing Visual Composer Website Builder. <br>Like the plugin? "
+"%sRate us on WordPress.org%s"
+msgstr ""
+
+#: visualcomposer/Modules/Vendors/WpmlController.php:218
+#, php-format
+msgid ""
+"<b>Visual Composer:</b> To complete WPML Translation Manager process for the "
+"Visual Composer supported pages you will need to run automatic posts update. "
+"<a href=\"%s\">Update Posts</a>"
+msgstr ""
+
+#: visualcomposer/resources/views/editor/frontend/frontend.php:33
+#, php-format
+msgid "Frontend editor: %s"
+msgstr ""
+
+#: visualcomposer/resources/views/editor/pageEditable/pageEditable.php:22
+msgid "Loading..."
+msgstr ""
+
+#: visualcomposer/resources/views/elements/widgets/variables.php:20
+msgid "No custom widgets found."
+msgstr ""
+
+#: visualcomposer/resources/views/elements/widgets/variables.php:37
+msgid "No widgets found."
+msgstr ""
+
+#: visualcomposer/resources/views/license/pages/license.php:26
+msgid ""
+"It seems you haven’t activated your Premium license to access elements, "
+"templates, and addons in the Visual Composer Hub."
+msgstr ""
+
+#: visualcomposer/resources/views/license/pages/license.php:46
+msgid "License Information"
+msgstr ""
+
+#: visualcomposer/resources/views/license/pages/license.php:50
+msgid ""
+"Visual Composer license information. Click refresh to check for license "
+"updates."
+msgstr ""
+
+#: visualcomposer/resources/views/license/pages/license.php:56
+#: visualcomposer/resources/views/settings/pages/system-status.php:28
+msgid "Refresh"
+msgstr ""
+
+#: visualcomposer/resources/views/license/pages/license.php:66
+msgid "License information"
+msgstr ""
+
+#: visualcomposer/resources/views/license/pages/license.php:71
+msgid "License key"
+msgstr ""
+
+#: visualcomposer/resources/views/license/pages/license.php:77
+msgid "Deactivate"
+msgstr ""
+
+#: visualcomposer/resources/views/license/pages/license.php:83
+msgid "License type"
+msgstr ""
+
+#: visualcomposer/resources/views/license/pages/license.php:88
+msgid "Upgrade"
+msgstr ""
+
+#: visualcomposer/resources/views/license/pages/license.php:94
+msgid "License expiration date"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/fields/dataCollectionTable.php:11
+msgid "What kind of data will I share?"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/fields/dataCollectionTable.php:17
+msgid "Editor"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/fields/dataCollectionTable.php:18
+msgid ""
+"License type, site and page ids (de-identified),  how long the editor has "
+"been used"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/fields/dataCollectionTable.php:22
+msgid ""
+"Which elements are used and downloaded, site and page ids (de-identified)"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/fields/dataCollectionTable.php:26
+msgid ""
+"Which templates are used and downloaded, site and page ids (de-identified)"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/fields/dataCollectionTable.php:29
+msgid "System"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/fields/dataCollectionTable.php:30
+msgid "Plugin version, WordPress version, Active WordPress theme, PHP version"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/fields/dataCollectionTable.php:35
+msgid ""
+"We will never collect any sensivite or private data such as IP addresses, "
+"email, usernames, or passwords."
+msgstr ""
+
+#: visualcomposer/resources/views/settings/fields/post-types/post-types-toggle.php:22
+#: visualcomposer/resources/views/settings/fields/toggle.php:18
+msgid "on"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/fields/post-types/post-types-toggle.php:23
+#: visualcomposer/resources/views/settings/fields/toggle.php:19
+msgid "off"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/fields/yesnotoggle.php:18
+msgid "yes"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/fields/yesnotoggle.php:19
+msgid "no"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/layouts/dashboard-main-layout.php:254
+msgid "Help"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/layouts/dashboard-main-layout.php:259
+msgid "My Visual Composer"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/index.php:90
+msgid "Save Changes"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:27
+msgid ""
+"Check system status and WordPress configuration for compliance with Visual "
+"Composer requirements."
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:75
+msgid "WordPress environment"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:80
+msgid "WordPress version"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:84
+msgid "WordPress version currently installed on your site."
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:90
+msgid "PHP version"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:94
+msgid "PHP version currently installed on your site."
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:100
+msgid "WP_DEBUG"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:104
+msgid "Displays whether of not WordPress is in Debug Mode"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:110
+msgid "Visual Composer version"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:113
+msgid "Visual Composer version installed on your site."
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:126
+msgid "There is a new version of Visual Composer Website Builder available."
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:141
+msgid "Configurations"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:146
+msgid "Plugin folder"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:151
+msgid "Plugin folder must be `visualcomposer`."
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:159
+msgid "Memory limit"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:164
+msgid "The maximum amount of memory (RAM) that your site can use at one time."
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:172
+msgid "Post max size"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:177
+msgid ""
+"The maximum size of the post data allowed that also affects file upload."
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:185
+msgid "Max input nesting level"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:190
+msgid "The maximum nesting depth of input variables (i.e. $_GET, $_POST.). "
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:198
+msgid "PHP Max Input Vars"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:203
+msgid ""
+"The number of input variables that may be accepted (limit is applied to "
+"$_GET, $_POST, and $_COOKIE superglobal separately)."
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:211
+msgid "Timeout"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:215
+msgid "The maximum execution time for PHP scripts."
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:221
+msgid "Max upload file size"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:226
+msgid "The largest file size that can be uploaded to your WordPress site."
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:234
+msgid "Access to the upload folder"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:239
+msgid ""
+"Visual Composer stores assets in the WordPress uploads folder. The folder "
+"must be writable for this to happen."
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:247
+msgid "File system method"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:251
+msgid "The file system method should be direct."
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:262
+msgid "Extensions"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:267
+msgid ".zip extension"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:271
+msgid "The Zip Extension should be enabled on your server"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:277
+msgid "cURL extension"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:281
+msgid "The version of cURL installed on your server."
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:292
+msgid "Connections"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:301
+msgid "Connection with your account."
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:307
+msgid "AWS"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:311
+msgid "The connection with the AWS."
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:317
+msgid "Large data transfer"
+msgstr ""
+
+#: visualcomposer/resources/views/settings/pages/system-status.php:322
+msgid ""
+"Ability to send large data. In case if failed - adjust your php.ini file to "
+"increase memory_limit, post_max_size and execution time."
+msgstr ""
+
+#: visualcomposer/resources/views/vendors/dashboard.php:55
+msgid "No news found."
+msgstr ""

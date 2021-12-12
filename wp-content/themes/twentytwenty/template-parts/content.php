@@ -10,111 +10,85 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
-//create class danh sach and bool is_single
-$class = '';
-if(!is_single()){
-    $class='danh-sach';
-}
 
 ?>
-<!-- Chia cột container  -->
-<div class="container">
-    <div class="row">
-        <div class="col-md-2">
-            <!-- Kiểm tra nếu !is_single thì thực hiện  xuất ngày tháng -->
-            <?php if(!is_single()) echo "<div class='contentdate'>"."<span class='topnewsdate date'>". get_the_date('d', $post->ID)."</span>","<br>" ."<span class='topnewsmonth date'>Tháng ".get_the_date('m', $post->ID)."</span>","</div>";
-            ?>
-        </div>
-        <div class="col-md-10">
-            <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-                <?php
+<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-get_template_part( 'template-parts/entry-header' );
+	<?php
 
-if ( ! is_search() ) {
-    get_template_part( 'template-parts/featured-image' );
-}
+	get_template_part( 'template-parts/entry-header' );
 
-?>
-                <div
-                    class="post-inner pt-3 <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
+	if ( ! is_search() ) {
+		get_template_part( 'template-parts/featured-image' );
+	}
 
-                    <div class="entry-content">
+	?>
 
-                        <?php
-        if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
-            the_excerpt();
-        } else {
-            if(is_single()){
-            
-                the_content( __( 'Continue reading', 'twentytwenty' ) );
-               
-            }else{
-                //Nếu là is_single thì thực hiện xuất content và cắt chuỗi.
-                $post = get_post();
-                //subtring content thực hiện cắt chuỗi
-                echo substr($post->post_content, 0,150),"[...]";
-            }
+	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
 
-        }
-        ?>
+		<div class="entry-content">
 
-                    </div><!-- .entry-content -->
+			<?php
+			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
+				the_excerpt();
+			} else {
+				the_content( __( 'Continue reading', 'twentytwenty' ) );
+			}
+			?>
 
-                </div><!-- .post-inner -->
+		</div><!-- .entry-content -->
 
-                <div class="section-inner">
-                    <?php
-    wp_link_pages(
-        array(
-            'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__( 'Page', 'twentytwenty' ) . '"><span class="label">' . __( 'Pages:', 'twentytwenty' ) . '</span>',
-            'after'       => '</nav>',
-            'link_before' => '<span class="page-number">',
-            'link_after'  => '</span>',
-        )
-    );
+	</div><!-- .post-inner -->
 
-    edit_post_link();
+	<div class="section-inner">
+		<?php
+		wp_link_pages(
+			array(
+				'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__( 'Page', 'twentytwenty' ) . '"><span class="label">' . __( 'Pages:', 'twentytwenty' ) . '</span>',
+				'after'       => '</nav>',
+				'link_before' => '<span class="page-number">',
+				'link_after'  => '</span>',
+			)
+		);
 
-    // Single bottom post meta.
-    twentytwenty_the_post_meta( get_the_ID(), 'single-bottom' );
+		edit_post_link();
 
-    if ( post_type_supports( get_post_type( get_the_ID() ), 'author' ) && is_single() ) {
+		// Single bottom post meta.
+		twentytwenty_the_post_meta( get_the_ID(), 'single-bottom' );
 
-        get_template_part( 'template-parts/entry-author-bio' );
+		if ( post_type_supports( get_post_type( get_the_ID() ), 'author' ) && is_single() ) {
 
-    }
-    ?>
+			get_template_part( 'template-parts/entry-author-bio' );
 
-                </div><!-- .section-inner -->
+		}
+		?>
 
-                <?php
+	</div><!-- .section-inner -->
 
-if ( is_single() ) {
+	<?php
 
-    get_template_part( 'template-parts/navigation' );
+	if ( is_single() ) {
 
-}
+		get_template_part( 'template-parts/navigation' );
 
-/*
- * Output comments wrapper if it's a post, or if comments are open,
- * or if there's a comment number – and check for password.
- */
-if ( ( is_single() || is_page() ) && ( comments_open() || get_comments_number() ) && ! post_password_required() ) {
-    ?>
+	}
 
-                <div class="comments-wrapper section-inner">
+	/*
+	 * Output comments wrapper if it's a post, or if comments are open,
+	 * or if there's a comment number – and check for password.
+	 */
+	if ( ( is_single() || is_page() ) && ( comments_open() || get_comments_number() ) && ! post_password_required() ) {
+		?>
 
-                    <?php comments_template(); ?>
+		<div class="comments-wrapper section-inner">
 
-                </div><!-- .comments-wrapper -->
+			<?php comments_template(); ?>
 
-                <?php
-}
-?>
+		</div><!-- .comments-wrapper -->
 
-            </article><!-- .post -->
-        </div>
-    </div>
-</div>
+		<?php
+	}
+	?>
+
+</article><!-- .post -->

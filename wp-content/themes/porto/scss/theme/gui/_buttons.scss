@@ -1,0 +1,303 @@
+/* Visual Composer Buttons */
+.btn-inverse {
+    @include button-variant(#fff, #333, #2d2d2d);
+}
+
+.btn {
+    margin: 0;
+}
+.btn-block {
+    padding-right: 0;
+    padding-left: 0;
+}
+.vc_btn3.vc_btn3-size-md {
+    border-radius: 4px;
+}
+
+.btn,
+.btn-group-md > .btn,
+.vc_btn3.vc_btn3-size-md {
+    padding: 0.533rem 0.933rem;
+    font-size: 0.8rem;
+    line-height: 1.42857;
+}
+
+.btn-xl,
+.vc_btn3.vc_btn3-size-xl {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+}
+
+.btn-lg,
+.btn-group-lg > .btn,
+.vc_btn3.vc_btn3-size-lg,
+.cart-actions .button,
+.checkout-button,
+#place_order,
+input.submit.btn-lg, input.btn.btn-lg[type="submit"], input.button.btn-lg[type="submit"] {
+    padding: 0.5rem 0.875rem;
+    font-size: 0.875rem;
+    line-height: 1.3333;
+}
+
+.btn-sm,
+.btn-group-sm > .btn,
+.vc_btn3.vc_btn3-size-sm {
+    padding: 0.3rem 0.65rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+.btn-xs,
+.btn-group-xs > .btn
+.vc_btn3.vc_btn3-size-xs {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+
+
+/* Buttons */
+.btn,
+.button,
+input.submit,
+input[type="submit"] {
+    @include transition (all .1s);
+    cursor: pointer;
+}
+
+button {
+    border: 1px solid #ccc;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    vertical-align: middle;
+    touch-action: manipulation;
+    padding: 8px 12px;
+    cursor: pointer;
+    white-space: nowrap;
+    line-height: 1.5;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:disabled {
+        cursor: default;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.btn-default {
+    &.btn {
+        background: #fff;
+        box-shadow: none !important;
+        &[disabled], &[disabled]:hover {
+            background: #fff;
+            border-color: rgba(0, 0, 0, .09);
+        }
+        &:hover {
+            background-color: #f2f2f2;
+            border-color: rgba(0, 0, 0, .06);
+        }
+    }
+    &.btn-borders {
+        background: none;
+    }
+}
+
+/* Outline */
+.btn-outline {
+    border-width: 2px;
+}
+
+/* Icons    */
+.btn-icon {
+    display: inline-flex;
+    align-items: center
+}
+.btn-icon i {
+    margin-#{$right}: 10px;
+}
+
+.btn-icon-right i {
+    margin-#{$right}: 0;
+    margin-#{$left}: 10px;
+}
+
+@each $state in $states {
+    .btn-#{nth($state,1)} {
+        border-color: #{nth($state,2)};
+        background-color: #{nth($state,2)};
+        border-color: #{nth($state,2)} #{nth($state,2)} darken(nth($state,2), 10%);
+        color: #{nth($state,3)};
+
+        &:hover {
+            border-color: lighten(nth($state,2), 5%) lighten(nth($state,2), 5%) darken(nth($state,2), 5%);
+            background-color: darken(nth($state,2), 5%);
+            color: #{nth($state,3)};
+        }
+
+        &:active,
+        &:focus {
+            border-color: darken(nth($state,2), 5%);
+            background-color: darken(nth($state,2), 5%);
+            color: #{nth($state,3)};
+        }
+
+        &.dropdown-toggle {
+            border-#{$left}-color: darken(nth($state,2), 5%);
+        }
+
+        &[disabled] {
+            border-color: darken(nth($state,2), 20%);
+            background-color: darken(nth($state,2), 20%);
+            color: #CCC;
+        }
+    }
+}
+
+/* Border Buttons */
+.btn-borders {
+    border-width: 2px;
+}
+
+@each $state in $states {
+    .btn-borders {
+        &.btn-#{nth($state,1)} {
+            background: transparent;
+            border-color: #{nth($state,2)};
+            color: #{nth($state,2)};
+            &:hover, &:focus {
+                background-color: darken(nth($state,2), 5%);
+                border-color: #{nth($state,2)} !important;
+                color: #{nth($state,3)};
+            }
+        }
+    }
+}
+
+/* Border Buttons - Sizes */
+.btn-borders {
+    padding: 0.483rem 1.0625rem;
+}
+.btn-borders.btn-xl {
+    padding: 0.75rem 2rem;
+}
+.btn-borders.btn-lg, .btn-group-lg > .btn-borders.btn {
+    padding: 0.45rem 1rem;
+}
+
+.btn-borders.btn-sm, .btn-group-sm > .btn-borders.btn {
+    border-width: 2px;
+    padding: 0.25rem 0.65rem;
+}
+
+.btn-borders.btn-xs, .btn-group-xs > .btn-borders.btn {
+    padding: 0.15rem 0.5rem;
+    border-width: 1px;
+}
+
+/* 3D Buttons */
+.btn-3d {
+    border-bottom-width: 3px;
+}
+
+.btn-3d.btn-sm, .btn-group-sm > .btn-3d.btn {
+    border-width: 2px;
+}
+
+.btn-3d.btn-xs, .btn-group-xs > .btn-3d.btn {
+    border-width: 1px;
+}
+
+.btn-flat {
+    display: inline-block;
+}
+
+.btn-modern {
+    text-transform: uppercase;
+    font-size: .75rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    &.btn-xl {
+        font-size: 1rem;
+        padding: 1.25em 3.125em;
+    }
+    &.btn-lg {
+        font-size: .875rem;
+        padding: 1rem 2.25rem;
+    }
+    &.btn-sm {
+        font-size: .7rem;
+        padding: .7rem 1.4rem
+    }
+    &.btn-xs {
+        font-size: .625rem;
+        padding: .6rem 1.2rem;
+    }
+}
+
+.box-shadow-2 .btn, .btn.box-shadow-2 {
+    box-shadow: 0 15px 30px -15px rgba(0, 0, 0, 0.45);
+}
+
+/* Arrow Button */
+.btn-arrow {
+    font-weight: 600;
+    &:not(.btn-borders) {
+        background: none !important;
+        border: none !important;
+    }
+    &:focus {
+        box-shadow: none !important;
+    }
+
+    .icon-wrapper {
+        background-color: #ccc;
+        display: inline-block;
+        height: 25px;
+        line-height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        margin-#{$left}: 8px;
+        transition: all 0.1s linear;
+    }
+    &:hover .icon-wrapper {
+        transform: translateX(5px);
+    }
+    i {
+        color: #fff;
+        font-size: 8px;
+        top: -1px;
+        position: relative;
+    }
+}
+
+.btn.btn-full-rounded {
+    border-radius: 2em;
+}
+
+/* Icon Hover effects */
+.btn {
+    i {
+        display: inline-block;
+        transition: transform .25s linear;
+        line-height: 1;
+    }
+    &.hover-icon-zoom i {
+        transform: scale(1.15, 1.15);
+    }
+    &.hover-icon-up i {
+        transform: translateY(-4px);
+    }
+    &.hover-icon-left:hover i {
+        transform: translateX(-6px);
+    }
+    &.hover-icon-right:hover i {
+        transform: translateX(6px);
+    }
+}

@@ -1,0 +1,51 @@
+2021-11-26T09:33:39+00:00 CRITICAL Uncaught ArgumentCountError: 3 arguments are required, 2 given in D:\xapp\htdocs\project-cms-groupb\wp-admin\includes\class-bulk-upgrader-skin.php:152
+Stack trace:
+#0 D:\xapp\htdocs\project-cms-groupb\wp-admin\includes\class-bulk-upgrader-skin.php(152): sprintf('%1$s installed ...', 'WooCommerce')
+#1 D:\xapp\htdocs\project-cms-groupb\wp-content\themes\porto\inc\plugins\tgm-plugin-activation\class-tgm-plugin-activation.php(3712): Bulk_Upgrader_Skin->after('WooCommerce')
+#2 D:\xapp\htdocs\project-cms-groupb\wp-admin\includes\class-wp-upgrader.php(823): TGMPA_Bulk_Installer_Skin->after()
+#3 D:\xapp\htdocs\project-cms-groupb\wp-content\themes\porto\inc\plugins\tgm-plugin-activation\class-tgm-plugin-activation.php(3328): WP_Upgrader->run(Array)
+#4 D:\xapp\htdocs\project-cms-groupb\wp-content\themes\porto\inc\plugins\tgm-plugin-activation\class-tgm-plugin-activation.php(3441): TGMPA_Bulk_Installer->run(Array)
+#5 D:\xapp\htdocs\project-cms-groupb\wp-content\themes\porto\inc\plugins\tgm-plugin-activation\class-tgm-plugin-activation.php(3047): TGMPA_Bulk_Installer->bulk_install(Array)
+#6 D:\xapp\htdocs\project-cms-groupb\wp-content\themes\porto\inc\plugins\tgm-plugin-activation\class-tgm-plugin-activation.php(773): TGMPA_List_Table->process_bulk_actions()
+#7 D:\xapp\htdocs\project-cms-groupb\wp-includes\class-wp-hook.php(303): TGM_Plugin_Activation->install_plugins_page('')
+#8 D:\xapp\htdocs\project-cms-groupb\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#9 D:\xapp\htdocs\project-cms-groupb\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#10 D:\xapp\htdocs\project-cms-groupb\wp-admin\admin.php(259): do_action('appearance_page...')
+#11 D:\xapp\htdocs\project-cms-groupb\wp-admin\themes.php(10): require_once('D:\\xapp\\htdocs\\...')
+#12 {main}
+  thrown in D:\xapp\htdocs\project-cms-groupb\wp-admin\includes\class-bulk-upgrader-skin.php on line 152
+
+2021-11-26T09:33:48+00:00 CRITICAL Uncaught ArgumentCountError: 3 arguments are required, 2 given in D:\xapp\htdocs\project-cms-groupb\wp-admin\includes\class-bulk-upgrader-skin.php:152
+Stack trace:
+#0 D:\xapp\htdocs\project-cms-groupb\wp-admin\includes\class-bulk-upgrader-skin.php(152): sprintf('%1$s installed ...', 'Contact Form 7')
+#1 D:\xapp\htdocs\project-cms-groupb\wp-content\themes\porto\inc\plugins\tgm-plugin-activation\class-tgm-plugin-activation.php(3712): Bulk_Upgrader_Skin->after('Contact Form 7')
+#2 D:\xapp\htdocs\project-cms-groupb\wp-admin\includes\class-wp-upgrader.php(823): TGMPA_Bulk_Installer_Skin->after()
+#3 D:\xapp\htdocs\project-cms-groupb\wp-content\themes\porto\inc\plugins\tgm-plugin-activation\class-tgm-plugin-activation.php(3328): WP_Upgrader->run(Array)
+#4 D:\xapp\htdocs\project-cms-groupb\wp-content\themes\porto\inc\plugins\tgm-plugin-activation\class-tgm-plugin-activation.php(3441): TGMPA_Bulk_Installer->run(Array)
+#5 D:\xapp\htdocs\project-cms-groupb\wp-content\themes\porto\inc\plugins\tgm-plugin-activation\class-tgm-plugin-activation.php(3047): TGMPA_Bulk_Installer->bulk_install(Array)
+#6 D:\xapp\htdocs\project-cms-groupb\wp-content\themes\porto\inc\plugins\tgm-plugin-activation\class-tgm-plugin-activation.php(773): TGMPA_List_Table->process_bulk_actions()
+#7 D:\xapp\htdocs\project-cms-groupb\wp-includes\class-wp-hook.php(303): TGM_Plugin_Activation->install_plugins_page('')
+#8 D:\xapp\htdocs\project-cms-groupb\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#9 D:\xapp\htdocs\project-cms-groupb\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#10 D:\xapp\htdocs\project-cms-groupb\wp-admin\admin.php(259): do_action('appearance_page...')
+#11 D:\xapp\htdocs\project-cms-groupb\wp-admin\themes.php(10): require_once('D:\\xapp\\htdocs\\...')
+#12 {main}
+  thrown in D:\xapp\htdocs\project-cms-groupb\wp-admin\includes\class-bulk-upgrader-skin.php on line 152
+
+2021-11-26T09:33:56+00:00 CRITICAL Uncaught ArgumentCountError: 3 arguments are required, 2 given in D:\xapp\htdocs\project-cms-groupb\wp-admin\includes\class-bulk-upgrader-skin.php:152
+Stack trace:
+#0 D:\xapp\htdocs\project-cms-groupb\wp-admin\includes\class-bulk-upgrader-skin.php(152): sprintf('%1$s installed ...', 'Dynamic Feature...')
+#1 D:\xapp\htdocs\project-cms-groupb\wp-content\themes\porto\inc\plugins\tgm-plugin-activation\class-tgm-plugin-activation.php(3712): Bulk_Upgrader_Skin->after('Dynamic Feature...')
+#2 D:\xapp\htdocs\project-cms-groupb\wp-admin\includes\class-wp-upgrader.php(823): TGMPA_Bulk_Installer_Skin->after()
+#3 D:\xapp\htdocs\project-cms-groupb\wp-content\themes\porto\inc\plugins\tgm-plugin-activation\class-tgm-plugin-activation.php(3328): WP_Upgrader->run(Array)
+#4 D:\xapp\htdocs\project-cms-groupb\wp-content\themes\porto\inc\plugins\tgm-plugin-activation\class-tgm-plugin-activation.php(3441): TGMPA_Bulk_Installer->run(Array)
+#5 D:\xapp\htdocs\project-cms-groupb\wp-content\themes\porto\inc\plugins\tgm-plugin-activation\class-tgm-plugin-activation.php(3047): TGMPA_Bulk_Installer->bulk_install(Array)
+#6 D:\xapp\htdocs\project-cms-groupb\wp-content\themes\porto\inc\plugins\tgm-plugin-activation\class-tgm-plugin-activation.php(773): TGMPA_List_Table->process_bulk_actions()
+#7 D:\xapp\htdocs\project-cms-groupb\wp-includes\class-wp-hook.php(303): TGM_Plugin_Activation->install_plugins_page('')
+#8 D:\xapp\htdocs\project-cms-groupb\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#9 D:\xapp\htdocs\project-cms-groupb\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#10 D:\xapp\htdocs\project-cms-groupb\wp-admin\admin.php(259): do_action('appearance_page...')
+#11 D:\xapp\htdocs\project-cms-groupb\wp-admin\themes.php(10): require_once('D:\\xapp\\htdocs\\...')
+#12 {main}
+  thrown in D:\xapp\htdocs\project-cms-groupb\wp-admin\includes\class-bulk-upgrader-skin.php on line 152
+

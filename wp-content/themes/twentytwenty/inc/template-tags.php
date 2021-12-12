@@ -33,8 +33,7 @@
  */
 function twentytwenty_site_logo( $args = array(), $echo = true ) {
 	$logo       = get_custom_logo();
-
-	$site_title = get_bloginfo( 'name');
+	$site_title = get_bloginfo( 'name' );
 	$contents   = '';
 	$classname  = '';
 
@@ -47,6 +46,7 @@ function twentytwenty_site_logo( $args = array(), $echo = true ) {
 		'single_wrap' => '<div class="%1$s faux-heading">%2$s</div>',
 		'condition'   => ( is_front_page() || is_home() ) && ! is_page(),
 	);
+
 	$args = wp_parse_args( $args, $defaults );
 
 	/**
@@ -105,6 +105,7 @@ function twentytwenty_site_description( $echo = true ) {
 	if ( ! $description ) {
 		return;
 	}
+
 	$wrapper = '<div class="site-description">%s</div><!-- .site-description -->';
 
 	$html = sprintf( $wrapper, esc_html( $description ) );

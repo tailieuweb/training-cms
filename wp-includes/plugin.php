@@ -164,6 +164,7 @@ function apply_filters( $hook_name, $value ) {
 	global $wp_filter, $wp_current_filter;
 
 	$args = func_get_args();
+
 	// Do 'all' actions first.
 	if ( isset( $wp_filter['all'] ) ) {
 		$wp_current_filter[] = $hook_name;
