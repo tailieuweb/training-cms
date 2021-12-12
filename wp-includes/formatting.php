@@ -2169,11 +2169,12 @@ function sanitize_key( $key ) {
  *                               Default 'save'.
  * @return string The sanitized string.
  */
-function sanitize_title( $title, $fallback_title = '', $context = 'save' ) {
+function sanitize_title( $title, $fallback_title = '', $context = 'save' ) { // hàm này làm sạch dữ liệu
 	$raw_title = $title;
-
+   // var_dump($title);    // Nguyên hàm này chuyển link thành slug
+	
 	if ( 'save' === $context ) {
-		$title = remove_accents( $title );
+		$title = remove_accents( $title ); // chỗ này lọc kí tự dấu nếu không có kí tự dấu nào -> return luôn
 	}
 
 	/**

@@ -10,15 +10,18 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
+//create class danh sach and bool is_single
 $class = '';
 if(!is_single()){
     $class='danh-sach';
 }
 
 ?>
+<!-- Chia cột container  -->
 <div class="container">
     <div class="row">
         <div class="col-md-2">
+            <!-- Kiểm tra nếu !is_single thì thực hiện  xuất ngày tháng -->
             <?php if(!is_single()) echo "<div class='contentdate'>"."<span class='topnewsdate date'>". get_the_date('d', $post->ID)."</span>","<br>" ."<span class='topnewsmonth date'>Tháng ".get_the_date('m', $post->ID)."</span>","</div>";
             ?>
         </div>
@@ -34,25 +37,24 @@ if ( ! is_search() ) {
 }
 
 ?>
-
                 <div
-                    class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
+                    class="post-inner pt-3 <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
 
                     <div class="entry-content">
 
                         <?php
         if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
             the_excerpt();
-            echo "cheo";
         } else {
             if(is_single()){
             
                 the_content( __( 'Continue reading', 'twentytwenty' ) );
                
             }else{
+                //Nếu là is_single thì thực hiện xuất content và cắt chuỗi.
                 $post = get_post();
-              
-                echo substr($post->post_content, 0,100),"[...]";
+                //subtring content thực hiện cắt chuỗi
+                echo substr($post->post_content, 0,150),"[...]";
             }
 
         }

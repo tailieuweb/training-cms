@@ -315,7 +315,6 @@ h1,
 	font-size: 3.6rem;
 	font-weight: 800;
 	line-height: 1.138888889;
-	
 }
 
 h2,
@@ -1008,9 +1007,7 @@ section {
 	max-width: 80rem;
 }
 
-.section-inner.medium {
-	max-width: 100rem;
-}
+} 
 
 .section-inner.no-margin {
 	margin: 0;
@@ -1262,12 +1259,10 @@ button.toggle {
 	flex-wrap: nowrap;
 	margin: 0 0 -0.8rem -0.8rem;
 }
-
 .search-form .search-field,
 .search-form .search-submit {
 	margin: 0 0 0.8rem 0.8rem;
 }
-
 .search-form label {
 	align-items: stretch;
 	display: flex;
@@ -1277,11 +1272,22 @@ button.toggle {
 }
 
 .search-form .search-field {
+	margin-right: 42vh;
+	width: 40vh;
+	border-radius: 5px;
+	padding: 0.7% 1.7%;
 	width: 100%;
 }
 
 .search-form .search-submit {
 	flex-shrink: 0;
+	margin: 0 -62%;
+	background: white;
+	border: 1px rgb(173, 172, 172) solid;
+	color: #a2a4a4;
+	border-radius: 5px;
+	padding: 0.7% 1.7%;
+	font-weight: normal;
 }
 
 .search-form .search-submit:focus,
@@ -2436,18 +2442,18 @@ body:not(.singular) main > article:first-of-type {
 
 h1.entry-title,
 h2.entry-title {
-	margin: 0;
 	font-family: 'Open Sans Condensed', sans-serif;
     font-size: 2.1em;
     font-weight: bold;
     margin: 0;
     padding: 0;
+	text-align: left;
 }
 
 .entry-title a {
 	color: inherit;
 	text-decoration: none;
-	
+	font-size: 29px;
 }
 
 .entry-title a:focus,
@@ -3594,11 +3600,13 @@ figure.wp-block-table.is-style-stripes {
 /* Alignment Classes ------------------------- */
 
 .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
-	max-width: 58rem;
+	max-width: 78rem;
 	width: calc(100% - 4rem);
 }
 
 [class*="__inner-container"] > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+	font-size: 2.8rem;
+	color: white;
 	max-width: 58rem;
 	width: 100%;
 }
@@ -4823,10 +4831,11 @@ a.to-the-top > * {
 
 	h1,
 	.heading-size-1 {
-		/* font-size: 6.4rem; */
-		
 	}
-	
+	h2,
+	.heading-size-2 {
+		font-size: 4.8rem;
+	}
 	h2,
 	.heading-size-2 {
 		font-size: 4.8rem;
@@ -5079,10 +5088,11 @@ a.to-the-top > * {
 	}
 
 	h2.entry-title {
-		/* font-size: 6.4rem; */
 		text-transform: uppercase;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: bold;
+   	 font-family: 'Open Sans Condensed', sans-serif;
+   	 font-weight: bold;
+		text-align: left;
+		max-width: 85rem;
 	}
 
 	/* SEARCH RESULTS */
@@ -5371,8 +5381,7 @@ a.to-the-top > * {
 
 	.entry-content {
 		font-size: 2.1rem;
-		
-		
+	    margin-left: -4%;
 	}
 
 	.entry-content p,
@@ -5666,7 +5675,7 @@ a.to-the-top > * {
 		display: none;
 	}
 
-}
+
 
 @media (min-width: 782px) {
 
@@ -6145,10 +6154,8 @@ a.to-the-top > * {
 
 	h1,
 	.heading-size-1 {
-	
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: bold;
-	
 	}
 
 	/* Helper Classes ------------------------ */
@@ -6354,6 +6361,13 @@ a.to-the-top > * {
 
 @media ( min-width: 1280px ) {
 
+	.search-form .search-field {
+		margin-right: 20vh;
+		width: 30vh;
+		border-radius: 5px;
+		padding: 0.7% 1.7%;
+	}
+
 	/* Blocks -------------------------------- */
 
 	/* BLOCK: GALLERY */
@@ -6497,8 +6511,6 @@ a.to-the-top > * {
 	}
 }
 
-
-
 /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
@@ -6513,6 +6525,7 @@ section .section-title {
 }
 #footer {
 	background: #007b5e !important;
+	margin-top: 50px;
 }
 #footer h5{
 	padding-left: 10px;
@@ -6526,6 +6539,7 @@ section .section-title {
 	text-decoration: none !important;
 	background-color: transparent;
 	-webkit-text-decoration-skip: objects;
+	font-size: 16px;
 }
 
 .footer-nav-widget a::before{
@@ -6589,6 +6603,21 @@ section .section-title {
 		margin-bottom: 10px;
 	}
 }
+.site-title{
+	font-weight: normal;
+	color: rgb(177, 176, 176);
+}
+.site-description{
+	color: rgb(177, 176, 176);
+}
+.dropdown{
+	padding: 6%;
+}
+/* css footer */
+.wp-block-group__inner-container h2{
+	border-left: 3px solid;
+}
+/* css của content và detail */
  .date{
 	margin-top: -50px;
 	text-align: center;
@@ -6601,9 +6630,6 @@ section .section-title {
     line-height: 1em;
 	
 }
-/* .thedate{
-	border-right: 1px solid #666;
-} */
 .topnewsmonth{
 	text-transform: uppercase;
     font-size: 0.9em;
@@ -6615,6 +6641,7 @@ section .section-title {
 	height: 150px;
 	margin-top: 30px;
 }
+/* css detail page */
 .wp-block-image{
 	display: none;
 }
@@ -6624,7 +6651,7 @@ section .section-title {
     border-radius: 50%;
     padding: 10px;
 	width: 100px;
-	margin-left: 100px;
+	margin-left: 0%;
     -webkit-box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
     box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
@@ -6639,13 +6666,16 @@ section .section-title {
 
 }
 .entry-content p {
+	font-family: 'Open Sans', sans-serif;
 	margin: 0 0 10px;
 	margin-left: 8%;
 	text-align: justify;
-    line-height: 1.7em;
-	
-	
-	
-	
+    line-height: 1.7em;	
 }
 
+.submit-btn-config{
+	float: right !important;
+	background: #007bff !important;
+	padding: 14px  12px !important;
+	border-radius: 6px !important;
+}

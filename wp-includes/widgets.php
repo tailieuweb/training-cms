@@ -763,7 +763,6 @@ function dynamic_sidebar( $index = 1 ) {
 			str_replace( '\\', '_', $id ),
 			$classname_
 		);
-
 		/**
 		 * Filters the parameters passed to a widget's display callback.
 		 *
